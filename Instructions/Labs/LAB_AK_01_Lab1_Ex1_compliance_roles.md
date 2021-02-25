@@ -6,13 +6,13 @@ In your role as Joni Sherman, the newly hired Compliance Administrator for Conto
 
 In this exercise, you will follow the principal of least privilege and use the default Global Administrator to assign the Compliance Admin role to Joni Sherman, which is required to perform the operations described in this lab.
 
-1.	Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1.	Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.  The password should be provided by your lab hosting provider.
 
 2.	Open **Microsoft Edge** from the taskbar and when a **Welcome to the new Microsoft Edge** windows is displayed, select **Complete setup**.
 
 3. Select **Confirm** to accept the default browser settings and **Continue without signing in**.
 
-4. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 Admin center as **MOD Administrator**.
+4. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 Admin center as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 5. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -28,13 +28,13 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 11.	In the settings below the **Account** tab, scroll to **Roles** and select **Manage roles** below.
 
-12.	When the **Manage roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to select **Compliance admin** in the Security & Compliance section.
+12.	When the **Manage admin roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to select **Compliance admin** in the Security & Compliance section.
 
 13.	Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the pane, select the arrow pointing to the left.
 
 14.	Close the window of Joni Sherman’s account with the **X** in the upper right to go back to the **Active users** list.
 
-15. Select the circle with **MA** in the upper right-side and select **Sign out**.
+15. Select the circle with **MA** in the upper right and select **Sign out**.
 
 16. Close the **Microsoft Edge** browser window.
 
@@ -50,7 +50,7 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 3. When the **Pick an account** window is displayed, select **Use another account**.
 
-4. When the **Sign in** window is displayed, sign in as **Joni Sherman**.
+4. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 5. When the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**.
 

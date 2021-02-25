@@ -8,7 +8,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Administrator)**.
+2. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then right-click **Windows PowerShell** and choose **Run as Administrator**.
 
 3. Confirm the **User Account Control** window with **Yes**.
 
@@ -16,15 +16,15 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
     Install-Module ExchangeOnlineManagement
 
-5. Confirm the NuGet provider security dialog with **Y** for Yes.
+5. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**.
 
-6. Confirm the Untrusted repository security dialog with **Y** for Yes.
+6. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.
 
-7. Enter the following cmdlet to change your execution policy
+7. Enter the following cmdlet to change your execution policy and press **Enter**
 
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-8. Confirm the Execution Policy Change with  **Y** for Yes. 
+8. Confirm the Execution Policy Change with  **Y** for Yes and press **Enter**. 
 
 9. Close the PowerShell window.
 
@@ -34,7 +34,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
     Connect-ExchangeOnline
 
-12. When the **Sign in** window is displayed, sign in as **Joni Sherman**.
+12. When the **Sign in** window is displayed, sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 13. Verify Azure RMS and IRM is activated in your tenant by using the following cmdlet:
 
@@ -66,7 +66,7 @@ There is a requirement in your organization to restrict trust for foreign identi
 
     Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn:$false
 
-5. Confirm the warning message for customizing the default template with **"Y"** for Yes.
+5. Confirm the warning message for customizing the default template with **"Y"** for Yes and press **Enter**.
 
 6. Check the default configuration again and validate, the SocialIdSignIn parameter is now set to False.
 
@@ -82,11 +82,11 @@ You need to confirm that no social IDs dialog is displayed for external recipien
 
 1.	Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
-2.	Open **Microsoft Edge** from the taskbar and when a **Welcome to the new Microsoft Edge** windows is displayed, select **Complete setup**.
+2.	Open **Microsoft Edge** from the taskbar and when a **Welcome to the new Microsoft Edge** windows is displayed, select **Complete setup** if it appears.
 
-3. Select **Confirm** to accept the default browser settings and **Continue without signing in**.
+3. Select **Confirm** to accept the default browser settings and **Continue without signing in** if it appears.
 
-4. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as **Lynne Robbins**.
+4. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Lynne Robin's password should be provided by your lab hosting provider.
 
 5. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -98,11 +98,11 @@ You need to confirm that no social IDs dialog is displayed for external recipien
 
 9. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Secret Message** to the subject line and **My super-secret message.** to the body.
 
-10. Select the three dots **(...)** from the top pane, then and select **Encrypt** and **Encrypt**.
+10. From the top pane, select **Encrypt** to encrypt the message.  Once you've successfully encrypted the message you should see a notice that says something like "...This message is encrypted."
 
 11. Select **Send** to send the message.
 
-12. Sign in to your personal email account and open the message from Lynne Robbins.
+12. Sign in to your personal email account and open the message from Lynne Robbins.  If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message.  If you sent the email to another email service (like @google.com) you may have to perform the next steps to process the encryption and read the message.
 
 13. Select **Read the message**.
 
@@ -128,29 +128,31 @@ Protected messages sent by your organizations finance department require a speci
 
     New-OMEConfiguration -Identity "Finance Department" -ExternalMailExpiryInDays 7 
 
-3. Confirm the warning message for customizing the template with **"Y"** for Yes.
+3. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
 
 4. Change the introduction text message with the following cmdlet:
 
     Set-OMEConfiguration -Identity "Finance Department" -IntroductionText " from Contoso Ltd. finance department has sent you a secure message."
 
-5. Confirm the warning message for customizing the template with **"Y"** for Yes.
+5. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
 
 6. Change the body email text of the message with the following cmdlet:
 
-    Set-OMEConfiguration -Identity "Finance Department" -EmailText "Encrypted message sent from Contoso Ltd. finance department. Handle the content responsible."
+    Set-OMEConfiguration -Identity "Finance Department" -EmailText "Encrypted message sent from Contoso Ltd. finance department. Handle the content responsibly."
 
-7. Change the disclaimer URL to point to Contoso's privacy statement site:
+7. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
+
+8. Change the disclaimer URL to point to Contoso's privacy statement site:
 
     Set-OMEConfiguration -Identity "Finance Department" -PrivacyStatementURL "https://contoso.com/privacystatement.html"
 
-8. Confirm the warning message for customizing the template with **"Y"** for Yes.
+9. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**..
 
-9. Use the following cmdlet to create a mail flow rule, which applies the custom OME template to all messages sent from the finance team.
+10. Use the following cmdlet to create a mail flow rule, which applies the custom OME template to all messages sent from the finance team.
 
     New-TransportRule -Name "Encrypt all mails from Finance team" -FromScope InOrganization -FromMemberOf "Finance Team" -ApplyRightsProtectionCustomizationTemplate "Finance Department" -ApplyRightsProtectionTemplate Encrypt
 
-10. Leave the PowerShell open.
+11. Leave the PowerShell open.
 
 You have successfully created a new transport rule that applies the custom OME template automatically, when a member of the finance department sends a message to external recipients.
 
@@ -170,7 +172,9 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 
 9. Sign in to your personal email account and open the message from Lynne Robbins.
 
-10. Select **Read the message**.
+10. You should see a message from Lynne Robbins that looks like the image below.  Select **Read the message**.
+
+    ![Sample encrypted email from Lynne Robbins. ](../Media/EncryptedEmail.png)
 
 11. The customized OME configuration gets social IDs activated, because both options are available. Select **Sign in with a One-time passcode** to receive a limited time passcode.
 
