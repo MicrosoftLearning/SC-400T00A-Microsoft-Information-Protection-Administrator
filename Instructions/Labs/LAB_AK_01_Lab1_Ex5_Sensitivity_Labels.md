@@ -1,7 +1,7 @@
 # Exercise 5 - Manage Sensitivity Labels
 
-In the labs of this course, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. 
-Your organization is based in Rednitzhembach Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.
+In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. 
+Your organization is based in Rednitzhembach, Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.
 
 ### Task 1 Enable support for sensitivity labels
 
@@ -9,27 +9,27 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. Open an elevated PowerShell window by selecting the start menu with the right mouse button and then select **Windows PowerShell (Admin)**.
+2. Open an elevated PowerShell window by selecting the start menu with the right mouse button and then select **Windows PowerShell** and run as administrator.
 
-3. Confirm the **User Account Control** window with **Yes**.
+3. Confirm the **User Account Control** window with **Yes** and press Enter.
 
 4. Enter the following cmdlet to install the latest MS Online PowerShell module version:
 
     Install-Module -Name MSOnline
 
-5. Confirm the Untrusted repository security dialog with **Y** for Yes.
+5. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
 
 6. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
 
     Install-Module -Name Microsoft.Online.SharePoint.PowerShell
 
-7. Confirm the Untrusted repository security dialog with **Y** for Yes.
+7. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
 
 8. Enter the following cmdlet to connect to the MS Online service:
 
     Connect-MsolService
 
-9. In the **Sign in to your account** form, sign in as **Joni Sherman**.
+9. In the **Sign in to your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 10. After signing in, select the PowerShell window.
 
@@ -45,7 +45,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
     Connect-SPOService -url $adminurl
 
-14. In the **Sign in to your account** form, sign in as **MOD Administrator**.
+14. In the **Sign in to your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 15. After signing in, select the PowerShell window.
 
@@ -53,7 +53,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
     Set-SPOTenant -EnableAIPIntegration $true
 
-17. Confirm the changes with **Y** for Yes. 
+17. Confirm the changes with **Y** for Yes and press Enter. 
 
 18. Close the PowerShell window.
 
@@ -66,9 +66,9 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman**.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-3. In the **Compliance Center**, in the left navigation pane, select **... Show all** and then select **Information Protection**.  
+3. In the **Compliance Center**, in the left navigation pane, select **... Show all** and then select **Information protection**.  
 
 4. On the Information protection page, select **+ Create a label**.
 
@@ -81,17 +81,17 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 6. Select **Next**.
 
-7. On the **Scope** page, select the option **Files & emails**.
+7. On the **Define the scope for this label** page, select the option **Files & emails**.
 
 8. Select **Next**.
 
-9. On the **Files & email** page, select **Next**.
+9. On the **Choose protection settings for files & emails** page, select **Next**.
 
-10. On the **Auto-Labeling** page, select **Next**.
+10. On the **Auto-Labeling for files and emails** page, select **Next**.
 
-11. On the **Groups & sites** page, select **Next**.
+11. On the **Define protection settings for groups & sites** page, select **Next**.
 
-12. On the **Azure Purview assets (preview)** page, select **Next**. 
+12. On the **Auto-labeling for database columns** page, select **Next**. 
 
 13. On the **Finish** page, select **Create label**.
 
@@ -99,9 +99,9 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 15. Select **Done**.
 
-16. On the Information protection page, highlight (without selecting) the newly created **Internal** label, and select the three dots.
+16. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the **...**.
 
-17. Select the **+ Add sub label** menu item.
+17. Select the **+ Add sub label** from the drop-down menu.
 
 18. The **New sensitivity label** wizard will start. On the **Name & description** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
 
@@ -135,7 +135,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 28. Select **Save**.
 
-29. On the Encryption page, select **Next**.
+29. On the **Encryption** page, select **Next**.
 
 30. On the **Auto-Labeling** page, select **Next**.
 
@@ -149,13 +149,13 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 35. Select **Done**.
 
-You have successfully created a sensitivity label for your organizations internal policies and a sensitivity sublabel for the HR department.
+You have successfully created a sensitivity label for your organizations internal policies and a sensitivity sublabel for the Human Resources (HR) department.
 
 ### Task 3 – Publish Sensitivity Labels
 
-You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their  HR documents.
+You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -196,74 +196,71 @@ You have successfully published the Internal and HR sensitivity labels. Note tha
 
 ### Task 4 – Work with Sensitivity Labels
 
-In this exercise, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
+In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-2. Within the Start bar, select **Word**.
+2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
 
-3. Within the Word application, select **Blank document**.
+3. If a **Get your work done with Office 365** message is shown, close it with the **X** in the upper right corner.
 
-4. Enter the following contents into the word document: 
+4. Select the Microsoft Word symbol from the left side pane to open Word Online.
+
+5. Select **New blank document** to create a new document.
+
+7. If a **Your privacy options** message is shown, close it with selecting **Close**.
+
+6. Enter the following contents in to the word document: 
 
    - Important HR employee document.
-    
-5. In the menu, select **File**, then select **Save**, then select **OneDrive**.
 
-6. In the **Enter file name here** set the file name to: **HR Document**.
+7. Select **Sensitivity** from the top pane top open the dropdown menu. Select **Internal**  to apply the label.
+    Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
+    ![Sensitivity label. ](../Media/word_label.png)
 
-7. Select **Save**.
+8. Select the **Document - Saved** in the upper left of the window, enter **HR Document** as the File Name and press Enter key.
 
-8. At the top of the page, select the menu ribbon **Home**, within the center of the ribbon menu, select **Sensitivity**.
+9. Close the tab to return to the Word Online tab.
 
-9. Select the Label **Internal** and the sub menu **Employee data (HR)**. 
+10. Select the Outlook symbol from the left side pane to open Outlook on the web.
 
-10. Select the **File** menu, select the **Share** sub menu item.
+11. If a welcome message is shown, close it with selecting the **X**.
 
-11. A Send link dialogue will be displayed.
+12. In Outlook on the web, select **New message** from the upper left of the window.
 
-12. Select **Send a copy**, and in the menu select **Word Document**.
+13. In the To field enter the name: **Allan** and and select **Allan Deyoung** from the drop down list.
 
-13. The **Outlook** application will start.
+14. In the subject field enter: **Employee data for HR**
 
-14. Maximize the email message window.
-
-15. Select the **Message** menu item.
-
-16. If the **Message** menu item **Sensitivity** is not visible, select the three dots **...**
-
-17. Select the **Sensitivity** menu, select **Internal** and select  **Employee data (HR)**. 
-
-18. In the To field enter the name: **Allan Deyoung**.
-
-19. Select **Allan Deyoung** from the drop-down list. 
-
-20. Within the email message (the large content panel at the bottom of the page), insert the following message: 
-
+15. Within the email message (the large content panel at the bottom of the page), insert the following message: 
 
     Dear Mr. Deyoung, 
 
-    Find attached the important HR employee document. 
+    Please find attached the important HR employee document. 
 
 	Kind regards,
 
 	Joni Sherman
 
-21. Select **Send**.
+16. Select the paperclip symbol from the bottom menu and select the **HR Document.docx** below **Suggested attachments** to attach the document.
 
-22. Close the **Outlook** application
+17. Select **Send** to send out the email message with attached document.
+
+18. Leave the browser window open.
+
+You have successfully created a HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member.
 
 You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member where the email was also set with a sensitivity label.
 
-### Task 4 – Configure Auto Labeling
+### Task 5 – Configure Auto Labeling
 
-In this task, you will create a Sensitivity Label that will auto label documents and emails found to contain information related to the European Data Protection Law (GPDR).
+In this task, you will create a Sensitivity Label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **... Show all** and then select **Information Protection**.  
+3. In the **Compliance Center**, in the left navigation pane, select **... Show all** and then select **Information protection**.  
 
 4. On the Information protection page, highlight (without selecting) the existing **Internal** label, and select the three dots.
 
@@ -273,7 +270,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
    - **Name**: GDPR Germany
    - **Display name**: GDPR Germany
-   - **Description for users**: This document or email contains data related to the European Data Protection Law (GPDR) for the region Germany.
+   - **Description for users**: This document or email contains data related to the European General Data Protection Regulation (GPDR) for the region Germany.
    - **Description for admins**: This label is auto applied to German GDPR documents.
 
 7. Select **Next**.
@@ -322,7 +319,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 31. A side bar called **Sensitivity labels to publish** will appear on the right.
 
-32. Select the **Internal/GDPR Germany** checkbox.
+32. Select the **Internal** and **Internal/GDPR Germany** checkbox.
 
 33. Select **Add**.
 

@@ -8,17 +8,17 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman**.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-3. Select **Data classification** from the left-side pane.
+3. Select **Data classification** from the left pane.
 
-4. If a **What is data classification?** message is displayed, select **Close** and **Sensitive info types** from the top pane.
+4. If a **What is data classification?** message is displayed, select **Close** and select **Sensitive info types** from the top pane.
 
-5. Select **(+) Create info type ** to open the wizard for a new sensitive information type.
+5. Select **(+) Create info type** to open the wizard for a new sensitive information type.
 
-6. On the **Choose a name and description** page, enter into *Contoso Employee IDs* into **Name**.
+6. On the **Choose a name and description** page, type *Contoso Employee IDs* into **Name**.
 
-7. Enter *Pattern for Contoso employee IDs.* to the **Description** field and select **Next**.
+7. Type *Pattern for Contoso employee IDs.* to the **Description** field and select **Next**.
 
 8. On the **Requirements for matching** page, select **(+) Add an element**.
 
@@ -26,19 +26,19 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 10. Enter the following to the input field: *\s[A-Z]{3}[0-9]{6}\s*
 
-11. Below **Supporting elements**, select **Add supporting elements** and **Contains this keyword list**.
+11. Below **Supporting elements**, select **+ Add supporting elements** in the drop-down menu select **Contains this keyword list**.
 
-12. Enter the following into the text box below **Keyword list**: *Employee* and *IDs*
+12. Enter the following into the text box below **Keyword list**: *Employee*, *IDs*
 
-13. Decrease the **Character proximity** to *100* characters.
+13. Decrease the **Character proximity** value to *100* characters.
 
 14. Select **Next**.
 
 15. Finish the wizard by selecting **Finish**.
 
-16. In the **compliance** window, select **Yes**.
+16. In the **compliance** window, select **Yes** to test the created sensitive type.
 
-17. Select the **Search** box in the upper right-side, type *Contoso* and press the enter key.
+17. Select the **Search** box in the upper right-side of the Data classification area, type *Contoso* and press the enter key.
 
 18. Select the newly created sensitive information type *Contoso Employee IDs* to open the right-side pane.
 
@@ -54,21 +54,21 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. To create the required Azure AD security group, sign out of Joni Sherman's account by selecting the JS in the upper right corner and select **Sign out**.
+2. To create the required Azure AD security group, sign out of Joni Sherman's account by selecting the user image in the upper right corner and select **Sign out**.
 
 3. Close the browser window and open a new browser window.
 
 4. In **Microsoft Edge**, navigate to **https://admin.microsoft.com**.
 
-5. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator**.
+5. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-6. From the left side pane, select **Groups** and select **Active groups**.
+6. From the left pane, select **Groups** and select **Active groups**.
 
 7. Select **Add a group** from the top pane.
 
 8. On the **Choose a group type** page, select **Security** and **Next**.
 
-9. On the **Set up the basics**, enter the following to the **Name** field: *EDM_DataUploaders*
+9. On the **Set up the basics**, enter the following to the **Name** field: *EDM_DataUploaders*.  In the **Description** field enter *people who will upload data for EDM*.
 
 10. Select **Next**.
 
@@ -80,9 +80,9 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 14. Select the **Members** tab and select **View all and manage members**.
 
-15. In the right side pane, select **(+) Add members**.
+15. In the **Manage group members** screen, select **(+) Add members**.
 
-16. Select the checkbox left from **Joni Sherman**, select **Save** and **Close**.
+16. Select **Joni Sherman**, select **Save changes**.
 
 17. Verify **Joni Sherman** is listed below **Group members** and select **Close**.
 
@@ -96,7 +96,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 22. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
 
-23. Navigate to **Data classification** and **Exact data matches **from the top pane.
+23. Navigate to **Data classification** and select **Exact data matches** tab from the top pane.
 
 24. Select **(+) Create EDM schema** to create a new schema definition.
 
@@ -126,7 +126,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 37. Select **Save**.
 
-38. Select **EDM sensitive info types** from the left-side pane.
+38. Select **EDM sensitive info types** from the left pane.
 
 39. Select **(+) Create EDM sensitive info type** to open the **EDM rule package** wizard.
 
@@ -138,11 +138,11 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 43. On the **Define patterns for this EDM sensitive info type** page, select **(+) Create pattern**.
 
-44. On the **New pattern** right-side pane, to the Primary element field, select *EmployeeID*.
+44. On the **New pattern** right-side pane, in the Primary element field, select *EmployeeID*.
 
 45. Below **Choose primary element's sensitive info type**, select **Choose sensitive info type**. 
 
-46. To the **Search** bar, enter *Contoso* and press the enter key.
+46. In the **Search** bar, enter *Contoso* and press the enter key.
 
 47. Select **Contoso Employee IDs** and select **Done**.
 
@@ -150,13 +150,13 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 49. Select **Next**.
 
-50. To the **Character proximity** field, enter *100*.
+50. In the **Character proximity** field, enter *100*.
 
 51. Select **Next**.
 
-52. To the **Name** field, enter *Contoso Employee EDM*.
+52. In the **Name** field, enter *Contoso Employee EDM*.
 
-53. To the **Description for admins** field, enter *EDM-based sensitive information type for employee personal information.*.
+53. In the **Description for admins** field, enter *EDM-based sensitive information type for employee personal information.*.
 
 54. Select **Next**, review the settings and select **Submit**.
 
@@ -214,7 +214,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
 19. Close the Notepad window.
 
-20. Select the windows symbol in the taskbar with the right mouse button and select **PowerShell (Admin)**.
+20. Select the windows symbol in the taskbar with the right mouse button and select **PowerShell** and run as administrator.
 
 21. When the **User Account Control** window opens, select **Yes**.
 
@@ -222,33 +222,33 @@ To associate the EDM-based classification with a database containing sensitive d
 
     cd "C:\Program Files\Microsoft\EdmUploadAgent"
 
-23. Authorize with your Account to upload the database to your tenant:
+23. Authorize with your Account to upload the database to your tenant by running the following:
 
     .\EdmUploadAgent.exe /Authorize
 
-24. When the **Pick an account** window is displayed, select **Joni Sherman** and sign in.
+24. When the **Pick an account** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-25. Download the database schema definition of the EDM-based classification sensitive information type:
+25. Download the database schema definition of the EDM-based classification sensitive information type by running the following script in PowerShell:
 
     .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"
 
-26. Note: If the last command fails, it possibly takes more time until the **EDM_DataUploaders** group membership is applied. It can take up to one hour until it is possible to download the schema file.
+    Note: If the last command fails, it possibly takes more time until the **EDM_DataUploaders** group membership is applied. It can take up to one hour until it is possible to download the schema file.
 
-27. Hash the database file and upload it to the EDM-based classification sensitive information type:
+26. Hash the database file and upload it to the EDM-based classification sensitive information type by running the following script in PowerShell:
 
     .\EdmUploadAgent.exe /UploadData /DataStoreName employeedb /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedb.xml"
 
-28. Check the upload progress until the State changes to Completed:
+27. Check the upload progress until the state changes to completed then run the following PowerShell command:
 
     .\EdmUploadAgent.exe /GetSession /DataStoreName employeedb
 
-29. Close the PowerShell window.
+28. Close the PowerShell window.
 
 You have successfully hashed and uploaded a database file for a EDM-based classification sensitive information type.
 
 ### Task 4 – Create Keyword Dictionary
 
-Several violations of personal information leakage happened, when users sent out emails after colleagues reported in on sick leave and the reason or disease was sent out.
+Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason or disease was sent out.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -256,7 +256,7 @@ Several violations of personal information leakage happened, when users sent out
 
 3. Select **Data classification** from the left-side pane and **Sensitive info types** from the top pane.
 
-4. Select **(+) Create info type ** to open the wizard for a new sensitive information type.
+4. Select **(+) Create info type** to open the wizard for a new sensitive information type.
 
 5. On the **Choose a name and description** page, enter *Contoso Diseases List* into **Name**.
 
@@ -266,7 +266,7 @@ Several violations of personal information leakage happened, when users sent out
 
 8. Select the dropdown field below **Detect content containing** and select **Dictionary (Large keywords)**.
 
-10. Select **(+) Add a dictionary** and **Create new keyword dictionaries**, to open the right-side pane.
+10. Select **(+) Add a dictionary** and **Create new keyword dictionaries** to open the Keyword dictionary pane.
 
 11. Below **Choose a name for your keyword dictionary**, enter *Diseases Dictionary*.
 
@@ -298,7 +298,7 @@ You have successfully created a new sensitive information type based on a keywor
 
 ### Task 5 – Work with custom Sensitive Information Types
 
-Custom Sensitive Information Types always must be tested first, before using them in policies and data loss or leakage can happen, because of a malfunctioning custom search pattern. 
+Custom Sensitive Information Types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern. 
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -306,13 +306,13 @@ Custom Sensitive Information Types always must be tested first, before using the
 
 3. Enter the following text to the notepad window:
 
-    Employee Joni Sherman with ID CSO123456 is on absence because of the flu/influenza.
+    Employee Joni Sherman EMP123456 is on absence because of the flu/influenza.
 
 4. Select **File** and **Save As**.
 
 5. Select Documents in on the left-side pane.
 
-6. In the **File name** field, enter *SitTestData* and select **Save**.
+6. In the **File name** field, enter *SickTestData* and select **Save**.
 
 7. Close the Notepad window.
 
@@ -328,7 +328,7 @@ Custom Sensitive Information Types always must be tested first, before using the
 
 13. On the **Upload file to test** page, select **Click to Browse**.
 
-14. Select **Documents** from the left pane, select the file with the name *SitTestData* and select **Open**.
+14. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
 
 15. Select **Test** to start the analysis.
 
@@ -342,7 +342,7 @@ Custom Sensitive Information Types always must be tested first, before using the
 
 20. On the **Upload file to test** page, select **Click to Browse**.
 
-14. Select **Documents** from the left pane, select the file with the name *SitTestData* and select **Open**.
+14. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
 
 15. Select **Test** to start the analysis.
 

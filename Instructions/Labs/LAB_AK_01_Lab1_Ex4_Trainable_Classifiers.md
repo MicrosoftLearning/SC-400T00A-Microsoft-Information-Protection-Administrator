@@ -4,19 +4,19 @@ The Contoso Ltd. tenant contains a SharePoint site collection with the name "Sal
 
 ### Task 1 – Activate trainable classifiers
 
-Before you can create custom trainable classifiers, you need to activate the feature in a tenant. Because for the activate the Global Admin permissions are required, you will sign out of Joni Sherman's account and use the MOD Administrator to activate the feature first.
+Before you can create custom trainable classifiers, you need to activate the feature in a tenant. To activate the Global Admin permissions are required, you will sign out of Joni Sherman's account and use the MOD Administrator to activate the feature first.
 
 Note: After activating trainable classifiers in a tenant, it takes between 7 and 14 days before any custom trainable classifiers can be created. The button to create a new trainable classifier will not be available until the whole activation process is finished.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. Sign out of Joni Sherman's account by selecting the JS in the upper right corner and select **Sign out**.
+2. Sign out of Joni Sherman's account by selecting the image in the upper right corner and select **Sign out**.
 
 3. Close the browser window and open a new browser window.
 
 4. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com**.
 
-5. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator**.
+5. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator**  admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 6. Navigate to **Data Classification** from the left side navigation pane.
 
@@ -30,7 +30,7 @@ Note: After activating trainable classifiers in a tenant, it takes between 7 and
 
 11. Leave the client open.
 
-You have successfully activated trainable classifier sin your tenant. You will now need to wait between 7 and 14 days until the **Create trainable classifiers** button becomes available.
+You have successfully activated trainable classifiers in your tenant. You will now need to wait between 7 and 14 days until the **Create trainable classifiers** button becomes available.  If you are in a classroom setting and do not have 7 to 14 days to wait for Trainable Classifiers to complete processing, you may perform the remainder of the tasks in this exercise by logging into the tenant you were provided later when the Trainable Classifiers processing is complete.  Your tenant should still be active.
 
 ### Task 2 – Create a trainable classifier
 
@@ -44,7 +44,7 @@ After trainable classifiers have been activated successfully, the **Create train
 
 4. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com**.
 
-5. When the **Pick an account** page is displayed, select **Use another account** and sign in as **Joni Sherman**.
+5. When the **Pick an account** page is displayed, select **Use another account** and sign in as **Joni Sherman**. JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 6. Navigate to **Data Classification** from the left side navigation pane.
 
