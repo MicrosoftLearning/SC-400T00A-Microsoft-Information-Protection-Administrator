@@ -78,7 +78,7 @@ You have successfully deactivated the usage of foreign identity providers, such 
 
 ### Task 3 – Test default OME template
 
-You need to confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant.
+You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant.
 
 1.	Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
@@ -98,11 +98,11 @@ You need to confirm that no social IDs dialog is displayed for external recipien
 
 9. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Secret Message** to the subject line and **My super-secret message.** to the body.
 
-10. From the top pane, select **Encrypt** to encrypt the message.  Once you've successfully encrypted the message you should see a notice that says something like "...This message is encrypted."
+10. From the top pane, select **Encrypt** to encrypt the message.  Once you've successfully encrypted the message, you should see a notice that says something like "...This message is encrypted."
 
 11. Select **Send** to send the message.
 
-12. Sign in to your personal email account and open the message from Lynne Robbins.  If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message.  If you sent the email to another email service (like @google.com) you may have to perform the next steps to process the encryption and read the message.
+12. Sign in to your personal email account and open the message from Lynne Robbins.  If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message.  If you sent the email to another email service (like @google.com), you may have to perform the next steps to process the encryption and read the message.
 
 13. Select **Read the message**.
 
@@ -168,21 +168,21 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 
 5. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter *Finance Report* to the subject line and enter *Secret finance information.* to the body.
 
-8. Select **Send** to send the message.
+6. Select **Send** to send the message.
 
-9. Sign in to your personal email account and open the message from Lynne Robbins.
+7. Sign in to your personal email account and open the message from Lynne Robbins.
 
-10. You should see a message from Lynne Robbins that looks like the image below.  Select **Read the message**.
+8. You should see a message from Lynne Robbins that looks like the image below.  Select **Read the message**.
 
     ![Sample encrypted email from Lynne Robbins. ](../Media/EncryptedEmail.png)
 
-11. The customized OME configuration gets social IDs activated, because both options are available. Select **Sign in with a One-time passcode** to receive a limited time passcode.
+9. The customized OME configuration gets social IDs activated, because both options are available. Select **Sign in with a One-time passcode** to receive a limited time passcode.
 
-12. Go to your personal email portal and open the message with subject **Your one-time passcode to view the message**.
+10. Go to your personal email portal and open the message with subject **Your one-time passcode to view the message**.
 
-13. Copy the passcode, paste it in to the OME portal and select **Continue**.
+11. Copy the passcode, paste it in to the OME portal and select **Continue**.
 
-14. Review the encrypted message with custom branding.
+12. Review the encrypted message with custom branding.
 
 You have successfully tested the new customized OME template. 
 

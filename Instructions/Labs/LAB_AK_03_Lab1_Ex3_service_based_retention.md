@@ -4,7 +4,7 @@ You assume the role of Joni Sherman, a Compliance Admin for Contoso Ltd. The leg
 
 ### Task 1 – Configure Mailbox Holds
 
-In this exercise, you will activate a Mailbox Hold to prevent any content in the employee's mailbox from being deleted.
+In this task, you will activate a Mailbox Hold to prevent any content in the employee's mailbox from being deleted.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
@@ -29,29 +29,29 @@ You have successfully activated the Mailbox Hold on a mailbox in your environmen
 
 ### Task 2 – Recover SharePoint Documents
 
-In this exercise, you will delete and restore the deleted document to make sure you can restore documents the employee might delete after he is informed about the litigation hold against his mailbox.
+In this task, you will delete and restore the deleted document to make sure you can restore documents the employee might delete after he is informed about the litigation hold against his mailbox.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 2. In **Microsoft Edge**, navigate to **https://www.office.com** and log Microsoft 365 as **Joni Sherman**.
 
-5. In the Microsoft O365 landing page, select the App launcher icon in the top-left corner with nine dots, then select **SharePoint** from the submenu.
+3. In the Microsoft O365 landing page, select the App launcher icon in the top-left corner with nine dots, then select **SharePoint** from the submenu.
 
-6. On the SharePoint landing page, select the **Benefits @ Contoso** SharePoint site.
+4. On the SharePoint landing page, select the **Benefits @ Contoso** SharePoint site.
 
-7. In the left navigation pane, select **Documents**.
+5. In the left navigation pane, select **Documents**.
 
-8. Highlight **Vacation Policies.pptx** by selecting the checkbox in front of it.
+6. Highlight **Vacation Policies.pptx** by selecting the checkbox in front of it.
 
-9. in the top action bar, select **Delete**.
+7. in the top action bar, select **Delete**.
 
-10. In the **Delete?** dialog, select **Delete**.
+8. In the **Delete?** dialog, select **Delete**.
 
-11. In the left navigation pane, select **Recycle bin**, then highlight **Vacation Policies.pptx** by selecting the checkbox in front of it.
+9. In the left navigation pane, select **Recycle bin**, then highlight **Vacation Policies.pptx** by selecting the checkbox in front of it.
 
-12. In the top action bar, select **Restore**.
+10. In the top action bar, select **Restore**.
 
-In the left navigation pane, select **Documents** and review if the file has been restored.
+11. In the left navigation pane, select **Documents** and review if the file has been restored.
 
 You have successfully recovered a document from a SharePoint Site.
 

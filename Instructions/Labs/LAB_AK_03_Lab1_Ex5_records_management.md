@@ -1,10 +1,10 @@
 # Exercise 5 - Configure Records Management
 
-Within this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Regulatory requirements for your organization include having a definitive copy of the employee provided health insurance information available when your company covers the insurance costs. You are tasked with making sure the records are kept.
+In this exercise, you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Regulatory requirements for your organization include having a definitive copy of the employee provided health insurance information available when your company discusses the insurance costs. You are tasked with making sure the records are kept.
 
 ### Task 1 – Create File Plan Labels
 
-In this exercise, you will create a file plan label that allows your HR department to label content containing health insurance information your employees are required to provide when being hired.
+In this task, you will create a file plan label that allows your HR department to label content containing health insurance information that your employees are required to be provided when they are hired.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -45,7 +45,7 @@ You successfully created a retention label using file plan that keeps all labele
 
 ### Task 2 – Publish Labels
 
-In this exercise, you will publish the label so users of the HR department can apply it to content containing health insurance information.  
+In this task, you will publish the label so users of the HR department can apply it to content containing health insurance information.  
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -69,11 +69,11 @@ In this exercise, you will publish the label so users of the HR department can a
 
 10. Review the configuration of your policy and select **Submit**.
 
-You successfully started the process of publishing a retention label including a record. The publishing of labels may take up to 24 hours. After the label is published the HR department can use it to label files containing the health insurance information they are required to keep a record of.
+You successfully started the process of publishing a retention label including a record. The publishing of labels may take up to 24 hours. After the label is published the HR department can use it to label files containing the health insurance information, they are required to keep a record of.
 
 ### Task 3 – Work with Records
 
-In this task, you will assign the published record label to an email in Outlook and observe the results of applying the record. You might need to wait for the 24 hour publishing delay.
+In this task, you will assign the published record label to an email in Outlook and observe the results of applying the record. You might need to wait for the 24-hour publishing delay.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 

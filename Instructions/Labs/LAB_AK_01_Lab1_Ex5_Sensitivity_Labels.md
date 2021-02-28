@@ -95,7 +95,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 13. On the **Finish** page, select **Create label**.
 
-14. The label will be created and when complete a message will display **Your label was created**
+14. The label will be created and when complete a message will display: **Your label was created**
 
 15. Select **Done**.
 
@@ -108,7 +108,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
    - **Name**: Employee data (HR)
    - **Display name**: Employee data (HR)
    - **Description for users**: This HR label is the default label for all specified documents in the HR Department.
-   - **Description for admins**: This label is created in consultation with Ms. Jones (Head of HR department). Please contact her, when you want to chance settings of the label.
+   - **Description for admins**: This label is created in consultation with Ms. Jones (Head of HR department). Contact her, when you want to chance settings of the label.
 
 19. Select **Next**.
 
@@ -208,29 +208,27 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 5. Select **New blank document** to create a new document.
 
-7. If a **Your privacy options** message is shown, close it with selecting **Close**.
+6. If a **Your privacy options** message is shown, close it with selecting **Close**.
 
-6. Enter the following contents in to the word document: 
+7. Enter the following contents into the word document: 
 
    - Important HR employee document.
 
-7. Select **Sensitivity** from the top pane top open the dropdown menu. Select **Internal**  to apply the label.
-    Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
+8. Select **Sensitivity** from the top pane top open the dropdown menu. Select **Internal**  to apply the label.
+    Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
     ![Sensitivity label. ](../Media/word_label.png)
 
-8. Select the **Document - Saved** in the upper left of the window, enter **HR Document** as the File Name and press Enter key.
+9. Select the **Document - Saved** in the upper left of the window, enter **HR Document** as the File Name and press Enter key.
 
-9. Close the tab to return to the Word Online tab.
-
-10. Select the Outlook symbol from the left side pane to open Outlook on the web.
+10. Close the tab to return to the Word Online tab. Select the Outlook symbol from the left side pane to open Outlook on the web.
 
 11. If a welcome message is shown, close it with selecting the **X**.
 
 12. In Outlook on the web, select **New message** from the upper left of the window.
 
-13. In the To field enter the name: **Allan** and and select **Allan Deyoung** from the drop down list.
+13. In the To field enter the name: **Allan** and select **Allan Deyoung** from the drop-down list.
 
-14. In the subject field enter: **Employee data for HR**
+14. In the subject field, enter: **Employee data for HR**
 
 15. Within the email message (the large content panel at the bottom of the page), insert the following message: 
 
@@ -248,7 +246,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 18. Leave the browser window open.
 
-You have successfully created a HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member.
+You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member.
 
 You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member where the email was also set with a sensitivity label.
 
@@ -295,56 +293,56 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 15. Press the enter button, the results will display sensitivity info types related to Germany.
 
-20. Press the **Select all** check box.
+16. Press the **Select all** check box.
 
-21. Select **Add**.
+17. Select **Add**.
 
-22. Select **Next**.
+18. Select **Next**.
 
-23. On the **Groups & sites** page, select **Next**.
+19. On the **Groups & sites** page, select **Next**.
 
-24. On the **Azure Purview assets (preview)** page, select **Next**. 
+20. On the **Azure Purview assets (preview)** page, select **Next**. 
 
-25. On the **Finish** page, select **Create label**.
+21. On the **Finish** page, select **Create label**.
 
-26. The label will be created and when complete a message will display **Your label was created**.
+22. The label will be created and when complete a message will display: **Your label was created**.
 
-27. Select **Done**.
+23. Select **Done**.
 
-28. On the **Information protection** page, select **Publish labels**.
+24. On the **Information protection** page, select **Publish labels**.
 
-29. The Publish sensitivity labels wizard will start.
+25. The Publish sensitivity labels wizard will start.
 
-30. On the **Choose labels to publish** page, select the **Choose sensitivity labels to publish link**.
+26. On the **Choose labels to publish** page, select the **Choose sensitivity labels to publish link**.
 
-31. A side bar called **Sensitivity labels to publish** will appear on the right.
+27. A side bar called **Sensitivity labels to publish** will appear on the right.
 
-32. Select the **Internal** and **Internal/GDPR Germany** checkbox.
+28. Select the **Internal** and **Internal/GDPR Germany** checkbox.
 
-33. Select **Add**.
+29. Select **Add**.
 
-34. On the **Choose labels to publish** page, select **Next**.
+30. On the **Choose labels to publish** page, select **Next**.
 
-35. On the **Publish to users and groups page**, select **Next**.
+31. On the **Publish to users and groups page**, select **Next**.
 
-36. On the **Policy settings** page, select **Next**.
+32. On the **Policy settings** page, select **Next**.
 
-37. On the **Name & Description** page, enter the following information:
+33. On the **Name & Description** page, enter the following information:
 
    - **Name**: GDPR Germany policy
    - **Enter a description for your sensitivity label policy**: This auto apply sensitivity labels policy is for the GDPR region of Germany.
 
-38. Select **Next**.
+34. Select **Next**.
 
-39. On the **Review your settings** page, select **Submit**.
+35. On the **Review your settings** page, select **Submit**.
 
-40. The policy will be created and when complete a message will display, **New policy created**.
+36. The policy will be created and when complete a message will display, **New policy created**.
 
-41. Select **Done**.
+37. Select **Done**.
 
 You have successfully created and published an auto apply sensitivity label for GDPR documents in the region Germany.
 
-Note that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
+Be aware that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
 
 
 # Proceed to Lab 2 - Exercise 1

@@ -4,9 +4,9 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 ### Task 1 – Enable device onboarding
 
-In this exercise, you will turn on device onboarding for your organization. 
+In this task, you will turn on device onboarding for your organization. 
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -22,7 +22,7 @@ You have now enabled device onboarding and can start to onboard Windows 10 devic
 
 ### Task 2 - Onboard a device to Endpoint DLP
 
-In this exercise, you will use the local script option to onboard a Windows 10 device to allow it to be protected by Endpoint DLP policies.
+In this task, you will use the local script option to onboard a Windows 10 device to allow it to be protected by Endpoint DLP policies.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
@@ -36,25 +36,32 @@ In this exercise, you will use the local script option to onboard a Windows 10 d
 
 6. In the download dialog, select **Save**, then select **Open folder**.
 
-7. Extract the ZIP-file to the **Desktop**. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
+7. Extract the ZIP-file to the **Desktop** of LON-CL1. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
 
-8. In the start menu, search for **Command Prompt** and select **Run as Administrator**.
+8. In the start menu, search for **Command Prompt** and right-click the file and select **Run as Administrator**.  You might encounter a Windows SmartScreen warning box, if you do choose **Run anyway**.  If you encounter the User Account Control window select **Yes** to all this script to make changes to your PC.
 
-9. In the **Command Prompt**, run the script by typing **%userprofile%\Desktop\DeviceComplianceLocalOnboardingScript.cmd**, then select **Y** to confirm.
+9. In the **Command Prompt** screen type **Y** to confirm, and then press Enter.
 
-10. When the script completes **Press any key to continue**.
+10. When the script completes **Press any key to continue**.  It can take a minute to complete the onboarding.
 
-7. Open the start menu and select **Access work or school**.
+11. Open the start menu then find and select **Access work or school**.
 
-8. In the **Access work or school** window, select **+ Connect**.
+12. In the **Access work or school** window, select **+ Connect**.
 
-9. In the **Set up a work or school account** dialog, select the **Join this device to Azure Active Directory** link and sign in as **Joni Sherman**.
+13. In the **Set up a work or school account** dialog, select the **Join this device to Azure Active Directory** link and sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-10. In the **Make sure this is your organization** dialog, review the tenant url and select **Join**.
+14. In the **Make sure this is your organization** dialog, review the tenant url and select **Join**.  If your device fails to join you may need to troubleshoot your Azure AD configuration join settings. Do the following to ensure devices may be joined:
+        1. Open a new browser tab and go to the Azure Portal https://portal.azure.com
+        1. Sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com
+        1. Select **Manage Azure Active Directory**.
+        1. Select **Devices**
+        1. Select **Device settings**
+        1. Scroll-down until you see **Maximum number of devices per user** change the value to **20 (Recommended)**
+        1. Once you have updated the setting re-try to connect your device.
 
-11. Select **Done**.
+15. Once your device has connected select **Done**.
 
-12. Restart the Client 1 VM (LON-CL1).
+16. Restart the Client 1 VM (LON-CL1).
 
 You have successfully onboarded a device and joined it to Azure AD to be protected by Endpoint DLP policies.
 
@@ -68,11 +75,11 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-4. In the **Data loss prevention** window, select **+Create policy** to start the wizard for creating a new data loss prevention policy.
+4. In the **Data loss prevention** window select the **Policies** tab, and then select **+Create policy** to start the wizard for creating a new data loss prevention policy.
 
 5. On the **Start with a template or create a custom policy** page, you want to select **Custom** in the left pane and **Custom policy** in the middle pane; however, by default, both these options should already be selected (if not, then select them now), select **Next**.
 
-6. In the **Name your DLP policy** page, type **Credit Card Endpoint DLP Policy** in the **Name** field and **Protect credit card numbers from being shared on Endpoints.** in the **Description** field. Select **Next**.
+6. In the **Name your DLP policy** page, type *Credit Card Endpoint DLP Policy* in the **Name** field and *Protect credit card numbers from being shared on Endpoints.* in the **Description** field. Select **Next**.
 
 7. On the **Choose locations to apply the policy** page, select only the **Devices** option and then select **Next**.
 
@@ -94,7 +101,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 16. In the dropdown menu behind **Copy to Clipboard** select **Block**.
 
-16. On the **Create rule** page, in the **User Notifications** section, select the switch to put it in the **On** position.
+17. On the **Create rule** page, in the **User Notifications** section, select the switch to put it in the **On** position.
 
 18. In the **Incident reports** section, in the **Use this severity in admin alerts and reports** dropdown, select **Low**.
 
@@ -112,7 +119,7 @@ You have successfully activated the DLP Policy. If the policy detects an attempt
 
 ### Task 4 - Configure Endpoint DLP Settings
 
-In this exercise, you will configure a file path exclusion to a folder on your Windows 10 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
+In this task, you will configure a file path exclusion to a folder on your Windows 10 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -124,7 +131,7 @@ In this exercise, you will configure a file path exclusion to a folder on your W
 
 5. In the **Endpoint DLP settings** tab, expand the **file path exclusions** area and select **+ Add file path exclusion**.
 
-6. In the **Enter a path to exclude** field, type **C:\FilePathExclusionTest**, then select **+**.
+6. In the **Enter a path to exclude** field, type *C:\FilePathExclusionTest*, then select **+**.
 
 7. Select **Add**.
 

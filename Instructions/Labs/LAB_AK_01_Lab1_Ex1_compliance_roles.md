@@ -12,13 +12,13 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 3. Select **Confirm** to accept the default browser settings and **Continue without signing in**.
 
-4. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 Admin center as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+4. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 Admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 5. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
 6. Close the password save dialog from the bottom with Never, to not save the default global admins credentials in your browser.
 
-7. If a welcome screen is displayed, close it. If the Office 365 apps notification appear, also close it.
+7. If a welcome screen is displayed, close it. If the Office 365 apps notification appears, also close it.
 
 8. If a welcome window is displayed, select Get started and close it.
 
@@ -42,7 +42,7 @@ You have successfully assigned Joni Sherman the Compliance Administrator role, w
 
 ### Task 2 – Explore the Compliance Center
 
-In this task, you will sign out of the global admin account and sign-in again as Joni Sherman. Because Joni Sherman just got the Compliance admin role assigned, her account will be sufficient for most of this labs exercises.
+In this task, you will sign out of the global admin account and sign-in again as Joni Sherman. Because Joni Sherman just got the Compliance admin role assigned, her account will be sufficient for most of this lab's exercises.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. 
 

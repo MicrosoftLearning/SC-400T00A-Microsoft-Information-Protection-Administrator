@@ -68,7 +68,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 8. On the **Choose a group type** page, select **Security** and **Next**.
 
-9. On the **Set up the basics**, enter the following to the **Name** field: *EDM_DataUploaders*.  In the **Description** field enter *people who will upload data for EDM*.
+9. On the **Set up the basics**, enter the following to the **Name** field: *EDM_DataUploaders*.  In the Description field, enter *people who will upload data for EDM*.
 
 10. Select **Next**.
 
@@ -342,11 +342,11 @@ Custom Sensitive Information Types should always be tested before using them in 
 
 20. On the **Upload file to test** page, select **Click to Browse**.
 
-14. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
+21. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
 
-15. Select **Test** to start the analysis.
+22. Select **Test** to start the analysis.
 
-16. On the **Match results** page, review the found match.
+23. On the **Match results** page, review the found match.
 
 You have successfully tested the two custom sensitive information types and validated the search pattern recognizes the desired patterns. You have finished the creation of sensitive information types and can proceed with the next exercise.
 

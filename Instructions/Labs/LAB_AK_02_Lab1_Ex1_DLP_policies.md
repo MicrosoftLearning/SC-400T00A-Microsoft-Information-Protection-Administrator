@@ -46,15 +46,15 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 20. In the **Incident reports** section, in the **Use this severity in admin alerts and reports** dropdown, select **Low**.
 
-20. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
+21. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
 
-21. Select **Save**, then select **Next**.
+22. Select **Save**, then select **Next**.
 
-22. On the **Test or turn on the policy** page select **I'd like to test it out first** and select **Show policy tips while in test mode**.
+23. On the **Test or turn on the policy** page select **I'd like to test it out first** and select **Show policy tips while in test mode**.
 
-23. Select **Next** and review the policy configuration.
+24. Select **Next** and review the policy configuration.
 
-24. Select **Submit** to create the policy.
+25. Select **Submit** to create the policy.
 
 You have now created a DLP policy that scans for Credit Card numbers in Microsoft Teams chats and channels and notifies allows users to provide a business justification to override the policy.
 
@@ -68,7 +68,7 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-4. In the **Data loss prevention** window select the **Policies** tab, then select the **Credit Card DLP policy** policy and then select **Edit policy** to open the policy wizard.
+4. In the **Data loss prevention** window select the **Policies** tab, then select the policy named **Credit Card DLP policy** and then select **Edit policy** to open the policy wizard.
 
 5. On the **Name your DLP policy** page, select **Next**.
 
@@ -112,7 +112,7 @@ In this task, you will activate the credit card information DLP policy you creat
 
 3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-4. In the **Data loss prevention** window select the **Policies** tab, and then select the **Credit Card DLP policy** policy and then select **Edit policy** to open the policy wizard.
+4. In the **Data loss prevention** window select the **Policies** tab, and then select the policy named **Credit Card DLP policy** and then select **Edit policy** to open the policy wizard.
 
 5. Select **Next** until you reach the **Test or turn on the policy** page and then select **Yes, turn it on right away**.
 
@@ -192,7 +192,7 @@ You have now created a file policy that will continuously scan files saved in On
 
 Your company uses PowerAutomate flows to share data between SharePoint Online and SalesForce. In this task, you will create a DLP policy for PowerPlatform that allows your existing flows to keep working, but prevents the creation of flows that will share data between SharePoint Online and Apps defined as non-business.
 
-1.Log into the Client 2 VM (LON-CL1) as the **lon-cl2\admin** account.
+1. Log into the Client 2 VM (LON-CL1) as the **lon-cl2\admin** account.
 
 2. In **Microsoft Edge**, navigate to **https://admin.powerplatform.microsoft.com** and log into the Power Platform Admin Center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
@@ -200,7 +200,7 @@ Your company uses PowerAutomate flows to share data between SharePoint Online an
 
 4. On the **Data policies** page, select **+ New Policy**.
 
-5. On the **Name your policy** page, type *Tenant wide SharePoint Policy*, then select **Next**.
+5. On the **Name your policy** page, type *Tenant-wide SharePoint Policy*, then select **Next**.
 
 6. On the **non-business** tab, select **SharePoint** and **Salesforce**, then select **Move to Business** at the top of the page.
 
