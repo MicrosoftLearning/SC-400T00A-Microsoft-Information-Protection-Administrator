@@ -1,6 +1,6 @@
 # Exercise 3 - Manage DLP reports
 
-You are John Doe, the Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. You are informed that a new compliance officer will help you review DLP reports.
+You are Joni Sherman, the Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. You are informed that a new compliance officer will help you review DLP reports.
 
 ### Task 1 - Grant access to DLP reports
 
@@ -35,3 +35,5 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 3. In the left navigation pane, select **Reports** and observe your access to the Reports Dashboard.
 
 You now verified that the access has been configured and the new compliance officer can view reports in the Compliance Center.
+
+## You have completed the lab.

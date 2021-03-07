@@ -345,4 +345,4 @@ You have successfully created and published an auto apply sensitivity label for 
 Be aware that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
 
 
-# Proceed to Lab 2 - Exercise 1
+## You have completed the lab.

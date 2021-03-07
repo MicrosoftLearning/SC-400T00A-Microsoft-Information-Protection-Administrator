@@ -98,3 +98,5 @@ In this task, you will assign the published record label to an email in Outlook 
 11. With the right mouse button, select the email item you labeled with **Employee Data**, and select **Assign Policy**. You should still see the **Employee Data** label applied.
 
 You have successfully applied a retention label with a record to an email and observed that it now cannot be deleted. 
+
+## You have completed the lab.
