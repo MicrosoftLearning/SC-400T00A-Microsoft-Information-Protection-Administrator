@@ -14,7 +14,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 4. Enter the following cmdlet to install the latest Exchange Online PowerShell module version:
 
-    Install-Module ExchangeOnlineManagement
+    `Install-Module ExchangeOnlineManagement`
 
 5. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**.
 
@@ -22,7 +22,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 7. Enter the following cmdlet to change your execution policy and press **Enter**
 
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
 8. Confirm the Execution Policy Change with  **Y** for Yes and press **Enter**. 
 
@@ -32,17 +32,17 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 11. Enter the following cmdlet to use the Exchange Online PowerShell module and connect to your tenant:
 
-    Connect-ExchangeOnline
+    `Connect-ExchangeOnline`
 
 12. When the **Sign in** window is displayed, sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 13. Verify Azure RMS and IRM is activated in your tenant by using the following cmdlet:
 
-    Get-IRMConfiguration | fl AzureRMSLicensingEnabled
+    `Get-IRMConfiguration | fl AzureRMSLicensingEnabled`
 
 14. Test the Azure RMS templates used for Office 365 Message Encryption against the other pilot user **Megan Bowen**:
 
-    Test-IRMConfiguration -Sender MeganB@contoso.com
+    `Test-IRMConfiguration -Sender MeganB@contoso.com`
 
 15. Verify all tests are in the status PASS and no errors are shown.
 
@@ -58,19 +58,19 @@ There is a requirement in your organization to restrict trust for foreign identi
 
 2. Run the following cmdlet to view the default OME configuration:
 
-    Get-OMEConfiguration -Identity "OME Configuration" |fl
+    `Get-OMEConfiguration -Identity "OME Configuration" |fl`
 
 3. Review the settings and confirm that the SocialIdSignIn parameter is set to True.
 
 4. Run the following cmdlet to restrict the use of social IDs for accessing messages from your tenant protected with OME:
 
-    Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn:$false
+    `Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn:$false`
 
 5. Confirm the warning message for customizing the default template with **"Y"** for Yes and press **Enter**.
 
 6. Check the default configuration again and validate, the SocialIdSignIn parameter is now set to False.
 
-    Get-OMEConfiguration -Identity "OME Configuration" |fl
+    `Get-OMEConfiguration -Identity "OME Configuration" |fl`
 
 7. Leave the PowerShell window and client open.
 
@@ -126,31 +126,31 @@ Protected messages sent by your organizations finance department require a speci
 
 2. Run the following cmdlet to create a new OME configuration:
 
-    New-OMEConfiguration -Identity "Finance Department" -ExternalMailExpiryInDays 7 
+    `New-OMEConfiguration -Identity "Finance Department" -ExternalMailExpiryInDays 7` 
 
 3. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
 
 4. Change the introduction text message with the following cmdlet:
 
-    Set-OMEConfiguration -Identity "Finance Department" -IntroductionText " from Contoso Ltd. finance department has sent you a secure message."
+    `Set-OMEConfiguration -Identity "Finance Department" -IntroductionText " from Contoso Ltd. finance department has sent you a secure message."`
 
 5. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
 
 6. Change the body email text of the message with the following cmdlet:
 
-    Set-OMEConfiguration -Identity "Finance Department" -EmailText "Encrypted message sent from Contoso Ltd. finance department. Handle the content responsibly."
+    `Set-OMEConfiguration -Identity "Finance Department" -EmailText "Encrypted message sent from Contoso Ltd. finance department. Handle the content responsibly."`
 
 7. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
 
 8. Change the disclaimer URL to point to Contoso's privacy statement site:
 
-    Set-OMEConfiguration -Identity "Finance Department" -PrivacyStatementURL "https://contoso.com/privacystatement.html"
+    `Set-OMEConfiguration -Identity "Finance Department" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`
 
 9. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**..
 
 10. Use the following cmdlet to create a mail flow rule, which applies the custom OME template to all messages sent from the finance team.
 
-    New-TransportRule -Name "Encrypt all mails from Finance team" -FromScope InOrganization -FromMemberOf "Finance Team" -ApplyRightsProtectionCustomizationTemplate "Finance Department" -ApplyRightsProtectionTemplate Encrypt
+    `New-TransportRule -Name "Encrypt all mails from Finance team" -FromScope InOrganization -FromMemberOf "Finance Team" -ApplyRightsProtectionCustomizationTemplate "Finance Department" -ApplyRightsProtectionTemplate Encrypt`
 
 11. Leave the PowerShell open.
 
