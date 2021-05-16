@@ -108,11 +108,11 @@ An investigation showed that users received a few phishing mails and you are tas
 
 10. In the **PowerShell** window, use the following cmdlet and then sign in as **MOD Administrator**:
 
-	Connect-IPPSSession
+	`Connect-IPPSSession`
 
 11. In the **PowerShell** window, use the following command and confirm with **Y**:
 
-	New-ComplianceSearchAction -SearchName "Phishing mail removal" -Purge -PurgeType HardDelete
+	`New-ComplianceSearchAction -SearchName "Phishing mail removal" -Purge -PurgeType HardDelete`
 
 12. In PowerShell type **Y** for Yes to confirm the action.
 
