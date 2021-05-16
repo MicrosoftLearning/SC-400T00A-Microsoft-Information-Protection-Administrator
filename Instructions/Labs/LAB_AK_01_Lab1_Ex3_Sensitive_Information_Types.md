@@ -12,39 +12,35 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 3. Select **Data classification** from the left pane.
 
-4. If a **What is data classification?** message is displayed, select **Close** and select **Sensitive info types** from the top pane.
+4. If a **What is data classification?** message is displayed, select **Close** and select **Sensitive info types** from the top pane.  Hint: If **Sensitive info types** don't appear in the compliance center then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser yet.  You may have to sign-out and sign-in again as JoniS.
 
-5. Select **(+) Create info type** to open the wizard for a new sensitive information type.
+5. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
-6. On the **Choose a name and description** page, type *Contoso Employee IDs* into **Name**.
+6. On the **Name your sensitive info type** page, type *Contoso Employee IDs* into **Name**.
 
 7. Type *Pattern for Contoso employee IDs.* to the **Description** field and select **Next**.
 
-8. On the **Requirements for matching** page, select **(+) Add an element**.
+8. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
-9. Select the dropdown field below **Detect content containing** and select **Regular expression**.
+9. Select the dropdown field for **+ Add primary element** in the **Primary element** section and select **Regular expression**.
 
-10. Enter the following to the input field: *\s[A-Z]{3}[0-9]{6}\s*
+10. In the **ID** field type *Contoso IDs* and enter the following to the Regular expression field: *\s[A-Z]{3}[0-9]{6}\s* and then select **Done**.
 
-11. Below **Supporting elements**, select **+ Add supporting elements** in the drop-down menu select **Contains this keyword list**.
+11. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
 
-12. Enter the following into the text box below **Keyword list**: *Employee*, *IDs*
+12. In the ID field enter *Employee ID keywords* and enter the following into the text box below **Case insensitive**: *Employee*, *IDs* and then select **Done**.
 
-13. Decrease the **Character proximity** value to *100* characters.
+13. In the New pattern windows decrease the **Character proximity** value to *100* characters.
 
-14. Select **Next**.
+14. Select the **Create** button.
 
-15. Finish the wizard by selecting **Finish**.
+15. On the **Define patterns for this sensitive info type** page select **Next**.
 
-16. In the **compliance** window, select **Yes** to test the created sensitive type.
+16. On the **Choose the recommended confidence level to show in compliance policies** page use the default value and select **Next**.
 
-17. Select the **Search** box in the upper right-side of the Data classification area, type *Contoso* and press the enter key.
+17. On the **Review settings and finish** page review the settings and select **Create**. When successfully created select **Done**.
 
-18. Select the newly created sensitive information type *Contoso Employee IDs* to open the right-side pane.
-
-19. Review the configured settings of the sensitive information type.
-
-20. Leave the browser window open.
+18. Leave the browser window open.
 
 You have successfully created a new sensitive information type to identify employee IDs in the pattern of three uppercase characters, six numbers, and the keywords 'Employee' or 'IDs' within a range of 100 characters.
 
@@ -82,9 +78,9 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 15. In the **Manage group members** screen, select **(+) Add members**.
 
-16. Select **Joni Sherman**, select **Save changes**.
+16. Select **Joni Sherman**, select the **Add (1)** button then select the back arrow button.
 
-17. Verify **Joni Sherman** is listed below **Group members** and select **Close**.
+17. Verify **Joni Sherman** is listed below **Members**.
 
 18. Close the right side pane with **X**.
 
@@ -98,7 +94,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 23. Navigate to **Data classification** and select **Exact data matches** tab from the top pane.
 
-24. Select **(+) Create EDM schema** to create a new schema definition.
+24. Select **+ Create EDM schema** to create a new schema definition.
 
 25. In the **Name** field, enter *employeedb*.
 
@@ -108,17 +104,17 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 28. Select **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
 
-29. In the first **Schema field name**, enter *Name* and select **Field is searchable**.
+29. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
 
-30. Select **(+) Add schema data field**.
+30. Select **+ Add schema data field**.
 
 31. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
 
-32. Select **(+) Add schema data field**.
+32. Select **+ Add schema data field**.
 
 33. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
 
-34. Select **(+) Add schema data field**.
+34. Select **+ Add schema data field**.
 
 35. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
 
@@ -128,7 +124,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 38. Select **EDM sensitive info types** from the left pane.
 
-39. Select **(+) Create EDM sensitive info type** to open the **EDM rule package** wizard.
+39. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.
 
 40. On the **Define data store schema** page, select **Choose an existing EDM schema**.
 
@@ -136,7 +132,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 42. Review the data store schema and select **Next**.
 
-43. On the **Define patterns for this EDM sensitive info type** page, select **(+) Create pattern**.
+43. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
 
 44. On the **New pattern** right-side pane, in the Primary element field, select *EmployeeID*.
 
@@ -150,19 +146,17 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 49. Select **Next**.
 
-50. In the **Character proximity** field, enter *100*.
+50. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
 
-51. Select **Next**.
+51. In the **Name and describe your EDM sensitive info type** page, enter *Contoso Employee EDM*.
 
-52. In the **Name** field, enter *Contoso Employee EDM*.
+52. In the **Description for admins** field, enter *EDM-based sensitive information type for employee personal information.*.
 
-53. In the **Description for admins** field, enter *EDM-based sensitive information type for employee personal information.*.
+53. Select **Next**, review the settings and select **Submit**.
 
-54. Select **Next**, review the settings and select **Submit**.
+54. On the **Your EDM sensitive info type was created** page, select **Done**.
 
-55. On the **Your EDM sensitive info type was created** page, select **Done**.
-
-56. Leave the browser open with the Microsoft 365 Compliance Center.
+55. Leave the browser open with the Microsoft 365 Compliance Center.
 
 You have successfully created a new EDM-based classification sensitive information type for identifying employee data from a database file source.
 
@@ -196,11 +190,11 @@ To associate the EDM-based classification with a database containing sensitive d
 
     Name,Birthdate,StreetAddress,EmployeeID
 
-13. Use enter and add the following text to the second line in the notepad window:
+13. Use enter button and add the following text to the second line in the notepad window:
 
     Joni Sherman,01.06.1980,1 Main Street,CSO123456
 
-14. Use enter and add the following text to the third line in the notepad window:
+14. Use enter button and add the following text to the third line in the notepad window:
 
     Lynne Robbins,31.01.1985,2 Secondary Street,CSO654321
 
@@ -222,7 +216,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
     cd "C:\Program Files\Microsoft\EdmUploadAgent"
 
-23. Authorize with your Account to upload the database to your tenant by running the following:
+23. Authorize with your Account to upload the database to your tenant by running the following cmdlet:
 
     .\EdmUploadAgent.exe /Authorize
 
@@ -232,7 +226,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
     .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"
 
-    Note: If the last command fails, it possibly takes more time until the **EDM_DataUploaders** group membership is applied. It can take up to one hour until it is possible to download the schema file.
+    Note: If the last command fails, it possibly takes more time until the **EDM_DataUploaders** group membership is applied. It can take up to one hour until it is possible to download the schema file.  If it fails proceed to the next task and return to this step later.
 
 26. Hash the database file and upload it to the EDM-based classification sensitive information type by running the following script in PowerShell:
 
@@ -248,7 +242,7 @@ You have successfully hashed and uploaded a database file for a EDM-based classi
 
 ### Task 4 – Create Keyword Dictionary
 
-Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason or disease was sent out.
+Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason for illness or disease was sent out.  We do not want that to happen.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -256,21 +250,19 @@ Several violations of personal information leakage happened when users sent out 
 
 3. Select **Data classification** from the left-side pane and **Sensitive info types** from the top pane.
 
-4. Select **(+) Create info type** to open the wizard for a new sensitive information type.
+4. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
-5. On the **Choose a name and description** page, enter *Contoso Diseases List* into **Name**.
+5. On the **Name your sensitive info type** page, enter *Contoso Diseases List* into **Name**.
 
 6. Enter *List of possible diseases of employees.* to the **Description** field and select **Next**.
 
-7. On the **Requirements for matching** page, select **(+) Add an element**.
+7. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
-8. Select the dropdown field below **Detect content containing** and select **Dictionary (Large keywords)**.
+8. Select the dropdown field below **Primary element** and select **Keyword dictionary**.
 
-10. Select **(+) Add a dictionary** and **Create new keyword dictionaries** to open the Keyword dictionary pane.
+10. In the **Add a keyword dictionary** page enter the name *Diseases Dictionary*. 
 
-11. Below **Choose a name for your keyword dictionary**, enter *Diseases Dictionary*.
-
-12. Below **Enter the keywords, with each keyword on a separate line.**, enter the following keywords, each into a separate line:
+11. In the **Keywords** area enter the following keywords, each into a separate line:
 
     - *flu*
     - *influenza*
@@ -278,27 +270,27 @@ Several violations of personal information leakage happened when users sent out 
     - *bronchitis*
     - *otitis*.
 
-13. Select **Save**.
+12. Select **Done**.
 
-14. Below **Keyword dictionaries**. select **Diseases Dictionary** and select **Add**.
+13. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down and select **keyword list** to add additional support for the keyword dictionary.
 
-15. Below **Supporting elements**, select **Add supporting elements** and **Contains this keyword list** to add additional support for the keyword dictionary.
+14. In the **Add a keyword list** page enter *Emloyee absence* in the **ID** field. In the **Case insensitive** box, enter the following keywords: *employee,absence,reason* and then select **Done**.
 
-16. To the text box below **Keyword list**, enter the following keywords: *employee,absence,reason*
+15. In the **New pattern** page, review the configuration and select **Create**.
 
-17. Increase the **Minimum Count** value to *2*.
+16. In the **Define patterns for this sensitive info type** select **Next**.
 
-18. Select **Next**, review the configuration and select **Finish**.
+17. In the **Choose the recommended confidence level to show in compliance policies** let the default value persist and select **Next**. 
 
-19. When the **compliance** window appears, select **No**.
+18. In the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
 
-20. Leave the browser window in the Microsoft 365 Compliance center open.
+19. Leave the browser window in the Microsoft 365 Compliance center open.
 
 You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate. Proceed with the next task.
 
 ### Task 5 – Work with custom Sensitive Information Types
 
-Custom Sensitive Information Types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern. 
+Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern. 
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -310,7 +302,7 @@ Custom Sensitive Information Types should always be tested before using them in 
 
 4. Select **File** and **Save As**.
 
-5. Select Documents in on the left-side pane.
+5. Select Documents on the left-side pane.
 
 6. In the **File name** field, enter *SickTestData* and select **Save**.
 
@@ -320,13 +312,13 @@ Custom Sensitive Information Types should always be tested before using them in 
 
 9. In the left navigation pane select **Data classification**, then select the **Sensitive info types** tab.
 
-10. Select **Search** from the upper left side and enter *Contoso*.
+10. In the **Search** box from the upper right side and enter *Contoso* and press Enter.
 
 11. Select **Contoso Employee IDs** to open the right side pane.
 
-12. Select **Test type** from the right side pane.
+12. Select **Test** from the right side pane.
 
-13. On the **Upload file to test** page, select **Click to Browse**.
+13. On the **Upload file to test** page, select **Upload file**.
 
 14. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
 
@@ -338,15 +330,15 @@ Custom Sensitive Information Types should always be tested before using them in 
 
 18. Back on the **Data classification** page, select the Sensitive Information Type with the name **Contoso Diseases List**.
 
-19. In the right side pane, select **Test type**.
+19. In the right side pane, select **Test**.
 
-20. On the **Upload file to test** page, select **Click to Browse**.
+20. On the **Upload file to test** page, select **Upload file**.
 
 21. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
 
 22. Select **Test** to start the analysis.
 
-23. On the **Match results** page, review the found match.
+23. On the **Match results** page, review the found match. When done review select **Finish**.
 
 You have successfully tested the two custom sensitive information types and validated the search pattern recognizes the desired patterns. You have finished the creation of sensitive information types and can proceed with the next exercise.
 

@@ -1,4 +1,4 @@
-# Exercise 2 - Manage Office 365 Message Encryption
+# Lab 1 Exercise 2 - Manage Office 365 Message Encryption
 
 The first setting Joni Sherman needs to configure and test with her pilot team is the Microsoft 365 built-in Office 365 Message Encryption (OME). For this purpose, she will modify the default template and create a new branding template, that will be assigned to one of the pilot users. The pilot users will then test the OME functionality with their accounts.
 
@@ -8,7 +8,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then right-click **Windows PowerShell** and choose **Run as Administrator**.
+2. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (admin)**.
 
 3. Confirm the **User Account Control** window with **Yes**.
 
@@ -16,9 +16,9 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
     Install-Module ExchangeOnlineManagement
 
-5. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**.
+5. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**. This process may take some seconds to complete.
 
-6. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.
+6. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some seconds to complete.
 
 7. Enter the following cmdlet to change your execution policy and press **Enter**
 
@@ -36,11 +36,11 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 12. When the **Sign in** window is displayed, sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-13. Verify Azure RMS and IRM is activated in your tenant by using the following cmdlet:
+13. Verify Azure RMS and IRM is activated in your tenant by using the following cmdlet and press **Enter**:
 
     Get-IRMConfiguration | fl AzureRMSLicensingEnabled
 
-14. Test the Azure RMS templates used for Office 365 Message Encryption against the other pilot user **Megan Bowen**:
+14. Test the Azure RMS templates used for Office 365 Message Encryption against the other pilot user **Megan Bowen** by using the following cmdlet and press **Enter**:
 
     Test-IRMConfiguration -Sender MeganB@contoso.com
 
@@ -48,7 +48,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 16. Leave the PowerShell window open.
 
-You have successfully installed the Exchange Online PowerShell module, connected to your tenant and verified the correct functionality of Azure RMS.
+You have successfully installed the Exchange Online PowerShell module, connected to your tenant, and verified the correct functionality of Azure RMS.
 
 ### Task 2 – Modify default OME template
 
@@ -66,13 +66,13 @@ There is a requirement in your organization to restrict trust for foreign identi
 
     Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn:$false
 
-5. Confirm the warning message for customizing the default template with **"Y"** for Yes and press **Enter**.
+5. Confirm the warning message for customizing the default template with **Y** for Yes and press **Enter**.
 
 6. Check the default configuration again and validate, the SocialIdSignIn parameter is now set to False.
 
     Get-OMEConfiguration -Identity "OME Configuration" |fl
 
-7. Leave the PowerShell window and client open.
+7. Notice the result should show the SocialIDSignIn is set to False. Leave the PowerShell window and client open.
 
 You have successfully deactivated the usage of foreign identity providers, such as Google and Facebook in Office 365 Message Encryption.
 
@@ -86,7 +86,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 3. Select **Confirm** to accept the default browser settings and **Continue without signing in** if it appears.
 
-4. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Lynne Robin's password should be provided by your lab hosting provider.
+4. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
 
 5. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -102,7 +102,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 11. Select **Send** to send the message.
 
-12. Sign in to your personal email account and open the message from Lynne Robbins.  If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message.  If you sent the email to another email service (like @google.com), you may have to perform the next steps to process the encryption and read the message.
+12. Sign in to your personal email account and open the message from Lynne Robbins.  If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically.  If you sent the email to another email service (like @google.com), you may have to perform the next steps to process the encryption and read the message.
 
 13. Select **Read the message**.
 
@@ -128,27 +128,27 @@ Protected messages sent by your organizations finance department require a speci
 
     New-OMEConfiguration -Identity "Finance Department" -ExternalMailExpiryInDays 7 
 
-3. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
+3. Confirm the warning message for customizing the template with **Y** for Yes and press **Enter**. 
 
 4. Change the introduction text message with the following cmdlet:
 
     Set-OMEConfiguration -Identity "Finance Department" -IntroductionText " from Contoso Ltd. finance department has sent you a secure message."
 
-5. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
+5. Confirm the warning message for customizing the template with **Y** for Yes and press **Enter**.
 
 6. Change the body email text of the message with the following cmdlet:
 
     Set-OMEConfiguration -Identity "Finance Department" -EmailText "Encrypted message sent from Contoso Ltd. finance department. Handle the content responsibly."
 
-7. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**.
+7. Confirm the warning message for customizing the template with **Y** for Yes and press **Enter**.
 
 8. Change the disclaimer URL to point to Contoso's privacy statement site:
 
     Set-OMEConfiguration -Identity "Finance Department" -PrivacyStatementURL "https://contoso.com/privacystatement.html"
 
-9. Confirm the warning message for customizing the template with **"Y"** for Yes and press **Enter**..
+9. Confirm the warning message for customizing the template with **Y** for Yes and press **Enter**..
 
-10. Use the following cmdlet to create a mail flow rule, which applies the custom OME template to all messages sent from the finance team.
+10. Use the following cmdlet to create a mail flow rule, which applies the custom OME template to all messages sent from the finance team.  This process may take a few seconds to complete.
 
     New-TransportRule -Name "Encrypt all mails from Finance team" -FromScope InOrganization -FromMemberOf "Finance Team" -ApplyRightsProtectionCustomizationTemplate "Finance Department" -ApplyRightsProtectionTemplate Encrypt
 

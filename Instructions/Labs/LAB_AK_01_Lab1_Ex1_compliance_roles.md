@@ -1,4 +1,4 @@
-# Exercise 1 - Manage Compliance Roles
+# Lab 1 Exercise 1 - Manage Compliance Roles
 
 In your role as Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. you are tasked to configure the new Microsoft 365 tenant of your organization, to meet the organizations compliance requirements. Contoso Ltd. is a company with a headquarters in the United States and several new subsidiaries in the European Union and your organization needs to make sure the new Microsoft 365 tenant fulfills the legal requirements of different countries and regulatory requirements of your industry sector.
 
@@ -6,9 +6,9 @@ In your role as Joni Sherman, the newly hired Compliance Administrator for Conto
 
 In this exercise, you will follow the principal of least privilege and use the default Global Administrator to assign the Compliance Admin role to Joni Sherman, which is required to perform the operations described in this lab.
 
-1.	Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.  The password should be provided by your lab hosting provider.
+1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.  The password should be provided by your lab hosting provider.
 
-2.	Open **Microsoft Edge** from the taskbar and when a **Welcome to the new Microsoft Edge** windows is displayed, select **Complete setup**.
+2. Open **Microsoft Edge** from the taskbar and when a **Welcome to the new Microsoft Edge** windows is displayed, select **Complete setup**.
 
 3. Select **Confirm** to accept the default browser settings and **Continue without signing in**.
 
@@ -30,7 +30,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 12.	When the **Manage admin roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to select **Compliance admin** in the Security & Compliance section.
 
-13.	Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the pane, select the arrow pointing to the left.
+13.	Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the pane, select the arrow pointing to the left to return to Joni's user record.
 
 14.	Close the window of Joni Sherman’s account with the **X** in the upper right to go back to the **Active users** list.
 
@@ -42,7 +42,7 @@ You have successfully assigned Joni Sherman the Compliance Administrator role, w
 
 ### Task 2 – Explore the Compliance Center
 
-In this task, you will sign out of the global admin account and sign-in again as Joni Sherman. Because Joni Sherman just got the Compliance admin role assigned, her account will be sufficient for most of this lab's exercises.
+In this task, you will sign out of the global admin account and sign-in again as Joni Sherman. Now that Joni Sherman was just assigned the Compliance admin role, her account will be sufficient for most of this lab's exercises.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. 
 
@@ -50,11 +50,11 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 3. When the **Pick an account** window is displayed, select **Use another account**.
 
-4. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+4. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.  Hint: The password is probably the same as the MOD Administrator used earlier.
 
-5. When the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**.
+5. If the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**.
 
-6. Scroll down and select **... Show all*** from the lower left side to open all menu items of the Microsoft 365 compliance center.
+6. Scroll down and select **Settings** from the lower left side to see which settings are available to Joni.
 
 7. Get yourself familiar with the different settings. When you are done, leave the browser window open.
 

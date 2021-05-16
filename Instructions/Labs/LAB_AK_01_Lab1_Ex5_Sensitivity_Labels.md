@@ -17,7 +17,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
     Install-Module -Name MSOnline
 
-5. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
+5. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take many seconds to complete processing.
 
 6. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
 
@@ -68,16 +68,16 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-3. In the **Compliance Center**, in the left navigation pane, select **... Show all** and then select **Information protection**.  
+3. In the **Compliance Center**, in the left navigation pane, select **Information protection**.  
 
-4. On the Information protection page, select **+ Create a label**.
+4. On the Information protection page, under the **Labels** tab select **+ Create a label**.
 
-5. The **New sensitivity label** wizard will start. On the **Name & description** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
+5. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
 
 	- **Name**: Internal
 	- **Display name**: Internal
 	- **Description for users**: Internal sensitivity label.
-	- **Description for admins**: Internal sensitivity label.
+	- **Description for admins**: Internal sensitivity label for Contoso.
 
 6. Select **Next**.
 
@@ -103,7 +103,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 17. Select the **+ Add sub label** from the drop-down menu.
 
-18. The **New sensitivity label** wizard will start. On the **Name & description** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
+18. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
 
    - **Name**: Employee data (HR)
    - **Display name**: Employee data (HR)
@@ -112,11 +112,11 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 19. Select **Next**.
 
-20. On the **Scope** page, select the option **Files & emails**.
+20. On the **Define the scope for this label** page, select the option **Files & emails**.
 
 21. Select **Next**.
 
-22. On the **Files & email** page, select the **Encrypt files and emails** option
+22. On the **Choose protection settings for files and emails** page, select the **Encrypt files and emails** option
 
 23. Select **Next**.
 
@@ -137,13 +137,13 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 29. On the **Encryption** page, select **Next**.
 
-30. On the **Auto-Labeling** page, select **Next**.
+30. On the **Auto-labeling for files and emails** page, select **Next**.
 
-31. On the **Groups & sites** page, select **Next**.
+31. On the **Define protection settings for groups and sites** page, select **Next**.
 
-32. On the **Azure Purview assets (preview)** page, select **Next**. 
+32. On the **Auto-labeling for database columns** page, select **Next**. 
 
-33. On the **Finish** page, select **Create label**.
+33. On the **Review your settings and finish** page, select **Create label**.
 
 34. The label will be created and when complete a message will display **Your label was created**.
 
@@ -159,13 +159,13 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **... Show all** and then select **Information protection**. 
+3. In the **Compliance Center**, in the left navigation pane, select **Information protection**. 
 
-4. On the **Information protection** page, select **Publish labels**.
+4. On the **Information protection** page, on the **Labels** page, select **Publish labels**.
 
 5. The publish sensitivity labels wizard will start.
 
-6. On the **Choose labels to publish** page, select the **Choose sensitivity labels to publish link**.
+6. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
 
 7. A side bar called **Sensitivity labels to publish** will appear on the right.
 
@@ -173,20 +173,20 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 9. Select **Add**.
 
-10. On the **Choose labels to publish** page, select **Next**.
+10. On the **Choose sensitivity labels to publish** page, select **Next**.
 
 11. On the **publish to users and groups page**, select **Next**.
 
 12. On the **Policy settings** page, select **Next**.
 
-13. On the **Name & Description** page, enter the following information:
+13. On the **Name your policy** page, enter the following information:
 
    - **Name**: Internal HR employee data
    - **Enter a description for your sensitivity label policy**: This HR label is to be applied to internal HR employee data.
 
 14. Select **Next**.
 
-15. On the **Review your settings** page, select **Submit**.
+15. On the **Review and finiah** page, select **Submit**.
 
 16. The policy will be created and when complete a message will display **New policy created**.
 
@@ -258,13 +258,13 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **... Show all** and then select **Information protection**.  
+3. In the **Microsoft 365 compliance** center, in the left navigation pane, select **Information protection**.  
 
 4. On the Information protection page, highlight (without selecting) the existing **Internal** label, and select the three dots.
 
 5. Select the **+ Add sub label** menu item.
 
-6. The **New sensitivity label** wizard will start. On the **Name & description** page, enter the following information:
+6. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page, enter the following information:
 
    - **Name**: GDPR Germany
    - **Display name**: GDPR Germany
@@ -273,13 +273,13 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 7. Select **Next**.
 
-8. On the **Scope** page, select the option **Files & emails**.
+8. On the **Define the scope for this label** page, select the option **Files & emails**.
 
 8. Select **Next**.
 
-9. On the **Files & email** page, select **Next**.
+9. On the **Choose protection settings for files and emails** page, select **Next**.
 
-10. On the **Auto-Labeling** page, set the **Auto-labeling for files and emails** to enabled.
+10. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
 
 11. In the **Detect content that matches these conditions** section, select **+Add condition** and then select **Content contains**.
 
@@ -299,11 +299,11 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 18. Select **Next**.
 
-19. On the **Groups & sites** page, select **Next**.
+19. On the **Define protection settings for groups and sites** page, select **Next**.
 
-20. On the **Azure Purview assets (preview)** page, select **Next**. 
+20. On the **Auto-labeling for database columns** page, select **Next**. 
 
-21. On the **Finish** page, select **Create label**.
+21. On the **Review your settings and finish** page, select **Create label**.
 
 22. The label will be created and when complete a message will display: **Your label was created**.
 
@@ -313,7 +313,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 25. The Publish sensitivity labels wizard will start.
 
-26. On the **Choose labels to publish** page, select the **Choose sensitivity labels to publish link**.
+26. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish link**.
 
 27. A side bar called **Sensitivity labels to publish** will appear on the right.
 
@@ -321,20 +321,20 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 29. Select **Add**.
 
-30. On the **Choose labels to publish** page, select **Next**.
+30. On the **Choose sensitivity labels to publish** page, select **Next**.
 
-31. On the **Publish to users and groups page**, select **Next**.
+31. On the **Publish to users and groups** page, select **Next**.
 
 32. On the **Policy settings** page, select **Next**.
 
-33. On the **Name & Description** page, enter the following information:
+33. On the **Name your policy** page, enter the following information:
 
    - **Name**: GDPR Germany policy
    - **Enter a description for your sensitivity label policy**: This auto apply sensitivity labels policy is for the GDPR region of Germany.
 
 34. Select **Next**.
 
-35. On the **Review your settings** page, select **Submit**.
+35. On the **Review and finish** page, select **Submit**.
 
 36. The policy will be created and when complete a message will display, **New policy created**.
 
