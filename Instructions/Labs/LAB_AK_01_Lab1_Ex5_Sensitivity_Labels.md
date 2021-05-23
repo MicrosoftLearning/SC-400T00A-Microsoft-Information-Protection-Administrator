@@ -15,19 +15,19 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 4. Enter the following cmdlet to install the latest MS Online PowerShell module version:
 
-    Install-Module -Name MSOnline
+   `Install-Module -Name MSOnline`
 
 5. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take many seconds to complete processing.
 
 6. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
 
-    Install-Module -Name Microsoft.Online.SharePoint.PowerShell
+    `Install-Module -Name Microsoft.Online.SharePoint.PowerShell`
 
 7. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
 
 8. Enter the following cmdlet to connect to the MS Online service:
 
-    Connect-MsolService
+    `Connect-MsolService`
 
 9. In the **Sign in to your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
@@ -35,15 +35,15 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 11. Enter the following cmdlet to get the domain:
 
-    $domain = get-msoldomain
+    `$domain = get-msoldomain`
 
 12. Enter the following cmdlet to create the SharePoint admin url:
 
-    $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
+    `$adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"`
 
 13. Enter the following cmdlet to sign in to the SharePoint Online admin center:
 
-    Connect-SPOService -url $adminurl
+    `Connect-SPOService -url $adminurl`
 
 14. In the **Sign in to your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
@@ -51,7 +51,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 16. Enter the following cmdlet to enable support for sensitivity labels:
 
-    Set-SPOTenant -EnableAIPIntegration $true
+    `Set-SPOTenant -EnableAIPIntegration $true`
 
 17. Confirm the changes with **Y** for Yes and press Enter. 
 
@@ -289,7 +289,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 14. In the **Search for sensitive info types** search panel, enter the following information: 
 
-    German
+    `German`
 
 15. Press the enter button, the results will display sensitivity info types related to Germany.
 

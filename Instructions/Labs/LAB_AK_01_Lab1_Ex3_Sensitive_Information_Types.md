@@ -188,15 +188,15 @@ To associate the EDM-based classification with a database containing sensitive d
 
 12. Enter the following text to the first line in the notepad window:
 
-    Name,Birthdate,StreetAddress,EmployeeID
+    `Name,Birthdate,StreetAddress,EmployeeID`
 
 13. Use enter button and add the following text to the second line in the notepad window:
 
-    Joni Sherman,01.06.1980,1 Main Street,CSO123456
+    `Joni Sherman,01.06.1980,1 Main Street,CSO123456`
 
 14. Use enter button and add the following text to the third line in the notepad window:
 
-    Lynne Robbins,31.01.1985,2 Secondary Street,CSO654321
+    `Lynne Robbins,31.01.1985,2 Secondary Street,CSO654321`
 
 15. Select **File** and **Save As** to save the file.
 
@@ -214,27 +214,27 @@ To associate the EDM-based classification with a database containing sensitive d
 
 22. Navigate to the EDM Upload Agent directory:
 
-    cd "C:\Program Files\Microsoft\EdmUploadAgent"
+    `cd "C:\Program Files\Microsoft\EdmUploadAgent"`
 
 23. Authorize with your Account to upload the database to your tenant by running the following cmdlet:
 
-    .\EdmUploadAgent.exe /Authorize
+    `.\EdmUploadAgent.exe /Authorize`
 
 24. When the **Pick an account** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 25. Download the database schema definition of the EDM-based classification sensitive information type by running the following script in PowerShell:
 
-    .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"
+    `.\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"`
 
     Note: If the last command fails, it possibly takes more time until the **EDM_DataUploaders** group membership is applied. It can take up to one hour until it is possible to download the schema file.  If it fails proceed to the next task and return to this step later.
 
 26. Hash the database file and upload it to the EDM-based classification sensitive information type by running the following script in PowerShell:
 
-    .\EdmUploadAgent.exe /UploadData /DataStoreName employeedb /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedb.xml"
+    `.\EdmUploadAgent.exe /UploadData /DataStoreName employeedb /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedb.xml"`
 
 27. Check the upload progress until the state changes to completed then run the following PowerShell command:
 
-    .\EdmUploadAgent.exe /GetSession /DataStoreName employeedb
+    `.\EdmUploadAgent.exe /GetSession /DataStoreName employeedb`
 
 28. Close the PowerShell window.
 
@@ -298,7 +298,7 @@ Custom Sensitive information types should always be tested before using them in 
 
 3. Enter the following text to the notepad window:
 
-    Employee Joni Sherman EMP123456 is on absence because of the flu/influenza.
+    `Employee Joni Sherman EMP123456 is on absence because of the flu/influenza.`
 
 4. Select **File** and **Save As**.
 
