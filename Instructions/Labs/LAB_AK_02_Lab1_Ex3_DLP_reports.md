@@ -1,4 +1,4 @@
-# Exercise 3 - Manage DLP reports
+# Lab 2 Exercise 3 - Manage DLP reports
 
 You are Joni Sherman, the Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. You are informed that a new compliance officer will help you review DLP reports.
 
@@ -12,9 +12,9 @@ In this exercise, you will grant the new compliance officer access to the DLP re
 
 3. In the left navigation pane, select **Permissions** and then select the **Security Reader** role.
 
-4. In the role overview pane, select **Edit** in the **Members** category.
+4. In the role overview pane, select **Edit** in the **Members** area.
 
-5. Select **Choose Members** and then select **+ Add**.
+5. Select **Choose members** and then select **+ Add**.
 
 6. Search for **Megan Bowen** and select the checkbox in front of their name, then select **Add**.
 
@@ -34,6 +34,6 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 3. In the left navigation pane, select **Reports** and observe your access to the Reports Dashboard.
 
-You now verified that the access has been configured and the new compliance officer can view reports in the Compliance Center.
+You now verified that the access has been configured and the new compliance officer can view reports in the Compliance center.
 
 ## You have completed the lab.

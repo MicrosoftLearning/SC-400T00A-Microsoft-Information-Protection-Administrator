@@ -1,4 +1,4 @@
-# Exercise 1 - Configure Retention Policies
+# Lab 3 Exercise 1 - Configure Retention Policies
 
 In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to state laws, which stipulates that records may be deleted after three years without constituting an offense. 
 
@@ -13,29 +13,31 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
+3. In the **Compliance center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
 4. On the **Information Governance** page, in the **Retention** tab, select **+ New retention policy**.
 
-5. On the **Name your policy page**, for the **Name** and **Description** enter the following information:
+5. On the **Name your retention policy** page, for the **Name** and **Description** enter the following information:
 
 	- Name: Company Wide
 	- Description: All locations except for teams
 
 6. Select the **Next** button.  
 
-7. In the **Choose locations to apply the policy** area make sure Exchange Email, SharePoint sites, OneDrive accounts, and Microsoft 365 Groups are selected and then select **Next**.
+7. In the **Choose locations to apply the policy** area make sure Exchange email, SharePoint sites, OneDrive accounts, and Microsoft 365 Groups are selected and then select **Next**.
 
-8. On the **Retention settings** page, for the **Retain items for a specific period** section, enter the following information:
+8. On the **Decided if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
 	- Retain items for a specific period: Three Years
-	- **Start the retention period based on**: When it was last modified
+	- **Start the retention period based on**: When items were last modified
 
 9. Select the **Next** button.
 
-10. On the **Review your settings** page, select the **Submit** button
+10. On the **Review and finish** page, select the **Submit** button.
 
-You have successfully created a retention policy for the Exchange email, Microsoft 365 groups, OneDrive, and SharePoint sites locations. This retention policy will retain items in these locations for three years from when the item was last modified date. This can take up to 24 hours to be apply in your tenant.
+11. Once your policy is created, select the **Done** button.
+
+You have successfully created a retention policy for the Exchange email, Microsoft 365 groups, OneDrive, and SharePoint sites locations. This retention policy will retain items in these locations for three years from when the item was last modified date. This policy can take up to 24 hours to be apply in your tenant, but you can proceed to the next step.
 
 ### Task 2 – Create location-based Retention Policies with Filter
 
@@ -43,20 +45,20 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Office 365 Compliance center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
+3. In the **Compliance center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-4. On the **Information Governance** page, in the **Retention** tab, select **+ New retention policy**.
+4. On the **Information governance** page, in the **Retention policies** tab, select **+ New retention policy**.
 
-5. On the **Name your policy** page, for the **Name** and **Description** enter the following information:
+5. On the **Name your retention policy** page, for the **Name** and **Description** enter the following information:
 
 	- **Name**: Teams Retention
 	- **Description**: Retention for Teams locations
 
 6. Select the **Next** button.
 
-7. On the **Locations** page, enter the following settings
+7. On the **Choose locations to apply the policy** page, enter the following settings:
 
 	- **Exchange email** location - **Status**: Disable
 	- **SharePoint sites** location - **Status**: Disable
@@ -69,9 +71,11 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 8. For the Teams chat location, select the **Edit** text link in the **Included** column
 
-9. On the **Edit locations** page, in the Teams chats window, add the users: 
+9. On the **Teams chats** pane, add the users: 
     - Adele Vance
     - Pradeep Gupta
+
+    Note: By adding those two users the setting for included in Teams chats changed from "All teams" to just the two users you added.
 
 10. Select the **Done** button
 
@@ -79,14 +83,16 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 12. Select the **Next** button.
 
-13. On the **Retention settings** page, for the **Retain items for a specific period** section, enter the following information:
+13. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
 	- Retain items for a specific period: 3 Years
-	- **Start the retention period based on**: When it was last modified
+	- **Start the retention period based on**: When items were last modified
 
 14. Select the **Next** button.
 
-15. On the **Review your settings** page, select the **Submit** button.
+15. On the **Review and finish** page, select the **Submit** button.
+
+16. When the policy is successfully created, select **Done**.
 
 You have successfully created a retention policy for the Teams locations. You set a retention period of three years for all Teams channel locations. You have set a filter for Teams Chat locations to apply only to specific users.
 

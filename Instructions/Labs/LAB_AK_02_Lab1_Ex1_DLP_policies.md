@@ -1,4 +1,4 @@
-# Exercise 1 - Manage DLP Policies
+# Lab 2 Exercise 1 - Manage DLP Policies
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization.
 
@@ -26,7 +26,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 10. On the **Create rule** page, type *Credit card information* in the **Name** field.
 
-11. Select **+ Add Condition** and then select **Content contains** from the dropdown menu.
+11. Under **Conditions**, select **+ Add Condition** and then select **Content contains** from the dropdown menu.
 
 12. On the **Create rule** page, in the new **Content contains** area, select **Add** and select **sensitive info types** from the dropdown menu.
 
@@ -44,17 +44,19 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 19. On the **Create rule** page, in the **User Overrides** section, select the switch to put it in the **On** position and select the **Require a business justification to override** option.
 
-20. In the **Incident reports** section, in the **Use this severity in admin alerts and reports** dropdown, select **Low**.
+20. In the **Incident reports** section, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.
 
 21. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
 
 22. Select **Save**, then select **Next**.
 
-23. On the **Test or turn on the policy** page select **I'd like to test it out first** and select **Show policy tips while in test mode**.
+23. On the **Test or turn on the policy** page select **Test it out first** and select **Show policy tips while in test mode**.
 
 24. Select **Next** and review the policy configuration.
 
 25. Select **Submit** to create the policy.
+
+26. Once the policy is created select **Done**.
 
 You have now created a DLP policy that scans for Credit Card numbers in Microsoft Teams chats and channels and notifies allows users to provide a business justification to override the policy.
 
@@ -92,7 +94,7 @@ In this task, you use PowerShell to create a DLP policy to protect driver's lice
 
 	New-DlpCompliancePolicy -Name "Driver's License DLP Policy" -Comment "This policy blocks sharing of Driver's License Numbers." -ExchangeLocation All
 
-5. Enter the following command into PowerShell to add a DLP rule to the DLP policy you created in step 4:
+5. Enter the following command into PowerShell to add a DLP rule to the DLP policy you created in the previous step:
 
 	New-DlpComplianceRule -Name "Driver's License Rule" -Policy "Driver's License DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="U.S. Driver's License Number";minCount="1";minconfidence="75"}
 
@@ -114,9 +116,11 @@ In this task, you will activate the credit card information DLP policy you creat
 
 4. In the **Data loss prevention** window select the **Policies** tab, and then select the policy named **Credit Card DLP policy** and then select **Edit policy** to open the policy wizard.
 
-5. Select **Next** until you reach the **Test or turn on the policy** page and then select **Yes, turn it on right away**.
+5. Select **Next** until you reach the **Test or turn on the policy** page and then select **Turn it on right away**.
 
 6. Select **Next** and then **Submit** to activate the policy.
+
+7. Once the policy is updated select **Done**.
 
 You have successfully activated the DLP Policy. If the policy detects an attempt to share credit card information, it will now block the attempt and allow the users to provide a business justification to override the block action.
 
@@ -150,7 +154,7 @@ You want to use file policies in Microsoft Cloud App Security to protect files i
 
 4. On the **Settings** page, under **Information Protection** select **Files**.
 
-5. Select the **Enable file monitoring** checkbox and then select **Save**.
+5. Select the **Enable file monitoring** checkbox and then select **Save** if it is not already marked.
 
 You successfully enabled file monitoring in MCAS and can now scan files for sensitive content using file policies.
 
@@ -164,9 +168,9 @@ In this task, you want to create a file policy in Microsoft Cloud App Security t
 
 3. In the **Microsoft Cloud App Security Portal**, in the left navigation pane, expand **Control** and select **Policies**.
 
-4. On the **Policies** page, expand **Create Policy** and then select **File policy**.
+4. On the **Policies** page, expand **+Create policy** and then select **File policy**.
 
-5. On the **Create file policy** page, type *Credit Card Information for files* in the **Policy name** field and *Protect credit card numbers from being shared in files.* in the **Description** field.
+5. On the **Create file policy** page, type *Credit Card Information for files* in the **Policy name** field and type *Protect credit card numbers from being shared in files.* in the **Description** field.
 
 6. Keep the **Policy Severity** on **Low** and make sure the **Category** is set to **DLP**. For a file policy, this should be the default.
 
@@ -184,7 +188,7 @@ In this task, you want to create a file policy in Microsoft Cloud App Security t
 
 13. In the **Governance actions** section, expand **Microsoft SharePoint Online** and select **Put in user quarantine**.
 
-14. Select **Create**.
+14. Select **Create** at the bottom of the page.
 
 You have now created a file policy that will continuously scan files saved in OneDrive for Business and SharePoint for credit card information and quarantine them if they are shared inside your organization.
 
@@ -196,19 +200,21 @@ Your company uses PowerAutomate flows to share data between SharePoint Online an
 
 2. In **Microsoft Edge**, navigate to **https://admin.powerplatform.microsoft.com** and log into the Power Platform Admin Center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-3. In the **Power Platform Admin Center**, in the left navigation pane, select **Data policies**.
+3. In the **Power Platform admin center**, in the left navigation pane, select **Data policies**.
 
 4. On the **Data policies** page, select **+ New Policy**.
 
 5. On the **Name your policy** page, type *Tenant-wide SharePoint Policy*, then select **Next**.
 
-6. On the **non-business** tab, select **SharePoint** and **Salesforce**, then select **Move to Business** at the top of the page.
+6. On the **Non-business** tab, select **SharePoint** and **Salesforce**, then select **Move to Business** at the top of the page.
 
-7. Select **Next**.
+7. In the **Assign connectors** page, select the **Business** tab to make sure both SharePoint and Salesforce now appear.
 
-8. On the **Define scope** page, select **Add all environments**, then select **Next**.
+8. Select **Next**.
 
-9. On the **Review and create policy** page, review your policy settings, then select **Create Policy**.
+9. On the **Define scope** page, select **Add all environments**, then select **Next**.
+
+10. On the **Review and create policy** page, review your policy settings, then select **Create policy**.
 
 You have now created a PowerPlatform DLP policy that prevents users from creating flows involving a SharePoint Online Connector and any connector that is not SalesForce.
 
