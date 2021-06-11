@@ -1,0 +1,8 @@
+To complete the Virtual Training Days (VTD) demo setup you must acquire the following:
+1. WWL M365 Enterprise 2019 SPE_E5 tenant which includes 25 users for Microsoft 365 E5 license.
+2. PowerPoint slides that support the session presentation.
+
+The VTD Demos utilize the same instructions as labs for the Instructor Led Training (ILT) course.  However, the VTD demos do no complete all the lab exercises and labs.
+
+To perform the VTD Demos you must first complete Lab 1 Exercise 1 "Manage Compliance Roles" to setup Joni Sherman as the Compliance Administrator: 
+https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex1_compliance_roles.md
