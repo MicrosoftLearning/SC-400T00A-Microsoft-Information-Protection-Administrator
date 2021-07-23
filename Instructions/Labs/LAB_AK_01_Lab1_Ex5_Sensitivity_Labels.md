@@ -179,18 +179,24 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 12. On the **Policy settings** page, select **Next**.
 
-13. On the **Name your policy** page, enter the following information:
+13. On the **Apply a default label to documents** page, select **Next**.
+
+14. On the **Apply a default label to emails** page, select **Next**.
+
+15. On the **Policy settings for Power BI** page, select **Next**.
+
+16. On the **Name your policy** page, enter the following information:
 
    - **Name**: Internal HR employee data
    - **Enter a description for your sensitivity label policy**: This HR label is to be applied to internal HR employee data.
 
-14. Select **Next**.
+17. Select **Next**.
 
-15. On the **Review and finiah** page, select **Submit**.
+18. On the **Review and finish** page, select **Submit**.
 
-16. The policy will be created and when complete a message will display **New policy created**.
+19. The policy will be created and when complete a message will display **New policy created**.
 
-17. Select **Done**.
+20. Select **Done**.
 
 You have successfully published the Internal and HR sensitivity labels. Note that it can take up to 24 hours for changes to replicate to all users and services.
 
