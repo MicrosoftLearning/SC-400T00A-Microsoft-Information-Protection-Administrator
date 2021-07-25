@@ -100,7 +100,7 @@ You have successfully created a retention policy for the Teams locations. You se
 
 You will create the same retention policies with PowerShell
 
-1. Log into the Client 2 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 2. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)** select **Yes** if confronted with a User Account Control window.
 
