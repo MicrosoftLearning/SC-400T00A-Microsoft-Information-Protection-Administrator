@@ -2,7 +2,7 @@
 
 The Contoso Ltd. tenant contains a SharePoint site collection with the name "Sales and Marketing" that will be used in the future to store several financial related documents and reports. Because of the nature of these documents, you need to create a trainable classifier to recognize and label these files. For this purpose, you will activate custom trainable classifiers and create a new one.
 
-**Important!**: After activating trainable classifiers in a tenant, it takes between **7 and 14 days** before any custom trainable classifiers can be created. The button to create a new trainable classifier will not be available until the whole activation process is finished.  Therefore, **you will only be able to perform task 1 now** and will need to wait until the trainable classifiers are available later within your tenant.  These lab instructions are available online and your tenant should still be active.
+**Important!**: After activating trainable classifiers in a tenant, it takes between **7 and 14 days** before any custom trainable classifiers can be created. The button to create a new trainable classifier will not be available until the entire activation process is complete.  Therefore, **you will only be able to perform task 1 now**. If you wish to complete task 2 and 3 you will need to wait until processing of the trainable classifier setup is complete.  These lab instructions are available on GitHub.com. The Microsoft 365 tenant you're using to perform task 1 should still be active.
 
 ### Task 1 – Activate trainable classifiers
 
