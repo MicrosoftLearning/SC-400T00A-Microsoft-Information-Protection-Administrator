@@ -42,7 +42,9 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 14. Test the Azure RMS templates used for Office 365 Message Encryption against the other pilot user **Megan Bowen** by using the following cmdlet and press **Enter**:
 
-    `Test-IRMConfiguration -Sender MeganB@contoso.com`
+    `Test-IRMConfiguration -Sender MeganB@contoso.com -Recipient MeganB@contoso.com`
+
+    ![IRM validation script result. ](../Media/IRMvalidationl.png)
 
 15. Verify all tests are in the status PASS and no errors are shown.
 
