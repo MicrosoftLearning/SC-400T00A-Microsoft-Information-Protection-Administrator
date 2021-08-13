@@ -53,12 +53,11 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
     `Set-SPOTenant -EnableAIPIntegration $true`
 
-17. Confirm the changes with **Y** for Yes and press Enter. 
+17. Confirm the changes with **Y** for Yes and press Enter.
 
 18. Close the PowerShell window.
 
 You have successfully enabled support for sensitivity labels with Teams and SharePoint sites.
-
 
 ### Task 2 – Create Sensitivity Labels
 
@@ -93,13 +92,13 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 12. On the **Auto-labeling for database columns** page, select **Next**. 
 
-13. On the **Finish** page, select **Create label**.
+13. On the **Review your settings and finish** page, select **Create label**.
 
 14. The label will be created and when complete a message will display: **Your label was created**
 
 15. Select **Done**.
 
-16. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the **...**.
+16. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**.
 
 17. Select the **+ Add sub label** from the drop-down menu.
 
@@ -116,7 +115,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 21. Select **Next**.
 
-22. On the **Choose protection settings for files and emails** page, select the **Encrypt files and emails** option
+22. On the **Define protection settings for files and emails** page, select the **Encrypt files and emails** option.
 
 23. Select **Next**.
 
@@ -157,11 +156,11 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 Compliance center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
 3. In the **Compliance Center**, in the left navigation pane, select **Information protection**. 
 
-4. On the **Information protection** page, on the **Labels** page, select **Publish labels**.
+4. On the **Information protection** page, on the **Labels** tab, select **Publish label**.
 
 5. The publish sensitivity labels wizard will start.
 

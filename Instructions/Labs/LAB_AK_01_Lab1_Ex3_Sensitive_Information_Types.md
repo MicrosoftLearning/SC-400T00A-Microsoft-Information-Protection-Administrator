@@ -28,7 +28,10 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 11. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
 
-12. In the ID field enter *Employee ID keywords* and enter the following into the text box below **Case insensitive**: *Employee*, *IDs* and then select **Done**.
+12. In the ID field enter *Employee ID keywords* and enter the following into the text box below **Case insensitive**, on separate lines in the box, and then select **Done**.
+
+- *Employee*
+- *ID* 
 
 13. In the New pattern windows decrease the **Character proximity** value to *100* characters.
 
@@ -274,7 +277,7 @@ Several violations of personal information leakage happened when users sent out 
 
 13. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down and select **keyword list** to add additional support for the keyword dictionary.
 
-14. In the **Add a keyword list** page enter *Emloyee absence* in the **ID** field. In the **Case insensitive** box, enter the following keywords, each into a separate line:
+14. In the **Add a keyword list** page enter *Employee absence* in the **ID** field. In the **Case insensitive** box, enter the following keywords, each into a separate line:
     
     - *employee*
     - *absence*
@@ -322,7 +325,7 @@ Custom Sensitive information types should always be tested before using them in 
 
 11. Select **Contoso Employee IDs** to open the right side pane.
 
-12. Select **Test** from the right side pane.
+12. Select **Test** from the right-side pane.
 
 13. On the **Upload file to test** page, select **Upload file**.
 
