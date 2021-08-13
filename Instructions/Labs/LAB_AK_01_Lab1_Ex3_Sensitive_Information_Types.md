@@ -274,17 +274,23 @@ Several violations of personal information leakage happened when users sent out 
 
 13. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down and select **keyword list** to add additional support for the keyword dictionary.
 
-14. In the **Add a keyword list** page enter *Emloyee absence* in the **ID** field. In the **Case insensitive** box, enter the following keywords: *employee,absence,reason* and then select **Done**.
+14. In the **Add a keyword list** page enter *Emloyee absence* in the **ID** field. In the **Case insensitive** box, enter the following keywords, each into a separate line:
+    
+    - *employee*
+    - *absence*
+    - *reason*   
 
-15. In the **New pattern** page, review the configuration and select **Create**.
+15. Select **Done**.
 
-16. In the **Define patterns for this sensitive info type** select **Next**.
+16. In the **New pattern** page, review the configuration and select **Create**.
 
-17. In the **Choose the recommended confidence level to show in compliance policies** let the default value persist and select **Next**. 
+17. In the **Define patterns for this sensitive info type** select **Next**.
 
-18. In the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
+18. In the **Choose the recommended confidence level to show in compliance policies** let the default value persist and select **Next**. 
 
-19. Leave the browser window in the Microsoft 365 Compliance center open.
+19. In the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
+
+20. Leave the browser window in the Microsoft 365 Compliance center open.
 
 You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate. Proceed with the next task.
 
