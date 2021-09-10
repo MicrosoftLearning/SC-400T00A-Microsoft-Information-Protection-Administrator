@@ -32,7 +32,7 @@ Before you can create custom trainable classifiers, you need to activate the fea
 
 You have successfully activated trainable classifiers in your tenant. You will now need to wait between 7 and 14 days until the **Create trainable classifiers** button becomes available.  If you are in a classroom setting and do not have 7 to 14 days to wait for Trainable Classifiers to complete processing, you may perform the remainder of the tasks in this exercise by logging into the tenant you were provided later when the Trainable Classifiers processing is complete.  Your tenant should still be active.
 
-### Task 2 – Create a trainable classifier
+### Task 2 – Create a trainable classifier (optional lab task)
 
 After trainable classifiers have been activated successfully, the **Create trainable classifiers** button becomes available and it is possible to create a new custom classifier. In this task, Joni will create a new trainable classifier and select different SharePoint sites for identifying typical data created and stored by Contoso Ltd.
 
@@ -94,7 +94,7 @@ After trainable classifiers have been activated successfully, the **Create train
 
 The documents and files in the chosen SharePoint site are now being analyzed, which can take up to 24 hours.
 
-### Task 3 – Publish a trainable classifier 
+### Task 3 – Publish a trainable classifier (optional lab task)
 After the new trainable classifier was created and the initial analysis of the documents and files is done, the manual training process needs to be performed. In this task, Joni will start the calibration of the classifier to achieve the required accuracy for publishing.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
