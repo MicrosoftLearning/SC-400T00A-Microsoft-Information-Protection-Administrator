@@ -61,7 +61,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 5. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-6. From the left pane, select **Groups** and select **Active groups**.
+6. From the left pane, select **Teams & Groups** and select **Active teams & groups**.
 
 7. Select **Add a group** from the top pane.
 
@@ -75,7 +75,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 12. When the **New group created** page is shown, select **Close**.
 
-13. Select **Refresh** from the top pane and select the newly created **EDM_DataUploaders** group from the list to open the right side pane.
+13. Select **Refresh** from the top pane, select the **Security** tab, and select newly created **EDM_DataUploaders** group from the list to open the right-side pane.
 
 14. Select the **Members** tab and select **View all and manage members**.
 
