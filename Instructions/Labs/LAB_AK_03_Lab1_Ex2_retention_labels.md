@@ -35,7 +35,7 @@ In this task, you will create a retention label that can be assigned to document
 
 10. Select the **Next** button.
 
-11. On the **Review and finish** page, select the **Create label** button.  Select **Just save the label for now** and select **Done**.
+11. On the **Review and finish** page, select the **Create label** button.  Select **Do Nothing** and select **Done**.
 
 12. Return yourself to the **Information Governance** Page on the **Labels** tab.  We will publish labels in a later exercise.
 
@@ -55,7 +55,7 @@ In this task, you will create a retention label that can be assigned to document
 
 17. Select the **Next** button.
 
-18. On the **Review and finish** page, select the **Create label** button. Select **Just save the label for now** and select **Done**.
+18. On the **Review and finish** page, select the **Create label** button. Select **Do Nothing** and select **Done**.
 
 You have successfully created a retention label for VAT returns with a seven-year retention period and a retention label for Credit Card receipts.
 

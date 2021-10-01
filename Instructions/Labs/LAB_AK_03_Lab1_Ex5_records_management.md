@@ -39,7 +39,7 @@ In this task, you will create a file plan label that allows your HR department t
 
 10. Review the configuration of the label, then select **Create label**.
 
-11. On the **Your retention label is created** page, select **Just save the label for now**, then select **Done**.
+11. On the **Your retention label is created** page, select **Do Nothing**, then select **Done**.
 
 You successfully created a retention label using file plan that keeps all labeled documents from being deleted for seven years and at the end of the retention period Lynne Robbins has to decide if the data can be disposed of or has to be retained further.
 
