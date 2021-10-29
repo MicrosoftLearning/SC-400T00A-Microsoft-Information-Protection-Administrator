@@ -8,11 +8,11 @@ In this exercise, you will grant the new compliance officer access to the DLP re
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://protection.office.com** and log into the Security & Compliance Center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-3. In the left navigation pane, select **Permissions** and then select the **Security Reader** role.
+3. In the left navigation pane, select **Permissions** and then under **Compliance center** select **Roles**.  Mark the box next to the **Security Reader** role.
 
-4. In the role overview pane, select **Edit** in the **Members** area.
+4. In the *Security Reader* pane, select **Edit** in the **Members** area.
 
 5. Select **Choose members** and then select **+ Add**.
 
@@ -22,7 +22,7 @@ In this exercise, you will grant the new compliance officer access to the DLP re
 
 8. Select **Save**.
 
-You have now granted the new compliance officer access to the DLP reports in the Compliance Center.
+You have now granted the new compliance officer access to the DLP reports in the Microsoft 365 compliance portal.
 
 ### Task 2 - Test access to DLP reports
 
@@ -30,7 +30,7 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Megan's password should be provided by your lab hosting provider.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Megan's password should be provided by your lab hosting provider.
 
 3. In the left navigation pane, select **Reports** and observe your access to the Reports Dashboard.
 

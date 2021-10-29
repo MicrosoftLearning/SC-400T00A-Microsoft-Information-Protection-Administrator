@@ -12,7 +12,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 3. Select **Confirm** to accept the default browser settings and **Continue without signing in**.
 
-4. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 Admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+4. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 5. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -40,7 +40,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 You have successfully assigned Joni Sherman the Compliance Administrator role, which is required to perform the different exercises of this lab. Continue with the next task.
 
-### Task 2 – Explore the Compliance Center
+### Task 2 – Explore the Microsoft 365 compliance portal
 
 In this task, you will sign out of the global admin account and sign-in again as Joni Sherman. Now that Joni Sherman was just assigned the Compliance admin role, her account will be sufficient for most of this lab's exercises.
 
