@@ -8,9 +8,9 @@ In this task, you will turn on device onboarding for your organization.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance Center** in the left navigation pane, select **Settings** and select **Device onboarding**.
+3. In the **Microsoft 365 compliance** portal in the left navigation pane, select **Settings** and select **Device onboarding**.
 
 4. Select **Turn on device onboarding**.
 
@@ -28,7 +28,7 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and you should be logged into Microsoft 365 as **Joni Sherman**..
 
-3. In the **Compliance center** in the left navigation pane, select **Settings** and select **device onboarding**.
+3. In the **Microsoft 365 compliance** portal on the left navigation pane, select **Settings** and select **device onboarding**.
 
 4. On the **Device onboarding** page, in the navigation pane, select **Onboarding**.
 
@@ -71,9 +71,9 @@ In this task, you will create a Data Loss Prevention policy in the Compliance Ce
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance center**, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
+3. In the **Microsoft 365 compliance** portal on the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
 4. In the **Data loss prevention** window select the **Policies** tab, and then select **+Create policy** to start the wizard for creating a new data loss prevention policy.
 
@@ -125,9 +125,9 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
+3. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
 4. In the **Data loss prevention** window, select the **Endpoint DLP settings** tab.
 
