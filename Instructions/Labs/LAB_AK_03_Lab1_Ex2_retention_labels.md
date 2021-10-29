@@ -10,19 +10,19 @@ In this task, you will create a retention label that can be assigned to document
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman**.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance center as **Joni Sherman**.
 
 3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-4. On the Information Governance Page, select **Labels** tab.
+4. On the Information governance Page, select **Labels** tab.
 
 5. Select the **+ Create a label** button.
 
-6. On the **Name your retention label page** for the **Name**, **Description for admins** and **Description for users**, enter the following information:
+6. On the **Name your retention label page** for the **Name**, **Description for users**, and **Description for admins**, enter the following information:
 
 	- **Name**: VAT Returns and supporting documents
-	- **Description for admins**: VAT returns with seven-year retention.
 	- **Description for users**: Assign this label to VAT Documents to ensure they are retained for the legal period of seven years.
+	- **Description for admins**: VAT returns with seven-year retention.
 
 7. Select the **Next** button.
 
@@ -35,16 +35,16 @@ In this task, you will create a retention label that can be assigned to document
 
 10. Select the **Next** button.
 
-11. On the **Review and finish** page, select the **Create label** button.  Select **Do Nothing** and select **Done**.
+11. On the **Review and finish** page, select the **Create label** button.  On the *Your retention label is created* page select **Do Nothing** option and select **Done**.
 
-12. Return yourself to the **Information Governance** Page on the **Labels** tab.  We will publish labels in a later exercise.
+12. Return yourself to the **Information governance** page on the **Labels** tab.  We will publish labels in a later exercise.
 
 13. Select the **+ Create a label** button
 
-14. On the **Name your policy** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
+14. On the **Name your retention label** page for the **Name**, **Description for users**, and **Description for admins** enter the following information:
 	- **Name**: Credit Card Receipts
-	- **Description for admins**: Auto applied retention label Credit for card receipts with three-year retention.
 	- **Description for users**: This label is auto applied to Credit card receipts with a retention period of three years
+	- **Description for admins**: Auto applied retention label Credit for card receipts with three-year retention.
 
 15. Select the **Next** button.
 
@@ -55,7 +55,7 @@ In this task, you will create a retention label that can be assigned to document
 
 17. Select the **Next** button.
 
-18. On the **Review and finish** page, select the **Create label** button. Select **Do Nothing** and select **Done**.
+18. On the **Review and finish** page, select the **Create label** button. On the *Your retention label is created* page select **Do Nothing** option and then select **Done**.
 
 You have successfully created a retention label for VAT returns with a seven-year retention period and a retention label for Credit Card receipts.
 
