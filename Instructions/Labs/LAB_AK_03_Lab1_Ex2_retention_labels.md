@@ -10,11 +10,11 @@ In this task, you will create a retention label that can be assigned to document
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance center as **Joni Sherman**.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Joni Sherman**.
 
 3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-4. On the Information governance Page, select **Labels** tab.
+4. On the Information governance page, select **Labels** tab.
 
 5. Select the **+ Create a label** button.
 
@@ -104,9 +104,9 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
+3. In the **Microsoft 365 compliance** portal, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
 4. On the **Information governance** page, select the tab **Labels**.
 
