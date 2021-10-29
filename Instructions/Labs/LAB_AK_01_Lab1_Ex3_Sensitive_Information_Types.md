@@ -8,11 +8,11 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal and sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 3. Select **Data classification** from the left pane.
 
-4. If a **What is data classification?** message is displayed, select **Close** and select **Sensitive info types** from the top pane.  Hint: If **Sensitive info types** don't appear in the compliance center then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser yet.  You may have to sign-out and sign-in again as JoniS.
+4. If a **What is data classification?** message is displayed, select **Close** and select **Sensitive info types** from the top pane.  Hint: If **Sensitive info types** don't appear in the compliance portal then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser yet.  You may have to sign-out and sign-in again as JoniS.
 
 5. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
