@@ -12,7 +12,7 @@ In this task, you will create a retention label that can be assigned to document
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Joni Sherman**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
+3. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
 4. On the Information governance page, select **Labels** tab.
 
@@ -67,7 +67,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
+3. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
 4. On the **Information governance** Page, select the tab **Labels**.
 
@@ -106,7 +106,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 2. In **Microsoft Edge**, the Microsoft 365 compliance portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Microsoft 365 compliance** portal, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
+3. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
 4. On the **Information governance** page, select the tab **Labels**.
 
