@@ -11,9 +11,9 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-3. In the **Compliance center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
+3. In the **Microsoft 365 compliance** portal, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
 4. On the **Information Governance** page, in the **Retention** tab, select **+ New retention policy**.
 
@@ -45,9 +45,9 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. In **Microsoft Edge**, the Office 365 Compliance center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance center**, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
+3. In the **Microsoft 365 compliance** portal, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
 4. On the **Information governance** page, in the **Retention policies** tab, select **+ New retention policy**.
 
