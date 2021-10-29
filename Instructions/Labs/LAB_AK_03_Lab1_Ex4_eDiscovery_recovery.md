@@ -8,9 +8,9 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider. 
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman**.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Joni Sherman**.
 
-3. In the Compliance center, in the left navigation pane, expand **eDiscovery** and select **Core**.
+3. In the portal, on the left navigation pane, expand **eDiscovery** and select **Core**.
 
 4. On the **Core eDiscovery** page, select **+** to create a case.
 
