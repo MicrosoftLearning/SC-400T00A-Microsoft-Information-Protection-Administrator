@@ -16,13 +16,13 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 5. In the **Case name** field, type *Mark 8 Project Case* and in the **Case description** type *This case will be used to evaluate Megan Bowen's mails regarding the Mark 8 Project.*, then select **Save**
 
-6. On the **Core eDiscovery** page, select **Mark 8 Project Case** and select **Open case**.
+6. On the **Core eDiscovery** page, double-click the **Mark 8 Project Case** to open the case.
 
 7. In the Case view, select the **Searches** tab.
 
-8. Select **+** to start a new search.
+8. Select **+New search** to start a new search.
 
-9. In the **Name and description** section, type *Mark 8 Project* and select **Next**.
+9. In the **Name and description** section, type *Mark 8 Project* for the name and select **Next**.
 
 10. In the **Locations** section, select  **Exchange mailboxes**, select **Choose users, groups, or teams**.
 
@@ -38,27 +38,29 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 You have successfully created an eDiscovery case and searched for all mails Megan Bowen sent or received containing information about the Mark 8 Project.
 
-### Task 2 – Assign Records Management permissions
+### Task 2 – Assign Records Management and eDiscovery Manager permissions
 
 In this task, you will prepare to export the data you discovered in Task 1 to a PST-file that you can provide to the legal department. First you need to assign the Records Management role to your compliance administrator. Otherwise they will not be able to export search results.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://protection.office.com** and log into the Security & Compliance Center as **MOD Administrator**.  You may need to sign-out as Joni Sherman.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **MOD Administrator**.  You may need to sign-out as Joni Sherman.
 
-3. In the left navigation pane, select **Permissions** and then select the **Records Management** role.
+3. In the left navigation pane, select **Permissions** and then under **Compliance center** select **Roles**.  Select the **Records Management** role.
 
 4. In the role overview pane, select **Edit** next to the **Members** category.
 
-5. Select **Choose Members** and then select **+ Add**.
+5. Select **Choose members** and then select **+ Add**.
  
 6. Search for **Joni Sherman** and select the checkbox in front of their name, then select **Add**.
 
 7. Review the changes to the member list and then select **Done**.
 
-8. Select **Save**.
+8. Select **Save**.  
 
-You have successfully granted your compliance administrator the permission to export search results. It can take up to 60 minutes until the permissions are applied, but you can proceed to the next task.
+9. Repeat steps 3 to 8 for the **eDiscovery Manager** role so Joni Can export eDiscovery data in a future lab.
+
+You have successfully granted your compliance administrator the permission to export search results and perform records management tasks. It can take up to 60 minutes until the permissions are applied to the user, but you can proceed to the next task.
 
 ### Task 3 – Export Data from eDiscovery Case
 
@@ -66,17 +68,29 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman**.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Joni Sherman**.
 
-3. In the Compliance Center, in the left navigation pane, expand **eDiscovery** and select **Core**.
+3. In the **Microsoft 365 compliance** portal, in the left navigation pane, expand **eDiscovery** and select **Core**.
 
-4. Check the checkbox in front of **Mark 8 Project Case** and select **Open case**.
+4. Check the checkbox in front of **Mark 8 Project case** and double-click to open the case home.
 
-5. Navigate to the **Searches** tab and select **Mark 8 Project search**.
+5. Select the **Searches** tab and double-click the **Mark 8 Project** search.
 
-6. In the **Mark 8 Project search** dialog, select **Export** icon/button.
+**Hint:** If your eDiscovery search has no data consider the parameters of the search.  In the earlier lab did you have Megan send an emaail about the *Mark 8* project?  If not consider changing the keyword in the search to any of the terms in any of the existing emails in Megan's mailbox.  For example, the term "planner" usually appears in several of the Megan's existing emails.
 
-7. Choose to open or save the results.
+6. In the **Mark 8 Project** dialog, select **Actions** button drop-down, and select **Export results**.
+
+7. In the **Export results** pane, under **Output options** review the options.  Select the **Export** button.
+
+8. Close the **Mark 8 Project** search pane.  
+
+9. Select the **Exports** tab from the case screen.  Double-click the export that was just created.
+
+10.  In the export pane, under **Export key** select **Copy to clipboard**, and then select **Download results**.
+  
+11.  When prompted select **Open** in the browswer to install the eDiscovery Export Tool, and then select **Install**.
+
+12.  In the dialog box that appears paste in the key you copied to clipboard earlier.  Select a suitable location to downlooad the file.  Select **Start**.
 
 You have successfully exported the discovered data.
 
