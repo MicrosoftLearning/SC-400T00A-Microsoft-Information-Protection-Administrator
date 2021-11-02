@@ -24,7 +24,7 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 9. In the **Name and description** section, type *Mark 8 Project* for the name and select **Next**.
 
-10. In the **Locations** section, select  **Exchange mailboxes**, select **Choose users, groups, or teams**.
+10. In the **Locations** section, turn **Exchange mailboxes** to **On**, then select **Choose users, groups, or teams**.
 
 11. In the **Exchange mailboxes** dialog search *Megan Bowen* and select Megan's mailbox.  Select **Done**.
 
@@ -44,7 +44,7 @@ In this task, you will prepare to export the data you discovered in Task 1 to a 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **MOD Administrator**.  You may need to sign-out as Joni Sherman.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **MOD Administrator**.  You may need to sign-out as Joni Sherman. 
 
 3. In the left navigation pane, select **Permissions** and then under **Compliance center** select **Roles**.  Select the **Records Management** role.
 
@@ -72,9 +72,9 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 3. In the **Microsoft 365 compliance** portal, in the left navigation pane, expand **eDiscovery** and select **Core**.
 
-4. Check the checkbox in front of **Mark 8 Project case** and double-click to open the case home.
+4. Click on the **Mark 8 Project case** to open the case.
 
-5. Select the **Searches** tab and double-click the **Mark 8 Project** search.
+5. Select the **Searches** tab and select the **Mark 8 Project** search.
 
 **Hint:** If your eDiscovery search has no data consider the parameters of the search.  In the earlier lab did you have Megan send an emaail about the *Mark 8* project?  If not consider changing the keyword in the search to any of the terms in any of the existing emails in Megan's mailbox.  For example, the term "planner" usually appears in several of  Megan's existing emails.  The search must have data in order for the export to have anything process.
 
