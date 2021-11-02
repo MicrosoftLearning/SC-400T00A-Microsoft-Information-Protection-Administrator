@@ -38,25 +38,29 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 16. On the **Create rule** page, select **+ Add an action** and select **Restrict access or encrypt the content in Microsoft 365 locations**.
 
-17. Check the box in front of **Restrict access or encrypt the content in Microsoft 365 locations** and then select **Block Everyone. Only the content owner, last modifier, and site admin will continue to have access**.
+17. Check the box in front of **Restrict access or encrypt the content in Microsoft 365 locations** and then select **Block Everyone**.
 
 18. On the **Create rule** page, in the **User Notifications** section, select the switch to put it in the **On** position.
 
-19. On the **Create rule** page, in the **User Overrides** section, select the switch to put it in the **On** position and select the **Require a business justification to override** option.
+19. Under the **Microsoft 365 Services** check the box **Notify users in Office 365 service with a policy tip**
 
-20. In the **Incident reports** section, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.
+20. On the **Create rule** page, in the **User Overrides** section, under the **Allow overrides from M365 services**, check the box **Allow overrides from M365 services. Allows users in Exchange, Sharepoint, OneDrive and Teams to override policy restrictions**
 
-21. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
+21. Check the box **Require a business justification to override**
 
-22. Select **Save**, then select **Next**.
+22. In the **Incident reports** section, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.
 
-23. On the **Test or turn on the policy** page select **Test it out first** and select **Show policy tips while in test mode**.
+23. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
 
-24. Select **Next** and review the policy configuration.
+24. Select **Save**, then select **Next**.
 
-25. Select **Submit** to create the policy.
+25. On the **Test or turn on the policy** page select **Test it out first** and select **Show policy tips while in test mode**.
 
-26. Once the policy is created select **Done**.
+26. Select **Next** and review the policy configuration.
+
+27. Select **Submit** to create the policy.
+
+28. Once the policy is created select **Done**.
 
 You have now created a DLP policy that scans for Credit Card numbers in Microsoft Teams chats and channels and notifies allows users to provide a business justification to override the policy.
 
@@ -70,7 +74,7 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-4. In the **Data loss prevention** window select the **Policies** tab, then select the policy named **Credit Card DLP policy** and then select **Edit policy** to open the policy wizard.
+4. In the **Data loss prevention** window select the **Policies** tab, then select the policy named **Credit Card DLP policy** and then select **Edit policy** (pencil icon) to open the policy wizard.
 
 5. On the **Name your DLP policy** page, select **Next**.
 
@@ -174,7 +178,7 @@ In this task, you want to create a file policy in Microsoft Cloud App Security t
 
 6. Keep the **Policy Severity** on **Low** and make sure the **Category** is set to **DLP**. For a file policy, this should be the default.
 
-7. In the **Create filters for the files this policy will act on** area, expand the dropdown menu **Public (Internet), External, Public** and add **Internal**.
+7. In the **Filters** area, expand the dropdown menu **Public (Internet), External, Public** and add **Internal**.
 
 8. In the **Inspection Method** dropdown menu, select **Data Classification Service**.
 
@@ -210,7 +214,7 @@ Your company uses PowerAutomate flows to share data between SharePoint Online an
 
 7. In the **Assign connectors** page, select the **Business** tab to make sure both SharePoint and Salesforce now appear.
 
-8. Select **Next**.
+8. Select **Next** 2 times.
 
 9. On the **Define scope** page, select **Add all environments**, then select **Next**.
 
