@@ -154,7 +154,10 @@ Protected messages sent by your organizations finance department require a speci
 
     `New-TransportRule -Name "Encrypt all mails from Finance team" -FromScope InOrganization -FromMemberOf "Finance Team" -ApplyRightsProtectionCustomizationTemplate "Finance Department" -ApplyRightsProtectionTemplate Encrypt`
 
-11. Leave the PowerShell open.
+11. Type the following cmdlet to verify changes.
+    `Get-OMEConfiguration -Name "Finance Department"` | Format-List
+    
+12. Leave the PowerShell open.
 
 You have successfully created a new transport rule that applies the custom OME template automatically, when a member of the finance department sends a message to external recipients.
 
@@ -178,7 +181,7 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 
     ![Sample encrypted email from Lynne Robbins. ](../Media/EncryptedEmail.png)
 
-9. The customized OME configuration gets social IDs activated, because both options are available. Select **Sign in with a One-time passcode** to receive a limited time passcode.
+9. The customized OME configuration has social IDs activated, because both options are available. Select **Sign in with a One-time passcode** to receive a limited time passcode.
 
 10. Go to your personal email portal and open the message with subject **Your one-time passcode to view the message**.
 
