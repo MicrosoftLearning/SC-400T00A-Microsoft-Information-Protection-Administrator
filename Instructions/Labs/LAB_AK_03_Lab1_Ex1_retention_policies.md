@@ -24,11 +24,11 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 6. Select the **Next** button.  
 
-7. In the **Choose the type of retention policy to create** area, choose **Static**.
+7. In the **Choose the type of retention policy to create** area, choose **Static** and select **Next**.
 
 8. In the **Choose locations to apply the policy** area make sure Exchange email, SharePoint sites, OneDrive accounts, and Microsoft 365 Groups are selected and then select **Next**.
 
-9. On the **Decided if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
+9. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
 	- Retain items for a specific period: Choose **Custom** from the drop down list
 	- Change the years field to **3**
@@ -61,7 +61,7 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 6. Select the **Next** button.
 
-7. In the **Choose the type of retention policy to create** area, choose **Static**.
+7. In the **Choose the type of retention policy to create** area, choose **Static** and then select **Next**.
 
 8. On the **Choose locations to apply the policy** page, enter the following settings:
 
