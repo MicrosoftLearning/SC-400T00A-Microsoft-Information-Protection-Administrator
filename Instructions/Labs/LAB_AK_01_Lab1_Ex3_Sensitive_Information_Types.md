@@ -14,7 +14,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 4. If a **What is data classification?** message is displayed, select **Close** and select **Sensitive info types** from the top pane.  Hint: If **Sensitive info types** don't appear in the compliance portal then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser yet.  You may have to sign-out and sign-in again as JoniS.
 
-5. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
+5. On the **Sensitive ino types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
 6. On the **Name your sensitive info type** page, type *Contoso Employee IDs* into **Name**.
 
@@ -61,7 +61,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 5. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-6. From the left pane, select **Teams & Groups** and select **Active teams & groups**.
+6. From the left pane, select **Teams & groups** and select **Active teams & groups**.
 
 7. Select **Add a group** from the top pane.
 
@@ -95,7 +95,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 22. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
 
-23. Navigate to **Data classification** and select **Exact data matches** tab from the top pane.
+23. Select **Data classification** and select **Exact data matches** tab from the top pane.
 
 24. Select **+ Create EDM schema** to create a new schema definition.
 
@@ -137,9 +137,9 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 43. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
 
-44. On the **New pattern** right-side pane, in the Primary element field, select *EmployeeID*.
+44. On the **New pattern** pane on the right-side, in the Primary element field, select *EmployeeID*.
 
-45. Below **Choose primary element's sensitive info type**, select **Choose sensitive info type**. 
+45. Below **Primary element's sensitive info type**, select **Choose sensitive info type**. 
 
 46. In the **Search** bar, enter *Contoso* and press the enter key.
 
@@ -147,7 +147,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 48. Select **Done**.
 
-49. Select **Next**.
+49. Select **Next** in the *Define patterns for this EDM sensitive info type* screen.
 
 50. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
 
@@ -251,7 +251,7 @@ Several violations of personal information leakage happened when users sent out 
 
 2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. Select **Data classification** from the left-side pane and **Sensitive info types** from the top pane.
+3. Select **Data classification** from the left-side pane and select **Sensitive info types** tab from the top pane.
 
 4. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
