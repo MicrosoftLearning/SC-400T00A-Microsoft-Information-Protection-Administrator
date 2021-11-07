@@ -35,7 +35,12 @@ In this task, you will create a file plan label that allows your HR department t
     - **During the retention period**: Mark items as a record
     - **At the end of a retention period**: Trigger a disposition review
 
-9. In the **Add disposition reviewers** window, add a disposition stage and assign **Lynne Robbins** to it, then select **Next**
+9. In the **Add disposition reviewers** window, click **+ Add a disposition stage**
+
+10. Type **Lynne R** 
+
+
+10.  In the **Reviewers for stage** field, type **Lynne Robbins** to search, then select **Lynne Robbins** to add the user, then select **Next**
 
 10. Review the configuration of the label, then select **Create label**.
 
@@ -61,13 +66,17 @@ In this task, you will publish the label so users of the HR department can apply
 
 7. Select the **Employee Data** label and select **Add**, then select **Next**.  Select **Next**.
 
-8. On the **Choose locations** page, select **All locations. Includes content in Exchange email, Office 365 groups, OneDrive, and SharePoint documents.**, then select **Next**.
+8. On the **Choose the type of retention policy to create** page, select **Static**
 
-9. On the **Name your policy** page, enter the following information, then select **Next**:
+9. Select the **Next** button  
+
+10. On the **Choose locations** page, select **All locations. Includes content in Exchange email, Office 365 groups, OneDrive, and SharePoint documents.**, then select **Next**.
+
+11. On the **Name your policy** page, enter the following information, then select **Next**:
     - **Name**: Employee Health Insurance label policy
     - **Description**: This policy contains the record label for health insurance information.
 
-10. Review the configuration of your policy and select **Submit**.  When your label is published, select **Done**.
+12. Review the configuration of your policy and select **Submit**.  When your label is published, select **Done**.
 
 You successfully started the process of publishing a retention label including a record. The publishing of labels may take up to 24 hours. After the label is published the HR department can use it to label files containing the health insurance information, they are required to keep a record of.  You can proceed immediately to the next task.
 
