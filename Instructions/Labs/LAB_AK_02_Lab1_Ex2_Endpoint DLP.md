@@ -69,53 +69,55 @@ You have successfully onboarded a device and joined it to Azure AD to be protect
 
 In this task, you will create a Data Loss Prevention policy in the Compliance Center to protect sensitive data residing on Windows 10 devices in your organization. The DLP Policy that you create will block your users if they want to copy content from documents that contain Credit Card information.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. Log on to your Client 1 VM (LON-CL1) as the lon-cl1\admin account.
 
-2. In **Microsoft Edge**, the Microsoft 365 compliance portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In Microsoft Edge, navigate to https://compliance.microsoft.com.
 
-3. In the **Microsoft 365 compliance** portal on the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
+3. When the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider. Hint: The password is probably the same as the MOD Administrator used earlier. 
 
-4. In the **Data loss prevention** window select the **Policies** tab, and then select **+Create policy** to start the wizard for creating a new data loss prevention policy.
+4. In the **Microsoft 365 compliance** portal on the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-5. On the **Start with a template or create a custom policy** page, you want to select **Custom** in the left pane and **Custom policy** in the middle pane; however, by default, both these options should already be selected (if not, then select them now), select **Next**.
+5. In the **Data loss prevention** window select the **Policies** tab, and then select **+Create policy** to start the wizard for creating a new data loss prevention policy.
 
-6. In the **Name your DLP policy** page, type *Credit Card Endpoint DLP Policy* in the **Name** field and *Protect credit card numbers from being shared on endpoints.* in the **Description** field. Select **Next**.
+6. On the **Start with a template or create a custom policy** page, you want to select **Custom** in the left pane and **Custom policy** in the middle pane; however, by default, both these options should already be selected (if not, then select them now), select **Next**.
 
-7. On the **Choose locations to apply the policy** page, select only the **Devices** option and then select **Next**.
+7. In the **Name your DLP policy** page, type *Credit Card Endpoint DLP Policy* in the **Name** field and *Protect credit card numbers from being shared on endpoints.* in the **Description** field. Select **Next**.
 
-8. On the **Define policy settings** page, the option **Create or customize advanced DLP rules** needs to be selected, which it should be by default. Select **Next**.
+8. On the **Choose locations to apply the policy** page, select only the **Devices** option and then select **Next**.
 
-9. On the **Customize advanced DLP rules** page, select **+ Create rule**.
+9. On the **Define policy settings** page, the option **Create or customize advanced DLP rules** needs to be selected, which it should be by default. Select **Next**.
 
-10. On the **Create rule** page, type *Endpoint Credit Card information* in the **Name** field.
+10. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 
-11. Select **+ Add condition** and then select **Content contains** from the dropdown menu.
+11. On the **Create rule** page, type *Endpoint Credit Card information* in the **Name** field.
 
-12. On the **Create rule** page, in the new **Content contains** area, select **Add** and select **sensitive info types** from the dropdown menu.
+12. Select **+ Add condition** and then select **Content contains** from the dropdown menu.
 
-13. On the **Sensitive info types** page, select **Credit Card Number** and select **Add**.
+13. On the **Create rule** page, in the new **Content contains** area, select **Add** and select **sensitive info types** from the dropdown menu.
 
-14. On the **Create rule** page, select **+ Add an action** drop-down and select **Audit or restrict activities on Windows devices**.
+14. On the **Sensitive info types** page, select **Credit Card Number** and select **Add**.
 
-15. Uncheck every checkbox except **Copy to Clipboard**.
+15. On the **Create rule** page, select **+ Add an action** drop-down and select **Audit or restrict activities on Windows devices**.
 
-16. In the dropdown menu behind **Copy to Clipboard** select **Block**.
+16. Uncheck every checkbox except **Copy to Clipboard**.
 
-17. On the **Create rule** page, in the **User Notifications** section, select the switch to put it in the **On** position.
+17. In the dropdown menu behind **Copy to Clipboard** select **Block**.
 
-18. In the **Incident reports** section, in the **Use this severity in admin alerts and reports** dropdown, select **Low**.
+18. On the **Create rule** page, in the **User Notifications** section, select the switch to put it in the **On** position.
 
-19. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
+19. In the **Incident reports** section, in the **Use this severity in admin alerts and reports** dropdown, select **Low**.
 
-20. Select **Save**, then select **Next**.
+20. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
 
-21. On the **Test or turn on the policy** page select **Turn it on right away**.
+21. Select **Save**, then select **Next**.
 
-22. Select **Next** and review the policy configuration.
+22. On the **Test or turn on the policy** page select **Turn it on right away**.
 
-23. Select **Submit** to create the policy.
+23. Select **Next** and review the policy configuration.
 
-24. Once the policy is created select **Done**.
+24. Select **Submit** to create the policy.
+
+25. Once the policy is created select **Done**.
 
 You have successfully activated the DLP Policy. If the policy detects an attempt to copy content from a file containing credit card information, it will now block the attempt and inform your user.
 
