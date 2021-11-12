@@ -12,7 +12,7 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 3. In the portal, on the left navigation pane, expand **eDiscovery** and select **Core**.
 
-4. On the **Core eDiscovery** page, select **+** to create a case.
+4. On the **Core eDiscovery** page, select **+ Create a case**.
 
 5. In the **Case name** field, type *Mark 8 Project Case* and in the **Case description** type *This case will be used to evaluate Megan Bowen's mails regarding the Mark 8 Project.*, then select **Save**
 
@@ -20,11 +20,11 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 7. In the Case view, select the **Searches** tab.
 
-8. Select **+New search** to start a new search.
+8. Select **+ New search** to start a new search.
 
-9. In the **Name and description** section, type *Mark 8 Project* for the name and select **Next**.
+9. In the **Name and description** page, type *Mark 8 Project* for the name and select **Next**.
 
-10. In the **Locations** section, turn **Exchange mailboxes** to **On**, then select **Choose users, groups, or teams**.
+10. In the **Locations** page, turn **Exchange mailboxes** to **On**, then select **Choose users, groups, or teams**.
 
 11. In the **Exchange mailboxes** dialog search *Megan Bowen* and select Megan's mailbox.  Select **Done**.
 
@@ -100,7 +100,7 @@ An investigation showed that users received a few phishing mails and you are tas
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Compliance Center as **Joni Sherman**.
+2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Joni Sherman**.
 
 3. In the Compliance center, in the left navigation pane, select **Content search**.
 
