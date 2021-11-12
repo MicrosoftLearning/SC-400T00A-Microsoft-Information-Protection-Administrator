@@ -104,7 +104,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 11. Select **Send** to send the message.
 
-12. Sign in to your personal email account and open the message from Lynne Robbins.  If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically.  If you sent the email to another email service (like @google.com), you may have to perform the next steps to process the encryption and read the message.
+12. Sign in to your personal email account and open the message from Lynne Robbins.  If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically.  If you sent the email to another email service like (@google.com), you may have to perform the next steps to process the encryption and read the message.
 
 13. Select **Read the message**.
 
@@ -155,7 +155,7 @@ Protected messages sent by your organizations finance department require a speci
     `New-TransportRule -Name "Encrypt all mails from Finance team" -FromScope InOrganization -FromMemberOf "Finance Team" -ApplyRightsProtectionCustomizationTemplate "Finance Department" -ApplyRightsProtectionTemplate Encrypt`
 
 11. Type the following cmdlet to verify changes.
-    `Get-OMEConfiguration -Name "Finance Department"` | Format-List
+    `Get-OMEConfiguration -Identity "Finance Department" | Format-List`
     
 12. Leave the PowerShell open.
 
