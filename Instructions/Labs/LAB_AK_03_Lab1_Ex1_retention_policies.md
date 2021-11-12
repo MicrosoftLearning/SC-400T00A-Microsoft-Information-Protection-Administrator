@@ -19,7 +19,7 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 5. On the **Name your retention policy** page, for the **Name** and **Description** enter the following information:
 
-	- Name: Company Wide
+	- Name: Company wide
 	- Description: All locations except for teams
 
 6. Select the **Next** button.  
@@ -69,7 +69,7 @@ You will now create a retention policy for the Teams locations. As Teams channel
 	- **Teams chats location** – **Status**: On
 	- Turn **OFF** all other locations.
 
-9. For the **Teams chat** location, select the **Edit** text link under **All Users**
+9. For the **Teams chat** location, select the **Edit** text link under **All users**
 
 10. On the **Teams chats** pane, add the users: 
     - Adele Vance
