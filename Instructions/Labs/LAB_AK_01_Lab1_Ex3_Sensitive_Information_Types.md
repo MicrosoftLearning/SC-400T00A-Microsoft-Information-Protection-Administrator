@@ -151,7 +151,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 50. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
 
-51. In the **Name and describe your EDM sensitive info type** page, enter *Contoso Employee EDM*.
+51. In the **Name and describe your EDM sensitive info type** page, enter *Contoso Employee EDM* for the name.
 
 52. In the **Description for admins** field, enter *EDM-based sensitive information type for employee personal information.*.
 
@@ -175,7 +175,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
 4. When the setup wizard opens in the background, select the installer from the taskbar.
 
-5. In the **Microsoft Exact Data Match Upload Agent Setup**, select **Next**.
+5. In the **Microsoft Exact Data Match Upload Agent Setup Wizard**, select **Next**.
 
 6. Select **I accept the terms in the License Agreement** and select **Next**.
 
@@ -255,7 +255,7 @@ Several violations of personal information leakage happened when users sent out 
 
 4. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
-5. On the **Name your sensitive info type** page, enter *Contoso Diseases List* into **Name**.
+5. On the **Name your sensitive info type** page, enter *Contoso Diseases List* into **Name** field.
 
 6. Enter *List of possible diseases of employees.* to the **Description** field and select **Next**.
 
@@ -293,7 +293,7 @@ Several violations of personal information leakage happened when users sent out 
 
 19. In the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
 
-20. Leave the browser window in the Microsoft 365 Compliance center open.
+20. Leave the browser window in the Microsoft 365 compliance center open.
 
 You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate. Proceed with the next task.
 
@@ -317,7 +317,7 @@ Custom Sensitive information types should always be tested before using them in 
 
 7. Close the Notepad window.
 
-8. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+8. In **Microsoft Edge**, the Microsoft 365 compliance center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
 9. In the left navigation pane select **Data classification**, then select the **Sensitive info types** tab.
 
