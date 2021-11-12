@@ -14,7 +14,7 @@ In this task, you will create a file plan label that allows your HR department t
 
 4. On the **Records management** page, select **File plan**.
 
-5. Select **+** to create a label.
+5. Select **+ Create a label**.
 
 6. Enter the following information, then select **next**:
     - **Name**: Employee Data
@@ -28,23 +28,22 @@ In this task, you will create a file plan label that allows your HR department t
     - **Category**: Recruiting and hiring
     - **Provision/citation**: Health Insurance Portability and Accountability Act of 1996
 
-8. On the **Retention settings** page, select the following options, then select **Next**:
+8. On the **Define retention settings** page, select the following options, then select **Next**:
     - **Retain items for a specific period**
     - **Retention period**: 7 years
     - **Start the retention period based on**: When items were created
     - **During the retention period**: Mark items as a record
     - **At the end of a retention period**: Trigger a disposition review
 
-9. In the **Add disposition reviewers** window, click **+ Add a disposition stage**
+9. In the **Add disposition reviewers** window, click **+ Add a stage**
 
 10. Type **Lynne R** 
 
+11.  In the **Reviewers for stage** field, type **Lynne Robbins** to search, then select **Lynne Robbins** to add the user, then select **Next**
 
-10.  In the **Reviewers for stage** field, type **Lynne Robbins** to search, then select **Lynne Robbins** to add the user, then select **Next**
+12. Review the configuration of the label, then select **Create label**.
 
-10. Review the configuration of the label, then select **Create label**.
-
-11. On the **Your retention label is created** page, select **Do Nothing**, then select **Done**.
+13. On the **Your retention label is created** page, select **Do Nothing**, then select **Done**.
 
 You successfully created a retention label using file plan that keeps all labeled documents from being deleted for seven years and at the end of the retention period Lynne Robbins has to decide if the data can be disposed of or has to be retained further.
 
@@ -64,7 +63,7 @@ In this task, you will publish the label so users of the HR department can apply
 
 6. On the **Choose labels to publish** page, select **Choose labels to publish**.
 
-7. Select the **Employee Data** label and select **Add**, then select **Next**.  Select **Next**.
+7. Select the **Employee Data** label and select **Add**, then select **Next**. 
 
 8. On the **Choose the type of retention policy to create** page, select **Static**
 
@@ -86,7 +85,7 @@ In this task, you will assign the published record label to an email in Outlook 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. On the taskbar at the bottom of the page, select the Start button, scroll down and then select **Outlook**. If necessary, sign in as **Megan Bowen**.
+2. On the taskbar at the bottom of the page, select the Start button, scroll down and then select **Outlook**. If necessary, sign in as **Megan Bowen**.  If Outlook is not installed on the VM use Outlook through a web browser.
  
 3. In the Outlook application, select **Inbox**
 
