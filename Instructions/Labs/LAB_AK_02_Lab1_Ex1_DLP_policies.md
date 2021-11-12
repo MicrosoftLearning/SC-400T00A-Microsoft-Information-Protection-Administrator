@@ -18,7 +18,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 6. In the **Name your DLP policy** page, type *Credit Card DLP Policy* in the **Name** field and *Protect credit card numbers from being shared.* in the **Description** field. Select **Next**.
 
-7. On the **Choose locations to apply the policy** page, select only the **Teams chat and channel messages** option to be enabled and then select **Next**.
+7. On the **Choose locations to apply the policy** page, enable only the **Teams chat and channel messages** option to be enabled and then select **Next**. 
 
 8. On the **Define policy settings** page, the option **Create or customize advanced DLP rules** needs to be selected, which it should be by default. Select **Next**.
 
@@ -40,27 +40,25 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 17. Check the box in front of **Restrict access or encrypt the content in Microsoft 365 locations** and then select **Block Everyone**.
 
-18. On the **Create rule** page, in the **User Notifications** section, select the switch to put it in the **On** position.
+18. On the **Create rule** page, in the **User notifications** section, select the switch to put it in the **On** position.
 
-19. Under the **Microsoft 365 Services** check the box **Notify users in Office 365 service with a policy tip**
+19. On the **Create rule** page, in the **User overrides** section, under the **Allow overrides from M365 services**, check the box **Allow overrides from M365 services. Allows users in Exchange, Sharepoint, OneDrive and Teams to override policy restrictions**
 
-20. On the **Create rule** page, in the **User Overrides** section, under the **Allow overrides from M365 services**, check the box **Allow overrides from M365 services. Allows users in Exchange, Sharepoint, OneDrive and Teams to override policy restrictions**
+20. Check the box **Require a business justification to override**
 
-21. Check the box **Require a business justification to override**
+21. In the **Incident reports** section, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.
 
-22. In the **Incident reports** section, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.
+22. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
 
-23. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
+23. Select **Save**, then select **Next**.
 
-24. Select **Save**, then select **Next**.
+24. On the **Test or turn on the policy** page select **Test it out first** and select **Show policy tips while in test mode**.
 
-25. On the **Test or turn on the policy** page select **Test it out first** and select **Show policy tips while in test mode**.
+25. Select **Next** and review the policy configuration.
 
-26. Select **Next** and review the policy configuration.
+26. Select **Submit** to create the policy.
 
-27. Select **Submit** to create the policy.
-
-28. Once the policy is created select **Done**.
+27. Once the policy is created select **Done**.
 
 You have now created a DLP policy that scans for Credit Card numbers in Microsoft Teams chats and channels and notifies allows users to provide a business justification to override the policy.
 
@@ -74,7 +72,7 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-4. In the **Data loss prevention** window select the **Policies** tab, then select the policy named **Credit Card DLP policy** and then select **Edit policy** (pencil icon) to open the policy wizard.
+4. In the **Data loss prevention** window select the **Policies** tab, then select the policy named **Credit Card DLP Policy** and then select **Edit policy** (pencil icon) to open the policy wizard.
 
 5. On the **Name your DLP policy** page, select **Next**.
 
@@ -114,15 +112,15 @@ In this task, you will activate the credit card information DLP policy you creat
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-3. In the **Compliance Center**, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
+3. In the **Microsoft 365 compliance** portal, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
 4. In the **Data loss prevention** window select the **Policies** tab, and then select the policy named **Credit Card DLP policy** and then select **Edit policy** to open the policy wizard.
 
 5. Select **Next** until you reach the **Test or turn on the policy** page and then select **Turn it on right away**.
 
-6. Select **Next** and then **Submit** to activate the policy.
+6. Select **Next** and then select **Submit** to activate the policy.
 
 7. Once the policy is updated select **Done**.
 
@@ -146,13 +144,13 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 You successfully modified the priority of your DLP policies. If both policies match the same content the action of the higher priority policy will be enforced.
 
-### Task 6 - Enable file monitoring in Microsoft Cloud App Security (MCAS)
+### Task 6 - Enable file monitoring in Microsoft Defender for Cloud Apps
 
-You want to use file policies in Microsoft Cloud App Security to protect files in your OneDrive for Business and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so MCAS can scan files in your organization.
+You want to use file policies in Microsoft Defender for Cloud Apps to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft Defender for Cloud Apps can scan files in your organization.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://portal.cloudappsecurity.com** and log into the Cloud App Security Portal as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+2. In **Microsoft Edge**, navigate to **https://portal.cloudappsecurity.com** and log into the Microsoft Defendger for Cloud Apps portal as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 3. In the top-right corner, next to your profile information, select the **Settings** cogwheel and select **Settings** in the dropdown menu.
 
@@ -160,23 +158,23 @@ You want to use file policies in Microsoft Cloud App Security to protect files i
 
 5. Select the **Enable file monitoring** checkbox and then select **Save** if it is not already marked.
 
-You successfully enabled file monitoring in MCAS and can now scan files for sensitive content using file policies.
+You successfully enabled file monitoring in Microsoft Defender for Cloud Apps and can now scan files for sensitive content using file policies.
 
-### Task 7 - Create File Policy for MCAS
+### Task 7 - Create File Policy for Microsoft Defender for Cloud Apps
 
-In this task, you want to create a file policy in Microsoft Cloud App Security to scan files in OneDrive for Business and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
+In this task, you want to create a file policy in Microsoft Defender for Cloud Apps to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-2. In **Microsoft Edge**, the Cloud app security portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://portal.cloudappsecurity.com**.
+2. In **Microsoft Edge**, the Microsoft Defender for Cloud Apps portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://portal.cloudappsecurity.com**.
 
-3. In the **Microsoft Cloud App Security Portal**, in the left navigation pane, expand **Control** and select **Policies**.
+3. In the **Microsoft Defender for Cloud Apps** portal, in the left navigation pane, expand **Control** and select **Policies**.
 
-4. On the **Policies** page, expand **+Create policy** and then select **File policy**.
+4. On the **Policies** page, expand **+ Create policy** and then select **File policy**.
 
-5. On the **Create file policy** page, type *Credit Card Information for files* in the **Policy name** field and type *Protect credit card numbers from being shared in files.* in the **Description** field.
+5. On the **Create file policy** page, type *Credit Card Information for files* in the **Policy name** field, and type *Protect credit card numbers from being shared in files.* in the **Description** field.
 
-6. Keep the **Policy Severity** on **Low** and make sure the **Category** is set to **DLP**. For a file policy, this should be the default.
+6. Keep the **Policy Severity** on **Low** (one lighted icon) and make sure the **Category** is set to **DLP**. For a file policy, this should be the default.
 
 7. In the **Filters** area, expand the dropdown menu **Public (Internet), External, Public** and add **Internal**.
 
@@ -194,7 +192,7 @@ In this task, you want to create a file policy in Microsoft Cloud App Security t
 
 14. Select **Create** at the bottom of the page.
 
-You have now created a file policy that will continuously scan files saved in OneDrive for Business and SharePoint for credit card information and quarantine them if they are shared inside your organization.
+You have now created a file policy that will continuously scan files saved in OneDrive and SharePoint for credit card information and quarantine them if they are shared inside your organization.
 
 ### Task 8 - Create a DLP Policy for PowerPlatform
 
@@ -202,9 +200,9 @@ Your company uses PowerAutomate flows to share data between SharePoint Online an
 
 1. Log into the Client 2 VM (LON-CL1) as the **lon-cl2\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://admin.powerplatform.microsoft.com** and log into the Power Platform admin Center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+2. In **Microsoft Edge**, navigate to **https://admin.powerplatform.microsoft.com** and log into the Power Platform admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-3. In the **Power Platform admin center**, in the left navigation pane, select **Data policies**.
+3. In the **Power Platform admin center**, in the left navigation pane, select the drop-down for **Policies** and then select **Data policies**.
 
 4. On the **Data policies** page, select **+ New Policy**.
 
@@ -214,7 +212,7 @@ Your company uses PowerAutomate flows to share data between SharePoint Online an
 
 7. In the **Assign connectors** page, select the **Business** tab to make sure both SharePoint and Salesforce now appear.
 
-8. Select **Next** 2 times.
+8. Select **Next** twice.
 
 9. On the **Define scope** page, select **Add all environments**, then select **Next**.
 
