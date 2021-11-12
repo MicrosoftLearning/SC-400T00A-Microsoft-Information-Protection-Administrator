@@ -67,7 +67,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
 3. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
@@ -100,7 +100,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 14. Select the **Next** button.
 
-15. On the **Review your settings** page, select the **Submit** button.  When your policy is created select **Done**.
+15. On the **Review your Settings** page, select the **Submit** button.  When your policy is created select **Done**.
 
 You have successfully published the retention label for VAT Returns and supporting documents.
 
