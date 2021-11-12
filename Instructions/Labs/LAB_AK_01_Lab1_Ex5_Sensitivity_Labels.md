@@ -86,9 +86,9 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 9. On the **Choose protection settings for files & emails** page, select **Next**.
 
-10. On the **Auto-Labeling for files and emails** page, select **Next**.
+10. On the **Auto-labeling for files and emails** page, select **Next**.
 
-11. On the **Define protection settings for groups & sites** page, select **Next**.
+11. On the **Define protection settings for groups and sites** page, select **Next**.
 
 12. On the **Auto-labeling for database columns** page, select **Next**. 
 
@@ -111,11 +111,11 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 19. Select **Next**.
 
-20. On the **Define the scope for this label** page, select the option **Files & emails**.
+20. On the **Define the scope for this label** page, select the option **Files & emails**. 
 
 21. Select **Next**.
 
-22. On the **Define protection settings for files and emails** page, select the **Encrypt files and emails** option.
+22. On the **Choose protection settings for files and emails** page, select the **Encrypt files and emails** option.
 
 23. Select **Next**.
 
@@ -156,7 +156,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-2. In **Microsoft Edge**, the Microsoft 365 Compliance center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance center tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
 3. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Information protection**. 
 
@@ -182,7 +182,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 14. On the **Apply a default label to emails** page, select **Next**.
 
-15. On the **Policy settings for Power BI** page, select **Next**.
+15. On the **Apply a default label to Power BI content (preview)** page, select **Next**.
 
 16. On the **Name your policy** page, enter the following information:
 
@@ -205,7 +205,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-2. In **Microsoft Edge**, the Office 365 Compliance Center tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
+2. In **Microsoft Edge**, the Microsoft 365 compliance tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
 
 3. If a **Get your work done with Office 365** message is shown, close it with the **X** in the upper right corner.
 
@@ -219,7 +219,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
    - Important HR employee document.
 
-8. Select **Sensitivity** from the top pane top open the dropdown menu. Select **Internal**  to apply the label.
+8. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal**  to apply the label.
     Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
     ![Sensitivity label. ](../Media/word_label.png)
 
@@ -314,11 +314,11 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 23. Select **Done**.
 
-24. On the **Information protection** page, select **Publish labels**.
+24. On the **Information protection** page, select **Publish label**.
 
 25. The Publish sensitivity labels wizard will start.
 
-26. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish link**.
+26. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
 
 27. A side bar called **Sensitivity labels to publish** will appear on the right.
 
@@ -332,16 +332,22 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 32. On the **Policy settings** page, select **Next**.
 
-33. On the **Name your policy** page, enter the following information:
+33. On the **Apply a default label to documents** page, select **Next**.
+
+34. On the **Apply a default label to emails** page, select **Next**.
+
+35. On the **Apply a default label to Power BI content (preview)** page, select **Next**. 
+
+36. On the **Name your policy** page, enter the following information:
 
    - **Name**: GDPR Germany policy
    - **Enter a description for your sensitivity label policy**: This auto apply sensitivity labels policy is for the GDPR region of Germany.
 
-34. Select **Next**.
+37. Select **Next**.
 
-35. On the **Review and finish** page, select **Submit**.
+38. On the **Review and finish** page, select **Submit**.
 
-36. The policy will be created and when complete a message will display, **New policy created**.
+39. The policy will be created and when complete a message will display, **New policy created**.
 
 37. Select **Done**.
 
