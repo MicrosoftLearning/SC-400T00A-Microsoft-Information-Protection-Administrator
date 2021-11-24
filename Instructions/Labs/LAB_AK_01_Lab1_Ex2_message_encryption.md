@@ -1,4 +1,4 @@
-# Lab 1 Exercise 2 - Manage Office 365 Message Encryption
+# Lab 1 - Exercise 2 - Manage Office 365 Message Encryption
 
 The first setting Joni Sherman needs to configure and test with her pilot team is the Microsoft 365 built-in Office 365 Message Encryption (OME). For this purpose, she will modify the default template and create a new branding template, that will be assigned to one of the pilot users. The pilot users will then test the OME functionality with their accounts.
 
@@ -124,7 +124,7 @@ You have successfully tested the modified default OME template with deactivated 
 
 Protected messages sent by your organizations finance department require a special branding, including customized introduction and body texts and a Disclaimer link in the footer. The finance messages shall also expire after seven days. In this task, you will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mails sent from the finance department.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
+1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
 2. Run the following cmdlet to create a new OME configuration:
 
@@ -165,7 +165,7 @@ You have successfully created a new transport rule that applies the custom OME t
 
 To validate the new custom OME configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
 
-1. You should still be logged into your Client 2 VM (LON-CL2) as the **lon-cl2\admin** account, and you should be logged into Microsoft 365 as **Lynne Robbins**. 
+1. Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account, and you should be logged into Microsoft 365 as **Lynne Robbins**. 
 
 3. Select the **Outlook** symbol from the left navigation pane.
 
@@ -191,4 +191,4 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 
 You have successfully tested the new customized OME template. 
 
-# Proceed to Exercise 3 
+# Proceed to Lab 1 - Exercise 3 
