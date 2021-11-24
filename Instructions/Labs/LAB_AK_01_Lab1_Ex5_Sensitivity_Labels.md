@@ -1,4 +1,4 @@
-# Exercise 5 - Manage Sensitivity Labels
+# Lab 1 - Exercise 5 - Manage Sensitivity Labels
 
 In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. 
 Your organization is based in Rednitzhembach, Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.
@@ -90,7 +90,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 11. On the **Define protection settings for groups and sites** page, select **Next**.
 
-12. On the **Auto-labeling for database columns** page, select **Next**. 
+12. On the **Auto-labeling for schematized data assests(preview)** page, select **Next**. 
 
 13. On the **Review your settings and finish** page, select **Create label**.
 
@@ -130,7 +130,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 26. Select the **Assign permissions** link
 
-27. On the Assign permissions side menu, select the **Add any authenticated users**.
+27. On the Assign permissions side menu, select the **+ Add any authenticated users**.
 
 28. Select **Save**.
 
@@ -140,7 +140,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 31. On the **Define protection settings for groups and sites** page, select **Next**.
 
-32. On the **Auto-labeling for database columns** page, select **Next**. 
+32. On the **Auto-labeling for schematized data assests(preview)** page, select **Next**. 
 
 33. On the **Review your settings and finish** page, select **Create label**.
 
@@ -251,8 +251,6 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 18. Leave the browser window open.
 
-You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member.
-
 You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member where the email was also set with a sensitivity label.
 
 ### Task 5 – Configure Auto Labeling
@@ -280,80 +278,80 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 8. On the **Define the scope for this label** page, select the option **Files & emails**.
 
-8. Select **Next**.
+9. Select **Next**.
 
-9. On the **Choose protection settings for files and emails** page, select **Next**.
+10. On the **Choose protection settings for files and emails** page, select **Next**.
 
-10. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
+11. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
 
-11. In the **Detect content that matches these conditions** section, select **+Add condition** and then select **Content contains**.
+12. In the **Detect content that matches these conditions** section, select **+Add condition** and then select **Content contains**.
 
-12. In **Content contains** section select the **Add** text and then select **Sensitive info types**.
+13. In **Content contains** section select the **Add** text and then select **Sensitive info types**.
 
-13. A **Sensitive info types** panel will be displayed on the right.
+14. A **Sensitive info types** panel will be displayed on the right.
 
-14. In the **Search for sensitive info types** search panel, enter the following information: 
+15. In the **Search for sensitive info types** search panel, enter the following information: 
 
     `German`
 
-15. Press the enter button, the results will display sensitivity info types related to Germany.
+16. Press the enter button, the results will display sensitivity info types related to Germany.
 
-16. Press the **Select all** check box.
+17. Press the **Select all** check box.
 
-17. Select **Add**.
+18. Select **Add**.
 
-18. Select **Next**.
+19. Select **Next**.
 
-19. On the **Define protection settings for groups and sites** page, select **Next**.
+20. On the **Define protection settings for groups and sites** page, select **Next**.
 
-20. On the **Auto-labeling for database columns** page, select **Next**. 
+21. On the **Auto-labeling for schematized data assests(preview)** page, select **Next**. 
 
-21. On the **Review your settings and finish** page, select **Create label**.
+22. On the **Review your settings and finish** page, select **Create label**.
 
-22. The label will be created and when complete a message will display: **Your label was created**.
+23. The label will be created and when complete a message will display: **Your label was created**.
 
-23. Select **Done**.
+24. Select **Done**.
 
-24. On the **Information protection** page, select **Publish label**.
+25. On the **Information protection** page, select **Publish label**.
 
-25. The Publish sensitivity labels wizard will start.
+26. The Publish sensitivity labels wizard will start.
 
-26. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
+27. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
 
-27. A side bar called **Sensitivity labels to publish** will appear on the right.
+28. A side bar called **Sensitivity labels to publish** will appear on the right.
 
-28. Select the **Internal** and **Internal/GDPR Germany** checkbox.
+29. Select the **Internal** and **Internal/GDPR Germany** checkbox.
 
-29. Select **Add**.
+30. Select **Add**.
 
-30. On the **Choose sensitivity labels to publish** page, select **Next**.
+31. On the **Choose sensitivity labels to publish** page, select **Next**.
 
-31. On the **Publish to users and groups** page, select **Next**.
+32. On the **Publish to users and groups** page, select **Next**.
 
-32. On the **Policy settings** page, select **Next**.
+33. On the **Policy settings** page, select **Next**.
 
-33. On the **Apply a default label to documents** page, select **Next**.
+34. On the **Apply a default label to documents** page, select **Next**.
 
-34. On the **Apply a default label to emails** page, select **Next**.
+35. On the **Apply a default label to emails** page, select **Next**.
 
-35. On the **Apply a default label to Power BI content (preview)** page, select **Next**. 
+36. On the **Apply a default label to Power BI content (preview)** page, select **Next**. 
 
-36. On the **Name your policy** page, enter the following information:
+37. On the **Name your policy** page, enter the following information:
 
    - **Name**: GDPR Germany policy
    - **Enter a description for your sensitivity label policy**: This auto apply sensitivity labels policy is for the GDPR region of Germany.
 
-37. Select **Next**.
+38. Select **Next**.
 
-38. On the **Review and finish** page, select **Submit**.
+39. On the **Review and finish** page, select **Submit**.
 
-39. The policy will be created and when complete a message will display, **New policy created**.
+40. The policy will be created and when complete a message will display, **New policy created**.
 
-37. Select **Done**.
+41. Select **Done**.
 
 You have successfully created and published an auto apply sensitivity label for GDPR documents in the region Germany.
 
 Be aware that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
 
 
-## You have completed the lab.
+## You have completed the Lab 1. Proceed to Lab 2 - Exercise 1
