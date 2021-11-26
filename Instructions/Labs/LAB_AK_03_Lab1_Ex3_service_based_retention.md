@@ -1,4 +1,4 @@
-# Lab 3 Exercise 3 - Configure Service-based Retention
+# Lab 3 - Exercise 3 - Configure Service-based Retention
 
 You assume the role of Joni Sherman, a Compliance Admin for Contoso Ltd. The legal department requires you to assist them in stopping a disgruntled employee from deleting company data.
 
@@ -55,4 +55,4 @@ In this task, you will delete and restore a deleted document to make sure you ca
 
 You have successfully recovered a deleted document from a SharePoint Site.
 
-# Proceed to Exercise 4
+# Proceed to Lab 3 - Exercise 4
