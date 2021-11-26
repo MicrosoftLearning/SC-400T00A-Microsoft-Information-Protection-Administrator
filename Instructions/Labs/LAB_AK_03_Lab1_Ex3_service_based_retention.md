@@ -23,7 +23,7 @@ In this task, you will activate a Mailbox Hold to prevent any content in the emp
     - **Litigation hold duration (days)**: 90
     - **Note**: Your mailbox has been put on hold for the next 90 days. You will not be able to delete any messages.
 
-8. Select **Save** twice.
+8. Select **Save** twice. **Note:** A warning message appears **The hold setting may takes up to 240 minutes to take effect**, click **Ok**  on that message.
 
 You have successfully activated the Mailbox Hold on a mailbox in your environment and stopped everyone with access from permanently deleting any content in the mailbox. Applying the hold can take up to 4 hours.  You can proceed to the next task immediately.
 
