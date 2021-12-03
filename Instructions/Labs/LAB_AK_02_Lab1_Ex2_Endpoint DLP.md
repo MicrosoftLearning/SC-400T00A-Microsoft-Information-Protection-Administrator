@@ -1,4 +1,4 @@
-# Lab 2 Exercise 2 - Manage Endpoint DLP
+# Lab 2 - Exercise 2 - Manage Endpoint DLP
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. For this reason, you decide to not only implement Microsoft 365 DLP policies, but extend this protection to devices in your organization.
 
@@ -141,4 +141,4 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 You have now configured a general exception to your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured.
 
-# Proceed to Exercise 3 
+# Proceed to Lab 2 - Exercise 3 
