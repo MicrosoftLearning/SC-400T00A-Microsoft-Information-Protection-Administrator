@@ -1,4 +1,4 @@
-# Lab 3 Exercise 1 - Configure Retention Policies
+# Lab 3 - Exercise 1 - Configure Retention Policies
 
 In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to state laws, which stipulates that records may be deleted after three years without constituting an offense. 
 
@@ -130,4 +130,4 @@ You will create the same retention policies with PowerShell
 
 You have successfully created retention policies through PowerShell with a retention period of three years.
 
-# Proceed to Exercise 2
+# Proceed to Lab 3 - Exercise 2
