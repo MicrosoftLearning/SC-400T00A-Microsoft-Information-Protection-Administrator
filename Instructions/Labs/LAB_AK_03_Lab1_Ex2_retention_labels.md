@@ -1,4 +1,4 @@
-# Lab 3 Exercise 2 - Implement Retention Labels
+# Lab 3 - Exercise 2 - Implement Retention Labels
 
 In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Sudbury England and has legal obligations to retain finance documents. 
 
@@ -211,7 +211,7 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 
 3. In the Microsoft O365 landing page, select the App launcher icon in the top-left corner (the icon with nine dots), then select **SharePoint** from the sub-menu.
 
-4. On the SharePoint landing page, scroll down and select the **Communication site** SharePoint site.
+4. On the SharePoint landing page, scroll down and select the **Communication site** SharePoint site. **Note**: Type **Communication site** in the search bar and search for it.
 
 5. In the top navigation bar, select the **Documents** link
 
@@ -253,4 +253,4 @@ In this task, you will apply a retention label to a document in OneDrive.
 
 You have successfully applied a retention label to a document in OneDrive.
 
-# Proceed to Exercise 3
+# Proceed to Lab 3 - Exercise 3
