@@ -1,4 +1,4 @@
-# Exercise 3 - Manage Sensitive Information Types
+# Lab 1 - Exercise 3 - Manage Sensitive Information Types
 
 Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To educate users in the future, a custom sensitive information type is required to identify employee IDs in emails and documents, which consist of three uppercase characters and six numbers. To lower the false positive rate, the keywords "Employee" and "IDs" will be used. In this task you will create a new custom sensitive information type, a database for EDM-based classification and a keyword dictionary.
 
@@ -127,7 +127,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 38. Select **EDM sensitive info types** from the left pane.
 
-39. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.
+39. Click the more options(...) on the top menu and select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
 
 40. On the **Define data store schema** page, select **Choose an existing EDM schema**.
 
@@ -335,7 +335,7 @@ Custom Sensitive information types should always be tested before using them in 
 
 16. On the **Match results** page, review the found match.
 
-17. Select **Finish** to close the test page.
+17. Select **Finish** and close the test page by clicking the **X** button.
 
 18. Back on the **Data classification** page, select the Sensitive Information Type with the name **Contoso Diseases List**.
 
@@ -351,4 +351,4 @@ Custom Sensitive information types should always be tested before using them in 
 
 You have successfully tested the two custom sensitive information types and validated the search pattern recognizes the desired patterns. You have finished the creation of sensitive information types and can proceed with the next exercise.
 
-# Proceed to Exercise 4 
+# Proceed to Lab 1 - Exercise 4 
