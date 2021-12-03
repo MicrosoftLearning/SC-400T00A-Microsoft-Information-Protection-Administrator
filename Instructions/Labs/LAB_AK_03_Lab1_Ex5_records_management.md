@@ -1,4 +1,4 @@
-# Lab 3 Exercise 5 - Configure Records Management
+# Lab 3 - Exercise 5 - Configure Records Management
 
 In this exercise, you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Regulatory requirements for your organization include having a definitive copy of the employee provided health insurance information available when your company discusses the insurance costs. You are tasked with making sure the records are kept.
 
@@ -101,4 +101,4 @@ In this task, you will assign the published record label to an email in Outlook 
 
 You have successfully applied a retention label with a record to an email and observed that it now cannot be deleted. 
 
-## You have completed the lab.
+## You have completed the Lab 3.
