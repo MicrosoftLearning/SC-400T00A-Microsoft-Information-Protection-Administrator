@@ -1,4 +1,4 @@
-# Lab 2 Exercise 1 - Manage DLP Policies
+# Lab 2 - Exercise 1 - Manage DLP Policies
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization.
 
@@ -14,7 +14,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 4. In the **Data loss prevention** window select the **Policies** tab, and then select **+Create policy** to start the wizard for creating a new data loss prevention policy.
 
-5. On the **Start with a template or create a custom policy** page, you want to select **Custom** in the left pane and **Custom policy** in the middle pane; however, by default, both these options should already be selected (if not, then select them now), select **Next**.
+5. On the **Start with a template or create a custom policy** page, scroll dowb and you want to select **Custom** and **Custom policy** under the template however, by default, both these options should already be selected (if not, then select them now), select **Next**.
 
 6. In the **Name your DLP policy** page, type *Credit Card DLP Policy* in the **Name** field and *Protect credit card numbers from being shared.* in the **Description** field. Select **Next**.
 
@@ -43,6 +43,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 18. On the **Create rule** page, in the **User notifications** section, select the switch to put it in the **On** position.
 
 19. On the **Create rule** page, in the **User overrides** section, under the **Allow overrides from M365 services**, check the box **Allow overrides from M365 services. Allows users in Exchange, Sharepoint, OneDrive and Teams to override policy restrictions**
+**Note:** If you were not able to select the check box of **Allow overrides from M365 services**, enable the **Notify users in Office 365 with a policy tip** which can be found under the **User notification >>  Microsoft 365 services** from previous step. 
 
 20. Check the box **Require a business justification to override**
 
@@ -220,4 +221,4 @@ Your company uses PowerAutomate flows to share data between SharePoint Online an
 
 You have now created a PowerPlatform DLP policy that prevents users from creating flows involving a SharePoint Online Connector and any connector that is not SalesForce.
 
-# Proceed to Exercise 2
+# Proceed to Lab 2 - Exercise 2
