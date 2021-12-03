@@ -1,4 +1,4 @@
-# Lab 3 Exercise 4 - Use eDiscovery for Recovery
+# Lab 3 - Exercise 4 - Use eDiscovery for Recovery
 
 In this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to local laws. The Uniform Preservation of Private Business Records Act specifies that records may be destroyed after three years without constituting an offense under the law (with some exceptions), to adhere to this law your organization has created a retention plan to retain all items in the organization for three years.
 
@@ -112,7 +112,7 @@ An investigation showed that users received a few phishing mails and you are tas
 
 7. In the **Define your search conditions** page in the **Keywords** field, type *From:phishingmail@outlook.com AND subject:"Password changed"* and select **Next**.
 
-8. In the **Review your search and create it** window select **Submit**.
+8. In the **Review your search and create it** window select **Submit**. Click **Done**.
 
 9. Once you created the search, you need to use the **Security & Compliance PowerShell** to start a purge. In the start menu, select **Windows PowerShell** run as Administrator.
 
@@ -120,7 +120,7 @@ An investigation showed that users received a few phishing mails and you are tas
 
 	`Connect-IPPSSession`
 
-11. In the **PowerShell** window, use the following command and confirm with **Y**:
+11. In the **PowerShell** window, use the following command:
 
 	`New-ComplianceSearchAction -SearchName "Phishing mail removal" -Purge -PurgeType HardDelete`
 
@@ -128,4 +128,4 @@ An investigation showed that users received a few phishing mails and you are tas
 
 You have successfully created a new content search to look for specific emails and then used the purge action to delete the phishing mails from your user's mailboxes. You can only run the purge action as a member of the Organization Management role, which a Compliance Admin is not part of.
 
-# Proceed to Exercise 5
+# Proceed to Lab 3 - Exercise 5
