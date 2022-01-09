@@ -49,7 +49,7 @@ In this task, you will create a retention label that can be assigned to document
 
 15. Select the **Next** button.
 
-16. For the **Define retention settings** section set the following information:
+16. For the **Define retention settings**, make sure **Retain items for a specific period** setting is enabled. Choose **Custom** from the drop down list and set the following information:
 	- **Retention period**: 3 Years
 	- **Start the retention period based on**: When items were created
 	- **At the end of the retention period**: Do nothing
@@ -89,7 +89,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 	- **Exchange email** location - **Status**: On
 	- **SharePoint sites** location - **Status**: On
 	- **OneDrive accounts** location - **Status**: On
-	- **Office 365 groups** location - **Status**: OFF
+	- **Microsoft 365 groups** location - **Status**: OFF  
 
 12. Select the **Next** button.
 
@@ -142,7 +142,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 15. On the **Define content that contains sensitive info** page, select the **Next** button.
 
-16. On the **Choose the type of retention policy to create** page, select the **Static** item. 
+16. On the **Choose the type of retention policy to create** page, select the **Static** item and click **Next**. 
 
 17. On the **Choose locations to apply the policy** page, turn **On** the options for: **Exchange email, OneDrive accounts, SharePoint sites, and Microsoft 365 Groups** and select **Next**.
 
