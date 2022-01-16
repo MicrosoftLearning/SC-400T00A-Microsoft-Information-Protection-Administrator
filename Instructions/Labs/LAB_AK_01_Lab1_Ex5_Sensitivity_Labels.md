@@ -107,7 +107,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
    - **Name**: Employee data (HR)
    - **Display name**: Employee data (HR)
    - **Description for users**: This HR label is the default label for all specified documents in the HR Department.
-   - **Description for admins**: This label is created in consultation with Ms. Jones (Head of HR department). Contact her, when you want to chance settings of the label.
+   - **Description for admins**: This label is created in consultation with Ms. Jones (Head of HR department). Contact her, when you want to change settings of the label.
 
 19. Select **Next**.
 
