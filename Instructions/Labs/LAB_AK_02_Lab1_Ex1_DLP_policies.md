@@ -14,7 +14,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Complianc
 
 4. In the **Data loss prevention** window select the **Policies** tab, and then select **+Create policy** to start the wizard for creating a new data loss prevention policy.
 
-5. On the **Start with a template or create a custom policy** page, scroll dowb and you want to select **Custom** and **Custom policy** under the template however, by default, both these options should already be selected (if not, then select them now), select **Next**.
+5. On the **Start with a template or create a custom policy** page, scroll down and you want to select **Custom** and **Custom policy** under the template however, by default, both these options should already be selected (if not, then select them now), select **Next**.
 
 6. In the **Name your DLP policy** page, type *Credit Card DLP Policy* in the **Name** field and *Protect credit card numbers from being shared.* in the **Description** field. Select **Next**.
 
