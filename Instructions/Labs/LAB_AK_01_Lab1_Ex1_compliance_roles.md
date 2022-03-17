@@ -54,7 +54,7 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 5. If the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**.
 
-6. Scroll down and select **Settings** from the lower left side to see which settings are available to Joni.
+6. From the left navigatio menu select **Show all**, and then select **Settings** to see which settings are available to Joni.
 
 7. Get yourself familiar with the different settings. When you are done, leave the browser window open.
 
