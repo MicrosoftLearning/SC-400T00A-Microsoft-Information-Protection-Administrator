@@ -133,7 +133,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 4. In the **Data loss prevention** window, select the **Endpoint DLP settings** tab.
 
-5. In the **Endpoint DLP settings** tab, expand the **file path exclusions** area and select **+ Add file path exclusion**.
+5. In the **Endpoint DLP settings** tab, expand the **File path exclusions for Windows** area and select **+ Add file path exclusion**.
 
 6. In the **Enter a path to exclude** field, type *C:\FilePathExclusionTest*, then select **+**.
 
