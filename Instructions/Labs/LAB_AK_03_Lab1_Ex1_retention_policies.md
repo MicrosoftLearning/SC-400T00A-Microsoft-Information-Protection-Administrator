@@ -15,7 +15,7 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 3. In the **Microsoft 365 compliance** portal, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-4. On the **Information Governance** page, in the **Retention** tab, select **+ New retention policy**.
+4. On the **Information Governance** page, in the **Retention policies** tab, select **+ New retention policy**.
 
 5. On the **Name your retention policy** page, for the **Name** and **Description** enter the following information:
 
