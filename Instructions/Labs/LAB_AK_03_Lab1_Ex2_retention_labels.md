@@ -38,7 +38,7 @@ In this task, you will create a retention label that can be assigned to document
 
 11. On the **Review and finish** page, select the **Create label** button.  On the *Your retention label is created* page select **Do Nothing** option and select **Done**.
 
-12. Return yourself to the **Information governance** page on the **Labels** tab.  We will publish labels in a later exercise.
+12. Return yourself to the **Data lifecycle management** page on the **Labels** tab.  We will publish labels in a later exercise.
 
 13. Select the **+ Create a label** button
 
