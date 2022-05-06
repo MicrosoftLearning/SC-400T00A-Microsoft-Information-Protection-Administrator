@@ -114,7 +114,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 3. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-4. On the **Information governance** page, select the tab **Labels**.
+4. On the **Data lifecycle management** page, select the tab **Labels**.
 
 5. Select the label **Credit Card Receipts**, that you created in Task 1.
 
