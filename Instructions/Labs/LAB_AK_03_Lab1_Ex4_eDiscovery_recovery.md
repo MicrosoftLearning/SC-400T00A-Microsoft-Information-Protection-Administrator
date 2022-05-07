@@ -70,7 +70,7 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Joni Sherman**.
 
-3. In the **Microsoft 365 compliance** portal, in the left navigation pane, expand **eDiscovery** and select **Core**.
+3. In the **Microsoft 365 compliance** portal, in the left navigation pane, expand **eDiscovery** and select **Standard**.
 
 4. Click on the **Mark 8 Project case** to open the case.
 
