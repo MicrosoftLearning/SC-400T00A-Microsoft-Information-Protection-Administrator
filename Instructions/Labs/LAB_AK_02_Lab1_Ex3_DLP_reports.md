@@ -10,7 +10,7 @@ In this exercise, you will grant the new compliance officer access to the DLP re
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-3. In the left navigation pane, select **Permissions** and then under **Compliance center** select **Roles**.  Mark the box next to the **Security Reader** role.
+3. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.  Mark the box next to the **Security Reader** role.
 
 4. In the *Security Reader* pane, select **Edit** in the **Members** area.
 
