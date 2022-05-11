@@ -12,7 +12,7 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 3. In the portal, on the left navigation pane, expand **eDiscovery** and select **Core**.
 
-4. On the **Core eDiscovery** page, select **+ Create a case**.
+4. On the **eDiscovery (Standard)** page, select **+ Create a case**.
 
 5. In the **Case name** field, type *Mark 8 Project Case* and in the **Case description** type *This case will be used to evaluate Megan Bowen's mails regarding the Mark 8 Project.*, then select **Save**
 
