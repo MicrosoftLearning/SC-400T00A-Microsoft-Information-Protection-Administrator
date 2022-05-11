@@ -10,7 +10,7 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Joni Sherman**.
 
-3. In the portal, on the left navigation pane, expand **eDiscovery** and select **Core**.
+3. In the portal, on the left navigation pane, expand **eDiscovery** and select **Standard**.
 
 4. On the **Core eDiscovery** page, select **+ Create a case**.
 
