@@ -148,7 +148,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 18. On the **Choose a label to auto-apply** page, select **Next**.
 
-19. On the **Choose a label to auto-apply** page select the **Submit** button.  When the policy is created, select **Done**.
+19. On the **Review and finish** page select the **Submit** button.  When the policy is created, select **Done**.
 
 You have successfully published a retention label with auto-apply. Over the next seven days all documents containing credit card details will be automatically labeled with the published label Credit Card Receipts, a retention period of three years will be applied to these items.
 
