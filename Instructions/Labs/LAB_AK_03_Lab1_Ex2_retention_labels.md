@@ -71,7 +71,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 3. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-4. On the **Information governance** Page, select the tab **Labels**.
+4. On the **Data lifecycle management** Page, select the tab **Labels**.
 
 5. Select the label **VAT Returns and supporting documents**, that you created in Task 1.
 
