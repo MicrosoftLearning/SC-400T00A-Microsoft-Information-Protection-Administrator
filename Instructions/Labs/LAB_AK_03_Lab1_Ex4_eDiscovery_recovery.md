@@ -46,7 +46,7 @@ In this task, you will prepare to export the data you discovered in Task 1 to a 
 
 2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **MOD Administrator**.  You may need to sign-out as Joni Sherman. 
 
-3. In the left navigation pane, select **Permissions** and then under **Compliance center** select **Roles**.  Select the **Records Management** role.
+3. In the left navigation pane, select **Permissions** and then under **Microsoft purview solutions** select **Roles**.  Select the **Records Management** role.
 
 4. In the role overview pane, select **Edit** next to the **Members** category.
 
