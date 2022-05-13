@@ -76,7 +76,7 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 5. Select the **Searches** tab and select the **Mark 8 Project** search.
 
-**Hint:** If your eDiscovery search has no data consider the parameters of the search.  In the earlier lab did you have Megan send an emaail about the *Mark 8* project?  If not consider changing the keyword in the search to any of the terms in any of the existing emails in Megan's mailbox.  For example, the term "planner" usually appears in several of  Megan's existing emails.  The search must have data in order for the export to have anything process.
+**Hint:** If your eDiscovery search has no data consider the parameters of the search. Megan's mailbox should include some messages about the *Mark 8* project.  If not consider changing the keyword in the search to any of the terms in any of the existing emails in Megan's mailbox.  For example, the term "planner" usually appears in several of  Megan's existing emails.  The search must have data in order for the export to have anything process.
 
 6. In the **Mark 8 Project** dialog, select **Actions** button drop-down, and select **Export results**.
 
