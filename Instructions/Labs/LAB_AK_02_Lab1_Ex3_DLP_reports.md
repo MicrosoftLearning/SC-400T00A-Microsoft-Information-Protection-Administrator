@@ -8,19 +8,19 @@ In this exercise, you will grant the new compliance officer access to the DLP re
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-3. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.  Mark the box next to the **Security Reader** role.
+1. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.  Mark the box next to the **Security Reader** role.
 
-4. In the *Security Reader* pane, select **Edit** in the **Members** area.
+1. In the *Security Reader* pane, select **Edit** in the **Members** area.
 
-5. Select **Choose members** and then select **+ Add**.
+1. Select **Choose members** and then select **+ Add**.
 
-6. Search for **Megan Bowen** and select the checkbox in front of their name, then select **Add**.
+1. Search for **Megan Bowen** and select the checkbox in front of their name, then select **Add**.
 
-7. Review the changes to the member list and then select **Done**.
+1. Review the changes to the member list and then select **Done**.
 
-8. Select **Save**. Close the **Security Reader** role pane.
+1. Select **Save**. Close the **Security Reader** role pane.
 
 You have now granted the new compliance officer access to the DLP reports in the Microsoft 365 compliance portal.
 
@@ -30,10 +30,10 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
-2. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft 365 compliance portal as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Megan's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Megan's password should be provided by your lab hosting provider.
 
-3. In the left navigation pane, select **Reports** and observe your access to the Reports Dashboard.
+1. In the left navigation pane, select **Reports** and observe your access to the Reports Dashboard.
 
-You now verified that the access has been configured and the new compliance officer can view reports in the Compliance center.
+You now verified that the access has been configured and the new compliance officer can view reports in the Purview portal.
 
 ## You have completed the Lab 2. Proceed to Lab 3 - Exercise 1.
