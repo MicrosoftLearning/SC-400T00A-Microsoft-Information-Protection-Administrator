@@ -4,7 +4,7 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 ### Task 1 – Enable device onboarding
 
-In this task, you will turn on device onboarding for your organization. 
+In this task, you will turn on device onboarding for your organization.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 

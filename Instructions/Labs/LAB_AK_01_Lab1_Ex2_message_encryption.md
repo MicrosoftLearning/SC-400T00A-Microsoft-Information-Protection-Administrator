@@ -218,6 +218,6 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 
 1. Review the encrypted message with custom branding.
 
-You have successfully tested the new customized OME template. 
+You have successfully tested the new customized OME template.
 
 # Proceed to Lab 1 - Exercise 3

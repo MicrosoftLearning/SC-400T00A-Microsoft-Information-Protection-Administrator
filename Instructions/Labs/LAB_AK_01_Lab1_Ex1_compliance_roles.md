@@ -4,7 +4,7 @@ In your role as Joni Sherman, the newly hired Compliance Administrator for Conto
 
 ### Task 1 – Assign Compliance Roles
 
-In this exercise, you will follow the principal of least privilege and use the default Global Administrator to assign the Compliance Admin role to Joni Sherman, which is required to perform the operations described in this lab. 123
+In this exercise, you will follow the principal of least privilege and use the default Global Administrator to assign the Compliance Admin role to Joni Sherman, which is required to perform the operations described in this lab.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.  The password should be provided by your lab hosting provider.
 

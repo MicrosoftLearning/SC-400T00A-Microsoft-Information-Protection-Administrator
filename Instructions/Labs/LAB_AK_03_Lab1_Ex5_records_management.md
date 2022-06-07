@@ -49,7 +49,7 @@ You successfully created a retention label using file plan that keeps all labele
 
 ### Task 2 – Publish Labels
 
-In this task, you will publish the label so users of the HR department can apply it to content containing health insurance information.  
+In this task, you will publish the label so users of the HR department can apply it to content containing health insurance information.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -85,7 +85,7 @@ In this task, you will assign the published record label to an email in Outlook 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. On the taskbar at the bottom of the page, select the Start button, scroll down and then select **Outlook**. If necessary, sign in as **Megan Bowen**.  If Outlook is not installed on the VM use Outlook through a web browser.
+1. On the taskbar at the bottom of the page, select the Start button, scroll down and then select **Outlook**. If necessary, sign in as **Megan Bowen**. If Outlook is not installed on the VM use Outlook through a web browser.
  
 1. In the Outlook application, select **Inbox**
 
@@ -99,6 +99,6 @@ In this task, you will assign the published record label to an email in Outlook 
 
 1. Review the message you receive.
 
-You have successfully applied a retention label with a record to an email and observed that it now cannot be deleted. 
+You have successfully applied a retention label with a record to an email and observed that it now cannot be deleted.
 
 ## You have completed the Lab 3.
