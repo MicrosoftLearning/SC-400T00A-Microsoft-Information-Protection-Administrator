@@ -96,19 +96,19 @@ In this task, you use PowerShell to create a DLP policy to protect driver's lice
 1. Enter the following command into PowerShell to create a DLP policy that scans all Exchange mailboxes:
 
 	```powershell
-	New-DlpCompliancePolicy -Name "Driver's License DLP Policy" -Comment "This policy blocks sharing of Driver's License Numbers." -ExchangeLocation All`
+	New-DlpCompliancePolicy -Name "Driver's License DLP Policy" -Comment "This policy blocks sharing of Driver's License Numbers." -ExchangeLocation All
 	```
 
 1. Enter the following command into PowerShell to add a DLP rule to the DLP policy you created in the previous step:
 
 	```powershell
-	New-DlpComplianceRule -Name "Driver's License Rule" -Policy "Driver's License DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="U.S. Driver's License Number";minCount="1";minconfidence="75"}`
+	New-DlpComplianceRule -Name "Driver's License Rule" -Policy "Driver's License DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="U.S. Driver's License Number";minCount="1";minconfidence="75"}
 	```
 
 1. Use the following command to review the **Driver's License DLP Policy**:
 
 	```powershell
-	Get-DLPComplianceRule -Identity "Driver's License Rule"`
+	Get-DLPComplianceRule -Identity "Driver's License Rule"
 	```
 
 You have now created a DLP Policy that scans for Driver's license numbers in Exchange by using PowerShell.

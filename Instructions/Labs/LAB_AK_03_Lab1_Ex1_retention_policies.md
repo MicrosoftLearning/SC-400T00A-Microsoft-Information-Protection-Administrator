@@ -109,7 +109,7 @@ You will create the same retention policies with PowerShell
 1. Connect to the Security & Compliance Center in your tenant with the following cmdlet:
 
     ```powershell
-	Connect-IPPSSession`
+	Connect-IPPSSession
 	```
 
 1. If prompted with a sign in dialog box, sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
