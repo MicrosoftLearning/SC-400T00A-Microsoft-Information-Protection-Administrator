@@ -8,13 +8,15 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.  The password should be provided by your lab hosting provider.
 
-1. Open **Microsoft Edge** from the taskbar and when a **Welcome to the new Microsoft Edge** windows is displayed, select **Complete setup**.
+1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 
-1. Select **Confirm** to accept the default browser settings and **Continue without signing in**.
+[//]: <> (Installing the latest OS updates will also update the Edge browser to the new chromium version required to do this labs.)
 
-1. Make sure to use the latest version of the Edge browser by navigating to https://microsoft.com/edge, select **DOWNLOAD EDGE** and install the latest version.
+1. Open **Microsoft Edge** from the taskbar and when a **Welcome to Microsoft Edge** windows is displayed, select **Start without your data**, select **Continue without this data** again and select **Confirm and start browsing**.
 
-1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. When the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser.
+
+1. In **Microsoft Edge**, select the address bar, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
