@@ -12,11 +12,13 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. Select **Confirm** to accept the default browser settings and **Continue without signing in**.
 
+1. Make sure to use the latest version of the Edge browser by navigating to https://microsoft.com/edge, select **DOWNLOAD EDGE** and install the latest version.
+
 1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
-1. Close the password save dialog from the bottom with Never, to not save the default global admins credentials in your browser.
+1. Close the password save dialog from the bottom with **Never**, to not save the default global admins credentials in your browser.
 
 1. If a welcome screen is displayed, close it. If the Office 365 apps notification appears, also close it.
 
@@ -28,7 +30,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1.	In the settings below the **Account** tab, scroll to **Roles** and select **Manage roles** below.
 
-1.	When the **Manage admin roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to select **Compliance admin** in the Security & Compliance section.
+1.	When the **Manage admin roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to select **Compliance Administrator** in the Security & Compliance section.
 
 1.	Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the pane, select the arrow pointing to the left to return to Joni's user record.
 
@@ -52,9 +54,11 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 1. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.  Hint: The password is probably the same as the MOD Administrator used earlier.
 
-1. If the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**.
+1. If the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**. 
 
-1. From the left navigatio menu select **Show all**, and then select **Settings** to see which settings are available to Joni.
+[//]: <> ("Improve your compliance posture" did not show uo in any test scenario. Remove the last step?)
+
+1. The page **Welcome to the Microsoft Purview compliance portal** is displayed. Investigate the dashboard tiles and the left-side navigation pane.
 
 1. Get yourself familiar with the different settings. When you are done, leave the browser window open.
 
