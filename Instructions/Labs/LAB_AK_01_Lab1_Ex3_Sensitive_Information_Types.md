@@ -8,7 +8,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal and sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Select **Data classification** from the left pane.
 
@@ -16,28 +16,42 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. On the **Sensitive ino types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
-1. On the **Name your sensitive info type** page, type *Contoso Employee IDs* into **Name**.
+1. On the **Name your sensitive info type** page, enter the following information:
 
-1. Type *Pattern for Contoso employee IDs.* to the **Description** field and select **Next**.
+    - **Name**: Contoso Employee IDs
+    - **Description**: Pattern for Contoso employee IDs.
+
+1. Select **Next**.
 
 1. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
-1. Select the dropdown field for **+ Add primary element** in the **Primary element** section and select **Regular expression**.
+1. In the right-side **New pattern** pane, select **+ Add primary element** and select **Regular expression**.
 
-1. In the **ID** field type *Contoso IDs* and enter the following to the Regular expression field: *\s[A-Z]{3}[0-9]{6}\s* and then select **Done**.
+1. In the new right-side pane **Add a regular expression**, enter the following:
 
-1. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
+    - **ID**: Contoso IDs
+    - **Regular expression**: ```\s[A-Z]{3}[0-9]{6}\s``` 
+    - *String match*
 
-1. In the ID field enter *Employee ID keywords* and enter the following into the text box below **Case insensitive**, on separate lines in the box, and then select **Done**.
+1. Select **Done**.
 
-- *Employee*
-- *ID* 
+1. In the right-side **New pattern** pane again, below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
+
+1. In the new right-side pane **Add a keyword list**, enter the following:
+
+    - **ID**: Employee ID keywords
+    - **Case insensitive**: 
+        - *Employee*
+        - *ID* 
+    - *Word match*
+
+1. Select **Done**.
 
 1. In the New pattern windows decrease the **Character proximity** value to *100* characters.
 
 1. Select the **Create** button.
 
-1. On the **Define patterns for this sensitive info type** page select **Next**.
+1. Back on the **Define patterns for this sensitive info type** page select **Next**.
 
 1. On the **Choose the recommended confidence level to show in compliance policies** page use the default value and select **Next**.
 
@@ -97,27 +111,27 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 1. Select **Data classification** and select **Exact data matches** tab from the top pane.
 
-1. Select **+ Create EDM schema** to create a new schema definition.
+1. Select **+ Create EDM schema** to open the right-side pane and create a new schema definition
 
 1. In the **Name** field, enter *employeedb*.
 
 1. In the **Description** field, enter *Employee Database schema.*.
 
-1. Select **Ignore delimiters and punctuation for all schema fields**.
+1. Enable **Ignore delimiters and punctuation for all schema fields**.
 
 1. Select **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
 
 1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
 
-1. Select **+ Add schema data field**.
+1. Select **+ Add schema data field** from the lower end.
 
 1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
 
-1. Select **+ Add schema data field**.
+1. Select **+ Add schema data field** from the lower end again.
 
 1. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
 
-1. Select **+ Add schema data field**.
+1. Select **+ Add schema data field** from the lower end a last time.
 
 1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
 
@@ -127,7 +141,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 1. Select **EDM sensitive info types** from the left pane.
 
-1. Click the more options(...) on the top menu and select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
+1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
 
 1. On the **Define data store schema** page, select **Choose an existing EDM schema**.
 
@@ -233,6 +247,8 @@ To associate the EDM-based classification with a database containing sensitive d
     .\EdmUploadAgent.exe /Authorize
     ```
 
+[//]: <> (Must be checked in LOD environment - cannot be done on other client)
+
 1. When the **Pick an account** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. Download the database schema definition of the EDM-based classification sensitive information type by running the following script in PowerShell:
@@ -271,9 +287,12 @@ Several violations of personal information leakage happened when users sent out 
 
 1. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
-1. On the **Name your sensitive info type** page, enter *Contoso Diseases List* into **Name** field.
+1. On the **Name your sensitive info type** page, enter the following:
 
-1. Enter *List of possible diseases of employees.* to the **Description** field and select **Next**.
+    - **Name**: Contoso Diseases List
+    - **Description**: List of possible diseases of employees.
+    
+1. Select **Next**.
 
 1. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
