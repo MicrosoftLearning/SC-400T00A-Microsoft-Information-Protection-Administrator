@@ -12,7 +12,7 @@ In this task, you will turn on device onboarding for your organization.
 
 1. In the **Microsoft Purview** portal in the left navigation pane, select **Settings** and select **Device onboarding**.
 
-1. Select **Turn on device onboarding**.
+1. Select **Turn on device onboarding** to enable the solution for your tenant.
 
 1. Accept the **Turn on device onboarding** dialog by selecting **OK**.
 
@@ -28,7 +28,7 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and you should be logged into Microsoft 365 as **Joni Sherman**..
 
-1. In the **Microsoft Purview** portal on the left navigation pane, select **Settings** and select **device onboarding**.
+1. In the **Microsoft Purview** portal on the left navigation pane, select **Settings** and select **Device onboarding**.
 
 1. On the **Device onboarding** page, in the navigation pane, select **Onboarding**.
 
@@ -51,13 +51,14 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 1. In the **Set up a work or school account** dialog, select the **Join this device to Azure Active Directory** link and sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In the **Make sure this is your organization** dialog, review the tenant url and select **Join**.  If your device fails to join you may need to troubleshoot your Azure AD configuration join settings. Do the following to ensure devices may be joined:
+
         1. Open a new browser tab and go to the Azure Portal https://portal.azure.com
-        1. Sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com
-        1. Select **Manage Azure Active Directory**.
-        1. Select **Devices**
-        1. Select **Device settings**
-        1. Scroll-down until you see **Maximum number of devices per user** change the value to **20 (Recommended)**
-        1. Once you have updated the setting re-try to connect your device.
+        2. Sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com
+        3. Select **Manage Azure Active Directory**.
+        4. Select **Devices**
+        5. Select **Device settings**
+        6. Scroll-down until you see **Maximum number of devices per user** change the value to **20 (Recommended)**
+        7. Once you have updated the setting re-try to connect your device.
 
 1. Once your device has connected select **Done**.
 
@@ -71,17 +72,19 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. Log on to your Client 1 VM (LON-CL1) as the lon-cl1\admin account.
 
-1. In Microsoft Edge, navigate to https://compliance.microsoft.com.
+1. In Microsoft Edge, navigate to the Microsoft Purview portal at https://compliance.microsoft.com and when the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider. Hint: The password is probably the same as the MOD Administrator used earlier. 
 
-3. When the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider. Hint: The password is probably the same as the MOD Administrator used earlier. 
+1. In the **Microsoft Purview** portal on the left navigation pane, select **Data loss prevention** and from the top pane select **Policies**.
 
-1. In the **Microsoft Purview** portal on the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
+1. Select **+ Create policy** to start the wizard for creating a new data loss prevention policy.
 
-1. In the **Data loss prevention** window select the **Policies** tab, and then select **+Create policy** to start the wizard for creating a new data loss prevention policy.
-
-1. On the **Start with a template or create a custom policy** page, you want to select **Custom** in the left pane and **Custom policy** in the middle pane; however, by default, both these options should already be selected (if not, then select them now), select **Next**.
+1. On the **Start with a template or create a custom policy** page, select **Custom**, **Custom policy** and select **Next**.
 
 1. In the **Name your DLP policy** page, type *Credit Card Endpoint DLP Policy* in the **Name** field and *Protect credit card numbers from being shared on endpoints.* in the **Description** field. Select **Next**.
+
+[//]: <> (A Credit Card DLP Policy for Endpoint is already existing - how te replace this policy? Could be using the custom sensitive information type... tbd!)
+
+
 
 1. On the **Choose locations to apply the policy** page, select only the **Devices** option and then select **Next**.
 
