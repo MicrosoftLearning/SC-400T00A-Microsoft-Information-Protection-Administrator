@@ -103,9 +103,76 @@ You have successfully published the retention label for project assets to your u
 
 ### Task 4 – Apply label and add AssetID
 
+Once the label is published the users need to apply the label and assign the correct Asset ID for the project to the documents they want to label. In this task you will test this functionality.
+
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+
+1. In the top left corner select the nine dots and under **Apps** select **SharePoint**.
+
+1. On the left side navigation pane, select **My sites** and under **Followed** select **Operations**.
+
+1. In the left-side navigation pane, select **Documents**.
+
+1. On the **Documents** page, select **Bug List.xlsx** by selecting the checkbox in front of it and then select the three vertical dots.
+
+1. In the context menu select **Details**.
+
+1. In the right-side menu, under **Properties** select **Apply label** and then select the **Project Asset** label.
+
+1. Set the newly appeared **Asset ID** field to **BostonOfficeLaunch** and close the right-side menu by selecting **X** in the top right corner.
+
+You've successfully assigned a label and an asset ID to a document. When the Project Closure event for Asset ID 1234 is triggered it will activate the retention period of 5 years.
+
 ### Task 5 – Create specific event
+
+Once the event happened you need to trigger it so that the content you labeled will start the mandatory retention period.
+
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider. 
+
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+
+1. In the **Microsoft Purview** portal, on the left navigation pane, select **Records Management** and navigate to the **Events** tab.
+
+1. Select **+ Create**.
+
+1. On the **Name the event** page, set the following information:
+	- **Name**: Project Boston Office Launch closed
+	- **Description**: Assets with the Project Asset label and AssetID BostonOfficeLaunch will enter their retention period.
+
+1. Select **Next**.
+
+1. On the **Event settings** page, select **Use event type** and then **Choose an event type**.
+
+1. On the **Choose an event type** page, select **Project Closure** and then **Add**.
+
+1. Select **Next**.
+
+1. On the **Event settings** page, set **Asset IDs for items in SharePoint and OneDrive** to **BostonOfficeLaunch** and select todays date.
+
+1. Select **Next**, select **Submit** and then select **Done**.
+
+You have successfully triggered an event and started the retention period for all documents with the Project Asset label and an Asset ID of BostonOfficeLaunch.
 
 ### Task 6 – Observe results of event trigger
 
+To verify that the retention period you specified started, you need to try to delete the file.
+
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+
+1. In the top left corner select the nine dots and under **Apps** select **SharePoint**.
+
+1. On the left side navigation pane, select **My sites** and under **Followed** select **Operations**.
+
+1. In the left-side navigation pane, select **Documents**.
+
+1. On the **Documents** page, select **Bug List.xlsx** by selecting the checkbox in front of it and then select the three vertical dots.
+
+1. In the context menu select **Delete** and observe the results.
+
+You have successfully confirmed that the retention period on the document started. If you can still delete the document the synchronization period for the event has not been completed and the triggering of the retention policy is still in progress. As with other Retention Labels this process can take up to 7 days.
 
 # Proceed to Lab 3 - Exercise 5
