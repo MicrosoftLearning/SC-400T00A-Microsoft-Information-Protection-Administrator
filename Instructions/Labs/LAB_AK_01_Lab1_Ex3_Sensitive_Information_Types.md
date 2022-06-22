@@ -189,7 +189,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
 1. When the setup wizard opens in the background, select the installer from the taskbar.
 
-1. In the **Microsoft Exact Data Match Upload Agent Setup Wizard**, select **Next**.
+1. In the **Microsoft Exact Data Match Upload Agent Setup** wizard, select **Next**.
 
 1. Select **I accept the terms in the License Agreement** and select **Next**.
 
@@ -231,7 +231,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
 1. Close the Notepad window.
 
-1. Select the windows symbol in the taskbar with the right mouse button and select **PowerShell** and run as administrator.
+1. Select the windows symbol in the taskbar with the right mouse button and select **Windows PowerShell (Admin)** and run as administrator.
 
 1. When the **User Account Control** window opens, select **Yes**.
 
@@ -246,9 +246,6 @@ To associate the EDM-based classification with a database containing sensitive d
     ```
     .\EdmUploadAgent.exe /Authorize
     ```
-
-[//]: <> (Must be checked in LOD environment - cannot be done on other client)
-
 1. When the **Pick an account** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. Download the database schema definition of the EDM-based classification sensitive information type by running the following script in PowerShell:

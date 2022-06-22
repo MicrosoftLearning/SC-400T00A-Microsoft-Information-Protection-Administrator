@@ -72,7 +72,7 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. Log on to your Client 1 VM (LON-CL1) as the lon-cl1\admin account.
 
-1. In Microsoft Edge, navigate to the Microsoft Purview portal at https://compliance.microsoft.com and when the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider. Hint: The password is probably the same as the MOD Administrator used earlier. 
+1. Open Microsoft Edge from the taskbar, navigate to the Microsoft Purview portal at https://compliance.microsoft.com and when the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider. Hint: The password is probably the same as the MOD Administrator used earlier. 
 
 1. In the **Microsoft Purview** portal on the left navigation pane, select **Data loss prevention** and from the top pane select **Policies**.
 
@@ -80,11 +80,12 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. On the **Start with a template or create a custom policy** page, select **Custom**, **Custom policy** and select **Next**.
 
-1. In the **Name your DLP policy** page, type *Credit Card Endpoint DLP Policy* in the **Name** field and *Protect credit card numbers from being shared on endpoints.* in the **Description** field. Select **Next**.
+1. In the **Name your DLP policy** page, enter the following information:
 
-[//]: <> (A Credit Card DLP Policy for Endpoint is already existing - how te replace this policy? Could be using the custom sensitive information type... tbd!)
+    - **Name**: Employee Diseases Endpoint DLP Policy
+    - **Description**: Protect employee ID numbers and diseases from being shared on endpoints.
 
-
+1. Select **Next**.
 
 1. On the **Choose locations to apply the policy** page, select only the **Devices** option and then select **Next**.
 
@@ -92,25 +93,26 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 
-1. On the **Create rule** page, type *Endpoint Credit Card information* in the **Name** field.
+1. On the **Create rule** page, enter the following:
+
+    - **Name**: Detect employee information
+    - **Description**: Detect if employee IDs and diseases are shared in near range.
 
 1. Select **+ Add condition** and then select **Content contains** from the dropdown menu.
 
-1. On the **Create rule** page, in the new **Content contains** area, select **Add** and select **sensitive info types** from the dropdown menu.
+1. In the newly opened **Content contains** area, select **Add** and select **sensitive info types** from the dropdown menu.
 
-1. On the **Sensitive info types** page, select **Credit Card Number** and select **Add**.
+1. In the right-side pane **Sensitive info types**, select **Contoso Employee IDs** and **Contoso Disease List** and select **Add**.
 
-1. On the **Create rule** page, select **+ Add an action** drop-down and select **Audit or restrict activities on Windows devices**.
+1. Change the **Any of these** dropdown to **All of these** to make the policy detect both information in proximity.
 
-1. Uncheck every checkbox except **Copy to Clipboard**.
+1. Scroll down to **Actions** and select **+ Add an action** drop-down and select **Audit or restrict activities on Windows devices**.
 
-1. In the dropdown menu behind **Copy to Clipboard** select **Block**.
+1. Leave all checkboxes enabled and change the dropdown selections right from any checkbox to **Block**.
 
-1. On the **Create rule** page, in the **User Notifications** section, select the switch to put it in the **On** position.
+1. Below in the **User Notifications** section, select the switch to put it in the **On** position. Below **Endpoint devices**, select **Show users a policy tip notification when an activity is restricted. This is turned on when you select Block for an activity in Windows. To turn off the notification on Windows devices, disable the restriction.**.
 
-1. In the **Incident reports** section, in the **Use this severity in admin alerts and reports** dropdown, select **Low**.
-
-1. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
+1. Scroll down to the **User overrides** section and below **Allow override from Endpoint devices**, select **Copy from clipboard**.
 
 1. Select **Save**, then select **Next**.
 
@@ -142,6 +144,18 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. Select **Add**.
 
-You have now configured a general exception to your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured.
+1. Expand **Browser and domain restrictions to sensitive data** and select **+ Add or edit unallowed browsers**.
+
+1. In the right-side **+ Add unallowed browsers** select the checkbox left of **Google Chrome** and select **Save**.
+
+1. Select the dropdown menu left of **Service domains** and change it from **Off** to **Block**.
+
+1. In the **Update cloud app mode**, select **Yes** to activate the block mode.
+
+1. Select **+ Add cloud service domain** to open the right side pane.
+
+1. In the right side pane, below **Domain** enter **dropbox.com**, select the **+** sign and select **Add**. 
+
+You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
 
 # Proceed to Lab 2 - Exercise 3 

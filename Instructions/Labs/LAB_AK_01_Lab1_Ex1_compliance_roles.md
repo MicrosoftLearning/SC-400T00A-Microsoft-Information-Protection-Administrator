@@ -38,6 +38,12 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1.	Close the window of Joni Sherman’s account with the **X** in the upper right to go back to the **Active users** list.
 
+1. Before switching to Joni Sherman, use the Global Admin privileges of MOD Administrator for activating the audit logging by navigating to https://compliance.microsoft.com/auditlogsearch.
+
+1. On the **Audit** page. select **Start recording user and admin activity** to activate audit logging.
+
+1. In the **compliance** window, select **Yes** to update the organization settings.
+
 1. Select the circle with **MA** in the upper right and select **Sign out**.
 
 1. Close the **Microsoft Edge** browser window.
