@@ -37,7 +37,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 1. Enter the following cmdlet to use the Exchange Online PowerShell module and connect to your tenant:
 
     ```powershell
-    Connect-ExchangeOnline`
+    Connect-ExchangeOnline
     ```
 
 1. When the **Sign in** window is displayed, sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
@@ -45,7 +45,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 1. Verify Azure RMS and IRM is activated in your tenant by using the following cmdlet and press **Enter**:
 
     ```powershell
-    Get-IRMConfiguration | fl AzureRMSLicensingEnabled`
+    Get-IRMConfiguration | fl AzureRMSLicensingEnabled
     ```
 
 1. Test the Azure RMS templates used for Office 365 Message Encryption against the other pilot user **Megan Bowen** by using the following cmdlet and press **Enter**:
@@ -79,7 +79,7 @@ There is a requirement in your organization to restrict trust for foreign identi
 1. Run the following cmdlet to restrict the use of social IDs for accessing messages from your tenant protected with OME:
 
     ```powershell
-    Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn:$false`
+    Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn:$false
     ```
 
 1. Confirm the warning message for customizing the default template with **Y** for Yes and press **Enter**.
@@ -87,7 +87,7 @@ There is a requirement in your organization to restrict trust for foreign identi
 1. Check the default configuration again and validate, the SocialIdSignIn parameter is now set to False.
 
     ```powershell
-    Get-OMEConfiguration -Identity "OME Configuration" |fl`
+    Get-OMEConfiguration -Identity "OME Configuration" |fl
     ```
 
 1. Notice the result should show the SocialIDSignIn is set to False. Leave the PowerShell window and client open.
@@ -172,7 +172,7 @@ Protected messages sent by your organizations finance department require a speci
     Set-OMEConfiguration -Identity "Finance Department" -PrivacyStatementURL "https://contoso.com/privacystatement.html"
     ```
 
-1. Confirm the warning message for customizing the template with **Y** for Yes and press **Enter**..
+1. Confirm the warning message for customizing the template with **Y** for Yes and press **Enter**.
 
 1. Use the following cmdlet to create a mail flow rule, which applies the custom OME template to all messages sent from the finance team.  This process may take a few seconds to complete.
 
@@ -183,7 +183,7 @@ Protected messages sent by your organizations finance department require a speci
 1. Type the following cmdlet to verify changes.
     
     ```powershell
-    Get-OMEConfiguration -Identity "Finance Department" | Format-List`
+    Get-OMEConfiguration -Identity "Finance Department" | Format-List
     ```
     
 1. Leave the PowerShell open.
@@ -194,9 +194,9 @@ You have successfully created a new transport rule that applies the custom OME t
 
 To validate the new custom OME configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
 
-1. Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account, and you should be logged into Microsoft 365 as **Lynne Robbins**. 
+1. Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account. 
 
-1. Select the **Outlook** symbol from the left navigation pane.
+1. Select **Microsoft Edge** from your taskbar. Outlook on the web tab should still be open and you should be logged in as **Lynne Robbins**. 
 
 1. Select **New message** from the upper left side part of Outlook on the web.
 

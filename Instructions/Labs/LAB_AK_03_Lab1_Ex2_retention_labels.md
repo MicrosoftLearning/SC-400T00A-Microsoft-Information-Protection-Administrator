@@ -26,13 +26,13 @@ In this task, you will create a retention label that can be assigned to document
 
 1. Select the **Next** button.
 
-1. On the **Define retention settings** page, enable the **Retain items for a specific period** setting.
+1. On the **Define label settings** page, choose the **Retain items forever or for a specific period** setting and select the **Next** button.
 
-1. For the **Define retention settings** section set the following information:
-	- **Retention period**: 7 Years
-	- **Start the retention period based on**: When items were created
-	- **At the end of the retention period**: Do nothing
-	
+1. On the **Define the period** page set the following information:
+	- **How long is the period?**: 7 Years
+	- **When shoul the period begin?**: When items were created
+1. Select the **Next** button.
+1. On the **Choose what happens after the retention period** page, choose **Deactivate retention settings**.
 
 1. Select the **Next** button.
 
@@ -44,18 +44,17 @@ In this task, you will create a retention label that can be assigned to document
 
 1. On the **Name your retention label** page for the **Name**, **Description for users**, and **Description for admins** enter the following information:
 	- **Name**: Credit Card Receipts
-	- **Description for users**: This label is auto applied to Credit card receipts with a retention period of three years
+	- **Description for users**: This label is auto applied to Credit card receipts with a retention period of three years.
 	- **Description for admins**: Auto applied retention label Credit for card receipts with three-year retention.
 
 1. Select the **Next** button.
 
-1. For the **Define retention settings**, make sure **Retain items for a specific period** setting is enabled. Choose **Custom** from the drop down list and set the following information:
-	- **Retention period**: 3 Years
-	- **Start the retention period based on**: When items were created
-	- **At the end of the retention period**: Do nothing
-	
-
+1. On the **Define label settings** page, choose **Retain items forever or for a specific period** and select the **Next** button.
+1. On the **Define the period** page set the following information:
+	- **How long is the period?**: Select the drop down list and select **Custom**. Enter 3 for Years.
+	- **When shoul the period begin?**: When items were created.
 1. Select the **Next** button.
+1. On the **Choose what happens after the retention period** page, choose **Deactivate retention settings** and select the **Next** button.
 
 1. On the **Review and finish** page, select the **Create label** button. On the *Your retention label is created* page select **Do Nothing** option and then select **Done**.
 
@@ -83,7 +82,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 1. Select the **Next** button.
 
-1. On the **Choose locations** page enable the option **Let me choose specific locations**.
+1. On the **Choose locations** page select the option **Let me choose specific locations**.
 
 1. Enter the following information:
 	- **Exchange email** location - **Status**: On
@@ -100,7 +99,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 1. Select the **Next** button.
 
-1. On the **Review your Settings** page, select the **Submit** button.  When your policy is created select **Done**.
+1. On the **Finish** page, select the **Submit** button.  When your policy is created select **Done**.
 
 You have successfully published the retention label for VAT Returns and supporting documents.
 
@@ -120,9 +119,9 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. Select the **Auto-apply a label** icon button.  The Automatically apply a label to content wizard will be displayed.
 
-1. On the **Name your auto-labeling policy** page, for **Name** and **Description** enter the following information:
+1. On the **Let´s get started** page, for **Name** and **Description** enter the following information:
 	- **Name**: Credit Card Receipts auto-applied
-	- **Description**: Credit Card Receipts auto-applied retention label, with a retention period of three years for all location
+	- **Description**: Credit Card Receipts auto-applied retention label, with a retention period of three years for all location.
 
 1. Select the **Next** button.
 
@@ -181,7 +180,7 @@ In this task, you will assign retention labels to an Outlook folder.
 
 1.  Select right click on the **Inbox** in the left panel
 
-1.  Select **New folder...** and enter: VAT Returns
+1.  Select **New folder...** and under **Name** enter VAT Returns
 
 1.  Select the **OK** button
 
@@ -210,12 +209,14 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into the Microsoft 365 as **Joni Sherman**.
 
 1. In the Microsoft O365 landing page, select the App launcher icon in the top-left corner (the icon with nine dots), then select **SharePoint** from the sub-menu.
+1. If propmpted, close the **Welcome to SharePoint Start Page** window.
 
 1. On the SharePoint landing page, scroll down and select the **Communication site** SharePoint site. **Note**: Type **Communication site** in the search bar and search for it.
 
-1. In the top navigation bar, select the **Documents** link
 
-1. Select the **CAS** folder
+1. In the top navigation bar, select the **Documents** link.
+
+1. Select the **CAS** folder.
 
 1. Within the CAS folder, highlight (but do not select) the **Blog Post preview.docx** document
 
@@ -243,11 +244,11 @@ In this task, you will apply a retention label to a document in OneDrive.
 
 1. Within the OneDrive application, highlight (but do not select) the **Contractor Legal Info.docx**
 
-1. For the highlighted document, select the three vertical **...** button
+1. For the highlighted document, select the three vertical **...** button.
 
 1. From the menu select, select the **Details** button.  
 
-1. A side menu will appear on the right.  You should see an **Apply label** option, click in it.
+1. A side menu will appear on the right. Under **Properties** you should see an **Apply label** option. Select the drop-down menu.
 
 1. If the option is available, set the **Apply Retention Label** to **VAT Returns and supporting documents**. As it can take some time for retention labels to be published you may not have the option available immediately, if it is not available, continue to the next task. Feel free to come back later to this task and try again.
 

@@ -30,9 +30,10 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 1. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
-	- Retain items for a specific period: Choose **Custom** from the drop down list
+	- **Retain items for a specific period**: Choose **Custom** from the drop down list
 	- Change the years field to **3**
 	- **Start the retention period based on**: When items were last modified
+	- **At the end of the retention period**: Delete items automatically
 
 1. Select the **Next** button.
 
@@ -67,7 +68,8 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 	- **Teams channel messages** location – **Status**: On 
 	- **Teams chats location** – **Status**: On
-	- Turn **OFF** all other locations.
+	- All other locations should be turned **Off** automatically.
+	
 
 1. For the **Teams chat** location, select the **Edit** text link under **All users**
 
@@ -85,9 +87,10 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 1. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
-	- Retain items for a specific period: Choose **Custom** from the drop down list
+	- **Retain items for a specific period**: Choose **Custom** from the drop down list
 	- Change the years field to **3**
 	- **Start the retention period based on**: When items were last modified
+	- **At the end of the retention period**: Delete items automatically
 
 
 1. Select the **Next** button.
