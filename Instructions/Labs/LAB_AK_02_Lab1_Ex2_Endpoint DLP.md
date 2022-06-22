@@ -95,7 +95,7 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. On the **Create rule** page, enter the following:
 
-    - **Name**: Detect employee information
+    - **Name**: EmployeeID and disease rule
     - **Description**: Detect if employee IDs and diseases are shared in near range.
 
 1. Select **+ Add condition** and then select **Content contains** from the dropdown menu.
@@ -108,7 +108,7 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. Scroll down to **Actions** and select **+ Add an action** drop-down and select **Audit or restrict activities on Windows devices**.
 
-1. Leave all checkboxes enabled and change the dropdown selections right from any checkbox to **Block**.
+1. Leave all checkboxes enabled and change the dropdown selections right from any checkbox from **Audit** to **Block**.
 
 1. Below in the **User Notifications** section, select the switch to put it in the **On** position. Below **Endpoint devices**, select **Show users a policy tip notification when an activity is restricted. This is turned on when you select Block for an activity in Windows. To turn off the notification on Windows devices, disable the restriction.**.
 
@@ -154,8 +154,34 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. Select **+ Add cloud service domain** to open the right side pane.
 
-1. In the right side pane, below **Domain** enter **dropbox.com**, select the **+** sign and select **Add**. 
+1. In the right side pane, below **Domain** enter **dropbox.com**, select the **+** sign and select **Add**.
+
+1. Close the browser window.
 
 You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
+
+### Task 5 - Configure Microsoft Compliance Extension
+
+As Compliance Administrator you need to evaluate the new business requirement of rolling out the Chrome browser to severals users for working with sensitive data. For this test, you will install the Google Chrome browser to Client 01 and then add the Purview Compliance Extension for Google manually from the Google web store. 
+
+1. Open the Edge browser from the task bar.
+
+1. Navigate to the Google Chrome download at https://chrome.google.com.
+
+1. Select **Download Chrome** and select **Open file** below **Downloads** and **ChromeSetup.exe**.
+
+1. Select **Yes** in the **User Account Control** dialog to install the Chrome browser.
+
+1. When the installation is finished and the **Welcome to Chrome** page is open, navigate to the Microsoft Purview Extension in the Chrome web store at https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco.
+
+1. Verify you are on the extension page of **Microsoft Purview Extension** and select **Add to Chrome**.
+
+1. On the **Add "Microsoft Purview Extension"** window, select **Add extension**.
+
+1. Close the notification window and navigate to chrome://extensions.
+
+1. Validate the **Microsoft Purview Extension** is visible and activated.
+
+You have successfully installed the Chrome browser and added the Microsoft Purview Extension to your client. The Chrome browser can now be used like the Edge browser to work with sensitive data and the previously configured Endpoint DLP policy also applies when using the Chrome browser.
 
 # Proceed to Lab 2 - Exercise 3 
