@@ -1,14 +1,14 @@
 # Lab 3 - Exercise 4 - Use eDiscovery for Recovery
 
-In this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to local laws. The Uniform Preservation of Private Business Records Act specifies that records may be destroyed after three years without constituting an offense under the law (with some exceptions), to adhere to this law your organization has created a retention plan to retain all items in the organization for three years.
+In this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to local laws. The Uniform Preservation of Private Business Records Act specifies that records may be destroyed after three years without constituting an offense under the law (with some exceptions), to adhere to this law your organization has created a retention plan to retain all items in the organization for three years.
 
 ### Task 1 – Create eDiscovery Case
 
 In this exercise, you will create an eDiscovery Case and start a search for mails containing Information about the Mark 8 Project sent by Megan Bowen. The legal department requested this information for a compliance review.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
 1. In the portal, on the left navigation pane, expand **eDiscovery** and select **Standard**.
 
@@ -44,7 +44,9 @@ In this task, you will prepare to export the data you discovered in Task 1 to a 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider. You may need to sign-out as Joni Sherman by selecting the **profile picture** in the upper-right corner and select **Sign out**. 
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of **Joni Sherman** in the top right corner and select **Sign out**. Afterwards close the browser.
+
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider. 
 
 1. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.  Select the **Records Management** role.
 
@@ -58,7 +60,7 @@ In this task, you will prepare to export the data you discovered in Task 1 to a 
 
 1. Select **Save** and **Close**.
 
-1. On the **Role groups for Microsoft Purview solutions** select the **eDiscovery Manager** role so Joni Can export eDiscovery data in a future lab.
+1. On the **Role groups for Microsoft Purview solutions** select the **eDiscovery Manager** role.
 
 1. On the **eDiscovery Manager** pane, select **Edit** next to the **eDiscovery Manager** category.
 
@@ -78,9 +80,9 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of MOD Administrator in the top right corner and select **Sign out**. Afterwards close the browser.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of **MOD Administrator** in the top right corner and select **Sign out**. Afterwards close the browser.
 
-1. Open **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. Open **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **eDiscovery** and select **Standard**.
 
@@ -88,7 +90,8 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 1. Select the **Searches** tab and select the **Mark 8 Project** search.
 
-**Hint:** If your eDiscovery search has no data consider the parameters of the search. Megan's mailbox should include some messages about the *Mark 8* project.  If not consider changing the keyword in the search to any of the terms in any of the existing emails in Megan's mailbox.  For example, the term "planner" usually appears in several of  Megan's existing emails.  The search must have data in order for the export to have anything process.
+	>[!TIP]
+	If your eDiscovery search has no data consider the parameters of the search. Megan's mailbox should include some messages about the *Mark 8* project.  If not consider changing the keyword in the search to any of the terms in any of the existing emails in Megan's mailbox.  For example, the term "planner" usually appears in several of  Megan's existing emails.  The search must have data in order for the export to have anything process.
 
 1. In the **Mark 8 Project** dialog, select **Actions** button drop-down, and select **Export results**.
 
@@ -110,9 +113,9 @@ You have successfully exported the discovered data.
 
 An investigation showed that users received a few phishing mails and you are tasked with deleting these across all mailboxes in your environment.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. You may need to sign-out as MOD by selecting the **profile picture** in the upper-right corner and select **Sign out**. 
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
 1. In the Purview portal, in the left navigation pane, select **Content search**.
 
