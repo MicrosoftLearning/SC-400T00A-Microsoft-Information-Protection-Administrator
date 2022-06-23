@@ -30,7 +30,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Purview p
 
 1. Under **Conditions**, select **+ Add Condition** and then select **Content contains** from the dropdown menu.
 
-1. In the new **Content contains** area, select **Add** and select **sensitive info types** from the dropdown menu.
+1. In the new **Content contains** area, select **Add** and select **Sensitive info types** from the dropdown menu.
 
 1. On the **Sensitive info types** page, select **Credit Card Number** and select **Add**.
 
@@ -53,8 +53,6 @@ In this exercise, you will create a Data Loss Prevention policy in the Purview p
 
 1. In the **Incident reports** section, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.
 
-1. In the **Incident reports** section, select the **Send an alert to admins when a rule match occurs.** switch to put it in the **On** position and review the options. The default settings will notify the user creating the policy.
-
 1. Select **Save**, then select **Next**.
 
 1. On the **Test or turn on the policy** page select **Test it out first** and select **Show policy tips while in test mode**.
@@ -65,7 +63,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Purview p
 
 1. Once the policy is created select **Done**.
 
-You have now created a DLP policy that scans for Credit Card numbers in Microsoft Teams chats and channels and notifies allows users to provide a business justification to override the policy.
+You have now created a DLP policy that scans for Credit Card numbers in Microsoft Teams chats and channels and allows users to provide a business justification to override the policy.
 
 ### Task 2 - Modify a DLP policy
 
@@ -85,11 +83,13 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 1. Select **Submit** to apply the change you made in the policy.
 
+1. Once the policy is updated select **Done**.
+
 You have now modified an existing DLP policy and changed the locations it scans for content.
 
 ### Task 3 - Create a DLP policy in PowerShell
 
-In this task, you use PowerShell to create a DLP policy to protect driver's license numbers of your customers and prevent them from being shared in Exchange. Users will be informed that they are attempting to share sensitive data and are blocked from sending the e-mail if it includes driver license numbers.
+In this task, you use PowerShell to create a DLP policy to protect the Contoso EmployeeIDs and prevent them from being shared in Exchange. Users will be informed that they are attempting to share sensitive data and are blocked from sending the e-mail if it includes Contoso EmployeeIDs.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
@@ -104,22 +104,22 @@ In this task, you use PowerShell to create a DLP policy to protect driver's lice
 1. Enter the following command into PowerShell to create a DLP policy that scans all Exchange mailboxes:
 
 	```powershell
-	New-DlpCompliancePolicy -Name "Driver's License DLP Policy" -Comment "This policy blocks sharing of Driver's License Numbers." -ExchangeLocation All
+	 New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All
 	```
 
 1. Enter the following command into PowerShell to add a DLP rule to the DLP policy you created in the previous step:
 
 	```powershell
-	New-DlpComplianceRule -Name "Driver's License Rule" -Policy "Driver's License DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="U.S. Driver's License Number";minCount="1";minconfidence="75"}
+	New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
 	```
 
-1. Use the following command to review the **Driver's License DLP Policy**:
+1. Use the following command to review the **EmployeeID DLP rule**:
 
 	```powershell
-	Get-DLPComplianceRule -Identity "Driver's License Rule"
+	Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
 	```
 
-You have now created a DLP Policy that scans for Driver's license numbers in Exchange by using PowerShell.
+You have now created a DLP Policy that scans for Contoso EmpoloyeeIDs in Exchange by using PowerShell.
 
 ### Task 4 - Activate a policy in test mode
 
@@ -131,7 +131,7 @@ In this task, you will activate the credit card information DLP policy you creat
 
 1. In the **Microsoft Purview portal** , in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-1. In the **Data loss prevention** window select the **Policies** tab, and then select the policy named **Credit Card DLP policy** and then select **Edit policy** (pencil) to open the policy wizard.
+1. In the **Data loss prevention** window select the **Policies** tab, and then select the policy named **Credit Card DLP Policy** and then select **Edit policy** (pencil) to open the policy wizard.
 
 1. Select **Next** until you reach the **Test or turn on the policy** page and then select **Turn it on right away**.
 
@@ -143,7 +143,7 @@ You have successfully activated the DLP Policy. If the policy detects an attempt
 
 ### Task 5 - Modify policy priority
 
-After creating two DLP policies, you want to make sure that the more restrictive policy is processed at a higher priority than the less restrictive policy. For this reason, you want to move the Driver's license policy into the higher priority.
+After creating two DLP policies, you want to make sure that the more restrictive policy is processed at a higher priority than the less restrictive policy. For this reason, you want to move the EmployeeID DLP Policy into the higher priority.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -151,7 +151,7 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-1. In the **Data loss prevention** window select the **Policies** tab, select the three vertical dots next to the **Driver's License DLP Policy** to open the **Actions** selection.
+1. In the **Data loss prevention** window select the **Policies** tab, select the three vertical dots next to the **EmployeeID DLP Policy* to open the **Actions** selection.
 
 1. Select **Move to top**.
 
@@ -163,10 +163,9 @@ You successfully modified the priority of your DLP policies. If both policies ma
 
 You want to use file policies in Microsoft Defender for Cloud Apps to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft Defender for Cloud Apps can scan files in your organization.
 
-
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1.  In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of Joni Sherman in the top right and select **Sign out**. Afterwards close the browser.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of Joni Sherman in the top right and select **Sign out**. Afterwards close the browser.
 
 1. Open **Microsoft Edge** and navigate to **https://portal.cloudappsecurity.com** and log into the Microsoft Defender for Cloud Apps portal as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
@@ -200,7 +199,7 @@ In this task, you want to create a file policy in Microsoft Defender for Cloud A
 
 1. In the **Inspection Method** dropdown menu, select **Data Classification Service**.
 
-1. In the **Choose inspection type...** dropdown menu, select **sensitive information type...**.
+1. In the **Choose inspection type...** dropdown menu, select **Sensitive information type...**.
 
 1. In the **Select a sensitive information type** dialog, select **Credit Card Number**, then select **Done** in the upper right corner.
 
