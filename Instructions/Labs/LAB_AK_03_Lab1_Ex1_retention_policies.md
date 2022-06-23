@@ -237,7 +237,7 @@ Note: When you create and submit a retention policy, it can take up to seven day
 	```powershell
 	Connect-IPPSSession
 	```
-1. Connect-IPPSSession. If prompted with a sign in dialog box, sign in as MOD Administrator admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. If prompted with a sign in dialog box, sign in as MOD Administrator admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 1. Run the following cmdlet to view all details of the adaptive scope policy:
 	```powershell
 	Get-RetentionCompliancePolicy -Identity "Legal Data Retention" -DistributionDetail | Format-List
