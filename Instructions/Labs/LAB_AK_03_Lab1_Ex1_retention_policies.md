@@ -123,7 +123,7 @@ You will create the same retention policies with PowerShell
 	New-RetentionCompliancePolicy -Name "Company Wide PS" -ExchangeLocation All -ModernGroupLocation All -PublicFolderLocation All -SharePointLocation All -OneDriveLocation All
 	```
 
-1. Run the following cmdlet to set the retention period, using days as units based the on the date modified:
+1. Run the following cmdlet to set the retention period, using days as units based on the date modified:
 	
     ```powershell
 	New-RetentionComplianceRule -Name "Company Wide PS Rule" -Policy "Company Wide PS" -RetentionDuration 1095 -ExpirationDateOption ModificationAgeInDays -RetentionComplianceAction Keep
@@ -151,22 +151,17 @@ In this exercise you will create a retention policy for the finance and legal de
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-1. In the **Microsoft Purview** portal, in the left navigation pane, under **Solutions** select **Data lifecycle management**.
-1. On the **Data lifecycle management**, in the *Adaptive scopest** tab, select **+ Create scope**.
+1. In the **Microsoft Purview** portal, in the left navigation pane, select **Data lifecycle management**.
+1. On the **Data lifecycle management**, in the **Adaptive scopes** tab, select **+ Create scope**.
 1. On the **Name your adaptive policy scope** page, for the **Name** and **Description** enter the following information:
-- **Query operator**: Or
-	- **Attribute**: Department
-	- **Operator**: is equal to
-	- **Value**: Retail
 
-
-	- **Name**: Legal Data Retention
+	- **Name**: Legal Documents Retention
 	- **Description**: Retention for legal related documents
 
 1. Select the **Next** button.
 1. On the **What type of scope do you want to create?** page, select **Users**.
-1.Select the **Next** button.
-1. On the **Create the query to define users** page, under **User attributes** open the drop-down menu for the attribute and select **Department.
+1. Select the **Next** button.
+1. On the **Create the query to define users** page, under **User attributes** open the drop-down menu for the attribute and select **Department**.
 1. Directly next to the attribute field, select **is equal to** as operator.
 1. As value enter **Legal**
 1. To add a second attribute, select **+ Add attribute** on the **Create the query to define users** page.
@@ -177,7 +172,7 @@ In this exercise you will create a retention policy for the finance and legal de
 	- **Value**: Retail
 
 1. Select the **Next** button.
-On the **Review and finish** page, select the **Submit** button.
+1. On the **Review and finish** page, select the **Submit** button.
 1. After successful submission, close the page by clicking the **Done** button.
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
@@ -194,7 +189,7 @@ On the **Review and finish** page, select the **Submit** button.
 1. In the **Choose the type of retention policy to create** area, choose **Adaptive** and then select **Next**.
 
 1. On the **Choose adaptive policy scopes and locations** page, select **+ Add scopes**.
-2. On the new **Choose adaptive policy scopes** page, select **Legal Documents Retention** and then select the **Add button**
+2. On the new **Choose adaptive policy scopes** page, select **Legal Documents Retention** and then select the **Add** button.
 
 1. Under **Choose locations to apply the policy** enter the following information:
 
@@ -207,7 +202,7 @@ On the **Review and finish** page, select the **Submit** button.
 
 	- **Retain items for a specific period**: 5 years
 	- **Start the retention period based on**: When items were created
-	- **At the end of the retention period**: Do noting
+	- **At the end of the retention period**: Do nothing
 
 1. Select the **Next** button.
 
@@ -216,7 +211,7 @@ On the **Review and finish** page, select the **Submit** button.
 1. Once your policy is created, select the **Done** button.
 ### Task 5 – Test adaptive scope policy
 
-In this exercise you will verify the users affected by the adaptive scope and test the new adaptie retention policy.
+In this exercise you will verify the users affected by the adaptive scope and test the new adaptive retention policy.
 
 Note: When you create and submit a retention policy, it can take up to seven days for the retention policy to be applied.
 
@@ -226,10 +221,13 @@ Note: When you create and submit a retention policy, it can take up to seven day
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-1. On the **Data lifecycle management** page, in the **Adaptive scopes** tab, select teh policy **Legal Data Retention**.
+1. On the **Data lifecycle management** page, in the **Adaptive scopes** tab, select **Legal Documents Retention**.
 
-1. On the new **Legal Data Retention** page, select the **Policy details**
-1. On the "Legal Data Retention** policy page, you should be able to see all locations affected by the scope.
+1. On the new **Legal Documents Retention** page, select the **Scope details**.
+1. On the **Legal Documents Retention**  page, you should be able to see all locations affected by the scope.
+
+[//]: <> (Error in Lab tenant: Failed to load data. Please try again)
+
 1. To review the details of the adaptive scope retention policy, open PowerShell window by selecting the Windows button with the right mouse button and then select Windows PowerShell.
 
 1. Connect to the Security & Compliance Center in your tenant with the following cmdlet:
@@ -243,8 +241,7 @@ Note: When you create and submit a retention policy, it can take up to seven day
 	Get-RetentionCompliancePolicy -Identity "Legal Data Retention" -DistributionDetail | Format-List
 	```
 1. Review the details. Certain parameter should have following Statuses:
- 
- - **Retain items for a specific period**: 5 years
+
 	- **Enabled**: True
 	- **Mode**: Enforce
 	- **DistributionStatus**: Success

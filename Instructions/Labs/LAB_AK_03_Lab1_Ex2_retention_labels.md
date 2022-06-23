@@ -14,7 +14,7 @@ In this task, you will create a retention label that can be assigned to document
 
 1. In the **Microsoft Purview** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-1. On the Information governance page, select **Labels** tab.
+1. On the **Data lifecycle management** page, select the **Labels** tab.
 
 1. Select the **+ Create a label** button.
 
@@ -30,33 +30,31 @@ In this task, you will create a retention label that can be assigned to document
 
 1. On the **Define the period** page set the following information:
 	- **How long is the period?**: 7 Years
-	- **When shoul the period begin?**: When items were created
+	- **When should the period begin?**: When items were created
 1. Select the **Next** button.
 1. On the **Choose what happens after the retention period** page, choose **Deactivate retention settings**.
 
 1. Select the **Next** button.
 
-1. On the **Review and finish** page, select the **Create label** button.  On the *Your retention label is created* page select **Do Nothing** option and select **Done**.
+1. On the **Review and finish** page, select the **Create label** button.  On the **Your retention label is created** page select the **Do Nothing** option and select **Done**. The label will be published later in the Exercises.
 
-1. Return yourself to the **Data lifecycle management** page on the **Labels** tab.  We will publish labels in a later exercise.
-
-1. Select the **+ Create a label** button
+1. On the **Data lifecycle management** page, select the **+ Create a label** button.
 
 1. On the **Name your retention label** page for the **Name**, **Description for users**, and **Description for admins** enter the following information:
 	- **Name**: Credit Card Receipts
 	- **Description for users**: This label is auto applied to Credit card receipts with a retention period of three years.
-	- **Description for admins**: Auto applied retention label Credit for card receipts with three-year retention.
+	- **Description for admins**: Auto applied retention label for Credit card receipts with three-year retention.
 
 1. Select the **Next** button.
 
 1. On the **Define label settings** page, choose **Retain items forever or for a specific period** and select the **Next** button.
 1. On the **Define the period** page set the following information:
 	- **How long is the period?**: Select the drop down list and select **Custom**. Enter 3 for Years.
-	- **When shoul the period begin?**: When items were created.
+	- **When should the period begin?**: When items were created.
 1. Select the **Next** button.
 1. On the **Choose what happens after the retention period** page, choose **Deactivate retention settings** and select the **Next** button.
 
-1. On the **Review and finish** page, select the **Create label** button. On the *Your retention label is created* page select **Do Nothing** option and then select **Done**.
+1. On the **Review and finish** page, select the **Create label** button. On the **Your retention label is created** page select the **Do Nothing** option and then select **Done**.
 
 You have successfully created a retention label for VAT returns with a seven-year retention period and a retention label for Credit Card receipts with a three-year retention.
 
@@ -74,7 +72,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 1. Select the label **VAT Returns and supporting documents**, that you created in Task 1.
 
-1. Select the **Publish labels** icon button.
+1. Select the **Publish labels** icon button (next to the pencil).
 
 1. On the **Choose labels to publish** page, select the **Next** button.
 
@@ -117,7 +115,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. Select the label **Credit Card Receipts**, that you created in Task 1.
 
-1. Select the **Auto-apply a label** icon button.  The Automatically apply a label to content wizard will be displayed.
+1. Select the **Auto-apply a label** icon button (lightning + cogwheel).
 
 1. On the **Let´s get started** page, for **Name** and **Description** enter the following information:
 	- **Name**: Credit Card Receipts auto-applied
@@ -125,23 +123,23 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. Select the **Next** button.
 
-1. On the **Choose the type of content you want to apply this label to** page select the following option for Choose the type of content you want to apply this label to:
+1. On the **Choose the type of content you want to apply this label to** page select:
 
 	- **Apply label to content that contains sensitive info**
 
 1. Select the **Next** button.
 
-1. On the **Content that contains sensitive info** page, select the following category **Financial**. 
+1. On the **Content that contains sensitive info** page, select the category **Financial**. 
 
-1. Financial templates will then be displayed as results to the right of the template categories panel. 
+1. Financial templates will then be displayed under Templates. 
 
-1. On the Financial templates panel, scroll down through the results and select the **U.K. Financial Data**.
+1. Scroll down and select the **U.K. Financial Data** template.
 
 1. Select the **Next** button.
 
 1. On the **Define content that contains sensitive info** page, select the **Next** button.
 
-1. On the **Choose the type of retention policy to create** page, select the **Static** item and click **Next**. 
+1. On the **Choose the type of retention policy to create** page, select the **Static** item and select **Next**. 
 
 1. On the **Choose locations to apply the policy** page, turn **On** the options for: **Exchange email, OneDrive accounts, SharePoint sites, and Microsoft 365 Groups** and select **Next**.
 
@@ -209,12 +207,14 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into the Microsoft 365 as **Joni Sherman**.
 
 1. In the Microsoft O365 landing page, select the App launcher icon in the top-left corner (the icon with nine dots), then select **SharePoint** from the sub-menu.
-1. If propmpted, close the **Welcome to SharePoint Start Page** window.
+1. If prompted, close the **Welcome to SharePoint Start Page** window.
 
-1. On the SharePoint landing page, scroll down and select the **Communication site** SharePoint site. **Note**: Type **Communication site** in the search bar and search for it.
+1. On the SharePoint landing page, select the **Communication site** SharePoint site.
+
+	Note: Type **Communication site** in the search bar and search for it.
 
 
-1. In the top navigation bar, select the **Documents** link.
+1. In the top navigation bar, select the **Documents** tab.
 
 1. Select the **CAS** folder.
 
@@ -224,11 +224,9 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 
 1. From the expanded menu select, select the **Compliance details** button.
 
-1. A side menu will appear.  For **Label Status** the word *None* should appear, select it.  This will open a new browser tab that will allow you to apply a label.
+1. A new window will appear.  For **Label Status** the word *None* should appear, select it.  This will open a new browser tab that will allow you to apply a label.
 
-1. If the option is available, set the **Apply label** to **VAT Returns and supporting documents** and select **Save**. As it can take some time for retention labels to be published you may not have the option available immediately, if it is not available, continue to the next task. Feel free to come back later to this task and try again.
-
-    ![sample SharePoint label applied. ](../Media/sharepoint_label.png)
+1. If the option is available, set the **Apply label** to **VAT Returns and supporting documents (Retain for 7 years)** and select **Save**. As it can take some time for retention labels to be published you may not have the option available immediately, if it is not available, continue to the next task. Feel free to come back later to this task and try again.
 
 You have successfully applied a retention label to a document in SharePoint.
 

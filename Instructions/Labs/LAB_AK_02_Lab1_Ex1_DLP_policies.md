@@ -4,25 +4,25 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 ### Task 1 – Create a DLP policy in test mode
 
-In this exercise, you will create a Data Loss Prevention policy in the Purview portal to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains Credit Card information and allow them to provide a justification for sending this information. The policy will be implemented in test mode because you do not want the block action to affect your users yet.
+In this exercise, you will create a Data Loss Prevention policy in the Microsoft Purview portal to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains Credit Card information and allow them to provide a justification for sending this information. The policy will be implemented in test mode because you do not want the block action to affect your users yet.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
+1. If the **Stay signed in?** dialog box appears, select the **Don’t show this again** checkbox and then select **No**.
 
 3. In the **Microsoft Purview** portal, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
 1. In the **Data loss prevention** window select the **Policies** tab, and then select **+Create policy** to start the wizard for creating a new data loss prevention policy.
 
-1. On the **Start with a template or create a custom policy** page, scroll down and you want to select **Custom** under **Categories** and **Custom policy** under the **Templates** however, by default, both these options should already be selected (if not, then select them now), select **Next**.
+1. On the **Start with a template or create a custom policy** page, scroll down and select **Custom** under **Categories** and **Custom policy** under **Templates**. By default, both  options should already be selected , select **Next**.
 
-1. In the **Name your DLP policy** page, type *Credit Card DLP Policy* in the **Name** field and *Protect credit card numbers from being shared.* in the **Description** field. Select **Next**.
+1. On the **Name your DLP policy** page, type *Credit Card DLP Policy* in the **Name** field and *Protect credit card numbers from being shared.* in the **Description** field. Select **Next**.
 
-1. On the **Choose locations to apply the policy** page, enable only the **Teams chat and channel messages** option to be enabled and then select **Next**. 
+1. On the **Choose locations to apply the policy** page, enable the **Teams chat and channel messages** option only and select **Next**. 
 
-1. On the **Define policy settings** page, the option **Create or customize advanced DLP rules** needs to be selected, which it should be by default. Select **Next**.
+1. On the **Define policy settings** page, select **Create or customize advanced DLP rules** and select **Next**.
 
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 
@@ -36,7 +36,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Purview p
 
 1. On the **Create rule** page, select **+ Add condition** and select **Content is shared from Microsoft 365** from the dropdown menu.
 
-1. In the new **Content is shared from Microsoft 365** section, select the **Only with people inside my organization** option, which should be selected by default.
+1. In the new **Content is shared from Microsoft 365** section, select the **Only with people inside my organization** option.
 
 1. On the **Create rule** page, select **+ Add an action** and select **Restrict access or encrypt the content in Microsoft 365 locations**.
 
@@ -67,7 +67,7 @@ You have now created a DLP policy that scans for Credit Card numbers in Microsof
 
 ### Task 2 - Modify a DLP policy
 
-In this task, you will modify the existing DLP policy you created in the previous to also scan e-mails for Credit Card information and inform users if they want to share this content in an e-mail.
+In this task, you will modify the existing DLP policy you created in the previous step to also scan e-mails for Credit Card information and inform users if they want to share this content in an e-mail.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -99,7 +99,7 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
 	```powershell
 	 Connect-IPPSSession
 	 ```
-	 and then sign in as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+	 and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. Enter the following command into PowerShell to create a DLP policy that scans all Exchange mailboxes:
 
@@ -131,11 +131,11 @@ In this task, you will activate the credit card information DLP policy you creat
 
 1. In the **Microsoft Purview portal** , in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-1. In the **Data loss prevention** window select the **Policies** tab, and then select the policy named **Credit Card DLP Policy** and then select **Edit policy** (pencil) to open the policy wizard.
+1. In the **Data loss prevention** window select the **Policies** tab, then select the policy named **Credit Card DLP Policy** and select **Edit policy** (pencil) to open the policy wizard.
 
-1. Select **Next** until you reach the **Test or turn on the policy** page and then select **Turn it on right away**.
+1. Select **Next** until you reach the **Test or turn on the policy** page and select **Turn it on right away**.
 
-1. Select **Next** and then select **Submit** to activate the policy.
+1. Select **Next**, then select **Submit** to activate the policy.
 
 1. Once the policy is updated select **Done**.
 
@@ -151,11 +151,11 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
 
-1. In the **Data loss prevention** window select the **Policies** tab, select the three vertical dots next to the **EmployeeID DLP Policy* to open the **Actions** selection.
+1. In the **Data loss prevention** window select the **Policies** tab, select the three vertical dots next to the **EmployeeID DLP Policy** to open the **Actions** selection.
 
 1. Select **Move to top**.
 
-1. In the **Data loss prevention** window, select **Refresh** and then review the priority in the **Order** column of the policy table.
+1. In the **Data loss prevention** window, select **Refresh** and review the priority in the **Order** column of the policy table.
 
 You successfully modified the priority of your DLP policies. If both policies match the same content the action of the higher priority policy will be enforced.
 
