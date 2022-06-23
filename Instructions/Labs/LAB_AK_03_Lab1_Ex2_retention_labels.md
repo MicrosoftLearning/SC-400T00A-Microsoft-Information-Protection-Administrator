@@ -164,7 +164,9 @@ In this task, you will assign retention labels to Outlook emails.
 
 1. A list of retention policies will be displayed.
 
-1. If available, select the **VAT Returns and supporting documents** otherwise select **one Month delete** from the existing policies(just for applying a setting within this exercise).  **Note** Published retention labels can take seven days to appear in Exchange Online and the mailbox must contain 10 MB of data.
+1. If available, select the **VAT Returns and supporting documents** otherwise select **one Month delete** from the existing policies(just for applying a setting within this exercise).
+
+	  Note: Published retention labels can take seven days to appear in Exchange Online and the mailbox must contain 10 MB of data.
 
 1. Keep **Outlook** open.
 
@@ -188,7 +190,9 @@ In this task, you will assign retention labels to an Outlook folder.
 
 1.  Select the **Policy** tab
 
-1.  If available, set the **Folder Policy** drop-down list to **VAT Returns and supporting documents** otherwise select **5 Year delete** from the existing policies (just for applying a setting within this exercise). **Note** Published retention labels can take seven days to appear in Exchange Online and the mailbox must contain 10 MB of data
+1.  If available, set the **Folder Policy** drop-down list to **VAT Returns and supporting documents** otherwise select **5 Year delete** from the existing policies (just for applying a setting within this exercise).
+
+	 Note: Published retention labels can take seven days to appear in Exchange Online and the mailbox must contain 10 MB of data
 
 1. Select the **OK** button
 
