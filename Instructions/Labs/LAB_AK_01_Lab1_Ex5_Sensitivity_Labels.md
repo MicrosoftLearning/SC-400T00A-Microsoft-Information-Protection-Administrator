@@ -19,7 +19,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
    Install-Module -Name MSOnline
    ```
 
-1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take many seconds to complete processing.
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take many seconds to complete processing.
 
 1. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
 
@@ -81,7 +81,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-1. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Information protection**.  
+1. In the Microsoft Purview portal, on the left navigation pane, select **Information protection**.  
 
 1. On the Information protection page, under the **Labels** tab select **+ Create a label**.
 
@@ -110,7 +110,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. The label will be created and when complete a message will display: **Your label was created**
 
-1. Select **Done**.
+1. Select **Dont create a policy yet** and then select **Done**.
 
 1. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**.
 
@@ -160,7 +160,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. The label will be created and when complete a message will display **Your label was created**.
 
-1. Select **Done**.
+1. Select **Dont create a policy yet** and then select **Done**.
 
 You have successfully created a sensitivity label for your organizations internal policies and a sensitivity sublabel for the Human Resources (HR) department.
 
@@ -172,7 +172,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-1. In the **Microsoft 365 compliance** portal, on the left navigation pane, select **Information protection**. 
+1. In the Microsoft Purview portal, on the left navigation pane, select **Information protection**. 
 
 1. On the **Information protection** page, on the **Labels** tab, select **Publish label**.
 
@@ -279,7 +279,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
-1. In the **Microsoft Purview** portal, on the left navigation pane, select **Information protection**.  
+1. In the Microsoft Purview portal, on the left navigation pane, select **Information protection** and then select **Labels**. 
 
 1. On the Information protection page, highlight (without selecting) the existing **Internal** label, and select the three dots.
 
