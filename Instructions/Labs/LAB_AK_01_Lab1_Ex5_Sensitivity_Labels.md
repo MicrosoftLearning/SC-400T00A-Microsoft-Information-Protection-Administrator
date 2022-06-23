@@ -19,7 +19,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
    Install-Module -Name MSOnline
    ```
 
-1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take many seconds to complete processing.
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take a while to complete processing.
 
 1. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
 
