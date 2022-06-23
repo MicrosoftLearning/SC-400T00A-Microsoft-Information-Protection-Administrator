@@ -160,9 +160,9 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
 
-### Task 5 - Configure Microsoft Compliance Extension
+### Task 5 - Configure Microsoft Purview Extension
 
-As Compliance Administrator you need to evaluate the new business requirement of rolling out the Chrome browser to severals users for working with sensitive data. For this test, you will install the Google Chrome browser to Client 01 and then add the Purview Compliance Extension for Google manually from the Google web store. 
+As Compliance Administrator you need to evaluate the new business requirement of rolling out the Chrome browser to severals users for working with sensitive data. For this test, you will install the Google Chrome browser to Client 01 and then add the Purview Compliance Extension for Google manually from the Google web store.
 
 1. Open the Edge browser from the task bar.
 

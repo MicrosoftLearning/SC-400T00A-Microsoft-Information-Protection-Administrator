@@ -4,7 +4,7 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd. tasked to co
 
 ### Task 1 - Grant access to DLP reports
 
-In this exercise, you will grant the new compliance officer access to the DLP reports. As a non-technical user this compliance officer will only read reports and not change the DLP configuration.
+In this exercise, you will grant the new compliance officer Megan Bowen access to the DLP reports. As a non-technical user this compliance officer will only read reports and not change the DLP configuration.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
