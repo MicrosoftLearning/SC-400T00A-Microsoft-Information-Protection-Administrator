@@ -34,6 +34,18 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. In the left navigation pane, select **Reports** and observe your access to the Reports Dashboard.
 
+[//]: <> (An error message is displayed in the lab tenants when accessing the reports section. The task works in our lab tenants though.)
+
+1. Scroll down to the **Organizational data** section and select **DLP Policy Matches** to review the matches of the DLP policies in the lab tenant.
+
+1. Select **Reports** again, scroll down to the **Organizational data** section and select **DLP Incidents** and **DLP false positives and overrides** one after another and review the reports data. 
+
+1. After reviewing the reports, select **Data loss prevention** from the left side navigation pane and select **Activity explorer**.
+
+1. Work with the filters to display the DLP related activities in your tenant.
+
+1. Leave the client open to finish this last exercise.
+
 You now verified that the access has been configured and the new compliance officer can view reports in the Purview portal.
 
 ## You have completed the Lab 2. Proceed to Lab 3 - Exercise 1.
