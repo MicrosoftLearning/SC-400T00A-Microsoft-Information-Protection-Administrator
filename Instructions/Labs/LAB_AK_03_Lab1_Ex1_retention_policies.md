@@ -79,11 +79,7 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
     Note: By adding those two users the setting for included in Teams chats changed from "All teams" to just the two users you added.
 
-1. Select the **Done** button
-
-1. On the locations page, a notification will display: **2 users** have been added
-
-1. Select the **Next** button.
+1. Select **Done**, then select **Next**.
 
 1. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
