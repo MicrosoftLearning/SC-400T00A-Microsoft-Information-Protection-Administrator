@@ -8,7 +8,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (admin)**.
+1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 
 1. Confirm the **User Account Control** window with **Yes**.
 
@@ -32,7 +32,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 1. Close the PowerShell window.
 
-1. Open a regular PowerShell window, by selecting the Windows button with the right mouse button and select **Windows PowerShell**.
+1. Open a regular PowerShell window, without elevation, by selecting the Windows button with the right mouse button and select **Windows PowerShell**.
 
 1. Enter the following cmdlet to use the Exchange Online PowerShell module and connect to your tenant:
 
@@ -48,10 +48,12 @@ In this task, you will install the Exchange Online PowerShell module and verify 
     Get-IRMConfiguration | fl AzureRMSLicensingEnabled
     ```
 
+1. When **AzureRMSLicensingEnabled** result is **True**, Azure RMS is activated for your tenant. Continue with the next step. 
+
 1. Test the Azure RMS templates used for Office 365 Message Encryption against the other pilot user **Megan Bowen** by using the following cmdlet and press **Enter**:
 
     ```powershell
-    Test-IRMConfiguration -Sender MeganB@contoso.com -Recipient MeganB@contoso.com`
+    Test-IRMConfiguration -Sender MeganB@contoso.com -Recipient MeganB@contoso.com
     ```
 
     ![IRM validation script result. ](../Media/IRMvalidationl.png)
@@ -64,7 +66,7 @@ You have successfully installed the Exchange Online PowerShell module, connected
 
 ### Task 2 – Modify default OME template
 
-There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with OME, you need to deactivate the use of social IDs for all users in your organization.  
+There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with OME, you need to deactivate the use of social IDs for all users in your organization.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
@@ -96,15 +98,19 @@ You have successfully deactivated the usage of foreign identity providers, such 
 
 ### Task 3 – Test default OME template
 
-You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant.
+You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
 1.	Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
-1.	Open **Microsoft Edge** from the taskbar and when a **Welcome to the new Microsoft Edge** windows is displayed, select **Complete setup** if it appears.
+1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 
-1. Select **Confirm** to accept the default browser settings and **Continue without signing in** if it appears.
+[//]: <> (Installing the latest OS updates will also update the Edge browser to the new chromium version required to do this labs.)
 
-1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
+1. Open **Microsoft Edge** from the taskbar and when a **Welcome to Microsoft Edge** windows is displayed, select **Start without your data**, select **Continue without this data** again and select **Confirm and start browsing**.
+
+1. When the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser.
+
+1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
 
 1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -116,7 +122,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Secret Message** to the subject line and **My super-secret message.** to the body.
 
-1. From the top pane, select **Encrypt** to encrypt the message.  Once you've successfully encrypted the message, you should see a notice that says something like "...This message is encrypted."
+1. From the top pane, select **Encrypt** to encrypt the message.  Once you've successfully encrypted the message, you should see a notice that says something like "Encrypt: This message is encrypted. Recipeints can't remove encryption."
 
 1. Select **Send** to send the message.
 
@@ -133,6 +139,8 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 1. Copy the passcode, paste it in to the OME portal and select **Continue**.
 
 1. Review the encrypted message.
+
+1. Leave Client 1 VM (LON-CL1) open as it is.
 
 You have successfully tested the modified default OME template with deactivated social IDs.
 

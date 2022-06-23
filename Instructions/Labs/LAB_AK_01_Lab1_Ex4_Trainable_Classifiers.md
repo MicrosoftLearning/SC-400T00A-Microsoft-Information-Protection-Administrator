@@ -97,7 +97,7 @@ The documents and files in the chosen SharePoint site are now being analyzed, wh
 ### Task 3 – Publish a trainable classifier (optional lab task)
 After the new trainable classifier was created and the initial analysis of the documents and files is done, the manual training process needs to be performed. In this task, Joni will start the calibration of the classifier to achieve the required accuracy for publishing.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In your browser window, you are in the Microsoft Purview portal at **Data classification** in the **Trainable classifiers** tab.
 

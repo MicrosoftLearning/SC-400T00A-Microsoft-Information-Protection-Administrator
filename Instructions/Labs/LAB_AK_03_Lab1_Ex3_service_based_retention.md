@@ -8,7 +8,11 @@ In this task, you will activate a Mailbox Hold to prevent any content in the emp
 
 1. Log into the Client 1 virtual machine (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://outlook.office.com/ecp** and log into the Exchange Admin Center as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **https://outlook.office.com/ecp** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+
+1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
+
+1. If a welcome screen is displayed, close it.
 
 1. In the **Exchange Admin Center**, in the left navigation pane, select **recipients**, then select **mailboxes**.
 
@@ -16,7 +20,7 @@ In this task, you will activate a Mailbox Hold to prevent any content in the emp
 
 1. In the **Edit User Mailbox** window, select **mailbox features**.
 
-1. Under **Litigation Hold: Disabled**, select **Enable**.
+1. Scroll down to **Litigation Hold: Disabled** and select **Enable**.
 
 1. On the **litigation hold** page, fill in the following information:
 
@@ -33,9 +37,13 @@ In this task, you will delete and restore a deleted document to make sure you ca
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://www.office.com** and log Microsoft 365 as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **https://www.office.com** and log in Microsoft 365 as **Joni Sherman**.
+
+1. If a welcome screen is displayed, close it. If the Office 365 apps notification appears, also close it.
 
 1. In the Microsoft Office 365 landing page, select the App launcher icon in the top-left corner (icon with nine dots), then select **SharePoint** from the sub-menu.
+
+1. If the **Welcome to SharePoint Start Page** appears, close it.
 
 1. On the SharePoint landing page, select the **Benefits @ Contoso** SharePoint site.
 

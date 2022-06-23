@@ -28,24 +28,19 @@ In this task, you will create a file plan label that allows your HR department t
     - **Category**: Recruiting and hiring
     - **Provision/citation**: Health Insurance Portability and Accountability Act of 1996
 
-1. On the **Define retention settings** page, select the following options, then select **Next**:
-    - **Retain items for a specific period**
+1. On the **Define label settings** page, select **Retain items forever or for a specific period**, then select **Next**.
+
+1. On the **Define the period** page, select the following options, then select **Next**:
     - **Retention period**: 7 years
     - **Start the retention period based on**: When items were created
-    - **During the retention period**: Mark items as a record
-    - **At the end of a retention period**: Trigger a disposition review
 
-1. In the **Add disposition reviewers** window, click **+ Add a stage**
+1. On the **Choose what happens during the retention period** page, select **Mark items as a record**, then select **Next**.
 
-1. Type **Lynne R** 
+1. On the **Choose what happens after the retention period** page, select **Delete items automatically**, then select **Next**.
 
-1.  In the **Reviewers for stage** field, type **Lynne Robbins** to search, then select **Lynne Robbins** to add the user, then select **Next**
+1. On the **Review and finish** page, select the **Create label** button.  On the *Your retention label is created* page select **Do Nothing** option and select **Done**.
 
-1. Review the configuration of the label, then select **Create label**.
-
-1. On the **Your retention label is created** page, select **Do Nothing**, then select **Done**.
-
-You successfully created a retention label using file plan that keeps all labeled documents from being deleted for seven years and at the end of the retention period Lynne Robbins has to decide if the data can be disposed of or has to be retained further.
+You successfully created a retention label using file plan that keeps all labeled documents from being deleted for seven years and at the end of the retention period the records get deleted automatically.
 
 ### Task 2 – Publish Labels
 
@@ -53,7 +48,7 @@ In this task, you will publish the label so users of the HR department can apply
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
-1. In **Microsoft Edge**, the Microsoft Purview penter tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com/**. 
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com/**. 
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, select **Records management**.
 
@@ -65,9 +60,9 @@ In this task, you will publish the label so users of the HR department can apply
 
 1. Select the **Employee Data** label and select **Add**, then select **Next**. 
 
-1. On the **Choose the type of retention policy to create** page, select **Static**
+1. On the **Choose the type of retention policy to create** page, select **Static**.
 
-1. Select the **Next** button  
+1. Select the **Next** button.
 
 1. On the **Choose locations** page, select **All locations. Includes content in Exchange email, Office 365 groups, OneDrive, and SharePoint documents.**, then select **Next**.
 
