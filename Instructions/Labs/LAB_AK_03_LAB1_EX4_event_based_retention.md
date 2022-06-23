@@ -32,7 +32,7 @@ Once you created an event type you need to create a label that triggers its rete
 
 1. In the **Microsoft Purview** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
-1. On the Information governance page, select **Labels** tab.
+1. On the **Data lifecycle management** page, select the **Labels** tab.
 
 1. Select the **+ Create a label** button.
 
@@ -44,17 +44,17 @@ Once you created an event type you need to create a label that triggers its rete
 
 1. Select the **Next** button.
 
-1. On the **Define retention settings** page, enable the **Retain items for a specific period** setting.
+1. On the **Define label settings** page, enable the **Retain items forever or for a specific period** setting.
 
-1. For the **Define retention settings** section set the following information:
-	- **Retention period**: 5 years.
-	- **Start the retention period based on**: Project Closure
+1. On the **Define the period** page set the following information:
+	- **How long is the period**: 5 years.
+	- **When should the period begin?**: Project Closure
 
 1. Select the **Next** button.
 
 1. On the **Choose what happens after the retention period** page, select **Delete items automatically**, then select **Next**.
 
-1. On the **Review and finish** page, select the **Create label** button.  On the *Your retention label is created* page select **Do Nothing** option and select **Done**.
+1. On the **Review and finish** page, select the **Create label** button.  On the **Your retention label is created** page select **Do Nothing** option and select **Done**.
 
 You have successfully created the label and need to publish it.
 
@@ -97,7 +97,7 @@ Following from Task 2 you will now publish the Project Asset retention label so 
 
 1. Select the **Next** button.
 
-1. On the **Review your Settings** page, select the **Submit** button.  When your policy is created select **Done**.
+1. On the **Finish** page, select the **Submit** button.  When your policy is created select **Done**.
 
 You have successfully published the retention label for project assets to your users.
 
@@ -120,6 +120,8 @@ Once the label is published the users need to apply the label and assign the cor
 1. In the context menu select **Details**.
 
 1. In the right-side menu, under **Properties** select **Apply label** and then select the **Project Asset** label.
+
+	Note: As it can take some time for retention labels to be published you may not have the option available immediately.
 
 1. Set the newly appeared **Asset ID** field to **BostonOfficeLaunch** and close the right-side menu by selecting **X** in the top right corner.
 
