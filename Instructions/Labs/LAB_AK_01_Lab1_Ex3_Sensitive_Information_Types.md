@@ -14,7 +14,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. If a **What is data classification?** message is displayed, select **Close** and select **Sensitive info types** from the top pane.  Hint: If **Sensitive info types** don't appear in the Purview portal then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser yet.  You may have to sign-out and sign-in again as JoniS.
 
-1. On the **Sensitive ino types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
+1. On the **Sensitive info types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
 1. On the **Name your sensitive info type** page, enter the following information:
 
