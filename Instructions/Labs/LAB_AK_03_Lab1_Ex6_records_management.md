@@ -17,6 +17,7 @@ In this task, you will create a file plan label that allows your HR department t
 1. Select **+ Create a label**.
 
 1. Enter the following information, then select **next**:
+
     - **Name**: Employee Data
     - **Description for users**: Content marked with this label contains sensitive employee data.
     - **Description for admins**: The label was created on request of the HR department and will be automatically applied to Employee Data.
@@ -31,6 +32,7 @@ In this task, you will create a file plan label that allows your HR department t
 1. On the **Define label settings** page, select **Retain items forever or for a specific period**, then select **Next**.
 
 1. On the **Define the period** page, select the following options, then select **Next**:
+
     - **Retention period**: 7 years
     - **Start the retention period based on**: When items were created
 
@@ -67,6 +69,7 @@ In this task, you will publish the label so users of the HR department can apply
 1. On the **Choose locations** page, select **All locations. Includes content in Exchange email, Office 365 groups, OneDrive, and SharePoint documents.**, then select **Next**.
 
 1. On the **Name your policy** page, enter the following information, then select **Next**:
+
     - **Name**: Employee Health Insurance label policy
     - **Description**: This policy contains the record label for health insurance information.
 

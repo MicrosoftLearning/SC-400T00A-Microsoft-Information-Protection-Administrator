@@ -48,7 +48,6 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 	Note: If you were not able to select the check box of **Allow overrides from M365 services**, enable the check box of **Notify users in Office 365 with a policy tip** which can be found on the **Create rule** page under the **User notification >>  Microsoft 365 services** section from the previous step. Then select the check box of **Allow overrides from M365 services. Allows users in Exchange, Sharepoint, OneDrive and Teams to override policy restrictions.**
 
-
 1. Check the box **Require a business justification to override**.
 
 1. In the **Incident reports** section, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.

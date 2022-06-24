@@ -83,6 +83,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 1. On the **Choose locations** page select the option **Let me choose specific locations**.
 
 1. Enter the following information:
+
 	- **Exchange email** location - **Status**: On
 	- **SharePoint sites** location - **Status**: On
 	- **OneDrive accounts** location - **Status**: On
@@ -118,6 +119,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 1. Select the **Auto-apply a label** icon button (lightning + cogwheel).
 
 1. On the **Let´s get started** page, for **Name** and **Description** enter the following information:
+
 	- **Name**: Credit Card Receipts auto-applied
 	- **Description**: Credit Card Receipts auto-applied retention label, with a retention period of three years for all location.
 
@@ -148,7 +150,6 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 1. On the **Review and finish** page select the **Submit** button.  When the policy is created, select **Done**.
 
 You have successfully published a retention label with auto-apply. Over the next seven days all documents containing credit card details will be automatically labeled with the published label Credit Card Receipts, a retention period of three years will be applied to these items.
-
 
 ### Task 4 – Work with retention labels in Outlook emails
 
@@ -216,7 +217,6 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 1. On the SharePoint landing page, select the **Communication site** SharePoint site.
 
 	Note: Type **Communication site** in the search bar and search for it.
-
 
 1. In the top navigation bar, select the **Documents** tab.
 

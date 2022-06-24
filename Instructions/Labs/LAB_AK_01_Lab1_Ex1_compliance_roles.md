@@ -10,7 +10,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 
-[//]: <> (Installing the latest OS updates will also update the Edge browser to the new chromium version required to do this labs.)
+    [//]: <> (Installing the latest OS updates will also update the Edge browser to the new chromium version required to do this labs.)
 
 1. Open **Microsoft Edge** from the taskbar and when a **Welcome to Microsoft Edge** windows is displayed, select **Start without your data**, select **Continue without this data** again and select **Confirm and start browsing**.
 
@@ -64,7 +64,7 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 1. If the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**. 
 
-[//]: <> ("Improve your compliance posture" did not show uo in any test scenario. Remove the last step?)
+    [//]: <> ("Improve your compliance posture" did not show uo in any test scenario. Remove the last step?)
 
 1. The page **Welcome to the Microsoft Purview compliance portal** is displayed. Investigate the dashboard tiles and the left-side navigation pane.
 

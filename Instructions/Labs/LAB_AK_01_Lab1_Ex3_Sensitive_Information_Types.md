@@ -246,6 +246,7 @@ To associate the EDM-based classification with a database containing sensitive d
     ```
     .\EdmUploadAgent.exe /Authorize
     ```
+
 1. When the **Pick an account** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. Download the database schema definition of the EDM-based classification sensitive information type by running the following script in PowerShell:
@@ -303,7 +304,7 @@ Several violations of personal information leakage happened when users sent out 
     - *influenza*
     - *cold*
     - *bronchitis*
-    - *otitis*.
+    - *otitis*
 
 1. Select **Done**.
 

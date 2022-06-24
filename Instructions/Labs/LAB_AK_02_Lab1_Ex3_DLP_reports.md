@@ -34,7 +34,9 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. In the left navigation pane, select **Reports** and observe your access to the Reports Dashboard.
 
-[//]: <> (An error message is displayed in the lab tenants when accessing the reports section. The task works in our lab tenants though.)
+    **Warning**: If you get a message displayed with an error, come back at a later point of the lab to view the reporting section. You can also perform these steps in a trial or your personal developers tenant.
+
+    [//]: <> (An error message is displayed in the lab tenants when accessing the reports section. The task works in our lab tenants though.)
 
 1. Scroll down to the **Organizational data** section and select **DLP Policy Matches** to review the matches of the DLP policies in the lab tenant.
 
