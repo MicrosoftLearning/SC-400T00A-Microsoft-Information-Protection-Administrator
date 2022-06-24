@@ -16,7 +16,7 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 1. On the **New case** page in the **Name** field, type *Mark 8 Project Case* and in the **Description** type *This case will be used to evaluate Megan Bowen's mails regarding the Mark 8 Project.*, then select **Save**.
 
-1. On the **Core eDiscovery (Standard)** page, select the **Mark 8 Project Case** to open the case.
+1. Back on the **Core eDiscovery (Standard)** page, select the **Mark 8 Project Case** to open the case.
 
 1. In the Case view, select the **Searches** tab.
 
@@ -86,7 +86,7 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **eDiscovery** and select **Standard**.
 
-1. Click on the **Mark 8 Project case** to open the case.
+1. Select the **Mark 8 Project case** to open the case.
 
 1. Select the **Searches** tab and select the **Mark 8 Project** search.
 
@@ -97,7 +97,7 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 1. In the **Export results** pane, under **Output options** review the options.  Select the **Export** button.
 
-	[//]: <> (Request failed with status code 500 Client Error. Works in other tenants)
+	[//]: <> (Request failed with status code 500 in LOD tenant - worked before in our M365 Dev tenants)
 
 1. Once the **compliance** window pops up select **OK**.
 
