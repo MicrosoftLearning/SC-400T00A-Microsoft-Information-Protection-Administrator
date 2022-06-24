@@ -80,9 +80,9 @@ In this task, you will assign the published record label to an email in Outlook 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. On the taskbar at the bottom of the page, select the Start button, scroll down and then select **Outlook**. If necessary, sign in as **Megan Bowen**. If Outlook is not installed on the VM use Outlook through a web browser.
+1. In Microsoft Edge Navigate to **https://outlook.office.com**. If necessary, sign in as **Megan Bowen**. 
  
-1. In the Outlook application, select **Inbox**
+1. In Outlook Web, select **Inbox**
 
 1. With the right mouse button select the first email item in the center pane, and in the menu, select **Assign Policy**.
 
