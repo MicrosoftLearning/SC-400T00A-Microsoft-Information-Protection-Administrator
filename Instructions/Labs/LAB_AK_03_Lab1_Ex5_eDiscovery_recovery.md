@@ -97,6 +97,8 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 1. In the **Export results** pane, under **Output options** review the options.  Select the **Export** button.
 
+[//]: <> (Request failed with status code 500 Client Error. Works in other tenants)
+
 1. Once the **compliance** window pops up select **OK**.
 
 1. Select the **Exports** tab from the case screen.  Double-click the export that was just created.
