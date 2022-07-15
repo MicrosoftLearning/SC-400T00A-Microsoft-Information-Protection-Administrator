@@ -164,7 +164,7 @@ You want to use file policies in Microsoft Defender for Cloud Apps to protect fi
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of Joni Sherman in the top right and select **Sign out**. Afterwards close the browser.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of Joni Sherman in the top right and select **Sign out**, then close the browser.
 
 1. Open **Microsoft Edge** and navigate to **https://portal.cloudappsecurity.com** and log into the Microsoft Defender for Cloud Apps portal as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
@@ -182,7 +182,7 @@ In this task, you want to create a file policy in Microsoft Defender for Cloud A
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1.  In **Microsoft Edge**, the Microsoft Defender for Cloud Apps portal tab should still be open. Select the **Profile picture** of the MOD Admin in the top right and select **Sign out** next to the cogwheel. Afterwards close the browser.
+1. In **Microsoft Edge**, the Microsoft Defender for Cloud Apps portal tab should still be open. Select the **Profile picture** of the MOD Admin in the top right and select **Sign out** next to the cogwheel, then close the  browser..
 
 1. Open **Microsoft Edge** and navigate to **https://portal.cloudappsecurity.com** and log into the Microsoft Defender for Cloud Apps portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni Shermans password should be provided by your lab hosting provider.
 
