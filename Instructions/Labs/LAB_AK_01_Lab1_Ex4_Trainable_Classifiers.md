@@ -26,7 +26,7 @@ Before you can create custom trainable classifiers, you need to activate the fea
 
 1. Refresh the browser window.
 
-1. Read the banner at the top part of the window with the message **To set you up for creating trainable classifiers, we're currently scanning your content locations to generate analytics that will help us learn what type of content is in your organization. This process will take 7 to 14 days to complete**
+1. Read the information banner at the top of the window with the message **To set you up for creating trainable classifiers, we're currently scanning your content locations to generate analytics that will help us learn what type of content is in your organization. This process will take 7 to 14 days to complete**.
 
 1. Leave the client open.
 
