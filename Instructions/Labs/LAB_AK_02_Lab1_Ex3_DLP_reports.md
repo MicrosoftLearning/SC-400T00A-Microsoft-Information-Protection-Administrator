@@ -10,7 +10,7 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-1. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.  Mark the box next to the **Security Reader** role.
+1. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.   Select the field for the **Security Reader** role.
 
 1. In the *Security Reader* pane, select **Edit** in the **Members** area.
 
