@@ -94,11 +94,11 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Files & emails**.
+1. On the **Define the scope for this label** page, select the option **Items** which protects emails, files, and Power BI items.
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for files & emails** page, select **Next**.
+1. On the **Choose protection settings for labeled items** page, select **Next**.
 
 1. On the **Auto-labeling for files and emails** page, select **Next**.
 
@@ -108,7 +108,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. The label will be created and when complete a message will display: **Your label was created**
+1. The label will be created and when complete a message will display: **Your sensitivity label was created**
 
 1. Select **Dont create a policy yet** and then select **Done**.
 
@@ -125,11 +125,11 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Files & emails**. 
+1. On the **Define the scope for this label** page, select the option **Items** which protects emails, files, and Power BI items. 
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for files and emails** page, select the **Encrypt files and emails** option.
+1. On the **Choose protection settings for labeled items** page, select the **Encrypt files and emails** option.
 
 1. Select **Next**.
 
@@ -158,7 +158,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. The label will be created and when complete a message will display **Your label was created**.
+1. The label will be created and when complete a message will display **Your sensitivity label was created**.
 
 1. Select **Dont create a policy yet** and then select **Done**.
 
@@ -188,7 +188,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Choose sensitivity labels to publish** page, select **Next**.
 
-1. On the **publish to users and groups page**, select **Next**.
+1. On the **Publish to users and groups page**, select **Next**.
 
 1. On the **Policy settings** page, select **Next**.
 
@@ -294,11 +294,11 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Files & emails**.
+1. On the **Define the scope for this label** page, select the option **Items** which protects emails, files, and Power BI items.
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for files and emails** page, select **Next**.
+1. On the **Choose protection settings for labeled items** page, select **Next**.
 
 1. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
 
@@ -328,7 +328,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. The label will be created and when complete a message will display: **Your label was created**.
+1. The label will be created and when complete a message will display: **Your sensitivity label was created**.
 
 1. Select **Done**.
 
