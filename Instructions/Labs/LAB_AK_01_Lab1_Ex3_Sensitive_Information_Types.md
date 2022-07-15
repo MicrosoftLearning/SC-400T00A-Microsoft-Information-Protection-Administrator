@@ -43,7 +43,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
     - **Case insensitive**: 
         - *Employee*
         - *ID* 
-    - *Word match*
+    - Select the radial for *Word match* under the **Case Sensitive** field
 
 1. Select **Done**.
 
@@ -111,7 +111,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 1. Select **Data classification** and select **Exact data matches** tab from the top pane.
 
-1. Select **+ Create EDM schema** to open the right-side pane and create a new schema definition
+1. Select **+ Create EDM schema** to open the right-side pane and create a new schema definition.
 
 1. In the **Name** field, enter *employeedb*.
 
@@ -119,7 +119,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 1. Enable **Ignore delimiters and punctuation for all schema fields**.
 
-1. Select **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
+1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
 
 1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
 
@@ -153,7 +153,7 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 1. On the **New pattern** pane on the right-side, in the Primary element field, select *EmployeeID*.
 
-1. Below **Primary element's sensitive info type**, select **Choose sensitive info type**. 
+1. Below **Primary element's sensitive info type**, select **+ Choose sensitive info type**. 
 
 1. In the **Search** bar, enter *Contoso* and press the enter key.
 
