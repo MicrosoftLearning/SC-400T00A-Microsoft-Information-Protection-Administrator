@@ -100,7 +100,7 @@ You have successfully deactivated the usage of foreign identity providers, such 
 
 You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
-1.	Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+1.	Leave Client 1 VM (LON-CL1) open as it is, and log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
 1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 
@@ -108,7 +108,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. Open **Microsoft Edge** from the taskbar and when a **Welcome to Microsoft Edge** windows is displayed, select **Start without your data**, select **Continue without this data** again and select **Confirm and start browsing**.
 
-1. When the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser.
+1. If the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser. Once this is complete perform the previous step.
 
 1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
 
@@ -122,11 +122,13 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Secret Message** to the subject line and **My super-secret message.** to the body.
 
-1. From the top pane, select **Encrypt** to encrypt the message.  Once you've successfully encrypted the message, you should see a notice that says something like "Encrypt: This message is encrypted. Recipeints can't remove encryption."
+1. From the top pane, select **Encrypt** to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipeints can't remove encryption."
 
 1. Select **Send** to send the message.
 
-1. Sign in to your personal email account and open the message from Lynne Robbins.  If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically.  If you sent the email to another email service like (@google.com), you may have to perform the next steps to process the encryption and read the message.
+1. Sign in to your personal email account and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically. If you sent the email to another email service like (@google.com), you may have to perform the next steps to process the encryption and read the message.
+
+    **Note:** You may need to check your junk or spam folder for the message from Lynne Robbins.
 
 1. Select **Read the message**.
 
