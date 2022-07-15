@@ -108,9 +108,11 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. Scroll down to **Actions** and select **+ Add an action** drop-down and select **Audit or restrict activities on Windows devices**.
 
-1. Leave all checkboxes enabled and change the dropdown selections right from any checkbox from **Audit** to **Block**.
+1. Leave all checkboxes enabled and change the dropdown selections on the right from **Audit only** to **Block**.
 
-1. Below in the **User Notifications** section, select the switch to put it in the **On** position. Below **Endpoint devices**, select **Show users a policy tip notification when an activity is restricted. This is turned on when you select Block for an activity in Windows. To turn off the notification on Windows devices, disable the restriction.**.
+1. In the **User Notifications** section, enable notifcations by enabling the **Use notifications to inform your users and help educate them on the proper use of sensitive info.** switch to **On**.
+
+1. Under **Endpoint devices** select the checkbox for **Show users a policy tip notification when an activity is restricted. This is turned on when you select Block for an activity in Windows. To turn off the notificiations on Windows devices, disable the restrictions.
 
 1. Scroll down to the **User overrides** section and below **Allow override from Endpoint devices**, select **Copy from clipboard**.
 
@@ -166,7 +168,7 @@ As Compliance Administrator you need to evaluate the new business requirement of
 
 1. Open the Edge browser from the task bar.
 
-1. Navigate to the Google Chrome download at https://chrome.google.com.
+1. Navigate to the Google Chrome download at **https://chrome.google.com**.
 
 1. Select **Download Chrome** and select **Open file** below **Downloads** and **ChromeSetup.exe**.
 
