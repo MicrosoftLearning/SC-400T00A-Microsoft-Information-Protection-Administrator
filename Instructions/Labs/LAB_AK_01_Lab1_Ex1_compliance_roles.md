@@ -14,13 +14,13 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. Open **Microsoft Edge** from the taskbar and when a **Welcome to Microsoft Edge** windows is displayed, select **Start without your data**, select **Continue without this data** again and select **Confirm and start browsing**.
 
-1. When the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser.
+1. If the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser. Once this is complete perform the previous step.
 
 1. In **Microsoft Edge**, select the address bar, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
-1. Close the password save dialog from the bottom with **Never**, to not save the default global admins credentials in your browser.
+1. Close the password save dialog from the bottom by selecting **Never**, to not save the default global admins credentials in your browser.
 
 1. If a welcome screen is displayed, close it. If the Office 365 apps notification appears, also close it.
 
@@ -32,11 +32,11 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1.	In the settings below the **Account** tab, scroll to **Roles** and select **Manage roles** below.
 
-1.	When the **Manage admin roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to select **Compliance Administrator** in the Security & Compliance section.
+1. When the **Manage admin roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to the **Security & Compliance** category and select **Compliance Administrator** .
 
 1.	Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the pane, select the arrow pointing to the left to return to Joni's user record.
 
-1.	Close the window of Joni Sherman’s account with the **X** in the upper right to go back to the **Active users** list.
+1. Close the pane displaying Joni Sherman’s account with the **X** in the upper right to go back to the **Active users** list.
 
 1. Before switching to Joni Sherman, use the Global Admin privileges of MOD Administrator for activating the audit logging by navigating to https://compliance.microsoft.com/auditlogsearch.
 
