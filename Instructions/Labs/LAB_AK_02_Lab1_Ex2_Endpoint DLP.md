@@ -11,9 +11,21 @@ In this task, you will turn on device onboarding for your organization.
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
 1. In the **Microsoft Purview** portal in the left navigation pane, select **Settings** and select **Device onboarding**.
+             
+             **Note:** If **Turn on device onboarding** is greyed out, complete the following:
+             1. Open Edge browser in an InPrivate Window
+             2. Navigate to **https://security.microsoft.com**
+             3. Log in with your admin credentials that were provided to you.
+             4. Select **Settings**
+             5. Select **Microsoft 365 Defender**
+             6. You should receive a **Hang on!!** notification. This will prepare your environment for onboarding.
+             7.  After a few minutes, refresh the browser
+             8.  If you see the **Account** option, the environment is ready.
+             9.  Close the InPrivate browser window.
+             10.  Back in the browser Joni is logged into Purview with, refresh the **Device Onboarding** page.
 
 1. Select **Turn on device onboarding** to enable the solution for your tenant.
-
+  
 1. Accept the **Turn on device onboarding** dialog by selecting **OK**.
 
 1. Accept the **Device monitoring is being turned on** dialog by selecting **OK**.
