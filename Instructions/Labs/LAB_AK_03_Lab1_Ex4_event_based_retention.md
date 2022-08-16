@@ -125,7 +125,7 @@ Once the label is published the users need to apply the label and assign the cor
 
 1. Set the newly appeared **Asset ID** field to **BostonOfficeLaunch** and close the right-side menu by selecting **X** in the top right corner.
 
-You've successfully assigned a label and an asset ID to a document. When the Project Closure event for Asset ID 1234 is triggered it will activate the retention period of 5 years.
+You've successfully assigned a label and an asset ID to a document. When the Project Closure event for Asset ID BostonOfficeLaunch is triggered it will activate the retention period of 5 years.
 
 ### Task 5 – Create specific event
 
