@@ -1,3 +1,10 @@
+---
+lab:
+    title: 'Exercise 1 - Manage Compliance Roles'
+    module: 'Module 1 - Implement Information Protection'
+---
+
+
 # Lab 1 - Exercise 1 - Manage Compliance Roles
 
 In your role as Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. you are tasked to configure the new Microsoft 365 tenant of your organization, to meet the organizations compliance requirements. Contoso Ltd. is a company with a headquarters in the United States and several new subsidiaries in the European Union and your organization needs to make sure the new Microsoft 365 tenant fulfills the legal requirements of different countries and regulatory requirements of your industry sector.
