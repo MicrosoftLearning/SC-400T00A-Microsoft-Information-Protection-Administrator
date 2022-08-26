@@ -1,4 +1,10 @@
-# Lab 3 - Exercise 4 - Configure event-based retention
+---
+lab:
+    title: 'Exercise 4 - Configure Event-based Retention'
+    module: 'Module 3 - Implement Data Lifecycle and Records Management'
+---
+
+# Lab 3 - Exercise 4 - Configure Event-based Retention
 
 In this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to retain content belonging to specific projects for 5 years after they close.
 
