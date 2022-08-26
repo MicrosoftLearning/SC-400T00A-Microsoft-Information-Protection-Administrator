@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Exercise 2 - Manage Microsoft Purview message encryption'
+    title: 'Exercise 2 - Manage Microsoft Purview Message Encryption'
     module: 'Module 1 - Implement Information Protection'
 ---
 
