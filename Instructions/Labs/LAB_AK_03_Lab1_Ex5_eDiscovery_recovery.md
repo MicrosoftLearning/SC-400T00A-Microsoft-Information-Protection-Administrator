@@ -1,4 +1,10 @@
-# Lab 3 - Exercise 4 - Use eDiscovery for Recovery
+---
+lab:
+    title: 'Exercise 5 - Use eDiscovery for Recovery'
+    module: 'Module 3 - Implement Data Lifecycle and Records Management'
+---
+
+# Lab 3 - Exercise 5 - Use eDiscovery for Recovery
 
 In this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to local laws. The Uniform Preservation of Private Business Records Act specifies that records may be destroyed after three years without constituting an offense under the law (with some exceptions), to adhere to this law your organization has created a retention plan to retain all items in the organization for three years.
 
