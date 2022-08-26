@@ -1,3 +1,9 @@
+---
+lab:
+    title: 'Exercise 1 - Manage DLP Policies'
+    module: 'Module 2 - Implement Data Loss Prevention'
+---
+
 # Lab 2 - Exercise 1 - Manage DLP Policies
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization.
