@@ -1,4 +1,10 @@
-# Lab 3 - Exercise 5 - Configure Records Management
+---
+lab:
+    title: 'Exercise 6 - Configure Records Management'
+    module: 'Module 3 - Implement Data Lifecycle and Records Management'
+---
+
+# Lab 3 - Exercise 6 - Configure Records Management
 
 In this exercise, you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Regulatory requirements for your organization include having a definitive copy of the employee provided health insurance information available when your company discusses the insurance costs. You are tasked with making sure the records are kept.
 
