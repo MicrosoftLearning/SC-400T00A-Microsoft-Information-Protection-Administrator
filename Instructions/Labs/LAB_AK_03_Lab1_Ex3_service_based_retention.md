@@ -1,3 +1,9 @@
+---
+lab:
+    title: 'Exercise 3 - Configure Service-based Retention'
+    module: 'Module 3 - Implement Data Lifecycle and Records Management'
+---
+
 # Lab 3 - Exercise 3 - Configure Service-based Retention
 
 You assume the role of Joni Sherman, a Compliance Admin for Contoso Ltd. The legal department requires you to assist them in stopping a disgruntled employee from deleting company data.
