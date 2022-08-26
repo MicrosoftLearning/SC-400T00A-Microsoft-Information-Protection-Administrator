@@ -1,3 +1,9 @@
+---
+lab:
+    title: 'Exercise 2 - Implement Retention Labels'
+    module: 'Module 3 - Implement Data Lifecycle and Records Management'
+---
+
 # Lab 3 - Exercise 2 - Implement Retention Labels
 
 In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Sudbury England and has legal obligations to retain finance documents. 
