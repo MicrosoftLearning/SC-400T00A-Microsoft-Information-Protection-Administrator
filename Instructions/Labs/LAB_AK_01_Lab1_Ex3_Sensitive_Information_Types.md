@@ -1,3 +1,10 @@
+---
+lab:
+    title: 'Exercise 3 - Manage Sensitive Information Types'
+    module: 'Module 1 - Implement Information Protection'
+---
+
+
 # Lab 1 - Exercise 3 - Manage Sensitive Information Types
 
 Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To educate users in the future, a custom sensitive information type is required to identify employee IDs in emails and documents, which consist of three uppercase characters and six numbers. To lower the false positive rate, the keywords "Employee" and "IDs" will be used. In this task you will create a new custom sensitive information type, a database for EDM-based classification and a keyword dictionary. 
