@@ -1,3 +1,9 @@
+---
+lab:
+    title: 'Exercise 5 - Manage Sensitivity Labels'
+    module: 'Module 1 - Implement Information Protection'
+---
+
 # Lab 1 - Exercise 5 - Manage Sensitivity Labels
 
 In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. 
