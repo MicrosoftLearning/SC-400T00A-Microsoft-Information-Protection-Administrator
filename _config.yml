@@ -11,7 +11,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-mentions
   - jemoji
-markdown: kramdown
+markdown: GFM
 kramdown:
    syntax_highlighter_opts:
       disable : true
