@@ -81,5 +81,5 @@ You have successfully switched to Joni Sherman's account and you are now ready t
 
 ---
 
-| [Lab Exercise List](./../) | [Proceed to Lab 1 - Exercise 2](LAB_AK_01_Lab1_Ex2_message_encryption.md) |
+| [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 1 - Exercise 2](LAB_AK_01_Lab1_Ex2_message_encryption.md) |
 | :-----------: | :-----------: |
