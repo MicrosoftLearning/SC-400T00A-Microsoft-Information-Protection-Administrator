@@ -135,7 +135,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select the **Encrypt files and emails** option.
+1. On the **Choose protection settings for labeled items** page, select the **Encrypt items** option.
 
 1. Select **Next**.
 
