@@ -245,5 +245,5 @@ Your company uses PowerAutomate flows to share data between SharePoint Online an
 You have now created a PowerPlatform DLP policy that prevents users from creating flows involving a SharePoint Online Connector and any connector that is not SalesForce.
 
 ---
-| [Back to Lab 1 - Exercise 5](LAB_AK_01_Lab1_Ex5_Sensitivity_Labels.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 2 - Exercise 2](LAB_AK_02_Lab1_Ex2_Endpoint%20DLP.md) |
+| [Back to Lab 1 - Exercise 5](LAB_AK_01_Lab1_Ex5_Sensitivity_Labels.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 2 - Exercise 2](LAB_AK_02_Lab1_Ex2_Endpoint_DLP.md) |
 | :-----------: | :-----------: | :-----------: |
