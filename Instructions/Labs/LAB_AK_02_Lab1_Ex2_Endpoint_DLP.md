@@ -192,4 +192,7 @@ As Compliance Administrator you need to evaluate the new business requirement of
 
 You have successfully installed the Chrome browser and added the Microsoft Purview Extension to your client. The Chrome browser can now be used like the Edge browser to work with sensitive data and the previously configured Endpoint DLP policy also applies when using the Chrome browser.
 
-# Proceed to Lab 2 - Exercise 3 
+---
+| [Back to Lab 2 - Exercise 1](LAB_AK_02_Lab1_Ex1_DLP_policies.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 2 - Exercise 3](LAB_AK_02_Lab1_Ex3_DLP_reports.md) |
+| :-----------: | :-----------: | :-----------: |
+
