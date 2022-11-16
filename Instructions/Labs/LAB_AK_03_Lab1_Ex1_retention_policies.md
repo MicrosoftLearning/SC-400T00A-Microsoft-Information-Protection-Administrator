@@ -247,5 +247,8 @@ Note: When you create and submit a retention policy, it can take up to seven day
 	- **Enabled**: True
 	- **Mode**: Enforce
 	- **DistributionStatus**: Success
-# Proceed to Lab 3 - Exercise 2
+
+---
+| [Back to Lab 2 - Exercise 3](LAB_AK_02_Lab1_Ex3_DLP_reports.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 3 - Exercise 2](LAB_AK_03_Lab1_Ex2_retention_labels.md) |
+| :-----------: | :-----------: | :-----------: |
 
