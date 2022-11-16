@@ -262,4 +262,6 @@ In this task, you will apply a retention label to a document in OneDrive.
 
 You have successfully applied a retention label to a document in OneDrive.
 
-# Proceed to Lab 3 - Exercise 3
+---
+| [Back to Lab 3 - Exercise 1](LAB_AK_03_Lab1_Ex1_retention_policies.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 3 - Exercise 3](LAB_AK_03_Lab1_Ex3_service_based_retention.md) |
+| :-----------: | :-----------: | :-----------: |
