@@ -122,7 +122,7 @@ You will create the same retention policies with PowerShell
 1. Run the following cmdlet to create the first retention policy for all locations except teams:
 
     ```powershell
-	New-RetentionCompliancePolicy -Name "Company Wide PS" -ExchangeLocation All -ModernGroupLocation All -PublicFolderLocation All -SharePointLocation All -OneDriveLocation All
+	New-RetentionCompliancePolicy -Name "Company Wide PS" -ExchangeLocation All -ModernGroupLocation All -SharePointLocation All -OneDriveLocation All
 	```
 
 1. Run the following cmdlet to set the retention period, using days as units based on the date modified:
