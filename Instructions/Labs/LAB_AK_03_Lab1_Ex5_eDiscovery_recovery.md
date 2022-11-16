@@ -155,4 +155,6 @@ An investigation showed that users received a few phishing mails and you are tas
 
 You have successfully created a new content search to look for specific emails and then used the purge action to delete the phishing mails from your user's mailboxes. You can only run the purge action as a member of the Organization Management role, which a Compliance Admin is not part of.
 
-# Proceed to Lab 3 - Exercise 6
+---
+| [Back to Lab 3 - Exercise 4](LAB_AK_03_Lab1_Ex4_event_based_retention.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 3 - Exercise 6](LAB_AK_03_Lab1_Ex6_records_management.md) |
+| :-----------: | :-----------: | :-----------: |
