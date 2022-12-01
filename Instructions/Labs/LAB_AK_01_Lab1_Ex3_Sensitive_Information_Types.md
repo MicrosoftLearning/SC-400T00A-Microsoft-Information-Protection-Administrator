@@ -133,11 +133,11 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
     <p>
     <details>
       <summary>Click here for <b>New EDM experience</b></summary>
-    
+
    1. Ensure the switch for **New EDM Experience** is selected to **On**.
-   
+
       ![Screenshot of option to proceed with the New EDM experience.](../Media/NewEDMExperience.png)
-   
+
    1. Select **+ Create EDM classifier** to start the EDM classifier wizard.
 
    1. Select **Create EDM classifier** on the **Familiarize yourself with the steps needed to put your classifier to work** screen.
@@ -158,14 +158,14 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
       - Name
 
-      - Birthddate
+      - Birthdate
 
       - StreetAddress
 
       - EmployeeID
 
       ![Screenshot of added columns.](../Media/AddColumns.png)
-   
+
    1. Select **Next**
 
    1. On the **Select primary elements** screen, select the **+**  next **EmployeeID**, under **Sensitive info type** to choose a sensitive info type for EmployeeID
@@ -196,24 +196,52 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
    1. Review your settings on the **Review settings and finish** then select **Submit**
 
+   1. On the **You successfully created an EDM classifier**, capture the **Schema name**. You will need this later.
+
+      ![Screenshot of the You successfully created an EDM page](../Media/SchemaName.png)
+
+   1. Select **Done**
+
     </details>
 
     <p>
     <details>
       <summary>Click here for <b>Classic EDM experience</b></summary>
-      
-      ### Heading
-      1. Foo
-      2. Bar
-         * Baz
-         * Qux
-    
-      ### Some Code
-      ```js
-      function logSomething(something) {
-        console.log('Something', something);
-      }
-      ```
+
+   1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
+
+      ![Screenshot of option to proceed with the Classic EDM experience.](../Media/ClassicEDMExperience.png)
+
+   1. Select **+ Create EDM schema**
+
+   1. On the **New EDM schema** pane, enter the following:
+
+      - **Name**: employeedbschema
+
+      - **Description**: Employee Database schema
+
+   1. Enable **Ignore delimiters and punctuation for all schema fields**.
+
+   1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
+
+   1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
+
+   1. Select **+ Add schema data field** from the lower end.
+
+   1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
+
+   1. Select **+ Add schema data field** from the lower end again.
+
+   1. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
+
+   1. Select **+ Add schema data field** from the lower end a last time.
+
+   1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
+
+   1. Select **Field is searchable**.
+
+   1. Select **Save**.
+
     </details>
 
 1. Select **+ Create EDM schema** to open the right-side pane and create a new schema definition.
