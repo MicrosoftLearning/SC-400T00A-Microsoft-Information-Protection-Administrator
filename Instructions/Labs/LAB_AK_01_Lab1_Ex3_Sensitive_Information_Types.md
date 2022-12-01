@@ -19,7 +19,11 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. Select **Data classification** from the left pane.
 
-1. If a **What is data classification?** message is displayed, select **Close** and select **Sensitive info types** from the top pane.  Hint: If **Sensitive info types** don't appear in the Purview portal then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser yet.  You may have to sign-out and sign-in again as JoniS.
+1. If a **What is data classification?** message is displayed, select **Close**.
+
+1. Select **Sensitive info types** from the top pane.  
+
+   >**Hint:** If **Sensitive info types** doesn't appear in the Purview portal then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser.  You may have to sign-out and sign-in as JoniS.
 
 1. On the **Sensitive info types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
@@ -70,7 +74,7 @@ You have successfully created a new sensitive information type to identify emplo
 
 ### Task 2 – Create EDM-based classification information type
 
-As an extra search pattern, you will create an EDM-based classification with a database schema of employee data. The database source file will be formatted with the following data fields of employees: Name, Birthdate, StreetAddress, and EmployeeID.
+As an extra search pattern, you will create an Exact Data Match (EDM) based classification with a database schema of employee data. The database source file will be formatted with the following data fields of employees: Name, Birthdate, StreetAddress, and EmployeeID.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -84,13 +88,19 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 1. From the left pane, select **Teams & groups** and select **Active teams & groups**.
 
-1. Select **Add a group** from the top pane.
+1. Select **Add a group** from the menu under the Active teams and groups message, under the different types of groups available.
+
+    ![Screenshot of the Add a group button.](../Media/AddAGroup.png)
 
 1. On the **Choose a group type** page, select **Security** and **Next**.
 
-1. On the **Set up the basics**, enter the following to the **Name** field: *EDM_DataUploaders*.  In the Description field, enter *people who will upload data for EDM*.
+1. On the **Set up the basics** screen, enter the following:
+    - **Name**: EDM_DataUploaders
+    - **Description**: People who will upload data for EDM.
 
 1. Select **Next**.
+
+1. On the **Edit settings** page, leave the **Role assignment** at the default setting, and select **Next**.
 
 1. On the **Review and finish adding group** page, review your settings and select **Create group**.
 
@@ -116,7 +126,95 @@ As an extra search pattern, you will create an EDM-based classification with a d
 
 1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
 
-1. Select **Data classification** and select **Exact data matches** tab from the top pane.
+1. Select **Data classification** and select **EDM classifiers** tab from the top pane.
+
+1. Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience.
+
+    <p>
+    <details>
+      <summary>Click here for <b>New EDM experience</b></summary>
+    
+   1. Ensure the switch for **New EDM Experience** is selected to **On**.
+   
+      ![Screenshot of option to proceed with the New EDM experience.](../Media/NewEDMExperience.png)
+   
+   1. Select **+ Create EDM classifier** to start the EDM classifier wizard.
+
+   1. Select **Create EDM classifier** on the **Familiarize yourself with the steps needed to put your classifier to work** screen.
+
+   1. On the **Name and describe your EDM classifier** page, enter the following:
+
+      - **Name**: employeedb
+
+      - **Description**: Employee Database schema
+
+   1. Select **Next**
+
+   1. On the **Choose a method for defining your schema** select the radial to **Manually define your data structure**
+
+   1. Select **Next**
+
+   1. On the **Define columns that contain the data you want to detect**, select **+Add column** 3 times to add the following columns:
+
+      - Name
+
+      - Birthddate
+
+      - StreetAddress
+
+      - EmployeeID
+
+      ![Screenshot of added columns.](../Media/AddColumns.png)
+   
+   1. Select **Next**
+
+   1. On the **Select primary elements** screen, select the **+**  next **EmployeeID**, under **Sensitive info type** to choose a sensitive info type for EmployeeID
+
+      ![Screenshot of primary elements screen.](../Media/SelectPrimaryElement.png)
+
+   1. On the **Choose a sensitive info type for "EmployeeID"** pane, search for *Contoso*.
+
+   1. Select **Contoso Employee IDs** then select **Save**.
+
+   1. Select the check box next to **EmployeeID** under **Primary element** to select EmployeeID as the primary element.
+
+      ![Screenshot of primary elements screen.](../Media/PrimaryElementSelected.png)
+
+   1. Select **Next**
+
+   1. On the **Configure settings for data in selected columns** screen, leave the toggle for **Use the same settings for all columns** set to **Yes**.
+
+   1. Leave the default selected for **Data in columns are case-insensitive**.
+
+   1. Select the checkbox to enable **Ignore delimiters and punctuation for data in all columns**.
+
+   1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis*, and *Close parenthesis*.
+
+   1. Select **Next**
+
+   1. Leave the defaults selected on the **Configure detection rules for primary elements** page, and select **Next**.
+
+   1. Review your settings on the **Review settings and finish** then select **Submit**
+
+    </details>
+
+    <p>
+    <details>
+      <summary>Click here for <b>Classic EDM experience</b></summary>
+      
+      ### Heading
+      1. Foo
+      2. Bar
+         * Baz
+         * Qux
+    
+      ### Some Code
+      ```js
+      function logSomething(something) {
+        console.log('Something', something);
+      }
+      ```
+    </details>
 
 1. Select **+ Create EDM schema** to open the right-side pane and create a new schema definition.
 
