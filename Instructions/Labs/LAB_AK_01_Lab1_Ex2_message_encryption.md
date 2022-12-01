@@ -79,7 +79,7 @@ There is a requirement in your organization to restrict trust for foreign identi
 1. Run the following cmdlet to view the default OME configuration:
 
     ```powershell
-    Get-OMEConfiguration -Identity "OME Configuration" |fl
+    Get-OMEConfiguration -Identity "OME Configuration" | fl
     ```
 
 1. Review the settings and confirm that the SocialIdSignIn parameter is set to True.
@@ -95,7 +95,7 @@ There is a requirement in your organization to restrict trust for foreign identi
 1. Check the default configuration again and validate, the SocialIdSignIn parameter is now set to False.
 
     ```powershell
-    Get-OMEConfiguration -Identity "OME Configuration" |fl
+    Get-OMEConfiguration -Identity "OME Configuration" | fl
     ```
 
 1. Notice the result should show the SocialIDSignIn is set to False. Leave the PowerShell window and client open.
@@ -124,17 +124,19 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. If a **Translate page from...** window is shown, select the arrow down and select **Never translate from...**.
 
-1. Select **New message** from the upper left side part of Outlook on the web.
+1. Select **New mail** from the upper left side part of Outlook on the web.
 
 1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Secret Message** to the subject line and **My super-secret message.** to the body.
 
 1. From the top pane, select **Options** then **Encrypt** to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipeints can't remove encryption."
 
+      ![Screenshot of Encyption settings](../Media/OptionsEncrypt.png)
+
 1. Select **Send** to send the message.
 
-1. Sign in to your personal email account and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically. If you sent the email to another email service like (@google.com), you may have to perform the next steps to process the encryption and read the message.
+1. Sign in to your personal email account and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically. If you sent the email to another email service like (@gmail.com), you may have to perform the next steps to process the encryption and read the message.
 
-    **Note:** You may need to check your junk or spam folder for the message from Lynne Robbins.
+    >**Note:** You may need to check your junk or spam folder for the message from Lynne Robbins.
 
 1. Select **Read the message**.
 
@@ -216,7 +218,7 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 
 1. Select **New message** from the upper left side part of Outlook on the web.
 
-1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter *Finance Report* to the subject line and enter *Secret finance information.* to the body.
+1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Finance Report** to the subject line and enter **Secret finance information.** to the body.
 
 1. Select **Send** to send the message.
 
