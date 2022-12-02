@@ -364,7 +364,7 @@ To associate the EDM-based classification with a database containing sensitive d
 1. Download the database schema definition of the EDM-based classification sensitive information type by running the following script in PowerShell:
 
     ```
-    .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"
+    .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedbschema /OutputDir "C:\Users\Admin\Documents\"
     ```
 
     Note: If the last command fails, it possibly takes more time until the **EDM_DataUploaders** group membership is applied. It can take up to one hour until it is possible to download the schema file.  If it fails proceed to the next task and return to this step later.
@@ -372,14 +372,18 @@ To associate the EDM-based classification with a database containing sensitive d
 1. Hash the database file and upload it to the EDM-based classification sensitive information type by running the following script in PowerShell:
 
     ```
-    .\EdmUploadAgent.exe /UploadData /DataStoreName employeedb /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedb.xml"
+    .\EdmUploadAgent.exe /UploadData /DataStoreName employeedbschema /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedbschema.xml"
     ```
 
-1. Check the upload progress until the state changes to completed then run the following PowerShell command:
+1. Check the upload progress with the following command:
 
     ```
-    .\EdmUploadAgent.exe /GetSession /DataStoreName employeedb
+    .\EdmUploadAgent.exe /GetSession /DataStoreName employeedbschema
     ```
+
+    ![Image of EDM Upload Agent completion.](../Media/EDMUploadAgentCompleted.png)
+
+1. Once the status is completed, your EDM data is ready for use.
 
 1. Close the PowerShell window.
 
