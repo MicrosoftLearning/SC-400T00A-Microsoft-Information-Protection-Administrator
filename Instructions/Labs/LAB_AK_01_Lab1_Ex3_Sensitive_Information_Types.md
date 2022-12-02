@@ -242,69 +242,44 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
    1. Select **Save**.
 
+   1. Select **EDM sensitive info types** from the left pane.
+
+   1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
+
+   1. On the **Define data store schema** page, select **Choose an existing EDM schema**.
+
+   1. Select **employeedb** and select **Add**.
+
+   1. Review the data store schema and select **Next**.
+
+   1. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
+
+   1. On the **New pattern** pane on the right-side, in the Primary element field, select *EmployeeID*.
+
+   1. Below **Primary element's sensitive info type**, select **+ Choose sensitive info type**.
+
+   1. In the **Search** bar, enter *Contoso* and press the enter key.
+
+   1. Select **Contoso Employee IDs** and select **Done**.
+
+   1. Select **Done**.
+
+   1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
+
+   1. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
+
+   1. In the **Name and describe your EDM sensitive info type** page, enter the following:
+
+      - **Name**: Contoso Employee EDM
+      - **Description for admins**: EDM-based sensitive information type for employee personal information.
+
+   1. Select **Next**, review the settings and select **Submit**.
+
+   1. On the **Your EDM sensitive info type was created** page, select **Done**.
+
     </details>
 
-1. Select **+ Create EDM schema** to open the right-side pane and create a new schema definition.
 
-1. In the **Name** field, enter *employeedb*.
-
-1. In the **Description** field, enter *Employee Database schema.*.
-
-1. Enable **Ignore delimiters and punctuation for all schema fields**.
-
-1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
-
-1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
-
-1. Select **+ Add schema data field** from the lower end.
-
-1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
-
-1. Select **+ Add schema data field** from the lower end again.
-
-1. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
-
-1. Select **+ Add schema data field** from the lower end a last time.
-
-1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
-
-1. Select **Field is searchable**. 
-
-1. Select **Save**.
-
-1. Select **EDM sensitive info types** from the left pane.
-
-1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
-
-1. On the **Define data store schema** page, select **Choose an existing EDM schema**.
-
-1. Select **employeedb** and select **Add**.
-
-1. Review the data store schema and select **Next**.
-
-1. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
-
-1. On the **New pattern** pane on the right-side, in the Primary element field, select *EmployeeID*.
-
-1. Below **Primary element's sensitive info type**, select **+ Choose sensitive info type**. 
-
-1. In the **Search** bar, enter *Contoso* and press the enter key.
-
-1. Select **Contoso Employee IDs** and select **Done**.
-
-1. Select **Done**.
-
-1. Select **Next** in the *Define patterns for this EDM sensitive info type* screen.
-
-1. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
-
-1. In the **Name and describe your EDM sensitive info type** page, enter *Contoso Employee EDM* for the name.
-
-1. In the **Description for admins** field, enter *EDM-based sensitive information type for employee personal information.*.
-
-1. Select **Next**, review the settings and select **Submit**.
-
-1. On the **Your EDM sensitive info type was created** page, select **Done**.
 
 1. Leave the browser open with the Microsoft Purview portal.
 
