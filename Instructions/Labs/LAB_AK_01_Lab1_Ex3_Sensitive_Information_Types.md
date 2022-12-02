@@ -202,6 +202,8 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
    1. Select **Done**
 
+   1. Leave the browser open with the Microsoft Purview portal.
+
     </details>
 
     <p>
@@ -277,11 +279,9 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
    1. On the **Your EDM sensitive info type was created** page, select **Done**.
 
+   1. Leave the browser open with the Microsoft Purview portal.
+
     </details>
-
-
-
-1. Leave the browser open with the Microsoft Purview portal.
 
 You have successfully created a new EDM-based classification sensitive information type for identifying employee data from a database file source.
 
