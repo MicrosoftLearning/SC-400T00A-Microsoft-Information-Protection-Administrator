@@ -132,7 +132,9 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
     <p>
     <details>
-      <summary>Click here for <b>New EDM experience</b></summary>
+      <summary>Click here for steps on creating the EDM with the <b>New EDM experience</b></summary>
+
+   ## New EDM Experience
 
    1. Ensure the switch for **New EDM Experience** is selected to **On**.
 
@@ -208,7 +210,9 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
     <p>
     <details>
-      <summary>Click here for <b>Classic EDM experience</b></summary>
+      <summary>Click here for steps on creating the EDM with the <b>Classic EDM experience</b></summary>
+
+   ## Classic EDM Experience   
 
    1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
 
