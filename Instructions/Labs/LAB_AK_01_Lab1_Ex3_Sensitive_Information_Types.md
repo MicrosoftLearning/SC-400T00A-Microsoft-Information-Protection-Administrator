@@ -464,11 +464,11 @@ Custom Sensitive information types should always be tested before using them in 
 
 1. In the left navigation pane select **Data classification**, then select the **Sensitive info types** tab.
 
-1. In the **Search** box from the upper right side and enter *Contoso* and press Enter.
+1. In the **Search** box on the upper right, enter *Contoso* and press Enter.
 
-1. Select **Contoso Employee IDs** to open the right side pane.
+1. Select **Contoso Employee IDs**.
 
-1. Select **Test** from the right-side pane.
+1. Select **Test**.
 
 1. On the **Upload file to test** page, select **Upload file**.
 
@@ -478,13 +478,15 @@ Custom Sensitive information types should always be tested before using them in 
 
 1. On the **Match results** page, review the found match.
 
-1. Select **Finish** and close the test page by clicking the **X** button.
+1. Select **Finish** to end the test.
 
-1. Back on the **Data classification** page, select the Sensitive Information Type with the name **Contoso Diseases List**.
+1. Use the top bar navigation to navigate back to **Sensitive info types**.
 
-1. In the right side pane, select **Test**.
+1. Search for *Contoso*, then select the Sensitive Information Type with the name **Contoso Diseases List**.
 
-1. On the **Upload file to test** page, select **Upload file**.
+1. Select **Test**.
+
+1. On the **Upload file to test** pane, select **Upload file**.
 
 1. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
 
