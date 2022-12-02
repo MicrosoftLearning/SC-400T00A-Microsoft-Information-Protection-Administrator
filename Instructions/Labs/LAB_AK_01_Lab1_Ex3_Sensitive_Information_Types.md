@@ -145,9 +145,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
    1. Select **Create EDM classifier** on the **Familiarize yourself with the steps needed to put your classifier to work** screen.
 
    1. On the **Name and describe your EDM classifier** page, enter the following:
-
       - **Name**: employeedb
-
       - **Description**: Employee Database schema
 
    1. Select **Next**
@@ -157,13 +155,9 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
    1. Select **Next**
 
    1. On the **Define columns that contain the data you want to detect**, select **+Add column** 3 times to add the following columns:
-
       - Name
-
       - Birthdate
-
       - StreetAddress
-
       - EmployeeID
 
       ![Screenshot of added columns.](../Media/AddColumns.png)
@@ -221,9 +215,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
    1. Select **+ Create EDM schema**
 
    1. On the **New EDM schema** pane, enter the following:
-
       - **Name**: employeedbschema
-
       - **Description**: Employee Database schema
 
    1. Enable **Ignore delimiters and punctuation for all schema fields**.
@@ -275,7 +267,6 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
    1. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
 
    1. In the **Name and describe your EDM sensitive info type** page, enter the following:
-
       - **Name**: Contoso Employee EDM
       - **Description for admins**: EDM-based sensitive information type for employee personal information.
 
@@ -380,10 +371,9 @@ To associate the EDM-based classification with a database containing sensitive d
     ```
     .\EdmUploadAgent.exe /GetSession /DataStoreName employeedbschema
     ```
+1. Once the status is **Completed**, your EDM data is ready for use.
 
     ![Image of EDM Upload Agent completion.](../Media/EDMUploadAgentCompleted.png)
-
-1. Once the status is completed, your EDM data is ready for use.
 
 1. Close the PowerShell window.
 
@@ -405,42 +395,44 @@ Several violations of personal information leakage happened when users sent out 
 
     - **Name**: Contoso Diseases List
     - **Description**: List of possible diseases of employees.
-    
+
 1. Select **Next**.
 
 1. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
 1. Select the dropdown field below **Primary element** and select **Keyword dictionary**.
 
-1. In the **Add a keyword dictionary** page enter the name *Diseases Dictionary*. 
+1. In the **Add a keyword dictionary** page enter the following: 
 
-1. In the **Keywords** area enter the following keywords, each into a separate line:
-
-    - *flu*
-    - *influenza*
-    - *cold*
-    - *bronchitis*
-    - *otitis*
-
-1. Select **Done**.
-
-1. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down and select **keyword list** to add additional support for the keyword dictionary.
-
-1. In the **Add a keyword list** page enter *Employee absence* in the **ID** field. In the **Case insensitive** box, enter the following keywords, each into a separate line:
-    
-    - *employee*
-    - *absence*
-    - *reason*   
+   - **Name**: Diseases Dictionary
+   - **Keywords**:
+      - flu
+      - influenza
+      - cold
+      - bronchitis
+      - otitis  
 
 1. Select **Done**.
 
-1. In the **New pattern** page, review the configuration and select **Create**.
+1. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down and select **Keyword list** to add additional support for the keyword dictionary.
 
-1. In the **Define patterns for this sensitive info type** select **Next**.
+1. In the **Add a keyword list** page enter the following:
 
-1. In the **Choose the recommended confidence level to show in compliance policies** let the default value persist and select **Next**. 
+   - **ID**: Employee absence
+   - **Case insensitive**:
+     - employee
+     - absence
+     - reason
 
-1. In the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
+1. Select **Done**.
+
+1. On the **New pattern** page, review the configuration and select **Create**.
+
+1. On the **Define patterns for this sensitive info type** select **Next**.
+
+1. On the **Choose the recommended confidence level to show in compliance policies** let the default value persist and select **Next**.
+
+1. On the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
 
 1. Leave the browser window in the Microsoft Purview portal open.
 
