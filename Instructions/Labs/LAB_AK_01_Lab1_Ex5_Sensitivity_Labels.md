@@ -114,15 +114,17 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. The label will be created and when complete a message will display: **Your sensitivity label was created**
+1. Once the label has been created the **Your sensitivity label was created** page will be displayed.
 
 1. Select **Dont create a policy yet** and then select **Done**.
 
 1. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**.
 
+    ![Image of vertical dot menu](../Media/SensitivityLabelDotMenu.png)
+
 1. Select the **+ Add sub label** from the drop-down menu.
 
-1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
+1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page for the **Name**, **Display Name**, **Description for admins** and **Description for users**, enter the following information:
 
    - **Name**: Employee data (HR)
    - **Display name**: Employee data (HR)
@@ -135,11 +137,11 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select the **Encrypt items** option.
+1. On the **Choose protection settings for labeled items** page, select the **Apply or remove encryption** option.
 
 1. Select **Next**.
 
-1. Select **Configure encryption settings**.
+1. On the **Encryption** page select **Configure encryption settings**.
 
 1. Enter the following information into the encryption settings:
 
@@ -160,7 +162,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Define protection settings for groups and sites** page, select **Next**.
 
-1. On the **Auto-labeling for schematized data assests(preview)** page, select **Next**. 
+1. On the **Auto-labeling for schematized data assests (preview)** page, select **Next**. 
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
@@ -186,7 +188,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
 
-1. A side bar called **Sensitivity labels to publish** will appear on the right.
+1. The **Sensitivity labels to publish** pane will appear on the right.
 
 1. Select the **Internal** and **Internal/Employee Data (HR)** checkboxes.
 
@@ -198,11 +200,11 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Policy settings** page, select **Next**.
 
-1. On the **Apply a default label to documents** page, select **Next**.
+1. On the **Default settings for documents​** select **Next**.
 
-1. On the **Apply a default label to emails** page, select **Next**.
+1. On the **Default settings for emails** select **Next**.
 
-1. On the **Apply a default label to Power BI content (preview)** page, select **Next**.
+1. On the **Default settings for Power BI Content** select **Next**.
 
 1. On the **Name your policy** page, enter the following information:
 
@@ -213,9 +215,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Review and finish** page, select **Submit**.
 
-1. The policy will be created and when complete a message will display **New policy created**.
-
-1. Select **Done**.
+1. On the **New policy created**, select done to finish publishing your label policy.
 
 You have successfully published the Internal and HR sensitivity labels. Note that it can take up to 24 hours for changes to replicate to all users and services.
 
