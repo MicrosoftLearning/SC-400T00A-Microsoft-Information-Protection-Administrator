@@ -241,8 +241,9 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
    Important HR employee document.
    ```
 
-1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal**  to apply the label.
-    Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
+1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal > Employee Data (HR)**  to apply the label.
+    >**Note:** Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
+
     ![Sensitivity label. ](../Media/word_label.png)
 
 1. Select the **Document - Saved** in the upper left of the window, enter **HR Document** as the File Name and press Enter key.

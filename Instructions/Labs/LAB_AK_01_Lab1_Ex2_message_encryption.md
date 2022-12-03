@@ -106,7 +106,7 @@ You have successfully deactivated the usage of foreign identity providers, such 
 
 You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
-1.	Leave Client 1 VM (LON-CL1) open as it is, and log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+1. Leave Client 1 VM (LON-CL1) open as it is, and log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
 1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 

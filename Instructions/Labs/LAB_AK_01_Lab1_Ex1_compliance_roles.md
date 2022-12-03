@@ -37,13 +37,13 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. In the **Active users** list, search and select **Joni Sherman**, to open the right-side settings pane.
 
-1.	In the settings below the **Account** tab, scroll to **Roles** and select **Manage roles** below.
+1. In the settings below the **Account** tab, scroll to **Roles** and select **Manage roles** below.
 
       ![Screenshot of Manage roles option](../Media/ManageRoles.png)
 
 1. When the **Manage admin roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to the **Security & Compliance** category and select **Compliance Administrator** .
 
-1.	Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the pane, select the arrow pointing to the left to return to Joni's user record.
+1. Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the pane, select the arrow pointing to the left to return to Joni's user record.
 
 1. Close the pane displaying Joni Sherman’s account with the **X** in the upper right to go back to the **Active users** list.
 
