@@ -128,9 +128,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **Data classification** and select **EDM classifiers** tab from the top pane.
 
-   >**Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM with the Classic experience. See the following for more information on creating an EDM with the New experience:
-   >
-   >[Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
+   >**Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM with the classic experience. See the following for more information on creating an EDM with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
 
 
 1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
