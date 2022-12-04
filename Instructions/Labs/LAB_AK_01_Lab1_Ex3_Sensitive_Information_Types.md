@@ -128,155 +128,78 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **Data classification** and select **EDM classifiers** tab from the top pane.
 
-1. Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience.
+   >**Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM with the Classic experience. See the following for more information on creating an EDM with the New experience:
+   >
+   >[Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
 
-    <p>
-    <details>
-      <summary>Click here for steps on creating the EDM with the <b>New EDM experience</b></summary>
 
-   ## New EDM Experience
-
-   1. Ensure the switch for **New EDM Experience** is selected to **On**.
-
-      ![Screenshot of option to proceed with the New EDM experience.](../Media/NewEDMExperience.png)
-
-   1. Select **+ Create EDM classifier** to start the EDM classifier wizard.
-
-   1. Select **Create EDM classifier** on the **Familiarize yourself with the steps needed to put your classifier to work** screen.
-
-   1. On the **Name and describe your EDM classifier** page, enter the following:
-      - **Name**: employeedb
-      - **Description**: Employee Database schema
-
-   1. Select **Next**
-
-   1. On the **Choose a method for defining your schema** select the radial to **Manually define your data structure**
-
-   1. Select **Next**
-
-   1. On the **Define columns that contain the data you want to detect**, select **+Add column** 3 times to add the following columns:
-      - Name
-      - Birthdate
-      - StreetAddress
-      - EmployeeID
-
-      ![Screenshot of added columns.](../Media/AddColumns.png)
-
-   1. Select **Next**
-
-   1. On the **Select primary elements** screen, select the **+**  next **EmployeeID**, under **Sensitive info type** to choose a sensitive info type for EmployeeID
-
-      ![Screenshot of primary elements screen.](../Media/SelectPrimaryElement.png)
-
-   1. On the **Choose a sensitive info type for "EmployeeID"** pane, search for *Contoso*.
-
-   1. Select **Contoso Employee IDs** then select **Save**.
-
-   1. Select the check box next to **EmployeeID** under **Primary element** to select EmployeeID as the primary element.
-
-      ![Screenshot of primary elements screen.](../Media/PrimaryElementSelected.png)
-
-   1. Select **Next**
-
-   1. On the **Configure settings for data in selected columns** screen, leave the toggle for **Use the same settings for all columns** set to **Yes**.
-
-   1. Leave the default selected for **Data in columns are case-insensitive**.
-
-   1. Select the checkbox to enable **Ignore delimiters and punctuation for data in all columns**.
-
-   1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis*, and *Close parenthesis*.
-
-   1. Select **Next**
-
-   1. Leave the defaults selected on the **Configure detection rules for primary elements** page, and select **Next**.
-
-   1. Review your settings on the **Review settings and finish** then select **Submit**
-
-   1. On the **You successfully created an EDM classifier**, capture the **Schema name**. You will need this later.
-
-      ![Screenshot of the You successfully created an EDM page](../Media/SchemaName.png)
-
-   1. Select **Done**
-
-   1. Leave the browser open with the Microsoft Purview portal.
-
-    </details>
-
-    <p>
-    <details>
-      <summary>Click here for steps on creating the EDM with the <b>Classic EDM experience</b></summary>
-
-   ## Classic EDM Experience   
-
-   1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
+1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
 
       ![Screenshot of option to proceed with the Classic EDM experience.](../Media/ClassicEDMExperience.png)
 
-   1. Select **+ Create EDM schema**
+1. Select **+ Create EDM schema**
 
-   1. On the **New EDM schema** pane, enter the following:
-      - **Name**: employeedbschema
-      - **Description**: Employee Database schema
+1. On the **New EDM schema** pane, enter the following:
+    - **Name**: employeedb
+    - **Description**: Employee Database schema
 
-   1. Enable **Ignore delimiters and punctuation for all schema fields**.
+1. Enable **Ignore delimiters and punctuation for all schema fields**.
 
-   1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
+1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
 
-   1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
+1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
 
-   1. Select **+ Add schema data field** from the lower end.
+1. Select **+ Add schema data field** from the lower end.
 
-   1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
+1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
 
-   1. Select **+ Add schema data field** from the lower end again.
+1. Select **+ Add schema data field** from the lower end again.
 
-   1. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
+1. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
 
-   1. Select **+ Add schema data field** from the lower end a last time.
+1. Select **+ Add schema data field** from the lower end a last time.
 
-   1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
+1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
 
-   1. Select **Field is searchable**.
+1. Select **Field is searchable**.
 
-   1. Select **Save**.
+1. Select **Save**.
 
-   1. Select **EDM sensitive info types** from the left pane.
+1. Select **EDM sensitive info types** from the left pane.
 
-   1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
+1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
 
-   1. On the **Define data store schema** page, select **Choose an existing EDM schema**.
+1. On the **Define data store schema** page, select **Choose an existing EDM schema**.
 
-   1. Select **employeedb** and select **Add**.
+1. Select **employeedb** and select **Add**.
 
-   1. Review the data store schema and select **Next**.
+1. Review the data store schema and select **Next**.
 
-   1. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
+1. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
 
-   1. On the **New pattern** pane on the right-side, in the Primary element field, select *EmployeeID*.
+1. On the **New pattern** pane on the right-side, in the Primary element field, select *EmployeeID*.
 
-   1. Below **Primary element's sensitive info type**, select **+ Choose sensitive info type**.
+1. Below **Primary element's sensitive info type**, select **+ Choose sensitive info type**.
 
-   1. In the **Search** bar, enter *Contoso* and press the enter key.
+1. In the **Search** bar, enter *Contoso* and press the enter key.
 
-   1. Select **Contoso Employee IDs** and select **Done**.
+1. Select **Contoso Employee IDs** and select **Done**.
 
-   1. Select **Done**.
+1. Select **Done**.
 
-   1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
+1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
 
-   1. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
+1. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
 
-   1. In the **Name and describe your EDM sensitive info type** page, enter the following:
-      - **Name**: Contoso Employee EDM
-      - **Description for admins**: EDM-based sensitive information type for employee personal information.
+1. In the **Name and describe your EDM sensitive info type** page, enter the following:
+    - **Name**: Contoso Employee EDM
+    - **Description for admins**: EDM-based sensitive information type for employee personal information.
 
-   1. Select **Next**, review the settings and select **Submit**.
+1. Select **Next**, review the settings and select **Submit**.
 
-   1. On the **Your EDM sensitive info type was created** page, select **Done**.
+1. On the **Your EDM sensitive info type was created** page, select **Done**.
 
-   1. Leave the browser open with the Microsoft Purview portal.
-
-    </details>
+1. Leave the browser open with the Microsoft Purview portal.
 
 You have successfully created a new EDM-based classification sensitive information type for identifying employee data from a database file source.
 
@@ -284,7 +207,7 @@ You have successfully created a new EDM-based classification sensitive informati
 
 To associate the EDM-based classification with a database containing sensitive data, hashing and uploading the actual data for the sensitive information type via the EDM Upload Agent tool is required next.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to **https://go.microsoft.com/fwlink/?linkid=2088639** to access the EDM download agent.
 
@@ -355,7 +278,7 @@ To associate the EDM-based classification with a database containing sensitive d
 1. Download the database schema definition of the EDM-based classification sensitive information type by running the following script in PowerShell:
 
     ```
-    .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedbschema /OutputDir "C:\Users\Admin\Documents\"
+    .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"
     ```
 
     Note: If the last command fails, it possibly takes more time until the **EDM_DataUploaders** group membership is applied. It can take up to one hour until it is possible to download the schema file.  If it fails proceed to the next task and return to this step later.
@@ -363,13 +286,13 @@ To associate the EDM-based classification with a database containing sensitive d
 1. Hash the database file and upload it to the EDM-based classification sensitive information type by running the following script in PowerShell:
 
     ```
-    .\EdmUploadAgent.exe /UploadData /DataStoreName employeedbschema /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedbschema.xml"
+    .\EdmUploadAgent.exe /UploadData /DataStoreName employeedb /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedb.xml"
     ```
 
 1. Check the upload progress with the following command:
 
     ```
-    .\EdmUploadAgent.exe /GetSession /DataStoreName employeedbschema
+    .\EdmUploadAgent.exe /GetSession /DataStoreName employeedb
     ```
 1. Once the status is **Completed**, your EDM data is ready for use.
 
@@ -383,7 +306,7 @@ You have successfully hashed and uploaded a database file for a EDM-based classi
 
 Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason for illness or disease was sent out.  We do not want that to happen.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -402,7 +325,7 @@ Several violations of personal information leakage happened when users sent out 
 
 1. Select the dropdown field below **Primary element** and select **Keyword dictionary**.
 
-1. In the **Add a keyword dictionary** page enter the following: 
+1. In the **Add a keyword dictionary** page enter the following:
 
    - **Name**: Diseases Dictionary
    - **Keywords**:
