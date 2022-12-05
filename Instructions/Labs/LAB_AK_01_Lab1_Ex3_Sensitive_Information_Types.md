@@ -183,8 +183,6 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **Contoso Employee IDs** and select **Done**.
 
-1. Select **Done**.
-
 1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
 
 1. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
