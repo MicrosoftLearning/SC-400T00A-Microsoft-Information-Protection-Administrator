@@ -261,7 +261,3 @@ In this task, you will apply a retention label to a document in OneDrive.
 1. If the option is available, set the **Apply Retention Label** to **VAT Returns and supporting documents**. As it can take some time for retention labels to be published you may not have the option available immediately, if it is not available, continue to the next task. Feel free to come back later to this task and try again.
 
 You have successfully applied a retention label to a document in OneDrive.
-
----
-| [Back to Lab 3 - Exercise 1](LAB_AK_03_Lab1_Ex1_retention_policies.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 3 - Exercise 3](LAB_AK_03_Lab1_Ex3_service_based_retention.md) |
-| :-----------: | :-----------: | :-----------: |

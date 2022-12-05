@@ -379,7 +379,3 @@ In this task, you will create a Sensitivity Label that will auto label documents
 You have successfully created and published an auto apply sensitivity label for GDPR documents in the region Germany.
 
 Be aware that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
-
----
-| [Back to Lab 1 - Exercise 4](LAB_AK_01_Lab1_Ex4_Trainable_Classifiers.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 2 - Exercise 1](LAB_AK_02_Lab1_Ex1_DLP_policies.md) |
-| :-----------: | :-----------: | :-----------: |

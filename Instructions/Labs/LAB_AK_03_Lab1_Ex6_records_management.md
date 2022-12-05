@@ -104,7 +104,3 @@ In this task, you will assign the published record label to an email in Outlook 
 1. Review the message you receive.
 
 You have successfully applied a retention label with a record to an email and observed that it now cannot be deleted.
-
----
-| [Back to Lab 3 - Exercise 5](LAB_AK_03_Lab1_Ex5_eDiscovery_recovery.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) |
-| :-----------: | :-----------: |

@@ -78,8 +78,3 @@ In this task, you will sign out of the global admin account and sign-in again as
 1. Get yourself familiar with the different settings. When you are done, leave the browser window open.
 
 You have successfully switched to Joni Sherman's account and you are now ready to start with the lab.
-
----
-
-| [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 1 - Exercise 2](LAB_AK_01_Lab1_Ex2_message_encryption.md) |
-| :-----------: | :-----------: |

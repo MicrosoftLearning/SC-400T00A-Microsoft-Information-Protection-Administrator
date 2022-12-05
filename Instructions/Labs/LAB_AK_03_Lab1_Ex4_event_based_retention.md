@@ -182,7 +182,3 @@ To verify that the retention period you specified started, you need to try to de
 1. In the context menu select **Delete** and observe the results.
 
 You have successfully confirmed that the retention period on the document started. If you can still delete the document the synchronization period for the event has not been completed and the triggering of the retention policy is still in progress. As with other Retention Labels this process can take up to 7 days to complete.
-
----
-| [Back to Lab 3 - Exercise 3](LAB_AK_03_Lab1_Ex3_service_based_retention.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 3 - Exercise 5](LAB_AK_03_Lab1_Ex5_eDiscovery_recovery.md) |
-| :-----------: | :-----------: | :-----------: |

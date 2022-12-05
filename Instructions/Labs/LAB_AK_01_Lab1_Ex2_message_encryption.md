@@ -237,8 +237,3 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 1. Review the encrypted message with custom branding.
 
 You have successfully tested the new customized OME template.
-
----
-| [Back to Lab 1 - Exercise 1](LAB_AK_01_Lab1_Ex1_compliance_roles.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 1 - Exercise 3](LAB_AK_01_Lab1_Ex3_Sensitive_Information_Types.md) |
-| :----------- | :-----------: | -----------: |
-

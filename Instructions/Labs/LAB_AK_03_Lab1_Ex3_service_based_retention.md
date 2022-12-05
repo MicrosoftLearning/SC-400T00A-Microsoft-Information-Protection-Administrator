@@ -68,7 +68,3 @@ In this task, you will delete and restore a deleted document to make sure you ca
 1. In the left navigation pane, select **Documents** and review if the file has been restored.
 
 You have successfully recovered a deleted document from a SharePoint Site.
-
----
-| [Back to Lab 3 - Exercise 2](LAB_AK_03_Lab1_Ex2_retention_labels.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 3 - Exercise 4](LAB_AK_03_Lab1_Ex4_event_based_retention.md) |
-| :-----------: | :-----------: | :-----------: |

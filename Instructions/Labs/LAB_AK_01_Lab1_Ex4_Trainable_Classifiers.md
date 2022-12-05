@@ -171,7 +171,3 @@ After the new trainable classifier was created and the initial analysis of the d
 1. Leave the browser window open.
 
 You have successfully created, trained, and published a custom trainable classifier that matches the files stored on the existing SharePoint sites of Contoso Ltd.
-
----
-| [Back to Lab 1 - Exercise 3](LAB_AK_01_Lab1_Ex3_Sensitive_Information_Types.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 1 - Exercise 5](LAB_AK_01_Lab1_Ex5_Sensitivity_Labels.md) |
-| :-----------: | :-----------: | :-----------: |

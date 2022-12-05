@@ -416,7 +416,3 @@ Custom Sensitive information types should always be tested before using them in 
 1. On the **Match results** page, review the found match. When done review select **Finish**.
 
 You have successfully tested the two custom sensitive information types and validated the search pattern recognizes the desired patterns. You have finished the creation of sensitive information types and can proceed with the next exercise.
-
----
-| [Back to Lab 1 - Exercise 2](LAB_AK_01_Lab1_Ex2_message_encryption.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 1 - Exercise 4](LAB_AK_01_Lab1_Ex4_Trainable_Classifiers.md) |
-| :-----------: | :-----------: | :-----------: |

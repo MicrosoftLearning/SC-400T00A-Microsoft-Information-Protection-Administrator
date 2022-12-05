@@ -55,7 +55,3 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 1. Leave the client open to finish this last exercise.
 
 You now verified that the access has been configured and the new compliance officer can view reports in the Purview portal.
-
----
-| [Back to Lab 2 - Exercise 2](LAB_AK_02_Lab1_Ex2_Endpoint_DLP.md) | [Lab Exercise List](../../../../../SC-400T00A-Microsoft-Information-Protection-Administrator) | [Proceed to Lab 3 - Exercise 1](LAB_AK_03_Lab1_Ex1_retention_policies.md) |
-| :-----------: | :-----------: | :-----------: |
