@@ -25,14 +25,14 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 1. On the **Name your retention policy** page, for the **Name** and **Description** enter the following information:
 
-	- Name: Company wide
-	- Description: All locations except for teams
+	- **Name**: Company wide
+	- **Description**: All locations except for teams
 
 1. Select the **Next** button.  
 
 1. In the **Choose the type of retention policy to create** area, choose **Static** and select **Next**.
 
-1. In the **Choose locations to apply the policy** area make sure Exchange email, SharePoint sites, OneDrive accounts, and Microsoft 365 Groups are selected and then select **Next**.
+1. In the **Choose locations to apply the policy** area make sure **Exchange mailboxes**, **SharePoint classic and communication sites**, **OneDrive accounts**, and **Microsoft 365 Group mailboxes & sites** are selected and then select **Next**.
 
 1. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
@@ -172,7 +172,7 @@ In this exercise you will create a retention policy for the finance and legal de
 	- **Attribute**: Department
 	- **Operator**: is equal to
 	- **Value**: Retail
-
+1. Ensure checkboxes are selected next to each value.
 1. Select the **Next** button.
 1. On the **Review and finish** page, select the **Submit** button.
 1. After successful submission, close the page by clicking the **Done** button.
@@ -195,8 +195,8 @@ In this exercise you will create a retention policy for the finance and legal de
 
 1. Under **Choose locations to apply the policy** enter the following information:
 
-	- **Exchange email** – **Status**: On
-	- **OneDrive** – **Status**: On
+	- **Exchange mailboxes** – **Status**: On
+	- **OneDrive accounts** – **Status**: On
 	- All other locations should be turned **Off** automatically.
 	
 1. Select the **Next** button.
@@ -242,7 +242,7 @@ Note: When you create and submit a retention policy, it can take up to seven day
 	```powershell
 	Get-RetentionCompliancePolicy -Identity "Legal Data Retention" -DistributionDetail | Format-List
 	```
-1. Review the details. Certain parameter should have following Statuses:
+1. Review the details. Certain parameters should have following statuses:
 
 	- **Enabled**: True
 	- **Mode**: Enforce
