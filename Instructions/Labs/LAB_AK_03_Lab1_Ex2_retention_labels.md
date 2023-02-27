@@ -90,10 +90,10 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 1. Enter the following information:
 
-	- **Exchange email** location - **Status**: On
-	- **SharePoint sites** location - **Status**: On
+	- **Exchange mailboxes** location - **Status**: On
+	- **SharePoint classic and communication sites** location - **Status**: On
 	- **OneDrive accounts** location - **Status**: On
-	- **Microsoft 365 groups** location - **Status**: OFF  
+	- **Microsoft 365 Groups mailboxes & sites** location - **Status**: OFF  
 
 1. Select the **Next** button.
 
@@ -124,7 +124,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. Select the **Auto-apply a label** icon button (lightning + cogwheel).
 
-1. On the **Let´s get started** page, for **Name** and **Description** enter the following information:
+1. On the **Let's get started** page, for **Name** and **Description** enter the following information:
 
 	- **Name**: Credit Card Receipts auto-applied
 	- **Description**: Credit Card Receipts auto-applied retention label, with a retention period of three years for all location.
@@ -149,9 +149,11 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. On the **Choose the type of retention policy to create** page, select the **Static** item and select **Next**. 
 
-1. On the **Choose locations to apply the policy** page, turn **On** the options for: **Exchange email, OneDrive accounts, SharePoint sites, and Microsoft 365 Groups** and select **Next**.
+1. On the **Choose locations to apply the policy** page, turn **On** the options for: **Exchange mailboxes, OneDrive accounts, SSharePoint classic and communication sites, and Microsoft 365 Group mailboxes & sites** and select **Next**.
 
 1. On the **Choose a label to auto-apply** page, select **Next**.
+
+1. On the **Decide whether to test or run your policy** select **Turn on policy** then select **Next**.
 
 1. On the **Review and finish** page select the **Submit** button.  When the policy is created, select **Done**.
 
