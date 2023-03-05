@@ -24,7 +24,9 @@ Before you can create custom trainable classifiers, you need to activate the fea
 
 1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator**  admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-1. Navigate to **Data Classification** from the left side navigation pane.
+1. Navigate to and expand **Data Classification** from the left side navigation pane.
+
+1. Select **Classifiers**
 
 1. Select **Trainable classifiers** from the top pane.
 
