@@ -117,11 +117,11 @@ Once the label is published the users need to apply the label and assign the cor
 
 1. In the top left corner select the nine dots and under **Apps** select **SharePoint**.
 
-1. On the left side navigation pane, select **My sites** and under **Followed** select **Operations**.
+1. On the left side navigation pane, select **My sites** and under **Frequent Sites** on the right select **Brand**.
 
-1. In the left-side navigation pane, select **Documents**.
+1. On the top navigation pane, select **Documents**.
 
-1. On the **Documents** page, select **Bug List.xlsx** by selecting the checkbox in front of it and then select the three vertical dots.
+1. On the **Documents** page, select **Customer Product Survey.xlsx** by selecting the checkbox in front of it and then select the three vertical dots.
 
 1. In the context menu select **Details**.
 
@@ -129,9 +129,9 @@ Once the label is published the users need to apply the label and assign the cor
 
 	Note: As it can take some time for retention labels to be published you may not have the option available immediately.
 
-1. Set the newly appeared **Asset ID** field to **BostonOfficeLaunch** and close the right-side menu by selecting **X** in the top right corner.
+1. Set the newly appeared **Asset ID** field to **NewProductLaunch** and close the right-side menu by selecting **X** in the top right corner.
 
-You've successfully assigned a label and an asset ID to a document. When the Project Closure event for Asset ID BostonOfficeLaunch is triggered it will activate the retention period of 5 years.
+You've successfully assigned a label and an asset ID to a document. When the Project Closure event for Asset ID NewProductLaunch is triggered it will activate the retention period of 5 years.
 
 ### Task 5 – Create specific event
 
@@ -146,8 +146,8 @@ Once the event happened you need to trigger it so that the content you labeled w
 1. Select **+ Create**.
 
 1. On the **Name the event** page, set the following information:
-	- **Name**: Project Boston Office Launch closed
-	- **Description**: Assets with the Project Asset label and AssetID BostonOfficeLaunch will enter their retention period.
+	- **Name**: New Product Launch closed
+	- **Description**: Assets with the Project Asset label and AssetID NewProductLaunch will enter their retention period.
 
 1. Select **Next**.
 
@@ -157,11 +157,11 @@ Once the event happened you need to trigger it so that the content you labeled w
 
 1. Select **Next**.
 
-1. On the **Event settings** page, set **Asset IDs for items in SharePoint and OneDrive** to **BostonOfficeLaunch** and select todays date.
+1. On the **Event settings** page, set **Asset IDs for items in SharePoint and OneDrive** to **NewProductLaunch** and select todays date.
 
 1. Select **Next**, select **Submit** and then select **Done**.
 
-You have successfully triggered an event and started the retention period for all documents with the Project Asset label and an Asset ID of BostonOfficeLaunch.
+You have successfully triggered an event and started the retention period for all documents with the Project Asset label and an Asset ID of NewProductLaunch.
 
 ### Task 6 – Observe results of event trigger
 
@@ -177,7 +177,7 @@ To verify that the retention period you specified started, you need to try to de
 
 1. In the left-side navigation pane, select **Documents**.
 
-1. On the **Documents** page, select **Bug List.xlsx** by selecting the checkbox in front of it and then select the three vertical dots.
+1. On the **Documents** page, select **Customer Product Survey.xlsx** by selecting the checkbox in front of it and then select the three vertical dots.
 
 1. In the context menu select **Delete** and observe the results.
 
