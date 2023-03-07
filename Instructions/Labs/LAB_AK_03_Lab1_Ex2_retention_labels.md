@@ -149,7 +149,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. On the **Choose the type of retention policy to create** page, select the **Static** item and select **Next**. 
 
-1. On the **Choose locations to apply the policy** page, turn **On** the options for: **Exchange mailboxes, OneDrive accounts, SSharePoint classic and communication sites, and Microsoft 365 Group mailboxes & sites** and select **Next**.
+1. On the **Choose locations to apply the policy** page, turn **On** the options for: **Exchange mailboxes, SharePoint classic and communication sites, OneDrive accounts, and Microsoft 365 Group mailboxes & sites** and select **Next**.
 
 1. On the **Choose a label to auto-apply** page, select **Next**.
 
@@ -232,7 +232,7 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 
 1. Within the CAS folder, highlight (but do not select) the **Blog Post preview.docx** document
 
-1. For the highlighted document, select the vertical **...** button.  Hover over the **More** option.
+1. For the highlighted document, select the horizontal **...** button.  Hover over the **More** option.
 
 1. From the expanded menu select, select the **Compliance details** button.
 
