@@ -184,7 +184,7 @@ As Compliance Administrator you need to evaluate the new business requirement of
 
 1. Select **Yes** in the **User Account Control** dialog to install the Chrome browser.
 
-1. When the installation is finished and the **Welcome to Chrome** page is open, navigate to the Microsoft Purview Extension in the Chrome web store at https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco.
+1. When the installation is finished and the **Welcome to Chrome** page is open, navigate to the Microsoft Purview Extension in the Chrome web store at https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco
 
 1. Verify you are on the extension page of **Microsoft Purview Extension** and select **Add to Chrome**.
 
