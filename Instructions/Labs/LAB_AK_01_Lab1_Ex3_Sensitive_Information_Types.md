@@ -17,7 +17,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
-1. Select **Data classification** from the left pane.
+1. Expand **Data classification** from the left pane and select **Classifiers**
 
 1. If a **What is data classification?** message is displayed, select **Close**.
 
@@ -126,7 +126,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
 
-1. Select **Data classification** and select **EDM classifiers** tab from the top pane.
+1. Expand **Data classification**, select **Classifiers**, and select **EDM classifiers** tab from the top pane.
 
    >**Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM based SIT with the classic experience. See the following for more information on creating an EDM based SIT with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
 
@@ -182,6 +182,8 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 1. In the **Search** bar, enter *Contoso* and press the enter key.
 
 1. Select **Contoso Employee IDs** and select **Done**.
+
+1. In the **New Pattern** pane, select **Done**.
 
 1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
 
