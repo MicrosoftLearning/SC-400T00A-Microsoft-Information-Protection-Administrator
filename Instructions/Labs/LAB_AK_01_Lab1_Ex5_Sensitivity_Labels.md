@@ -196,13 +196,17 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Choose sensitivity labels to publish** page, select **Next**.
 
-1. On the **Publish to users and groups page**, select **Next**.
+1. On the **Assign admin units (preview)** page, select **Next**
+
+1. On the **Publish to users and groups** page, select **Next**.
 
 1. On the **Policy settings** page, select **Next**.
 
-1. On the **Default settings for documents​** select **Next**.
+1. On the **Default settings for documents** select **Next**.
 
 1. On the **Default settings for emails** select **Next**.
+
+1. On the **Default settings for meetings and calendar events** select **Next**.
 
 1. On the **Default settings for Power BI Content** select **Next**.
 
@@ -215,7 +219,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Review and finish** page, select **Submit**.
 
-1. On the **New policy created**, select done to finish publishing your label policy.
+1. On the **New policy created**, select **Done** to finish publishing your label policy.
 
 You have successfully published the Internal and HR sensitivity labels. Note that it can take up to 24 hours for changes to replicate to all users and services.
 
