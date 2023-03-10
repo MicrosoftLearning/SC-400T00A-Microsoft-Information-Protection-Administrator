@@ -49,8 +49,6 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. On the **Audit** page. select **Start recording user and admin activity** to activate audit logging.
 
-1. In the **compliance** window, select **Yes** to update the organization settings.
-
 1. Select the circle with **MA** in the upper right and select **Sign out**.
 
 1. Close the **Microsoft Edge** browser window.
