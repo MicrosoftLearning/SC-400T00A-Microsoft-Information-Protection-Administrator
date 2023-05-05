@@ -4,6 +4,13 @@ lab:
     module: 'Module 3 - Implement Data Lifecycle and Records Management'
 ---
 
+## WWL Tenants - Terms of use
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
+
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
+
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
+
 # Lab 3 - Exercise 1 - Configure Retention Policies
 
 In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to state laws, which stipulates that records may be deleted after three years without constituting an offense. 
@@ -11,7 +18,7 @@ In this exercise, you will assume the role of Joni Sherman, a System Administrat
 In order to adhere to this law your organization has created a retention plan to retain all items in the organization for three years.
 
 
-### Task 1 – Create company-wide Retention Policy
+## Task 1 – Create company-wide Retention Policy
 
 In this exercise you will create a company-wide retention policy, apply a retention period, and set the locations that the policy will be applied to.
 
@@ -49,7 +56,7 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 You have successfully created a retention policy for the Exchange email, Microsoft 365 groups, OneDrive, and SharePoint sites locations. This retention policy will retain items in these locations for three years from when the item was last modified date. This policy can take up to 24 hours to be apply in your tenant, but you can proceed to the next step.
 
-### Task 2 – Create location-based Retention Policies with Filter
+## Task 2 – Create location-based Retention Policies with Filter
 
 You will now create a retention policy for the Teams locations. As Teams channels can contain documents, they will all be retained. Your organization has decided that a limited number of users are required to have their Team chats require a retention period.
 
@@ -103,7 +110,7 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 You have successfully created a retention policy for the Teams locations. You set a retention period of three years for all Teams channel locations. You have set a filter for Teams Chat locations to apply only to specific users.
 
-### Task 3 – Create Retention Policy via PowerShell
+## Task 3 – Create Retention Policy via PowerShell
 
 You will create the same retention policies with PowerShell
 
@@ -145,7 +152,7 @@ You will create the same retention policies with PowerShell
 
 You have successfully created retention policies through PowerShell with a retention period of three years.
 
-### Task 4 – Create Retention Policy with adaptive scope
+## Task 4 – Create Retention Policy with adaptive scope
 
 In this exercise you will create a retention policy for the finance and legal department. The purpose of the policy is to comply with the law, retaining all legal related documents for 5 years. First you will create an adaptive scope including the legal and the retail department, then you will create a retention policy using this scope.
 
@@ -211,7 +218,7 @@ In this exercise you will create a retention policy for the finance and legal de
 1. On the **Review and finish** page, select the **Submit** button.
 
 1. Once your policy is created, select the **Done** button.
-### Task 5 – Test adaptive scope policy
+## Task 5 – Test adaptive scope policy
 
 In this exercise you will verify the users affected by the adaptive scope and test the new adaptive retention policy.
 
