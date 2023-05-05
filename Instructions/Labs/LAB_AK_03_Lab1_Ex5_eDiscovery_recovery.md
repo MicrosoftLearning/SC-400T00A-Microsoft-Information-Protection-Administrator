@@ -8,7 +8,7 @@ lab:
 
 In this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to local laws. The Uniform Preservation of Private Business Records Act specifies that records may be destroyed after three years without constituting an offense under the law (with some exceptions), to adhere to this law your organization has created a retention plan to retain all items in the organization for three years.
 
-### Task 1 – Create eDiscovery Case
+## Task 1 – Create eDiscovery Case
 
 In this exercise, you will create an eDiscovery Case and start a search for mails containing Information about the Mark 8 Project sent by Megan Bowen. The legal department requested this information for a compliance review.
 
@@ -44,7 +44,7 @@ In this exercise, you will create an eDiscovery Case and start a search for mail
 
 You have successfully created an eDiscovery case and searched for all mails Megan Bowen sent or received containing information about the Mark 8 Project.
 
-### Task 2 – Assign Records Management and eDiscovery Manager permissions
+## Task 2 – Assign Records Management and eDiscovery Manager permissions
 
 In this task, you will prepare to export the data you discovered in Task 1 to a PST-file that you can provide to the legal department. First you need to assign the Records Management role to your compliance administrator. Otherwise they will not be able to export search results.
 
@@ -80,7 +80,7 @@ In this task, you will prepare to export the data you discovered in Task 1 to a 
 
 You have successfully granted your compliance administrator the permission to export search results and perform records management tasks. It can take up to 60 minutes until the permissions are applied to the user, but you can proceed to the next task.
 
-### Task 3 – Export Data from eDiscovery Case
+## Task 3 – Export Data from eDiscovery Case
 
 In this task, you will prepare to export the data you discovered in Task 1 so that you can provide to the legal department.  Remember it may take 60 minutes for permissions to become available in your tenant.
 
@@ -117,7 +117,7 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 You have successfully exported the discovered data.
 
-### Task 4 – Perform Search & Purge on Mailboxes
+## Task 4 – Perform Search & Purge on Mailboxes
 
 An investigation showed that users received a few phishing mails and you are tasked with deleting these across all mailboxes in your environment.
 
