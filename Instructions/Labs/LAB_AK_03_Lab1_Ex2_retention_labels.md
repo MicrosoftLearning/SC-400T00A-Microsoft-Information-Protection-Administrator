@@ -10,7 +10,7 @@ In this exercise, you will assume the role of Joni Sherman, a System Administrat
 
 Your finance department has created a retention plan to set retention labels on documents for Value Added Tax (VAT) returns with supporting documents and Credit Card receipts.
  
-### Task 1 – Create Retention Labels
+## Task 1 – Create Retention Labels
 
 In this task, you will create a retention label that can be assigned to documents and emails that contain VAT returns and a retention label that can be applied to Credit Card receipts.
 
@@ -64,7 +64,7 @@ In this task, you will create a retention label that can be assigned to document
 
 You have successfully created a retention label for VAT returns with a seven-year retention period and a retention label for Credit Card receipts with a three-year retention.
 
-### Task 2 – Publish Retention Labels
+## Task 2 – Publish Retention Labels
 
 Following from Task 1 you will now publish the VAT returns retention label so that the published label will be available for the finance users to apply to the documents in Exchange emails and Sharepoint documents.
 
@@ -108,7 +108,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 You have successfully published the retention label for VAT Returns and supporting documents.
 
-### Task 3 – Publish auto-apply Retention Labels
+## Task 3 – Publish auto-apply Retention Labels
 
 Following from Task 1 you will now auto-apply the Credit Card receipts retention label so that the information is retained.
 
@@ -159,7 +159,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 You have successfully published a retention label with auto-apply. Over the next seven days all documents containing credit card details will be automatically labeled with the published label Credit Card Receipts, a retention period of three years will be applied to these items.
 
-### Task 4 – Work with retention labels in Outlook emails
+## Task 4 – Work with retention labels in Outlook emails
 
 In this task, you will assign retention labels to Outlook emails.
 
@@ -181,7 +181,7 @@ In this task, you will assign retention labels to Outlook emails.
 
 You have successfully applied a retention label to an Outlook email.
 
-### Task 5 – Work with retention labels for Outlook folders
+## Task 5 – Work with retention labels for Outlook folders
 
 In this task, you will assign retention labels to an Outlook folder.
 
@@ -211,7 +211,7 @@ You have successfully applied a retention label to an Outlook folder, the defaul
 
 You have successfully applied a retention label to an Outlook folder.
 
-### Task 6 – Work with retention labels in SharePoint
+## Task 6 – Work with retention labels in SharePoint
 
 In this task, you will apply a retention label to a document in a SharePoint document library.
 
@@ -242,7 +242,7 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 
 You have successfully applied a retention label to a document in SharePoint.
 
-### Task 7 – Work with retention labels in OneDrive
+## Task 7 – Work with retention labels in OneDrive
 
 In this task, you will apply a retention label to a document in OneDrive.
 
