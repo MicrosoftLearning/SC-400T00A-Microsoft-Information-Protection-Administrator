@@ -9,7 +9,7 @@ lab:
 In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. 
 Your organization is based in Rednitzhembach, Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.
 
-### Task 1 Enable support for sensitivity labels
+## Task 1 Enable support for sensitivity labels
 
 In this task, you will install the MSOnline module and the SharePoint Online PowerShell module and enable support for sensitivity labels on your tenant.
 
@@ -79,7 +79,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 You have successfully enabled support for sensitivity labels with Teams and SharePoint sites.
 
-### Task 2 – Create Sensitivity Labels
+## Task 2 – Create Sensitivity Labels
 
 In this task, your HR department has requested a sensitivity label to apply to HR employee documents. You will create a sensitivity label for Internal documents and a sublabel for the HR department.
 
