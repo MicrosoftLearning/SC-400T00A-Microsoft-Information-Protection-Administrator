@@ -8,7 +8,7 @@ lab:
 
 You are Joni Sherman, the Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. You are informed that a new compliance officer will help you review DLP reports.
 
-### Task 1 - Grant access to DLP reports
+## Task 1 - Grant access to DLP reports
 
 In this exercise, you will grant the new compliance officer Megan Bowen access to the DLP reports. As a non-technical user this compliance officer will only read reports and not change the DLP configuration.
 
@@ -30,7 +30,7 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 You have now granted the new compliance officer access to the DLP reports in the Microsoft 365 compliance portal.
 
-### Task 2 - Test access to DLP reports
+## Task 2 - Test access to DLP reports
 
 In this task, you will test that the access to the DLP reports you granted in Task 1 is applied correctly.
 
