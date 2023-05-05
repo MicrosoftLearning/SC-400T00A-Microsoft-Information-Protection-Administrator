@@ -8,7 +8,7 @@ lab:
 
 In this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to retain content belonging to specific projects for 5 years after they close.
 
-### Task 1 - Create event type
+## Task 1 - Create event type
 
 First you need to create an event type that can be triggered when a specific condition occurs. In this case you will create an event type that can be triggered on Project Closure.
 
@@ -28,7 +28,7 @@ First you need to create an event type that can be triggered when a specific con
 
 You have successfully created a new event type.
 
-### Task 2 – Create event-driven retention label
+## Task 2 – Create event-driven retention label
 
 Once you created an event type you need to create a label that triggers its retention period when the event occurs.
 
@@ -64,7 +64,7 @@ Once you created an event type you need to create a label that triggers its rete
 
 You have successfully created the label and need to publish it.
 
-### Task 3 – Publish event-driven retention label
+## Task 3 – Publish event-driven retention label
 
 Following from Task 2 you will now publish the Project Asset retention label so that the published label will be available for users to apply to the documents in Sharepoint documents.
 
@@ -107,7 +107,7 @@ Following from Task 2 you will now publish the Project Asset retention label so 
 
 You have successfully published the retention label for project assets to your users.
 
-### Task 4 – Apply label and add AssetID
+## Task 4 – Apply label and add AssetID
 
 Once the label is published the users need to apply the label and assign the correct Asset ID for the project to the documents they want to label. In this task you will test this functionality.
 
@@ -133,7 +133,7 @@ Once the label is published the users need to apply the label and assign the cor
 
 You've successfully assigned a label and an asset ID to a document. When the Project Closure event for Asset ID NewProductLaunch is triggered it will activate the retention period of 5 years.
 
-### Task 5 – Create specific event
+## Task 5 – Create specific event
 
 Once the event happened you need to trigger it so that the content you labeled will start the mandatory retention period.
 
@@ -163,7 +163,7 @@ Once the event happened you need to trigger it so that the content you labeled w
 
 You have successfully triggered an event and started the retention period for all documents with the Project Asset label and an Asset ID of NewProductLaunch.
 
-### Task 6 – Observe results of event trigger
+## Task 6 – Observe results of event trigger
 
 To verify that the retention period you specified started, you need to try to delete the file.
 
