@@ -3,13 +3,18 @@ lab:
     title: 'Exercise 1 - Manage Compliance Roles'
     module: 'Module 1 - Implement Information Protection'
 ---
+## WWL Tenants - Terms of use
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
 
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
+
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
 # Lab 1 - Exercise 1 - Manage Compliance Roles
 
 In your role as Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. you are tasked to configure the new Microsoft 365 tenant of your organization, to meet the organizations compliance requirements. Contoso Ltd. is a company with a headquarters in the United States and several new subsidiaries in the European Union and your organization needs to make sure the new Microsoft 365 tenant fulfills the legal requirements of different countries and regulatory requirements of your industry sector.
 
-### Task 1 – Assign Compliance Roles
+## Task 1 – Assign Compliance Roles
 
 In this exercise, you will follow the principal of least privilege and use the default Global Administrator to assign the Compliance Admin role to Joni Sherman, which is required to perform the operations described in this lab.
 
@@ -55,7 +60,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 You have successfully assigned Joni Sherman the Compliance Administrator role, which is required to perform the different exercises of this lab. Continue with the next task.
 
-### Task 2 – Explore the Microsoft Purview portal
+## Task 2 – Explore the Microsoft Purview portal
 
 In this task, you will sign out of the global admin account and sign-in again as Joni Sherman. Now that Joni Sherman was just assigned the Compliance admin role, her account will be sufficient for most of this lab's exercises.
 
