@@ -8,7 +8,7 @@ lab:
 
 You assume the role of Joni Sherman, a Compliance Admin for Contoso Ltd. The legal department requires you to assist them in stopping a disgruntled employee from deleting company data.
 
-### Task 1 – Configure Mailbox Holds
+## Task 1 – Configure Mailbox Holds
 
 In this task, you will activate a Mailbox Hold to prevent any content in the employee's mailbox from being deleted.
 
@@ -37,7 +37,7 @@ In this task, you will activate a Mailbox Hold to prevent any content in the emp
 
 You have successfully activated the Mailbox Hold on a mailbox in your environment and stopped everyone with access from permanently deleting any content in the mailbox. Applying the hold can take up to 4 hours.  You can proceed to the next task immediately.
 
-### Task 2 – Recover SharePoint Documents
+## Task 2 – Recover SharePoint Documents
 
 In this task, you will delete and restore a deleted document to make sure you can restore documents the employee might delete after he is informed about the litigation hold against his mailbox.
 
