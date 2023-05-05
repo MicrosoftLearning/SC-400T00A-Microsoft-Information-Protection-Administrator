@@ -8,7 +8,7 @@ lab:
 
 In this exercise, you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Regulatory requirements for your organization include having a definitive copy of the employee provided health insurance information available when your company discusses the insurance costs. You are tasked with making sure the records are kept.
 
-### Task 1 – Create File Plan Labels
+## Task 1 – Create File Plan Labels
 
 In this task, you will create a file plan label that allows your HR department to label content containing health insurance information that your employees are required to be provided when they are hired.
 
@@ -50,7 +50,7 @@ In this task, you will create a file plan label that allows your HR department t
 
 You successfully created a retention label using file plan that keeps all labeled documents from being deleted for seven years and at the end of the retention period the records get deleted automatically.
 
-### Task 2 – Publish Labels
+## Task 2 – Publish Labels
 
 In this task, you will publish the label so users of the HR department can apply it to content containing health insurance information.
 
@@ -83,7 +83,7 @@ In this task, you will publish the label so users of the HR department can apply
 
 You successfully started the process of publishing a retention label including a record. The publishing of labels may take up to 24 hours. After the label is published the HR department can use it to label files containing the health insurance information, they are required to keep a record of.  You can proceed immediately to the next task.
 
-### Task 3 – Work with Records
+## Task 3 – Work with Records
 
 In this task, you will assign the published record label to an email in Outlook and observe the results of applying the record. You might need to wait for the 24-hour publishing delay.
 
