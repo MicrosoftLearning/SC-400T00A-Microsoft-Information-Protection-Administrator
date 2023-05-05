@@ -172,7 +172,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 You have successfully created a sensitivity label for your organizations internal policies and a sensitivity sublabel for the Human Resources (HR) department.
 
-### Task 3 – Publish Sensitivity Labels
+## Task 3 – Publish Sensitivity Labels
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
@@ -223,7 +223,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 You have successfully published the Internal and HR sensitivity labels. Note that it can take up to 24 hours for changes to replicate to all users and services.
 
-### Task 4 – Work with Sensitivity Labels
+## Task 4 – Work with Sensitivity Labels
 
 In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
@@ -282,7 +282,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member where the email was also set with a sensitivity label.
 
-### Task 5 – Configure Auto Labeling
+## Task 5 – Configure Auto Labeling
 
 In this task, you will create a Sensitivity Label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
