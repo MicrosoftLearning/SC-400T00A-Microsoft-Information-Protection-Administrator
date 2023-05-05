@@ -8,7 +8,7 @@ lab:
 
 The first setting Joni Sherman needs to configure and test with her pilot team is the Microsoft 365 built-in Office 365 Message Encryption (OME). For this purpose, she will modify the default template and create a new branding template, that will be assigned to one of the pilot users. The pilot users will then test the OME functionality with their accounts.
 
-### Task 1 – Verify Azure RMS functionality
+## Task 1 – Verify Azure RMS functionality
 
 In this task, you will install the Exchange Online PowerShell module and verify the correct Azure RMS functionality of your tenant in context of Joni Sherman, who was assigned the role of the Compliance Administrator in the last exercise.
 
@@ -70,7 +70,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 You have successfully installed the Exchange Online PowerShell module, connected to your tenant, and verified the correct functionality of Azure RMS.
 
-### Task 2 – Modify default OME template
+## Task 2 – Modify default OME template
 
 There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with OME, you need to deactivate the use of social IDs for all users in your organization.
 
@@ -102,7 +102,7 @@ There is a requirement in your organization to restrict trust for foreign identi
 
 You have successfully deactivated the usage of foreign identity providers, such as Google and Facebook in Office 365 Message Encryption.
 
-### Task 3 – Test default OME template
+## Task 3 – Test default OME template
 
 You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
@@ -154,7 +154,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 You have successfully tested the modified default OME template with deactivated social IDs.
 
-### Task 4 – Create custom branding template
+## Task 4 – Create custom branding template
 
 Protected messages sent by your organizations finance department require a special branding, including customized introduction and body texts and a Disclaimer link in the footer. The finance messages shall also expire after seven days. In this task, you will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mails sent from the finance department.
 
@@ -208,7 +208,7 @@ Protected messages sent by your organizations finance department require a speci
 
 You have successfully created a new transport rule that applies the custom OME template automatically, when a member of the finance department sends a message to external recipients.
 
-### Task 5 – Test the custom branding template
+## Task 5 – Test the custom branding template
 
 To validate the new custom OME configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
 
