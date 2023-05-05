@@ -9,7 +9,7 @@ lab:
 
 Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To educate users in the future, a custom sensitive information type is required to identify employee IDs in emails and documents, which consist of three uppercase characters and six numbers. To lower the false positive rate, the keywords "Employee" and "IDs" will be used. In this task you will create a new custom sensitive information type, a database for EDM-based classification and a keyword dictionary. 
 
-### Task 1 – Create Custom Sensitive Information Types
+## Task 1 – Create Custom Sensitive Information Types
 
 In this exercise, you will use the Security & Compliance Center PowerShell module to create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
@@ -72,7 +72,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 You have successfully created a new sensitive information type to identify employee IDs in the pattern of three uppercase characters, six numbers, and the keywords 'Employee' or 'IDs' within a range of 100 characters.
 
-### Task 2 – Create EDM-based classification information type
+## Task 2 – Create EDM-based classification information type
 
 As an extra search pattern, you will create an Exact Data Match (EDM) based classification with a database schema of employee data. The database source file will be formatted with the following data fields of employees: Name, Birthdate, StreetAddress, and EmployeeID.
 
@@ -201,7 +201,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 You have successfully created a new EDM-based classification sensitive information type for identifying employee data from a database file source.
 
-### Task 3 – Create EDM-based classification data source
+## Task 3 – Create EDM-based classification data source
 
 To associate the EDM-based classification with a database containing sensitive data, hashing and uploading the actual data for the sensitive information type via the EDM Upload Agent tool is required next.
 
@@ -255,7 +255,8 @@ To associate the EDM-based classification with a database containing sensitive d
 
 1. Close the Notepad window.
 
-1. Select the windows symbol in the taskbar with the right mouse button and select **Windows PowerShell (Admin)** and run as administrator.
+1. Select the windows symbol in the 
+bar with the right mouse button and select **Windows PowerShell (Admin)** and run as administrator.
 
 1. When the **User Account Control** window opens, select **Yes**.
 
@@ -300,7 +301,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
 You have successfully hashed and uploaded a database file for a EDM-based classification sensitive information type.
 
-### Task 4 – Create Keyword Dictionary
+## Task 4 – Create Keyword Dictionary
 
 Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason for illness or disease was sent out.  We do not want that to happen.
 
@@ -359,7 +360,7 @@ Several violations of personal information leakage happened when users sent out 
 
 You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate. Proceed with the next task.
 
-### Task 5 – Work with custom Sensitive Information Types
+## Task 5 – Work with custom Sensitive Information Types
 
 Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern. 
 
