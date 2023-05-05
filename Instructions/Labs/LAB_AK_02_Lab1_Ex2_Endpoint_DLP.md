@@ -8,7 +8,7 @@ lab:
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. For this reason, you decide to not only implement Microsoft 365 DLP policies, but extend this protection to devices in your organization.
 
-### Task 1 – Enable device onboarding
+## Task 1 – Enable device onboarding
 
 In this task, you will turn on device onboarding for your organization.
 
@@ -26,7 +26,7 @@ In this task, you will turn on device onboarding for your organization.
 
 You have now enabled device onboarding and can start to onboard Windows 10 devices to be protected with Endpoint DLP policies. The process of enabling the feature may take up to 30 minutes, but you may proceed with the next task as it's not dependant on this.
 
-### Task 2 - Onboard a device to Endpoint DLP
+## Task 2 - Onboard a device to Endpoint DLP
 
 In this task, you will use the local script option to onboard a Windows 10 device to allow it to be protected by Endpoint DLP policies.
 
@@ -72,7 +72,7 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 You have successfully onboarded a device and joined it to Azure AD to be protected by Endpoint DLP policies.
 
-### Task 3 - Create and Endpoint DLP policy
+## Task 3 - Create and Endpoint DLP policy
 
 In this task, you will create a Data Loss Prevention policy in the Microsoft Purview portal to protect sensitive data residing on Windows 10 devices in your organization. The DLP Policy that you create will block your users if they want to copy content from documents that contain Credit Card information.
 
@@ -138,7 +138,7 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 You have successfully activated the DLP Policy. If the policy detects an attempt to copy content from a file containing credit card information, it will now block the attempt and inform your user.
 
-### Task 4 - Configure Endpoint DLP Settings
+## Task 4 - Configure Endpoint DLP Settings
 
 In this task, you will configure a file path exclusion to a folder on your Windows 10 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
 
@@ -172,7 +172,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
 
-### Task 5 - Configure Microsoft Purview Extension
+## Task 5 - Configure Microsoft Purview Extension
 
 As Compliance Administrator you need to evaluate the new business requirement of rolling out the Chrome browser to severals users for working with sensitive data. For this test, you will install the Google Chrome browser to Client 01 and then add the Purview Compliance Extension for Google manually from the Google web store.
 
