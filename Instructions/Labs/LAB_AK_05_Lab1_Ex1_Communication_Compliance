@@ -1,0 +1,63 @@
+---
+lab:
+    title: 'Exercise 1 - Implement and manage Microsoft Purview Communication Compliance'
+    module: 'Module 5 - Manage insider and privacy risk in Microsoft 365'
+---
+## WWL Tenants - Terms of use
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
+
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
+
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
+
+# Lab 5 - Exercise 1
+
+As the Compliance Administrator for your organization, you are responsible for configuring Microsoft Communication Compliance to help ensure that your organization meets its compliance requirements. Microsoft Communication Compliance allows you to monitor communication activities in various channels, such as email, Microsoft Teams, and other chat and collaboration tools, to help detect and mitigate policy violations and other inappropriate behaviors.
+
+## Task 1 – Configure a Custom Policy
+
+In this exercise, you will configure a custom policy in Microsoft Communication Compliance to monitor communications for sensitive financial information. Follow the steps below to configure the policy:
+
+1. Navigate to **compliance.microsoft.com**
+
+1. Click on **Communication Compliance** from the left navigation
+
+1. Click on **Policies**
+
+1. Click on **+ Create policy** then select **Custom policy** from the drop down
+
+1. On the **Name and describe your policy** page, in the **Name** field enter **Contoso Financial Compliance**
+
+1. In the **Description** field enter **Contoso Sensitive Financial Information Monitoring**
+
+1. Select **Next**
+
+1. On the **Choose users and reviews** page, under **Choose users and groups**, leave **All users** selected.
+
+1. In the **Reviewers** field select **Megan Bowen** and **Joni Sherman**
+
+1. Select **Next**
+
+1. On the **Choose locations to detect communications** page select **Exchange**
+
+1. Select **Next**
+
+1. On the **Choose conditions and review percentage** page under **Communication direct** leave the default selected.
+
+1. Under **Condition** select **+ Add condition**
+
+1. Select **Content contains any of these sensitive info types**
+
+1. Leave **Default** in the **Group name** field
+
+1. Select **Add** then **Sensitive** into types
+
+1. On the **Sensitive info types** pane select **Credit Card Number**, then select **Add**
+
+1. Under **Review percentage** adjust the slider to **100%**
+
+1. Select **Next**
+
+1. On the **Review and finish** page select **Create policy**
+
+1. A brief **Your policy was created** page will be displayed.
