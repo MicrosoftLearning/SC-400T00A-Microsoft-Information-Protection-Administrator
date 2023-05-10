@@ -14,9 +14,35 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 As the Compliance Administrator for your organization, you are responsible for configuring Microsoft Communication Compliance to help ensure that your organization meets its compliance requirements. Microsoft Communication Compliance allows you to monitor communication activities in various channels, such as email, Microsoft Teams, and other chat and collaboration tools, to help detect and mitigate policy violations and other inappropriate behaviors.
 
-## Task 1 – Configure a Custom Policy
+## Task 1: Assign Compliance Administrator Role
 
-In this exercise, you will configure a custom policy in Microsoft Communication Compliance to monitor communications for sensitive financial information. Follow the steps below to configure the policy:
+In this exercise, you will assign the Compliance Administrator role to a user to grant them access to perform compliance-related tasks in the Microsoft Purview portal. Follow the steps to assign Joni Sherman to the role and ensure she has the necessary permissions to perform the tasks described in this lab.
+
+1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
+
+1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown 
+
+1. On the **Permissions** page select Roles
+
+1. On the **Role groups for Microsoft Purview solutions** page select **Compliance Administrator**
+
+1. Select **Edit** from the **Compliance Administrator** pane
+
+1. On the **Edit members of the role group** page select **+ Choose users**
+
+1. In the **Choose users** pane select the check box next to Joni Sherman then select **Select**
+
+1. On the **Edit members of the role group** page select **Next**
+
+1. On the **Review the role group and finish** page select **Save**
+
+1. On the **You successfully updated the role group** page select **Done**
+
+1. Sign out of the **MOD Administrator** account
+
+## Task 2 – Configure a Custom Policy
+
+In this exercise, you will configure a custom policy in Microsoft Communication Compliance to monitor communications for sensitive financial information. Follow the steps to configure the policy:
 
 1. Navigate to **compliance.microsoft.com**
 
