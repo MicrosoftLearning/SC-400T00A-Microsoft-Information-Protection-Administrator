@@ -92,6 +92,10 @@ In this exercise, you will configure a custom policy in Microsoft Communication 
 
 ## Task 3 – Test your custom policy
 
+In this task, you will verify the effectiveness of your configured custom policy. Through a series of tests using different scenarios, you will assess the policy's ability to identify and flag sensitive financial information. These tests provide valuable real-world insights into the policy's behavior.
+
+>**Note:** Make sure you give your policies time to activate before testing the policy. Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take approximately 48 hours to fully process in a policy.
+
 1. Log out of Joni's account and close all browser windows.
 
 1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
@@ -116,3 +120,18 @@ In this exercise, you will configure a custom policy in Microsoft Communication 
 
 1. Select **Send**
 
+1. Logout of Lynne's account, and close all browser windows.
+
+## Task 4 - Manage communication copmpliance policy
+
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+
+1. Navigate to **Communication Copmliance** from the left navigation bar.
+
+1. Select **Policies**
+
+1. Review the **Items pending review** for the Detect Financial Secrets policy
+
+    >**Note:** Please note that if the **Items pending review** count is 0, it might require additional time for your tests to be completely processed by the policy. Keep in mind that email messages can take approximately 24 hours to fully process within a policy.
+
+1. 
