@@ -53,3 +53,63 @@ In this lab, you will focus on configuring the insider risk settings in Microsof
 1. On the **Review** page select **Submit**
 
 1. On the **Created priority user group** page select **Done**. This will take you back to the insider risk management settings page.
+
+1. Select **Insider risk management** to navigate back to the main Insider risk management page
+
+## Task 2: Insider Risk Policy Creation
+
+In this lab, you will learn how to create an insider risk policy using Microsoft Insider Risk Management. Insider risk management policies determine the scope of users and the configuration of risk indicators for generating alerts. By following the provided steps, you will be able to quickly create a security policy that applies to all users or define individual users or groups, prioritize policy conditions, and customize risk scores and alert thresholds to effectively manage and mitigate insider threats within your organization.
+
+1. You should still be logged in as Joni in Microsoft Purview
+
+1. Select **Insider risk management** from the left navigation bar
+
+1. Select **Policies** from the top navigation bar then select **+Create policy**
+
+1. On the **Choose a policy template** page select **Data leaks** then select **Next**
+
+1. On the **Name your policy page**, in the **Name** field enter **Financial Data Protection** and enter **Sensitive financial data access monitoring** in the **Description** field
+
+1. Select **Next**
+
+1. On the **Choose users and groups** page leave **Include all users and groups** selected, then select **Next**
+
+1. On the **Decide whether to prioritize content page**, leave only **Sharepoint sites** and **File extensions** selected
+
+1. Select **Next**
+
+1. On the **SharePoint sites to prioritize** page select **+Add or edit SharePoint sites**
+
+1. On the Add or edit SharePoint sites pane, scroll down until you see the site for **U.s. Sales**, **https://wwlx420350.sharepoint.com/sites/USSales**, then select **Add**
+
+1. On the **SharePoint sites to prioritize** page select **Next**
+
+1. On the **File extensions to prioritize** page enter **pdf,xls,xlsx,doc,docx** in the field under **Enter up to 50 file extensions** then select **Next**
+
+1. On the **Decide whether to score only activity with priority content** page leave **Get alerts for all activity** selected, then select **Next**
+
+1. On the **Triggers for this policy** page select **User performs an exfiltration activity**
+
+1. Under **Select which activities will trigger this policy** select:
+   - **Downloading content from SharePoint**
+   - **Sending email with attachments to recipients outside the organization**
+   - **Sharing SharePoint files with people outside the organization**
+
+    >**Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**
+
+1. Select **Next**
+
+1. On the **Triggering thresholds for this policy** page select **Use default thresholds (Recommended)** then select **Next**
+
+1. On the **Indicators** page, leave the **Total indicators** selected as is, then select **Next**
+
+1. On the **Detection options** page select **Select all** from the **Sequence detection**, **Cumulative exfiltration detection**, and **Risk score boosters** sections, then select **Next**
+
+1. On the **Decide whether to use default or custom indicator thresholds** page select **Default thresholds** then select Next
+
+1. On the **Review settings and finish** page, select **Submit**
+
+1. On the **Your policy was created** page select **Done**.
+
+>**Note:** As noted on this page, it may take up to 24 hours before policy matches will start showing up in the Alerts tab.
+
