@@ -44,7 +44,7 @@ In this exercise, you will assign the Compliance Administrator role to a user to
 
 In this exercise, you will configure a custom policy in Microsoft Communication Compliance to monitor communications for sensitive financial information. Follow the steps to configure the policy:
 
-1. Navigate to **compliance.microsoft.com**
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Click on **Communication Compliance** from the left navigation
 
@@ -52,15 +52,15 @@ In this exercise, you will configure a custom policy in Microsoft Communication 
 
 1. Click on **+ Create policy** then select **Custom policy** from the drop down
 
-1. On the **Name and describe your policy** page, in the **Name** field enter **Contoso Financial Compliance**
+1. On the **Name and describe your policy** page, in the **Name** field enter **Detect Financial Secrets**
 
-1. In the **Description** field enter **Contoso Sensitive Financial Information Monitoring**
+1. In the **Description** field enter **Detection of sharing financial secrets**
 
 1. Select **Next**
 
 1. On the **Choose users and reviews** page, under **Choose users and groups**, leave **All users** selected.
 
-1. In the **Reviewers** field select **Megan Bowen** and **Joni Sherman**
+1. In the **Reviewers** field select **Joni Sherman** and **MOD Administrator**
 
 1. Select **Next**
 
@@ -72,13 +72,11 @@ In this exercise, you will configure a custom policy in Microsoft Communication 
 
 1. Under **Condition** select **+ Add condition**
 
-1. Select **Content contains any of these sensitive info types**
+1. Select **Message contains any of these words**
 
-1. Leave **Default** in the **Group name** field
+1. In the field under **Message contains any of these words** enter *secret,secrets*
 
-1. Select **Add** then **Sensitive** into types
-
-1. On the **Sensitive info types** pane select **Credit Card Number**, then select **Add**
+    >**Note:** To apply the policy based on specific words or phrases in a message, enter them separated by commas. No spaces between comma-separated items. Use quotation marks for phrases of two or more words. Each word or phrase is applied independently (only one word is needed to trigger the policy).
 
 1. Under **Review percentage** adjust the slider to **100%**
 
@@ -86,4 +84,34 @@ In this exercise, you will configure a custom policy in Microsoft Communication 
 
 1. On the **Review and finish** page select **Create policy**
 
-1. A brief **Your policy was created** page will be displayed.
+1. The **Your policy was created** page will be displayed. If the **Name and describe your policy** window appears to create a new communication compliance policy appears, select **Cancel** in the bottom right to close this prompt.
+
+1. Your communication compliance policy has been created.
+
+    >**Note:** Make sure you give your policies time to activate before testing the policy. Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take approximately 48 hours to fully process in a policy.
+
+## Task 3 – Test your custom policy
+
+1. Log out of Joni's account and close all browser windows.
+
+1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
+
+1. Select **New mail** from the upper left side part of Outlook on the web.
+
+1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **New Secret Message** to the subject line and **My super-secret message.** to the body.
+
+1. Select **Send** to send the message.
+
+1. Once that message is sent, select **New mail** again from the upper left side part of Outlook on the web.
+
+1. In the **To** line enter **Megan Bowen** and select the suggested email address. Enter **Big secret!** in the subject line, and **We have a surprise baby shower coming for Debra! Keep it secret!** in the body of the email.
+
+1. Select **Send**
+
+1. In the **To** line enter **Joni Sherman** and select the suggested email address. Enter **Surprise party!** in the subject line, and **Joni! We're planning a couple of big secrets around the office! Don't forget Debra's baby shower and Megan's surprise birthday parties this month!** in the body of the email.
+
+1. Select **Send**
+
+1. Lynne wants to send one last email. In the **To** line enter **Debra Berger** and select the suggested email address. Enter **Debra! I just heard a HUGE financial secret about Northwind's acquisition! Let's get together at lunch to discuss.** in the body of the email.
+
+1. Select **Send**
