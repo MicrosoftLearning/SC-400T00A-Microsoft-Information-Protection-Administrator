@@ -72,7 +72,7 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 You have successfully onboarded a device and joined it to Azure AD to be protected by Endpoint DLP policies.
 
-## Task 3 - Create and Endpoint DLP policy
+## Task 3 - Create an Endpoint DLP policy
 
 In this task, you will create a Data Loss Prevention policy in the Microsoft Purview portal to protect sensitive data residing on Windows 10 devices in your organization. The DLP Policy that you create will block your users if they want to copy content from documents that contain Credit Card information.
 
