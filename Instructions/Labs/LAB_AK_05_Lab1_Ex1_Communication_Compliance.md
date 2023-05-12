@@ -122,7 +122,7 @@ In this task, you will verify the effectiveness of your configured custom policy
 
 1. Logout of Lynne's account, and close all browser windows.
 
-## Task 4 - Manage communication copmpliance policy
+## Task 4 - Manage communication compliance policy
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
