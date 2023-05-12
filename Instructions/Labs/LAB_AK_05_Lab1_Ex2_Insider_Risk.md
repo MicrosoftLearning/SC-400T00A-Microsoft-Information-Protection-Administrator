@@ -6,7 +6,7 @@ lab:
 
 # Lab 5 - Exercise 2
 
-As Joni Sherman, you are the Compliance Administrator at Contoso Ltd. One of your responsibilities is to configuring and managing Microsoft Insider Risk Management to ensure data privacy and prevent policy violations. Leveraging this solution, you proactively monitor user activities, detect anomalies, and mitigate insider threats. 
+As Joni Sherman, you are the Compliance Administrator at Contoso Ltd. One of your responsibilities is to configuring and managing Microsoft Insider Risk Management to ensure data privacy and prevent policy violations. Leveraging this solution, you proactively monitor user activities, detect anomalies, and mitigate insider threats.
 
 ## Task 1: Insider Risk Settings Configuration
 
@@ -17,8 +17,6 @@ In this lab, you will focus on configuring the insider risk settings in Microsof
 1. Select **Insider Risk Management** from the left navigation bar
 
 1. Select the gear icon on the top right for **Settings**
-
-1. On the **Settings** page review each of the settings available. Key settings are for **Privacy**, showing anonymized versions of usernames, **Policy indicators** to select indicators that trigger alerts for specific risk activities, and **Priority user groups** allowing for closer scrutiny of user activities based on factors such as their role, access level to sensitive information, or past risk history.
 
 1. Select **Privacy** from the insider risk management settings bar under **General**
 
@@ -58,7 +56,7 @@ In this lab, you will focus on configuring the insider risk settings in Microsof
 
 ## Task 2: Insider Risk Policy Creation
 
-In this lab, you will learn how to create an insider risk policy using Microsoft Insider Risk Management. Insider risk management policies determine the scope of users and the configuration of risk indicators for generating alerts. By following the provided steps, you will be able to quickly create a security policy that applies to all users or define individual users or groups, prioritize policy conditions, and customize risk scores and alert thresholds to effectively manage and mitigate insider threats within your organization.
+In this task, you will learn how to create an insider risk policy using Microsoft Insider Risk Management. Insider risk management policies determine the scope of users and the configuration of risk indicators for generating alerts. By following the provided steps, you will be able to quickly create a security policy that applies to all users or define individual users or groups, prioritize policy conditions, and customize risk scores and alert thresholds to effectively manage and mitigate insider threats within your organization.
 
 1. You should still be logged in as Joni in Microsoft Purview
 
@@ -74,17 +72,13 @@ In this lab, you will learn how to create an insider risk policy using Microsoft
 
 1. On the **Choose users and groups** page leave **Include all users and groups** selected, then select **Next**
 
-1. On the **Decide whether to prioritize content page**, leave only **Sharepoint sites** and **File extensions** selected
+1. On the **Decide whether to prioritize content page**, leave only **Sensitive info type** select then select **Next**
 
-1. Select **Next**
+1. On the **Sensitive info types to prioritize** page select **+Add or edit sensitive info type**
 
-1. On the **SharePoint sites to prioritize** page select **+Add or edit SharePoint sites**
+1. In the **Add or edit sensitive info types** pane search for **bank** and select the check box next to **U.S. Bank Account Number** and **International Banking Account Number (IBAN)**. Next search for **credit** and select the check box next to **Credit Card Number** then select *Add** to add the 3 sensitive info types
 
-1. On the Add or edit SharePoint sites pane, scroll down until you see the site for **U.s. Sales**, **https://wwlx420350.sharepoint.com/sites/USSales**, then select **Add**
-
-1. On the **SharePoint sites to prioritize** page select **Next**
-
-1. On the **File extensions to prioritize** page enter **pdf,xls,xlsx,doc,docx** in the field under **Enter up to 50 file extensions** then select **Next**
+1. Back on the **Sensitive info types to prioritize** select **Next**
 
 1. On the **Decide whether to score only activity with priority content** page leave **Get alerts for all activity** selected, then select **Next**
 
@@ -93,7 +87,9 @@ In this lab, you will learn how to create an insider risk policy using Microsoft
 1. Under **Select which activities will trigger this policy** select:
    - **Downloading content from SharePoint**
    - **Sending email with attachments to recipients outside the organization**
+   - **Using a browser to upload files to the web**
    - **Sharing SharePoint files with people outside the organization**
+   - **File copied to remote desktop session**
 
     >**Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**
 
@@ -101,7 +97,7 @@ In this lab, you will learn how to create an insider risk policy using Microsoft
 
 1. On the **Triggering thresholds for this policy** page select **Use default thresholds (Recommended)** then select **Next**
 
-1. On the **Indicators** page, leave the **Total indicators** selected as is, then select **Next**
+1. On the **Indicators** page, select the drop down for **Physical access indicators** and deselect **Physical access after termination or failed access to sensitive asset** if selected then select **Next**
 
 1. On the **Detection options** page select **Select all** from the **Sequence detection**, **Cumulative exfiltration detection**, and **Risk score boosters** sections, then select **Next**
 
