@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Exercise 2 - IImplement and manage Microsoft Purview Insider Risk Management'
+    title: 'Exercise 2 - Configure Insider Risk Management'
     module: 'Module 5 - Manage insider and privacy risk in Microsoft 365'
 ---
 

@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Exercise 1 - Implement and manage Microsoft Purview Communication Compliance'
+    title: 'Exercise 1 - Configure Communication Compliance'
     module: 'Module 5 - Manage insider and privacy risk in Microsoft 365'
 ---
 ## WWL Tenants - Terms of use
