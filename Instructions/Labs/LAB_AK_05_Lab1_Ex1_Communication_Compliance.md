@@ -134,4 +134,34 @@ In this task, you will verify the effectiveness of your configured custom policy
 
     >**Note:** Please note that if the **Items pending review** count is 0, it might require additional time for your tests to be completely processed by the policy. Keep in mind that email messages can take approximately 24 hours to fully process within a policy.
 
-1. 
+1. Select the **Detect Financial Secrets** policy to review the pending items. The three test emails will be in this view. 
+
+1. Select the item with the subject **Big Secret!**
+
+1. Since this message is a simple notification of a party, select **Resolve**. In the **Resolve** pane enter **Policy modification needed** in the **Comment** field then select **Resolve**
+
+1. There will now be 2 pending items for the Detect Financial Secrets policy. Select the item with the subject **New Secret Message**
+
+1. Under the message that appears in the right, select **Tag as**
+
+1. In the **Tag item** pane, select **Questionable**. In the **Comment** field enter **Questionable secret item** then select **Save**
+
+1. In the Detect Financial Secrets policy, select the item with the subject **Northwind Acquisition**
+
+1. Select **Notify** under the Northwind Acquisition email
+
+1. In the **Send a notice pane** select the dropdown for **Chose a notice template**. Select **+Create a new notification** to create a new notice template
+
+1. In the **Create a notice template** pane, enter **Offending message** in the **Template Name** field
+
+1. In the **Send from:** field enter **Joni Sherman** and select the suggested user
+
+1. In the **Subject** field enter **Offending message detected**. In the **Message body** enter **This is to notify an offending message was detected and will be escalated.**
+
+1. Select **Create**
+
+1. In the **Notice template Offending message was created** pane select **Close**
+
+1. In the **Send a notice** pane under **Choose a notice template**, select the newly created **Offending message** notice template then select **Save**
+
+1. In the **Notification has been sent** pane select **Close**
