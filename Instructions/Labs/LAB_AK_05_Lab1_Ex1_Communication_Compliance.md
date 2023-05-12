@@ -124,6 +124,8 @@ In this task, you will verify the effectiveness of your configured custom policy
 
 ## Task 4 - Manage communication compliance policy
 
+In this task, you will take control of the communication compliance policy and oversee its management within the Microsoft Purview portal. By following the provided steps, you will review pending items, resolve notifications, tag items, send notices, and escalate remediation actions.
+
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Navigate to **Communication Copmliance** from the left navigation bar.
@@ -148,7 +150,7 @@ In this task, you will verify the effectiveness of your configured custom policy
 
 1. In the Detect Financial Secrets policy, select the item with the subject **Northwind Acquisition**
 
-1. Select **Notify** under the Northwind Acquisition email
+1. Select **Notify** under the Northwind Acquisition item
 
 1. In the **Send a notice pane** select the dropdown for **Chose a notice template**. Select **+Create a new notification** to create a new notice template
 
@@ -165,3 +167,45 @@ In this task, you will verify the effectiveness of your configured custom policy
 1. In the **Send a notice** pane under **Choose a notice template**, select the newly created **Offending message** notice template then select **Save**
 
 1. In the **Notification has been sent** pane select **Close**
+
+1. In the Detect Financial Secrets policy, select the item with the subject **Northwind Acquisition** 
+
+1. Select **Escalate** under the Northwind Acquisition item
+
+1. In the **Escalate remediation for this item** select **MOD Administrator** as an additional reviewer. In the **Reason for escalation** field enter **Data leak plans detected.** then select **Escalate**
+
+1. In the **Escalation has been sent** pane select **Close**
+
+1. Back in the view for the message for the Northwind Acquisition message, select **Tag as**. In the **Tag item** pane select **Non-compliant**. Enter **Non-compliant message** in the **Comment** field then select **Save**
+
+## Task 5 - Modify communication compliance policy
+
+In this task, you will make necessary modifications to the communication compliance policy based on the insights gained from the previous task. By reviewing the detected innocent message and evaluating the policy's behavior, you will fine-tune the policy settings to enhance its accuracy in identifying potential violations.
+
+1. You should still be logged in with Joni's account. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and navigate to **Communication Compliance**.
+
+1. Select **Policies** from the top navigation pane
+
+1. Select the check box next to the **Detect Financial Secrets** policy
+
+1. Select **Edit** from the top navigation pane
+
+1. On the **Name and describe your policy** page select **Next**
+
+1. On the **Choose users and reviewers** page select **Next**
+
+1. On the **Choose locations to detect communications** page select **Next**
+
+1. On the **Choose locations to detect communications** page select **+Add Condition** then select **Content contains any of these sensitive info types**
+
+1. Under **Content contains any of these sensitive info types** select **Add** then select **Sensitive info types**
+
+1. In the **Sensitive info types** pane search for **Credit Card Number** and select the check box next to this sensitive info type.
+
+1. Select **Add** to add this sensitive info type to this condition then select **Next**
+
+1. On the **Review and finish** page select **Save**
+
+1. If window to **Name and describe your policy** appears again, select **Cancel** in the bottom right
+
+1. On the **Communication compliance** screen the **Detect Financial Secrets** policy status is now **Updating**
