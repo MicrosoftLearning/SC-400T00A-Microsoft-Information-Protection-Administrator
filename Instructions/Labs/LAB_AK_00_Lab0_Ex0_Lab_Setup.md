@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Exercise 0 - Lab Setup'
-    module: 'Module 0 - Lab Setup: Preparing Your Environment for Administration'
+    title: 'Lab Setup: Preparing Your Environment for Administration'
+    module: 'Module 0 - Lab Setup'
 ---
 
 ## WWL Tenants - Terms of use
