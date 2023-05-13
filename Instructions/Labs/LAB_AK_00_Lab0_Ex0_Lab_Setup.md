@@ -51,7 +51,7 @@ In this task, we'll enable information barriers in SharePoint Online and OneDriv
 1. Enter the following cmdlet to install the latest version of the Sharepoint Online PowerShell module:
 
     ```powershell
-    Install-Module Install-Module -Name Microsoft.Online.SharePoint.PowerShell
+    Install-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
 1. Enter the following cmdlet to connect to the admin center for SharePoint online **Enter**
