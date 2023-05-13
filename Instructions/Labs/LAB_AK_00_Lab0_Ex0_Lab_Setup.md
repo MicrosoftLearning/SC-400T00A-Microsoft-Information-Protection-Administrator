@@ -20,6 +20,10 @@ In this lab you'll configure and prepare your environment for administration tas
 
 In task, we'll focus on enabling Audit in the Microsoft Purview compliance portal. Enabling audit allows you to track and monitor activities within the portal, ensuring visibility and accountability. By following the provided steps, we will configure and activate the audit feature in advance, providing a comprehensive audit trail for the subsequent lab activities
 
+1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
+
+1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
+
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. In the left navigation pane select **Audit**
@@ -57,10 +61,10 @@ In this task, we'll enable information barriers in SharePoint Online and OneDriv
 1. Enter the following cmdlet to connect to the admin center for SharePoint online **Enter**
 
     ```powershell
-     Connect-SPOService -Url https://WWLxZZZZZZ-admin.sharepoint.com -Credential admin@WWLxZZZZZZ.onmicrosoft.com
+     Connect-SPOService -Url https://<WWLxZZZZZZ>-admin.sharepoint.com -Credential admin@<WWLxZZZZZZ>.onmicrosoft.com
     ```
 
-    >**Note:** Be sure to update where ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
+    >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
 
 1. Login with the MOD Administrator password provided by your lab hosting provider
 
