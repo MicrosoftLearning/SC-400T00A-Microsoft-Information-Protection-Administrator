@@ -38,8 +38,9 @@ In this task, we'll enable the **Search by Name** feature in Microsoft Teams as 
 
 1. Select **Save** to save this setting
 
-
 ## Task - Enable information barriers in SharePoint Online and OneDrive
+
+In this task, we'll enable information barriers in SharePoint Online and OneDrive to promote secure collaboration and prevent unauthorized communication. By following the provided steps, we'll configure and activate information barriers in advance.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
