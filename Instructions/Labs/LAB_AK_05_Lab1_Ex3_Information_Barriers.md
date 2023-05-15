@@ -16,9 +16,9 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 As Joni, the Compliance Administrator for Contoso Ltd., your responsibility is to configure and manage Information Barriers in Microsoft 365. Information Barriers play a critical role in maintaining clear boundaries and preventing unauthorized communication between specific groups or individuals within your organization. By implementing Information Barriers, you ensure compliance with regulations, protect sensitive information, and minimize conflicts of interest. This setup will create a secure work environment, safeguarding data confidentiality and supporting Contoso Ltd.'s commitment to compliance.
 
-## Task 1: Enable search by name in Microsoft Teams
+## Task 1: Verify search by name is enabled in Microsoft Teams
 
-In this task, you will focus on enabling the **Search by name** feature in Microsoft Teams. This feature allows users to search and find specific individuals within their organization easily. By following the steps provided, you will configure and activate this feature to enhance collaboration and streamline communication within your organization's Microsoft Teams environment.
+In this task, you'll verify the **Search by name** feature is enabled in Microsoft Teams. This feature allows users to search and find specific individuals within their organization easily. By following the steps provided, you will configure and activate this feature to enhance collaboration and streamline communication within your organization's Microsoft Teams environment.
 
 1. If you're still signed in with Joni's account, sign out of this account and close all browser windows.
 
