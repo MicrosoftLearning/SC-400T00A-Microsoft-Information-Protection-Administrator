@@ -171,4 +171,3 @@ In this task, you'll use PowerShell to create information barrier policies. By f
 1. Go back to **Microsoft Edge** with the open **Policies** page and select **Refresh**. You should see the newly created **Marketing-LegalFinance** policy created.
 
     >**Note**: If you signed out of the compliance portal, navigate back to **https://compliance.microsoft.com** in **Microsoft Edge** and log in with Joni's account. Navigate to **Information barriers** on the left navigation pane. Select **Policies** from the drop down, and  you should see the newly created **Marketing-LegalFinance** policy created.
-
