@@ -112,7 +112,7 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
     New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"
     ```
 
-1. Go back to **Microsoft Edge** with the openened **Segments** page and select **Refresh**. You should see the newly created **Legal** and **Marketing** segments on this page.
+1. Go back to **Microsoft Edge** with the open **Segments** page and select **Refresh**. You should see the newly created **Legal** and **Marketing** segments on this page.
 
     >**Note**: If you signed out of the compliance portal, navigate back to **https://compliance.microsoft.com** in **Microsoft Edge** and log in with Joni's account. Navigate to **Information barriers** on the left navigation pane. Select **Segments** from the drop down, and  you should see the newly created **Legal** and **Marketing** segments on this page.
 
@@ -142,7 +142,7 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 
 1. On the **Policy created** page select **Done**. Leave this window open, as we will be reviewing the Policies page in an upcoming task.
 
-## Task 5: Create information barrier policies (PowerShell)
+## Task 6: Create information barrier policies (PowerShell)
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**
 
@@ -155,9 +155,12 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 1. Run the **New-InformationBarrierPolicy** cmdlet with the **SegmentsAllowed** parameter to create a new **Marketing-Legal** policy:
 
     ```powershell
-    New-InformationBarrierPolicy -Name "Marketing-Legal" -AssignedSegment "Marketing" -SegmentsAllowed "Legal","Finance" -State Inactive
+    New-InformationBarrierPolicy -Name "Marketing-LegalFinance" -AssignedSegment "Marketing" -SegmentsBlocked "Legal","Finance" -State Inactive
     ```
 
 1. When the notice on information barriers policy warning is displayed in PowerShell type **Y** then press **Enter** to proceed with creating the policy
 
-1. 
+1. Go back to **Microsoft Edge** with the open **Policies** page and select **Refresh**. You should see the newly created **Marketing-LegalFinance** policy created.
+
+    >**Note**: If you signed out of the compliance portal, navigate back to **https://compliance.microsoft.com** in **Microsoft Edge** and log in with Joni's account. Navigate to **Information barriers** on the left navigation pane. Select **Policies** from the drop down, and  you should see the newly created **Marketing-LegalFinance** policy created.
+
