@@ -32,5 +32,78 @@ In this task, you'll verify the **Search by name** feature is enabled in Microso
 
 1. On the **Changes will take time to take effect** pop up select **Confirm**
 
-1. Sign out of the MOD Administrator account and close all browser windows
+## Task 2: Enable Admin Consent for Information Barriers in Microsoft Teams
 
+In this task, you'll enable Admin Consent for Information Barriers (IB) in Microsoft Teams. This configuration ensures compliance by allowing the removal of non-IB compliant users from groups like Teams channels. 
+
+1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
+
+1. Confirm the **User Account Control** window with **Yes**.
+
+1. Enter the following cmdlet to install the latest version of the Azure AD module:
+
+    ```powershell
+    Install-Module AzureAD
+    ```
+
+1. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**. This process may take some seconds to complete.
+
+1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some seconds to complete.
+
+1. Run the following PowerShell cmdlets:
+
+    ```powershell
+    Connect-AzureAD -Tenant "<WWLxZZZZZZ>"
+    $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
+    $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
+    if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
+    Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
+    ```
+
+    >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
+
+1. When prompted, login with the MOD Administrator account
+
+1. In the **Permissions requested** dialog box, review the information, and then select **Accept**.
+
+1. Close the PowerShell window once complete
+
+## Task 3: Segment users in your organization (portal)
+
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+
+1. On the left navigation pane select **Information barriers** then select **Segments** from the drop down
+
+1. On the **Segments** page select **+ New Segment**
+
+1. On the **Provide a segment name** page enter **Finance** in the **Name** field then select **Next**
+
+1. On the **Add user group filter** page, under **User group filter** select **+ Add** then select **Member of** from the drop down
+
+1. In the **Department** field enter **Finance** then select **Next**
+
+1. Review your settings on the **Summary** page, then select **Submit**
+
+1. On the **Segment created** page select **Done**
+
+1. Back on the **Segments** page select **Refresh** to see the newly created **Finance** segment.
+
+## Task 4: Segment users in your organization (PowerShell)
+
+1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**
+
+1. Confirm the **User Account Control** window with **Yes**
+
+1. In the **PowerShell** window, enter to connect to the Security & Compliance PowerShell
+	```powershell
+	 Connect-IPPSSession
+	 ```
+	 and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+
+1. Use the **New-OrganizationSegment** cmdlet with the **UserGroupFilter** parameter to create a **Legal** segment:
+
+    ```powershell
+    New-OrganizationSegment -Name "Legal" -UserGroupFilter "Department -eq 'Legal'"
+    ```
+
+1. If you signed out of the compliance portal, navigate back to **https://compliance.microsoft.com** in **Microsoft Edge** and log in with Joni's account. Navigate to **Information barriers** on the left navigation pane

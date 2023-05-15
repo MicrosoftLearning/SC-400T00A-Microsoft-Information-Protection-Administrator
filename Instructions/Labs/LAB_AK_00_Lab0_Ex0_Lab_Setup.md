@@ -73,3 +73,5 @@ In this task, we'll enable information barriers in SharePoint Online and OneDriv
     ```powershell
     Set-SPOTenant -InformationBarriersSuspension $false
     ```
+
+1. Close the PowerShell window once this is complete
