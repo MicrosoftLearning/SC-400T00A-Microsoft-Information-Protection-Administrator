@@ -26,11 +26,11 @@ In this task, you'll verify the **Search by name** feature is enabled in Microso
 
 1. In the left navigation pane, under the **Teams** drop down, select **Teams settings**
 
-1. Scroll down to **Search by name** toggle this feature **On** to enable this feature
-
-1. Select **Save** to save this setting
+1. Scroll down to **Search by name**. If this feature is set to Off, toggle this feature **On**, then select **Save** to save this setting.
 
 1. On the **Changes will take time to take effect** pop up select **Confirm**
+
+>**Note:** It may take a few hours for this change to take effect.
 
 ## Task 2: Enable Admin Consent for Information Barriers in Microsoft Teams
 
@@ -70,6 +70,8 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 
 ## Task 3: Segment users in your organization (Portal)
 
+In this task, you'll learn how to segment users in your organization using the Microsoft Purview portal. By following the provided steps, you'll create a segment named **Finance** and filter users based on their department. Segmentation helps organize users and enables targeted management and communication within your organization. Let's get started with the process.
+
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. On the left navigation pane select **Information barriers** then select **Segments** from the drop down
@@ -89,6 +91,8 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 1. Back on the **Segments** page select **Refresh** to see the newly created **Finance** segment. Leave this window open, as we will be reviewing the Segments page in an upcoming task.
 
 ## Task 4: Segment users in your organization (PowerShell)
+
+In this task, you'll use PowerShell to segment users in your organization. By following the provided steps, you'll create segments named **Legal** and **Marketing** based on specific department criteria. PowerShell enables efficient and scalable user management, allowing you to customize and organize your user base effectively.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**
 
@@ -118,6 +122,8 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 
 ## Task 5: Create information barrier policies (Portal)
 
+In this task, you'll create information barrier policies using the Microsoft Purview compliance portal. By following the provided steps, you'll create a policy named **Finance-Legal** and configure communication and collaboration settings for the **Finance** segment. These policies help enforce restrictions and control information flow between different segments within your organization.
+
 1. Ensure you're signed into the Microsoft Purview compliance portal with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. In the compliance portal select **Information barriers** from the left navigation pane, then select **Policies**
@@ -143,6 +149,8 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 1. On the **Policy created** page select **Done**. Leave this window open, as we will be reviewing the Policies page in an upcoming task.
 
 ## Task 6: Create information barrier policies (PowerShell)
+
+In this task, you'll use PowerShell to create information barrier policies. By following the provided steps, you'll create a policy named **Marketing-LegalFinance** and define the allowed and blocked segments. PowerShell provides a flexible and efficient way to manage policies, allowing you to customize information flow within your organization.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**
 
