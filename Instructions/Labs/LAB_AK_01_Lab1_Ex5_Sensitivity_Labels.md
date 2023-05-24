@@ -122,7 +122,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
     ![Image of vertical dot menu](../Media/SensitivityLabelDotMenu.png)
 
-1. Select the **+ Add sub label** from the drop-down menu.
+1. Select the **+ Create sublabel** from the drop-down menu.
 
 1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page for the **Name**, **Display Name**, **Description for admins** and **Description for users**, enter the following information:
 
@@ -294,7 +294,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the Information protection page, highlight (without selecting) the existing **Internal** label, and select the three dots.
 
-1. Select the **+ Add sub label** menu item.
+1. Select the **+ Create sublabel** menu item.
 
 1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page, enter the following information:
 
