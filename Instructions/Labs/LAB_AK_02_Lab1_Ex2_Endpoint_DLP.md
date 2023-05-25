@@ -154,7 +154,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. In the **Enter a path to exclude** field, type *C:\FilePathExclusionTest*, then select **+**.
 
-1. Select **Add**.
+1. Select **Save**.
 
 1. Expand **Browser and domain restrictions to sensitive data** and select **+ Add or edit unallowed browsers**.
 
@@ -166,7 +166,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. Select **+ Add cloud service domain** to open the right side pane.
 
-1. In the right side pane, below **Domain** enter **dropbox.com**, select the **+** sign and select **Add**.
+1. In the right side pane, below **Domain** enter **dropbox.com**, select the **+** sign and select **Save**.
 
 1. Close the browser window.
 
