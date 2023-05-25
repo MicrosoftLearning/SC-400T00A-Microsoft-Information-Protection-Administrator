@@ -1,4 +1,4 @@
----
+----Retire this
 lab:
     title: 'Exercise 3 - Manage DLP Reports'
     module: 'Module 2 - Implement Data Loss Prevention'
