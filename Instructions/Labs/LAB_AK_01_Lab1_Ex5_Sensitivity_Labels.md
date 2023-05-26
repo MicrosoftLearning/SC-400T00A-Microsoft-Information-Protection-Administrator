@@ -343,6 +343,10 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. Select **Done**.
 
+1. Once the label has been created the **Your sensitivity label was created** page will be displayed.
+
+1. Select **Don't create a policy yet** and then select **Done**.
+
 1. On the **Information protection** page, select **Publish label**.
 
 1. The Publish sensitivity labels wizard will start.
