@@ -42,7 +42,7 @@ In this exercise, you will create a new Content search in the Microsoft Purview 
 
 ## Task 2: Export search results
 
-In this lab, we will learn how to export search results from the Microsoft Purview portal using the Content search feature. We'll focus on the Mark 8 Project Search and follow the steps to export and analyze the data. By using the eDiscovery Export Tool, we'll download and explore the exported files locally.
+In this exercise, you will learn how to export content search results.
 
 1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
