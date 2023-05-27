@@ -10,7 +10,7 @@ In this exercise, you will assume the role of Joni Sherman, a Compliance Adminis
 
 ## Task 1: Create a new content search
 
-In this exercise, you will create a new Content search in the Microsoft Purview compliance portal to search for emails, documents, or other files containing specific keywords and phrases related to the Mark 8 project. 
+In this task, you will create a new Content search in the Microsoft Purview compliance portal to search for emails, documents, or other files containing specific keywords and phrases related to the Mark 8 project. 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
