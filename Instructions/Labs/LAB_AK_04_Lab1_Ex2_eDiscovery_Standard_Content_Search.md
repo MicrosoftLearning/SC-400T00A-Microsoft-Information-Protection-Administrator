@@ -14,7 +14,7 @@ Assuming the role of Joni Sherman, a Compliance Administrator for Contoso Ltd., 
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-1. Select the drop down for **eDiscovery** fro the left navigation pane, then select **Standard**.
+1. Select the drop down for **eDiscovery** from the left navigation pane, then select **Standard**.
 
 1. On the **eDiscovery (Standard)** select **+ Create a case**.
 
