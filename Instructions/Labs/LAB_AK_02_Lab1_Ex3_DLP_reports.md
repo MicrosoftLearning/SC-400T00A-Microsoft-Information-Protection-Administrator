@@ -16,9 +16,9 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-1. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.   Select the field for the **Security Reader** role.
+1. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.   Select the field for the **Information Protection Analysts** role.
 
-1. In the *Security Reader* pane, select **Edit** in the **Members** area.
+1. In the *Information Protection Analysts* pane, select **Edit** in the **Members** area.
 
 1. Select **Choose members** and then select **+ Add**.
 
@@ -26,7 +26,7 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 1. Review the changes to the member list and then select **Done**.
 
-1. Select **Save**. Close the **Security Reader** role pane.
+1. Select **Save**. Close the **Information Protection Analysts** role pane.
 
 You have now granted the new compliance officer access to the DLP reports in the Microsoft 365 compliance portal.
 
@@ -38,19 +38,11 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Megan's password should be provided by your lab hosting provider.
 
-1. In the left navigation pane, select **Reports** and observe your access to the Reports Dashboard.
+1. In the left navigation pane, select the drop down for **Data loss prevention** then select **Activity explorer**.
 
-    **Warning**: If you get a message displayed with an error, come back at a later point of the lab to view the reporting section. You can also perform these steps in a trial or your personal developers tenant.
+1. On the **Activity explorer** page, select the dropdown for **Built-in filters**. 
 
-    [//]: <> (An error message is displayed in the lab tenants when accessing the reports section. The task works in our lab tenants though.)
-
-1. Scroll down to the **Organizational data** section and select **DLP Policy Matches** to review the matches of the DLP policies in the lab tenant.
-
-1. Select **Reports** again, scroll down to the **Organizational data** section and select **DLP Incidents** and **DLP false positives and overrides** one after another and review the reports data. 
-
-1. After reviewing the reports, select **Data loss prevention** from the left side navigation pane and select **Activity explorer**.
-
-1. Work with the filters to display the DLP related activities in your tenant.
+1. Explore the **DLP policies that detected activities** filter and the **DLP policy rules that detected activities** filter.
 
 1. Leave the client open to finish this last exercise.
 
