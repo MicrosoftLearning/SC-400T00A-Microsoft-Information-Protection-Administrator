@@ -116,15 +116,13 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. Scroll down to **Actions** and select **+ Add an action** drop-down and select **Audit or restrict activities on devices**.
 
-1. Leave all checkboxes enabled and change the dropdown selections on the right from **Audit only** to **Block**.
+1. Leave all checkboxes enabled. Change the dropdown selection for **Copy to clipboard** from **Apply** to **Block with Override**. Change the dropdown selection for all the other items from **Audit only** to **Block**.
 
 1. In the **User Notifications** section, enable notifcations by enabling the **Use notifications to inform your users and help educate them on the proper use of sensitive info.** switch to **On**.
 
 1. Under **Endpoint devices** select the checkbox for **Show users a policy tip notification when an activity is restricted. This is turned on when you select Block for an activity in Windows. To turn off the notificiations on Windows devices, disable the restrictions**.
 
 1. Under **Microsoft 365 services** select the checkbox for **Notify users in Office 365 service with a policy tip**.
-
-1. Scroll down to the **User overrides** section and below **Allow override from Endpoint devices**, select **Copy from clipboard**.
 
 1. Select **Save**, then select **Next**.
 
