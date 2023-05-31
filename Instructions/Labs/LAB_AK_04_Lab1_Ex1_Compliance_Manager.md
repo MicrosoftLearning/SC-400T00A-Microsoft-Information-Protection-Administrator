@@ -48,23 +48,6 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 1. Select **Compliance Manager** from the left navigation pane.
 
-<!--
-
-1. From the left navigation pane of the Microsoft 365 admin center, select **Show all**.
-1. Under Admin centers, select **Compliance**. A new browser page opens to the welcome page of the Microsoft Purview compliance portal. 
-1. The card section on the home page shows you, at a glance, how your organization is doing with your compliance posture, what solutions are available for your organization, and more.
-1. From the main window, scroll down to view the different cards. The cards available on the home screen and the position of the cards can be changed to accommodate each administrator’s preference. 
-1. Placing your mouse cursor over the title bar of any card turns the title bar grey. When you see the cursor turn into a cross shape, you can move the card to your desired location.
-1. On the title bar of every card, you'll also see an ellipsis that provides actions you can take. Select the ellipses on the Solution catalog and select **Remove**.
-1. You can add cards, by selecting **+ Add cards**. The Add cards to your home page window opens. Place your mouse cursor over the card shown in this window and drag it over to the location on your home screen where you want the card to be positioned.
-1. As the compliance admin, there may be a set of solutions that you manage for our organization and as such, you may want to have only those solutions listed in the navigation panel that you see. To customize to your preferences select **Customize navigation**. 
-1. From the window labeled Customize your navigation pane, note how you can select the items you want to have appear on the navigation panel and de-select the items you don't want to see. For the purpose of these labs, keep all items selected and hit **Save** on the bottom of the window. 
-1. Leave the browser tab open.
-
-## Task 2
-
-Learn about your organization’s compliance posture through Compliance Manager.
--->
 1. From the top of the Compliance Manager page, ensure **Overview** is selected (underlined). Scroll down to see all the information available on the page. Information on this page includes your compliance score, your points achieved, and Microsoft managed points achieved. You'll see Key improvement actions, Solutions that affect your score and compliance score breakdown by categories.
 
 1. From the top of the Overview page, select **Improvement actions**. These are actions that can improve the organization’s compliance score. Note that as improvement actions are taken, points may take up to 24 hours to update. Notice the available filters.
