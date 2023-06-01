@@ -44,6 +44,22 @@ test
 
 1. You should now have a message displaying **You successfully updated the role group**. Select **Done**.
 
+1. Back on the **Role groups for Microsoft Purview solutions** select **Compliance Manager Contributors**.
+
+1. On the **Compliance Manager Contributors** flyout page on the right, select **Edit**.
+
+1. In the **Compliance Manager Contributors** wizard, on the **Edit members of the role group** page, select **+ Choose users**.
+
+1. On the **Choose users** page, enter *Megan* into the search and press Enter.
+
+1. Select the check box next to **Megan Bowen** and select the **Select** button at the bottom of the page.
+
+1. Back on the **Edit members of the role group** page select **Next**.
+
+1. On the **Review the role group and finish** select **Save**.
+
+1. You should now have a message displaying **You successfully updated the role group**. Select **Done**.
+
 1. Log out of the MOD Administrator account and close all windows.
 
 ## Task 2 - Explore Compliance Manager
@@ -99,4 +115,81 @@ test
 1. On the **Review and finish** page, review your selections then select **Create assessment** at the bottom of the screen.
 
 1. On the **New assessment created** page select **Done** to view your new assessment.
+
+## Task 4 - Assign improvement action
+
+1. You should still be logged in with Joni's account and logged into the **Compliance Manager** within the Microsoft Purview compliance portal. You should be on the **GLBA Compliance Assessment** that was created in the previous task.
+
+1. Expand the **Details** and **About** panes on the left to view more information about the assessment that was just created.
+
+1. Select **Your improvement actions** from the top breadcrumb under **GLBA Compliance Assessment**.
+
+1. Explore the **Improvement actions** available to comply with the Gramm-Leach-Bliley Act regulation.
+
+1. In the search bar on the top right of the list of improvement actions search for *DLP*.
+
+1. Select the improvement action for **Use default DLP policies for US Gramm Leach Bliley Act**.
+
+1. On the **Use default DLP policies for US Gramm Leach Bliley Act** page, on the **Overview** pane on the left, select **Assign action** to assign this improvement action to another compliance administrator.
+
+1. On the **Assign to user** fly out page on the right, enter *Megan* in the search field then press enter.
+
+1. Select the check box for **Megan Bowen** then select **Assign** at the bottom of the page to assign this improvement action to Megan Bowen.
+
+1. Back on the **Use default DLP policies for US Gramm Leach Bliley Act** page, you should see this improvement action has been assigned to Megan Bowen.
+
+## Task 6 - Act on improvement action
+
+1. Leave Client 1 VM (LON-CL1) open as it is, and log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+
+1. Open **Microsoft Edge** and navigate to **https://outlook.office.com/**.
+
+1. Log in with Megan Bowen's account, MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password should be provided by your lab hosting provider.
+
+1. Megan should have an email with the subject **Compliance Manager** in their inbox.
+
+1. Select this message, and click **View Action Item Assigned to you** to open the assigned improvement action.
+
+1. Explore the improvement action. 
+    - **Overview**: Contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing how the action is tested.
+
+    - **Implementation** tab: Contains implementation status, date, notes, detailed instructions, and for technical actions, a **Launch now** link taking you to the appropriate solution or service for implementation.
+
+    - **Testing** tab: Contains testing status, date, notes, and a link to download a testing history report.
+
+    - **Related controls** tab: Lists the controls associated with the improvement action, including the control ID and the associated regulation. Select a control name to view a flyout pane with a detailed description.
+
+    - **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work.
+
+1. Select the **Implementation** tab, and review the suggested implementation. Scroll down to the bottom of the page, and select **Launch now** under **Prerequisites and licensing requirements**.
+
+1. This will open directly to the **Data loss prevention** page as suggested by the improvement action. Select the **Policies** tab at the top of the page.
+
+1. On the **Policies** page select **+ Create policy**.
+
+1. On the **Start with a template or create a custom policy** page, under **Categories** select **Financial** to open the list of financial DLP policy templates.
+
+1. Under **Templates** select the **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced** template, then select **Next**.
+
+1. On the **Name your DLP policy** page, leave the default name in the **Name** field, then select **Next**.
+
+1. On the **Assign admin units (preview)** page select **Next**.
+
+1. On the **Choose locations to apply the policy** select **Exchange email**, **SharePoint sites**, **OneDrive accounts**, **Teams chat and channel messages**, and **Devices** then select **Next**.
+
+1. On the **Define policy settings** page, leave the default selected, then select **Next**.
+
+1. On the **Info to protect** page review the information protected then select **Next**.
+
+1. On the **Protection actions** page leave the default selected then select **Next**.
+
+1. On the **Customize access and override settings** page leave the default selected, then select **Next**.
+
+1. On the **Policy mode** page select **Turn it on right away** then select **Next**.
+
+1. On the **Review your policy and create it** page, select **Submit** to create and activate the new DLP policy.
+
+1. On the **New policy created** page select **Done**.
+
+1. Back on the **Data loss prevention** page, you will see a new DLP policy for **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced** that satisfies the assigned improvement action.
 
