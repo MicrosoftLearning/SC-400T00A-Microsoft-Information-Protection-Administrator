@@ -1,7 +1,7 @@
 ---
 lab:
-  title: 'Exercise 1 - Explore Compliance Manager'
-  module: 'Module 4 - Monitor and investigate data and activities by using Microsoft Purview'
+    title: 'Exercise 1 - Explore Compliance Manager'
+    module: 'Module 4 - Monitor and investigate data and activities by using Microsoft Purview'
 ---
 
 ## WWL Tenants - Terms of use
