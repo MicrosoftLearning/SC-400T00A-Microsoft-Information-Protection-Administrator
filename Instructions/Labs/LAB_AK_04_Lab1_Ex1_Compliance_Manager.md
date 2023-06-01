@@ -14,7 +14,11 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 # Lab: Explore the Microsoft Purview compliance portal & Compliance Manager
 
+test 12
+
 ## Task 1 - Assign Compliance manager permissions
+
+test
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
@@ -96,16 +100,3 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 1. On the **New assessment created** page select **Done** to view your new assessment.
 
-<!--Sure, here's another example scenario:
-
-
-Your organization is a financial services provider that handles sensitive financial data. You want to ensure that you are compliant with the Gramm-Leach-Bliley Act (GLBA) regulations.
-
-
-To create an assessment for GLBA, you can use the Compliance Manager templates provided by Microsoft. You can then customize the assessment to fit the specific needs of your organization.
-
-
-For example, you can create an assessment for the Safeguards Rule, which requires financial institutions to develop, implement, and maintain a comprehensive information security program to protect customer information. You can then create improvement actions for each control in the assessment and test them to ensure compliance.
-
-
-Remember to regularly review and update your assessment to ensure ongoing compliance with GLBA regulations.>
