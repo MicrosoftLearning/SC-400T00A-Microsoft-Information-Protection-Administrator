@@ -74,7 +74,27 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 1. On the **Base your assessment on a regulation** page, select **Select regulation**.
 
-1. On the **Select regulation** fly out page, search for *Gramm*
+1. On the **Select regulation** fly out page, search for *Gramm*.
+
+1. Select the checkbox next to **GGramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**  then select **Save**.
+
+1. Back on the **Base your assessment on a regulation** select **Next**.
+
+1. On the **Add name and group** page under **Assessment name** enter *GLBA Compliance Assessment*.
+
+1. Under **Assessment group** select **Use existing group**, and select the *Default Group*.
+
+1. Select **Next**
+
+1. On the **Select services** page, select **Select services**.
+
+1. On the **Select services** fly out page, select the checkbox next to **Microsoft 365** then select **Add** at the bottom of the page.
+
+1. Back on the **Select services** page select **Next.**
+
+1. On the **Review and finish** page, review your selections then select **Create assessment** at the bottom of the screen.
+
+1. On the **New assessment created** page select **Done** to view your new assessment.
 
 <!--Sure, here's another example scenario:
 
