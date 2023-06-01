@@ -187,7 +187,7 @@ You have successfully managed your communication compliance policy by reviewing 
 
 ## Task 5 - Modify communication compliance policy
 
-In this task, you will make necessary modifications to the communication compliance policy based on the insights gained from the previous task. By reviewing the detected innocent message and evaluating the policy's behavior, you will fine-tune the policy settings to enhance its accuracy in identifying potential violations.
+In this task you will make modifications to your Communication compliance policy. You will fine-tune the policy settings and add new conditions to detect sensitive information to ensure your policy aligns with the compliance needs of Contoso Ltd.
 
 1. You should still be logged in with Joni's account in **Communication compliance** in the Microsoft Purview compliance portal.
 
@@ -214,3 +214,5 @@ In this task, you will make necessary modifications to the communication complia
 1. On the **Review and finish** page select **Save**.
 
 1. On the **Your policy was updated** page select **Done**.
+
+You have successfully modified your communication compliance policy to include a new condition for detecting a sensitive info type.
