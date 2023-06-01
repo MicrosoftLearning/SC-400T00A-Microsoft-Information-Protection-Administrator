@@ -17,29 +17,31 @@ As the Compliance Administrator for your organization, you are responsible for c
 
 ## Task 1: Assign Compliance Administrator Role
 
-In this exercise, you will assign the Compliance Administrator role to a user to grant them access to perform compliance-related tasks in the Microsoft Purview portal. Follow the steps to assign Joni Sherman to the role and ensure she has the necessary permissions to perform the tasks described in this lab.
+In this exercise, you will assign the Communication Compliance role to Joni to grant access to perform communication compliance tasks in the Microsoft Purview portal.
 
-1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
+1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
 
-1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown 
+1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown.
 
-1. On the **Permissions** page select Roles
+1. On the **Permissions** page select Roles.
 
-1. On the **Role groups for Microsoft Purview solutions** page select **Compliance Administrator**
+1. On the **Role groups for Microsoft Purview solutions** page select **Communication Compliance**.
 
-1. Select **Edit** from the **Compliance Administrator** pane
+1. Select **Edit** from the **Communication Compliance** flyout page on the right.
 
-1. On the **Edit members of the role group** page select **+ Choose users**
+1. On the **Edit members of the role group** page select **+ Choose users**.
 
-1. In the **Choose users** pane select the check box next to Joni Sherman then select **Select**
+1. In the **Choose users** page select the check box next to Joni Sherman then select **Select**.
 
-1. On the **Edit members of the role group** page select **Next**
+1. On the **Edit members of the role group** page select **Next**.
 
-1. On the **Review the role group and finish** page select **Save**
+1. On the **Review the role group and finish** page select **Save**.
 
-1. On the **You successfully updated the role group** page select **Done**
+1. On the **You successfully updated the role group** page select **Done**.
 
-1. Sign out of the **MOD Administrator** account
+1. Sign out of the **MOD Administrator** account and close all browser windows.
+
+You have successfully assigned the Communication Compliance role to Joni Sherman, granting her access to perform communication compliance tasks in the Microsoft Purview portal.
 
 ## Task 2 – Configure a Custom Policy
 
@@ -85,7 +87,7 @@ In this exercise, you will configure a custom policy in Microsoft Communication 
 
 1. On the **Review and finish** page select **Create policy**
 
-1. The **Your policy was created** page will be displayed. If the **Name and describe your policy** window appears to create a new communication compliance policy appears, select **Cancel** in the bottom right to close this prompt.
+1. On the **Your policy was created** page select **Done**.
 
 1. Your communication compliance policy has been created.
 
@@ -93,7 +95,7 @@ In this exercise, you will configure a custom policy in Microsoft Communication 
 
 ## Task 3 – Test your custom policy
 
-In this task, you will verify the effectiveness of your configured custom policy. Through a series of tests using different scenarios, you will assess the policy's ability to identify and flag sensitive financial information. These tests provide valuable real-world insights into the policy's behavior.
+In this task, you will verify the effectiveness of your configured custom policy. Through testing different scenarios, you will assess the policy's ability to identify and flag sensitive financial information. These tests provide valuable real-world insights into the policy's behavior.
 
 >**Note:** Make sure you give your policies time to activate before testing the policy. Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take approximately 48 hours to fully process in a policy.
 
@@ -123,90 +125,92 @@ In this task, you will verify the effectiveness of your configured custom policy
 
 1. Logout of Lynne's account, and close all browser windows.
 
-## Task 4 - Manage communication compliance policy
+You have successfully tested your custom policy to verify its effectiveness in identifying and flagging sensitive financial information.
 
-In this task, you will take control of the communication compliance policy and oversee its management within the Microsoft Purview portal. By following the provided steps, you will review pending items, resolve notifications, tag items, send notices, and escalate remediation actions.
+## Task 4 - Manage your communication compliance policy
+
+In this task, you will manage your communication compliance policy in the Microsoft Purview portal.You will review and take action on the pending items for the **Detect Financial Secrets** policy to ensure your policy is working effectively to identify and handle any potential compliance issues.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
-1. Navigate to **Communication Copmliance** from the left navigation bar.
+1. Navigate to **Communication compliance** from the left navigation bar.
 
-1. Select **Policies**
+1. Select **Policies**.
 
-1. Review the **Items pending review** for the Detect Financial Secrets policy
+1. Review the **Items pending review** for the Detect Financial Secrets policy.
 
     >**Note:** Please note that if the **Items pending review** count is 0, it might require additional time for your tests to be completely processed by the policy. Keep in mind that email messages can take approximately 24 hours to fully process within a policy.
 
-1. Select the **Detect Financial Secrets** policy to review the pending items. The three test emails will be in this view. 
+1. Select the **Detect Financial Secrets** policy to review the pending items. The three test emails will be in this view.
 
-1. Select the item with the subject **Big Secret!**
+1. Select the item with the subject **Big Secret!**.
 
-1. Since this message is a simple notification of a party, select **Resolve**. In the **Resolve** pane enter **Policy modification needed** in the **Comment** field then select **Resolve**
+1. Since this message is a simple notification of a party, select **Resolve**. In the **Resolve** pane enter **Policy modification needed** in the **Comment** field then select **Resolve**.
 
-1. There will now be 2 pending items for the Detect Financial Secrets policy. Select the item with the subject **New Secret Message**
+1. There will now be 2 pending items for the Detect Financial Secrets policy. Select the item with the subject **New Secret Message**.
 
-1. Under the message that appears in the right, select **Tag as**
+1. Under the message that appears in the right, select **Tag as**.
 
-1. In the **Tag item** pane, select **Questionable**. In the **Comment** field enter **Questionable secret item** then select **Save**
+1. In the **Tag item** pane, select **Questionable**. In the **Comment** field enter **Questionable secret item** then select **Save**.
 
-1. In the Detect Financial Secrets policy, select the item with the subject **Northwind Acquisition**
+1. In the Detect Financial Secrets policy, select the item with the subject **Northwind Acquisition**.
 
-1. Select **Notify** under the Northwind Acquisition item
+1. Select **Notify** under the Northwind Acquisition item.
 
-1. In the **Send a notice pane** select the dropdown for **Chose a notice template**. Select **+Create a new notification** to create a new notice template
+1. In the **Send a notice pane** select the dropdown for **Chose a notice template**. Select **+Create a new notification** to create a new notice template.
 
-1. In the **Create a notice template** pane, enter **Offending message** in the **Template Name** field
+1. In the **Create a notice template** pane, enter **Offending message** in the **Template Name** field.
 
-1. In the **Send from:** field enter **Joni Sherman** and select the suggested user
+1. In the **Send from:** field enter **Joni Sherman** and select the suggested user.
 
 1. In the **Subject** field enter **Offending message detected**. In the **Message body** enter **This is to notify an offending message was detected and will be escalated.**
 
-1. Select **Create**
+1. Select **Create**.
 
-1. In the **Notice template Offending message was created** pane select **Close**
+1. In the **Notice template Offending message was created** pane select **Close**.
 
-1. In the **Send a notice** pane under **Choose a notice template**, select the newly created **Offending message** notice template then select **Save**
+1. In the **Send a notice** pane under **Choose a notice template**, select the newly created **Offending message** notice template then select **Save**.
 
-1. In the **Notification has been sent** pane select **Close**
+1. In the **Notification has been sent** pane select **Close**.
 
-1. In the Detect Financial Secrets policy, select the item with the subject **Northwind Acquisition** 
+1. In the Detect Financial Secrets policy, select the item with the subject **Northwind Acquisition**.
 
-1. Select **Escalate** under the Northwind Acquisition item
+1. Select **Escalate** under the Northwind Acquisition item.
 
-1. In the **Escalate remediation for this item** select **MOD Administrator** as an additional reviewer. In the **Reason for escalation** field enter **Data leak plans detected.** then select **Escalate**
+1. In the **Escalate remediation for this item** select **MOD Administrator** as an additional reviewer. In the **Reason for escalation** field enter **Data leak plans detected.** then select **Escalate**.
 
-1. In the **Escalation has been sent** pane select **Close**
+1. In the **Escalation has been sent** pane select **Close**.
 
-1. Back in the view for the message for the Northwind Acquisition message, select **Tag as**. In the **Tag item** pane select **Non-compliant**. Enter **Non-compliant message** in the **Comment** field then select **Save**
+1. Back in the view for the message for the Northwind Acquisition message, select **Tag as**. In the **Tag item** pane select **Non-compliant**. Enter **Non-compliant message** in the **Comment** field then select **Save**.
+
+You have successfully managed your communication compliance policy by reviewing and resolving pending items.
 
 ## Task 5 - Modify communication compliance policy
 
 In this task, you will make necessary modifications to the communication compliance policy based on the insights gained from the previous task. By reviewing the detected innocent message and evaluating the policy's behavior, you will fine-tune the policy settings to enhance its accuracy in identifying potential violations.
 
-1. You should still be logged in with Joni's account. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and navigate to **Communication Compliance**.
+1. You should still be logged in with Joni's account in **Communication compliance** in the Microsoft Purview compliance portal.
 
-1. Select **Policies** from the top navigation pane
+1. Select **Policies** from the top navigation pane.
 
-1. Select the check box next to the **Detect Financial Secrets** policy
+1. Select the check box next to the **Detect Financial Secrets** policy.
 
-1. Select **Edit** from the top navigation pane
+1. Select **Edit** from the top navigation pane.
 
-1. On the **Name and describe your policy** page select **Next**
+1. On the **Name and describe your policy** page select **Next**.
 
-1. On the **Choose users and reviewers** page select **Next**
+1. On the **Choose users and reviewers** page select **Next**.
 
-1. On the **Choose locations to detect communications** page select **Next**
+1. On the **Choose locations to detect communications** page select **Next**.
 
-1. On the **Choose locations to detect communications** page select **+Add Condition** then select **Content contains any of these sensitive info types**
+1. On the **Choose locations to detect communications** page select **+Add Condition** then select **Content contains any of these sensitive info types**.
 
-1. Under **Content contains any of these sensitive info types** select **Add** then select **Sensitive info types**
+1. Under **Content contains any of these sensitive info types** select **Add** then select **Sensitive info types**.
 
 1. In the **Sensitive info types** pane search for **Credit Card Number** and select the check box next to this sensitive info type.
 
-1. Select **Add** to add this sensitive info type to this condition then select **Next**
+1. Select **Add** to add this sensitive info type to this condition then select **Next**.
 
-1. On the **Review and finish** page select **Save**
+1. On the **Review and finish** page select **Save**.
 
-1. If window to **Name and describe your policy** appears again, select **Cancel** in the bottom right
-
-1. On the **Communication compliance** screen the **Detect Financial Secrets** policy status is now **Updating**
+1. On the **Your policy was updated** page select **Done**.
