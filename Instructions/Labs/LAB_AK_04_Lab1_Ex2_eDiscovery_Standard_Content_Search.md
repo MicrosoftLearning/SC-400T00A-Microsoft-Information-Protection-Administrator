@@ -6,9 +6,11 @@ lab:
 
 # Lab 4 - Exercise 2 - eDiscovery (Standard) and Content search
 
-Assuming the role of Joni Sherman, a Compliance Administrator for Contoso Ltd., you're confronted with a wrongful termination lawsuit from a former employee. Your task involves securing relevant electronic data related to the case by imposing a legal hold on all pertinent data sources. The legal hold, defined by specific date range, keywords, and content locations, ensures no data is lost or altered. Following the data preservation, you'll proceed to review and analyze the secured information to discern any evidence supporting or refuting the ex-employee's allegations, aiding Contoso Ltd.'s defense in this legal dispute.
+You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Currently, Contoso Ltd. is dealing with a wrongful termination lawsuit filed by a former employee. As part of your responsibility, you are entrusted with the task of preserving the necessary electronic data relevant to the case. To accomplish this, you will use eDiscovery (Standard) to identify and secure the relevant information. By using eDiscovery techniques, you'll make sure that Contoso Ltd. can meet its legal obligations by preserving and accessing the necessary electronic evidence for the lawsuit.
 
 ## Task 1 - Create an eDiscovery (Standard) Case
+
+In this task,you will create an eDiscovery (Standard) case as Joni Sherman.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
@@ -34,7 +36,11 @@ Assuming the role of Joni Sherman, a Compliance Administrator for Contoso Ltd., 
 
 1. Back on the **Access & permissions** page, select **Exit** to go back to the case settings page.
 
+You have now successfully created an eDiscovery (Standard) case titled "Wrongful Termination Case" and added Diego Siciliani as a member to manage access and permissions.
+
 ## Task 2 - Create an eDiscovery (Standard) hold
+
+In Task 2 you will create an eDiscovery (Standard) hold as part of the "Wrongful Termination Case" previously created. This hold preserves all relevant electronic data related to the Contoso Ltd. wrongful termination lawsuit.
 
 1. You should still be logged in with Joni's account. If not, open **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -64,7 +70,11 @@ Assuming the role of Joni Sherman, a Compliance Administrator for Contoso Ltd., 
 
 1. You should get a message that the hold **Succeeded**. On this page select **Done**.
 
+You have successfully created an eDiscovery (Standard) hold.
+
 ## Task 3 - Create an eDiscovery (Standard) search
+
+In Task 3 you will an eDiscovery (Standard) search within the "Wrongful Termination Case" previously created. This search aims to identify and collect all relevant electronic data related to the Contoso Ltd. wrongful termination lawsuit.
 
 1. You should still be logged in with Joni's account. If not, open **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -88,9 +98,11 @@ Assuming the role of Joni Sherman, a Compliance Administrator for Contoso Ltd., 
 
 1. On the **New search created** page select **Done**.
 
+By successfully creating the "Wrongful Termination Search" using the KQL editor and defining the search conditions, you have initiated a search process to identify and collect all relevant electronic data related to the Contoso Ltd. wrongful termination lawsuit.
+
 ## Task 4: Export search results
 
-In this exercise, you will learn how to export content search results.
+In this task you will export the search results obtained from the "Wrongful Termination Search."
 
 1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -142,9 +154,11 @@ In this exercise, you will learn how to export content search results.
     - **Trace.log:** Contains detailed logging information about the export process and can help uncover issues during export.
     - All search results and the export reports are included in a folder that has the same name as the Content search. The email messages that were exported are located in a folder named **Exchange**. Documents are located in a folder named **SharePoint**.
 
+You have successfully exported the search results for the **Wrongful Termination Search**.
+
 ## Task 5: Export search report
 
-After the search is complete, review the search results to identify any potential security or compliance issues related to the Wrongful Termination.
+In this task, you will review the search results obtained from the "Wrongful Termination Search" to identify any potential security or compliance issues related to the case.
 
 1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -193,3 +207,5 @@ After the search is complete, review the search results to identify any potentia
     - **Trace.log:** Contains detailed logging information about the export process and can help uncover issues during export.
 
 1. Once you're finished reviewing the exported results, close the eDiscovery Export Tool and the file explorer windows then navigate back to Internet Explorer.
+
+You have successfully exported the search report for the **Wrongful Termination Search**. The report includes information such as an export summary, manifest, detailed item results, and a trace log. Review and analyze these findings to uncover insights relevant to the case. Once you have completed the review, you can close the eDiscovery Export Tool and file explorer windows.
