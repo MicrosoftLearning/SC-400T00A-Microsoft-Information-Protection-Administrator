@@ -14,11 +14,13 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 # Lab: Explore the Microsoft Purview compliance portal & Compliance Manager
 
-test 12
+You are Joni Sherman, the Compliance Administrator for Contoso Ltd., responsible for configuring and maintaining compliance within the organization's Microsoft 365 tenant. Contoso Ltd. has offices that operate in the financial sector and is subject to various regulatory requirements, including the Gramm-Leach-Bliley Act (GLBA) in the United States.
+
+As part of your responsibilities, you need to conduct a compliance assessment specifically focused on GLBA requirements within the Microsoft 365 environment. The assessment will involve evaluating the current compliance posture, identifying any potential compliance gaps, and implementing appropriate measures to address them.
 
 ## Task 1 - Assign Compliance manager permissions
 
-test
+In this task you will grant Joni the required permissions to create assessments using Compliance Manager. You will also grant Megan the necessary permissions to act on improvement actions if they are assigned to her.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
@@ -62,7 +64,11 @@ test
 
 1. Log out of the MOD Administrator account and close all windows.
 
+In this task, you granted Joni the necessary permissions to create assessments using Compliance Manager and also assigned Megan the appropriate permissions to act on improvement actions when assigned to her.
+
 ## Task 2 - Explore Compliance Manager
+
+In this task, you will explore the functionalities of Compliance Manager within the Microsoft Purview compliance portal center. 
 
 1. Open **Microsoft Edge** and navigate to **https://compliance.microsoft.com**. Log into the Microsoft Purview compliance portal center as **Joni Sherman**.
 
@@ -83,6 +89,8 @@ test
 1. Select the **Data Protection Baseline** assessment. On the left side of the page is the overview that includes details and about information. Expand the **About** section and review the description about the Microsoft 35 data protection baseline. On the right side of the page, notice the information available on the progress tab and for the improvement actions. On the top of the page are tabs you can select view more detailed information on the Controls, your improvement actions, and Microsoft actions. Explore these at will.
 
 1. From the top left of the page, above where it says Data Protection Baseline for Microsoft 365 (the breadcrumb), select **Assessment** to return to the assessments tab in Compliance Manager.
+
+In this task, you explored the functionalities of Compliance Manager within the Microsoft Purview compliance portal center, including reviewing the compliance overview, improvement actions, solutions, and assessments, gaining insights into key features and capabilities.
 
 ## Task 3 - Create an assessment
 
@@ -116,7 +124,11 @@ test
 
 1. On the **New assessment created** page select **Done** to view your new assessment.
 
+You have successfully created the GLBA Compliance Assessment within Compliance Manager, enabling you to assess Contoso Ltd.'s compliance with the Gramm-Leach-Bliley Act (GLBA) in Microsoft 365.
+
 ## Task 4 - Assign improvement action
+
+In this task, you will create a new assessment within Compliance Manager to evaluate Contoso Ltd.'s compliance with the Gramm-Leach-Bliley Act (GLBA). 
 
 1. You should still be logged in with Joni's account and logged into the **Compliance Manager** within the Microsoft Purview compliance portal. You should be on the **GLBA Compliance Assessment** that was created in the previous task.
 
@@ -138,7 +150,9 @@ test
 
 1. Back on the **Use default DLP policies for US Gramm Leach Bliley Act** page, you should see this improvement action has been assigned to Megan Bowen.
 
-## Task 6 - Act on improvement action
+## Task 5 - Act on improvement action
+
+In this task, you will log into the Client 2 VM (LON-CL2) and navigate to Outlook to access Megan Bowen's email. You will then review and act upon the assigned improvement action in Compliance Manager.
 
 1. Leave Client 1 VM (LON-CL1) open as it is, and log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
@@ -193,7 +207,11 @@ test
 
 1. Back on the **Data loss prevention** page, you will see a new DLP policy for **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced** that satisfies the assigned improvement action.
 
-## Task 7 - Update improvement action
+Upon completing the creation and activation of the new DLP policy for **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced**, you will have satisfied the requirements of the assigned improvement action.
+
+## Task 6 - Update improvement action
+
+In this final task, you will log back into Client 1 VM (LON-CL1) and make necessary updates to the assigned improvement action within Compliance Manager. 
 
 1. Log back into Client 1 VM (LON-CL1). You should still be logged in with Joni's account, viewing the **Use default DLP policies for US Gramm Leach Bliley Act** page.
 
@@ -247,3 +265,5 @@ test
 1. On the **Actions updated** page select **Finish**.
 
 1. Back on the **Compliance Manager** page under the **Improvement actions** tab, select **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced**. Review the changes made in the previous step under the **Implementation** and **Testing** tabs.
+
+You have successfully updated the improvement action.
