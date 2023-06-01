@@ -10,7 +10,7 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Currently, C
 
 ## Task 1 - Create an eDiscovery (Standard) Case
 
-In this task,you will create an eDiscovery (Standard) case as Joni Sherman.
+In this task, you will create an eDiscovery (Standard) case as Joni Sherman.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
@@ -140,7 +140,7 @@ In this task you will export the search results obtained from the "Wrongful Term
 
 1. Back in the **eDiscovery Export Tool** select **Start** to export the files.
 
-1. Once you get a green check mark for **Processing has completed.** your report has been downloaded. Select **Close** to close the window.
+1. Once you get a green check mark for **Processing has completed.** Your report has been downloaded. Select **Close** to close the window.
 
 1. In the **eDiscovery Export Tool**, select the link for the **Export Location:** to open the locally exported files.
 
