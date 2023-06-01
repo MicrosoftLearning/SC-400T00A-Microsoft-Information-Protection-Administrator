@@ -193,3 +193,57 @@ test
 
 1. Back on the **Data loss prevention** page, you will see a new DLP policy for **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced** that satisfies the assigned improvement action.
 
+## Task 7 - Update improvement action
+
+1. Log back into Client 1 VM (LON-CL1). You should still be logged in with Joni's account, viewing the **Use default DLP policies for US Gramm Leach Bliley Act** page.
+
+1. On the **Overview** pane under **Testing source**, select the dropdown for **Select source type** and change the source to **Manual**.
+
+1. Select **Save** in the top right hand corner.
+
+1. From the **Compliance Manager > Improvement actions > Use default DLP policies for US Gramm Leach Bliley Act** bread crumb at the top of the page, select **Improvement actions** to navigate back to the list of improvement actions.
+
+1. Under **Filters** select **Regulations** then select **Gramm-Leach-Bliley Act**. Select **Solutions** then select **Data loss prevention**.
+
+1. With the filters selected, it should be easier to find the improvement action for **Use default DLP policies for US Gramm Leach Bliley Act**. Select the checkbox next to **Use default DLP policies for US Gramm Leach Bliley Act** then select **Export actions** above the filter selections.
+
+1. Open a new Microsoft Edge window or tab and navigate to **https://onedrive.com** and sign in with Joni's account.
+
+1. Select **Upload** from the top navigation buttons, then select **Files**.
+
+1. Select **Downloads** from the explorer window that opens, then select the **ExportActions.xlsx** file that was downloaded in a previous step then select **Open**.
+
+1. Select the **ExportActions.xlsx** file in OneDrive to edit the document.
+
+1. Review the **How to update Actions** tab in the Excel document.
+
+1. In the **Action Update** tab:
+    - Update the **implementationStatus** from **NotImplemented** to **Implemented**
+    - Update the **Implementation Date** to today's date with a time of 0:0:00
+    - Update the **Implementation Notes** to *Action implemented by Megan Bowen*
+    - Update the **Test Status** to *InProgress*
+    - Update the **Test Date** to a blank value
+
+1. From the top navigation ribbon in Excel, select **File**, then select **Save As**. In the **Save As** pane, select **Download a Copy**. The file will save in the **Downloads** folder of your VM.
+
+1. Navigate back to your Microsoft Purview compliance portal tab or window.
+
+1. You should still have the **Compliance Manager** window open displaying the **Improvement actions** tab with the filters set to easily display the improvement action for **Use default DLP policies for US Gramm Leach Bliley Act**.
+
+1. Select the checkbox next to **Use default DLP policies for US Gramm Leach Bliley Act** then select **Update actions**.
+
+1. In the **Update improvement actions** wizard on the **Complete prerequisites** page, select the checkboxes for **Make sure your improvement actions are associated with at least one assessment.** and **Export improvement actions that need updating in a specifically formatted Excel file.** then select **Next**.
+
+1. On the **Import updated improvement actions** page under **Upload Excel file** select **Browse**.
+
+1. In the explorer window that opens, select **Downloads** from the left navigation pane. Select the **ExportActions** file that was downloaded in a previous step.
+
+    >**Note:** The default download location for Excel 365 is the Downloads folder. The name will likely have a number appended to the end of the file name. For example, your ExportActions file might be named **ExportActions (1).xlsx**. If multiple attempts were made at saving the Excel file, it may have a different number at the end of the file name.
+
+1. Your ExportActions file will be uploaded. If there are no errors with the file, select **Next**. If there are any issues with the file, address the errors stated on this page.
+
+1. On the **Review and finish** page select **Update actions**.
+
+1. On the **Actions updated** page select **Finish**.
+
+1. Back on the **Compliance Manager** page under the **Improvement actions** tab, select **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced**. Review the changes made in the previous step under the **Implementation** and **Testing** tabs.
