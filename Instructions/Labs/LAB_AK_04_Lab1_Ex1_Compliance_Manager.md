@@ -104,13 +104,13 @@ In this task, you explored the functionalities of Compliance Manager within the 
 
 1. On the **Select regulation** fly out page, search for *Gramm*.
 
-1. Select the checkbox next to **GGramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**  then select **Save**.
+1. Select the checkbox next to **Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**  then select **Save**.
 
 1. Back on the **Base your assessment on a regulation** select **Next**.
 
 1. On the **Add name and group** page under **Assessment name** enter *GLBA Compliance Assessment*.
 
-1. Under **Assessment group** select **Use existing group**, and select the *Default Group*.
+1. Under **Assessment group** select **Use existing group** and select the *Default Group*.
 
 1. Select **Next**
 
@@ -162,7 +162,7 @@ In this task, you will log into the Client 2 VM (LON-CL2) and navigate to Outloo
 
 1. Megan should have an email with the subject **Compliance Manager** in their inbox.
 
-1. Select this message, and click **View Action Item Assigned to you** to open the assigned improvement action.
+1. Select this message and click **View Action Item Assigned to you** to open the assigned improvement action.
 
 1. Explore the improvement action. 
     - **Overview**: Contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing how the action is tested.
@@ -175,7 +175,7 @@ In this task, you will log into the Client 2 VM (LON-CL2) and navigate to Outloo
 
     - **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work.
 
-1. Select the **Implementation** tab, and review the suggested implementation. Scroll down to the bottom of the page, and select **Launch now** under **Prerequisites and licensing requirements**.
+1. Select the **Implementation** tab and review the suggested implementation. Scroll down to the bottom of the page and select **Launch now** under **Prerequisites and licensing requirements**.
 
 1. This will open directly to the **Data loss prevention** page as suggested by the improvement action. Select the **Policies** tab at the top of the page.
 
@@ -217,7 +217,7 @@ In this final task, you will log back into Client 1 VM (LON-CL1) and make necess
 
 1. On the **Overview** pane under **Testing source**, select the dropdown for **Select source type** and change the source to **Manual**.
 
-1. Select **Save** in the top right hand corner.
+1. Select **Save** in the top right-hand corner.
 
 1. From the **Compliance Manager > Improvement actions > Use default DLP policies for US Gramm Leach Bliley Act** bread crumb at the top of the page, select **Improvement actions** to navigate back to the list of improvement actions.
 
