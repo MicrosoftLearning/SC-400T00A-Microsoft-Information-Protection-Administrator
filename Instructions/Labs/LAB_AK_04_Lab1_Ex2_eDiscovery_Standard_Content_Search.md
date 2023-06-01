@@ -206,6 +206,6 @@ In this task, you will review the search results obtained from the "Wrongful Ter
     - **Results:** An Excel document providing details about each indexed item in the search results. For emails, it includes message location, date, subject, sender, and recipients. For SharePoint and OneDrive for Business documents, it includes document URL, site collection URL, modification date, and document name.
     - **Trace.log:** Contains detailed logging information about the export process and can help uncover issues during export.
 
-1. Once you're finished reviewing the exported results, close the eDiscovery Export Tool and the file explorer windows then navigate back to Internet Explorer.
+1. Once you're finished reviewing the exported results, close the eDiscovery Export Tool and the file explorer windows then navigate back to Microsoft Edge.
 
 You have successfully exported the search report for the **Wrongful Termination Search**. The report includes information such as an export summary, manifest, detailed item results, and a trace log. Review and analyze these findings to uncover insights relevant to the case. Once you have completed the review, you can close the eDiscovery Export Tool and file explorer windows.
