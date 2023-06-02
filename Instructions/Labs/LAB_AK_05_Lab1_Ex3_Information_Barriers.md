@@ -26,7 +26,7 @@ In this task, you'll verify the **Search by name** feature is enabled in Microso
 
 ## Task 2: Enable Admin Consent for Information barriers in Microsoft Teams
 
-In this task, you'll enable Admin Consent for Information Barriers (IB) in Microsoft Teams. This configuration ensures compliance by allowing the removal of non-IB compliant users from groups like Teams channels.
+In this task, you'll enable Admin Consent for Information barriers (IB) in Microsoft Teams. This configuration ensures compliance by allowing the removal of non-IB compliant users from groups like Teams channels.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 
@@ -58,11 +58,13 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 
 1. In the **Permissions requested** dialog box, review the information, and then select **Accept**.
 
+You have successfully installed the Azure AD module, granted the necessary permissions, and accepted the requested permissions, enabling you to proceed with the configurations using PowerShell.
+
 ## Task 3: Segment users in your organization
 
-In this task, you'll use PowerShell to segment users in your organization. By following the provided steps, you'll create segments named **Legal** and **Marketing** based on specific department criteria. PowerShell enables efficient and scalable user management, allowing you to customize and organize your user base effectively.
+In this task, you will use PowerShell to connect to the Security & Compliance module and create organization segments for the **Legal** and **Marketing** departments.
 
-1. The elevated powershell window should still be open.
+1. The elevated PowerShell window should still be open.
 
 1. In the **PowerShell** window, enter the cmdlet to connect to the Security & Compliance PowerShell
 
@@ -90,11 +92,13 @@ In this task, you'll use PowerShell to segment users in your organization. By fo
     Get-OrganizationSegment
     ````
 
+You have successfully connected to the Security & Compliance PowerShell, created organization segments for the Legal and Marketing departments, and viewed the segments using the Get-OrganizationSegment cmdlet.
+
 ## Task 4: Create Information barrier policies
 
-In this task, you'll use PowerShell to create information barrier policies. By following the provided steps, you'll create a policy named **Marketing-LegalFinance** and define the allowed and blocked segments. PowerShell provides a flexible and efficient way to manage policies, allowing you to customize information flow within your organization.
+In this task, you will use PowerShell to create Information barrier policies to block communication between the Legal and Marketing departments.
 
-1. The elevated powershell window should still be open.
+1. The elevated PowerShell window should still be open.
 
 1. Run the **New-InformationBarrierPolicy** cmdlet with the **SegmentsBlocked** parameter to create a new **Legal-Marketing** policy:
 
@@ -118,9 +122,13 @@ In this task, you'll use PowerShell to create information barrier policies. By f
 
     >**Note:** Ensure the policies are marked as **Active** when reviewing the policies that were created. Information barrier policies must be active before they are applied.
 
+You have successfully created the Legal-Marketing and Marketing-Legal information barrier policies using PowerShell and verified their status as active by running the Get-InformationBarrierPolicy cmdlet.
+
 ## Task 5: Apply Information barrier policies
 
-1. The elevated powershell window should still be open.
+In this task, you will use PowerShell to apply the active Information barrier policies and check their application status.
+
+1. The elevated PowerShell window should still be open.
 
 1. Run the **Start-InformationBarrierPoliciesApplication** cmdlet to apply the active Information barrier policies:
 
@@ -134,4 +142,8 @@ In this task, you'll use PowerShell to create information barrier policies. By f
     Get-InformationBarrierPoliciesApplicationStatus
     ````
 
->**Note:** Allow 30 minutes for the system to start applying the policies.
+    >**Note:** Allow 30 minutes for the system to start applying the policies.
+
+1. Once the policy is applied, the **Status** will update from **NotStarted** to **Completed**.
+
+You have successfully applied the Information barrier policies by running the Start-InformationBarrierPoliciesApplication cmdlet and verified their application status using the Get-InformationBarrierPoliciesApplicationStatus cmdlet.
