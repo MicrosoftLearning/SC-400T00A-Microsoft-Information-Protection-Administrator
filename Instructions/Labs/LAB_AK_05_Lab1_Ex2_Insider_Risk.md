@@ -158,6 +158,8 @@ You have successfully created the 'Financial Data Protection' policy, which will
 
 ## Task 4: Create a Notice template
 
+In this task, you will create a notice template in Microsoft Purview's Insider Risk Management, which allows you to automatically send email messages to users when a case is generated for risk activities, serving as reminders or providing information for compliance training.
+
 1. You should still be logged in as Joni in Microsoft Purview in Insider risk management.
 
 1. From the top navigation tabs, select **Notice template** then select **+ Create notice template**
@@ -173,11 +175,14 @@ You have successfully created the 'Financial Data Protection' policy, which will
         <html>
         <body>
         <h2>Alert: Potential Data Leak Detected</h2>
-        <p>We have detected a potential data leak related to your account. As part of our Insider risk management policy, we are required to investigate any suspicious activity related to data leaks.</p>
-        <p>We request that you review your recent activity and report any unusual behavior. Please review the Contoso User Code of Conduct <a href='https://contoso.com'>training</a> and reach out to our team if you have any questions.</p>
-        <p>Thank you,</p>
+        <p>We detected a potential data leak associated with your account. As part of our Insider Risk Management policy, we are required to investigate any suspicious activity related to data breaches.</p>
+        <p>Please review your recent actions, report any unusual behavior, and refer to the Contoso User Code of Conduct training at <a href='https://contoso.com'>https://contoso.com</a> for more information.</p>
+        <p>Thank you for your cooperation,</p>
         <p><em>Human Resources</em></p>
         </body>
         </html>
         ````
 
+1. Select **Create**.
+
+You have successfully created the 'Data Leak Policy Alert' notice template, enabling automated notifications to be sent to users when potential data leaks are detected, reinforcing security measures and promoting adherence to the Contoso User Code of Conduct.
