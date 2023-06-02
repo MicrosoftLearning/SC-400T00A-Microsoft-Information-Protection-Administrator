@@ -4,14 +4,6 @@ lab:
     module: 'Module 5 - Manage insider and privacy risk in Microsoft 365'
 ---
 
-## WWL Tenants - Terms of use
-
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
-
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
-
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
-
 # Lab 5 - Exercise 3
 
 As Joni, the Compliance Administrator for Contoso Ltd., your responsibility is to configure and manage Information Barriers in Microsoft 365. Information Barriers play a critical role in maintaining clear boundaries and preventing unauthorized communication between specific groups or individuals within your organization. By implementing Information Barriers, you ensure compliance with regulations, protect sensitive information, and minimize conflicts of interest. This setup will create a secure work environment, safeguarding data confidentiality and supporting Contoso Ltd.'s commitment to compliance.
@@ -30,11 +22,11 @@ In this task, you'll verify the **Search by name** feature is enabled in Microso
 
 1. On the **Changes will take time to take effect** pop up select **Confirm**
 
->**Note:** It may take a few hours for this change to take effect.
+    >**Note:** It may take a few hours for this change to take effect.
 
-## Task 2: Enable Admin Consent for Information Barriers in Microsoft Teams
+## Task 2: Enable Admin Consent for Information barriers in Microsoft Teams
 
-In this task, you'll enable Admin Consent for Information Barriers (IB) in Microsoft Teams. This configuration ensures compliance by allowing the removal of non-IB compliant users from groups like Teams channels. 
+In this task, you'll enable Admin Consent for Information Barriers (IB) in Microsoft Teams. This configuration ensures compliance by allowing the removal of non-IB compliant users from groups like Teams channels.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 
@@ -52,13 +44,13 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 
 1. Run the following PowerShell cmdlets:
 
-    ```powershell
+    ````powershell
     Connect-AzureAD -Tenant "<WWLxZZZZZZ>"
     $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
     $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
     if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
     Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
-    ```
+    ````
 
     >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
 
@@ -66,108 +58,80 @@ In this task, you'll enable Admin Consent for Information Barriers (IB) in Micro
 
 1. In the **Permissions requested** dialog box, review the information, and then select **Accept**.
 
-1. Close the PowerShell window once complete
-
-## Task 3: Segment users in your organization (Portal)
-
-In this task, you'll learn how to segment users in your organization using the Microsoft Purview portal. By following the provided steps, you'll create a segment named **Finance** and filter users based on their department. Segmentation helps organize users and enables targeted management and communication within your organization. Let's get started with the process.
-
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
-
-1. On the left navigation pane select **Information barriers** then select **Segments** from the drop down
-
-1. On the **Segments** page select **+ New Segment**
-
-1. On the **Provide a segment name** page enter **Finance** in the **Name** field then select **Next**
-
-1. On the **Add user group filter** page, under **User group filter** select **+ Add** then select **Member of** from the drop down
-
-1. In the **Department** field enter **Finance** then select **Next**
-
-1. Review your settings on the **Summary** page, then select **Submit**
-
-1. On the **Segment created** page select **Done**
-
-1. Back on the **Segments** page select **Refresh** to see the newly created **Finance** segment. Leave this window open, as we will be reviewing the Segments page in an upcoming task.
-
-## Task 4: Segment users in your organization (PowerShell)
+## Task 3: Segment users in your organization
 
 In this task, you'll use PowerShell to segment users in your organization. By following the provided steps, you'll create segments named **Legal** and **Marketing** based on specific department criteria. PowerShell enables efficient and scalable user management, allowing you to customize and organize your user base effectively.
 
-1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**
+1. The elevated powershell window should still be open.
 
-1. Confirm the **User Account Control** window with **Yes**
+1. In the **PowerShell** window, enter the cmdlet to connect to the Security & Compliance PowerShell
 
-1. In the **PowerShell** window, enter to connect to the Security & Compliance PowerShell
-	```powershell
-	 Connect-IPPSSession
-	 ```
-	 and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+    ````powershell
+    Connect-IPPSSession
+    ````
+
+    and sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. Run the **New-OrganizationSegment** cmdlet with the **UserGroupFilter** parameter to create a **Legal** segment:
 
-    ```powershell
+    ````powershell
     New-OrganizationSegment -Name "Legal" -UserGroupFilter "Department -eq 'Legal'"
-    ```
+    ````
 
 1. Run the **New-OrganizationSegment** cmdlet again to create a **Marketing** segment:
 
-    ```powershell
+    ````powershell
     New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"
-    ```
+    ````
 
-1. Go back to **Microsoft Edge** with the open **Segments** page and select **Refresh**. You should see the newly created **Legal** and **Marketing** segments on this page.
+1. Run the **Get-OrganizationSegment** cmdlet to view the segments that were created.
 
-    >**Note**: If you signed out of the compliance portal, navigate back to **https://compliance.microsoft.com** in **Microsoft Edge** and log in with Joni's account. Navigate to **Information barriers** on the left navigation pane. Select **Segments** from the drop down, and  you should see the newly created **Legal** and **Marketing** segments on this page.
+    ````powershell
+    Get-OrganizationSegment
+    ````
 
-## Task 5: Create information barrier policies (Portal)
-
-In this task, you'll create information barrier policies using the Microsoft Purview compliance portal. By following the provided steps, you'll create a policy named **Finance-Legal** and configure communication and collaboration settings for the **Finance** segment. These policies help enforce restrictions and control information flow between different segments within your organization.
-
-1. Ensure you're signed into the Microsoft Purview compliance portal with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
-
-1. In the compliance portal select **Information barriers** from the left navigation pane, then select **Policies**
-
-1. On the **Policies** page select **+ Create Policy**
-
-1. On the **Provide a policy name** page enter **Finance-Legal** then select **Next**
-
-1. On the **Add assigned segment details** page select **+ Choose segment**. In the **Select assigned segment for this policy** pane select **Finance** then select **Add**
-
-1. Back on the *Add assigned segment details** select **Next**
-
-1. On the **Configure communication and collaboration details** select the drop down for **Communication and collaboration** and select the setting for **Blocked**
-
-1. Select **+ Choose segment** and in the **Select segments to allow or block** pane select **+ Legal** then select **Add**
-
-1. Back on the **Configure communication and collaboration details** page select **Next** 
-
-1. On the **Configure policy status** page select the toggle to switch the policy **On** then select **Next**
-
-1. On the **Summary** page review your settings then select **Submit**
-
-1. On the **Policy created** page select **Done**. Leave this window open, as we will be reviewing the Policies page in an upcoming task.
-
-## Task 6: Create information barrier policies (PowerShell)
+## Task 4: Create Information barrier policies
 
 In this task, you'll use PowerShell to create information barrier policies. By following the provided steps, you'll create a policy named **Marketing-LegalFinance** and define the allowed and blocked segments. PowerShell provides a flexible and efficient way to manage policies, allowing you to customize information flow within your organization.
 
-1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**
+1. The elevated powershell window should still be open.
 
-1. In the **PowerShell** window, enter to connect to the Security & Compliance PowerShell
-	```powershell
-	 Connect-IPPSSession
-	 ```
-	 and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. Run the **New-InformationBarrierPolicy** cmdlet with the **SegmentsBlocked** parameter to create a new **Legal-Marketing** policy:
 
-1. Run the **New-InformationBarrierPolicy** cmdlet with the **SegmentsAllowed** parameter to create a new **Marketing-Legal** policy:
+    ````powershell
+    New-InformationBarrierPolicy -Name "Legal-Marketing" -AssignedSegment "Legal" -SegmentsBlocked "Marketing" -State Active
+    ````
 
-    ```powershell
-    New-InformationBarrierPolicy -Name "Marketing-LegalFinance" -AssignedSegment "Marketing" -SegmentsBlocked "Legal","Finance" -State Inactive
-    ```
+1. When the notice on Information barriers policy warning is displayed in PowerShell type **Y** then press **Enter** to proceed with creating the policy.
 
-1. When the notice on information barriers policy warning is displayed in PowerShell type **Y** then press **Enter** to proceed with creating the policy
+1. Now an information barrier policy must be created to block in the opposite direction. Run the **New-InformationBarrierPolicy** cmdlet with the **SegmentsBlocked** parameter to create a new **Marketing-Legal** policy:
 
-1. Go back to **Microsoft Edge** with the open **Policies** page and select **Refresh**. You should see the newly created **Marketing-LegalFinance** policy created.
+    ````powershell
+    New-InformationBarrierPolicy -Name "Marketing-Legal" -AssignedSegment "Marketing" -SegmentsBlocked "Legal" -State Active
+    ````
 
-    >**Note**: If you signed out of the compliance portal, navigate back to **https://compliance.microsoft.com** in **Microsoft Edge** and log in with Joni's account. Navigate to **Information barriers** on the left navigation pane. Select **Policies** from the drop down, and  you should see the newly created **Marketing-LegalFinance** policy created.
+1. Run the **Get-InformationBarrierPolicy** cmdlet to view the policies that were created.
+
+    ````powershell
+    Get-InformationBarrierPolicy
+    ````
+
+    >**Note:** Ensure the policies are marked as **Active** when reviewing the policies that were created. Information barrier policies must be active before they are applied.
+
+## Task 5: Apply Information barrier policies
+
+1. The elevated powershell window should still be open.
+
+1. Run the **Start-InformationBarrierPoliciesApplication** cmdlet to apply the active Information barrier policies:
+
+    ````powershell
+    Start-InformationBarrierPoliciesApplication
+    ````
+
+1. Run the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet to view the applied policies.
+
+    ````powershell
+    Get-InformationBarrierPoliciesApplicationStatus
+    ````
+
+>**Note:** Allow 30 minutes for the system to start applying the policies.
