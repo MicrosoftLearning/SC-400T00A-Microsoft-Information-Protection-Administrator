@@ -4,6 +4,7 @@ lab:
     module: 'Module 1 - Implement Information Protection'
 ---
 ## WWL Tenants - Terms of use
+
 If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
 
 Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
@@ -12,7 +13,7 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 # Lab 1 - Exercise 1 - Manage Compliance Roles
 
-In your role as Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. you are tasked to configure the new Microsoft 365 tenant of your organization, to meet the organizations compliance requirements. Contoso Ltd. is a company with a headquarters in the United States and several new subsidiaries in the European Union and your organization needs to make sure the new Microsoft 365 tenant fulfills the legal requirements of different countries and regulatory requirements of your industry sector.
+As the recently hired Compliance Administrator for Contoso Ltd. in the role of Joni Sherman, your responsibility is to configure your organization's new Microsoft 365 tenant to meet its compliance requirements. Contoso Ltd. is a company headquartered in the United States with new subsidiaries in the European Union, and it is essential for your organization to ensure that the new Microsoft 365 tenant complies with legal requirements in different countries and regulatory standards in your industry sector.
 
 ## Task 1 – Assign Compliance Roles
 
