@@ -12,7 +12,7 @@ To effectively manage insider risks, you implement Microsoft Purview Insider Ris
 
 ## Task 1: Assign Insider Risk Management Role
 
-In this exercise, you will assign theInsider Risk Management role to Joni to grant access to perform insider risk tasks in the Microsoft Purview portal.
+In this exercise, you will assign the Insider Risk Management role to Joni to grant access to perform insider risk tasks in the Microsoft Purview portal.
 
 1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
 
@@ -53,7 +53,7 @@ In this task, you will customize the Insider risk management settings in the Mic
     - **Privacy**: Allows you to select displaying usernames or anonymized versions in alerts and cases.
     - **Policy indicators**: Involves configuring the policy template using specific risk indicators.
     - **Policy timeframes**: Defines review periods triggered by policy matches based on events and activities.
-    - **Intelligent detections**: Controls alert volume, excludes certain entities from risk scoring and allows for filtering of Microsoft Defender alerts.
+    - **Intelligent detections**: Controls alert volume, excludes certain entities from risk scoring and allows filtering of Microsoft Defender alerts.
     - **Export alerts**: Exports risk alert information to SIEM and SOAR solutions using Office 365 Management Activity APIs.
     - **Priority user groups**: Determines high-risk users for closer inspection and more sensitive risk scoring.
     - **Priority physical assets (preview)**: Identifies and monitors access to priority physical assets correlating activity to user events.
@@ -61,7 +61,7 @@ In this task, you will customize the Insider risk management settings in the Mic
     - **Microsoft Teams (preview)**: Enables Microsoft Teams for collaboration on insider risk management cases.
     - **Analytics**: Assesses potential insider risks without configuring policies to guide policy creation.
     - **Admin notifications**: Automatically sends email notifications to insider risk management role groups.
-    - **Inline alert customization**: Allows for policy tuning and threshold adjustment directly from the Alerts dashboard.
+    - **Inline alert customization**: Allows policy tuning and threshold adjustment directly from the Alerts dashboard.
 
 1. Select **Privacy** from the Insider risk management settings bar under **General**.
 
@@ -79,7 +79,7 @@ In this task, you will customize the Insider risk management settings in the Mic
 
 1. Select **+ Create priority user group** to open the **New priority user group wizard**.
 
-1. On the **Name and describe the priority user group** page in the **Name** field enter **Fiance team**. In the **Description** text box enter **Team members that manage financial operations, budgeting, and reporting** then select **Next**.
+1. On the **Name and describe the priority user group** page in the **Name** field enter **Finance team**. In the **Description** text box enter **Team members that manage financial operations, budgeting, and reporting** then select **Next**.
 
 1. On the **Choose members** page select **+ Choose members**.
 
@@ -115,7 +115,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. On the **Name your policy page**, in the **Name** field enter **Financial Data Protection** and enter **Sensitive financial data access monitoring** in the **Description** field then select **Next**.
 
-1. On the **Choose users and groups** page leave **Include all users and groups** selected, then select **Next**.
+1. On the **Choose users and groups** page, leave **Include all users and groups** selected, then select **Next**.
 
 1. On the **Decide whether to prioritize content page**, leave only **Sensitive info type** selected then select **Next**.
 
