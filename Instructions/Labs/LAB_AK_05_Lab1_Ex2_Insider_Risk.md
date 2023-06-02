@@ -185,4 +185,4 @@ In this task, you will create a notice template in Microsoft Purview's Insider R
 
 1. Select **Create**.
 
-You have successfully created the 'Data Leak Policy Alert' notice template, enabling automated notifications to be sent to users when potential data leaks are detected, reinforcing security measures and promoting adherence to the Contoso User Code of Conduct.
+You have successfully created the **Data Leak Policy Alert** notice template, enabling automated notifications to be sent to users when potential data leaks are detected, reinforcing security measures and promoting adherence to the Contoso User Code of Conduct.
