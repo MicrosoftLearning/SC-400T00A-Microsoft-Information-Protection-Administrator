@@ -75,8 +75,6 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 1. If the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**. 
 
-    [//]: <> ("Improve your compliance posture" did not show uo in any test scenario. Remove the last step?)
-
 1. The page **Welcome to the Microsoft Purview compliance portal** is displayed. Investigate the dashboard tiles and the left-side navigation pane.
 
 1. Get yourself familiar with the different settings. When you are done, leave the browser window open.
