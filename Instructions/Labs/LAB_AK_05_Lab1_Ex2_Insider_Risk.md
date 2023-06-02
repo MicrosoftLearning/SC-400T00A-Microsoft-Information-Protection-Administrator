@@ -170,7 +170,7 @@ In this task, you will create a notice template in Microsoft Purview's Insider R
     - **Subject**: Potential Data Leak Detected
     - **Message body**
 
-        ````
+        ````html
         <!DOCTYPE html>
         <html>
         <body>
