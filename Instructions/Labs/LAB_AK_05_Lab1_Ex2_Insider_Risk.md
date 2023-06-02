@@ -168,7 +168,7 @@ In this task, you will create a notice template in Microsoft Purview's Insider R
     - **Template name**: Data Leak Policy Alert
     - **Send from**: Joni Sherman
     - **Subject**: Potential Data Leak Detected
-    - **Message body**
+    - **Message body**:
 
         ````html
         <!DOCTYPE html>
