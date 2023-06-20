@@ -130,7 +130,6 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
    >**Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM based SIT with the classic experience. See the following for more information on creating an EDM based SIT with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
 
-
 1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
 
       ![Screenshot of option to proceed with the Classic EDM experience.](../Media/ClassicEDMExperience.png)
@@ -309,7 +308,7 @@ Several violations of personal information leakage happened when users sent out 
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-1. Select **Data classification** from the left-side pane and select **Sensitive info types** tab from the top pane.
+1. Expand **Data classification** from the left-side pane then select **Classifiers**. Select **Sensitive info types** tab from the top pane.
 
 1. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
@@ -322,9 +321,9 @@ Several violations of personal information leakage happened when users sent out 
 
 1. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
-1. Select the dropdown field below **Primary element** and select **Keyword dictionary**.
+1. On the **New pattern** page select the dropdown field below **Primary element** and select **Keyword dictionary**.
 
-1. In the **Add a keyword dictionary** page enter the following:
+1. On the **Add a keyword dictionary** page enter the following:
 
    - **Name**: Diseases Dictionary
    - **Keywords**:
@@ -384,7 +383,7 @@ Custom Sensitive information types should always be tested before using them in 
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-1. In the left navigation pane select **Data classification**, then select the **Sensitive info types** tab.
+1. In the left navigation pane expand **Data classification**, then select **Classifiers**. Select the **Sensitive info types** tab.
 
 1. In the **Search** box on the upper right, enter *Contoso* and press Enter.
 

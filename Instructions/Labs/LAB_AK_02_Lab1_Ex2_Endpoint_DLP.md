@@ -12,7 +12,7 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 In this task, you will turn on device onboarding for your organization.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -56,15 +56,14 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 1. In the **Set up a work or school account** dialog, select the **Join this device to Azure Active Directory** link and sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-1. In the **Make sure this is your organization** dialog, review the tenant url and select **Join**.  If your device fails to join you may need to troubleshoot your Azure AD configuration join settings. Do the following to ensure devices may be joined:
+1. In the **Make sure this is your organization** dialog, review the tenant url and select **Join**.  
 
-        1. Open a new browser tab and go to the Azure Portal https://portal.azure.com
-        2. Sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com
-        3. Select **Manage Azure Active Directory**.
-        4. Select **Devices**
-        5. Select **Device settings**
-        6. Scroll-down until you see **Maximum number of devices per user** change the value to **20 (Recommended)**
-        7. Once you have updated the setting re-try to connect your device.
+    > **Note**: If your device fails to join you may need to troubleshoot your Azure AD configuration join settings. Do the following to ensure devices may be joined: <br> 1. Open a new browser tab and go to the Azure Portal https://portal.azure.com <br> 2. Sign in as **MOD Administrator**, admin@WWLxZZZZZZ.onmicrosoft.com
+    <br> 3. Select **Manage Azure Active Directory**.
+    <br> 4. Select **Devices**
+    <br>5. Select **Device settings**
+    <br>6. Scroll-down until you see **Maximum number of devices per user** change the value to **20 (Recommended)**
+    <br>7. Once you have updated the setting re-try to connect your device.
 
 1. Once your device has connected select **Done**.
 

@@ -26,7 +26,7 @@ In task, we'll focus on enabling Audit in the Microsoft Purview compliance porta
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. In the left navigation pane select **Audit**
+1. In the left navigation pane select **Audit**.
 
 1. On the **Audit** page. select **Start recording user and admin activity** to activate audit logging.
 
@@ -36,11 +36,11 @@ In this task, we'll enable the **Search by Name** feature in Microsoft Teams as 
 
 1. In **Microsoft Edge**, navigate to **https://admin.teams.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). The admin's password should be provided by your lab hosting provider.
 
-1. In the left navigation pane, under the **Teams** drop down, select **Teams settings**
+1. In the left navigation pane, under the **Teams** drop down, select **Teams settings**.
 
 1. Scroll down to **Search by name** toggle this feature **On** to enable this feature
 
-1. Select **Save** to save this setting
+1. Select **Save** to save this setting.
 
 ## Task - Enable information barriers in SharePoint Online and OneDrive
 
@@ -52,13 +52,17 @@ In this task, we'll enable information barriers in SharePoint Online and OneDriv
 
 1. Confirm the **User Account Control** window with **Yes**.
 
-1. Enter the following cmdlet to install the latest version of the Sharepoint Online PowerShell module:
+1. Run the following cmdlet to install the latest version of the SharePoint Online PowerShell module:
 
     ```powershell
     Install-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
-1. Enter the following cmdlet to connect to the admin center for SharePoint online **Enter**
+1. If prompted to install the PowerShell NuGet provider, enter **Y** to install the provider.
+
+1. If prompted to install from an untrusted repository, enter **Y** to install the module from the PSGallery.
+
+1. Run the following cmdlet to connect to the admin center for SharePoint Online:
 
     ```powershell
      Connect-SPOService -Url https://<WWLxZZZZZZ>-admin.sharepoint.com -Credential admin@<WWLxZZZZZZ>.onmicrosoft.com
@@ -66,7 +70,7 @@ In this task, we'll enable information barriers in SharePoint Online and OneDriv
 
     >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
 
-1. Login with the MOD Administrator password provided by your lab hosting provider
+1. Login with the MOD Administrator password provided by your lab hosting provider.
 
 1. To enable information barriers in SharePoint and OneDrive, run the following command:
 
@@ -74,4 +78,4 @@ In this task, we'll enable information barriers in SharePoint Online and OneDriv
     Set-SPOTenant -InformationBarriersSuspension $false
     ```
 
-1. Close the PowerShell window once this is complete
+1. Close the PowerShell window once this is complete.
