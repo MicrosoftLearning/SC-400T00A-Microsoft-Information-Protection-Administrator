@@ -33,9 +33,9 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Name your DLP policy** page, type *Credit Card DLP Policy* in the **Name** field and *Protect credit card numbers from being shared.* in the **Description** field. Select **Next**.
 
-1. On the **Choose locations to apply the policy** page, enable the **Teams chat and channel messages** option only and select **Next**.
-
 1. On the **Assign admin units (preview)** page select **Next**.
+
+1. On the **Choose locations to apply the policy** page, enable the **Teams chat and channel messages** option only and select **Next**.
 
 1. On the **Define policy settings** page, select **Create or customize advanced DLP rules** and select **Next**.
 
