@@ -6,10 +6,10 @@ lab:
 
 # Lab 3 - Exercise 2 - Implement Retention Labels
 
-In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Sudbury England and has legal obligations to retain finance documents. 
+In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Sudbury England and has legal obligations to retain finance documents.
 
 Your finance department has created a retention plan to set retention labels on documents for Value Added Tax (VAT) returns with supporting documents and Credit Card receipts.
- 
+
 ## Task 1 – Create Retention Labels
 
 In this task, you will create a retention label that can be assigned to documents and emails that contain VAT returns and a retention label that can be applied to Credit Card receipts.
@@ -18,49 +18,57 @@ In this task, you will create a retention label that can be assigned to document
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
-1. In the **Microsoft Purview** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
+1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data lifecycle management** then select **Microsoft 365**.
 
-1. On the **Data lifecycle management** page, select the **Labels** tab.
+1. On the **Data lifecycle management** page select the **Labels** tab then select **+ Create a label**.
 
-1. Select the **+ Create a label** button.
+1. On the **Name your retention label** page input:
 
-1. On the **Name your retention label page** for the **Name**, **Description for users**, and **Description for admins**, enter the following information:
+    - **Name**: VAT Returns and supporting documents
+    - **Description for users**: Assign this label to VAT Documents to ensure they are retained for the legal period of seven years.
+    - **Description for admins**: VAT returns with seven-year retention.
 
-	- **Name**: VAT Returns and supporting documents
-	- **Description for users**: Assign this label to VAT Documents to ensure they are retained for the legal period of seven years.
-	- **Description for admins**: VAT returns with seven-year retention.
+1. Select **Next**.
 
-1. Select the **Next** button.
+1. On the **Define label settings** page, choose the **Retain items forever or for a specific period** then select **Next**.
 
-1. On the **Define label settings** page, choose the **Retain items forever or for a specific period** setting and select the **Next** button.
+1. On the **Define the period** input:
 
-1. On the **Define the period** page set the following information:
-	- **How long is the period?**: 7 Years
-	- **When should the period begin?**: When items were created
-1. Select the **Next** button.
-1. On the **Choose what happens after the retention period** page, choose **Deactivate retention settings**.
+    - **How long is the period?**: 7 Years
+    - **When should the period begin?**: When items were created
 
-1. Select the **Next** button.
+1. Select **Next**.
 
-1. On the **Review and finish** page, select the **Create label** button.  On the **Your retention label is created** page select the **Do Nothing** option and select **Done**. The label will be published later in the Exercises.
+1. On the **Choose what happens after the retention period** page select **Deactivate retention settings** then select **Next**.
 
-1. On the **Data lifecycle management** page, select the **+ Create a label** button.
+1. On the **Review and finish** page select  **Create label**.
 
-1. On the **Name your retention label** page for the **Name**, **Description for users**, and **Description for admins** enter the following information:
-	- **Name**: Credit Card Receipts
-	- **Description for users**: This label is auto applied to Credit card receipts with a retention period of three years.
-	- **Description for admins**: Auto applied retention label for Credit card receipts with three-year retention.
+1. On the **Your retention label is created** page select the option to **Do Nothing** then select **Done**. The label will be published later in the Exercises.
 
-1. Select the **Next** button.
+1. On the **Data lifecycle management** page select **+ Create a label**.
 
-1. On the **Define label settings** page, choose **Retain items forever or for a specific period** and select the **Next** button.
-1. On the **Define the period** page set the following information:
-	- **How long is the period?**: Select the drop down list and select **Custom**. Enter 3 for Years.
-	- **When should the period begin?**: When items were created.
-1. Select the **Next** button.
-1. On the **Choose what happens after the retention period** page, choose **Deactivate retention settings** and select the **Next** button.
+1. On the **Name your retention label** input:
 
-1. On the **Review and finish** page, select the **Create label** button. On the **Your retention label is created** page select the **Do Nothing** option and then select **Done**.
+    - **Name**: Credit Card Receipts
+    - **Description for users**: This label is auto applied to Credit card receipts with a retention period of three years.
+    - **Description for admins**: Auto applied retention label for Credit card receipts with three-year retention.
+
+1. Select **Next**.
+
+1. On the **Define label settings** page select **Retain items forever or for a specific period** then select **Next**.
+
+1. On the **Define the period** page input:
+
+    - **Retain items for**: Select the drop down list and select **Custom**. Enter 3 for Years.
+    - **Start the retention period based on**: When items were created.
+
+1. Select **Next**.
+
+1. On the **Choose what happens after the retention period** page select **Deactivate retention settings** then select **Next**.
+
+1. On the **Review and finish** page select **Create label**.
+
+1. On the **Your retention label is created** page select **Do Nothing** then select **Done**.
 
 You have successfully created a retention label for VAT returns with a seven-year retention period and a retention label for Credit Card receipts with a three-year retention.
 
@@ -68,43 +76,41 @@ You have successfully created a retention label for VAT returns with a seven-yea
 
 Following from Task 1 you will now publish the VAT returns retention label so that the published label will be available for the finance users to apply to the documents in Exchange emails and Sharepoint documents.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-1. In the **Microsoft Purview** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
+1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data lifecycle management** then select **Microsoft 365**.
 
-1. On the **Data lifecycle management** Page, select the tab **Labels**.
+1. On the **Data lifecycle management** page select the tab **Labels**.
 
-1. Select the label **VAT Returns and supporting documents**, that you created in Task 1.
+1. Select the label **VAT Returns and supporting documents** that was created in Task 1.
 
 1. Select the **Publish labels** icon button (next to the pencil).
 
-1. On the **Choose labels to publish** page, select the **Next** button.
+1. On the **Choose labels to publish** page select **Next**.
 
-1. On the **Choose the type of retention policy to create** page, select the **Static** item.
+1. On the **Choose the type of retention policy to create** page select **Static** then select **Next**.
 
-1. Select the **Next** button.
+1. On the **Choose where to publish labels** page select **Let me choose specific locations** and enable:
 
-1. On the **Choose locations** page select the option **Let me choose specific locations**.
+    - **Exchange mailboxes**
+    - **SharePoint classic and communication sites**
+    - **OneDrive accounts**
+    - Disable **Microsoft 365 Group mailboxes & sites**
 
-1. Enter the following information:
+1. Select **Next**.
 
-	- **Exchange mailboxes** location - **Status**: On
-	- **SharePoint classic and communication sites** location - **Status**: On
-	- **OneDrive accounts** location - **Status**: On
-	- **Microsoft 365 Groups mailboxes & sites** location - **Status**: OFF  
+1. On the **Name your policy** input:
 
-1. Select the **Next** button.
+    - **Name**: VAT Returns and supporting documents Retention Label
+    - **Description**: VAT Returns and supporting documents Retention label, retention period 3 years, Exchange email and SharePoint site locations.
 
-1. On the **Name your policy** page for **Name** and **Description** enter the following information:
+1. Select **Next**.
 
-	- **Name**: VAT Returns and supporting documents Retention Label
-	- **Description**: VAT Returns and supporting documents Retention label, retention period 3 years, Exchange email and SharePoint site locations.
+1. On the **Finish** page select **Submit**.  
 
-1. Select the **Next** button.
-
-1. On the **Finish** page, select the **Submit** button.  When your policy is created select **Done**.
+1. On the **Your retention label was published** page select **Done**.
 
 You have successfully published the retention label for VAT Returns and supporting documents.
 

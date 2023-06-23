@@ -16,17 +16,19 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-1. In the left navigation pane, select **Permissions** and then under **Microsoft Purview solutions** select **Roles**.   Select the field for the **Information Protection Analysts** role.
+1. In the left navigation pane, expand **Roles & Scopes** then select **Permissions**. Under **Microsoft Purview solutions** select **Roles**.   Select the field for the **Information Protection Analysts** role.
 
 1. In the *Information Protection Analysts* pane, select **Edit** in the **Members** area.
 
-1. Select **Choose members** and then select **+ Add**.
+1. On the **Edit members of the role group** page select **+ Choose users**.
 
-1. Search for **Megan Bowen** and select the checkbox in front of their name, then select **Add**.
+1. On the **Choose users** select the check box next to **Megan Bowen**'s account then select **Select**.
 
-1. Review the changes to the member list and then select **Done**.
+1. Back on the **Edit members of the role group** page verify Megan's account is to be added, then select **Next**.
 
-1. Select **Save**. Close the **Information Protection Analysts** role pane.
+1. On the **Review the role group and finish** select **Save**.
+
+1. On the **You successfully updated the role group** page select **Done**.
 
 You have now granted the new compliance officer access to the DLP reports in the Microsoft 365 compliance portal.
 
@@ -40,7 +42,7 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. In the left navigation pane, select the drop down for **Data loss prevention** then select **Activity explorer**.
 
-1. On the **Activity explorer** page, select the dropdown for **Built-in filters**. 
+1. On the **Activity explorer** page, select the dropdown for **Built-in filters**.
 
 1. Explore the **DLP policies that detected activities** filter and the **DLP policy rules that detected activities** filter.
 
