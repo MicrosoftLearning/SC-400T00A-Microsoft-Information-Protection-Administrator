@@ -31,7 +31,12 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Start with a template or create a custom policy** page, scroll down and select **Custom** under **Categories** and **Custom policy** under **Templates**. By default, both  options should already be selected , select **Next**.
 
-1. On the **Name your DLP policy** page, type *Credit Card DLP Policy* in the **Name** field and *Protect credit card numbers from being shared.* in the **Description** field. Select **Next**.
+1. On the **Name your DLP policy** page enter:
+
+   - **Name**: Credit Card DLP Policy
+   - **Description**: Protect credit card numbers from being shared
+
+1. Select **Next**.
 
 1. On the **Assign admin units (preview)** page select **Next**.
 
@@ -41,7 +46,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 
-1. On the **Create rule** page, type *Credit card information* in the **Name** field.
+1. On the **Create rule** flyout page, type *Credit card information* in the **Name** field.
 
 1. Under **Conditions**, select **+ Add Condition** and then select **Content contains** from the dropdown menu.
 
@@ -51,7 +56,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Create rule** page, select **+ Add condition** and select **Content is shared from Microsoft 365** from the dropdown menu.
 
-1. In the new **Content is shared from Microsoft 365** section, select the **Only with people inside my organization** option.
+1. In the new **Content is shared from Microsoft 365** section, select the **only with people inside my organization** option.
 
 1. On the **Create rule** page, select **+ Add an action**. Under **Use actions to protect content when the conditions are met.** expand **Restrict access or encrypt the content in Microsoft 365 locations** and select **Block everyone.**
 
@@ -108,28 +113,30 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
 1. In the start menu, select **Windows PowerShell**.
 
 1. In the **PowerShell** window, enter
-	```powershell
-	 Connect-IPPSSession
-	 ```
-	 and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+
+   ```powershell
+   Connect-IPPSSession
+   ```
+
+   and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. Enter the following command into PowerShell to create a DLP policy that scans all Exchange mailboxes:
 
-	```powershell
-	 New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All
-	```
+   ```powershell
+   New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All
+   ```
 
 1. Enter the following command into PowerShell to add a DLP rule to the DLP policy you created in the previous step:
 
-	```powershell
-	New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
-	```
+   ```powershell
+   New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
+   ```
 
 1. Use the following command to review the **EmployeeID DLP rule**:
 
-	```powershell
-	Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
-	```
+   ```powershell
+   Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
+   ```
 
 You have now created a DLP Policy that scans for Contoso EmpoloyeeIDs in Exchange by using PowerShell.
 
