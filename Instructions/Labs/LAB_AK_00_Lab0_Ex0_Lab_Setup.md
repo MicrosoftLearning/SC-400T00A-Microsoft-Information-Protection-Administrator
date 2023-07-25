@@ -14,7 +14,7 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 # Lab Setup: Preparing Your Environment for Administration
 
-In this lab you'll configure and prepare your environment for administration tasks. By following the provided steps, you'll ensure that essential features and settings are enabled in advance, allowing for an easier learning experience in upcoming lab activities. This preparation will include activating necessary features, setting up administrative permissions, and ensuring the proper configuration of key elements. Completing this lab setup will provide you with a solid foundation for effectively administering and managing your environment throughout the rest of the lab modules.
+In this lab you'll configure and prepare your environment for administration tasks. By following the provided steps, you'll ensure that essential features and settings are enabled in advance, allowing for an easier learning experience in upcoming lab activities. This preparation will include activating necessary features, setting up administrative permissions, and ensuring the proper configuration of key elements.
 
 ## Task - Enable Audit in the Microsoft Purview portal
 

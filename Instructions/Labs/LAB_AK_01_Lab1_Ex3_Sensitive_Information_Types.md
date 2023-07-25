@@ -41,19 +41,19 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 1. In the new right-side pane **Add a regular expression**, enter the following:
 
     - **ID**: Contoso IDs
-    - **Regular expression**: ```\s[A-Z]{3}[0-9]{6}\s``` 
+    - **Regular expression**: ```[A-Z]{3}[0-9]{6}```
     - *String match*
 
 1. Select **Done**.
 
-1. In the right-side **New pattern** pane again, below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
+1. In the **New pattern** flyout page, below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
 
 1. In the new right-side pane **Add a keyword list**, enter the following:
 
     - **ID**: Employee ID keywords
-    - **Case insensitive**: 
+    - **Case insensitive**:
         - *Employee*
-        - *ID* 
+        - *ID*
     - Select the radial for *Word match* under the **Case Sensitive** field
 
 1. Select **Done**.
@@ -86,7 +86,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-1. From the left pane, select **Teams & groups** and select **Active teams & groups**.
+1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
 
 1. Select **Add a group** from the menu under the Active teams and groups message, under the different types of groups available.
 
@@ -182,7 +182,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **Contoso Employee IDs** and select **Done**.
 
-1. In the **New Pattern** pane, select **Done**.
+1. In the **New Pattern** page, select **Done**.
 
 1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
 
@@ -228,19 +228,19 @@ To associate the EDM-based classification with a database containing sensitive d
 
 1. Enter the following text to the first line in the notepad window:
 
-    ```
+    ``` text
     Name,Birthdate,StreetAddress,EmployeeID
     ```
 
 1. Use enter button and add the following text to the second line in the notepad window:
 
-    ```
+    ``` text
     Joni Sherman,01.06.1980,1 Main Street,CSO123456
     ```
 
 1. Use enter button and add the following text to the third line in the notepad window:
 
-    ```
+    ``` text
     Lynne Robbins,31.01.1985,2 Secondary Street,CSO654321
     ```
 
@@ -261,13 +261,13 @@ bar with the right mouse button and select **Windows PowerShell (Admin)** and ru
 
 1. Navigate to the EDM Upload Agent directory:
 
-    ```
+    ``` text
     cd "C:\Program Files\Microsoft\EdmUploadAgent"
     ```
 
 1. Authorize with your Account to upload the database to your tenant by running the following cmdlet:
 
-    ```
+    ``` text
     .\EdmUploadAgent.exe /Authorize
     ```
 
@@ -275,7 +275,7 @@ bar with the right mouse button and select **Windows PowerShell (Admin)** and ru
 
 1. Download the database schema definition of the EDM-based classification sensitive information type by running the following script in PowerShell:
 
-    ```
+    ``` text
     .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"
     ```
 
@@ -283,15 +283,16 @@ bar with the right mouse button and select **Windows PowerShell (Admin)** and ru
 
 1. Hash the database file and upload it to the EDM-based classification sensitive information type by running the following script in PowerShell:
 
-    ```
+    ``` text
     .\EdmUploadAgent.exe /UploadData /DataStoreName employeedb /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedb.xml"
     ```
 
 1. Check the upload progress with the following command:
 
-    ```
+    ``` text
     .\EdmUploadAgent.exe /GetSession /DataStoreName employeedb
     ```
+
 1. Once the status is **Completed**, your EDM data is ready for use.
 
     ![Image of EDM Upload Agent completion.](../Media/EDMUploadAgentCompleted.png)
@@ -361,7 +362,7 @@ You have successfully created a new sensitive information type based on a keywor
 
 ## Task 5 – Work with custom Sensitive Information Types
 
-Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern. 
+Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
 
@@ -369,7 +370,7 @@ Custom Sensitive information types should always be tested before using them in 
 
 1. Enter the following text to the notepad window:
 
-    ```
+    ``` text
     Employee Joni Sherman EMP123456 is on absence because of the flu/influenza.
     ```
 

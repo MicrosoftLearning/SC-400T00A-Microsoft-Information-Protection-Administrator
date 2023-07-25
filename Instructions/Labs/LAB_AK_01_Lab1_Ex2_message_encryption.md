@@ -24,9 +24,9 @@ In this task, you will install the Exchange Online PowerShell module and verify 
     Install-Module ExchangeOnlineManagement
     ```
 
-1. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**. This process may take some seconds to complete.
+1. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**. This process may take some time to complete.
 
-1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some seconds to complete.
+1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some time to complete.
 
 1. Enter the following cmdlet to change your execution policy and press **Enter**
 
@@ -34,7 +34,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
 
-1. Confirm the Execution Policy Change with  **Y** for Yes and press **Enter**. 
+1. Confirm the Execution Policy Change with  **Y** for Yes and press **Enter**.
 
 1. Close the PowerShell window.
 
@@ -46,7 +46,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
     Connect-ExchangeOnline
     ```
 
-1. When the **Sign in** window is displayed, sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. When the **Sign in** window is displayed, sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). You will use the password you reset Joni's to in a previous lab.
 
 1. Verify Azure RMS and IRM is activated in your tenant by using the following cmdlet and press **Enter**:
 
