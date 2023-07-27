@@ -46,7 +46,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 
-1. On the **Create rule** flyout page, type *Credit card information* in the **Name** field.
+1. On the **Create rule** flyout page, type _Credit card information_ in the **Name** field.
 
 1. Under **Conditions**, select **+ Add Condition** and then select **Content contains** from the dropdown menu.
 
@@ -140,7 +140,41 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
 
 You have now created a DLP Policy that scans for Contoso EmpoloyeeIDs in Exchange by using PowerShell.
 
-## Task 4 - Activate a policy in test mode
+## Task 4 - Test your DLP Policy
+
+In this task you'll test the DLP policy that was created in the previous task.
+
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 as Joni Sherman.
+
+1. Open a Microsoft Edge browser window and navigate to **https://outlook.office.com/**
+
+1. Select the **New mail** button on the top left to compose a new email message.
+
+1. In the **To** field, enter _Megan_ and select **Megan Bowen**'s email address.
+
+1. In the subject field enter _Help with employee information_.
+
+1. In the body of the email enter:
+
+   ``` text
+   Please help me with the start dates for the following employees:
+   ABC123456
+   DEF678901
+   GHI234567
+
+   Thank you, 
+   Joni Sherman
+   ```
+
+1. Select the **Send** button in the upper right of the message window to send the email.
+
+1. You should receive a message that the email was undeliverable and blocked by a DLP policy.
+
+      ![Screenshot of Manage roles option](../Media/dlp-email-blocked.png)
+
+You have successfully tested your DLP policy.
+
+## Task 5 - Activate a policy in test mode
 
 In this task, you will activate the credit card information DLP policy you created in test mode so it enforces its protective actions.
 
@@ -160,7 +194,7 @@ In this task, you will activate the credit card information DLP policy you creat
 
 You have successfully activated the DLP Policy. If the policy detects an attempt to share credit card information, it will now block the attempt and allow the users to provide a business justification to override the block action.
 
-## Task 5 - Modify policy priority
+## Task 6 - Modify policy priority
 
 After creating two DLP policies, you want to make sure that the more restrictive policy is processed at a higher priority than the less restrictive policy. For this reason, you want to move the EmployeeID DLP Policy into the higher priority.
 
@@ -176,7 +210,7 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 You successfully modified the priority of your DLP policies. If both policies match the same content the action of the higher priority policy will be enforced.
 
-## Task 6 - Enable file monitoring in Microsoft Defender for Cloud Apps
+## Task 7- Enable file monitoring in Microsoft Defender for Cloud Apps
 
 You want to use file policies in Microsoft Defender for Cloud Apps to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft Defender for Cloud Apps can scan files in your organization.
 
@@ -194,7 +228,7 @@ You want to use file policies in Microsoft Defender for Cloud Apps to protect fi
 
 You successfully enabled file monitoring in Microsoft Defender for Cloud Apps and can now scan files for sensitive content using file policies.
 
-## Task 7 - Create File Policy for Microsoft Defender for Cloud Apps
+## Task 8 - Create File Policy for Microsoft Defender for Cloud Apps
 
 In this task, you want to create a file policy in Microsoft Defender for Cloud Apps to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
 
@@ -233,7 +267,7 @@ In this task, you want to create a file policy in Microsoft Defender for Cloud A
 
 You have now created a file policy that will continuously scan files saved in OneDrive and SharePoint for credit card information and quarantine them if they are shared inside your organization.
 
-## Task 8 - Create a DLP Policy for PowerPlatform
+## Task 9 - Create a DLP Policy for PowerPlatform
 
 Your company uses PowerAutomate flows to share data between SharePoint Online and SalesForce. In this task, you will create a DLP policy for PowerPlatform that allows your existing flows to keep working, but prevents the creation of flows that will share data between SharePoint Online and Apps defined as non-business.
 
