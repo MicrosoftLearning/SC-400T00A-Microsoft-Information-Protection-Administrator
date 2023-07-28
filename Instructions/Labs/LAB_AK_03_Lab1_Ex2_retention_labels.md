@@ -90,6 +90,8 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 1. On the **Choose labels to publish** page select **Next**.
 
+1. On the **Policy Scope** page select **Next**.
+
 1. On the **Choose the type of retention policy to create** page select **Static** then select **Next**.
 
 1. On the **Choose where to publish labels** page select **Let me choose specific locations** and enable:
@@ -132,36 +134,39 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. On the **Let's get started** page, for **Name** and **Description** enter the following information:
 
-	- **Name**: Credit Card Receipts auto-applied
-	- **Description**: Credit Card Receipts auto-applied retention label, with a retention period of three years for all location.
+    - **Name**: Credit Card Receipts auto-applied
+    - **Description**: Credit Card Receipts auto-applied retention label, with a retention period of three years for all location.
 
 1. Select the **Next** button.
 
-1. On the **Choose the type of content you want to apply this label to** page select:
+1. On the **Choose the type of content you want to apply this label to** page select  **Apply label to content that contains sensitive info** then select **Next**.
 
-	- **Apply label to content that contains sensitive info**
+1. On the **Content that contains sensitive info** page, select the category **Financial**.
 
-1. Select the **Next** button.
+1. Financial templates will then be displayed under Templates. Scroll down and select the **U.K. Financial Data** template then select **Next**.
 
-1. On the **Content that contains sensitive info** page, select the category **Financial**. 
+1. On the **Define content that contains sensitive info** page select **Next**.
 
-1. Financial templates will then be displayed under Templates. 
+1. On the **Policy Scope** page select **Next**.
 
-1. Scroll down and select the **U.K. Financial Data** template.
+1. On the **Choose the type of retention policy to create** page, select the **Static** item then select **Next**.
 
-1. Select the **Next** button.
+1. On the **Choose locations to apply the policy** page, turn **On** the options for:
 
-1. On the **Define content that contains sensitive info** page, select the **Next** button.
+    - **Exchange mailboxes**
+    - **SharePoint classic and communication sites**
+    - **OneDrive accounts**
+    - **Microsoft 365 Group mailboxes & sites**
 
-1. On the **Choose the type of retention policy to create** page, select the **Static** item and select **Next**. 
-
-1. On the **Choose locations to apply the policy** page, turn **On** the options for: **Exchange mailboxes, SharePoint classic and communication sites, OneDrive accounts, and Microsoft 365 Group mailboxes & sites** and select **Next**.
+1. Select **Next**.
 
 1. On the **Choose a label to auto-apply** page, select **Next**.
 
-1. On the **Decide whether to test or run your policy** select **Turn on policy** then select **Next**.
+1. On the **Decide whether to test or run your policy**, select **Turn on policy** then select **Next**.
 
-1. On the **Review and finish** page select the **Submit** button.  When the policy is created, select **Done**.
+1. On the **Review and finish** page, select **Submit**.  When the policy is created, select **Done**.
+
+1. Sign out of Joni's account by selecting her image in the top, right hand corner and selecting **Sign out**.
 
 You have successfully published a retention label with auto-apply. Over the next seven days all documents containing credit card details will be automatically labeled with the published label Credit Card Receipts, a retention period of three years will be applied to these items.
 
@@ -171,19 +176,13 @@ In this task, you will assign retention labels to Outlook emails.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. On the taskbar at the bottom of the page, select the Start button, scroll down and then select **Outlook**. If necessary, sign in as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Megan's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://outlook.office.com/** and login with **Megan Bowen**'s account.
 
-1. In the Outlook application, select the **Inbox**
+1. In Megan's inbox, select the first email with the right mouse button, then select **Advanced actions > Assign policy > VAT Returns and supporting documents**. If the newly created label is not available, select **1 Month Delete** for this exercise.
 
-1. With the right mouse button select the first email item in the center pane, and in the menu, select **Assign Policy**.
+    >**Note**: Published retention labels can take seven days to appear in Exchange Online and the mailbox must contain 10 MB of data.
 
-1. A list of retention policies will be displayed.
-
-1. If available, select the **VAT Returns and supporting documents** otherwise select **one Month delete** from the existing policies(just for applying a setting within this exercise).
-
-	  Note: Published retention labels can take seven days to appear in Exchange Online and the mailbox must contain 10 MB of data.
-
-1. Keep **Outlook** open.
+1. Keep **Outlook** window open.
 
 You have successfully applied a retention label to an Outlook email.
 
@@ -191,27 +190,19 @@ You have successfully applied a retention label to an Outlook email.
 
 In this task, you will assign retention labels to an Outlook folder.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and **Outlook** should be opened. If not open **Outlook** again and sign-in as **Megan Bowen**.
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. Your Microsoft Edge browser window with **Outlook** should still be open, and you should still be logged in as **Megan Bowen**.
 
-1.  Select right click on the **Inbox** in the left panel
+1. Select right click on the **Inbox** in the left panel
 
-1.  Select **New folder...** and under **Name** enter VAT Returns
+1. Select **Create new subfolder**.
 
-1.  Select the **OK** button
+1. A cursor with a blank field should appear to ender in the new file name. Enter _VAT Returns_ in this field then select **Save**.
 
-1.  Right-click on the newly created **VAT Returns** folder in the left panel
+1. Right-click the newly created **VAT Returns** folder in the left panel and select **Assign policy > VAT Returns and supporting documents**. If the newly created label is not available, select **5 Year Delete** for this exercise.
 
-1.  From the menu, select **Properties**
+    >Note: Published retention labels can take seven days to appear in Exchange Online and the mailbox must contain 10 MB of data.
 
-1.  Select the **Policy** tab
-
-1.  If available, set the **Folder Policy** drop-down list to **VAT Returns and supporting documents** otherwise select **5 Year delete** from the existing policies (just for applying a setting within this exercise).
-
-	 Note: Published retention labels can take seven days to appear in Exchange Online and the mailbox must contain 10 MB of data
-
-1. Select the **OK** button
-
-1. Close the Outlook application by selecting the close **X** button in the top-right corner
+1. Log out of Megan's account by selecting her picture in the top right and selecting **Sign out**.
 
 You have successfully applied a retention label to an Outlook folder, the default retention label for all emails within this folder will be assigned this based on your selection from this subtask.
 
@@ -223,14 +214,12 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into the Microsoft 365 as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into Microsoft 365 as **Joni Sherman**.
 
-1. In the Microsoft O365 landing page, select the App launcher icon in the top-left corner (the icon with nine dots), then select **SharePoint** from the sub-menu.
+1. In the Microsoft 365 landing page, select the App launcher icon in the top-left corner (the icon with nine dots), then select **SharePoint** from the sub-menu.
 1. If prompted, close the **Welcome to SharePoint Start Page** window.
 
-1. On the SharePoint landing page, select the **Communication site** SharePoint site.
-
-	Note: Type **Communication site** in the search bar and search for it.
+1. On the SharePoint landing page, search for _Communication site_ then select **Communication site** from the search results.
 
 1. In the top navigation bar, select the **Documents** tab.
 
@@ -238,13 +227,11 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 
 1. Within the CAS folder, highlight (but do not select) the **Blog Post preview.docx** document
 
-1. For the highlighted document, select the horizontal **...** button.  Hover over the **More** option.
+1. For the highlighted document, select the horizontal ellipses, **...**, button, then select **More > Compliance details**.
 
-1. From the expanded menu select, select the **Compliance details** button.
+1. A new window displaying the **Compliance details** for the document opens. For **Label Status** select **None** to open the **Apply Label** window.
 
-1. A new window will appear.  For **Label Status** the word *None* should appear, select it.  This will open a new browser tab that will allow you to apply a label.
-
-1. If the option is available, set the **Apply label** to **VAT Returns and supporting documents (Retain for 7 years)** and select **Save**. As it can take some time for retention labels to be published you may not have the option available immediately, if it is not available, continue to the next task. Feel free to come back later to this task and try again.
+1. If the option is available, set the **Apply label** to **VAT Returns and supporting documents (Retain for 7 years)** then select **Save**. As it can take some time for retention labels to be published you may not have the option available immediately, if it is not available, continue to the next task. Feel free to come back later to this task and try again.
 
 You have successfully applied a retention label to a document in SharePoint.
 
@@ -252,20 +239,18 @@ You have successfully applied a retention label to a document in SharePoint.
 
 In this task, you will apply a retention label to a document in OneDrive.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into Microsoft 365 as **Joni Sherman**.
 
-1. In the Microsoft O365 landing page, select the App Launcher icon in the top-left corner (icon with nine dots), then select **OneDrive** from the sub-menu.
+1. In the Microsoft 365 landing page, select the App Launcher icon in the top-left corner (icon with nine dots), then select **OneDrive** from the sub-menu.
 
-1. Within the OneDrive application, highlight (but do not select) the **Contractor Legal Info.docx**
+1. Select **My files** from the left navigation pane, then select the checkbox to the left of **Contractor Legal Info.docx**.
 
-1. For the highlighted document, select the three vertical **...** button.
+1. For the highlighted document, select select the horizontal ellipses, **...**, button then select **Details**.
 
-1. From the menu select, select the **Details** button.  
+1. On the flyout page on the right, under **Properties** you should see an option to **Apply label**. Select **Choose a label** to expand a dropdown, then select **VAT Returns and supporting documents** if available.
 
-1. A side menu will appear on the right. Under **Properties** you should see an **Apply label** option. Select the drop-down menu.
-
-1. If the option is available, set the **Apply Retention Label** to **VAT Returns and supporting documents**. As it can take some time for retention labels to be published you may not have the option available immediately, if it is not available, continue to the next task. Feel free to come back later to this task and try again.
+    >**Note**: As it can take some time for retention labels to be published you may not have the option available immediately, if it is not available, continue to the next task. Feel free to come back later to this task and try again.
 
 You have successfully applied a retention label to a document in OneDrive.
