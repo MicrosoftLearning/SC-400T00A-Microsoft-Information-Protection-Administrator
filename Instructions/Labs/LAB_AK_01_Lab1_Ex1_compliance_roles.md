@@ -37,19 +37,25 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. If a welcome window is displayed, select Get started and close it.
 
-1. In the left navigation pane, expand **Users** and then select **Active users**.
+1. In the left navigation pane, expand **Users** then select **Active users**.
 
-1. In the **Active users** list, search and select **Joni Sherman**, to open the right-side settings pane.
+1. In the **Active users** list select **Joni Sherman**. This will open a flyout page to the right with Joni's user settings.
 
-1. In the settings below the **Account** tab, scroll to **Roles** and select **Manage roles** below.
+1. In Joni's user setting page, select **Reset password**. On the **Reset password** page deselect **Automatically create a password** and **Require this user to change their password when they first sign in**. There should be no options enabled on this page.
+
+1. In the **Password** field, enter a password for Joni's account that you'll remember then select the **Reset password** button.
+
+1. Once Joni's password has been reset, you'll see a message confirming **Password has been reset**. Select the back arrow on the upper left of this page to go back to Joni's user settings page.
+
+1. On Joni's user settings page, below the **Account** tab, scroll to **Roles** then select **Manage roles**.
 
       ![Screenshot of Manage roles option](../Media/ManageRoles.png)
 
-1. When the **Manage admin roles** pane opens, select **Admin center access**, select **Show all by category** and scroll down to the **Security & Compliance** category and select **Compliance Administrator** .
+1. On the **Manage admin roles** flyout page, select **Admin center access** then scroll down to select **Show all by category**. Under the category view in the **Security & Compliance** category select **Compliance Administrator** .
 
-1. Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the pane, select the arrow pointing to the left to return to Joni's user record.
+1. Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the page, select the arrow pointing to the left to return to Joni's user settings.
 
-1. Close the pane displaying Joni Sherman’s account with the **X** in the upper right to go back to the **Active users** list.
+1. Close the flyout page displaying Joni Sherman’s account with the **X** in the upper right to go back to the **Active users** list.
 
 1. Before switching to Joni Sherman, use the Global Admin privileges of MOD Administrator for activating the audit logging by navigating to https://compliance.microsoft.com/auditlogsearch.
 
@@ -65,7 +71,7 @@ You have successfully assigned Joni Sherman the Compliance Administrator role, w
 
 In this task, you will sign out of the global admin account and sign-in again as Joni Sherman. Now that Joni Sherman was just assigned the Compliance admin role, her account will be sufficient for most of this lab's exercises.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com**.
 

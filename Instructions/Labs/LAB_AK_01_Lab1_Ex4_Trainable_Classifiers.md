@@ -14,7 +14,7 @@ The Contoso Ltd. tenant contains a SharePoint site collection with the name "Sal
 
 Before you can create custom trainable classifiers, you need to activate the feature in a tenant. To activate the Global Admin permissions are required, you will sign out of Joni Sherman's account and use the MOD Administrator to activate the feature first.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. Sign out of Joni Sherman's account by selecting the image in the upper right corner and select **Sign out**.
 
@@ -24,13 +24,11 @@ Before you can create custom trainable classifiers, you need to activate the fea
 
 1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator**  admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-1. Navigate to and expand **Data Classification** from the left side navigation pane.
+1. Navigate to and expand **Data Classification** from the left side navigation pane then select **Classifiers**.
 
-1. Select **Classifiers**
+1. **Trainable classifiers** will be selected from the top pane by default.
 
-1. Select **Trainable classifiers** from the top pane.
-
-1. When you see the **Get started with trainable classifiers** window, select **Start scanning process**.
+1. In the **Get started with trainable classifiers** dialogue, select **Start scanning process**.
 
 1. Refresh the browser window.
 

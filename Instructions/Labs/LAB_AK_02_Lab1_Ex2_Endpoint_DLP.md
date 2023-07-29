@@ -38,7 +38,7 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 1. On the **Device onboarding** page, in the navigation pane, select **Onboarding**.
 
-1. In the **Deployment method** dropdown menu, select **Local Script (For up to 10 machines)** and select **Download package**.
+1. In the **Deployment method** dropdown menu, select **Local Script (for up to 10 machines)** and select **Download package**.
 
 1. In the download dialog, select **Save**, then select **Open folder**.
 
@@ -77,9 +77,9 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. Log on to your Client 1 VM (LON-CL1) as the lon-cl1\admin account.
 
-1. Open Microsoft Edge from the taskbar, navigate to the Microsoft Purview portal at https://compliance.microsoft.com and when the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider. Hint: The password is probably the same as the MOD Administrator used earlier. 
+1. Open Microsoft Edge from the taskbar, navigate to the Microsoft Purview portal at https://compliance.microsoft.com and when the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. In the **Microsoft Purview** portal on the left navigation pane, select **Data loss prevention** and from the top pane select **Policies**.
+1. In the **Microsoft Purview** portal on the left navigation pane, expand **Data loss prevention** the select **Policies**.
 
 1. Select **+ Create policy** to start the wizard for creating a new data loss prevention policy.
 
@@ -92,44 +92,40 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. On the **Assign admin units (preview)** page, select **Next**.
 
-1. Select **Next**.
+1. On the **Choose locations to apply the policy** page, select only the **Devices** option then select **Next**.
 
-1. On the **Choose locations to apply the policy** page, select only the **Devices** option and then select **Next**.
-
-1. On the **Define policy settings** page, the option **Create or customize advanced DLP rules** needs to be selected, which it should be by default. Select **Next**.
+1. On the **Define policy settings** page, select **Create or customize advanced DLP rules** then select **Next**.
 
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 
-1. On the **Create rule** page, enter the following:
+1. On the **Create rule** page, enter:
 
     - **Name**: EmployeeID and disease rule
     - **Description**: Detect if employee IDs and diseases are shared in near range.
 
-1. Select **+ Add condition** and then select **Content contains** from the dropdown menu.
+1. Under **Conditions** select **+ Add condition** then select **Content contains** from the dropdown menu.
 
-1. In the newly opened **Content contains** area, select **Add** and select **sensitive info types** from the dropdown menu.
+1. In the newly opened **Content contains** area, select **Add** then select **Sensitive info types** from the dropdown menu.
 
-1. In the right-side pane **Sensitive info types**, select **Contoso Employee IDs** and **Contoso Disease List** and select **Add**.
+1. In the right-side pane **Sensitive info types**, select **Contoso Employee IDs** and **Contoso Disease List** then select **Add**.
 
-1. Change the **Any of these** dropdown to **All of these** to make the policy detect both information in proximity.
+1. Change the **Group operator** dropdown from **Any of these** to **All of these** to make the policy detect both information in proximity.
 
-1. Scroll down to **Actions** and select **+ Add an action** drop-down and select **Audit or restrict activities on devices**.
+1. Scroll down to **Actions** and select the **+ Add an action** dropdown then select **Audit or restrict activities on devices**.
 
-1. Leave all checkboxes enabled. Change the dropdown selection for **Copy to clipboard** from **Apply** to **Block with Override**. Change the dropdown selection for all the other items from **Audit only** to **Block**.
+1. In the **Audit or restrict activities on devices** area, leave all default checkboxes enabled. In the **File activities for all apps** section, change all dropdown selections from **Audit only** to **Block with Override**.
 
-1. In the **User Notifications** section, enable notifcations by enabling the **Use notifications to inform your users and help educate them on the proper use of sensitive info.** switch to **On**.
+1. In the **User Notifications** section, toggle the **Use notifications to inform your users and help educate them on the proper use of sensitive info.** switch to **On**.
 
-1. Under **Endpoint devices** select the checkbox for **Show users a policy tip notification when an activity is restricted. This is turned on when you select Block for an activity in Windows. To turn off the notificiations on Windows devices, disable the restrictions**.
+1. Under **Endpoint devices** select the checkbox for **Show users a policy tip notification when an activity is restricted. This is turned on when you select Block for an activity in Windows. To turn off the notifications on Windows devices, disable the restrictions**.
 
 1. Under **Microsoft 365 services** select the checkbox for **Notify users in Office 365 service with a policy tip**.
 
-1. Select **Save**, then select **Next**.
+1. Select **Save**, then select **Next** on the **Customize advanced DLP rules** page.
 
-1. On the **Test or turn on the policy** page select **Turn it on right away**.
+1. On the **Policy mode** page select **Turn it on right away** then select **Next**.
 
-1. Select **Next** and review the policy configuration.
-
-1. Select **Submit** to create the policy.
+1. On the **Review your policy and create it** page, review your policy settings then select **Submit** to create the policy.
 
 1. Once the policy is created select **Done**.
 
@@ -139,31 +135,27 @@ You have successfully activated the DLP Policy. If the policy detects an attempt
 
 In this task, you will configure a file path exclusion to a folder on your Windows 10 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
-1. In the **Microsoft Purview** portal, on the left navigation pane, select **Policies** and under **Data** select **Data loss prevention**.
+1. In the **Microsoft Purview** portal, on the left navigation pane, expand **Data loss prevention** then select **Endpoint DLP Settings**.
 
-1. In the **Data loss prevention** window, select the **Endpoint DLP settings** tab.
+1. On the **Endpoint DLP settings** page, expand **File path exclusions for Windows**  then select **+ Add file path exclusion**.
 
-1. In the **Endpoint DLP settings** tab, expand the **File path exclusions for Windows** area and select **+ Add file path exclusion**.
+1. On the **Exclude these file paths from Windows devices** flyout page in the **File path exclusion** field, enter _C:\FilePathExclusionTest_ then select the **+** button to the right. Select **Save** to save this entry.
 
-1. In the **Enter a path to exclude** field, type *C:\FilePathExclusionTest*, then select **+**.
+1. Back on the **Endpoint DLP settings** page, expand **Browser and domain restrictions to sensitive data** and select **+ Add or edit unallowed browsers**.
 
-1. Select **Save**.
+1. On the **Add unallowed browsers** flyout page select the checkbox left of **Google Chrome** and select **Save**.
 
-1. Expand **Browser and domain restrictions to sensitive data** and select **+ Add or edit unallowed browsers**.
+1. Back on the **Endpoint DLP settings** page, select the dropdown to the left of **Service domains** and change it from **Off** to **Block**.
 
-1. In the right-side **+ Add unallowed browsers** select the checkbox left of **Google Chrome** and select **Save**.
+1. In the **Update cloud app mode** dialogue select **Yes** to activate the block mode.
 
-1. Select the dropdown menu left of **Service domains** and change it from **Off** to **Block**.
+1. Under **Service domains** select **+ Add cloud service domain**.
 
-1. In the **Update cloud app mode**, select **Yes** to activate the block mode.
-
-1. Select **+ Add cloud service domain** to open the right side pane.
-
-1. In the right side pane, below **Domain** enter **dropbox.com**, select the **+** sign and select **Save**.
+1. On the **Add cloud service domain** flyout page in the **Domain** field enter _dropbox.com_ then select the **+** to the right. Select **Save** to save this setting.
 
 1. Close the browser window.
 
@@ -189,7 +181,7 @@ As Compliance Administrator you need to evaluate the new business requirement of
 
 1. On the **Add "Microsoft Purview Extension"** window, select **Add extension**.
 
-1. Close the notification window and navigate to chrome://extensions.
+1. Close the notification window and navigate to **chrome://extensions**.
 
 1. Validate the **Microsoft Purview Extension** is visible and activated.
 

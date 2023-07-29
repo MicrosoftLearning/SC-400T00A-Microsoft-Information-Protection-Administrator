@@ -100,7 +100,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails** under Items.
+1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
 
 1. Select **Next**.
 
@@ -118,7 +118,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Dont create a policy yet** and then select **Done**.
 
-1. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**.
+1. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**
 
     ![Image of vertical dot menu](../Media/SensitivityLabelDotMenu.png)
 
@@ -133,7 +133,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails** under Items.
+1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
 
 1. Select **Next**.
 
@@ -231,7 +231,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
 
-1. If a **Get your work done with Office 365** message is shown, close it with the **X** in the upper right corner.
+1. Scroll through the Welcome to Microsoft 365 message to close it.
 
 1. Select the Microsoft Word symbol from the left side pane to open Word Online.
 
@@ -239,9 +239,9 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. If a **Your privacy options** message is shown, close it with selecting **Close**.
 
-1. Enter the following contents into the word document: 
+1. Enter the following contents into the word document:
 
-   ```
+   ``` text
    Important HR employee document.
    ```
 
@@ -265,14 +265,14 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. Within the email message (the large content panel at the bottom of the page), insert the following message:
 
-    ```
+    ``` text
     Dear Mr. Deyoung, 
 
     Please find attached the important HR employee document. 
 
-	Kind regards,
+    Kind regards,
 
-	Joni Sherman
+    Joni Sherman
     ```
 
 1. Select the paperclip symbol from the top menu to add an attachment. Select the **HR Document.docx** below **Suggested files** to attach the document.
@@ -306,7 +306,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails** under Items.
+1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
 
 1. Select **Next**.
 
@@ -314,15 +314,15 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
 
-1. In the **Detect content that matches these conditions** section, select **+Add condition** and then select **Content contains**.
+1. In the **Detect content that matches these conditions** section, select **+Add condition** then select **Content contains**.
 
-1. In **Content contains** section select the **Add** text and then select **Sensitive info types**.
+1. In **Content contains** section select the **Add** text then select **Sensitive info types**.
 
 1. A **Sensitive info types** panel will be displayed on the right.
 
 1. In the **Search for sensitive info types** search panel, enter the following information:
 
-    ```
+    ``` text
     German
     ```
 

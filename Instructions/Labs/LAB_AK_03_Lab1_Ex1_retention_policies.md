@@ -69,7 +69,7 @@ You have successfully created a retention policy for the Exchange email, Microso
 
 You will now create a retention policy for the Teams locations. As Teams channels can contain documents, they will all be retained. Your organization has decided that a limited number of users are required to have their Team chats require a retention period.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -166,7 +166,7 @@ You have successfully created retention policies through PowerShell with a reten
 
 In this exercise you will create a retention policy for the finance and legal department. The purpose of the policy is to comply with the law, retaining all legal related documents for 5 years. First you will create an adaptive scope including the legal and the retail department, then you will create a retention policy using this scope.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -181,7 +181,7 @@ In this exercise you will create a retention policy for the finance and legal de
 
 1. Select **Next**.
 
-1. On the **Assign admin unit (preview)** page select **Next**.
+1. On the **Assign admin unit** page select **Next**.
 
 1. On the **What type of scope do you want to create?** page select **Users** then select **Next**.
 
@@ -276,3 +276,5 @@ In this exercise you will verify the users affected by the adaptive scope and te
     - **Enabled**: True
     - **Mode**: Enforce
     - **DistributionStatus**: Success
+
+You have verified the success of your adaptive scope.

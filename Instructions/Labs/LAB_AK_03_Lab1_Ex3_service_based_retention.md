@@ -14,26 +14,28 @@ In this task, you will activate a Mailbox Hold to prevent any content in the emp
 
 1. Log into the Client 1 virtual machine (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://outlook.office.com/ecp** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://admin.exchange.microsoft.com** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
+1. Close all tip windows if any appear.
 
-1. If a welcome screen is displayed, close it.
-
-1. In the **Exchange Admin Center**, in the left navigation pane, select **recipients**, then select **mailboxes**.
+1. In the Exchange Admin Center, in the left navigation pane, expand **Recipients** then select **Mailboxes**.
 
 1. Select the mailbox of **Alex Wilber**, then select the Pencil icon to edit the mailbox.
 
-1. In the **Edit User Mailbox** window, select **mailbox features**.
+1. Select  **Alex Wilber** from the list of mailboxes, and a flyout page on the right displaying Alex's mailbox settings will appear.
 
-1. Scroll down to **Litigation Hold: Disabled** and select **Enable**.
+1. On Alex Wilber's flyout page, select the **Others** tab.
 
-1. On the **litigation hold** page, fill in the following information:
+1. Under **Litigation hold** select **Manage litigation hold**.
 
-    - **Litigation hold duration (days)**: 90
-    - **Note**: Your mailbox has been put on hold for the next 90 days. You will not be able to delete any messages.
+1. On the **Manage litigation hold** hold page, toggle the **Litigation hold** setting from _Off_ to _On_ to display the litigation hold settings.
 
-1. Select **Save** twice. **Note:** A warning message appears **The hold setting may takes up to 240 minutes to take effect**, click **Ok**  on that message.
+1. Set the the following hold settings:
+
+    - **Hold duration (days).**: 90
+    - **Note (visible to the user)**: Your mailbox has been put on hold for the next 90 days. You will not be able to delete any messages.
+
+1. Select **Save**, then a message displaying **Litigation hold updated** should appear.
 
 You have successfully activated the Mailbox Hold on a mailbox in your environment and stopped everyone with access from permanently deleting any content in the mailbox. Applying the hold can take up to 4 hours.  You can proceed to the next task immediately.
 
@@ -55,9 +57,7 @@ In this task, you will delete and restore a deleted document to make sure you ca
 
 1. In the left navigation pane, select **Documents**.
 
-1. Highlight **Vacation Policies.pptx** by selecting the checkbox in front of it.
-
-1. in the action bar, select **Delete**.
+1. On the **Documents** page, select the checkbox to the left of **Vacation Policies.pptx** then select **Delete** from the action bar.
 
 1. In the **Delete?** dialog, select **Delete**.
 
