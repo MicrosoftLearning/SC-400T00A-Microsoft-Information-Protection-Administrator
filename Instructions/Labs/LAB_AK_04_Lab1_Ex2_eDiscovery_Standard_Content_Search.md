@@ -14,7 +14,7 @@ In this task, you will create an eDiscovery (Standard) case as Joni Sherman.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Select the drop down for **eDiscovery** from the left navigation pane, then select **Standard**.
 
@@ -24,17 +24,15 @@ In this task, you will create an eDiscovery (Standard) case as Joni Sherman.
 
 1. In the **Description** field enter **This eDiscovery case is related to a wrongful termination lawsuit filed against Contoso Ltd. by a former employee.** then select **Save**.
 
-1. Back on the **eDiscovery (Standard)** page, select **Settings**.
+1. Back on the **eDiscovery (Standard)** page, select the newly created **Wrongful Termination Case**.
 
-1. Under **Access & permissions** select **Select**.
+1. On the page for the Wrongful Termination Case select **Settings** from the top navigation bar, then select the **Select** button under **Access & permissions**.
 
-1. On the **Access & permissions** flyout page, under **Manage members** select **+ Add**.
+1. On the **Access & permissions** flyout page, under **Users** select **+ Add**.
 
-1. On the **Add members** flyout page type in *Diego* then press enter to find *Diego Siciliani*.
+1. On the **Add members** flyout page search for _Diego_, select the checkbox to the left of _Diego Siciliani_, then select **Add** at the bottom of the page to grant Diego access to the eDiscovery case.
 
-1. Select the checkbox next to Diego's name, then select **Add** at the bottom of the page.
-
-1. Back on the **Access & permissions** page, select **Exit** to go back to the case settings page.
+1. Back on the **Access & permissions** page, select **Close** to go back to the case settings page.
 
 You have now successfully created an eDiscovery (Standard) case titled "Wrongful Termination Case" and added Diego Siciliani as a member to manage access and permissions.
 
@@ -50,17 +48,17 @@ In Task 2 you will create an eDiscovery (Standard) hold as part of the "Wrongful
 
 1. On the **Hold** page of the Wrongful Termination Case, select **+ Create**.
 
-1. From the **New Hold** flyout page on the right, under **Name your hold** in the **Name** field, enter *Wrongful Termination Hold*. In the **Description** field enter *This legal hold is related to the Contoso Ltd. wrongful termination lawsuit and is designed to preserve all relevant electronic data related to the case.*
-
-1. Select **Next**.
+1. From the **New Hold** flyout page on the right, under **Name your hold** in the **Name** field, enter _Wrongful Termination Hold_. In the **Description** field enter _This legal hold is related to the Contoso Ltd. wrongful termination lawsuit and is designed to preserve all relevant electronic data related to the case._, then select **Next**.
 
 1. On the **Choose locations** page, select **Exchange mailboxes**. Under **Included** select **Choose users, groups, or teams**.
 
-1. On the **Exchange mailboxes** flyout page on the right, in the **Search** field enter *Lidia* then press enter. Select the checkbox for **Lidia Holloway** then select **Done**.
+1. On the **Exchange mailboxes** flyout page on the right, in the **Search** search for _Lidia_, then select the checkbox to the left of  **Lidia Holloway**. Select **Done**.
 
-1. Back on the **Choose locations** page select **Next**.
+1. Back on the **Choose locations** page, select **Next**.
 
 1. On the **Query** page, ensure **Query builder** is selected, then select the trashcan in the **Keyword** box to remove this search criteria.
+
+      ![Screenshot of Manage roles option](../Media/remove_keyword_search.png)
 
 1. Select the dropdown for **+ Add condition** then select **Date**.
 
@@ -84,19 +82,23 @@ In Task 3 you will an eDiscovery (Standard) search within the "Wrongful Terminat
 
 1. On the **Searches** page of the Wrongful Termination Case page, select **+ New search**.
 
-1. On the **Name and description** page of the **New search** wizard, in the **Name** field enter *Wrongful Termination Search*. In the **Description** field enter *This search is related to the Contoso Ltd. wrongful termination lawsuit and is designed to identify and collect all relevant electronic data related to the case.*
-
-1. Select **Next**.
+1. On the **Name and description** page of the **New search** wizard, in the **Name** field enter _Wrongful Termination Search_. In the **Description** field enter _This search is related to the Contoso Ltd. wrongful termination lawsuit and is designed to identify and collect all relevant electronic data related to the case._ Select **Next**.
 
 1. On the **Locations** page, select **On** for **Exchange mailboxes**, **SharePoint sites**, and **Exchange public folders** then select **Next**.
 
 1. On the **Define your search conditions** page select the radial for **KQL editor**.
 
-1. In the KQL editor box, enter `To:Lidia OR From:Lidia OR Cc:Lidia OR Bcc:Lidia` then select **Next**.
+1. In the KQL editor box, enter:
+
+    ```text
+    To:Lidia OR From:Lidia OR Cc:Lidia OR Bcc:Lidia
+    ```
+
+1. Select **Next**.
 
 1. On the **Review your search and create it** page select **Submit**.
 
-1. On the **New search created** page select **Done**.
+1. On the **New search created** page, select **Done**.
 
 By successfully creating the "Wrongful Termination Search" using the KQL editor and defining the search conditions, you have initiated a search process to identify and collect all relevant electronic data related to the Contoso Ltd. wrongful termination lawsuit.
 

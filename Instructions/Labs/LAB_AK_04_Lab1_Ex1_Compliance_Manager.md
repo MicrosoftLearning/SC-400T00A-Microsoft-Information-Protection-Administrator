@@ -30,17 +30,15 @@ In this task you will grant Joni the required permissions to create assessments 
 
 1. On the **Permissions** page select **Roles** under **Microsoft Purview solutions**.
 
-1. On the **Role groups for Microsoft Purview solutions** select **Compliance Manager Administrator**.
+1. On the **Role groups for Microsoft Purview solutions** select **Compliance Manager Administrators**.
 
 1. On the **Compliance Manager Administrators** flyout page on the right, select **Edit**.
 
 1. In the **Compliance Manager Administrators** wizard, on the **Edit members of the role group** page, select **+ Choose users**.
 
-1. On the **Choose users** page, enter *Joni* into the search and press Enter.
+1. On the **Choose users** page, search for _Joni_, then select the checkbox next to **Joni Sherman** and select the **Select** button at the bottom of the page.
 
-1. Select the check box next to **Joni Sherman** and select the **Select** button at the bottom of the page.
-
-1. Back on the **Edit members of the role group** page select **Next**.
+1. Back on the **Edit members of the role group** page, select **Next**.
 
 1. On the **Review the role group and finish** select **Save**.
 
@@ -52,11 +50,9 @@ In this task you will grant Joni the required permissions to create assessments 
 
 1. In the **Compliance Manager Contributors** wizard, on the **Edit members of the role group** page, select **+ Choose users**.
 
-1. On the **Choose users** page, enter *Megan* into the search and press Enter.
+1. On the **Choose users** page, search for _Megan_, then select the checkbox next to **Megan Bowen** and select the **Select** button at the bottom of the page.
 
-1. Select the check box next to **Megan Bowen** and select the **Select** button at the bottom of the page.
-
-1. Back on the **Edit members of the role group** page select **Next**.
+1. Back on the **Edit members of the role group** page, select **Next**.
 
 1. On the **Review the role group and finish** select **Save**.
 
@@ -68,7 +64,7 @@ In this task, you granted Joni the necessary permissions to create assessments u
 
 ## Task 2 - Explore Compliance Manager
 
-In this task, you will explore the functionalities of Compliance Manager within the Microsoft Purview compliance portal center. 
+In this task, you will explore the functionalities of Compliance Manager within the Microsoft Purview compliance portal center.
 
 1. Open **Microsoft Edge** and navigate to **https://compliance.microsoft.com**. Log into the Microsoft Purview compliance portal center as **Joni Sherman**.
 
@@ -102,23 +98,19 @@ In this task, you explored the functionalities of Compliance Manager within the 
 
 1. On the **Base your assessment on a regulation** page, select **Select regulation**.
 
-1. On the **Select regulation** fly out page, search for *Gramm*.
+1. On the **Select regulation** fly out page, search for _Gramm_.
 
-1. Select the checkbox next to **Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**  then select **Save**.
+1. Select the checkbox the the left of**Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**, then select **Save**.
 
-1. Back on the **Base your assessment on a regulation** select **Next**.
+1. Back on the **Base your assessment on a regulation** page, select **Next**.
 
-1. On the **Add name and group** page under **Assessment name** enter *GLBA Compliance Assessment*.
-
-1. Under **Assessment group** select **Use existing group** and select the *Default Group*.
-
-1. Select **Next**
+1. On the **Add name and group** page under **Assessment name** enter _GLBA Compliance Assessment_. Leave the _Default Group_ selected under **Use existing group**, then select **Next**.
 
 1. On the **Select services** page, select **Select services**.
 
-1. On the **Select services** fly out page, select the checkbox next to **Microsoft 365** then select **Add** at the bottom of the page.
+1. On the **Select services** flyout page, select the checkbox next to **Microsoft 365** then select **Update** at the bottom of the page.
 
-1. Back on the **Select services** page select **Next.**
+1. Back on the **Select services** page, select **Next**.
 
 1. On the **Review and finish** page, review your selections then select **Create assessment** at the bottom of the screen.
 
@@ -128,7 +120,7 @@ You have successfully created the GLBA Compliance Assessment within Compliance M
 
 ## Task 4 - Assign improvement action
 
-In this task, you will create a new assessment within Compliance Manager to evaluate Contoso Ltd.'s compliance with the Gramm-Leach-Bliley Act (GLBA). 
+In this task, you will create a new assessment within Compliance Manager to evaluate Contoso Ltd.'s compliance with the Gramm-Leach-Bliley Act (GLBA).
 
 1. You should still be logged in with Joni's account and logged into the **Compliance Manager** within the Microsoft Purview compliance portal. You should be on the **GLBA Compliance Assessment** that was created in the previous task.
 
@@ -138,27 +130,25 @@ In this task, you will create a new assessment within Compliance Manager to eval
 
 1. Explore the **Improvement actions** available to comply with the Gramm-Leach-Bliley Act regulation.
 
-1. In the search bar on the top right of the list of improvement actions search for *DLP*.
+1. In the search bar on the top right of the list of improvement actions search for _DLP_.
 
 1. Select the improvement action for **Use default DLP policies for US Gramm Leach Bliley Act**.
 
 1. On the **Use default DLP policies for US Gramm Leach Bliley Act** page, on the **Overview** pane on the left, select **Assign action** to assign this improvement action to another compliance administrator.
 
-1. On the **Assign to user** fly out page on the right, enter *Megan* in the search field then press enter.
-
-1. Select the check box for **Megan Bowen** then select **Assign** at the bottom of the page to assign this improvement action to Megan Bowen.
+1. On the **Assign to user** flyout page on the right, search for _Megan_, then select the checkbox to the left of **Megan Bowen**. Select **Assign** at the bottom of the page to assign this improvement action to Megan Bowen.
 
 1. Back on the **Use default DLP policies for US Gramm Leach Bliley Act** page, you should see this improvement action has been assigned to Megan Bowen.
 
 ## Task 5 - Act on improvement action
 
-In this task, you will log into the Client 2 VM (LON-CL2) and navigate to Outlook to access Megan Bowen's email. You will then review and act upon the assigned improvement action in Compliance Manager.
+In this task, you will review and act upon the assigned improvement action in Compliance Manager.
 
-1. Leave Client 1 VM (LON-CL1) open as it is, and log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin** and logged into Microsoft 365 as Joni Sherman. Sign out of Joni Sherman's account by selecting her image in the upper right of the screen and selecting **Sign out**.
 
 1. Open **Microsoft Edge** and navigate to **https://outlook.office.com/**.
 
-1. Log in with Megan Bowen's account, MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password should be provided by your lab hosting provider.
+1. Log in with Megan Bowen's account, MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Megan should have an email with the subject **Compliance Manager** in their inbox.
 
@@ -209,38 +199,36 @@ In this task, you will log into the Client 2 VM (LON-CL2) and navigate to Outloo
 
 Upon completing the creation and activation of the new DLP policy for **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced**, you will have satisfied the requirements of the assigned improvement action.
 
-## Task 6 - Update improvement action
+## Task 6 - Manually update improvement action
 
-In this final task, you will log back into Client 1 VM (LON-CL1) and make necessary updates to the assigned improvement action within Compliance Manager. 
+1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin** and logged into Microsoft 365 as Megan Bowen. Sign out of Megan's account by selecting her image in the upper right of the screen and selecting **Sign out**.
 
-1. Log back into Client 1 VM (LON-CL1). You should still be logged in with Joni's account, viewing the **Use default DLP policies for US Gramm Leach Bliley Act** page.
+1. Open **Microsoft Edge** and navigate to **https://compliance.microsoft.com/**.
 
-1. On the **Overview** pane under **Testing source**, select the dropdown for **Select source type** and change the source to **Manual**.
+1. Log in with Joni Sherman's account, JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Select **Save** in the top right-hand corner.
+1. Select **Compliance Manager** from the left navigation pane, then select **Improvement actions** from the top navigation bar.
 
-1. From the **Compliance Manager > Improvement actions > Use default DLP policies for US Gramm Leach Bliley Act** bread crumb at the top of the page, select **Improvement actions** to navigate back to the list of improvement actions.
+1. In the search bar on the top right, search for _Use default DLP policies for US Gramm Leach Bliley Act_.
 
-1. Under **Filters** select **Regulations** then select **Gramm-Leach-Bliley Act**. Select **Solutions** then select **Data loss prevention**.
-
-1. With the filters selected, it should be easier to find the improvement action for **Use default DLP policies for US Gramm Leach Bliley Act**. Select the checkbox next to **Use default DLP policies for US Gramm Leach Bliley Act** then select **Export actions** above the filter selections.
+1. Select the checkbox to the left of **Use default DLP policies for US Gramm Leach Bliley Act** then select **Export actions** above the filter selections.
 
 1. Open a new Microsoft Edge window or tab and navigate to **https://onedrive.com** and sign in with Joni's account.
 
-1. Select **Upload** from the top navigation buttons, then select **Files**.
+1. Select **+ Add New** on the upper left, above the navigation bar, then select **Files upload**.
 
 1. Select **Downloads** from the explorer window that opens, then select the **ExportActions.xlsx** file that was downloaded in a previous step then select **Open**.
 
-1. Select the **ExportActions.xlsx** file in OneDrive to edit the document.
+1. Select **My files** from the left navigation pane, then select the **ExportActions.xlsx** file in OneDrive to edit the document.
 
 1. Review the **How to update Actions** tab in the Excel document.
 
 1. In the **Action Update** tab:
     - Update the **implementationStatus** from **NotImplemented** to **Implemented**
-    - Update the **Implementation Date** to today's date with a time of 0:0:00
     - Update the **Implementation Notes** to *Action implemented by Megan Bowen*
     - Update the **Test Status** to *InProgress*
     - Update the **Test Date** to a blank value
+    - Update the **Testing Source** to _Manual_
 
 1. From the top navigation ribbon in Excel, select **File**, then select **Save As**. In the **Save As** pane, select **Download a Copy**. The file will save in the **Downloads** folder of your VM.
 
@@ -264,6 +252,6 @@ In this final task, you will log back into Client 1 VM (LON-CL1) and make necess
 
 1. On the **Actions updated** page select **Finish**.
 
-1. Back on the **Compliance Manager** page under the **Improvement actions** tab, select **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced**. Review the changes made in the previous step under the **Implementation** and **Testing** tabs.
+1. Back on the **Compliance Manager** page under the **Improvement actions** tab, select **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced**. Review the changes made in the previous step under the **Implementation** and **Testing** tabs. You should now see the **Implementation status** set to **Implemented** and the **Test status** updated to **In progress**. In the **Overview** pane on the right, you should now also see the **Testing source** updated to **Manual**.
 
 You have successfully updated the improvement action.
