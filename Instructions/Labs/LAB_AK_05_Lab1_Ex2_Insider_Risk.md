@@ -18,7 +18,7 @@ In this exercise, you will assign the Insider Risk Management role to Joni to gr
 
 1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown.
 
-1. On the **Permissions** page select Roles.
+1. On the **Permissions** page, under **Microsoft Purview solutions** select Roles.
 
 1. On the **Role groups for Microsoft Purview solutions** page select **Insider Risk Management**.
 
@@ -26,7 +26,7 @@ In this exercise, you will assign the Insider Risk Management role to Joni to gr
 
 1. On the **Edit members of the role group** page select **+ Choose users**.
 
-1. In the **Choose users** page select the check box next to Joni Sherman then select **Select**.
+1. In the **Choose users** page select the check box next to Joni Sherman then select the **Select** button.
 
 1. On the **Edit members of the role group** page select **Next**.
 
@@ -42,9 +42,9 @@ You have successfully assigned the Insider Risk Management role to Joni Sherman,
 
 In this task, you will customize the Insider risk management settings in the Microsoft Purview portal. This will allow Joni Sherman to effectively manage potential insider risks within the organization and ensure the security of sensitive information.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Select **Insider Risk Management** from the left navigation bar.
+1. Select **Insider risk management** from the left navigation bar.
 
 1. Select the gear icon on the top right for **Settings**.
 
@@ -79,7 +79,12 @@ In this task, you will customize the Insider risk management settings in the Mic
 
 1. Select **+ Create priority user group** to open the **New priority user group wizard**.
 
-1. On the **Name and describe the priority user group** page in the **Name** field enter **Finance team**. In the **Description** text box enter **Team members that manage financial operations, budgeting, and reporting** then select **Next**.
+1. On the **Name and describe the priority user group** page enter:
+
+    - **Name**: Finance team
+    - **Description**: Team members that manage financial operations, budgeting, and reporting
+
+1. Select **Next**.
 
 1. On the **Choose members** page select **+ Choose members**.
 
@@ -87,7 +92,7 @@ In this task, you will customize the Insider risk management settings in the Mic
 
 1. On the **Choose members** page select **Next**.
 
-1. On the **Choose who can view data involving users in this priority group** select **+Choose users and role groups**.
+1. On the **Choose who can view data involving users in this priority group** select **+ Choose users and role groups**.
 
 1. On the **Choose users and role groups** page select the checkbox next to **Insider Risk Management** to add all members who have the Insider Risk Management role in Microsoft Purview the select **Add**.
 
@@ -113,7 +118,12 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. On the **Choose a policy template** page select **Data leaks** then select **Next**.
 
-1. On the **Name your policy page**, in the **Name** field enter **Financial Data Protection** and enter **Sensitive financial data access monitoring** in the **Description** field then select **Next**.
+1. On the **Name your policy page** enter:
+
+    - **Name**: Financial Data Protection
+    - **Description**: Sensitive financial data access monitoring
+
+1. Select **Next**.
 
 1. On the **Choose users and groups** page, leave **Include all users and groups** selected, then select **Next**.
 
@@ -121,7 +131,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. On the **Sensitive info types to prioritize** page select **+ Add or edit sensitive info type**.
 
-1. In the **Add or edit sensitive info types** pane search for *bank* and select the check box next to **U.S. Bank Account Number** and **International Banking Account Number (IBAN)**. Next search for *credit* and select the check box next to **Credit Card Number** then select **Add** to add the 3 sensitive info types.
+1. In the **Add or edit sensitive info types** pane search for _bank_ and select the check box next to **U.S. Bank Account Number** and **International Banking Account Number (IBAN)**. Next search for _credit_ and select the check box next to **Credit Card Number** then select **Add** to add the 3 sensitive info types.
 
 1. Back on the **Sensitive info types to prioritize** select **Next**.
 
@@ -130,6 +140,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 1. On the **Triggers for this policy** page select **User performs an exfiltration activity**.
 
 1. Under **Select which activities will trigger this policy** select:
+
    - **Downloading content from SharePoint**
    - **Sending email with attachments to recipients outside the organization**
    - **Using a browser to upload files to the web**
@@ -162,9 +173,10 @@ In this task, you will create a notice template in Microsoft Purview's Insider R
 
 1. You should still be logged in as Joni in Microsoft Purview in Insider risk management.
 
-1. From the top navigation tabs, select **Notice template** then select **+ Create notice template**
+1. From the top navigation tabs, select **Notice template** then select **+ Create notice template**.
 
 1. Fill out the necessary information in **Create a new notice template** flyout page on the right.
+
     - **Template name**: Data Leak Policy Alert
     - **Send from**: Joni Sherman
     - **Subject**: Potential Data Leak Detected

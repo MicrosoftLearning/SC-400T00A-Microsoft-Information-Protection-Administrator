@@ -108,13 +108,15 @@ In this task you will export the search results obtained from the "Wrongful Term
 
 1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
-1. Navigate to **Content search** from the left navigation pane. On the **Content search** page, if the Wrongful Termination Search has a status of **Starting**, refresh the searches until the status shows **Completed**.
+1. In the left navigation pane, navigate to **eDiscovery**, then select **Standard**.
 
-1. Select **Wrongful Termination Search** to display the **Wrongful Termination Search** fly out page, then select **Search statistics**. Expand **Search content**, **Condition report**, and **Top locations** to view statistics on the content search.
+1. Select the **Wrongful Termination Case** created in the previous task, then select **Searches**.
 
-1. Select the **Actions** button at the bottom of the page and select **Export results**.
+1. Under the **Searches** section, select the **Wrongful Termination Search** that was conducted in a previous task.
 
-1. In the **Export results** page under **Output options** select **All items, excluding one that have unrecognized format, are encrypted, or weren't indexed for other reasons**.
+1. In the **Wrongful Termination Search** flyout page on the right, select the **Actions** drop down on the bottom of the page then select **Export results**.
+
+1. On the **Export results** page under **Output options** select **All items, excluding one that have unrecognized format, are encrypted, or weren't indexed for other reasons**.
 
 1. Under **Export Exchange content as** select **One PST file for each mailbox**.
 
@@ -124,13 +126,13 @@ In this task you will export the search results obtained from the "Wrongful Term
 
 1. A **compliance** pop up will appear letting you know **A job has been created**. Select **OK**.
 
-1. Back on the **Content search** page select the **Export** tab from the top navigation bar. Select the job named **Wrongful Termination Search_Export**
+1. Back on the **Searches** page select the **Exports** tab from the top navigation bar. Select the job named **Wrongful Termination Search_Export**
 
     >**Note**: If the status of the export is marked **Scheduling...** select **Refresh** until the **Export key** is available.
 
 1. On the **Wrongful Termination Search_Export** flyout page under **Export key** select to **Copy to clipboard** to copy the export key.
 
-1. At the top of the **Wrongful Termination Search_Export** page select **Download report** to download the report.
+1. At the top of the **Wrongful Termination Search_Export** page select **Download results** to download the results.
 
 1. If you're prompted to install the **eDiscovery Export Tool**, select **Install**.
 
@@ -142,7 +144,7 @@ In this task you will export the search results obtained from the "Wrongful Term
 
 1. Back in the **eDiscovery Export Tool** select **Start** to export the files.
 
-1. Once you get a green check mark for **Processing has completed.** Your report has been downloaded. Select **Close** to close the window.
+1. Once you get a green check mark for **Processing has completed.** Your results have been downloaded. Select **Close** to close the window.
 
 1. In the **eDiscovery Export Tool**, select the link for the **Export Location:** to open the locally exported files.
 
@@ -164,21 +166,21 @@ In this task, you will review the search results obtained from the "Wrongful Ter
 
 1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
-1. Navigate to **Content search** from the left navigation pane.
+1. In the left navigation pane, navigate to **eDiscovery**, then select **Standard**.
 
-1. Select **Wrongful Termination Search** from the **Content search** page, and the **Wrongful Termination Search** flyout page should appear on the right.
+1. Select the **Wrongful Termination Case** created in the previous task, then select **Searches**.
 
-1. In the **Wrongful Termination Search** flyout page select **Search statistics** and expand **Search content**, **Condition report**, and **Top locations** to view statistics on the content search.
+1. Under the **Searches** section, select the **Wrongful Termination Search** that was conducted in a previous task.
 
-1. Select the **Actions** button at the bottom of the pane and select **Export report**.
+1. In the **Wrongful Termination Search** flyout page on the right, select the **Actions** drop down on the bottom of the page then select **Export report**.
 
-1. In the **Export report** pane under **Output options** select **All items, excluding one that have unrecognized format, are encrypted, or weren't indexed for other reasons**.
+1. On the **Export report** page under **Output options** select **All items, excluding one that have unrecognized format, are encrypted, or weren't indexed for other reasons**.
 
 1. Select **Generate report**.
 
 1. A **compliance** pop up will appear letting you know **A job has been created**. Select **OK**.
 
-1. Back on the **Content search** page select the **Export** tab from the top navigation bar. You should have a report named **Wrongful Termination Search_ReportsOnly**.
+1. Back on the **Searches** page select the **Exports** tab from the top navigation bar. You should have a report named **Wrongful Termination Search_ReportsOnly**.
 
 1. Select the **Wrongful Termination Search_ReportsOnly** report, and **Wrongful Termination Search_ReportsOnly** flyout page should appear on the right.
 
