@@ -166,6 +166,8 @@ In this task you'll test the DLP policy that was created in the previous task.
    Joni Sherman
    ```
 
+    >**Tip**: If you're working from a lab hosting provider, you can access all the labs by opening **https://aka.ms/sc400labs** in Microsoft Edge. This will give you a web-based interface for the labs, making it easier to copy and paste longer blocks of text when needed.
+
 1. Select the **Send** button in the upper right of the message window to send the email.
 
 1. You should receive a message that the email was undeliverable and blocked by a DLP policy.

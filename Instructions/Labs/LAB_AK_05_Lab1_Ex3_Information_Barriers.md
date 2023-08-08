@@ -56,6 +56,8 @@ In this task, you'll enable Admin Consent for Information barriers (IB) in Micro
 
     >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
 
+    >**Tip**: If you're working from a lab hosting provider, you can access all the labs by opening **https://aka.ms/sc400labs** in Microsoft Edge. This will give you a web-based interface for the labs, making it easier to copy and paste PowerShell scripts when needed.
+
 1. When prompted, login with the MOD Administrator account
 
 1. In the **Permissions requested** dialog box, review the information, and then select **Accept**.

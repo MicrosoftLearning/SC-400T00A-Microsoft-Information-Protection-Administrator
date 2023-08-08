@@ -84,6 +84,8 @@ In this task, you'll enable information barriers in SharePoint Online and OneDri
     Install-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
+    >**Tip**: If you're working from a lab hosting provider, you can access all the labs by opening **https://aka.ms/sc400labs** in Microsoft Edge. This will give you a web-based interface for the labs, making it easier to copy and paste PowerShell scripts when needed.
+
 1. If prompted to install the PowerShell NuGet provider, enter **Y** to install the provider.
 
 1. If prompted to install from an untrusted repository, enter **Y** to install the module from the PSGallery.

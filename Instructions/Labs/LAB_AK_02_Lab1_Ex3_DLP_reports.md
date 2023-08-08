@@ -77,6 +77,8 @@ In this task, you will review DLP activities via PowerShell.
    ($Results.ResultData) | ConvertFrom-Json | select -ExpandProperty SyncRoot | ogv
    ```
 
+    >**Tip**: If you're working from a lab hosting provider, you can access all the labs by opening **https://aka.ms/sc400labs** in Microsoft Edge. This will give you a web-based interface for the labs, making it easier to copy and paste PowerShell scripts when needed.
+
 1. Explore the data collected from previous labs then close the grid view window.
 
 1. The script below is an example of using the Filter1 parameter to display Endpoint activities from the most recent week:
