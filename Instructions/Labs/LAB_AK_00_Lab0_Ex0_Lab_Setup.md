@@ -22,8 +22,6 @@ In task, we'll focus on enabling Audit in the Microsoft Purview compliance porta
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
-1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
-
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. In the left navigation pane select **Audit**.
