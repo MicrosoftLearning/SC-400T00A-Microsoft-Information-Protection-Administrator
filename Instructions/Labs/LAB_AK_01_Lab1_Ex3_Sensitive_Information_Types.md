@@ -13,7 +13,7 @@ Contoso Ltd. previously had issues with employees accidentally sending out perso
 
 In this exercise, you will use the Security & Compliance Center PowerShell module to create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
@@ -23,7 +23,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. Select **Sensitive info types** from the top pane.  
 
-   >**Hint:** If **Sensitive info types** doesn't appear in the Purview portal then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser.  You may have to sign-out and sign-in as JoniS.
+   >**Hint:** If **Sensitive info types** doesn't appear in the Purview portal, then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser.  You may have to sign-out and sign-in as JoniS.
 
 1. On the **Sensitive info types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
@@ -76,7 +76,7 @@ You have successfully created a new sensitive information type to identify emplo
 
 As an extra search pattern, you will create an Exact Data Match (EDM) based classification with a database schema of employee data. The database source file will be formatted with the following data fields of employees: Name, Birthdate, StreetAddress, and EmployeeID.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. To create the required Azure AD security group, sign out of Joni Sherman's account by selecting the user image in the upper right corner and select **Sign out**.
 
@@ -96,7 +96,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. On the **Set up the basics** screen, enter the following:
     - **Name**: EDM_DataUploaders
-    - **Description**: People who will upload data for EDM.
+    - **Description**: People who upload data for EDM.
 
 1. Select **Next**.
 
@@ -116,7 +116,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Verify **Joni Sherman** is listed below **Members**.
 
-1. Close the right side pane with **X**.
+1. Close the right-side pane with **X**.
 
 1. Select the circle with the MOD Administrator initials **MA** and select **Sign out**.
 
@@ -136,7 +136,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **+ Create EDM schema**
 
-1. On the **New EDM schema** pane, enter the following:
+1. On the **New EDM schema** page, enter the following:
     - **Name**: employeedb
     - **Description**: Employee Database schema
 
@@ -204,7 +204,7 @@ You have successfully created a new EDM-based classification sensitive informati
 
 To associate the EDM-based classification with a database containing sensitive data, hashing and uploading the actual data for the sensitive information type via the EDM Upload Agent tool is required next.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to **https://go.microsoft.com/fwlink/?linkid=2088639** to access the EDM download agent.
 
@@ -299,13 +299,13 @@ bar with the right mouse button and select **Windows PowerShell (Admin)** and ru
 
 1. Close the PowerShell window.
 
-You have successfully hashed and uploaded a database file for a EDM-based classification sensitive information type.
+You have successfully hashed and uploaded a database file for an EDM-based classification sensitive information type.
 
 ## Task 4 – Create Keyword Dictionary
 
 Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason for illness or disease was sent out.  We do not want that to happen.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -364,14 +364,14 @@ You have successfully created a new sensitive information type based on a keywor
 
 Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. Select the Windows symbol in the lower left to open the start menu, enter **Notepad** and select **Notepad** from the start menu.
 
 1. Enter the following text to the notepad window:
 
     ``` text
-    Employee Joni Sherman EMP123456 is on absence because of the flu/influenza.
+    Employee Joni Sherman EMP123456 is absent because of the flu/influenza.
     ```
 
 1. Select **File** and **Save As**.

@@ -6,13 +6,13 @@ lab:
 
 # Lab 1 - Exercise 2 - Manage Office 365 Message Encryption
 
-The first setting Joni Sherman needs to configure and test with her pilot team is the Microsoft 365 built-in Office 365 Message Encryption (OME). For this purpose, she will modify the default template and create a new branding template, that will be assigned to one of the pilot users. The pilot users will then test the OME functionality with their accounts.
+The first setting Joni Sherman needs to configure and test with her pilot team is the Microsoft 365 built-in Office 365 Message Encryption (OME). For this purpose, she will modify the default template and create a new branding template, which will be assigned to one of the pilot users. The pilot users will then test the OME functionality with their accounts.
 
 ## Task 1 – Verify Azure RMS functionality
 
 In this task, you will install the Exchange Online PowerShell module and verify the correct Azure RMS functionality of your tenant in context of Joni Sherman, who was assigned the role of the Compliance Administrator in the last exercise.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 
@@ -106,7 +106,7 @@ You have successfully deactivated the usage of foreign identity providers, such 
 
 You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
-1. Leave Client 1 VM (LON-CL1) open as it is, and log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+1. Leave Client 1 VM (LON-CL1) open as it is, and log into Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
 1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 
@@ -128,13 +128,13 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Secret Message** to the subject line and **My super-secret message.** to the body.
 
-1. From the top pane, select **Options** then **Encrypt** to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipeints can't remove encryption."
+1. From the top pane, select **Options** then **Encrypt** to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipients can't remove encryption."
 
       ![Screenshot of Encyption settings](../Media/OptionsEncrypt.png)
 
 1. Select **Send** to send the message.
 
-1. Sign in to your personal email account and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically. If you sent the email to another email service like (@gmail.com), you may have to perform the next steps to process the encryption and read the message.
+1. Sign into your personal email account and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically. If you sent the email to another email service like (@gmail.com), you may have to perform the next steps to process the encryption and read the message.
 
     >**Note:** You may need to check your junk or spam folder for the message from Lynne Robbins.
 
@@ -146,7 +146,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. Go to your personal email portal and open the message with subject **Your one-time passcode to view the message**.
 
-1. Copy the passcode, paste it in to the OME portal and select **Continue**.
+1. Copy the passcode, paste it into the OME portal and select **Continue**.
 
 1. Review the encrypted message.
 
@@ -156,9 +156,9 @@ You have successfully tested the modified default OME template with deactivated 
 
 ## Task 4 – Create custom branding template
 
-Protected messages sent by your organizations finance department require a special branding, including customized introduction and body texts and a Disclaimer link in the footer. The finance messages shall also expire after seven days. In this task, you will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mails sent from the finance department.
+Protected messages sent by your organizations finance department require special branding, including customized introduction and body texts and a Disclaimer link in the footer. The finance messages shall also expire after seven days. In this task, you will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mail sent from the finance department.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
 1. Run the following cmdlet to create a new OME configuration:
 
@@ -199,11 +199,11 @@ Protected messages sent by your organizations finance department require a speci
     ```
 
 1. Type the following cmdlet to verify changes.
-    
+
     ```powershell
     Get-OMEConfiguration -Identity "Finance Department" | Format-List
     ```
-    
+
 1. Leave the PowerShell open.
 
 You have successfully created a new transport rule that applies the custom OME template automatically, when a member of the finance department sends a message to external recipients.
@@ -212,9 +212,9 @@ You have successfully created a new transport rule that applies the custom OME t
 
 To validate the new custom OME configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
 
-1. Log into the Client 2 VM (LON-CL2) as the **lon-cl2\admin** account. 
+1. Log into Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
-1. Select **Microsoft Edge** from your taskbar. Outlook on the web tab should still be open and you should be logged in as **Lynne Robbins**. 
+1. Select **Microsoft Edge** from your taskbar. Outlook on the web tab should still be open and you should be logged in as **Lynne Robbins**.
 
 1. Select **New message** from the upper left side part of Outlook on the web.
 
@@ -222,7 +222,7 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 
 1. Select **Send** to send the message.
 
-1. Sign in to your personal email account and open the message from Lynne Robbins.
+1. Sign into your personal email account and open the message from Lynne Robbins.
 
 1. You should see a message from Lynne Robbins that looks like the image below.  Select **Read the message**.
 

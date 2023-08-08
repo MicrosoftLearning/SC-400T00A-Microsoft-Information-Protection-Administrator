@@ -12,7 +12,7 @@ You assume the role of Joni Sherman, a Compliance Admin for Contoso Ltd. The leg
 
 In this task, you will activate a Mailbox Hold to prevent any content in the employee's mailbox from being deleted.
 
-1. Log into the Client 1 virtual machine (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 virtual machine (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://admin.exchange.microsoft.com** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
@@ -28,9 +28,9 @@ In this task, you will activate a Mailbox Hold to prevent any content in the emp
 
 1. Under **Litigation hold** select **Manage litigation hold**.
 
-1. On the **Manage litigation hold** hold page, toggle the **Litigation hold** setting from _Off_ to _On_ to display the litigation hold settings.
+1. On the **Manage litigation hold** page, toggle the **Litigation hold** setting from _Off_ to _On_ to display the litigation hold settings.
 
-1. Set the the following hold settings:
+1. Set the following hold settings:
 
     - **Hold duration (days).**: 90
     - **Note (visible to the user)**: Your mailbox has been put on hold for the next 90 days. You will not be able to delete any messages.
@@ -43,7 +43,7 @@ You have successfully activated the Mailbox Hold on a mailbox in your environmen
 
 In this task, you will delete and restore a deleted document to make sure you can restore documents the employee might delete after he is informed about the litigation hold against his mailbox.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://www.office.com** and log in Microsoft 365 as **Joni Sherman**.
 

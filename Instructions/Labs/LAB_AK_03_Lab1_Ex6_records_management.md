@@ -12,7 +12,7 @@ In this exercise, you will assume the role of Joni Sherman, a Compliance Adminis
 
 In this task, you will create a file plan label that allows your HR department to label content containing health insurance information that your employees are required to be provided when they are hired.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com/**.
 
@@ -22,7 +22,7 @@ In this task, you will create a file plan label that allows your HR department t
 
 1. Select **+ Create a label**.
 
-1. Enter the following information, then select **next**:
+1. Enter the following information, then select **Next**:
 
     - **Name**: Employee Data
     - **Description for users**: Content marked with this label contains sensitive employee data.
@@ -56,7 +56,7 @@ You successfully created a retention label using file plan that keeps all labele
 
 In this task, you will publish the label so users of the HR department can apply it to content containing health insurance information.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com/**.
 
@@ -89,7 +89,7 @@ You successfully started the process of publishing a retention label including a
 
 In this task, you will assign the published record label to an email in Outlook and observe the results of applying the record. You might need to wait for the 24-hour publishing delay.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In Microsoft Edge Navigate to **https://outlook.office.com**. If necessary, sign in as **Megan Bowen**.
 

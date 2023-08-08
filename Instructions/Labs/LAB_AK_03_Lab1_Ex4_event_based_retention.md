@@ -12,7 +12,7 @@ In this exercise you will assume the role of Joni Sherman, a Compliance Administ
 
 In this step, you will create a retention label and an event type. The event type will trigger the retention period. Any content that has the retention label applied to it for that specific event type will have the retention actions from the label enforced on it.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -57,9 +57,9 @@ You have successfully created the label and need to publish it.
 
 ## Task 2 – Publish event-driven retention label
 
-Following from the previous task you will now publish the Project Asset retention label so that the published label will be available for users to apply to the documents in Sharepoint documents.
+Following from the previous task you will now publish the Project Asset retention label so that the published label will be available for users to apply to the documents in SharePoint documents.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -99,11 +99,11 @@ Following from the previous task you will now publish the Project Asset retentio
 
 You have successfully published the retention label for project assets to your users.
 
-## Task 3 – Apply label and add AssetID
+## Task 3 – Apply label and add an Asset ID
 
 Once the label is published the users need to apply the label and assign the correct Asset ID for the project to the documents they want to label. In this task you will test this functionality.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -125,9 +125,9 @@ You've successfully assigned a label and an asset ID to a document. When the Pro
 
 ## Task 4 – Create specific event
 
-Once the event happened you need to trigger it so that the content you labeled will start the mandatory retention period.
+Once the event happens you need to trigger it so that the content you labeled will start the mandatory retention period.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -162,7 +162,7 @@ You have successfully triggered an event and started the retention period for al
 
 To verify that the retention period you specified started, you need to try to delete the file.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -176,4 +176,4 @@ To verify that the retention period you specified started, you need to try to de
 
 1. In the context menu select **Delete** and observe the results.
 
-You have successfully confirmed that the retention period on the document started. If you can still delete the document the synchronization period for the event has not been completed and the triggering of the retention policy is still in progress. As with other Retention Labels this process can take up to 7 days to complete.
+You have successfully confirmed that the retention period on the document has started. If you can still delete the document the synchronization period for the event has not been completed and the triggering of the retention policy is still in progress. As with other Retention Labels, this process can take up to 7 days to complete.

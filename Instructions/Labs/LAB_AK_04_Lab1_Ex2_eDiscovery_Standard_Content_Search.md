@@ -52,7 +52,7 @@ In Task 2 you will create an eDiscovery (Standard) hold as part of the "Wrongful
 
 1. On the **Choose locations** page, select **Exchange mailboxes**. Under **Included** select **Choose users, groups, or teams**.
 
-1. On the **Exchange mailboxes** flyout page on the right, in the **Search** search for _Lidia_, then select the checkbox to the left of  **Lidia Holloway**. Select **Done**.
+1. On the **Exchange mailboxes** flyout page on the right, in the **Search** field, search for _Lidia_, then select the checkbox to the left of  **Lidia Holloway**. Select **Done**.
 
 1. Back on the **Choose locations** page, select **Next**.
 
@@ -198,7 +198,7 @@ In this task, you will review the search results obtained from the "Wrongful Ter
 
 1. Back in the **eDiscovery Export Tool** select **Start** to download the report.
 
-1. Once you get a green check mark for **Processing has completed.** your report has been downloaded. Select **Close** to close the window.
+1. Once you get a green check mark for **Processing has completed.**, your report has been downloaded. Select **Close** to close the window.
 
 1. In the **eDiscovery Export Tool**, select the link for the **Export Location:** to open the locally downloaded report.
 

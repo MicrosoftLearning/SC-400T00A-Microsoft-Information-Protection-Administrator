@@ -12,7 +12,7 @@ In this exercise you will assume the role of Joni Sherman, a Compliance Administ
 
 In this exercise, you will create an eDiscovery Case and start a search for mails containing Information about the Mark 8 Project sent by Megan Bowen. The legal department requested this information for a compliance review.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -46,9 +46,9 @@ You have successfully created an eDiscovery case and searched for all mails Mega
 
 ## Task 2 – Assign Records Management and eDiscovery Manager permissions
 
-In this task, you will prepare to export the data you discovered in Task 1 to a PST-file that you can provide to the legal department. First you need to assign the Records Management role to your compliance administrator. Otherwise they will not be able to export search results.
+In this task, you will prepare to export the data you discovered in Task 1 to a PST-file that you can provide to the legal department. First you need to assign the Records Management role to your compliance administrator. Otherwise, they will not be able to export search results.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of **Joni Sherman** in the top right corner and select **Sign out**. Afterwards close the browser.
 
@@ -64,7 +64,7 @@ In this task, you will prepare to export the data you discovered in Task 1 to a 
 
 1. On the **Edit members of the role group** page select **Choose users**.
 
-1. On the **Choose users** flyout page, search for _Joni_, then select the checkbox to the left of **Joni Sherman**, then select **Select**.
+1. On the **Choose users** flyout page, search for _Joni_, then select the checkbox to the left of **Joni Sherman**, then select the **Select** button.
 
 1. On the **Edit members of the role group** page, select **Next**.
 
@@ -78,7 +78,7 @@ In this task, you will prepare to export the data you discovered in Task 1 to a 
 
 1. On the **Manage eDiscovery Manager** page, select **Choose users**.
 
-1. On the **Choose users** flyout page, search for _Joni_, then select the checkbox to the left of **Joni Sherman**, then select **Select**.
+1. On the **Choose users** flyout page, search for _Joni_, then select the checkbox to the left of **Joni Sherman**, then select the **Select** button.
 
 1. On the **Manage eDiscovery Manager** page, select **Next**.
 
@@ -88,13 +88,13 @@ In this task, you will prepare to export the data you discovered in Task 1 to a 
 
 1. On the **You successfully updated the role group**, select **Done**.
 
-You have successfully granted your compliance administrator the permission to export search results and perform records management tasks. It can take up to 60 minutes until the permissions are applied to the user, but you can proceed to the next task.
+You have successfully granted your compliance administrator permission to export search results and perform records management tasks. It can take up to 60 minutes until the permissions are applied to the user, but you can proceed to the next task.
 
 ## Task 3 – Export Data from eDiscovery Case
 
-In this task, you will prepare to export the data you discovered in Task 1 so that you can provide to the legal department.  Remember it may take 60 minutes for permissions to become available in your tenant.
+In this task, you will prepare to export the data you discovered in Task 1 so that you can provide it to the legal department.  Remember it may take 60 minutes for permissions to become available in your tenant.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of **MOD Administrator** in the top right corner and select **Sign out**. Afterwards close the browser.
 
@@ -119,7 +119,7 @@ In this task, you will prepare to export the data you discovered in Task 1 so th
 
 1. In the export pane, under **Export key** select **Copy to clipboard**, and then select **Download results**.
   
-1. When prompted select **Open** in the browser to install the eDiscovery Export Tool, and then select **Install**.
+1. When prompted, select **Open** in the browser to install the eDiscovery Export Tool, and then select **Install**.
 
 1. In the dialog box that appears paste in the key you copied to clipboard earlier.  Select a suitable location to download the file. Select **Start**.
 
@@ -127,9 +127,9 @@ You have successfully exported the discovered data.
 
 ## Task 4 – Perform Search & Purge on Mailboxes
 
-An investigation showed that users received a few phishing mails and you are tasked with deleting these across all mailboxes in your environment.
+An investigation showed that users received a few phishing mails, and you are tasked with deleting these across all mailboxes in your environment.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -145,7 +145,7 @@ An investigation showed that users received a few phishing mails and you are tas
 
 1. In the **Review your search and create it** window select **Submit**. Then **Done**.
 
-1. Once you created the search, you need to use the **Security & Compliance PowerShell** to start a purge. In the start menu, select **Windows PowerShell** run as Administrator.
+1. Once the search has been created, you need to use the **Security & Compliance PowerShell** to start a purge. In the start menu, select **Windows PowerShell** run as Administrator.
 
 1. In the **PowerShell** window, use the following cmdlet and then sign in as **MOD Administrator**:
 

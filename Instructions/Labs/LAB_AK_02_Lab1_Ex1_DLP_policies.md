@@ -13,13 +13,13 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 # Lab 2 - Exercise 1 - Manage DLP Policies
 
-You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization.
+You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States, and you need to make sure that sensitive customer information does not leave the organization.
 
 ## Task 1 – Create a DLP policy in test mode
 
 In this exercise, you will create a Data Loss Prevention policy in the Microsoft Purview portal to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains Credit Card information and allow them to provide a justification for sending this information. The policy will be implemented in test mode because you do not want the block action to affect your users yet.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
@@ -64,7 +64,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. Select the check box to enable **Notify users in Office 365 service with a policy tip**.
 
-1. Under **User overrides** select the checkbox to **Allow overrides from M365 services. Allows users in Exchange, Sharepoint, OneDrive and Teams to override policy restrictions.**
+1. Under **User overrides** select the checkbox to **Allow overrides from M365 services. Allows users in Exchange, SharePoint, OneDrive and Teams to override policy restrictions.**
 
 1. Check the checkbox to **Require a business justification to override**.
 
@@ -78,13 +78,13 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **New policy created** page select **Done**.
 
-You have now created a DLP policy that scans for Credit Card numbers in Microsoft Teams chats and channels and allows users to provide a business justification to override the policy.
+You have now created a DLP policy that scans Credit Card numbers in Microsoft Teams chats and channels and allows users to provide a business justification to override the policy.
 
 ## Task 2 - Modify a DLP policy
 
 In this task, you will modify the existing DLP policy you created in the previous step to also scan e-mails for Credit Card information and inform users if they want to share this content in an e-mail.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -108,7 +108,7 @@ You have now modified an existing DLP policy and changed the locations it scans 
 
 In this task, you use PowerShell to create a DLP policy to protect the Contoso EmployeeIDs and prevent them from being shared in Exchange. Users will be informed that they are attempting to share sensitive data and are blocked from sending the e-mail if it includes Contoso EmployeeIDs.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In the start menu, select **Windows PowerShell**.
 
@@ -138,13 +138,13 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
    Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
    ```
 
-You have now created a DLP Policy that scans for Contoso EmpoloyeeIDs in Exchange by using PowerShell.
+You have now created a DLP Policy that scans Contoso EmployeeIDs in Exchange by using PowerShell.
 
 ## Task 4 - Test your DLP Policy
 
 In this task you'll test the DLP policy that was created in the previous task.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 as Joni Sherman.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 as Joni Sherman.
 
 1. Open a Microsoft Edge browser window and navigate to **https://outlook.office.com/**
 
@@ -178,7 +178,7 @@ You have successfully tested your DLP policy.
 
 In this task, you will activate the credit card information DLP policy you created in test mode so it enforces its protective actions.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -198,7 +198,7 @@ You have successfully activated the DLP Policy. If the policy detects an attempt
 
 After creating two DLP policies, you want to make sure that the more restrictive policy is processed at a higher priority than the less restrictive policy. For this reason, you want to move the EmployeeID DLP Policy into the higher priority.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -214,7 +214,7 @@ You successfully modified the priority of your DLP policies. If both policies ma
 
 You want to use file policies in Microsoft Defender for Cloud Apps to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft Defender for Cloud Apps can scan files in your organization.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of Joni Sherman in the top right and select **Sign out**, then close the browser.
 
@@ -232,7 +232,7 @@ You successfully enabled file monitoring in Microsoft Defender for Cloud Apps an
 
 In this task, you want to create a file policy in Microsoft Defender for Cloud Apps to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, the Microsoft Defender for Cloud Apps portal tab should still be open. Select the **Profile picture** of the MOD Admin in the top right and select **Sign out** next to the cogwheel, then close the  browser.
 
@@ -267,11 +267,11 @@ In this task, you want to create a file policy in Microsoft Defender for Cloud A
 
 You have now created a file policy that will continuously scan files saved in OneDrive and SharePoint for credit card information and quarantine them if they are shared inside your organization.
 
-## Task 9 - Create a DLP Policy for PowerPlatform
+## Task 9 - Create a DLP Policy for Power Platform
 
-Your company uses PowerAutomate flows to share data between SharePoint Online and SalesForce. In this task, you will create a DLP policy for PowerPlatform that allows your existing flows to keep working, but prevents the creation of flows that will share data between SharePoint Online and Apps defined as non-business.
+Your company uses Power Automate flows to share data between SharePoint Online and Salesforce. In this task, you will create a DLP policy for Power Platform that allows your existing flows to keep working but prevents the creation of flows that will share data between SharePoint Online and Apps defined as non-business.
 
-1. Log into the Client 2 VM (LON-CL1) as the **lon-cl2\admin** account.
+1. Log into Client 2 VM (LON-CL1) as the **lon-cl2\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://admin.powerplatform.microsoft.com** and log into the Power Platform admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
@@ -291,4 +291,4 @@ Your company uses PowerAutomate flows to share data between SharePoint Online an
 
 1. On the **Review and create policy** page review your policy settings then select **Create policy**.
 
-You have now created a PowerPlatform DLP policy that prevents users from creating flows involving a SharePoint Online Connector and any connector that is not SalesForce.
+You have now created a Power Platform DLP policy that prevents users from creating flows involving a SharePoint Online Connector and any connector that is not Salesforce.

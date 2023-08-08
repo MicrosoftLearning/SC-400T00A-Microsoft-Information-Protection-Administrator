@@ -100,7 +100,7 @@ In this task, you explored the functionalities of Compliance Manager within the 
 
 1. On the **Select regulation** fly out page, search for _Gramm_.
 
-1. Select the checkbox the the left of**Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**, then select **Save**.
+1. Select the checkbox to the left of **Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**, then select **Save**.
 
 1. Back on the **Base your assessment on a regulation** page, select **Next**.
 

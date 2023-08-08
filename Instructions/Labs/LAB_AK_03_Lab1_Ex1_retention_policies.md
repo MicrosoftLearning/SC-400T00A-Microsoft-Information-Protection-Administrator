@@ -14,7 +14,7 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 # Lab 3 - Exercise 1 - Configure Retention Policies
 
-In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to state laws, which stipulates that records may be deleted after three years without constituting an offense. 
+In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to adhere to state laws, which stipulates that records may be deleted after three years without constituting an offense.
 
 In order to adhere to this law your organization has created a retention plan to retain all items in the organization for three years.
 
@@ -22,7 +22,7 @@ In order to adhere to this law your organization has created a retention plan to
 
 In this exercise you will create a company-wide retention policy, apply a retention period, and set the locations that the policy will be applied to.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
@@ -52,7 +52,7 @@ In this exercise you will create a company-wide retention policy, apply a retent
 
 1. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
-   - **Retain items for a specific period**: Choose **Custom** from the drop down list
+   - **Retain items for a specific period**: Choose **Custom** from the dropdown list
    - Change the years field to **3**
    - **Start the retention period based on**: When items were last modified
    - **At the end of the retention period**: Delete items automatically
@@ -69,7 +69,7 @@ You have successfully created a retention policy for the Exchange email, Microso
 
 You will now create a retention policy for the Teams locations. As Teams channels can contain documents, they will all be retained. Your organization has decided that a limited number of users are required to have their Team chats require a retention period.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -107,7 +107,7 @@ You will now create a retention policy for the Teams locations. As Teams channel
 
 1. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section, enter the following information:
 
-   - **Retain items for a specific period**: Choose **Custom** from the drop down list
+   - **Retain items for a specific period**: Choose **Custom** from the dropdown list
    - Change the years field to **3**
    - **Start the retention period based on**: When items were last modified
    - **At the end of the retention period**: Delete items automatically
@@ -124,7 +124,7 @@ You have successfully created a retention policy for the Teams locations. You se
 
 You will create the same retention policies with PowerShell
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)** select **Yes** if confronted with a User Account Control window.
 
@@ -166,7 +166,7 @@ You have successfully created retention policies through PowerShell with a reten
 
 In this exercise you will create a retention policy for the finance and legal department. The purpose of the policy is to comply with the law, retaining all legal related documents for 5 years. First you will create an adaptive scope including the legal and the retail department, then you will create a retention policy using this scope.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 

@@ -14,6 +14,8 @@ To effectively manage insider risks, you implement Microsoft Purview Insider Ris
 
 In this exercise, you will assign the Insider Risk Management role to Joni to grant access to perform insider risk tasks in the Microsoft Purview portal.
 
+1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+
 1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
 
 1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown.

@@ -14,7 +14,7 @@ Your finance department has created a retention plan to set retention labels on 
 
 In this task, you will create a retention label that can be assigned to documents and emails that contain VAT returns and a retention label that can be applied to Credit Card receipts.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -59,7 +59,7 @@ In this task, you will create a retention label that can be assigned to document
 
 1. On the **Define the period** page input:
 
-    - **Retain items for**: Select the drop down list and select **Custom**. Enter 3 for Years.
+    - **Retain items for**: Select the dropdown list and select **Custom**. Enter 3 for Years.
     - **Start the retention period based on**: When items were created.
 
 1. Select **Next**.
@@ -74,9 +74,9 @@ You have successfully created a retention label for VAT returns with a seven-yea
 
 ## Task 2 – Publish Retention Labels
 
-Following from Task 1 you will now publish the VAT returns retention label so that the published label will be available for the finance users to apply to the documents in Exchange emails and Sharepoint documents.
+Following from Task 1 you will now publish the VAT returns retention label so that the published label will be available for the finance users to apply to the documents in Exchange emails and SharePoint documents.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -120,7 +120,7 @@ You have successfully published the retention label for VAT Returns and supporti
 
 Following from Task 1 you will now auto-apply the Credit Card receipts retention label so that the information is retained.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. 
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -135,7 +135,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 1. On the **Let's get started** page, for **Name** and **Description** enter the following information:
 
     - **Name**: Credit Card Receipts auto-applied
-    - **Description**: Credit Card Receipts auto-applied retention label, with a retention period of three years for all location.
+    - **Description**: Credit Card Receipts auto-applied retention label, with a retention period of three years for all locations.
 
 1. Select the **Next** button.
 
@@ -174,7 +174,7 @@ You have successfully published a retention label with auto-apply. Over the next
 
 In this task, you will assign retention labels to Outlook emails.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://outlook.office.com/** and login with **Megan Bowen**'s account.
 
@@ -190,7 +190,7 @@ You have successfully applied a retention label to an Outlook email.
 
 In this task, you will assign retention labels to an Outlook folder.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. Your Microsoft Edge browser window with **Outlook** should still be open, and you should still be logged in as **Megan Bowen**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. Your Microsoft Edge browser window with **Outlook** should still be open, and you should still be logged in as **Megan Bowen**.
 
 1. Select right click on the **Inbox** in the left panel
 
@@ -212,7 +212,7 @@ You have successfully applied a retention label to an Outlook folder.
 
 In this task, you will apply a retention label to a document in a SharePoint document library.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into Microsoft 365 as **Joni Sherman**.
 
@@ -239,7 +239,7 @@ You have successfully applied a retention label to a document in SharePoint.
 
 In this task, you will apply a retention label to a document in OneDrive.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into Microsoft 365 as **Joni Sherman**.
 
@@ -247,7 +247,7 @@ In this task, you will apply a retention label to a document in OneDrive.
 
 1. Select **My files** from the left navigation pane, then select the checkbox to the left of **Contractor Legal Info.docx**.
 
-1. For the highlighted document, select select the horizontal ellipses, **...**, button then select **Details**.
+1. For the highlighted document, select the horizontal ellipses, **...**, button then select **Details**.
 
 1. On the flyout page on the right, under **Properties** you should see an option to **Apply label**. Select **Choose a label** to expand a dropdown, then select **VAT Returns and supporting documents** if available.
 
