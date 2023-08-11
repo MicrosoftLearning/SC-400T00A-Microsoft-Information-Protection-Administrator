@@ -19,11 +19,13 @@ As the Compliance Administrator for your organization, you are responsible for c
 
 In this exercise, you will assign the Communication Compliance role to Joni to grant access to perform communication compliance tasks in the Microsoft Purview portal.
 
+1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+
 1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
 
 1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown.
 
-1. On the **Permissions** page select Roles.
+1. On the **Permissions** page under **Microsoft Purview solutions**, select **Roles**.
 
 1. On the **Role groups for Microsoft Purview solutions** page select **Communication Compliance**.
 
@@ -31,7 +33,7 @@ In this exercise, you will assign the Communication Compliance role to Joni to g
 
 1. On the **Edit members of the role group** page select **+ Choose users**.
 
-1. In the **Choose users** page select the check box next to Joni Sherman then select **Select**.
+1. On the **Choose users** page select the check box next to Joni Sherman then select **Select**.
 
 1. On the **Edit members of the role group** page select **Next**.
 
@@ -47,47 +49,42 @@ You have successfully assigned the Communication Compliance role to Joni Sherman
 
 In this exercise, you will configure a custom policy in Microsoft Communication Compliance to monitor communications for sensitive financial information. Follow the steps to configure the policy:
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Click on **Communication Compliance** from the left navigation
+1. Select **Communication compliance** from the left navigation pane.
 
-1. Click on **Policies**
+1. Close any tip menus that appear.
 
-1. Click on **+ Create policy** then select **Custom policy** from the drop down
+1. On the **Communication compliance** page, from the top navigation bar,  select **Policies**.
 
-1. On the **Name and describe your policy** page, in the **Name** field enter **Detect Financial Secrets**
+1.From the **Policies** tab select **+ Create policy** then select **Custom policy** from the drop down.
 
-1. In the **Description** field enter **Detection of sharing financial secrets**
+1. On the **Name and describe your policy** enter:
 
-1. Select **Next**
+    - **Name**: Detect Financial Secrets
+    - **Description** Detection of sharing financial secrets
+
+1. Select **Next**.
 
 1. On the **Choose users and reviews** page, under **Choose users and groups**, leave **All users** selected.
 
-1. In the **Reviewers** field select **Joni Sherman** and **MOD Administrator**
+1. In the **Reviewers** field select **Joni Sherman** and **MOD Administrator**, then select **Next**.
 
-1. Select **Next**
+1. On the **Choose locations to detect communications** page select **Exchange**, then select **Next**.
 
-1. On the **Choose locations to detect communications** page select **Exchange**
+1. On the **Choose conditions and review percentage** page under **Communication direction** leave defaults selected.
 
-1. Select **Next**
+1. Under **Condition** select **+ Add condition**, then select **Message contains any of these words**.
 
-1. On the **Choose conditions and review percentage** page under **Communication direct** leave the default selected.
-
-1. Under **Condition** select **+ Add condition**
-
-1. Select **Message contains any of these words**
-
-1. In the field under **Message contains any of these words** enter *secret,secrets*
+1. In the field under **Message contains any of these words** enter _secret,secrets_.
 
     >**Note:** To apply the policy based on specific words or phrases in a message, enter them separated by commas. No spaces between comma-separated items. Use quotation marks for phrases of two or more words. Each word or phrase is applied independently (only one word is needed to trigger the policy).
 
-1. Under **Review percentage** adjust the slider to **100%**
+1. Under **Review percentage** adjust the slider to **100%**, then select **Next**.
 
-1. Select **Next**
+1. On the **Review and finish** page, select **Create policy**.
 
-1. On the **Review and finish** page select **Create policy**
-
-1. On the **Your policy was created** page select **Done**.
+1. On the **Your policy was created** page, select **Done**.
 
 1. Your communication compliance policy has been created.
 
@@ -101,7 +98,7 @@ In this task, you will verify the effectiveness of your configured custom policy
 
 1. Log out of Joni's account and close all browser windows.
 
-1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
+1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Select **New mail** from the upper left side part of Outlook on the web.
 

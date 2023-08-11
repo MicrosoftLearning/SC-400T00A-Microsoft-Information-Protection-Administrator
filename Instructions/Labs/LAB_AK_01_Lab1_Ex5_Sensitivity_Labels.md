@@ -41,7 +41,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
     Connect-MsolService
     ```
 
-1. In the **Sign in to your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. After signing in, select the PowerShell window.
 
@@ -63,7 +63,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
     Connect-SPOService -url $adminurl
     ```
 
-1. In the **Sign in to your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 1. After signing in, select the PowerShell window.
 
@@ -83,7 +83,7 @@ You have successfully enabled support for sensitivity labels with Teams and Shar
 
 In this task, your HR department has requested a sensitivity label to apply to HR employee documents. You will create a sensitivity label for Internal documents and a sublabel for the HR department.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
@@ -116,7 +116,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Once the label has been created the **Your sensitivity label was created** page will be displayed.
 
-1. Select **Dont create a policy yet** and then select **Done**.
+1. Select **Don't create a policy yet** and then select **Done**.
 
 1. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**
 
@@ -162,13 +162,13 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Define protection settings for groups and sites** page, select **Next**.
 
-1. On the **Auto-labeling for schematized data assests (preview)** page, select **Next**. 
+1. On the **Auto-labeling for schematized data assets (preview)** page, select **Next**.
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
 1. The label will be created and when complete a message will display **Your sensitivity label was created**.
 
-1. Select **Dont create a policy yet** and then select **Done**.
+1. Select **Don't create a policy yet** and then select **Done**.
 
 You have successfully created a sensitivity label for your organizations internal policies and a sensitivity sublabel for the Human Resources (HR) department.
 
@@ -176,7 +176,7 @@ You have successfully created a sensitivity label for your organizations interna
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -227,7 +227,7 @@ You have successfully published the Internal and HR sensitivity labels. Note tha
 
 In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
 
@@ -287,7 +287,7 @@ You have successfully created an HR Word document with a sensitivity label, whic
 
 In this task, you will create a Sensitivity Label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 

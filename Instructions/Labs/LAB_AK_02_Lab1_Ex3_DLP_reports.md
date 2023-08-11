@@ -12,7 +12,7 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd. tasked to co
 
 In this exercise, you will grant the new compliance officer Megan Bowen access to the DLP reports. As a non-technical user this compliance officer will only read reports and not change the DLP configuration.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
@@ -26,7 +26,7 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 1. On the **Edit members of the role group** page select **+ Choose users**.
 
-1. On the **Choose users** select the check box next to **Megan Bowen**'s account then select **Select**.
+1. On the **Choose users** select the check box next to **Megan Bowen**'s account then select the **Select** button.
 
 1. Back on the **Edit members of the role group** page verify Megan's account is to be added, then select **Next**.
 
@@ -44,7 +44,7 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. In the left navigation pane, select the drop down for **Data loss prevention** then select **Activity explorer**.
+1. In the left navigation pane, select the dropdown for **Data loss prevention** then select **Activity explorer**.
 
 1. On the **Activity explorer** page, select the dropdown for **Built-in filters**.
 
@@ -68,7 +68,7 @@ In this task, you will review DLP activities via PowerShell.
 
 1. Select **+ Use another account** then login with the account **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Use the `Export-ActivityExplorerData` PowerShell cmdlet to explore the activity explorer from Powershell. The script below is an example that will display a grid view of activities from the most recent week:
+1. Use the `Export-ActivityExplorerData` PowerShell cmdlet to explore the activity explorer from PowerShell. The script below is an example that will display a grid view of activities from the most recent week:
 
    ``` powershell
    $StartTime = (Get-Date).AddDays(-7)
@@ -76,6 +76,8 @@ In this task, you will review DLP activities via PowerShell.
    $Results = Export-ActivityExplorerData -StartTime $StartTime -EndTime $EndTime -OutputFormat JSON
    ($Results.ResultData) | ConvertFrom-Json | select -ExpandProperty SyncRoot | ogv
    ```
+
+    >**Tip**: If you're working from a lab hosting provider, you can access all the labs by opening **https://aka.ms/sc400labs** in Microsoft Edge. This will give you a web-based interface for the labs, making it easier to copy and paste PowerShell scripts when needed.
 
 1. Explore the data collected from previous labs then close the grid view window.
 

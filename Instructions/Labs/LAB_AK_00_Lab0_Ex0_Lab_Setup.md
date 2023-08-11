@@ -16,15 +16,39 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 In this lab you'll configure and prepare your environment for administration tasks. By following the provided steps, you'll ensure that essential features and settings are enabled in advance, allowing for an easier learning experience in upcoming lab activities. This preparation will include activating necessary features, setting up administrative permissions, and ensuring the proper configuration of key elements.
 
+## Task - Set user passwords for lab exercises
+
+In this task, you'll set passwords for the user accounts needed for the labs.
+
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
+
+1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+
+1. On the left navigation pane, expand **Users** then select **Active users**.
+
+1. On the **Active users** page, hover over **Joni Sherman**'s user account, and a key should appear.
+
+1. Select the **Reset password** key and the **Reset password** flyout page should appear on the right to reset Joni's password.
+
+1. Ensure none of the checkboxes are selected on the **Reset password** flyout page.
+
+1. In the **Password** field, enter a password for Joni you can remember.
+
+    >**Tip**: You can reset Joni's password to the same password as the admin's account, which should be provided by your lab hosting provider.
+
+1. Select the **Reset password** button to reset Joni's password.
+
+1. On the **Password has been reset** page, select the **Close** button to go back to the **Active users** page.
+
+1. Repeat steps 4-8 to reset the passwords for **Megan Bowen** and **Lynne Robbins**.
+
 ## Task - Enable Audit in the Microsoft Purview portal
 
-In task, we'll focus on enabling Audit in the Microsoft Purview compliance portal. Enabling audit allows you to track and monitor activities within the portal, ensuring visibility and accountability. By following the provided steps, we will configure and activate the audit feature in advance, providing a comprehensive audit trail for the subsequent lab activities
+In this task, you'll enable Audit in the Microsoft Purview compliance portal. This tracking feature ensures visibility and accountability by monitoring portal activities.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
 
-1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
-
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com**.
 
 1. In the left navigation pane select **Audit**.
 
@@ -32,9 +56,11 @@ In task, we'll focus on enabling Audit in the Microsoft Purview compliance porta
 
 ## Task - Enable Search by Name in Microsoft Teams
 
-In this task, we'll enable the **Search by Name** feature in Microsoft Teams as part of the lab setup. This feature allows users to easily find and connect with specific individuals within their organization. By following the steps provided, we will configure and activate the **Search by Name** feature ahead of time, ensuring that it is readily available for users when working with Information Barriers.
+In this task, you'll enable the **Search by Name** feature in Microsoft Teams for the lab setup. This allows easy user location and connection within the organization. Follow the steps to activate it beforehand, ensuring availability when working with Information Barriers.
 
-1. In **Microsoft Edge**, navigate to **https://admin.teams.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). The admin's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
+
+1. In **Microsoft Edge**, navigate to **https://admin.teams.microsoft.com**.
 
 1. In the left navigation pane, under the **Teams** drop down, select **Teams settings**.
 
@@ -44,9 +70,9 @@ In this task, we'll enable the **Search by Name** feature in Microsoft Teams as 
 
 ## Task - Enable information barriers in SharePoint Online and OneDrive
 
-In this task, we'll enable information barriers in SharePoint Online and OneDrive to promote secure collaboration and prevent unauthorized communication. By following the provided steps, we'll configure and activate information barriers in advance.
+In this task, you'll enable information barriers in SharePoint Online and OneDrive to promote secure collaboration and prevent unauthorized communication.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 
@@ -57,6 +83,8 @@ In this task, we'll enable information barriers in SharePoint Online and OneDriv
     ```powershell
     Install-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
+
+    >**Tip**: If you're working from a lab hosting provider, you can access all the labs by opening **https://aka.ms/sc400labs** in Microsoft Edge. This will give you a web-based interface for the labs, making it easier to copy and paste PowerShell scripts when needed.
 
 1. If prompted to install the PowerShell NuGet provider, enter **Y** to install the provider.
 

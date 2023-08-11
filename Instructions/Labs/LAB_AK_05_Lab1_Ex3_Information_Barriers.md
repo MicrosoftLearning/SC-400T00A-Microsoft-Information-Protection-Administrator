@@ -12,9 +12,11 @@ As Joni, the Compliance Administrator for Contoso Ltd., your responsibility is t
 
 In this task, you'll verify the **Search by name** feature is enabled in Microsoft Teams. This feature allows users to search and find specific individuals within their organization easily. By following the steps provided, you will configure and activate this feature to enhance collaboration and streamline communication within your organization's Microsoft Teams environment.
 
+1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+
 1. If you're still signed in with Joni's account, sign out of this account and close all browser windows.
 
-1. In **Microsoft Edge**, navigate to **https://admin.teams.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://admin.teams.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. In the left navigation pane, under the **Teams** drop down, select **Teams settings**
 
@@ -53,6 +55,8 @@ In this task, you'll enable Admin Consent for Information barriers (IB) in Micro
     ````
 
     >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
+
+    >**Tip**: If you're working from a lab hosting provider, you can access all the labs by opening **https://aka.ms/sc400labs** in Microsoft Edge. This will give you a web-based interface for the labs, making it easier to copy and paste PowerShell scripts when needed.
 
 1. When prompted, login with the MOD Administrator account
 
