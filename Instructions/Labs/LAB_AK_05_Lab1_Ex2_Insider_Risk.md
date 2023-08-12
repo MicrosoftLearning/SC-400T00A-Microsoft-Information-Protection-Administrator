@@ -197,8 +197,6 @@ In this task, you will create a notice template in Microsoft Purview's Insider R
         </html>
         ````
 
-    >**Tip**: If you're working from a lab hosting provider, you can access all the labs by opening **https://aka.ms/sc400labs** in Microsoft Edge. This will give you a web-based interface for the labs, making it easier to copy and paste longer scripts when needed.
-
 1. Select **Create**.
 
 You have successfully created the **Data Leak Policy Alert** notice template, enabling automated notifications to be sent to users when potential data leaks are detected, reinforcing security measures and promoting adherence to the Contoso User Code of Conduct.
