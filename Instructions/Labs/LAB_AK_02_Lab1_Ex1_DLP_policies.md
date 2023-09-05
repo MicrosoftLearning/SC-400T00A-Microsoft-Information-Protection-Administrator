@@ -210,7 +210,7 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 You successfully modified the priority of your DLP policies. If both policies match the same content the action of the higher priority policy will be enforced.
 
-## Task 7- Enable file monitoring in Microsoft Defender for Cloud Apps
+## Task 7- Enable file monitoring in Microsoft 365 Defender
 
 You want to use file policies in Microsoft Defender for Cloud Apps to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft Defender for Cloud Apps can scan files in your organization.
 
@@ -218,17 +218,19 @@ You want to use file policies in Microsoft Defender for Cloud Apps to protect fi
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of Joni Sherman in the top right and select **Sign out**, then close the browser.
 
-1. Open **Microsoft Edge** and navigate to **https://portal.cloudappsecurity.com** and log into the Microsoft Defender for Cloud Apps portal as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. Open **Microsoft Edge** and navigate to **https://security.microsoft.com** and log into the Microsoft 365 Defender portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. In the top-right corner, next to your profile information, select the **Settings** cogwheel and select **Settings** in the dropdown menu.
+1. On the left navigation pane, scroll down then select **Settings**.
 
-1. On the **Settings** page, under **Information Protection** select **Files**.
+1. On the **Settings** page select **Cloud Apps**.
 
-1. Select the **Enable file monitoring** checkbox and then select **Save** if it is not already marked.
+1. In the left pane within the **Cloud apps** window, scroll down to the **Information Protection** section, then select **Files**.
+
+1. Select the **Enable file monitoring** checkbox then select **Save** if it is not already marked.
 
 You successfully enabled file monitoring in Microsoft Defender for Cloud Apps and can now scan files for sensitive content using file policies.
 
-## Task 8 - Create File Policy for Microsoft Defender for Cloud Apps
+## Task 8 - Create a file policy for Microsoft 365 Defender
 
 In this task, you want to create a file policy in Microsoft Defender for Cloud Apps to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
 
@@ -236,11 +238,13 @@ In this task, you want to create a file policy in Microsoft Defender for Cloud A
 
 1. In **Microsoft Edge**, the Microsoft Defender for Cloud Apps portal tab should still be open. Select the **Profile picture** of the MOD Admin in the top right and select **Sign out** next to the cogwheel, then close the  browser.
 
-1. Open **Microsoft Edge** and navigate to **https://portal.cloudappsecurity.com** and log into the Microsoft Defender for Cloud Apps portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni Sherman's password should be provided by your lab hosting provider.
+1. Open **Microsoft Edge** and navigate to **https://security.microsoft.com** and log into the Microsoft 365 Defender portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni Sherman's password should be provided by your lab hosting provider.
 
-1. In the **Microsoft Defender for Cloud Apps** portal, in the left navigation pane, expand **Control** and select **Policies**.
+1. In the **Microsoft 365 Defender** portal, in the left navigation, scroll down to the **Cloud apps** section, then select **Files**.
 
-1. On the **Policies** page, expand **+ Create policy** and then select **File policy**.
+1. On the **Files** page select **+ New policy from search**.
+
+1. On the **Create file policy** page, leave the **Policy template** selection as **No template**.
 
 1. Enter this information on the **Create file policy** page
 
@@ -255,9 +259,9 @@ In this task, you want to create a file policy in Microsoft Defender for Cloud A
 
 1. In the **Choose inspection type...** dropdown menu, select **Sensitive information type...**.
 
-1. In the **Select a sensitive information type** dialog, select **Credit Card Number**, then select **Done** in the upper right corner.
+1. On the **Select a sensitive information type** dialog, select **Credit Card Number**, then select **Done** in the upper right corner.
 
-1. Under **Alerts**, check the **Create an alert for each matching file** checkbox and review your options. Keep the settings at the default by selecting **Save as default settings**.
+1. Under **Alerts**, check the **Create an alert for each matching file** checkbox and review your options. Keep the settings as the default by selecting **Save as default settings**.
 
 1. In the **Governance actions** section, expand **Microsoft OneDrive for Business** and select **Put in user quarantine**.
 
@@ -267,7 +271,7 @@ In this task, you want to create a file policy in Microsoft Defender for Cloud A
 
 You have now created a file policy that will continuously scan files saved in OneDrive and SharePoint for credit card information and quarantine them if they are shared inside your organization.
 
-## Task 9 - Create a DLP Policy for Power Platform
+## Task 9 - Create a DLP policy for Power Platform
 
 Your company uses Power Automate flows to share data between SharePoint Online and Salesforce. In this task, you will create a DLP policy for Power Platform that allows your existing flows to keep working but prevents the creation of flows that will share data between SharePoint Online and Apps defined as non-business.
 
@@ -279,7 +283,7 @@ Your company uses Power Automate flows to share data between SharePoint Online a
 
 1. On the **Data policies** page, select **+ New Policy**.
 
-1. On the **Name your policy** page, enter *Tenant-wide SharePoint Policy*, then select **Next**.
+1. On the **Name your policy** page, enter _Tenant-wide SharePoint Policy_, then select **Next**.
 
 1. On the **Non-business|Default** tab on the **Assign connectors** page, select **SharePoint** and **Salesforce**, then select **Move to Business** at the top of the page.
 

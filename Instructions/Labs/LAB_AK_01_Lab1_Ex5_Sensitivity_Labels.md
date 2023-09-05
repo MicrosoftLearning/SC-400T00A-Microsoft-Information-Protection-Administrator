@@ -100,7 +100,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
+1. On the **Define the scope for this label** page, select **Items** and select **Files** and **Emails**. If any other options on this page are selected, deselect those options.
 
 1. Select **Next**.
 
