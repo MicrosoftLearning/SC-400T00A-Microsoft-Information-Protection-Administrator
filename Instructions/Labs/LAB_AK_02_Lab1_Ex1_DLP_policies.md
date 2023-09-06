@@ -212,7 +212,7 @@ You successfully modified the priority of your DLP policies. If both policies ma
 
 ## Task 7- Enable file monitoring in Microsoft 365 Defender
 
-You want to use file policies in Microsoft Defender for Cloud Apps to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft Defender for Cloud Apps can scan files in your organization.
+You want to use file policies in Microsoft 365 Defender to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft 365 Defender can scan files in your organization.
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
@@ -228,11 +228,11 @@ You want to use file policies in Microsoft Defender for Cloud Apps to protect fi
 
 1. Select the **Enable file monitoring** checkbox then select **Save** if it is not already marked.
 
-You successfully enabled file monitoring in Microsoft Defender for Cloud Apps and can now scan files for sensitive content using file policies.
+You successfully enabled file monitoring in Microsoft 365 Defender and can now scan files for sensitive content using file policies.
 
 ## Task 8 - Create a file policy for Microsoft 365 Defender
 
-In this task, you want to create a file policy in Microsoft Defender for Cloud Apps to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
+In this task, you want to create a file policy in Microsoft 365 Defender to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
