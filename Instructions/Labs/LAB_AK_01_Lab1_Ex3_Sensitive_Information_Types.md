@@ -9,7 +9,7 @@ lab:
 
 Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To educate users in the future, a custom sensitive information type is required to identify employee IDs in emails and documents, which consist of three uppercase characters and six numbers. To lower the false positive rate, the keywords "Employee" and "IDs" will be used. In this task you will create a new custom sensitive information type, a database for EDM-based classification and a keyword dictionary. 
 
-## Task 1 – Create Custom Sensitive Information Types
+## Task 1 – Create custom sensitive information types
 
 In this exercise, you will use the Security & Compliance Center PowerShell module to create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
@@ -88,11 +88,9 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
 
-1. Select **Add a group** from the menu under the Active teams and groups message, under the different types of groups available.
+1. On the Active teams and groups page, on the top navigation bar select **Security groups** then select **+ Add a security group**.
 
-    ![Screenshot of the Add a group button.](../Media/AddAGroup.png)
-
-1. On the **Choose a group type** page, select **Security** and **Next**.
+    ![Screenshot of the Add a group button.](../Media/add-security-group.png)
 
 1. On the **Set up the basics** screen, enter the following:
     - **Name**: EDM_DataUploaders
@@ -106,7 +104,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. When the **New group created** page is shown, select **Close**.
 
-1. Select **Refresh** from the top pane, select the **Security** tab, and select newly created **EDM_DataUploaders** group from the list to open the right-side pane.
+1. Ensure the **Security** tab is selected from the top navigation bar, then select **Refresh**. Select the newly created **EDM_DataUploaders** group from the list to open the **EDM_DataUploaders** flyout page on the right.
 
 1. Select the **Members** tab and select **View all and manage members**.
 
@@ -301,7 +299,7 @@ bar with the right mouse button and select **Windows PowerShell (Admin)** and ru
 
 You have successfully hashed and uploaded a database file for an EDM-based classification sensitive information type.
 
-## Task 4 – Create Keyword Dictionary
+## Task 4 – Create keyword dictionary
 
 Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason for illness or disease was sent out.  We do not want that to happen.
 
@@ -360,7 +358,7 @@ Several violations of personal information leakage happened when users sent out 
 
 You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate. Proceed with the next task.
 
-## Task 5 – Work with custom Sensitive Information Types
+## Task 5 – Work with custom sensitive information tTypes
 
 Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern.
 
