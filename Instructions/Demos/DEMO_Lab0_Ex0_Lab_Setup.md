@@ -38,10 +38,6 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. Select the **Reset password** button to reset Joni's password.
 
-1. On the **Password has been reset** page, select the **Close** button to go back to the **Active users** page.
-
-1. Repeat steps 4-8 to reset the passwords for **Megan Bowen** and **Lynne Robbins**.
-
 ## Task - Enable Audit in the Microsoft Purview portal
 
 In this task, you'll enable Audit in the Microsoft Purview compliance portal. This tracking feature ensures visibility and accountability by monitoring portal activities.
@@ -54,54 +50,72 @@ In this task, you'll enable Audit in the Microsoft Purview compliance portal. Th
 
 1. On the **Audit** page. select **Start recording user and admin activity** to activate audit logging.
 
-## Task - Enable Search by Name in Microsoft Teams
+## Task - Enable support for sensitivity labels
 
-In this task, you'll enable the **Search by Name** feature in Microsoft Teams for the lab setup. This allows easy user location and connection within the organization. Follow the steps to activate it beforehand, ensuring availability when working with Information Barriers.
+In this task, you will install the MSOnline module and the SharePoint Online PowerShell module and enable support for sensitivity labels on your tenant.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
+1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://admin.teams.microsoft.com**.
+1. Open an elevated PowerShell window by selecting the start menu with the right mouse button and then select **Windows PowerShell** and run as administrator.
 
-1. In the left navigation pane, under the **Teams** drop down, select **Teams settings**.
+1. Confirm the **User Account Control** window with **Yes** and press Enter.
 
-1. Scroll down to **Search by name** toggle this feature **On** to enable this feature
+1. Enter the following cmdlet to install the latest MS Online PowerShell module version:
 
-1. Select **Save** to save this setting.
+   ```powershell
+   Install-Module -Name MSOnline
+   ```
 
-## Task - Enable information barriers in SharePoint Online and OneDrive
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take a while to complete processing.
 
-In this task, you'll enable information barriers in SharePoint Online and OneDrive to promote secure collaboration and prevent unauthorized communication.
-
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
-
-1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
-
-1. Confirm the **User Account Control** window with **Yes**.
-
-1. Run the following cmdlet to install the latest version of the SharePoint Online PowerShell module:
+1. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
 
     ```powershell
     Install-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
-1. If prompted to install the PowerShell NuGet provider, enter **Y** to install the provider.
+1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
 
-1. If prompted to install from an untrusted repository, enter **Y** to install the module from the PSGallery.
-
-1. Run the following cmdlet to connect to the admin center for SharePoint Online:
+1. Enter the following cmdlet to connect to the MS Online service:
 
     ```powershell
-     Connect-SPOService -Url https://<WWLxZZZZZZ>-admin.sharepoint.com -Credential admin@<WWLxZZZZZZ>.onmicrosoft.com
+    Connect-MsolService
     ```
 
-    >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **MOD Admin** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-1. Login with the MOD Administrator password provided by your lab hosting provider.
+1. After signing in, select the PowerShell window.
 
-1. To enable information barriers in SharePoint and OneDrive, run the following command:
+1. Enter the following cmdlet to get the domain:
 
     ```powershell
-    Set-SPOTenant -InformationBarriersSuspension $false
+    $domain = get-msoldomain
     ```
 
-1. Close the PowerShell window once this is complete.
+1. Enter the following cmdlet to create the SharePoint admin url:
+
+    ```powershell
+    $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
+    ```
+
+1. Enter the following cmdlet to sign in to the SharePoint Online admin center:
+
+    ```powershell
+    Connect-SPOService -url $adminurl
+    ```
+
+1. In the **Sign into your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+
+1. After signing in, select the PowerShell window.
+
+1. Enter the following cmdlet to enable support for sensitivity labels:
+
+    ```powershell
+    Set-SPOTenant -EnableAIPIntegration $true
+    ```
+
+1. Confirm the changes with **Y** for Yes and press Enter.
+
+1. Close the PowerShell window.
+
+You have successfully enabled support for sensitivity labels with Teams and SharePoint sites.

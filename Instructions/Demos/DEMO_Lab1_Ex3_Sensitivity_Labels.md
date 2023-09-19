@@ -9,77 +9,7 @@ lab:
 In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd.
 Your organization is based in Rednitzhembach, Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.
 
-## Task 1 Enable support for sensitivity labels
-
-In this task, you will install the MSOnline module and the SharePoint Online PowerShell module and enable support for sensitivity labels on your tenant.
-
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
-
-1. Open an elevated PowerShell window by selecting the start menu with the right mouse button and then select **Windows PowerShell** and run as administrator.
-
-1. Confirm the **User Account Control** window with **Yes** and press Enter.
-
-1. Enter the following cmdlet to install the latest MS Online PowerShell module version:
-
-   ```powershell
-   Install-Module -Name MSOnline
-   ```
-
-1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take a while to complete processing.
-
-1. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
-
-    ```powershell
-    Install-Module -Name Microsoft.Online.SharePoint.PowerShell
-    ```
-
-1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
-
-1. Enter the following cmdlet to connect to the MS Online service:
-
-    ```powershell
-    Connect-MsolService
-    ```
-
-1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
-
-1. After signing in, select the PowerShell window.
-
-1. Enter the following cmdlet to get the domain:
-
-    ```powershell
-    $domain = get-msoldomain
-    ```
-
-1. Enter the following cmdlet to create the SharePoint admin url:
-
-    ```powershell
-    $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
-    ```
-
-1. Enter the following cmdlet to sign in to the SharePoint Online admin center:
-
-    ```powershell
-    Connect-SPOService -url $adminurl
-    ```
-
-1. In the **Sign into your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
-
-1. After signing in, select the PowerShell window.
-
-1. Enter the following cmdlet to enable support for sensitivity labels:
-
-    ```powershell
-    Set-SPOTenant -EnableAIPIntegration $true
-    ```
-
-1. Confirm the changes with **Y** for Yes and press Enter.
-
-1. Close the PowerShell window.
-
-You have successfully enabled support for sensitivity labels with Teams and SharePoint sites.
-
-## Task 2 – Create Sensitivity Labels
+## Task 1 – Create Sensitivity Labels
 
 In this task, your HR department has requested a sensitivity label to apply to HR employee documents. You will create a sensitivity label for Internal documents and a sublabel for the HR department.
 
@@ -172,7 +102,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 You have successfully created a sensitivity label for your organizations internal policies and a sensitivity sublabel for the Human Resources (HR) department.
 
-## Task 3 – Publish Sensitivity Labels
+## Task 2 – Publish Sensitivity Labels
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
@@ -223,7 +153,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 You have successfully published the Internal and HR sensitivity labels. Note that it can take up to 24 hours for changes to replicate to all users and services.
 
-## Task 4 – Work with Sensitivity Labels
+## Task 3 – Work with Sensitivity Labels
 
 In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
@@ -283,7 +213,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member where the email was also set with a sensitivity label.
 
-## Task 5 – Configure Auto Labeling
+## Task 4 – Configure Auto Labeling
 
 In this task, you will create a Sensitivity Label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
