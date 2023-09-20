@@ -1,13 +1,11 @@
 ---
 lab:
-    title: 'Exercise 3 - Manage Sensitive Information Types'
-    module: 'Module 1 - Implement Information Protection'
+    title: 'Session 1 - Microsoft Purview Information Protection'
+    module: 'Learning Objective - Create and manage sensitive info types'
 ---
 
 
-# Lab 1 - Exercise 2 - Manage Sensitive Information Types
-
-Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To educate users in the future, a custom sensitive information type is required to identify employee IDs in emails and documents, which consist of three uppercase characters and six numbers. To lower the false positive rate, the keywords "Employee" and "IDs" will be used. In this task you will create a new custom sensitive information type, a database for EDM-based classification and a keyword dictionary. 
+# Demo Lab 1 - Manage Sensitive Information Types
 
 ## Task 1 – Create Custom Sensitive Information Types
 
@@ -15,15 +13,13 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). The admin's password should be provided by your lab hosting provider.
 
 1. Expand **Data classification** from the left pane and select **Classifiers**
 
 1. If a **What is data classification?** message is displayed, select **Close**.
 
 1. Select **Sensitive info types** from the top pane.  
-
-   >**Hint:** If **Sensitive info types** doesn't appear in the Purview portal, then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser.  You may have to sign-out and sign-in as JoniS.
 
 1. On the **Sensitive info types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
@@ -76,53 +72,9 @@ You have successfully created a new sensitive information type to identify emplo
 
 As an extra search pattern, you will create an Exact Data Match (EDM) based classification with a database schema of employee data. The database source file will be formatted with the following data fields of employees: Name, Birthdate, StreetAddress, and EmployeeID.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
-
-1. To create the required Azure AD security group, sign out of Joni Sherman's account by selecting the user image in the upper right corner and select **Sign out**.
-
-1. Close the browser window and open a new browser window.
-
-1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com**.
-
-1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
-
-1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
-
-1. On the Active teams and groups page, on the top navigation bar select **Security groups** then select **+ Add a security group**.
-
-    ![Screenshot of the Add a group button.](../Media/add-security-group.png)
-
-1. On the **Set up the basics** screen, enter the following:
-    - **Name**: EDM_DataUploaders
-    - **Description**: People who upload data for EDM.
-
-1. Select **Next**.
-
-1. On the **Edit settings** page, leave the **Role assignment** at the default setting, and select **Next**.
-
-1. On the **Review and finish adding group** page, review your settings and select **Create group**.
-
-1. When the **New group created** page is shown, select **Close**.
-
-1. Ensure the **Security** tab is selected from the top navigation bar, then select **Refresh**. Select the newly created **EDM_DataUploaders** group from the list to open the **EDM_DataUploaders** flyout page on the right.
-
-1. Select the **Members** tab and select **View all and manage members**.
-
-1. In the **Manage group members** screen, select **(+) Add members**.
-
-1. Select **Joni Sherman**, select the **Add (1)** button then select the back arrow button.
-
-1. Verify **Joni Sherman** is listed below **Members**.
-
-1. Close the right-side pane with **X**.
-
-1. Select the circle with the MOD Administrator initials **MA** and select **Sign out**.
-
-1. Close the browser window and open a new one.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **MOD Admin**.
 
 1. Navigate to the Microsoft Purview portal at https://compliance.microsoft.com.
-
-1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
 
 1. Expand **Data classification**, select **Classifiers**, and select **EDM classifiers** tab from the top pane.
 
@@ -202,7 +154,7 @@ You have successfully created a new EDM-based classification sensitive informati
 
 Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason for illness or disease was sent out.  We do not want that to happen.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **MOD Admin**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -261,7 +213,7 @@ You have successfully created a new sensitive information type based on a keywor
 
 Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **MOD Admin**.
 
 1. Select the Windows symbol in the lower left to open the start menu, enter **Notepad** and select **Notepad** from the start menu.
 
