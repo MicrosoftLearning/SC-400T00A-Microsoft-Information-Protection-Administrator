@@ -104,77 +104,7 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 You have now modified an existing DLP policy and changed the locations it scans for content.
 
-## Task 3 - Create a DLP policy in PowerShell
-
-In this task, you use PowerShell to create a DLP policy to protect the Contoso EmployeeIDs and prevent them from being shared in Exchange. Users will be informed that they are attempting to share sensitive data and are blocked from sending the e-mail if it includes Contoso EmployeeIDs.
-
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
-
-1. In the start menu, select **Windows PowerShell**.
-
-1. In the **PowerShell** window, enter
-
-   ```powershell
-   Connect-IPPSSession
-   ```
-
-   and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
-
-1. Enter the following command into PowerShell to create a DLP policy that scans all Exchange mailboxes:
-
-   ```powershell
-   New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All
-   ```
-
-1. Enter the following command into PowerShell to add a DLP rule to the DLP policy you created in the previous step:
-
-   ```powershell
-   New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
-   ```
-
-1. Use the following command to review the **EmployeeID DLP rule**:
-
-   ```powershell
-   Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
-   ```
-
-You have now created a DLP Policy that scans Contoso EmployeeIDs in Exchange by using PowerShell.
-
-## Task 4 - Test your DLP Policy
-
-In this task you'll test the DLP policy that was created in the previous task.
-
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 as Joni Sherman.
-
-1. Open a Microsoft Edge browser window and navigate to **https://outlook.office.com/**
-
-1. Select the **New mail** button on the top left to compose a new email message.
-
-1. In the **To** field, enter _Megan_ and select **Megan Bowen**'s email address.
-
-1. In the subject field enter _Help with employee information_.
-
-1. In the body of the email enter:
-
-   ``` text
-   Please help me with the start dates for the following employees:
-   ABC123456
-   DEF678901
-   GHI234567
-
-   Thank you, 
-   Joni Sherman
-   ```
-
-1. Select the **Send** button in the upper right of the message window to send the email.
-
-1. You should receive a message that the email was undeliverable and blocked by a DLP policy.
-
-      ![Screenshot of Manage roles option](../Media/dlp-email-blocked.png)
-
-You have successfully tested your DLP policy.
-
-## Task 5 - Activate a policy in test mode
+## Task 3 - Activate a policy in test mode
 
 In this task, you will activate the credit card information DLP policy you created in test mode so it enforces its protective actions.
 
@@ -194,7 +124,7 @@ In this task, you will activate the credit card information DLP policy you creat
 
 You have successfully activated the DLP Policy. If the policy detects an attempt to share credit card information, it will now block the attempt and allow the users to provide a business justification to override the block action.
 
-## Task 6 - Modify policy priority
+## Task 4 - Modify policy priority
 
 After creating two DLP policies, you want to make sure that the more restrictive policy is processed at a higher priority than the less restrictive policy. For this reason, you want to move the EmployeeID DLP Policy into the higher priority.
 
@@ -209,90 +139,3 @@ After creating two DLP policies, you want to make sure that the more restrictive
 1. In the **Data loss prevention** window, select **Refresh** and review the priority in the **Order** column of the policy table.
 
 You successfully modified the priority of your DLP policies. If both policies match the same content the action of the higher priority policy will be enforced.
-
-## Task 7- Enable file monitoring in Microsoft 365 Defender
-
-You want to use file policies in Microsoft 365 Defender to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft 365 Defender can scan files in your organization.
-
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
-
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of Joni Sherman in the top right and select **Sign out**, then close the browser.
-
-1. Open **Microsoft Edge** and navigate to **https://security.microsoft.com** and log into the Microsoft 365 Defender portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
-
-1. On the left navigation pane, scroll down then select **Settings**.
-
-1. On the **Settings** page select **Cloud Apps**.
-
-1. In the left pane within the **Cloud apps** window, scroll down to the **Information Protection** section, then select **Files**.
-
-1. Select the **Enable file monitoring** checkbox then select **Save** if it is not already marked.
-
-You successfully enabled file monitoring in Microsoft 365 Defender and can now scan files for sensitive content using file policies.
-
-## Task 8 - Create a file policy for Microsoft 365 Defender
-
-In this task, you want to create a file policy in Microsoft 365 Defender to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
-
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
-
-1. In **Microsoft Edge**, the Microsoft Defender for Cloud Apps portal tab should still be open. Select the **Profile picture** of the MOD Admin in the top right and select **Sign out** next to the cogwheel, then close the  browser.
-
-1. Open **Microsoft Edge** and navigate to **https://security.microsoft.com** and log into the Microsoft 365 Defender portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni Sherman's password should be provided by your lab hosting provider.
-
-1. In the **Microsoft 365 Defender** portal, in the left navigation, scroll down to the **Cloud apps** section, then select **Files**.
-
-1. On the **Files** page select **+ New policy from search**.
-
-1. On the **Create file policy** page, leave the **Policy template** selection as **No template**.
-
-1. Enter this information on the **Create file policy** page
-
-   - **Policy name**: Credit Card Information for files
-   - **Description**: Protect credit card numbers from being shared in files
-
-1. Keep the **Policy Severity** on **Low** (one lighted icon) and make sure the **Category** is set to **DLP**. For a file policy, this should be the default.
-
-1. In the **Files matching all of the following** area, expand the dropdown menu **Public (Internet), External, Public** and add **Internal**.
-
-1. In the **Inspection Method** dropdown menu, select **Data Classification Service**.
-
-1. In the **Choose inspection type...** dropdown menu, select **Sensitive information type...**.
-
-1. On the **Select a sensitive information type** dialog, select **Credit Card Number**, then select **Done** in the upper right corner.
-
-1. Under **Alerts**, check the **Create an alert for each matching file** checkbox and review your options. Keep the settings as the default by selecting **Save as default settings**.
-
-1. In the **Governance actions** section, expand **Microsoft OneDrive for Business** and select **Put in user quarantine**.
-
-1. In the **Governance actions** section, expand **Microsoft SharePoint Online** and select the checkbox for **Put in user quarantine**.
-
-1. Select **Create** at the bottom of the page.
-
-You have now created a file policy that will continuously scan files saved in OneDrive and SharePoint for credit card information and quarantine them if they are shared inside your organization.
-
-## Task 9 - Create a DLP policy for Power Platform
-
-Your company uses Power Automate flows to share data between SharePoint Online and Salesforce. In this task, you will create a DLP policy for Power Platform that allows your existing flows to keep working but prevents the creation of flows that will share data between SharePoint Online and Apps defined as non-business.
-
-1. Log into Client 2 VM (LON-CL1) as the **lon-cl2\admin** account.
-
-1. In **Microsoft Edge**, navigate to **https://admin.powerplatform.microsoft.com** and log into the Power Platform admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
-
-1. In the **Power Platform admin center**, in the left navigation pane, select the drop-down for **Policies** and then select **Data policies**.
-
-1. On the **Data policies** page, select **+ New Policy**.
-
-1. On the **Name your policy** page, enter _Tenant-wide SharePoint Policy_, then select **Next**.
-
-1. On the **Non-business|Default** tab on the **Assign connectors** page, select **SharePoint** and **Salesforce**, then select **Move to Business** at the top of the page.
-
-1. In the **Assign connectors** page, select the **Business** tab to make sure both SharePoint and Salesforce now appear then select **Next**.
-
-1. On the **Custom connector patterns** page select **Next**.
-
-1. On the **Define scope** page, select **Add all environments** then select **Next**.
-
-1. On the **Review and create policy** page review your policy settings then select **Create policy**.
-
-You have now created a Power Platform DLP policy that prevents users from creating flows involving a SharePoint Online Connector and any connector that is not Salesforce.
