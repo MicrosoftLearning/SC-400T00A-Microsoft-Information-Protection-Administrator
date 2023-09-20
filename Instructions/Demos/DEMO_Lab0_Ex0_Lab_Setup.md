@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab Setup: Preparing Your Environment for Administration'
+    title: 'Demo Setup: Preparing Your Environment for Administration'
     module: 'Module 0 - Lab Setup'
 ---
 
@@ -15,28 +15,6 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 # Lab Setup: Preparing Your Environment for Administration
 
 In this lab you'll configure and prepare your environment for administration tasks. By following the provided steps, you'll ensure that essential features and settings are enabled in advance, allowing for an easier learning experience in upcoming lab activities. This preparation will include activating necessary features, setting up administrative permissions, and ensuring the proper configuration of key elements.
-
-## Task - Set user passwords for lab exercises
-
-In this task, you'll set passwords for the user accounts needed for the labs.
-
-1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
-
-1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
-
-1. On the left navigation pane, expand **Users** then select **Active users**.
-
-1. On the **Active users** page, hover over **Joni Sherman**'s user account, and a key should appear.
-
-1. Select the **Reset password** key and the **Reset password** flyout page should appear on the right to reset Joni's password.
-
-1. Ensure none of the checkboxes are selected on the **Reset password** flyout page.
-
-1. In the **Password** field, enter a password for Joni you can remember.
-
-    >**Tip**: You can reset Joni's password to the same password as the admin's account, which should be provided by your lab hosting provider.
-
-1. Select the **Reset password** button to reset Joni's password.
 
 ## Task - Enable Audit in the Microsoft Purview portal
 
