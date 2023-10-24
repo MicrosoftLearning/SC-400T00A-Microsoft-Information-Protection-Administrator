@@ -90,7 +90,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. On the Active teams and groups page, on the top navigation bar select **Security groups** then select **+ Add a security group**.
 
-    ![Screenshot of the Add a group button.](/Instructions/Media/add-security-group.png)
+    ![Screenshot of the Add a group button.](../Media/add-security-group.png)
 
 1. On the **Set up the basics** screen, enter the following:
     - **Name**: EDM_DataUploaders
@@ -130,7 +130,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
 
-      ![Screenshot of option to proceed with the Classic EDM experience.](/Instructions/Media/ClassicEDMExperience.png)
+      ![Screenshot of option to proceed with the Classic EDM experience.](../Media/ClassicEDMExperience.png)
 
 1. Select **+ Create EDM schema**
 

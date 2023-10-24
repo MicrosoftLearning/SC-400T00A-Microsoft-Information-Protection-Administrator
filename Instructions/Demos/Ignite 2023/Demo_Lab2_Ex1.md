@@ -170,7 +170,7 @@ In this task you'll test the DLP policy that was created in the previous task.
 
 1. You should receive a message that the email was undeliverable and blocked by a DLP policy.
 
-      ![Screenshot of Manage roles option](/Instructions/Media/dlp-email-blocked.png)
+      ![Screenshot of Manage roles option](../Media/dlp-email-blocked.png)
 
 You have successfully tested your DLP policy.
 
