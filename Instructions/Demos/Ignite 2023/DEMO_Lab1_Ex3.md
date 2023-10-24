@@ -120,7 +120,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**
 
-    ![Image of vertical dot menu](/Instructions/Media/SensitivityLabelDotMenu.png)
+    ![Image of vertical dot menu](../Media/SensitivityLabelDotMenu.png)
 
 1. Select the **+ Create sublabel** from the drop-down menu.
 
@@ -247,7 +247,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal > Employee Data (HR)**  to apply the label.
 
-    ![Sensitivity label. ](/Instructions/Media/word_label.png)
+    ![Sensitivity label. ](../Media/word_label.png)
 
     >**Note:** Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
 
