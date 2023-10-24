@@ -4,7 +4,7 @@ lab:
     module: 'Module 1 - Implement Information Protection'
 ---
 
-# Lab 1 - Exercise 3 - Manage Sensitivity Labels
+# Exercise 3 - Manage Sensitivity Labels
 
 In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd.
 Your organization is based in Rednitzhembach, Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.

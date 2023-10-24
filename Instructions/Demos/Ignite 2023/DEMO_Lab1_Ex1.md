@@ -11,7 +11,7 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-# Lab 1 - Exercise 1 - Manage Compliance Roles
+# Exercise 1 - Manage Compliance Roles
 
 As the recently hired Compliance Administrator for Contoso Ltd. in the role of Joni Sherman, your responsibility is to configure your organization's new Microsoft 365 tenant to meet its compliance requirements. Contoso Ltd. is a company headquartered in the United States with new subsidiaries in the European Union, and it is essential for your organization to ensure that the new Microsoft 365 tenant complies with legal requirements in different countries and regulatory standards in your industry sector.
 

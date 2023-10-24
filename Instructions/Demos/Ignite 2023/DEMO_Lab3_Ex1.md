@@ -4,7 +4,7 @@ lab:
     module: 'Module 5 - Manage insider and privacy risk in Microsoft 365'
 ---
 
-# Lab 5 - Exercise 2 - Configure Insider Risk Management
+# Exercise 5 - Configure Insider Risk Management
 
 You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Your role involves ensuring regulatory compliance and protecting sensitive information within the organization. Recently, Contoso Ltd. has recognized the need to proactively address insider risks that could potentially harm the company's reputation, compromise data security, or lead to legal issues.
 
