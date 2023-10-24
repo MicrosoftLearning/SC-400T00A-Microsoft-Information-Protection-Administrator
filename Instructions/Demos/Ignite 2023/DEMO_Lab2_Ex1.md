@@ -3,15 +3,7 @@ lab:
     title: 'Exercise 1 - Manage DLP Policies'
     module: 'Module 2 - Implement Data Loss Prevention'
 ---
-## WWL Tenants - Terms of use
-
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
-
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
-
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
-
-# Lab 2 - Exercise 1 - Manage DLP Policies
+# Exercise 4 - Manage DLP Policies
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States, and you need to make sure that sensitive customer information does not leave the organization.
 
