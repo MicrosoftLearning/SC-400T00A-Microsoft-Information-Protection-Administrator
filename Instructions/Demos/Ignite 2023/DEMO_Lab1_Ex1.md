@@ -43,7 +43,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. On Joni's user settings page, below the **Account** tab, scroll to **Roles** then select **Manage roles**.
 
-      ![Screenshot of Manage roles option](/Instructions//Media/ManageRoles.png)
+      ![Screenshot of Manage roles option](/Instructions/Media/ManageRoles.png)
 
 1. On the **Manage admin roles** flyout page, select **Admin center access** then scroll down to select **Show all by category**. Under the category view in the **Security & Compliance** category select **Compliance Administrator** .
 
