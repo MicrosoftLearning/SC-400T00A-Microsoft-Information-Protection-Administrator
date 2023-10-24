@@ -71,7 +71,7 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
-1. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.  Hint: The password is probably the same as the MOD Administrator used earlier.
+1. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. If the **Improve your compliance posture** message window opens, read the text and select **Next** twice and then select **Done**. 
 
