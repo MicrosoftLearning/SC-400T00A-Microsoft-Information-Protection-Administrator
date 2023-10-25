@@ -192,7 +192,7 @@ In this task, you will activate the credit card information DLP policy you creat
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
 
-1. On the  **Policies** page select the checkbox next to **Credit Card DLP Policy** and select **Edit policy** (pencil) to open the policy wizard.
+1. On the  **Policies** page select the checkbox next to **Credit Card DLP Policy** then select **Edit policy** to start the policy wizard.
 
 1. Select **Next** until you reach the **Policy mode** page and select **Turn it on right away**.
 
