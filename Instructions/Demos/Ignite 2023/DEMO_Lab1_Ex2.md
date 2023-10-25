@@ -122,7 +122,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Navigate to the Microsoft Purview portal at https://compliance.microsoft.com.
 
-1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
+1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in. Joni's password should be provided by your lab hosting provider.
 
 1. Expand **Data classification**, select **Classifiers**, and select **EDM classifiers** tab from the top pane.
 
@@ -168,6 +168,8 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **employeedb** and select **Add**.
 
+>**Note:** If the **employeedb** schema is not available to select, you might need to refresh the page.
+
 1. Review the data store schema and select **Next**.
 
 1. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
@@ -180,11 +182,11 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **Contoso Employee IDs** and select **Done**.
 
-1. In the **New Pattern** page, select **Done**.
+1. On the **New Pattern** page, select **Done**.
 
 1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
 
-1. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
+1. On the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
 
 1. In the **Name and describe your EDM sensitive info type** page, enter the following:
     - **Name**: Contoso Employee EDM

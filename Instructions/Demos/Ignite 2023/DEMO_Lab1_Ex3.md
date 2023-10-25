@@ -129,17 +129,13 @@ In this task, your HR department has requested a sensitivity label to apply to H
    - **Name**: Employee data (HR)
    - **Display name**: Employee data (HR)
    - **Description for users**: This HR label is the default label for all specified documents in the HR Department.
-   - **Description for admins**: This label is created in consultation with Ms. Jones (Head of HR department). Contact her, when you want to change settings of the label.
+   - **Description for admins**: This label is created in consultation with Ms. Jones (Head of HR department). Contact her when you want to change settings of the label.
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
+1. On the **Define the scope for this label** page, select **Items** and select only the options for **Files** and **Emails**. If there are any other selected options, deselect them, then select **Next**.
 
-1. Select **Next**.
-
-1. On the **Choose protection settings for labeled items** page, select the **Apply or remove encryption** option.
-
-1. Select **Next**.
+1. On the **Choose protection settings for labeled items** page, select the **Apply or remove encryption** option then select **Next**.
 
 1. On the **Encryption** page select **Configure encryption settings**.
 
@@ -196,7 +192,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Choose sensitivity labels to publish** page, select **Next**.
 
-1. On the **Assign admin units (preview)** page, select **Next**
+1. On the **Assign admin units** page, select **Next**
 
 1. On the **Publish to users and groups** page, select **Next**.
 
@@ -249,7 +245,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
     ![Sensitivity label. ](../Media/word_label.png)
 
-    >**Note:** Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
+    >**Note:** It might take an hour for the new sensitivity labels to appear. If the **Internal > Employee Data(HR)** label is unavailable, select **Confidential > All Employees**.
 
 1. Select the **Document - Saved** in the upper left of the window, enter **HR Document** as the File Name and press Enter key.
 
@@ -306,9 +302,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
-
-1. Select **Next**.
+1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails** only. If any other options are selected, deselect them, then select **Next**.
 
 1. On the **Choose protection settings for labeled items** page, select **Next**.
 
@@ -320,19 +314,13 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. A **Sensitive info types** panel will be displayed on the right.
 
-1. In the **Search for sensitive info types** search panel, enter the following information:
-
-    ``` text
-    German
-    ```
+1. In the **Search for sensitive info types** search panel, enter **German** to search for all German related sensitive info types.
 
 1. Press the enter button, the results will display sensitivity info types related to Germany.
 
-1. Press the **Select all** check box.
+1. Press the **Select all** check box to select all the German related sensitive info types then select **Add**.
 
-1. Select **Add**.
-
-1. Select **Next**.
+1. Back on the **Auto-labeling for files and emails** page, select **Next**.
 
 1. On the **Define protection settings for groups and sites** page, select **Next**.
 
@@ -362,7 +350,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the **Choose sensitivity labels to publish** page, select **Next**.
 
-1. On the **Assign admin units (preview)** page, select **Next**.
+1. On the **Assign admin units** page, select **Next**.
 
 1. On the **Publish to users and groups** page, select **Next**.
 
@@ -379,7 +367,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 1. On the **Name your policy** page, enter the following information:
 
    - **Name**: GDPR Germany policy
-   - **Enter a description for your sensitivity label policy**: This auto apply sensitivity labels policy is for the GDPR region of Germany.
+   - **Enter a description for your sensitivity label policy**: This auto apply sensitivity label policy is for the GDPR region of Germany.
 
 1. Select **Next**.
 

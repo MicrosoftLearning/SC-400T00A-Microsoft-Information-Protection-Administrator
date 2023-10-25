@@ -19,7 +19,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
 
-1. On the **Policies** page select **+Create policy** to start the wizard for creating a new data loss prevention policy.
+1. On the **Policies** page select **+ Create policy** to start the wizard for creating a new data loss prevention policy.
 
 1. On the **Start with a template or create a custom policy** page, scroll down and select **Custom** under **Categories** and **Custom policy** under **Templates**. By default, both  options should already be selected , select **Next**.
 
@@ -30,7 +30,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. Select **Next**.
 
-1. On the **Assign admin units (preview)** page select **Next**.
+1. On the **Assign admin units** page select **Next**.
 
 1. On the **Choose locations to apply the policy** page, enable the **Teams chat and channel messages** option only and select **Next**.
 
@@ -64,7 +64,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Create rule** page select **Save** then select **Next**.
 
-1. On the **Policy mode** page select **Test it out first** and select **Show policy tips while in test mode**.
+1. On the **Policy mode** page select **Run the policy in test mode** and select **Show policy tips while in simulation mode**, then select **Next**.
 
 1. On the **Review your policy and create it** page review your settings then select **Submit**
 
@@ -82,11 +82,11 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
 
-1. On the **Policies** page select the checkbox next to the recently created **Credit Card DLP Policy** and then select **Edit policy** (pencil icon) to open the policy wizard.
+1. On the **Policies** page select the checkbox next to the recently created **Credit Card DLP Policy**, then select the pencil icon :::image type="icon" source="../Media/pencilicon.png"::: to open the **Edit policy** wizard.
 
 1. On the **Name your DLP policy** page, select **Next**.
 
-1. On the **Assign admin units (preview)** page select **Next**.
+1. On the **Assign admin units** page select **Next**.
 
 1. On the **Choose locations to apply the policy** page, enable the **Exchange email** option and then select **Next** until you reach the **Review your policy and create it** page.
 
@@ -103,6 +103,22 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In the start menu, select **Windows PowerShell**.
+
+1. Enter the following cmdlet to install the latest Exchange Online PowerShell module version:
+
+    ```powershell
+    Install-Module ExchangeOnlineManagement
+    ```
+
+1. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**. This process may take some time to complete.
+
+1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some time to complete.
+
+1. Enter the following cmdlet to change your execution policy and press **Enter**
+
+    ```powershell
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
 
 1. In the **PowerShell** window, enter
 
@@ -176,7 +192,7 @@ In this task, you will activate the credit card information DLP policy you creat
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
 
-1. On the  **Policies** page select the checkbox next to **Credit Card DLP Policy** and select **Edit policy** (pencil) to open the policy wizard.
+1. On the  **Policies** page select the checkbox next to **Credit Card DLP Policy** then select **Edit policy** to start the policy wizard.
 
 1. Select **Next** until you reach the **Policy mode** page and select **Turn it on right away**.
 
