@@ -196,7 +196,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Choose sensitivity labels to publish** page, select **Next**.
 
-1. On the **Assign admin units (preview)** page, select **Next**
+1. On the **Assign admin units** page, select **Next**
 
 1. On the **Publish to users and groups** page, select **Next**.
 
