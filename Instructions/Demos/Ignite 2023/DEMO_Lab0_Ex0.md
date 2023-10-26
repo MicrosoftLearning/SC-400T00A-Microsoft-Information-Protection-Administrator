@@ -29,8 +29,8 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. Deselect the check boxes next to **MOD Administrator** and **Microsoft Service Account**.
 
-    >[!alert] Do not change the **MOD Administrator** or **Microsoft Service Account** passwords. This will negatively impact your lab experience. <p>
-    <img src="../Media/deselectserviceaccounts.png" alt="Screenshot displaying Microsft Service Account and MOD Administrator deselected." style="border: 2px solid black">!
+    >[!alert] Do not change the **MOD Administrator** or **Microsoft Service Account** passwords. This will negatively impact your lab experience.
+    > :::image type="content" source="../Media/deselectserviceaccounts.png" alt-text="Screenshot displaying Microsoft Service Account and MOD Administrator deselected.":::
 
 1. Select the **Reset password** from the middle action ribbon to open the **Reset password** flyout page on the right.
 
