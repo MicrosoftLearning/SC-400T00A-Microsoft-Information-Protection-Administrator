@@ -48,7 +48,7 @@ In this task, you will customize the Insider risk management settings in the Mic
 
 1. Select **Insider risk management** from the left navigation bar.
 
-1. Select the gear icon on the top right for **Settings**.
+1. Select the gear icon on the top right for **Settings**. 
 
 1. Explore the settings:
 
@@ -145,9 +145,8 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
    - **Downloading content from SharePoint**
    - **Sending email with attachments to recipients outside the organization**
-   - **Using a browser to upload files to the web**
    - **Sharing SharePoint files with people outside the organization**
-   - **File copied to remote desktop session**
+   - **Download from Microsoft 365 location the exfiltrate**
 
     >**Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**.
 

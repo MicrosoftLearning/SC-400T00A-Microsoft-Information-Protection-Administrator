@@ -82,7 +82,7 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
 
-1. On the **Policies** page select the checkbox next to the recently created **Credit Card DLP Policy**, then select the pencil icon :::image type="icon" source="../Media/pencilicon.png"::: to open the **Edit policy** wizard.
+1. On the **Policies** page select the checkbox next to the recently created **Credit Card DLP Policy**, then select **Edit policy** to start the policy wizard.
 
 1. On the **Name your DLP policy** page, select **Next**.
 
