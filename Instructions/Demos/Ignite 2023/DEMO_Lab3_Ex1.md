@@ -16,11 +16,11 @@ In this exercise, you will assign the Insider Risk Management role to Joni to gr
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
+1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown.
 
-1. On the **Permissions** page, under **Microsoft Purview solutions** select Roles.
+1. On the **Permissions** page, under **Microsoft Purview solutions** select **Roles**.
 
 1. On the **Role groups for Microsoft Purview solutions** page select **Insider Risk Management**.
 
@@ -44,16 +44,17 @@ You have successfully assigned the Insider Risk Management role to Joni Sherman,
 
 In this task, you will customize the Insider risk management settings in the Microsoft Purview portal. This will allow Joni Sherman to effectively manage potential insider risks within the organization and ensure the security of sensitive information.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Select **Insider risk management** from the left navigation bar.
 
-1. Select the gear icon on the top right for **Settings**.
+1. Select the gear icon on the top right for **Settings**. :::image type="icon" source="../Media/gearicon.png":::
 
 1. Explore the settings:
 
     - **Privacy**: Allows you to select displaying usernames or anonymized versions in alerts and cases.
     - **Policy indicators**: Involves configuring the policy template using specific risk indicators.
+    - **Detection groups (preview)**: Customizes risk indicators for specific user sets in an organization
     - **Policy timeframes**: Defines review periods triggered by policy matches based on events and activities.
     - **Intelligent detections**: Controls alert volume, excludes certain entities from risk scoring and allows filtering of Microsoft Defender alerts.
     - **Export alerts**: Exports risk alert information to SIEM and SOAR solutions using Office 365 Management Activity APIs.
@@ -129,7 +130,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. On the **Choose users and groups** page, leave **Include all users and groups** selected, then select **Next**.
 
-1. On the **Decide whether to prioritize content page**, leave only **Sensitive info type** selected then select **Next**.
+1. On the **Decide whether to prioritize content page**, leave only **Sensitive info types** selected then select **Next**.
 
 1. On the **Sensitive info types to prioritize** page select **+ Add or edit sensitive info type**.
 
@@ -145,9 +146,8 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
    - **Downloading content from SharePoint**
    - **Sending email with attachments to recipients outside the organization**
-   - **Using a browser to upload files to the web**
    - **Sharing SharePoint files with people outside the organization**
-   - **File copied to remote desktop session**
+   - **Download from Microsoft 365 location the exfiltrate**
 
     >**Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**.
 
