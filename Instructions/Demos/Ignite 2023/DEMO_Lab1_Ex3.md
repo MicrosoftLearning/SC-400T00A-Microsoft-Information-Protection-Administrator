@@ -237,9 +237,9 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. Enter the following contents into the word document:
 
-   ``` text
-   Important HR employee document.
-   ```
+    ``` text
+    Important HR employee document.
+    ```
 
 1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal > Employee Data (HR)** to apply the label.
 
