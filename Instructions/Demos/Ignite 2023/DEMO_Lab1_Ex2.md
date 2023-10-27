@@ -23,7 +23,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. Select **Sensitive info types** from the top pane.
 
-   >[!hint] **Hint:** If **Sensitive info types** doesn't appear in the Purview portal, then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser. You may have to sign-out and sign-in as JoniS.
+    >[!hint] **Hint:** If **Sensitive info types** doesn't appear in the Purview portal, then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser. You may have to sign-out and sign-in as JoniS.
 
 1. On the **Sensitive info types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
@@ -126,7 +126,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Expand **Data classification**, select **Classifiers**, and select **EDM classifiers** tab from the top pane.
 
-   >[!note] **Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM based SIT with the classic experience. See the following for more information on creating an EDM based SIT with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
+    >[!note] **Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM based SIT with the classic experience. See the following for more information on creating an EDM based SIT with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
 
 1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
 
@@ -168,7 +168,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **employeedb** and select **Add**.
 
->[!note] **Note:** If the **employeedb** schema is not available to select, you might need to refresh the page.
+    >[!note] **Note**: If the **employeedb** schema is not available to select, you might need to refresh the page.
 
 1. Review the data store schema and select **Next**.
 
