@@ -21,7 +21,7 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
-1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft Purview portal as the **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com.
 
 1. On the left navigation pane, expand **Users** then select **Active users**.
 
