@@ -25,7 +25,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
    Install-Module -Name MSOnline
    ```
 
-1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take a while to complete processing.
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter. This may take a while to complete processing.
 
 1. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
 
@@ -41,7 +41,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
     Connect-MsolService
     ```
 
-1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **Joni Sherman** Joni's password should be provided by your lab hosting provider.
 
 1. After signing in, select the PowerShell window.
 
@@ -63,7 +63,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
     Connect-SPOService -url $adminurl
     ```
 
-1. In the **Sign into your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com. Admin's password should be provided by your lab hosting provider.
 
 1. After signing in, select the PowerShell window.
 
@@ -85,7 +85,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
 
 1. In the Microsoft Purview portal, on the left navigation pane, expand **Information protection** then select **Labels**.
 
@@ -172,7 +172,7 @@ You have successfully created a sensitivity label for your organizations interna
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
 
@@ -223,7 +223,7 @@ You have successfully published the Internal and HR sensitivity labels. Note tha
 
 In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
 
@@ -241,7 +241,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
    Important HR employee document.
    ```
 
-1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal > Employee Data (HR)**  to apply the label.
+1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal > Employee Data (HR)** to apply the label.
 
     ![Sensitivity label. ](../Media/word_label.png)
 

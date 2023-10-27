@@ -15,15 +15,15 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
 
 1. Expand **Data classification** from the left pane and select **Classifiers**
 
 1. If a **What is data classification?** message is displayed, select **Close**.
 
-1. Select **Sensitive info types** from the top pane.  
+1. Select **Sensitive info types** from the top pane.
 
-   >**Hint:** If **Sensitive info types** doesn't appear in the Purview portal, then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser.  You may have to sign-out and sign-in as JoniS.
+   >**Hint:** If **Sensitive info types** doesn't appear in the Purview portal, then it's possible Joni's permissions update to Compliance Admin in the earlier lab has not updated in your browser. You may have to sign-out and sign-in as JoniS.
 
 1. On the **Sensitive info types** tab select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
@@ -84,7 +84,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com**.
 
-1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com. Admin's password should be provided by your lab hosting provider.
 
 1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
 
@@ -162,7 +162,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **EDM sensitive info types** from the left pane.
 
-1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
+1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.
 
 1. On the **Define data store schema** page, select **Choose an existing EDM schema**.
 
@@ -200,7 +200,7 @@ You have successfully created a new EDM-based classification sensitive informati
 
 ## Task 3 – Create keyword dictionary
 
-Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason for illness or disease was sent out.  We do not want that to happen.
+Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave. When that happened the reason for illness or disease was sent out. We do not want that to happen.
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
@@ -229,7 +229,7 @@ Several violations of personal information leakage happened when users sent out 
       - influenza
       - cold
       - bronchitis
-      - otitis  
+      - otitis
 
 1. Select **Done**.
 
@@ -251,7 +251,7 @@ Several violations of personal information leakage happened when users sent out 
 
 1. On the **Choose the recommended confidence level to show in compliance policies** let the default value persist and select **Next**.
 
-1. On the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
+1. On the **Review settings and finish** page, review your settings and select **Create**. When the process is complete select **Done**.
 
 1. Leave the browser window in the Microsoft Purview portal open.
 
