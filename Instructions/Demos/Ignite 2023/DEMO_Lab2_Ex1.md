@@ -13,7 +13,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
 
 1. If the **Stay signed in?** dialog box appears, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -21,7 +21,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Policies** page select **+ Create policy** to start the wizard for creating a new data loss prevention policy.
 
-1. On the **Start with a template or create a custom policy** page, scroll down and select **Custom** under **Categories** and **Custom policy** under **Templates**. By default, both  options should already be selected , select **Next**.
+1. On the **Start with a template or create a custom policy** page, scroll down and select **Custom** under **Categories** and **Custom policy** under **Templates**. By default, both options should already be selected , select **Next**.
 
 1. On the **Name your DLP policy** page enter:
 
@@ -112,7 +112,7 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
 
 1. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**. This process may take some time to complete.
 
-1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some time to complete.
+1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**. This process may take some time to complete.
 
 1. Enter the following cmdlet to change your execution policy and press **Enter**
 
@@ -126,7 +126,7 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
    Connect-IPPSSession
    ```
 
-   and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+   then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
 
 1. Enter the following command into PowerShell to create a DLP policy that scans all Exchange mailboxes:
 
@@ -192,7 +192,7 @@ In this task, you will activate the credit card information DLP policy you creat
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
 
-1. On the  **Policies** page select the checkbox next to **Credit Card DLP Policy** then select **Edit policy** to start the policy wizard.
+1. On the **Policies** page select the checkbox next to **Credit Card DLP Policy** then select **Edit policy** to start the policy wizard.
 
 1. Select **Next** until you reach the **Policy mode** page and select **Turn it on right away**.
 
@@ -217,4 +217,3 @@ After creating two DLP policies, you want to make sure that the more restrictive
 1. In the **Data loss prevention** window, select **Refresh** and review the priority in the **Order** column of the policy table.
 
 You successfully modified the priority of your DLP policies. If both policies match the same content the action of the higher priority policy will be enforced.
-

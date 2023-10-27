@@ -25,7 +25,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
       ![Screenshot of Manage roles option](../Media/ManageRoles.png)
 
-1. On the **Manage admin roles** flyout page, select **Admin center access** then scroll down to select **Show all by category**. Under the category view in the **Security & Compliance** category select **Compliance Administrator** .
+1. On the **Manage admin roles** flyout page, select **Admin center access** then scroll down to select **Show all by category**. Under the category view in the **Security & Compliance** category select **Compliance Administrator**.
 
 1. Select **Save changes** to apply the role. When the **Admin roles updated** message is displayed on the upper part of the page, select the arrow pointing to the left to return to Joni's user settings.
 
@@ -51,7 +51,7 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
-1. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com.  Joni's password should be provided by your lab hosting provider.
+1. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
 
 1. The page **Welcome to the Microsoft Purview compliance portal** is displayed. Explore the dashboard tiles and the left-side navigation pane.
 
