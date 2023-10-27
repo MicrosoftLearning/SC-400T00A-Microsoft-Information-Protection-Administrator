@@ -48,8 +48,7 @@ In this task, you will customize the Insider risk management settings in the Mic
 
 1. Select **Insider risk management** from the left navigation bar.
 
-1. Select the gear icon on the top right for **Settings**. :::image type="icon" source="../Media/gearicon.png":::
-
+1. Select the gear icon on the top right for **Settings**. ![Gear icon](../Media/gearicon.png)
 1. Explore the settings:
 
     - **Privacy**: Allows you to select displaying usernames or anonymized versions in alerts and cases.
@@ -149,7 +148,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
    - **Sharing SharePoint files with people outside the organization**
    - **Download from Microsoft 365 location the exfiltrate**
 
-    >**Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**.
+    >[!note] **Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**.
 
 1. Select **Next**.
 
@@ -165,7 +164,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. On the **Your policy was created** page select **Done**.
 
-    >**Note:** As noted on this page, it may take up to 24 hours before policy matches will start showing up in the Alerts tab.
+    >[!note] **Note:** As noted on this page, it may take up to 24 hours before policy matches will start showing up in the Alerts tab.
 
 You have successfully created the 'Financial Data Protection' policy, which will help detect and prevent unauthorized access to sensitive financial information. Keep in mind that it may take up to 24 hours for policy matches to appear in the Alerts tab.
 

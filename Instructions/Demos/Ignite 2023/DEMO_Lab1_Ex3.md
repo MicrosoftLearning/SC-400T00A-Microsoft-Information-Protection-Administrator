@@ -245,7 +245,7 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
     ![Sensitivity label. ](../Media/word_label.png)
 
-    >**Note:** It might take an hour for the new sensitivity labels to appear. If the **Internal > Employee Data(HR)** label is unavailable, select **Confidential > All Employees**.
+    >[!note] **Note:** It might take an hour for the new sensitivity labels to appear. If the **Internal > Employee Data(HR)** label is unavailable, select **Confidential > All Employees**.
 
 1. Select the **Document - Saved** in the upper left of the window, enter **HR Document** as the File Name and press Enter key.
 
