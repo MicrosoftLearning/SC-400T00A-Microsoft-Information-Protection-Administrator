@@ -13,7 +13,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. Joni's password should be provided by your lab hosting provider.
 
 1. If the **Stay signed in?** dialog box appears, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -215,5 +215,7 @@ After creating two DLP policies, you want to make sure that the more restrictive
 1. On the **Policies** select the three vertical dots next to the **EmployeeID DLP Policy** to open the **Actions** selection and select **Move to top**.
 
 1. In the **Data loss prevention** window, select **Refresh** and review the priority in the **Order** column of the policy table.
+
+1. Select the circle with Joni's profile image in the upper right and select **Sign out** to sign out of Joni's account for the next exercise.
 
 You successfully modified the priority of your DLP policies. If both policies match the same content the action of the higher priority policy will be enforced.
