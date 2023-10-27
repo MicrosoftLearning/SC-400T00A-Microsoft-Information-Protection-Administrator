@@ -122,29 +122,29 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
 
 1. In the **PowerShell** window, enter
 
-   ```powershell
-   Connect-IPPSSession
-   ```
+    ```powershell
+    Connect-IPPSSession
+    ```
 
    then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
 
 1. Enter the following command into PowerShell to create a DLP policy that scans all Exchange mailboxes:
 
-   ```powershell
-   New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All
-   ```
+    ```powershell
+    New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All
+    ```
 
 1. Enter the following command into PowerShell to add a DLP rule to the DLP policy you created in the previous step:
 
-   ```powershell
-   New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
-   ```
+    ```powershell
+    New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
+    ```
 
 1. Use the following command to review the **EmployeeID DLP rule**:
 
-   ```powershell
-   Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
-   ```
+    ```powershell
+    Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
+    ```
 
 You have now created a DLP Policy that scans Contoso EmployeeIDs in Exchange by using PowerShell.
 
@@ -164,15 +164,15 @@ In this task you'll test the DLP policy that was created in the previous task.
 
 1. In the body of the email enter:
 
-   ``` text
-   Please help me with the start dates for the following employees:
-   ABC123456
-   DEF678901
-   GHI234567
+    ``` text
+    Please help me with the start dates for the following employees:
+    ABC123456
+    DEF678901
+    GHI234567
 
-   Thank you, 
-   Joni Sherman
-   ```
+    Thank you, 
+    Joni Sherman
+    ```
 
 1. Select the **Send** button in the upper right of the message window to send the email.
 
