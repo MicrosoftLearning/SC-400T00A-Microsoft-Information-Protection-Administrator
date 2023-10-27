@@ -51,7 +51,7 @@ In this task, you will sign out of the global admin account and sign-in again as
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
-1. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com.  Joni's password should be provided by your lab hosting provider.
 
 1. The page **Welcome to the Microsoft Purview compliance portal** is displayed. Explore the dashboard tiles and the left-side navigation pane.
 
