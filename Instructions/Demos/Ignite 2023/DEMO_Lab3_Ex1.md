@@ -48,8 +48,7 @@ In this task, you will customize the Insider risk management settings in the Mic
 
 1. Select **Insider risk management** from the left navigation bar.
 
-1. Select the gear icon on the top right for **Settings**. :::image type="icon" source="../Media/gearicon.png":::
-
+1. Select the gear icon on the top right for **Settings**.
 1. Explore the settings:
 
     - **Privacy**: Allows you to select displaying usernames or anonymized versions in alerts and cases.
