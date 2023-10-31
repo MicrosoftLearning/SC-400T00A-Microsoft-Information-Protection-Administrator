@@ -152,7 +152,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. Select **Next**.
 
-1. On the **Triggering thresholds for this policy** page select **Use default thresholds (Recommended)** then select **Next**.
+1. On the **Choose thresholds for triggering events** page select **Apply built-in thresholds (recommended)** then select **Next**.
 
 1. On the **Indicators** page, select the drop down for **Physical access indicators** and deselect **Physical access after termination or failed access to sensitive asset** if selected then select **Next**.
 
