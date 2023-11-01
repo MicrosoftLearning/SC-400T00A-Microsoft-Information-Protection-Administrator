@@ -72,133 +72,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 You have successfully created a new sensitive information type to identify employee IDs in the pattern of three uppercase characters, six numbers, and the keywords 'Employee' or 'IDs' within a range of 100 characters.
 
-## Task 2 – Create EDM-based classification information type
-
-As an extra search pattern, you will create an Exact Data Match (EDM) based classification with a database schema of employee data. The database source file will be formatted with the following data fields of employees: Name, Birthdate, StreetAddress, and EmployeeID.
-
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
-
-1. To create the required Azure AD security group, sign out of Joni Sherman's account by selecting the user image in the upper right corner and select **Sign out**.
-
-1. Close the browser window and open a new browser window.
-
-1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com**.
-
-1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com. Admin's password should be provided by your lab hosting provider.
-
-1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
-
-1. On the Active teams and groups page, on the top navigation bar select **Security groups** then select **+ Add a security group**.
-
-    ![Screenshot of the Add a group button.](../Media/add-security-group.png)
-
-1. On the **Set up the basics** screen, enter the following:
-    - **Name**: EDM_DataUploaders
-    - **Description**: People who upload data for EDM.
-
-1. Select **Next**.
-
-1. On the **Edit settings** page, leave the **Role assignment** at the default setting, and select **Next**.
-
-1. On the **Review and finish adding group** page, review your settings and select **Create group**.
-
-1. When the **New group created** page is shown, select **Close**.
-
-1. Ensure the **Security** tab is selected from the top navigation bar, then select **Refresh**. Select the newly created **EDM_DataUploaders** group from the list to open the **EDM_DataUploaders** flyout page on the right.
-
-1. Select the **Members** tab and select **View all and manage members**.
-
-1. In the **Manage group members** screen, select **(+) Add members**.
-
-1. Select **Joni Sherman**, select the **Add (1)** button then select the back arrow button.
-
-1. Verify **Joni Sherman** is listed below **Members**.
-
-1. Close the right-side pane with **X**.
-
-1. Select the circle with the MOD Administrator initials **MA** and select **Sign out**.
-
-1. Close the browser window and open a new one.
-
-1. Navigate to the Microsoft Purview portal at https://compliance.microsoft.com.
-
-1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in. Joni's password should be provided by your lab hosting provider.
-
-1. Expand **Data classification**, select **Classifiers**, and select **EDM classifiers** tab from the top pane.
-
-    >[!note] **Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM based SIT with the classic experience. See the following for more information on creating an EDM based SIT with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
-
-1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
-
-      ![Screenshot of option to proceed with the Classic EDM experience.](../Media/ClassicEDMExperience.png)
-
-1. Select **+ Create EDM schema**
-
-1. On the **New EDM schema** page, enter the following:
-    - **Name**: employeedb
-    - **Description**: Employee Database schema
-
-1. Enable **Ignore delimiters and punctuation for all schema fields**.
-
-1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
-
-1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
-
-1. Select **+ Add schema data field** from the lower end.
-
-1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
-
-1. Select **+ Add schema data field** from the lower end again.
-
-1. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
-
-1. Select **+ Add schema data field** from the lower end a last time.
-
-1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
-
-1. Select **Field is searchable**.
-
-1. Select **Save**.
-
-1. Select **EDM sensitive info types** from the left pane.
-
-1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.
-
-1. On the **Define data store schema** page, select **Choose an existing EDM schema**.
-
-1. Select **employeedb** and select **Add**.
-
-    >[!note] **Note**: If the **employeedb** schema is not available to select, you might need to refresh the page.
-
-1. Review the data store schema and select **Next**.
-
-1. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
-
-1. On the **New pattern** pane on the right-side, in the Primary element field, select *EmployeeID*.
-
-1. Below **Primary element's sensitive info type**, select **+ Choose sensitive info type**.
-
-1. In the **Search** bar, enter *Contoso* and press the enter key.
-
-1. Select **Contoso Employee IDs** and select **Done**.
-
-1. On the **New Pattern** page, select **Done**.
-
-1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
-
-1. On the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
-
-1. In the **Name and describe your EDM sensitive info type** page, enter the following:
-    - **Name**: Contoso Employee EDM
-    - **Description for admins**: EDM-based sensitive information type for employee personal information.
-
-1. Select **Next**, review the settings and select **Submit**.
-
-1. On the **Your EDM sensitive info type was created** page, select **Done**.
-
-You have successfully created a new EDM-based classification sensitive information type for identifying employee data from a database file source.
-
-## Task 3 – Create keyword dictionary
+## Task 2 – Create keyword dictionary
 
 Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave. When that happened the reason for illness or disease was sent out. We do not want that to happen.
 
@@ -257,7 +131,7 @@ Several violations of personal information leakage happened when users sent out 
 
 You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate. Proceed with the next task.
 
-## Task 4 – Work with custom sensitive information types
+## Task 3 – Work with custom sensitive information types
 
 Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern.
 
