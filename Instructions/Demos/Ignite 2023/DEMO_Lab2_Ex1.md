@@ -7,7 +7,7 @@ lab:
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States, and you need to make sure that sensitive customer information does not leave the organization.
 
-## Task 1 – Create a DLP policy in test mode
+## Task 1 – Create a DLP policy
 
 In this exercise, you will create a Data Loss Prevention policy in the Microsoft Purview portal to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains Credit Card information and allow them to provide a justification for sending this information. The policy will be implemented in test mode because you do not want the block action to affect your users yet.
 
@@ -64,30 +64,10 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Create rule** page select **Save** then select **Next**.
 
-1. On the **Policy mode** page select **Run the policy in test mode** and select **Show policy tips while in simulation mode**, then select **Next**.
+1. On the **Policy mode** page select **Turn it on right away**.
 
-1. On the **Review your policy and create it** page review your settings then select **Submit**
+1. On the **Review your policy and create it** select **Submit**.
 
 1. On the **New policy created** page select **Done**.
 
 You have now created a DLP policy that scans Credit Card numbers in Microsoft Teams chats and channels and allows users to provide a business justification to override the policy.
-
-## Task 2 - Activate a policy in test mode
-
-In this task, you will activate the credit card information DLP policy you created in test mode so it enforces its protective actions.
-
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
-
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
-
-1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
-
-1. On the **Policies** page select the checkbox next to **Credit Card DLP Policy** then select **Edit policy** to start the policy wizard.
-
-1. Select **Next** until you reach the **Policy mode** page and select **Turn it on right away**.
-
-1. On the **Review your policy and create it** select **Submit**.
-
-1. On the **Policy updated** page select **Done**.
-
-You have successfully activated the DLP Policy. If the policy detects an attempt to share credit card information, it will now block the attempt and allow the users to provide a business justification to override the block action.
