@@ -4,9 +4,9 @@ lab:
     module: 'Module 1 - Implement Information Protection'
 ---
 
-# Lab 1 - Exercise 2 - Manage Office 365 Message Encryption
+# Lab 1 - Exercise 2 - Manage Microsoft Purview Message Encryption
 
-The first setting Joni Sherman needs to configure and test with her pilot team is the Microsoft 365 built-in Office 365 Message Encryption (OME). For this purpose, she will modify the default template and create a new branding template, which will be assigned to one of the pilot users. The pilot users will then test the OME functionality with their accounts.
+The first setting Joni Sherman needs to configure and test with her pilot team is the Microsoft Purview Message Encryption. For this purpose, she will modify the default template and create a new branding template, which will be assigned to one of the pilot users. The pilot users will then test the message encryption functionality with their accounts.
 
 ## Task 1 – Verify Azure RMS functionality
 
@@ -70,13 +70,13 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 You have successfully installed the Exchange Online PowerShell module, connected to your tenant, and verified the correct functionality of Azure RMS.
 
-## Task 2 – Modify default OME template
+## Task 2 – Modify default branding template
 
-There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with OME, you need to deactivate the use of social IDs for all users in your organization.
+There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with message encryption, you need to deactivate the use of social IDs for all users in your organization.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
-1. Run the following cmdlet to view the default OME configuration:
+1. Run the following cmdlet to view the default configuration:
 
     ```powershell
     Get-OMEConfiguration -Identity "OME Configuration" | fl
@@ -102,7 +102,7 @@ There is a requirement in your organization to restrict trust for foreign identi
 
 You have successfully deactivated the usage of foreign identity providers, such as Google and Facebook in Office 365 Message Encryption.
 
-## Task 3 – Test default OME template
+## Task 3 – Test default branding template
 
 You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
@@ -160,7 +160,7 @@ Protected messages sent by your organizations finance department require special
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
-1. Run the following cmdlet to create a new OME configuration:
+1. Run the following cmdlet to create a new configuration:
 
     ```powershell
     New-OMEConfiguration -Identity "Finance Department" -ExternalMailExpiryInDays 7
@@ -206,11 +206,11 @@ Protected messages sent by your organizations finance department require special
 
 1. Leave the PowerShell open.
 
-You have successfully created a new transport rule that applies the custom OME template automatically, when a member of the finance department sends a message to external recipients.
+You have successfully created a new transport rule that applies the custom branding template automatically, when a member of the finance department sends a message to external recipients.
 
 ## Task 5 – Test the custom branding template
 
-To validate the new custom OME configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
+To validate the new custom configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
 
 1. Log into Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
@@ -228,12 +228,12 @@ To validate the new custom OME configuration, you need to use the account of Lyn
 
     ![Sample encrypted email from Lynne Robbins. ](../Media/EncryptedEmail.png)
 
-1. The customized OME configuration has social IDs activated, because both options are available. Select **Sign in with a One-time passcode** to receive a limited time passcode.
+1. The customized configuration has social IDs activated, because both options are available. Select **Sign in with a One-time passcode** to receive a limited time passcode.
 
 1. Go to your personal email portal and open the message with subject **Your one-time passcode to view the message**.
 
-1. Copy the passcode, paste it in to the OME portal and select **Continue**.
+1. Copy the passcode, paste it in to the portal and select **Continue**.
 
 1. Review the encrypted message with custom branding.
 
-You have successfully tested the new customized OME template.
+You have successfully tested the new customized template.
