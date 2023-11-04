@@ -64,7 +64,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Create rule** page select **Save** then select **Next**.
 
-1. On the **Policy mode** page select **Turn it on right away**.
+1. On the **Policy mode** page select **Turn the policy on immediately**.
 
 1. On the **Review your policy and create it** select **Submit**.
 
