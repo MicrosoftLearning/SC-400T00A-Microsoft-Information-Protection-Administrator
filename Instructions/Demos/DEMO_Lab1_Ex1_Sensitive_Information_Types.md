@@ -50,7 +50,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
     - **Case insensitive**:
         - *Employee*
         - *ID*
-    - Select the radial for *Word match* under the **Case Sensitive** field
+    - Select the radio button for *Word match* under the **Case Sensitive** field
 
 1. Select **Done**.
 

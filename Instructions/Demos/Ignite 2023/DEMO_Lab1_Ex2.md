@@ -11,7 +11,7 @@ Contoso Ltd. previously had issues with employees accidentally sending out perso
 
 ## Task 1 – Create custom sensitive information types
 
-In this exercise, you will use the Security & Compliance Center PowerShell module to create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
+In this exercise, you will use the Security & Compliance Center to create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
@@ -54,7 +54,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
     - **Case insensitive**:
         - *Employee*
         - *ID*
-    - Select the radial for *Word match* under the **Case Sensitive** field
+    - Select the radio for *Word match* under the **Case Sensitive** field
 
 1. Select **Done**.
 

@@ -86,7 +86,7 @@ In Task 3 you will an eDiscovery (Standard) search within the "Wrongful Terminat
 
 1. On the **Locations** page, select **On** for **Exchange mailboxes**, **SharePoint sites**, and **Exchange public folders** then select **Next**.
 
-1. On the **Define your search conditions** page select the radial for **KQL editor**.
+1. On the **Define your search conditions** page select the radio button for **KQL editor**.
 
 1. In the KQL editor box, enter:
 
