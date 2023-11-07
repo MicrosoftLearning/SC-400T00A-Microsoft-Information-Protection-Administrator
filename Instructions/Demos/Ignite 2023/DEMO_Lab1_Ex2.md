@@ -15,7 +15,7 @@ In this exercise, you will use the Security & Compliance Center to create a new 
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to Microsoft Purview compliance portal, **https://compliance.microsoft.com**, and sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com. Joni's password should be provided by your lab hosting provider.
 
 1. Expand **Data classification** from the left pane and select **Classifiers**
 
