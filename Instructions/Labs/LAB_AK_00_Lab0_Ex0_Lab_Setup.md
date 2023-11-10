@@ -91,7 +91,7 @@ In this task, you'll enable information barriers in SharePoint Online and OneDri
 1. Run the following cmdlet to connect to the admin center for SharePoint Online:
 
     ```powershell
-     Connect-SPOService -Url https://<WWLxZZZZZZ>-admin.sharepoint.com -Credential admin@<WWLxZZZZZZ>.onmicrosoft.com
+     Connect-SPOService -Url https://WWLxZZZZZZ-admin.sharepoint.com -Credential admin@WWLxZZZZZZ.onmicrosoft.com
     ```
 
     >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
