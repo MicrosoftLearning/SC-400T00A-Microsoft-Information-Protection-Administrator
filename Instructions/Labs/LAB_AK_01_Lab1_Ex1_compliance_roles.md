@@ -21,7 +21,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
-1. Open **Microsoft Edge**, select the address bar, navigate to **https://admin.microsoft.com** and log into the Microsoft 365 admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. Open **Microsoft Edge**, select the address bar, navigate to **`https://admin.microsoft.com`** and log into the Microsoft 365 admin center as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
