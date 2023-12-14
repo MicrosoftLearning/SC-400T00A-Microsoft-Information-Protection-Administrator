@@ -24,7 +24,7 @@ In this task you will grant Joni the required permissions to create assessments 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
-1. In **Microsoft Edge**, select the address bar, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview compliance portal center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, select the address bar, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. On the left navigation pane, expand the dropdown for **Roles & scopes** and select **Permissions**.
 
@@ -64,9 +64,9 @@ In this task, you granted Joni the necessary permissions to create assessments u
 
 ## Task 2 - Explore Compliance Manager
 
-In this task, you will explore the functionalities of Compliance Manager within the Microsoft Purview compliance portal center.
+In this task, you will explore the functionalities of Compliance Manager within the Microsoft Purview compliance portal.
 
-1. Open **Microsoft Edge** and navigate to **https://compliance.microsoft.com**. Log into the Microsoft Purview compliance portal center as **Joni Sherman**.
+1. Open **Microsoft Edge** and navigate to **https://compliance.microsoft.com**. Log into the Microsoft Purview compliance portal as **Joni Sherman**.
 
 1. Select **Compliance Manager** from the left navigation pane.
 
@@ -74,19 +74,27 @@ In this task, you will explore the functionalities of Compliance Manager within 
 
 1. From the top of the Overview page, select **Improvement actions**. These are actions that can improve the organization’s compliance score. Note that as improvement actions are taken, points may take up to 24 hours to update. Notice the available filters.
 
-1. From the list of improvement actions, select **Enable self-service password reset**. Review the available information for the improvement action. The left side of the window provides a brief overview about the implementation, test status, and more. To the right of the overview is the details page from which you can select implementation, testing, the related standards and regulatory requirements, and documents. Each of these tabs provides more detailed information for the improvement action.
+1. On the **Improvement Actions** page, search for, then select **Enable self-service password reset**. Review the available information for the improvement action. From this page, you can see assign an _Owner_ or view the assigned owner of the improvement action, the _Implementation status_, _Test status_, _Service_, _Testing type_, and _Testing source_. You can also select the Details page to view implementation information about the improvement action, Evidence to upload and view previous uploaded evidence, and Related controls to view controls that contain that improvement action.
 
-1. Exit out of this improvement action by selecting **Improvement Actions** from the breadcrumb on the top left of the page. You're now back on the improvement actions page.
+1. Exit out of this improvement action by selecting **Improvement Actions** from the breadcrumb on the top of the page. You're now back on the improvement actions page.
 
 1. From the top of the page, select **Solutions**. On this page, you'll see how solutions contribute to your score and their remaining opportunity for improvement.
 
 1. From the top of the page, select **Assessments**. On this page, you'll see the **Data Protection Baseline for Microsoft 365**. This is a default baseline assessment Microsoft provides in Compliance Manager for Microsoft 365. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. Compliance Manager becomes more helpful as you add your own assessments to meet your organization's particular needs.
 
-1. Select the **Data Protection Baseline** assessment. On the left side of the page is the overview that includes details and about information. Expand the **About** section and review the description about the Microsoft 35 data protection baseline. On the right side of the page, notice the information available on the progress tab and for the improvement actions. On the top of the page are tabs you can select view more detailed information on the Controls, your improvement actions, and Microsoft actions. Explore these at will.
+1. Select the **Data Protection Baseline** assessment. On the left side of the page is the overview that includes **Details** and **About** information. Expand the **About** section and review the description about the Microsoft 35 data protection baseline. On the right side of the page, notice the information available on the progress tab and for the improvement actions. On the top of the page are tabs you can select view more detailed information on the **Controls**, **Your improvement actions**, and **Microsoft actions**. Explore these at will.
 
-1. From the top left of the page, above where it says Data Protection Baseline for Microsoft 365 (the breadcrumb), select **Assessment** to return to the assessments tab in Compliance Manager.
+1. From the top of the page, above where it says Data Protection Baseline for Microsoft 365 (the breadcrumb), select **Assessments** to return to the assessments tab in Compliance Manager.
 
-In this task, you explored the functionalities of Compliance Manager within the Microsoft Purview compliance portal center, including reviewing the compliance overview, improvement actions, solutions, and assessments, gaining insights into key features and capabilities.
+1. From the top of the page, select **Regulations**. On this page, you'll see the list of regulations available to your organization. You can create assessments for specific regulations to track your compliance against them.
+
+1. From the top of the page, select **Alerts**. On this page, you'll see the **Compliance Manager Default Alert Policy**. Select this alert policy to expand the **Compliance Manager Default Alert Policy** flyout page on the right. Here you'll see an overview of the **Compliance Manager Default Alert Policy**. On the flyout page select **Events log** to explore any events that generated this alert.
+
+1. To close this page, select **Cancel** at the bottom of the page, then select **Alert policies** on from the top navigation bar.
+
+1. On the **Alert policies** page, you'll see the list of Compliance Manager alerts. From this page you can also create new alerts for Compliance Manager.
+
+In this task, you explored the functionalities of Compliance Manager within the Microsoft Purview compliance portal, including reviewing the compliance overview, improvement actions, solutions, and assessments, gaining insights into key features and capabilities.
 
 ## Task 3 - Create an assessment
 
@@ -105,6 +113,8 @@ In this task, you explored the functionalities of Compliance Manager within the 
 1. Back on the **Base your assessment on a regulation** page, select **Next**.
 
 1. On the **Add name and group** page under **Assessment name** enter _GLBA Compliance Assessment_. Leave the _Default Group_ selected under **Use existing group**, then select **Next**.
+
+1. On the **Add name and group** page, leave the default assessment name and the default assessment group, then select **Next**.
 
 1. On the **Select services** page, select **Select services**.
 
@@ -132,13 +142,11 @@ In this task, you will create a new assessment within Compliance Manager to eval
 
 1. In the search bar on the top right of the list of improvement actions search for _DLP_.
 
-1. Select the improvement action for **Use default DLP policies for US Gramm Leach Bliley Act**.
+1. Select the improvement action for **Use default DLP policies for US Gramm Leach Bliley Act**. This will open a new window displaying the **Use default DLP policies for US Gramm Leach Bliley Act** improvement action for your newly created assessment.
 
-1. On the **Use default DLP policies for US Gramm Leach Bliley Act** page, on the **Overview** pane on the left, select **Assign action** to assign this improvement action to another compliance administrator.
+1. On the **Use default DLP policies for US Gramm Leach Bliley Act** page, select the dropdown under Owner to **Assign owner**.
 
-1. On the **Assign to user** flyout page on the right, search for _Megan_, then select the checkbox to the left of **Megan Bowen**. Select **Assign** at the bottom of the page to assign this improvement action to Megan Bowen.
-
-1. Back on the **Use default DLP policies for US Gramm Leach Bliley Act** page, you should see this improvement action has been assigned to Megan Bowen.
+1. On the dropdown, under _Suggested users_ select **Megan Bowen** to assign this improvement action to Megan, then select **Save** on the top right of the **Use default DLP policies for US Gramm Leach Bliley Act** page. You should see a message indicating that your action details were saved.
 
 ## Task 5 - Act on improvement action
 
@@ -150,26 +158,13 @@ In this task, you will review and act upon the assigned improvement action in Co
 
 1. Log in with Megan Bowen's account, MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Megan should have an email with the subject **Compliance Manager** in their inbox.
+1. Megan should have an email with the subject **A new improvement action item has been assigned to you** in their inbox.
 
-1. Select this message and click **View Action Item Assigned to you** to open the assigned improvement action.
+1. Select this message and click **View action item >** to open the assigned improvement action. This will launch the direct improvement action recently assigned to Megan.
 
-1. Explore the improvement action. 
-    - **Overview**: Contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing how the action is tested.
+1. On the **Details** page of the improvement action, review the notes on **How to implement**. Under **Prerequisites and licensing requirements** select **Launch Now**. This will open directly to the **Data loss prevention** page to begin implementing the improvement action.
 
-    - **Implementation** tab: Contains implementation status, date, notes, detailed instructions, and for technical actions, a **Launch now** link taking you to the appropriate solution or service for implementation.
-
-    - **Testing** tab: Contains testing status, date, notes, and a link to download a testing history report.
-
-    - **Related controls** tab: Lists the controls associated with the improvement action, including the control ID and the associated regulation. Select a control name to view a flyout pane with a detailed description.
-
-    - **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work.
-
-1. Select the **Implementation** tab and review the suggested implementation. Scroll down to the bottom of the page and select **Launch now** under **Prerequisites and licensing requirements**.
-
-1. This will open directly to the **Data loss prevention** page as suggested by the improvement action. Select the **Policies** tab at the top of the page.
-
-1. On the **Policies** page select **+ Create policy**.
+1. On the **Data loss prevention** page, select **Polices**, then select **+ Create policy**.
 
 1. On the **Start with a template or create a custom policy** page, under **Categories** select **Financial** to open the list of financial DLP policy templates.
 
@@ -177,7 +172,7 @@ In this task, you will review and act upon the assigned improvement action in Co
 
 1. On the **Name your DLP policy** page, leave the default name in the **Name** field, then select **Next**.
 
-1. On the **Assign admin units (preview)** page select **Next**.
+1. On the **Assign admin units** page select **Next**.
 
 1. On the **Choose locations to apply the policy** select **Exchange email**, **SharePoint sites**, **OneDrive accounts**, **Teams chat and channel messages**, and **Devices** then select **Next**.
 
@@ -189,9 +184,9 @@ In this task, you will review and act upon the assigned improvement action in Co
 
 1. On the **Customize access and override settings** page leave the default selected, then select **Next**.
 
-1. On the **Policy mode** page select **Turn it on right away** then select **Next**.
+1. On the **Policy mode** page select **Turn the policy on immediately** then select **Next**.
 
-1. On the **Review your policy and create it** page, select **Submit** to create and activate the new DLP policy.
+1. On the **Review and finish** page, select **Submit** to create and activate the new DLP policy.
 
 1. On the **New policy created** page select **Done**.
 
@@ -207,51 +202,34 @@ Upon completing the creation and activation of the new DLP policy for **U.S. Gra
 
 1. Log in with Joni Sherman's account, JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Select **Compliance Manager** from the left navigation pane, then select **Improvement actions** from the top navigation bar.
+1. Select **Compliance Manager** from the left navigation pane, then select **Assessments** from the top navigation bar.
 
-1. In the search bar on the top right, search for _Use default DLP policies for US Gramm Leach Bliley Act_.
+1. Select the **Gramm-Leach-Bliley Act Assessment** you created in a previous task.
 
-1. Select the checkbox to the left of **Use default DLP policies for US Gramm Leach Bliley Act** then select **Export actions** above the filter selections.
+1. From the **Gramm-Leach-Bliley Act Assessment** page, select **Your improvement actions**.
 
-1. Open a new Microsoft Edge window or tab and navigate to **https://onedrive.com** and sign in with Joni's account.
+1. In the search bar on the top right, search for _DLP_.
 
-1. Select **+ Add New** on the upper left, above the navigation bar, then select **Files upload**.
+1. Select **Use default DLP policies for US Gramm Leach Bliley Act** to open this improvement action in a new Window.
 
-1. Select **Downloads** from the explorer window that opens, then select the **ExportActions.xlsx** file that was downloaded in a previous step then select **Open**.
+1. From the status bar under **Use default DLP policies for US Gramm Leach Bliley Act**, change the **Testing type** from **Automatic** to **Manual** then select **Save** on the top right of the page.
 
-1. Select **My files** from the left navigation pane, then select the **ExportActions.xlsx** file in OneDrive to edit the document.
+      ![Screenshot of Manage roles option](../Media/compliance-manager-automatic-manual.png)
 
-1. Review the **How to update Actions** tab in the Excel document.
+1. On the top right of the page, select **Edit notes** to open the **Edit Action Detail** flyout page.
 
-1. In the **Action Update** tab:
-    - Update the **implementationStatus** from **NotImplemented** to **Implemented**
-    - Update the **Implementation Notes** to *Action implemented by Megan Bowen*
-    - Update the **Test Status** to *InProgress*
-    - Update the **Test Date** to a blank value
-    - Update the **Testing Source** to _Manual_
+1. Under **Implementation** select the dropdown for **Implementation status** and change the status to **Implemented**.
 
-1. From the top navigation ribbon in Excel, select **File**, then select **Save As**. In the **Save As** pane, select **Download a Copy**. The file will save in the **Downloads** folder of your VM.
+1. Under **Implementation date** change the date to today's date.
 
-1. Navigate back to your Microsoft Purview compliance portal tab or window.
+1. Select the **Test and Verification** tab at the top of the flyout page.
 
-1. You should still have the **Compliance Manager** window open displaying the **Improvement actions** tab with the filters set to easily display the improvement action for **Use default DLP policies for US Gramm Leach Bliley Act**.
+1. Under the **Test status** drop down, select **Not assessed**.
 
-1. Select the checkbox next to **Use default DLP policies for US Gramm Leach Bliley Act** then select **Update actions**.
+1. Select **Save** at the bottom of the flyout page. Your implementation status and test status should be updated on the improvement action page.
 
-1. In the **Update improvement actions** wizard on the **Complete prerequisites** page, select the checkboxes for **Make sure your improvement actions are associated with at least one assessment.** and **Export improvement actions that need updating in a specifically formatted Excel file.** then select **Next**.
+1. On the improvement action page, change the testing type back to **Automatic** so the improvement action can be tested automatically in the next 24 hours.
 
-1. On the **Import updated improvement actions** page under **Upload Excel file** select **Browse**.
-
-1. In the explorer window that opens, select **Downloads** from the left navigation pane. Select the **ExportActions** file that was downloaded in a previous step.
-
-    >**Note:** The default download location for Excel 365 is the Downloads folder. The name will likely have a number appended to the end of the file name. For example, your ExportActions file might be named **ExportActions (1).xlsx**. If multiple attempts were made at saving the Excel file, it may have a different number at the end of the file name.
-
-1. Your ExportActions file will be uploaded. If there are no errors with the file, select **Next**. If there are any issues with the file, address the errors stated on this page.
-
-1. On the **Review and finish** page select **Update actions**.
-
-1. On the **Actions updated** page select **Finish**.
-
-1. Back on the **Compliance Manager** page under the **Improvement actions** tab, select **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced**. Review the changes made in the previous step under the **Implementation** and **Testing** tabs. You should now see the **Implementation status** set to **Implemented** and the **Test status** updated to **In progress**. In the **Overview** pane on the right, you should now also see the **Testing source** updated to **Manual**.
+1. On the top right of the **Use default DLP policies for US Gramm Leach Bliley Act** improvement action page, select **Save** to save all changes made to this improvement action.
 
 You have successfully updated the improvement action.
