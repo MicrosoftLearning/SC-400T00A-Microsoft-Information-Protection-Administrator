@@ -252,8 +252,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
 1. Close the Notepad window.
 
-1. Select the windows symbol in the 
-bar with the right mouse button and select **Windows PowerShell (Admin)** and run as administrator.
+1. Select the windows symbol in the bar with the right mouse button and select **Windows PowerShell (Admin)** and run as administrator.
 
 1. When the **User Account Control** window opens, select **Yes**.
 
