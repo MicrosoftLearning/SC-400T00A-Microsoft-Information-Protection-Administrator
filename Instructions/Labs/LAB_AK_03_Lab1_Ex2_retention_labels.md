@@ -16,7 +16,7 @@ In this task, you will create a retention label that can be assigned to document
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data lifecycle management** then select **Microsoft 365**.
 
@@ -78,7 +78,7 @@ Following from Task 1 you will now publish the VAT returns retention label so th
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 
 1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data lifecycle management** then select **Microsoft 365**.
 
@@ -122,7 +122,7 @@ Following from Task 1 you will now auto-apply the Credit Card receipts retention
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 
 1. In the **Microsoft Purview** portal, on the left navigation pane, select **Policies** and under **Data** select **Retention**.
 
@@ -176,7 +176,7 @@ In this task, you will assign retention labels to Outlook emails.
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://outlook.office.com/** and login with **Megan Bowen**'s account.
+1. In **Microsoft Edge**, navigate to **`https://outlook.office.com/`** and login with **Megan Bowen**'s account.
 
 1. In Megan's inbox, select the first email with the right mouse button, then select **Advanced actions > Assign policy > VAT Returns and supporting documents**. If the newly created label is not available, select **1 Month Delete** for this exercise.
 
@@ -214,7 +214,7 @@ In this task, you will apply a retention label to a document in a SharePoint doc
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into Microsoft 365 as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **`https://www.office.com`** and log into Microsoft 365 as **Joni Sherman**.
 
 1. In the Microsoft 365 landing page, select the App launcher icon in the top-left corner (the icon with nine dots), then select **SharePoint** from the sub-menu.
 1. If prompted, close the **Welcome to SharePoint Start Page** window.
@@ -241,7 +241,7 @@ In this task, you will apply a retention label to a document in OneDrive.
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, navigate to **https://www.office.com** and log into Microsoft 365 as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **`https://www.office.com`** and log into Microsoft 365 as **Joni Sherman**.
 
 1. In the Microsoft 365 landing page, select the App Launcher icon in the top-left corner (icon with nine dots), then select **OneDrive** from the sub-menu.
 

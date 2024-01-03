@@ -48,7 +48,7 @@ In this task, you'll enable Audit in the Microsoft Purview compliance portal. Th
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`**.
 
 1. In the left navigation pane select **Audit**.
 
@@ -60,7 +60,7 @@ In this task, you'll enable the **Search by Name** feature in Microsoft Teams fo
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
 
-1. In **Microsoft Edge**, navigate to **https://admin.teams.microsoft.com**.
+1. In **Microsoft Edge**, navigate to **`https://admin.teams.microsoft.com`**.
 
 1. In the left navigation pane, under the **Teams** drop down, select **Teams settings**.
 

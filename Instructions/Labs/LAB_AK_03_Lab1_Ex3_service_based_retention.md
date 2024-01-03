@@ -14,7 +14,7 @@ In this task, you will activate a Mailbox Hold to prevent any content in the emp
 
 1. Log into Client 1 virtual machine (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://admin.exchange.microsoft.com** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://admin.exchange.microsoft.com`** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Close all tip windows if any appear.
 
@@ -45,7 +45,7 @@ In this task, you will delete and restore a deleted document to make sure you ca
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://www.office.com** and log in Microsoft 365 as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **`https://www.office.com`** and log in Microsoft 365 as **Joni Sherman**.
 
 1. If a welcome screen is displayed, close it. If the Office 365 apps notification appears, also close it.
 

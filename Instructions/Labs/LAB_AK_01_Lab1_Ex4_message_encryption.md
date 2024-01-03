@@ -110,13 +110,11 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 
-[//]: <> (Installing the latest OS updates will also update the Edge browser to the new chromium version required to do this labs.)
-
 1. Open **Microsoft Edge** from the taskbar and when a **Welcome to Microsoft Edge** windows is displayed, select **Start without your data**, select **Continue without this data** again and select **Confirm and start browsing**.
 
-1. If the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser. Once this is complete perform the previous step.
+1. If the welcome message is missing, navigate to `https://microsoft.com/edge`, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser. Once this is complete perform the previous step.
 
-1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
+1. In **Microsoft Edge**, navigate to **`https://outlook.office.com`** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
 
 1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -130,7 +128,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. From the top pane, select **Options** then **Encrypt** to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipients can't remove encryption."
 
-      ![Screenshot of Encyption settings](../Media/OptionsEncrypt.png)
+      ![Screenshot of Encryption settings](../Media/OptionsEncrypt.png)
 
 1. Select **Send** to send the message.
 
@@ -166,7 +164,7 @@ Protected messages sent by your organizations finance department require special
     New-OMEConfiguration -Identity "Finance Department" -ExternalMailExpiryInDays 7
     ```
 
-1. Confirm the warning message for customizing the template with **Y** for Yes and press **Enter**. 
+1. Confirm the warning message for customizing the template with **Y** for Yes and press **Enter**.
 
 1. Change the introduction text message with the following cmdlet:
 
