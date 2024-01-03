@@ -4,7 +4,7 @@ lab:
     module: 'Module 1 - Implement Information Protection'
 ---
 
-# Lab 1 - Exercise 4 - Manage Trainable Classifiers
+# Lab 1 - Exercise 3 - Manage Trainable Classifiers
 
 The Contoso Ltd. tenant contains a SharePoint site collection with the name "Sales and Marketing" that will be used in the future to store several financial related documents and reports. Because of the nature of these documents, you need to create a trainable classifier to recognize and label these files. For this purpose, you will activate custom trainable classifiers and create a new one.
 
