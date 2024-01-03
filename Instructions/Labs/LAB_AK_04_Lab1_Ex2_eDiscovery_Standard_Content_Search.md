@@ -14,7 +14,7 @@ In this task, you will create an eDiscovery (Standard) case as Joni Sherman.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Select the drop down for **eDiscovery** from the left navigation pane, then select **Standard**.
 
@@ -40,7 +40,7 @@ You have now successfully created an eDiscovery (Standard) case titled "Wrongful
 
 In Task 2 you will create an eDiscovery (Standard) hold as part of the "Wrongful Termination Case" previously created. This hold preserves all relevant electronic data related to the Contoso Ltd. wrongful termination lawsuit.
 
-1. You should still be logged in with Joni's account. If not, open **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. You should still be logged in with Joni's account. If not, open **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
 
 1. In the left navigation pane, navigate to **eDiscovery**, then select **Standard**.
 
@@ -74,7 +74,7 @@ You have successfully created an eDiscovery (Standard) hold.
 
 In Task 3 you will an eDiscovery (Standard) search within the "Wrongful Termination Case" previously created. This search aims to identify and collect all relevant electronic data related to the Contoso Ltd. wrongful termination lawsuit.
 
-1. You should still be logged in with Joni's account. If not, open **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. You should still be logged in with Joni's account. If not, open **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
 
 1. In the left navigation pane, navigate to **eDiscovery**, then select **Standard**.
 
@@ -106,7 +106,7 @@ By successfully creating the "Wrongful Termination Search" using the KQL editor 
 
 In this task you will export the search results obtained from the "Wrongful Termination Search."
 
-1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
 
 1. In the left navigation pane, navigate to **eDiscovery**, then select **Standard**.
 
@@ -164,7 +164,7 @@ You have successfully exported the search results for the **Wrongful Termination
 
 In this task, you will review the search results obtained from the "Wrongful Termination Search" to identify any potential security or compliance issues related to the case.
 
-1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. You should still be logged in with Joni's account. If not, in **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
 
 1. In the left navigation pane, navigate to **eDiscovery**, then select **Standard**.
 

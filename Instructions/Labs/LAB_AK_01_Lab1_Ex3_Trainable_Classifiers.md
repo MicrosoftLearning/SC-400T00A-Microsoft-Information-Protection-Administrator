@@ -20,7 +20,7 @@ Before you can create custom trainable classifiers, you need to activate the fea
 
 1. Close the browser window and open a new browser window.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`**.
 
 1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator**  admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
@@ -42,13 +42,13 @@ You have successfully activated trainable classifiers in your tenant. You will n
 
 After trainable classifiers have been activated successfully, the **Create trainable classifiers** button becomes available and it is possible to create a new custom classifier. In this task, Joni will create a new trainable classifier and select different SharePoint sites for identifying typical data created and stored by Contoso Ltd.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **MOD Administrator**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **MOD Administrator**.
 
 1. Sign out of the MOD Administrator account by selecting the MA in the upper right corner and select **Sign out**.
 
 1. Close the browser window and open a new browser window.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`**.
 
 1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **Joni Sherman**. JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
@@ -107,7 +107,7 @@ After the new trainable classifier was created and the initial analysis of the d
 
 1. In your browser window, you are in the Microsoft Purview portal at **Data classification** in the **Trainable classifiers** tab.
 
-1.  Select the trainable classifier with the name **Contoso Company Data** of the type **Custom** to open the detailed settings.
+1. Select the trainable classifier with the name **Contoso Company Data** of the type **Custom** to open the detailed settings.
 
 1. Review the **Details** tab on the right side, including the source site for the classifier, the number of processed items and the **Status**, which is in **Need test items**.
 

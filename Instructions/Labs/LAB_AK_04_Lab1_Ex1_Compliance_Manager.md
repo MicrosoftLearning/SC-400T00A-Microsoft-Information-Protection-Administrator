@@ -24,7 +24,7 @@ In this task you will grant Joni the required permissions to create assessments 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
-1. In **Microsoft Edge**, select the address bar, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, select the address bar, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. On the left navigation pane, expand the dropdown for **Roles & scopes** and select **Permissions**.
 
@@ -66,7 +66,7 @@ In this task, you granted Joni the necessary permissions to create assessments u
 
 In this task, you will explore the functionalities of Compliance Manager within the Microsoft Purview compliance portal.
 
-1. Open **Microsoft Edge** and navigate to **https://compliance.microsoft.com**. Log into the Microsoft Purview compliance portal as **Joni Sherman**.
+1. Open **Microsoft Edge** and navigate to **`https://compliance.microsoft.com`**. Log into the Microsoft Purview compliance portal as **Joni Sherman**.
 
 1. Select **Compliance Manager** from the left navigation pane.
 
@@ -154,7 +154,7 @@ In this task, you will review and act upon the assigned improvement action in Co
 
 1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin** and logged into Microsoft 365 as Joni Sherman. Sign out of Joni Sherman's account by selecting her image in the upper right of the screen and selecting **Sign out**.
 
-1. Open **Microsoft Edge** and navigate to **https://outlook.office.com/**.
+1. Open **Microsoft Edge** and navigate to **`https://outlook.office.com/`**.
 
 1. Log in with Megan Bowen's account, MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
@@ -198,7 +198,7 @@ Upon completing the creation and activation of the new DLP policy for **U.S. Gra
 
 1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin** and logged into Microsoft 365 as Megan Bowen. Sign out of Megan's account by selecting her image in the upper right of the screen and selecting **Sign out**.
 
-1. Open **Microsoft Edge** and navigate to **https://compliance.microsoft.com/**.
+1. Open **Microsoft Edge** and navigate to **`https://compliance.microsoft.com/`**.
 
 1. Log in with Joni Sherman's account, JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 

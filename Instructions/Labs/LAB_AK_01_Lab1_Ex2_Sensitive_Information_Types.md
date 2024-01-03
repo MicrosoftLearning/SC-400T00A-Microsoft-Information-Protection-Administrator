@@ -7,7 +7,7 @@ lab:
 
 # Lab 1 - Exercise 2 - Manage Sensitive Information Types
 
-Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To educate users in the future, a custom sensitive information type is required to identify employee IDs in emails and documents, which consist of three uppercase characters and six numbers. To lower the false positive rate, the keywords "Employee" and "IDs" will be used. In this task you will create a new custom sensitive information type, a database for EDM-based classification and a keyword dictionary. 
+Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To educate users in the future, a custom sensitive information type is required to identify employee IDs in emails and documents, which consist of three uppercase characters and six numbers. To lower the false positive rate, the keywords "Employee" and "IDs" will be used. In this task you will create a new custom sensitive information type, a database for EDM-based classification and a keyword dictionary.
 
 ## Task 1 – Create custom sensitive information types
 
@@ -15,7 +15,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Expand **Data classification** from the left pane and select **Classifiers**
 
@@ -82,7 +82,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Close the browser window and open a new browser window.
 
-1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com**.
+1. In **Microsoft Edge**, navigate to **`https://admin.microsoft.com`**.
 
 1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
@@ -120,7 +120,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Close the browser window and open a new one.
 
-1. Navigate to the Microsoft Purview portal at https://compliance.microsoft.com.
+1. Navigate to the Microsoft Purview portal at `https://compliance.microsoft.com`.
 
 1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
 
@@ -204,7 +204,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, navigate to **https://go.microsoft.com/fwlink/?linkid=2088639** to access the EDM download agent.
+1. In **Microsoft Edge**, navigate to **`https://go.microsoft.com/fwlink/?linkid=2088639`** to access the EDM download agent.
 
 1. Select **Run** to download and install the tool.
 
@@ -304,7 +304,7 @@ Several violations of personal information leakage happened when users sent out 
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 
 1. Expand **Data classification** from the left-side pane then select **Classifiers**. Select **Sensitive info types** tab from the top pane.
 
@@ -379,7 +379,7 @@ Custom Sensitive information types should always be tested before using them in 
 
 1. Close the Notepad window.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 
 1. In the left navigation pane expand **Data classification**, then select **Classifiers**. Select the **Sensitive info types** tab.
 

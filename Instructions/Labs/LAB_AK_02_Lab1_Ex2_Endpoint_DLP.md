@@ -14,7 +14,7 @@ In this task, you will turn on device onboarding for your organization.
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 
 1. In the **Microsoft Purview** portal in the left navigation pane, select **Settings** and select **Device onboarding**.
 
@@ -32,7 +32,7 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In the **Microsoft Purview** portal on the left navigation pane, select **Settings** and select **Device onboarding**.
 
@@ -77,7 +77,7 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. Log on to Client 1 VM (LON-CL1) as the lon-cl1\admin account.
 
-1. Open Microsoft Edge from the taskbar, navigate to the Microsoft Purview portal at https://compliance.microsoft.com and when the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. Open Microsoft Edge from the taskbar, navigate to the Microsoft Purview portal at `https://compliance.microsoft.com` and when the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. In the **Microsoft Purview** portal on the left navigation pane, expand **Data loss prevention** the select **Policies**.
 
@@ -137,7 +137,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 
 1. In the **Microsoft Purview** portal, on the left navigation pane, expand **Data loss prevention** then select **Endpoint DLP Settings**.
 
@@ -167,7 +167,7 @@ As Compliance Administrator you need to evaluate the new business requirement of
 
 1. Open the Edge browser from the task bar.
 
-1. Navigate to the Google Chrome download at **https://chrome.google.com**.
+1. Navigate to the Google Chrome download at **`https://chrome.google.com`**.
 
 1. Select **Download Chrome** and select **Open file** below **Downloads** and **ChromeSetup.exe**.
 
@@ -175,13 +175,13 @@ As Compliance Administrator you need to evaluate the new business requirement of
 
 1. When the installation is finished and the **Welcome to Chrome** page is open, navigate to the Microsoft Purview Extension in the Chrome web store at:
 
-    https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco
+   ` https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco`
 
 1. Verify you are on the extension page of **Microsoft Purview Extension** and select **Add to Chrome**.
 
 1. On the **Add "Microsoft Purview Extension"** window, select **Add extension**.
 
-1. Close the notification window and navigate to **chrome://extensions**.
+1. Close the notification window and navigate to **`chrome://extensions`**.
 
 1. Validate the **Microsoft Purview Extension** is visible and activated.
 
