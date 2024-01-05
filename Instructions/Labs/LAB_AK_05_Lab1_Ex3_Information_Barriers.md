@@ -54,7 +54,7 @@ In this task, you'll enable Admin Consent for Information barriers (IB) in Micro
     Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
     ````
 
-    >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
+    >**Note:** Be sure to update ZZZZZZ to ZZZZZZ.onmicrosoft.com. ZZZZZZ is your unique tenant ID provided by your lab hosting provider. The fully qualified domain name is needed for the tenant ID.
 
 1. When prompted, login with the MOD Administrator account
 

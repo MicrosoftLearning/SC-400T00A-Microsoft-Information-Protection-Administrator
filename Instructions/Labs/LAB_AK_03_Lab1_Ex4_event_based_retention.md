@@ -119,7 +119,7 @@ Once the label is published the users need to apply the label and assign the cor
 
     >**Note**: As it can take some time for retention labels to be published you may not have the option available immediately.
 
-1. Set the newly appeared **Asset ID** field to **NewProductLaunch** and close the right-side menu by selecting **X** in the top right corner.
+1. In the newly appeared **Asset ID** enter **NewProductLaunch** and close the right-side menu by selecting **X** in the top right corner.
 
 You've successfully assigned a label and an asset ID to a document. When the Project Closure event for Asset ID NewProductLaunch is triggered it will activate the retention period of 5 years.
 
