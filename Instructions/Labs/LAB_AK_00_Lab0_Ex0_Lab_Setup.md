@@ -40,7 +40,7 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. Ensure none of the checkboxes are selected on the **Reset password** flyout page. In the Password field, enter a password you can remember to reset all user passwords available in the tenant.
 
-   >[Note] You can reset the password to the same password as the admin's account, which should be provided by your lab hosting provider. Setting all user passwords to the same password is not advised in a real world scenario. This can be help for the purpose of this lab.
+   >[!Note] You can reset the password to the same password as the admin's account, which should be provided by your lab hosting provider. Setting all user passwords to the same password is not advised in a production environment, though can be useful in a lab setting.
 
 1. Select the **Reset password** button to reset all user passwords, except for the **MOD Administrator** and **Microsoft Service Account**.
 
