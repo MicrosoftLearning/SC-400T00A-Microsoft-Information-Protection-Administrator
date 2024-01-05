@@ -26,21 +26,21 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. On the left navigation pane, expand **Users** then select **Active users**.
 
-1. On the **Active users** page, hover over **Joni Sherman**'s user account, and a key should appear.
+1. Select the check box next to **Display name** to select all users.
 
-1. Select the **Reset password** key and the **Reset password** flyout page should appear on the right to reset Joni's password.
+1. Deselect the check boxes next to **MOD Administrator** and **Microsoft Service Account**.
 
-1. Ensure none of the checkboxes are selected on the **Reset password** flyout page.
+    >[!alert] Do not change the **MOD Administrator** or **Microsoft Service Account** passwords. This will negatively impact your lab experience.
+    ><p>
+    > ![Screenshot displaying Microsoft Service Account and MOD Administrator deselected.](../Media/deselectserviceaccounts.png)
 
-1. In the **Password** field, enter a password for Joni you can remember.
+1. Select the **Reset password** from the middle action ribbon to open the **Reset password** flyout page on the right.
 
-    >**Tip**: You can reset Joni's password to the same password as the admin's account, which should be provided by your lab hosting provider.
+1. Deselect the options for **Automatically create a password** and **Require these users to change their password when they first sign in**. No options should be selected on the Reset password page.
 
-1. Select the **Reset password** button to reset Joni's password.
+1. Ensure none of the checkboxes are selected on the **Reset password** flyout page. In the Password field, enter a password you can remember to reset all user passwords available in the tenant.
 
-1. On the **Password has been reset** page, select the **Close** button to go back to the **Active users** page.
-
-1. Repeat steps 4-8 to reset the passwords for **Megan Bowen** and **Lynne Robbins**.
+   >**Tip**: You can reset the password to the same password as the admin's account, which should be provided by your lab hosting provider.
 
 ## Task - Enable Audit in the Microsoft Purview portal
 
