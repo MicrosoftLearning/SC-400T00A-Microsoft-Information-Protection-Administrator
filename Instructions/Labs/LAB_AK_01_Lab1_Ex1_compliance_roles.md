@@ -55,7 +55,7 @@ In this exercise, you will follow the principal of least privilege and use the d
 
 1. On the **Audit** page. select **Start recording user and admin activity** to activate audit logging.
 
-1. Select the circle with **MA** in the upper right and select **Sign out**.
+1. Select the Mod Administrator profile picture in the top right, then select **Sign out**. The picture looks like a small megaphone. ![Mod Administrator profile image](../Media/ModAdministratorAvatar.png)
 
 1. Close the **Microsoft Edge** browser window.
 

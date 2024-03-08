@@ -116,7 +116,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Close the right-side pane with **X**.
 
-1. Select the circle with the MOD Administrator initials **MA** and select **Sign out**.
+1. Select the Mod Administrator profile picture in the top right, then select **Sign out**. The picture looks like a small megaphone. ![Mod Administrator profile image](../Media/ModAdministratorAvatar.png)
 
 1. Close the browser window and open a new one.
 

@@ -47,7 +47,7 @@ In this task, you'll enable Admin Consent for Information barriers (IB) in Micro
 1. Run the following PowerShell cmdlets:
 
     ````powershell
-    Connect-AzureAD -Tenant "WWLxZZZZZZ"
+    Connect-AzureAD -Tenant "WWLxZZZZZZ.onmicrosoft.com"
     $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
     $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
     if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }

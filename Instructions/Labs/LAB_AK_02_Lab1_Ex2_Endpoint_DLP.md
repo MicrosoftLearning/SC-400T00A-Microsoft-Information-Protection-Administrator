@@ -139,7 +139,9 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 
-1. In the **Microsoft Purview** portal, on the left navigation pane, expand **Data loss prevention** then select **Endpoint DLP Settings**.
+1. In the **Microsoft Purview** portal, on the left navigation pane, expand **Data loss prevention** then select **Overview**.
+
+1. Select **Data loss prevention settings** on the top right of the Overview page.
 
 1. On the **Endpoint DLP settings** page, expand **File path exclusions for Windows**  then select **+ Add file path exclusion**.
 
