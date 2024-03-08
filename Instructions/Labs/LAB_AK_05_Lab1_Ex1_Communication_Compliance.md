@@ -200,7 +200,7 @@ In this task you will make modifications to your Communication compliance policy
 
 1. On the **Choose locations to detect communications** page select **Next**.
 
-1. On the **Choose locations to detect communications** page select **+Add Condition** then select **Content contains any of these sensitive info types**.
+1. On the **Choose conditions and review percentage** page select **+ Add Condition** then select **Content contains any of these sensitive info types**.
 
 1. Under **Content contains any of these sensitive info types** select **Add** then select **Sensitive info types**.
 
