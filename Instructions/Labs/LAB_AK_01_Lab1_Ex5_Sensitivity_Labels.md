@@ -137,11 +137,11 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select the **Apply or remove encryption** option.
+1. On the **Choose protection settings for labeled items** page, select the **Control access** option.
 
 1. Select **Next**.
 
-1. On the **Encryption** page select **Configure encryption settings**.
+1. On the **Access control** page select **Configure access control settings**.
 
 1. Enter the following information into the encryption settings:
 
@@ -156,7 +156,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Save**.
 
-1. On the **Encryption** page, select **Next**.
+1. On the **Access control** page, select **Next**.
 
 1. On the **Auto-labeling for files and emails** page, select **Next**.
 
@@ -362,7 +362,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the **Choose sensitivity labels to publish** page, select **Next**.
 
-1. On the **Assign admin units (preview)** page, select **Next**.
+1. On the **Assign admin units** page, select **Next**.
 
 1. On the **Publish to users and groups** page, select **Next**.
 
