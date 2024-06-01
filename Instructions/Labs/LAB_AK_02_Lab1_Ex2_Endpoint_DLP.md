@@ -24,7 +24,7 @@ In this task, you will turn on device onboarding for your organization.
 
 1. Accept the **Device monitoring is being turned on** dialog by selecting **OK**.
 
-You have now enabled device onboarding and can start to onboard Windows 10 devices to be protected with Endpoint DLP policies. The process of enabling the feature may take up to 30 minutes, but you may proceed with the next task as it's not dependent on this.
+You have now enabled device onboarding and can start to onboard devices to be protected with Endpoint DLP policies. The process of enabling the feature may take up to 30 minutes, but you may proceed with the next task as it's not dependent on this.
 
 ## Task 2 - Onboard a device to Endpoint DLP
 

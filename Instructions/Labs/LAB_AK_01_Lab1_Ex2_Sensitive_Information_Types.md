@@ -114,9 +114,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Verify **Joni Sherman** is listed below **Members**.
 
-1. Close the right-side pane with **X**.
-
-1. Select the Mod Administrator profile picture in the top right, then select **Sign out**. The picture looks like a small megaphone. ![Mod Administrator profile image](../Media/ModAdministratorAvatar.png)
+1. Close the right-side pane with **X**, then sign out of the Mod Administrator account.
 
 1. Close the browser window and open a new one.
 
@@ -140,19 +138,19 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Enable **Ignore delimiters and punctuation for all schema fields**.
 
-1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
+1. Select the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
 
 1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
 
-1. Select **+ Add schema data field** from the lower end.
+1. Select **+ Add schema data field** from the bottom of the New EDM Schema pane.
 
 1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
 
-1. Select **+ Add schema data field** from the lower end again.
+1. Select **+ Add schema data field** again.
 
 1. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
 
-1. Select **+ Add schema data field** from the lower end a last time.
+1. Select **+ Add schema data field** a last time.
 
 1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
 

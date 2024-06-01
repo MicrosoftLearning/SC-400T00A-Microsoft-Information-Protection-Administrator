@@ -38,7 +38,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. Select **Next**.
 
-1. On the **Assign admin units (preview)** page select **Next**.
+1. On the **Assign admin units** page select **Next**.
 
 1. On the **Choose locations to apply the policy** page, enable the **Teams chat and channel messages** option only and select **Next**.
 
@@ -72,9 +72,9 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Create rule** page select **Save** then select **Next**.
 
-1. On the **Policy mode** page select **Test it out first** and select **Show policy tips while in test mode**.
+1. On the **Policy mode** page select **Run the policy in simulation mode** and select **Show policy tips while in simulation mode**.
 
-1. On the **Review your policy and create it** page review your settings then select **Submit**
+1. On the **Review and finish** page review your settings then select **Submit**
 
 1. On the **New policy created** page select **Done**.
 
@@ -94,9 +94,9 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 1. On the **Name your DLP policy** page, select **Next**.
 
-1. On the **Assign admin units (preview)** page select **Next**.
+1. On the **Assign admin units** page select **Next**.
 
-1. On the **Choose locations to apply the policy** page, enable the **Exchange email** option and then select **Next** until you reach the **Review your policy and create it** page.
+1. On the **Choose locations to apply the policy** page, enable the **Exchange email** option and then select **Next** until you reach the **Review and finish** page.
 
 1. Select **Submit** to apply the change you made to the policy.
 
@@ -174,7 +174,7 @@ In this task you'll test the DLP policy that was created in the previous task.
 
 You have successfully tested your DLP policy.
 
-## Task 5 - Activate a policy in test mode
+## Task 5 - Activate a policy in simulation mode
 
 In this task, you will activate the credit card information DLP policy you created in test mode so it enforces its protective actions.
 
@@ -186,9 +186,9 @@ In this task, you will activate the credit card information DLP policy you creat
 
 1. On the  **Policies** page select the checkbox next to **Credit Card DLP Policy** and select **Edit policy** (pencil) to open the policy wizard.
 
-1. Select **Next** until you reach the **Policy mode** page and select **Turn it on right away**.
+1. Select **Next** until you reach the **Policy mode** page and select **Turn the policy on immediately**.
 
-1. On the **Review your policy and create it** select **Submit**.
+1. On the **Review and finish** select **Submit**.
 
 1. On the **Policy updated** page select **Done**.
 
@@ -220,7 +220,7 @@ You want to use file policies in Microsoft 365 Defender to protect files in your
 
 1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft 365 Defender portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. On the left navigation pane, scroll down then select **Settings**.
+1. On the left navigation pane, expand **System** then select **Settings**.
 
 1. On the **Settings** page select **Cloud Apps**.
 
@@ -255,7 +255,7 @@ In this task, you want to create a file policy in Microsoft 365 Defender to scan
 
 1. In the **Files matching all of the following** area, expand the dropdown menu **Public (Internet), External, Public** and add **Internal**.
 
-1. In the **Inspection Method** dropdown menu, select **Data Classification Service**.
+1. In the **Inspection method** dropdown menu, select **Data Classification Service**.
 
 1. In the **Choose inspection type...** dropdown menu, select **Sensitive information type...**.
 
