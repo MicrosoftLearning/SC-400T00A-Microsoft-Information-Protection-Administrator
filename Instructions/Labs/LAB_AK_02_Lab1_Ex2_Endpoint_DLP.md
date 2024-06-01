@@ -90,7 +90,7 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
     - **Name**: Employee Diseases Endpoint DLP Policy
     - **Description**: Protect employee ID numbers and diseases from being shared on endpoints.
 
-1. On the **Assign admin units (preview)** page, select **Next**.
+1. On the **Assign admin units** page, select **Next**.
 
 1. On the **Choose locations to apply the policy** page, select only the **Devices** option then select **Next**.
 
@@ -100,7 +100,7 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. On the **Create rule** page, enter:
 
-    - **Name**: EmployeeID and disease rule
+    - **Name**: Employee ID and disease rule
     - **Description**: Detect if employee IDs and diseases are shared in near range.
 
 1. Under **Conditions** select **+ Add condition** then select **Content contains** from the dropdown menu.
@@ -123,9 +123,9 @@ In this task, you will create a Data Loss Prevention policy in the Microsoft Pur
 
 1. Select **Save**, then select **Next** on the **Customize advanced DLP rules** page.
 
-1. On the **Policy mode** page select **Turn it on right away** then select **Next**.
+1. On the **Policy mode** page select **Turn the policy on immediately** then select **Next**.
 
-1. On the **Review your policy and create it** page, review your policy settings then select **Submit** to create the policy.
+1. On the **Review and finish** page, review your policy settings then select **Submit** to create the policy.
 
 1. Once the policy is created select **Done**.
 
