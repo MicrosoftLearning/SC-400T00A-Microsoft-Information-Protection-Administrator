@@ -162,7 +162,7 @@ You will create the same retention policies with PowerShell
 
 You have successfully created retention policies through PowerShell with a retention period of three years.
 
-## Task 4 – Create Retention Policy with adaptive scope
+<!-- ## Task 4 – Create Retention Policy with adaptive scope
 
 In this exercise you will create a retention policy for the finance and legal department. The purpose of the policy is to comply with the law, retaining all legal related documents for 5 years. First you will create an adaptive scope including the legal and the retail department, then you will create a retention policy using this scope.
 
@@ -277,4 +277,4 @@ In this exercise you will verify the users affected by the adaptive scope and te
     - **Mode**: Enforce
     - **DistributionStatus**: Success
 
-You have verified the success of your adaptive scope.
+You have verified the success of your adaptive scope.-->
