@@ -297,113 +297,113 @@ Several violations of personal information leakage happened when users sent out 
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
+1. The Microsoft Purview portal should still be to the EDM classifiers page in Microsoft Edge. If not, in Microsoft Edge, navigate to `https://purview.microsoft.com` > **View all solutions** > **Information protection**.
 
-1. Expand **Data classification** from the left-side pane then select **Classifiers**. Select **Sensitive info types** tab from the top pane.
+1. In the left navigation pane, expand **Classifiers** then select **Sensitive info types**.
 
-1. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
+1. Select **+ Create sensitive info type** to open the configuration for a new sensitive information type.
 
-1. On the **Name your sensitive info type** page, enter the following:
+1. On the **Name your sensitive info type** page, enter:
 
-    - **Name**: Contoso Diseases List
-    - **Description**: List of possible diseases of employees.
+    - **Name**: `Contoso Diseases List`
+    - **Description**: `List of possible diseases of employees`.
 
 1. Select **Next**.
 
 1. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
-1. On the **New pattern** page select the dropdown field below **Primary element** and select **Keyword dictionary**.
+1. On the **New pattern** fly-out page on the right, under **Primary element** select **+ Add primary element**, then select **Keyword dictionary**.
 
-1. On the **Add a keyword dictionary** page enter the following:
+1. On the **Add a keyword dictionary** page enter:
 
-   - **Name**: Diseases Dictionary
+   - **Name**: `Diseases Dictionary`
    - **Keywords**:
-      - flu
-      - influenza
-      - cold
-      - bronchitis
-      - otitis  
 
-1. Select **Done**.
+    ```text
+    flu
+    influenza
+    cold
+    bronchitis
+    otitis
+    ```
 
-1. Below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down and select **Keyword list** to add additional support for the keyword dictionary.
+1. Select **Done** at the bottom of the fly-out page.
 
-1. In the **Add a keyword list** page enter the following:
+1. Back on the **New pattern** page, under **Supporting elements**, select **+ Add supporting elements or group of elements**, then select **Keyword list** to add additional support for the keyword dictionary.
 
-   - **ID**: Employee absence
+1. On the **Add a keyword list** page enter:
+
+   - **ID**: `Employee absence`
    - **Case insensitive**:
-     - employee
-     - absence
-     - reason
 
-1. Select **Done**.
+    ``` text
+    employee
+    absence
+    reason
+    ```
 
-1. On the **New pattern** page, review the configuration and select **Create**.
+1. Select **Done** at the bottom of the fly-out page.
 
-1. On the **Define patterns for this sensitive info type** select **Next**.
+1. Back on the **New pattern** page, review the configuration and select **Create**.
 
-1. On the **Choose the recommended confidence level to show in compliance policies** let the default value persist and select **Next**.
+1. Back on the **Define patterns for this sensitive info type** select **Next**.
 
-1. On the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
+1. On the **Choose the recommended confidence level to show in compliance policies**, leave the default value, then select **Next**.
+
+1. On the **Review settings and finish** page, review your settings and select **Create**. Once your sensitive info type is created, select **Done** on the **Your sensitive info type is created** page.
 
 1. Leave the browser window in the Microsoft Purview portal open.
 
-You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate. Proceed with the next task.
+You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate.
 
 ## Task 5 – Work with custom sensitive information types
 
-Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern.
+Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern. In this task, you'll test the custom sensitive information types to ensure they recognize the desired patterns.
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. Select the Windows symbol in the lower left to open the start menu, enter **Notepad** and select **Notepad** from the start menu.
+1. In your task bar, search for `Notepad` in the search field. Select the **Notepad** app from the **Best match** section of the search.
 
-1. Enter the following text to the notepad window:
+1. In Notepad, enter:
 
     ``` text
     Employee Joni Sherman EMP123456 is absent because of the flu/influenza.
     ```
 
-1. Select **File** and **Save As**.
+1. Select **File** > **Save As**.
 
-1. Select Documents on the left-side pane.
-
-1. In the **File name** field, enter *SickTestData* and select **Save**.
+1. Select **Documents** on the left side pane and enter `SickTestData` as the **File name**, then select **Save**.
 
 1. Close the Notepad window.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
+1. Back in **Microsoft Edge**, Microsoft Purview portal should still be open on the Sensitive info types page.
 
-1. In the left navigation pane expand **Data classification**, then select **Classifiers**. Select the **Sensitive info types** tab.
-
-1. In the **Search** box on the upper right, enter *Contoso* and press Enter.
+1. In the **Search** bar on the upper right, enter `Contoso` and press Enter.
 
 1. Select **Contoso Employee IDs**.
 
 1. Select **Test**.
 
-1. On the **Upload file to test** page, select **Upload file**.
+1. On the **Upload file to test "Contoso Employee IDs"** fly-out page on the right, select **Upload file**.
 
-1. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
+1. Select **Documents** from the left pane, select the *SickTestData.txt* file, then select **Open**.
 
 1. Select **Test** to start the analysis.
 
-1. On the **Match results** page, review the found match.
+1. On the **Match results** page, review the matches, then select **Finish** to end the test.
 
-1. Select **Finish** to end the test.
+1. Navigate back to **Sensitive info types** and search for `Contoso` again.
 
-1. Use the top bar navigation to navigate back to **Sensitive info types**.
+1. This time select the **Contoso Diseases List** sensitive info type, then select **Test**.
 
-1. Search for *Contoso*, then select the Sensitive Information Type with the name **Contoso Diseases List**.
-
-1. Select **Test**.
+1. On the **Upload file to test "Contoso Diseases List"** fly-out page on the right, select **Upload file**.
 
 1. On the **Upload file to test** pane, select **Upload file**.
 
-1. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
+1. Select **Documents** from the left pane, select the *SickTestData.txt* file, then select **Open**.
 
 1. Select **Test** to start the analysis.
 
-1. On the **Match results** page, review the found match. When done review select **Finish**.
+1. On the **Match results** page, review the matches, then select **Finish** to end the test.
 
-You have successfully tested the two custom sensitive information types and validated the search pattern recognizes the desired patterns. You have finished the creation of sensitive information types and can proceed with the next exercise.
+You have successfully tested the two custom sensitive information types and validated the search pattern recognizes the desired patterns.
