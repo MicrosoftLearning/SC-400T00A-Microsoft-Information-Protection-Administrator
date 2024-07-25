@@ -41,11 +41,11 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
     Connect-MsolService
     ```
 
-1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. After signing in, select the PowerShell window.
 
-1. Enter the following cmdlet to get the domain:
+1. Enter this cmdlet to get the domain:
 
     ```powershell
     $domain = get-msoldomain
