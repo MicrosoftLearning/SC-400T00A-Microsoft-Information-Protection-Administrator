@@ -6,104 +6,59 @@ lab:
 
 # Lab 1 - Exercise 3 - Manage Trainable Classifiers
 
-The Contoso Ltd. tenant contains a SharePoint site collection with the name "Sales and Marketing" that will be used in the future to store several financial related documents and reports. Because of the nature of these documents, you need to create a trainable classifier to recognize and label these files. For this purpose, you will activate custom trainable classifiers and create a new one.
+Contoso Ltd. needs to ensure that financial documents and reports stored in the "Sales and Marketing" SharePoint site are properly classified. To achieve this, you need to create a trainable classifier to recognize and label these files.
 
-**Important!**: After activating trainable classifiers in a tenant, it takes between **7 and 14 days** before any custom trainable classifiers can be created. The button to create a new trainable classifier will not be available until the entire activation process is complete.  Therefore, **you will only be able to perform task 1 now**. If you wish to complete task 2 and 3 you will need to wait until processing of the trainable classifier setup is complete.  These lab instructions are available on GitHub.com. The Microsoft 365 tenant you're using to perform task 1 should still be active.
+## Task 1 – Create a trainable classifier
 
-## Task 1 – Activate trainable classifiers
+In this task, you'll activate trainable classifiers in the tenant to enable the creation of custom classifiers.
 
-Before you can create custom trainable classifiers, you need to activate the feature in a tenant. To activate the Global Admin permissions are required, you will sign out of Joni Sherman's account and use the MOD Administrator to activate the feature first.
-
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
-
-1. Sign out of Joni Sherman's account by selecting the image in the upper right corner and select **Sign out**.
-
-1. Close the browser window and open a new browser window.
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **LON-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`**.
 
-1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator**  admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. From the left, navigation pane, expand **Data classification**, then select **Classifiers**.
 
-1. Navigate to and expand **Data Classification** from the left side navigation pane then select **Classifiers**.
+1. On the **Classifiers** page, the tab for **Trainable classifiers** should already be selected.
 
-1. **Trainable classifiers** will be selected from the top pane by default.
+2. Select **+ Create trainable classifier** to create a new classifier.
 
-1. In the **Get started with trainable classifiers** dialogue, select **Start scanning process**.
+1. On the **Name and describe your trainable classifier** page, enter:
 
-1. Refresh the browser window.
-
-1. Read the information banner at the top of the window with the message **To set you up for creating trainable classifiers, we're currently scanning your content locations to generate analytics that will help us learn what type of content is in your organization. This process will take 7 to 14 days to complete**.
-
-1. Leave the client open.
-
-You have successfully activated trainable classifiers in your tenant. You will now need to wait between 7 and 14 days until the **Create trainable classifiers** button becomes available.  If you are in a classroom setting and do not have 7 to 14 days to wait for Trainable Classifiers to complete processing, you may perform the remainder of the tasks in this exercise by logging into the tenant you were provided later when the Trainable Classifiers processing is complete.  Your tenant should still be active.
-
-## Task 2 – Create a trainable classifier (optional lab task)
-
-After trainable classifiers have been activated successfully, the **Create trainable classifiers** button becomes available and it is possible to create a new custom classifier. In this task, Joni will create a new trainable classifier and select different SharePoint sites for identifying typical data created and stored by Contoso Ltd.
-
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **MOD Administrator**.
-
-1. Sign out of the MOD Administrator account by selecting the MA in the upper right corner and select **Sign out**.
-
-1. Close the browser window and open a new browser window.
-
-1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`**.
-
-1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **Joni Sherman**. JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
-
-1. Navigate to **Data Classification** from the left side navigation pane.
-
-1. Select **Trainable classifiers** from the top pane.
-
-1. Select **+ Create trainable classifier** to create a new classifier.
-
-1. Enter the following information on the **Name and describe your trainable classifier** page:
-
-    - **Name**: Contoso Company Data
-    - **Description**: Trainable classifier for company data produced and stored by Contoso Ltd.
+    - **Name**: `Contoso Company Data`
+    - **Description**: `Trainable classifier for company data produced and stored by Contoso Ltd.`
 
 1. Select **Next**.
 
-1. Select **Choose sites** to open the right side pane.
+1. On the **Source of the positive sample content**, select **+ Choose sites**.
 
-1. Select the following SharePoint sites:
+1. On the **Add SharePoint sites** fly-out page on the right, select these SharePoint sites:
 
-    - **Communication site**
-    - **News @ Contoso**
-    - **Contoso Web 1**
-    - **Brand**
-    - **Digital Initiative Public Relations**
-    - **Work @ Contoso**
-    - **Sales and Marketing**
-    - **Contoso Landings**
-    - **Mark 8 Project Team**
-    - **HR**
-    - **Operations**
-    - **Retail**
-    - **PointPublishing Hub Site**
-    - **Team Site**
-    - **Leadership Team**
-    - **Community**
-    - **Give @ Contoso**
-    - **Benefits @ Contoso**
-    - **Learn @ Contoso**
-    - **Campaigns - Events**
+    - Mark8ProjectTeam
 
-1. Wait until the chosen site is shown in the list and select **Next**.
+1. Select **Add** at the bottom of the fly-out page.
 
-1. Review the settings and select **Create trainable classifier**.
+1. Back on the **Source of the positive sample content** page, select **Next**.
 
-1. When the message **Your trainable classifier was created** is shown, select **Done**.
+1. On the **Source of the negative sample content** page, select these SharePoint sites:
 
-1. Now you have to wait between 1 hour up to 24 hours to proceed forward. Leave the browser open.
+    - HR
 
-The documents and files in the chosen SharePoint site are now being analyzed, which can take up to 24 hours.
+1. Select **Add** at the bottom of the fly-out page.
 
+1. Back on the **Source of the negative sample content** page, select **Next**.
+
+1. On the **Review and create classifier to start processing your sample content**, select **Create trainable classifier**
+
+1. On the **Your classifier is being trained** page, select **Done**.
+
+The documents and files in the chosen SharePoint site are now being analyzed, which can take up to 48 hours.
+
+<!---
 ## Task 3 – Publish a trainable classifier (optional lab task)
+
 After the new trainable classifier was created and the initial analysis of the documents and files is done, the manual training process needs to be performed. In this task, Joni will start the calibration of the classifier to achieve the required accuracy for publishing.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In your browser window, you are in the Microsoft Purview portal at **Data classification** in the **Trainable classifiers** tab.
 
