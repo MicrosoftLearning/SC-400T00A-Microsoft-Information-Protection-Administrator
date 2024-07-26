@@ -6,28 +6,35 @@ lab:
 
 # Lab 1 - Exercise 5 - Manage Sensitivity Labels
 
-In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd.
-Your organization is based in Rednitzhembach, Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.
+Joni Sherman, the System Administrator for Contoso Ltd., is implementing a sensitivity labeling plan to ensure that all employee documents in the HR department are appropriately labeled according to the company's information protection policies. Contoso Ltd. is based in Rednitzhembach, Germany, and aims to comply with internal data handling standards and regional regulations.
+
+**Task list**:
+
+- Enable support for sensitivity labels
+- Create sensitivity labels
+- Publish sensitivity labels
+- Work with sensitivity labels
+- Configure auto labeling
 
 ## Task 1 Enable support for sensitivity labels
 
-In this task, you will install the MSOnline module and the SharePoint Online PowerShell module and enable support for sensitivity labels on your tenant.
+In this task, you'll install the necessary modules and enable support for sensitivity labels on your tenant.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
-1. Open an elevated PowerShell window by selecting the start menu with the right mouse button and then select **Windows PowerShell** and run as administrator.
+1. Open an elevated PowerShell window by right-clicking the Windows button in the task bar, then select **Terminal (Admin)**.
 
 1. Confirm the **User Account Control** window with **Yes** and press Enter.
 
-1. Enter the following cmdlet to install the latest MS Online PowerShell module version:
+1. Run the **Install-Module** cmdlet to install the latest MS Online PowerShell module version:
 
    ```powershell
    Install-Module -Name MSOnline
    ```
 
-1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take a while to complete processing.
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter. This might take a while to complete processing.
 
-1. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
+1. Run the **Install-Module** cmdlet to install the latest SharePoint Online PowerShell module version:
 
     ```powershell
     Install-Module -Name Microsoft.Online.SharePoint.PowerShell
@@ -35,7 +42,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
 
-1. Enter the following cmdlet to connect to the MS Online service:
+1. Run the **Connect-MsolService** to connect to the MS Online service:
 
     ```powershell
     Connect-MsolService
@@ -43,31 +50,31 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. After signing in, select the PowerShell window.
+1. After signing in, navigate back to the terminal window.
 
-1. Enter this cmdlet to get the domain:
+1. Run the **Get-Msoldomain** cmdlet and save the domain as a variable:
 
     ```powershell
     $domain = get-msoldomain
     ```
 
-1. Enter the following cmdlet to create the SharePoint admin url:
+1. Use the _$domain_ variable created in the previous step to create a new variable for _$adminurl_:
 
     ```powershell
     $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
     ```
 
-1. Enter the following cmdlet to sign in to the SharePoint Online admin center:
+1. Run the **Connect-SPOService** cmdlet using the _$adminurl_ variable created in the previous step:
 
     ```powershell
     Connect-SPOService -url $adminurl
     ```
 
-1. In the **Sign into your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. After signing in, select the PowerShell window.
+1. After signing in, navigate back to the terminal window.
 
-1. Enter the following cmdlet to enable support for sensitivity labels:
+1. Run the **Set-SPOTenant** cmdlet to enable support for sensitivity labels:
 
     ```powershell
     Set-SPOTenant -EnableAIPIntegration $true
@@ -77,13 +84,13 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 1. Close the PowerShell window.
 
-You have successfully enabled support for sensitivity labels with Teams and SharePoint sites.
+You have successfully enabled support for sensitivity labels for Teams and SharePoint sites.
 
 ## Task 2 – Create Sensitivity Labels
 
-In this task, your HR department has requested a sensitivity label to apply to HR employee documents. You will create a sensitivity label for Internal documents and a sublabel for the HR department.
+In this task, your HR department has requested a sensitivity label to apply to HR employee documents. You'll create a sensitivity label for internal documents and a sublabel for the HR department.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
@@ -176,7 +183,7 @@ You have successfully created a sensitivity label for your organizations interna
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 
@@ -227,7 +234,7 @@ You have successfully published the Internal and HR sensitivity labels. Note tha
 
 In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
 
@@ -287,7 +294,7 @@ You have successfully created an HR Word document with a sensitivity label, whic
 
 In this task, you will create a Sensitivity Label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -391,4 +398,4 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 You have successfully created and published an auto apply sensitivity label for GDPR documents in the region Germany.
 
-Be aware that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
+Be aware that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be SC-400ger when applied to more than 25,000 documents (that is, the daily limit).

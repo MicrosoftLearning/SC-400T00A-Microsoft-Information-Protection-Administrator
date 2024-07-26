@@ -13,8 +13,6 @@ Contoso Ltd. needs to ensure that financial documents and reports stored in the 
 - Create a trainable classifier
 - Publish a trainable classifier
 
-**Important!**: After activating trainable classifiers in a tenant, it takes between **7 and 14 days** before any custom trainable classifiers can be created. The button to create a new trainable classifier will not be available until the entire activation process is complete.  Therefore, **you will only be able to perform task 1 now**. If you wish to complete task 2 and 3 you will need to wait until processing of the trainable classifier setup is complete.  These lab instructions are available on GitHub.com. The Microsoft 365 tenant you're using to perform task 1 should still be active.
-
 ## Task 1 – Create a trainable classifier
 
 In this task, you'll activate trainable classifiers in the tenant to enable the creation of custom classifiers.
@@ -22,8 +20,6 @@ In this task, you'll activate trainable classifiers in the tenant to enable the 
 1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`**.
-
-1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. Select the **Information Protection** card then expand **Classifiers** and select **Trainable classifiers**.
 
@@ -40,9 +36,7 @@ In this task, you'll activate trainable classifiers in the tenant to enable the 
 
 1. On the **Add SharePoint sites** fly-out page on the right, select these SharePoint sites:
 
-    - Retail
-    - SalesAndMarketing
-    - USSales
+    - Mark8ProjectTeam
 
 1. Select **Add** at the bottom of the fly-out page.
 
@@ -50,7 +44,7 @@ In this task, you'll activate trainable classifiers in the tenant to enable the 
 
 1. On the **Source of the negative sample content** page, select these SharePoint sites:
 
-    - DigitalInitiativePublicRelations
+    - HR
 
 1. Select **Add** at the bottom of the fly-out page.
 
@@ -62,8 +56,9 @@ In this task, you'll activate trainable classifiers in the tenant to enable the 
 
 The documents and files in the chosen SharePoint site are now being analyzed, which can take up to 48 hours.
 
-
+<!---
 ## Task 3 – Publish a trainable classifier (optional lab task)
+
 After the new trainable classifier was created and the initial analysis of the documents and files is done, the manual training process needs to be performed. In this task, Joni will start the calibration of the classifier to achieve the required accuracy for publishing.
 
 1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
