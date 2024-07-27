@@ -8,7 +8,7 @@ lab:
 
 Joni Sherman, the System Administrator for Contoso Ltd., is implementing a sensitivity labeling plan to ensure that all employee documents in the HR department are appropriately labeled according to the company's information protection policies. Contoso Ltd. is based in Rednitzhembach, Germany, and aims to comply with internal data handling standards and regional regulations.
 
-**Task list**:
+**Tasks**:
 
 - Enable support for sensitivity labels
 - Create sensitivity labels

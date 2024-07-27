@@ -9,10 +9,6 @@ lab:
 
 Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To prevent this, you need to create a custom sensitive information type to identify employee IDs in emails and documents.
 
-## Task 1 – Create custom sensitive information types
-
-In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
-
 **Tasks**:
 
 - Create custom sensitive information types
@@ -20,6 +16,10 @@ In this task, you'll create a new custom sensitive information type that recogni
 - Create EDM-based classification data source
 - Create keyword dictionary
 - Work with custom sensitive information types
+
+## Task 1 – Create custom sensitive information types
+
+In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
