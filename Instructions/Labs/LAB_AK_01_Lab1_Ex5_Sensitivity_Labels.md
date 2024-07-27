@@ -86,28 +86,30 @@ In this task, you'll install the necessary modules and enable support for sensit
 
 You have successfully enabled support for sensitivity labels for Teams and SharePoint sites.
 
-## Task 2 – Create Sensitivity Labels
+## Task 2 – Create sensitivity labels
 
 In this task, your HR department has requested a sensitivity label to apply to HR employee documents. You'll create a sensitivity label for internal documents and a sublabel for the HR department.
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`**. Log into Microsoft Purview as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. In the Microsoft Purview portal, on the left navigation pane, expand **Information protection** then select **Labels**.
+1. In the Microsoft Purview portal, select the **Information Protection** card.
 
-1. On the **Labels** page select **+ Create a label**.
+1. On the **Microsoft Information Protection** page, on the left navigation pane, select **Sensitivity labels**.
 
-1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
+1. On the **Sensitivity labels** page select **+ Create a label**.
 
-    - **Name**: Internal
-    - **Display name**: Internal
-    - **Description for users**: Internal sensitivity label.
-    - **Description for admins**: Internal sensitivity label for Contoso.
+1. The **New sensitivity label** configuration will start. On the **Provide basic details for this label**, enter:
+
+    - **Name**: `Internal`
+    - **Display name**: `Internal`
+    - **Description for users**: `Internal sensitivity label.`
+    - **Description for admins**: `Internal sensitivity label for Contoso.`
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select **Items** and select **Files** and **Emails**. If any other options on this page are selected, deselect those options.
+1. On the **Define the scope for this label** page, select **Items**, then select **Files** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
 
 1. Select **Next**.
 
@@ -121,47 +123,36 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. Once the label has been created the **Your sensitivity label was created** page will be displayed.
+1. On the **Your sensitivity label was created** page, select **Don't create a policy yet**, then select **Done**.
 
-1. Select **Don't create a policy yet** and then select **Done**.
+1. On the **Sensitivity labels** page, find the newly created **Internal** sensitivity label. Select the vertical ellipsis (**...**) next to it, then select **+ Create sublabel** from the dropdown menu.
 
-1. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**
+    ![Screenshot showing the Action menu to create a sublabel for a sensitivity label.](../Media/create-sublabel-button.png)
 
-    ![Image of vertical dot menu](../Media/SensitivityLabelDotMenu.png)
+1. The **New sensitivity label** wizard will start. On the **Provide basic details for this label** page enter:
 
-1. Select the **+ Create sublabel** from the drop-down menu.
-
-1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page for the **Name**, **Display Name**, **Description for admins** and **Description for users**, enter the following information:
-
-   - **Name**: Employee data (HR)
-   - **Display name**: Employee data (HR)
-   - **Description for users**: This HR label is the default label for all specified documents in the HR Department.
-   - **Description for admins**: This label is created in consultation with Ms. Jones (Head of HR department). Contact her, when you want to change settings of the label.
+   - **Name**: `Employee data (HR)`
+   - **Display name**: `Employee data (HR)`
+   - **Description for users**: `This HR label is the default label for all specified documents in the HR Department.`
+   - **Description for admins**: `This label is created in consultation with Ms. Jones (Head of HR department). Contact her, when you want to change settings of the label.`
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
+1. On the **Define the scope for this label** page, select **Items**, then select **Files** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select the **Control access** option.
+1. On the **Choose protection settings for labeled items** page, select the **Control access** option, then select **Next**.
 
-1. Select **Next**.
+1. On the **Access control** page, select **Configure access control settings**.
 
-1. On the **Access control** page select **Configure access control settings**.
-
-1. Enter the following information into the encryption settings:
+1. Configure the encryption settings with these options:
 
    - **Assign permissions now or let users decide?**: Assign permissions now
    - **User access to content expires**: Never
    - **Allow offline access**: Only for a number of days
    - **Users have offline access to the content for this many days**: 15
-
-1. Select the **Assign permissions** link,
-
-1. On the Assign permissions side menu, select the **+ Add any authenticated users**.
-
-1. Select **Save**.
+   - Select the **Assign permissions** link. On the **Assign permissions** fly-out page, select the **+ Add any authenticated users**, then select **Save** to ally this setting.
 
 1. On the **Access control** page, select **Next**.
 
@@ -173,35 +164,27 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. The label will be created and when complete a message will display **Your sensitivity label was created**.
-
-1. Select **Don't create a policy yet** and then select **Done**.
+1. On the **Your sensitivity label was created** page, select **Don't create a policy yet**, then select **Done**.
 
 You have successfully created a sensitivity label for your organizations internal policies and a sensitivity sublabel for the Human Resources (HR) department.
 
-## Task 3 – Publish Sensitivity Labels
+## Task 3 – Publish sensitivity labels
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft Purview as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If not, navigate to **`https://purview.microsoft.com`** > **Information Protection** > **Sensitivity labels**.
 
-1. In the Microsoft Purview portal, on the left navigation pane, expand **Information protection** then select **Labels**.
+1. On the **Sensitivity labels** page select **Publish label**.
 
-1. On the Labels page select **Publish label**.
-
-1. The publish sensitivity labels wizard will start.
+1. The publish sensitivity labels configuration will start.
 
 1. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
 
-1. The **Sensitivity labels to publish** pane will appear on the right.
+1. On the **Sensitivity labels to publish** fly-out page, select the **Internal** and **Internal/Employee Data (HR)** checkboxes, then select **Add** at the bottom of the fly-out page.
 
-1. Select the **Internal** and **Internal/Employee Data (HR)** checkboxes.
-
-1. Select **Add**.
-
-1. On the **Choose sensitivity labels to publish** page, select **Next**.
+1. Back on the **Choose sensitivity labels to publish** page, select **Next**.
 
 1. On the **Assign admin units** page, select **Next**
 
@@ -217,10 +200,10 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Default settings for Power BI Content** select **Next**.
 
-1. On the **Name your policy** page, enter the following information:
+1. On the **Name your policy** page, enter:
 
-   - **Name**: Internal HR employee data
-   - **Enter a description for your sensitivity label policy**: This HR label is to be applied to internal HR employee data.
+   - **Name**: `Internal HR employee data`
+   - **Enter a description for your sensitivity label policy**: `This HR label is to be applied to internal HR employee data.`
 
 1. Select **Next**.
 
@@ -230,47 +213,43 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 You have successfully published the Internal and HR sensitivity labels. Note that it can take up to 24 hours for changes to replicate to all users and services.
 
-## Task 4 – Work with Sensitivity Labels
+## Task 4 – Work with sensitivity sabels
 
 In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
+1. In **Microsoft Edge**, open a new Word document by selecting the meatball menu in the top left and selecting **Word**.
 
-1. Scroll through the Welcome to Microsoft 365 message to close it.
+    ![Screenshot showing where to select Word from the meatball menu.](../Media/meatball-menu-word.png)
 
-1. Select the Microsoft Word symbol from the left side pane to open Word Online.
+1. Select **Blank document** to create a new document.
 
-1. Select **New blank document** to create a new document.
+1. On the **Your privacy option** dialogue, select **Close**.
 
-1. If a **Your privacy options** message is shown, close it with selecting **Close**.
+1. Enter this text in the new blank document:
 
-1. Enter the following contents into the word document:
+   `Important HR employee document.`
 
-   ``` text
-   Important HR employee document.
-   ```
+1. Select **Sensitivity** from the navigation ribbon and select **Internal** > **Employee Data (HR)** to apply the newly created sensitivity label to this document.
 
-1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal > Employee Data (HR)**  to apply the label.
+    ![Screenshot showing the sensitivity label button in Word.](../Media/word_label.png)
 
-    ![Sensitivity label. ](../Media/word_label.png)
+    >**Note:** It can take 24-48 hours for newly published sensitivity labels to be available for application. If the newly created sensitivity labels aren't available, you can use **Confidential** > **All Employees** for this exercise.
 
-    >**Note:** Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
+1. In the upper left of the document, select **Document** to rename this file, and rename it to **`HR Document`**. Press enter to apply this name change.
 
-1. Select the **Document - Saved** in the upper left of the window, enter **HR Document** as the File Name and press Enter key.
+    ![Screenshot showing where to rename a file in Word on the web.](../Media/rename-web-word-file.png)
 
-1. Close the tab to return to the Word Online tab. Select the Outlook symbol from the left side pane to open Outlook on the web.
+1. Close the tab to return to the Word Online tab. Select the meatball menu on the top left and select **Outlook** to open Outlook on the web.
 
-1. If a welcome message is shown, close it with selecting the **X**.
+1. In Outlook on the web, select **New mail**.
 
-1. In Outlook on the web, select **New mail** from the upper left of the window.
+1. In the **To** field enter the name: **`Allan`** and select **Allan Deyoung** from the drop-down list.
 
-1. In the To field enter the name: **Allan** and select **Allan Deyoung** from the drop-down list.
+1. In the subject line, enter: **`Employee data for HR`**
 
-1. In the subject field, enter: **Employee data for HR**
-
-1. Within the email message (the large content panel at the bottom of the page), insert the following message:
+1. In the body of the email, enter:
 
     ``` text
     Dear Mr. Deyoung, 
@@ -282,38 +261,34 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
     Joni Sherman
     ```
 
-1. Select the paperclip symbol from the top menu to add an attachment. Select the **HR Document.docx** below **Suggested files** to attach the document.
+1. Select the paperclip symbol from the top navigation ribbon to add an attachment. Under **Suggested files** select **HR Document.docx**.
 
 1. Select **Send** to send out the email message with attached document.
 
-1. Leave the browser window open.
-
 You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member where the email was also set with a sensitivity label.
 
-## Task 5 – Configure Auto Labeling
+## Task 5 – Configure auto labeling
 
-In this task, you will create a Sensitivity Label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
+In this task, you'll create a sensitivity label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
 
-1. In the Microsoft Purview portal, on the left navigation pane, expand **Information protection** and then select **Labels**.
+1. In the Microsoft Purview portal, select the **Information protection** card, then select **Sensitivity labels**.
 
-1. On the Labels page, highlight (without selecting) the existing **Internal** label, and select the three dots.
+1. On the **Sensitivity labels** page, find the newly created **Internal** sensitivity label. Select the vertical ellipsis (**...**) next to it, then select **+ Create sublabel** from the dropdown menu.
 
-1. Select the **+ Create sublabel** menu item.
+1. The **New sensitivity label** configuration will start. On the **Provide basic details for this label** page, enter:
 
-1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page, enter the following information:
-
-   - **Name**: GDPR Germany
-   - **Display name**: GDPR Germany
-   - **Description for users**: This document or email contains data related to the European General Data Protection Regulation (GPDR) for the region Germany.
-   - **Description for admins**: This label is auto applied to German GDPR documents.
+   - **Name**: `GDPR Germany`
+   - **Display name**: `GDPR Germany`
+   - **Description for users**: `This document or email contains data related to the European General Data Protection Regulation (GPDR) for the region Germany.`
+   - **Description for admins**: `This label is auto applied to German GDPR documents.`
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
+1. On the **Define the scope for this label** page, select **Items**, then select **Files** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
 
 1. Select **Next**.
 
@@ -321,25 +296,17 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
 
-1. In the **Detect content that matches these conditions** section, select **+Add condition** then select **Content contains**.
+1. In the **Detect content that matches these conditions** section, select **+ Add condition** > **Content contains**.
 
-1. In **Content contains** section select the **Add** text then select **Sensitive info types**.
+1. In **Content contains** section select the **Add** > **Sensitive info types**.
 
-1. A **Sensitive info types** panel will be displayed on the right.
+1. In the **Sensitive info types** fly-out page, search for `German` to display sensitive info types related to Germany.
 
-1. In the **Search for sensitive info types** search panel, enter the following information:
+1. Select the checkbox next to the **Name** field to select all sensitive info types related to German, then select **Add**.
 
-    ``` text
-    German
-    ```
+    ![Screenshot showing how to add all German related sensitive info types.](../Media/select-all-german-types.png)
 
-1. Press the enter button, the results will display sensitivity info types related to Germany.
-
-1. Press the **Select all** check box.
-
-1. Select **Add**.
-
-1. Select **Next**.
+1. Back on the **Auto-labeling for files and emails** page, select **Next**.
 
 1. On the **Define protection settings for groups and sites** page, select **Next**.
 
@@ -347,55 +314,31 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. The label will be created and when complete a message will display: **Your sensitivity label was created**.
+1. On the **Your sensitivity label was created** page, select **Publish label to users' apps**, then select **Done**.
 
-1. Select **Done**.
+1. On the **Create auto-labeling policy** fly-out page, select **Review policy** to start the configuration to create a new label policy.
 
-1. Once the label has been created the **Your sensitivity label was created** page will be displayed.
+1. On the **Name your auto-labeling policy** page, enter:
 
-1. Select **Don't create a policy yet** and then select **Done**.
-
-1. On the **Labels** page, select **Publish label**.
-
-1. The Publish sensitivity labels wizard will start.
-
-1. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
-
-1. A side bar called **Sensitivity labels to publish** will appear on the right.
-
-1. Select the **Internal** and **Internal/GDPR Germany** checkbox.
-
-1. Select **Add**.
-
-1. On the **Choose sensitivity labels to publish** page, select **Next**.
-
-1. On the **Assign admin units** page, select **Next**.
-
-1. On the **Publish to users and groups** page, select **Next**.
-
-1. On the **Policy settings** page, select **Next**.
-
-1. On the **Default settings for documents​** page, select **Next**.
-
-1. On the **Default settings for emails** page, select **Next**.
-
-1. On the **Default settings for meetings and calendar events** page, select **Next**.
-
-1. On the **Default settings for Power BI content** page, select **Next**.
-
-1. On the **Name your policy** page, enter the following information:
-
-   - **Name**: GDPR Germany policy
-   - **Enter a description for your sensitivity label policy**: This auto apply sensitivity labels policy is for the GDPR region of Germany.
+   - **Name**: `GDPR Germany policy`
+   - **Enter a description for your sensitivity label policy**: `This auto apply sensitivity labels policy is for the GDPR region of Germany.`
 
 1. Select **Next**.
 
-1. On the **Review and finish** page, select **Submit**.
+1. On the **Assign admin units** page, select **Next**.
 
-1. The policy will be created and when complete a message will display, **New policy created**.
+1. On the **Choose locations where you want to apply the label** page, leave the defaults selected, then select **Next**.
 
-1. Select **Done**.
+1. On the **Set up common or advanced rules** page, select **Next**.
+
+1. On the **Define rules for content in all locations** page, select **Next**.
+
+1. On the **Decide if you want to test out the policy now or later** select **Run policy in simulation mode**, then select the checkbox for **Automatically turn on policy if not modified for 7 days in simulation.**, then select **Next**.
+
+1. On the **Review and finish** page, select **Create policy**.
+
+1. On the **Your auto-labeling policy was created** page, select **Done**.
 
 You have successfully created and published an auto apply sensitivity label for GDPR documents in the region Germany.
 
-Be aware that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be SC-400ger when applied to more than 25,000 documents (that is, the daily limit).
+It can take up to 24 hours for auto applied sensitivity labels to be applied. This duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
