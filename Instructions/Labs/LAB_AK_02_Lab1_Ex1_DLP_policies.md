@@ -15,6 +15,18 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States, and you need to make sure that sensitive customer information does not leave the organization.
 
+**Tasks**:
+
+- Create a DLP policy in simulation mode
+- Modify a DLP policy
+- Create a DLP policy in PowerShell
+- Test your DLP policy
+- Activate a policy in simulation mode
+- Modify policy priority
+- Enable file monitoring in Microsoft 365 Defender
+- Create a file policy for Microsoft 365 Defender
+- Create a DLP policy for Power Platform
+
 ## Task 1 – Create a DLP policy in simulation mode
 
 In this exercise, you'll create a data loss prevention (DLP) policy to protect sensitive data from being shared by users. The DLP policy that you create will inform your users if they want to share content that contains credit card information and allow them to provide a justification for sending this information. The policy will be implemented in simulation mode because you don't want the block action to affect your users yet.
@@ -310,5 +322,7 @@ Your company uses Power Automate flows to share data between SharePoint Online a
 1. On the **Define scope** page, select **Add all environments**, then select **Next**.
 
 1. On the **Review and create policy** page review your policy settings, then select **Create policy**.
+
+1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then selecting **Sign out**. Close the browser window once you're signed out.
 
 You have successfully created a Power Platform DLP policy, ensuring that data flow between SharePoint Online and non-business connectors is controlled.
