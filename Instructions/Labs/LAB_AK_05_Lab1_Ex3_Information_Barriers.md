@@ -26,43 +26,7 @@ In this task, you'll verify the **Search by name** feature is enabled in Microso
 
     >**Note:** It may take a few hours for this change to take effect.
 
-## Task 2: Enable Admin Consent for Information barriers in Microsoft Teams
-
-In this task, you'll enable Admin Consent for Information barriers (IB) in Microsoft Teams. This configuration ensures compliance by allowing the removal of non-IB compliant users from groups like Teams channels.
-
-1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
-
-1. Confirm the **User Account Control** window with **Yes**.
-
-1. Enter the following cmdlet to install the latest version of the Azure AD module:
-
-    ```powershell
-    Install-Module AzureAD
-    ```
-
-1. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**. This process may take some seconds to complete.
-
-1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some seconds to complete.
-
-1. Run the following PowerShell cmdlets:
-
-    ````powershell
-    Connect-AzureAD -Tenant "WWLxZZZZZZ.onmicrosoft.com"
-    $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-    $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
-    if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
-    Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
-    ````
-
-    >**Note:** Be sure to update ZZZZZZ to ZZZZZZ.onmicrosoft.com. ZZZZZZ is your unique tenant ID provided by your lab hosting provider. The fully qualified domain name is needed for the tenant ID.
-
-1. When prompted, login with the MOD Administrator account
-
-1. In the **Permissions requested** dialog box, review the information, and then select **Accept**.
-
-You have successfully installed the Azure AD module, granted the necessary permissions, and accepted the requested permissions, enabling you to proceed with the configurations using PowerShell.
-
-## Task 3: Segment users in your organization
+## Task 2: Segment users in your organization
 
 In this task, you will use PowerShell to connect to the Security & Compliance module and create organization segments for the **Legal** and **Marketing** departments.
 
@@ -96,7 +60,7 @@ In this task, you will use PowerShell to connect to the Security & Compliance mo
 
 You have successfully connected to the Security & Compliance PowerShell, created organization segments for the Legal and Marketing departments, and viewed the segments using the Get-OrganizationSegment cmdlet.
 
-## Task 4: Create Information barrier policies
+## Task 3: Create Information barrier policies
 
 In this task, you will use PowerShell to create Information barrier policies to block communication between the Legal and Marketing departments.
 
@@ -126,7 +90,7 @@ In this task, you will use PowerShell to create Information barrier policies to 
 
 You have successfully created the Legal-Marketing and Marketing-Legal information barrier policies using PowerShell and verified their status as active by running the Get-InformationBarrierPolicy cmdlet.
 
-## Task 5: Apply Information barrier policies
+## Task 4: Apply Information barrier policies
 
 In this task, you will use PowerShell to apply the active Information barrier policies and check their application status.
 
