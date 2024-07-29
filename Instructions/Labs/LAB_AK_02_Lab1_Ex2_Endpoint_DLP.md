@@ -10,7 +10,9 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 ## Task 1 – Enable device onboarding
 
-In this task, you will turn on device onboarding for your organization.
+In this task, you'll enable device onboarding for your organization.
+
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
@@ -28,13 +30,15 @@ You have now enabled device onboarding and can start to onboard devices to be pr
 
 ## Task 2 - Onboard a device to Endpoint DLP
 
-In this task, you will use the local script option to onboard a Windows 10 device to allow it to be protected by Endpoint DLP policies.
+In this task, you will use the local script option to onboard a Windows 11 device to allow it to be protected by Endpoint DLP policies.
 
 1. Log into Client 2 VM (SC-400-CL2) as the **SC-400-cl1\admin** account.
 
-1. In Microsoft Edge, you should still be at the **Devices** page in Microsoft Purview logged in as Joni Sherman. If not, navigate to **`https://purview.microsoft.com`** > **Settings** > **Device onboarding** > **Devices**.
+1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. On the left navigation pane, in the **Device onboarding** section, select **Onboarding**.
+1. Select the **View all solutions** card, then select **Settings** under **Core**.
+
+1. On the left navigation pane, expand **Device onboarding**, then select **Onboarding**.
 
 1. On the **Device onboarding** page, in the navigation pane, select **Onboarding**.
 
@@ -42,13 +46,13 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 1. In the **Downloads** dialog, hover over the download, then select the folder icon to **Show in folder**.
 
-1. Extract the zip-file to the **Desktop** of SC-400-CL1. You should see a script named **DeviceComplianceLocaSC-400boardingScript.cmd**.
+1. Extract the zip-file to the **Desktop** of SC-400-CL1. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
 
-1. On the desktop right-click the **DeviceComplianceLocaSC-400boardingScript.cmd** file you just extracted and select **Show more options**, then select **Properties**.
+1. On the desktop right-click the **DeviceComplianceLocalOnboardingScript.cmd** file you just extracted and select **Show more options**, then select **Properties**.
 
 1. Towards the bottom of the **General** tab of the properties window, in the **Security** section, select **Unblock**, then select **OK** to save this setting.
 
-1. Back on the desktop, right click **DeviceComplianceLocaSC-400boardingScript.cmd**, then select **Run as administrator**. On the **User Account Control** dialogue, select **Yes**.
+1. Back on the desktop, right click **DeviceComplianceLocalOnboardingScript.cmd**, then select **Run as administrator**. On the **User Account Control** dialogue, select **Yes**.
 
 1. In the **Command Prompt** screen type **Y** to confirm, and then press Enter.
 
@@ -66,30 +70,34 @@ In this task, you will use the local script option to onboard a Windows 10 devic
 
 1. Restart Client 2 VM (SC-400-CL2).
 
+1. Log back into Client 1 VM (SC-400-CL1).
+
+1. The Microsoft Purview window should still be open at the **Devices** page. Refresh this page and verify the device has been successfully onboarded.
+
 You have successfully onboarded a device and joined it to Microsoft Entra ID to be protected by endpoint DLP policies.
 
 ## Task 3 - Create an endpoint DLP policy
 
-In this task, you will create a data loss prevention policy in the Microsoft Purview portal to protect sensitive data residing on Windows 10 devices in your organization. The DLP Policy that you create will block your users if they want to copy content from documents that contain credit card information.
+In this task, you will create a Data Loss Prevention (DLP) policy in the Microsoft Purview portal to prevent sensitive information from being shared with generative AI platforms on Windows 11 devices. This policy will help ensure that sensitive customer data, such as driver's license numbers and personal information, is not accidentally or intentionally shared with AI platforms, protecting the organization's data integrity.
 
 1. Log on to Client 1 VM (SC-400-CL1) as the SC-400-cl1\admin account.
 
-1. Open Microsoft Edge from the taskbar, navigate to the Microsoft Purview portal at `https://compliance.microsoft.com` and when the Sign in window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. You should still be at the **Devices** page in the Microsoft Purview portal, logged in as Joni Sherman. Select the **Home** button on the top left of the screen. If you're not logged in, navigate to `https://purview.microsoft.com` and login as Joni Sherman. Joni's password was set in a previous exercise.
 
-1. In the **Microsoft Purview** portal on the left navigation pane, expand **Data loss prevention** the select **Policies**.
+1. In the Microsoft Purview portal, select **View all solutions** then select **Data Loss Prevention** under the **Data Security** section.
 
-1. Select **+ Create policy** to start the wizard for creating a new data loss prevention policy.
+1. From the left, navigation pane, select **Policies** then select **+ Create policy**.
 
 1. On the **Start with a template or create a custom policy** page, select **Custom** and **Custom policy**, then select **Next**.
 
-1. In the **Name your DLP policy** page, enter the following information:
+1. On the **Name your DLP policy** page, enter:
 
-    - **Name**: Employee Diseases Endpoint DLP Policy
-    - **Description**: Protect employee ID numbers and diseases from being shared on endpoints.
+    - **Name**: `Generative AI sharing DLP policy`
+    - **Description**: `Prevent sharing of sensitive data with generative AI platforms.`
 
 1. On the **Assign admin units** page, select **Next**.
 
-1. On the **Choose locations to apply the policy** page, select only the **Devices** option then select **Next**.
+1. On the **Choose locations to apply the policy** page, select only the **Devices** location. If any other location is selected, ensure they're deselected, then select **Next**.
 
 1. On the **Define policy settings** page, select **Create or customize advanced DLP rules** then select **Next**.
 
@@ -97,64 +105,80 @@ In this task, you will create a data loss prevention policy in the Microsoft Pur
 
 1. On the **Create rule** page, enter:
 
-    - **Name**: Employee ID and disease rule
-    - **Description**: Detect if employee IDs and diseases are shared in near range.
+    - **Name**: `Sensitive data protection rule`
+    - **Description**: `Detect and restrict sharing of sensitive information with generative AI platforms.`
 
-1. Under **Conditions** select **+ Add condition** then select **Content contains** from the dropdown menu.
+1. Under **Conditions** select **+ Add condition** then select **Content contains**.
 
-1. In the newly opened **Content contains** area, select **Add** then select **Sensitive info types** from the dropdown menu.
+1. In the newly opened **Content contains** area, select **Add** then select **Sensitive info types**.
 
-1. In the right-side pane **Sensitive info types**, select **Contoso Employee IDs** and **Contoso Disease List** then select **Add**.
-
-1. Change the **Group operator** dropdown from **Any of these** to **All of these** to make the policy detect information in proximity.
+1. On the **Sensitive info types** fly-out page on the right, search for `U.S.` then select all United States related sensitive info types. Select **Add** at the bottom of the fly-out page.
 
 1. Scroll down to **Actions** and select the **+ Add an action** dropdown then select **Audit or restrict activities on devices**.
 
-1. In the **Audit or restrict activities on devices** area, leave all default checkboxes enabled. In the **File activities for all apps** section, change all dropdown selections from **Audit only** to **Block with Override**.
+1. In the newly opened **Audit or restrict activities on devices** area, in the **Service domain and browser activities** section, select the check box for **Upload to a restricted cloud service domain or access from an unallowed browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
 
-1. In the **User Notifications** section, toggle the **Use notifications to inform your users and help educate them on the proper use of sensitive info.** switch to **On**.
+1. In the **Sensitive service domain restrictions** fly-out page, select **+ Add group**.
+
+1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the fly-out page.
+
+1. Back on the **Sensitive service domain restrictions** page, ensure **Generative AI Websites** is listed, then select **Save** at the bottom of the fly-out page.
+
+1. Back on the **Create rule**, select the check box for **Paste to supported browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
+
+1. In the **Sensitive service domain restrictions** fly-out page, select **+ Add group**.
+
+1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the fly-out page.
+
+1. Back on the **Create rule** in the **Service domain and browser activities** section, update the action for both **Upload to a restricted cloud service domain or access from an unallowed browsers** and **Paste to supported browsers** from **Audit only** to **Block**.
+
+1. In the **File activities for all apps** section, leave the default action of **Audit only**.
+
+1. In the **User notifications** section, set **Use notifications to inform your users and help educate them on the proper use of sensitive info.** to **On**.
 
 1. Under **Endpoint devices** select the checkbox for **Show users a policy tip notification when an activity is restricted. This is turned on when you select Block for an activity in Windows. To turn off the notifications on Windows devices, disable the restrictions**.
 
 1. Under **Microsoft 365 services** select the checkbox for **Notify users in Office 365 service with a policy tip**.
 
-1. Select **Save**, then select **Next** on the **Customize advanced DLP rules** page.
+1. Select **Save** at the bottom of the fly-out page.
+
+1. Back on the **Customize advanced DLP rules**, select **Next**.
 
 1. On the **Policy mode** page select **Turn the policy on immediately** then select **Next**.
 
 1. On the **Review and finish** page, review your policy settings then select **Submit** to create the policy.
 
-1. Once the policy is created select **Done**.
+1. Once the policy is created select **Done** on the **New policy created** page.
 
-You have successfully activated the DLP Policy. If the policy detects an attempt to copy content from a file containing credit card information, it will now block the attempt and inform your user.
+You have successfully activated the Endpoint DLP Policy. This policy will prevent the sharing of sensitive information with generative AI platforms, ensuring that sensitive data such as driver's license numbers and personal details are protected from unauthorized access or exposure.
 
 ## Task 4 - Configure Endpoint DLP Settings
 
-In this task, you will configure a file path exclusion to a folder on your Windows 10 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
+In this task, you will configure a file path exclusion to a folder on your Windows 11 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page for data loss prevention. Select **Solutions**, then select **Settings** under the **Core** sections to get to Microsoft Purview settings.
 
-1. In the **Microsoft Purview** portal, on the left navigation pane, expand **Data loss prevention** then select **Overview**.
+1. On the settings page, select **Data Loss Prevention** from the left navigation pane.
 
-1. Select **Data loss prevention settings** on the top right of the Overview page.
+1. The **Data Loss Prevention settings** page should open to the **Endpoint DLP settings**.
 
 1. On the **Endpoint DLP settings** page, expand **File path exclusions for Windows**  then select **+ Add file path exclusion**.
 
-1. On the **Exclude these file paths from Windows devices** flyout page in the **File path exclusion** field, enter _C:\FilePathExclusionTest_ then select the **+** button to the right. Select **Save** to save this entry.
+1. On the **Exclude these file paths from Windows devices** flyout page in the **File path exclusion** field, enter `C:\FilePathExclusionTest` then select the **+** button to the right. Select **Save** to save this entry.
 
 1. Back on the **Endpoint DLP settings** page, expand **Browser and domain restrictions to sensitive data** and select **+ Add or edit unallowed browsers**.
 
-1. On the **Add unallowed browsers** flyout page select the checkbox left of **Google Chrome** and select **Save**.
+1. On the **Add unallowed browsers** flyout page select the checkbox for **Google Chrome** and select **Save**.
 
-1. Back on the **Endpoint DLP settings** page, select the dropdown to the left of **Service domains** and change it from **Off** to **Block**.
+1. Back on the **Endpoint DLP settings** page, select the dropdown to for **Service domains** and change it from **Off** to **Block**.
 
 1. In the **Update cloud app mode** dialogue select **Yes** to activate the block mode.
 
 1. Under **Service domains** select **+ Add cloud service domain**.
 
-1. On the **Add cloud service domain** flyout page in the **Domain** field enter _dropbox.com_ then select the **+** to the right. Select **Save** to save this setting.
+1. On the **Add cloud service domain** flyout page in the **Domain** field enter `dropbox.com` then select the **+** to the right. Select **Save** to save this setting.
 
 1. Close the browser window.
 
@@ -162,26 +186,32 @@ You have now configured custom settings for your Endpoint DLP policies. Every po
 
 ## Task 5 - Configure Microsoft Purview Extension
 
-As Compliance Administrator you need to evaluate the new business requirement of rolling out the Chrome browser to several users for working with sensitive data. For this test, you will install the Google Chrome browser to Client 01 and then add the Purview Compliance Extension for Google manually from the Google web store.
+As Compliance Administrator you need to evaluate the new business requirement of rolling out the Chrome browser to several users for working with sensitive data. For this test, you'll install the Google Chrome browser to Client 01 and then add the **Microsoft Purview Compliance Extension for Google** manually from the Google web store.
 
 1. Open the Edge browser from the task bar.
 
 1. Navigate to the Google Chrome download at **`https://chrome.google.com`**.
 
-1. Select **Download Chrome** and select **Open file** below **Downloads** and **ChromeSetup.exe**.
+1. Select **Download Chrome** and select **Open file** from the **Downloads** notification for **ChromeSetup.exe**.
 
 1. Select **Yes** in the **User Account Control** dialog to install the Chrome browser.
 
-1. When the installation is finished and the **Welcome to Chrome** page is open, navigate to the Microsoft Purview Extension in the Chrome web store at:
+1. When the installation is finished, select **Don't sign in** on the **Sign in to Chrome** page.
 
-   ` https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco`
+1. Select **Skip** on the **Set your default browser** page.
+
+1. When the newly installed Chrome browser window opens, navigate to the Microsoft Purview Extension in the Chrome web store at:
+
+   `https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco`
 
 1. Verify you are on the extension page of **Microsoft Purview Extension** and select **Add to Chrome**.
 
-1. On the **Add "Microsoft Purview Extension"** window, select **Add extension**.
+1. On the **Add "Microsoft Purview Extension"?** window, select **Add extension**.
 
-1. Close the notification window and navigate to **`chrome://extensions`**.
+1. Close the notification for the extension being added to Chrome, then navigate to **`chrome://extensions`**.
 
 1. Validate the **Microsoft Purview Extension** is visible and activated.
+
+1. Close the Chrome browser window.
 
 You have successfully installed the Chrome browser and added the Microsoft Purview Extension to your client. The Chrome browser can now be used like the Edge browser to work with sensitive data and the previously configured Endpoint DLP policy also applies when using the Chrome browser.
