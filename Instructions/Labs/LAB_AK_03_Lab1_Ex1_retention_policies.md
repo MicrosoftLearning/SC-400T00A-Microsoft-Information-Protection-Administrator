@@ -205,7 +205,7 @@ Now, you'll create an adaptive retention policy for the finance and legal depart
    - Leave the default **is equal to** value in the next field
    - Enter `Legal` as the **Value**
 
-1. Add a second attribute by selecting **+ Add attribute** on the **Create the query to define users** page. In the new field under the one we just configured, configure these values: For the **Query operator**, **Attribute**, **Operator**, and **Value** input:
+1. Add a second attribute by selecting **+ Add attribute** on the **Create the query to define users** page. In the new field under the one we just configured, configure these values:
 
    - Select the dropdown for the query operator and update it from And to **Or**
    - Select the **Attribute** dropdown then select **Department**
