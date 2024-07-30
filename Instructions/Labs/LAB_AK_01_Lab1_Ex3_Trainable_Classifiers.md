@@ -11,7 +11,7 @@ Contoso Ltd. needs to ensure that financial documents and reports stored in the 
 **Tasks**:
 
 - Create a trainable classifier
-- Publish a trainable classifier
+- Review test results
 
 ## Task 1 – Create a trainable classifier
 

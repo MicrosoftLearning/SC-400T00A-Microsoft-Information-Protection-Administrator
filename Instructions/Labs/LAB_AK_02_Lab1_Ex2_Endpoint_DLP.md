@@ -8,6 +8,14 @@ lab:
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. For this reason, you decide to not only implement Microsoft 365 DLP policies but extend this protection to devices in your organization.
 
+**Tasks**:
+
+- Enable device onboarding
+- Onboard a device to Endpoint DLP
+- Create an endpoint DLP policy
+- Configure Endpoint DLP settings
+- Configure Microsoft Purview extension
+
 ## Task 1 – Enable device onboarding
 
 In this task, you'll enable device onboarding for your organization.
@@ -152,7 +160,7 @@ In this task, you will create a Data Loss Prevention (DLP) policy in the Microso
 
 You have successfully activated the Endpoint DLP Policy. This policy will prevent the sharing of sensitive information with generative AI platforms, ensuring that sensitive data such as driver's license numbers and personal details are protected from unauthorized access or exposure.
 
-## Task 4 - Configure Endpoint DLP Settings
+## Task 4 - Configure endpoint DLP settings
 
 In this task, you will configure a file path exclusion to a folder on your Windows 11 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
 
@@ -184,7 +192,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
 
-## Task 5 - Configure Microsoft Purview Extension
+## Task 5 - Configure Microsoft Purview extension
 
 As Compliance Administrator you need to evaluate the new business requirement of rolling out the Chrome browser to several users for working with sensitive data. For this test, you'll install the Google Chrome browser to Client 01 and then add the **Microsoft Purview Compliance Extension for Google** manually from the Google web store.
 
