@@ -184,7 +184,7 @@ Now, you'll create an adaptive retention policy for the finance and legal depart
 
 1. Open Microsoft Edge and navigate to **`https://purview.microsoft.com`**. Verify you're still logged in with Joni's account, then select the **Settings** card. If it isn't visible, select **View all solutions** then select the **Settings** card under **Core**.
 
-1. On the **Settings** page, expand **Roles and scopes** from the left sidebar, then select **Adaptive scopes** In the **Microsoft Purview** portal on the left navigation pane expand **Roles & scopes** then select **Adaptive scopes**.
+1. On the **Settings** page, expand **Roles and scopes** from the left sidebar, then select **Adaptive scopes** In the **Microsoft Purview** portal on the left sidebar expand **Roles & scopes** then select **Adaptive scopes**.
 
 1. On the **Adaptive scopes** page select **+ Create scope**.
 

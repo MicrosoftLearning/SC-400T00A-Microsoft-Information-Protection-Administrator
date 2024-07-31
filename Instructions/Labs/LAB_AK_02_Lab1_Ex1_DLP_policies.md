@@ -37,7 +37,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. Select the **View all solutions** card, then select the **Data Loss Prevention** card in the **Data Security** section.
 
-1. On the left navigation pane, select **Policies**.
+1. On the left sidebar, select **Policies**.
 
 1. On the **Policies** page, select **+ Create policy** to start the configuration for creating a new data loss prevention policy.
 
@@ -200,7 +200,7 @@ In this task, you'll activate the **Credit Card DLP Policy** you created in simu
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **View all solutions** > **Data Loss Prevention** then select **Policies** from the left navigation pane.
+1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **View all solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 
 1. On the  **Policies** page select the checkbox for the **Credit Card DLP Policy** and select **Edit policy** to open the policy configuration.
 
@@ -238,7 +238,7 @@ You want to use file policies in Microsoft 365 Defender to protect files in your
 
 1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft 365 Defender portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. On the left navigation pane, expand **System** then select **Settings**.
+1. On the left sidebar, expand **System** then select **Settings**.
 
 1. On the **Settings** page select **Cloud Apps**.
 
@@ -305,7 +305,7 @@ Your company uses Power Automate flows to share data between SharePoint Online a
 
 1. In **Microsoft Edge**, navigate to **`https://admin.powerplatform.microsoft.com`** and log into the Power Platform admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. In the **Power Platform admin center**, in the left navigation pane, select the drop-down for **Policies**, then select **Data policies**.
+1. In the **Power Platform admin center**, in the left sidebar, select the drop-down for **Policies**, then select **Data policies**.
 
 1. On the **Data policies** page, select **+ New Policy**.
 

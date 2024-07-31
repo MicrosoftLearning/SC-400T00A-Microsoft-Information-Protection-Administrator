@@ -299,7 +299,7 @@ Several violations of personal information leakage happened when users sent out 
 
 1. The Microsoft Purview portal should still be to the EDM classifiers page in Microsoft Edge. If not, in Microsoft Edge, navigate to `https://purview.microsoft.com` > **View all solutions** > **Information protection**.
 
-1. In the left navigation pane, expand **Classifiers** then select **Sensitive info types**.
+1. In the left sidebar, expand **Classifiers** then select **Sensitive info types**.
 
 1. Select **+ Create sensitive info type** to open the configuration for a new sensitive information type.
 

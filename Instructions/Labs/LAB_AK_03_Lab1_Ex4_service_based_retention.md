@@ -23,7 +23,7 @@ To prevent data loss, you'll place a mailbox hold on Alex Wilber's account.
 
 1. Close all tip windows if any appear.
 
-1. In the Exchange Admin Center, in the left navigation pane, expand **Recipients** then select **Mailboxes**.
+1. In the Exchange Admin Center, in the left sidebar, expand **Recipients** then select **Mailboxes**.
 
 1. Select  **Alex Wilber** from the list of mailboxes, and a fly-out panel on the right displaying Alex's mailbox settings will appear.
 

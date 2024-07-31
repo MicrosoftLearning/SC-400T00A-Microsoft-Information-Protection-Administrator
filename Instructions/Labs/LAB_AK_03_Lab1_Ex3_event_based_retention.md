@@ -12,7 +12,7 @@ In this exercise you will assume the role of Joni Sherman, a Compliance Administ
 
 In this step, you'll create a retention label and an event type. The event type will trigger the retention period. Any content that has the retention label applied to it for that specific event type will have the retention actions from the label enforced on it.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin**.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
@@ -51,7 +51,9 @@ In this step, you'll create a retention label and an event type. The event type 
 
 1. Select **Next**.
 
-1. On the **Choose what happens during the retention period** page, select **Retain items even if users delete**, then select **Next**.
+1. On the **Choose what happens during the retention period** page, select **Mark items as a record**, and select the option for **Unlock this record by default**.
+
+1. Select **Next**.
 
 1. On the **Choose what happens after the retention period** page, select **Delete items automatically**, then select **Next**.
 
@@ -65,7 +67,7 @@ You have successfully created an event-based retention label.
 
 In this task, you will publish the Project Asset retention label, making it available for users to apply to relevant documents in SharePoint and OneDrive.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft Purview as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft Purview as **Joni Sherman**.
 
 1. You should still be on the **File plan** page within Microsoft Purview. If not, navigate to `https://purview.microsoft.com`, then select **Solutions** > **Records Management** > **File plan**.
 
@@ -104,7 +106,7 @@ You have successfully published the retention label for project assets.
 
 In this task, you'll apply the Project Asset retention label to a document and assign an asset ID, which will be used to trigger the retention period once the related project event occurs.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. You should still be on the **File plan** page within Microsoft Purview. Select meatball menu in the top-left corner, then select **SharePoint** from the sub-menu.
 
@@ -128,7 +130,7 @@ You've successfully applied the Project Asset label and assigned an Asset ID to 
 
 In this task, you'll create a specific event to mark the closure of a project, triggering the retention period for all labeled documents.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`**, then select **Solutions** > **Records Management** from the left sidebar.
 
@@ -163,7 +165,7 @@ You have successfully triggered an event and started the retention period for al
 
 To verify that the retention period you specified started, you need to try to delete the file.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
 

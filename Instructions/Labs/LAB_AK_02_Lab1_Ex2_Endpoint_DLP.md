@@ -26,7 +26,7 @@ In this task, you'll enable device onboarding for your organization.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`**, then select the **Settings** card.
 
-1. In the left navigation pane, expand **Device onboarding** then select **Devices**.
+1. In the left sidebar, expand **Device onboarding** then select **Devices**.
 
 1. On the **Devices** page, select **Turn on device onboarding** to enable the solution for your tenant.
 
@@ -46,7 +46,7 @@ In this task, you will use the local script option to onboard a Windows 11 devic
 
 1. Select the **View all solutions** card, then select **Settings** under **Core**.
 
-1. On the left navigation pane, expand **Device onboarding**, then select **Onboarding**.
+1. On the left sidebar, expand **Device onboarding**, then select **Onboarding**.
 
 1. On the **Device onboarding** page, in the navigation pane, select **Onboarding**.
 
@@ -168,7 +168,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page for data loss prevention. Select **Solutions**, then select **Settings** under the **Core** sections to get to Microsoft Purview settings.
 
-1. On the settings page, select **Data Loss Prevention** from the left navigation pane.
+1. On the settings page, select **Data Loss Prevention** from the left sidebar.
 
 1. The **Data Loss Prevention settings** page should open to the **Endpoint DLP settings**.
 

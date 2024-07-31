@@ -30,7 +30,7 @@ In this task, you'll assign the Compliance Admin role to Joni Sherman.
 
 1. Select the **Settings** card.
 
-1. On the left navigation pane, expand **Roles and scopes** then select **Role groups**.
+1. On the left sidebar, expand **Roles and scopes** then select **Role groups**.
 
 1. On the **Role groups for Microsoft Purview solutions** select **Compliance Administrator**.
 

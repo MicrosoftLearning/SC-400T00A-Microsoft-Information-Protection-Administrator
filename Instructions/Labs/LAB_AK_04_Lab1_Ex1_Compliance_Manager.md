@@ -18,47 +18,56 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd., responsible
 
 As part of your responsibilities, you need to conduct a compliance assessment specifically focused on GLBA requirements within the Microsoft 365 environment. The assessment will involve evaluating the current compliance posture, identifying any potential compliance gaps, and implementing appropriate measures to address them.
 
+**Tasks**:
+
+- Assign compliance manager permissions
+- Explore compliance manager
+- Create an assessment
+- Assign improvement action
+- Act on improvement action
+- Manually update improvement action
+
 ## Task 1 - Assign Compliance manager permissions
 
 In this task you will grant Joni the required permissions to create assessments using Compliance Manager. You will also grant Megan the necessary permissions to act on improvement actions if they are assigned to her.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
-1. In **Microsoft Edge**, select the address bar, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, select the address bar, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. On the left navigation pane, expand the dropdown for **Roles & scopes** and select **Permissions**.
+1. On the left sidebar, select **Settings**.
 
-1. On the **Permissions** page select **Roles** under **Microsoft Purview solutions**.
+1. On the **Setting** page, on the left sidebar, expand **Roles and scopes**, then select **Role groups**.
 
-1. On the **Role groups for Microsoft Purview solutions** select **Compliance Manager Administrators**.
+1. On the **Role groups for Microsoft Purview solutions**, search for `Compliance Manager`, then select **Compliance Manager Administrators**.
 
-1. On the **Compliance Manager Administrators** flyout page on the right, select **Edit**.
+1. On the **Compliance Manager Administrators** flyout panel on the right, select **Edit** to start the configuration to manage this role group.
 
-1. In the **Compliance Manager Administrators** wizard, on the **Edit members of the role group** page, select **+ Choose users**.
+1. On the **Edit members of the role group** page, select **+ Choose users**.
 
-1. On the **Choose users** page, search for _Joni_, then select the checkbox next to **Joni Sherman** and select the **Select** button at the bottom of the page.
+1. On the **Choose users** page, search for `Joni`, then select the checkbox for **Joni Sherman**. Select the **Select** button at the bottom of the panel.
 
 1. Back on the **Edit members of the role group** page, select **Next**.
 
 1. On the **Review the role group and finish** select **Save**.
 
-1. You should now have a message displaying **You successfully updated the role group**. Select **Done**.
+1. On the **You successfully updated the role group** page, select **Done**.
 
 1. Back on the **Role groups for Microsoft Purview solutions** select **Compliance Manager Contributors**.
 
-1. On the **Compliance Manager Contributors** flyout page on the right, select **Edit**.
+1. On the **Compliance Manager Contributors** flyout panel on the right, select **Edit**.
 
-1. In the **Compliance Manager Contributors** wizard, on the **Edit members of the role group** page, select **+ Choose users**.
+1. On the **Edit members of the role group** page, select **+ Choose users**.
 
-1. On the **Choose users** page, search for _Megan_, then select the checkbox next to **Megan Bowen** and select the **Select** button at the bottom of the page.
+1. On the **Choose users** page, search for `Megan`, then select the checkbox for **Megan Bowen**. Select the **Select** button at the bottom of the panel.
 
 1. Back on the **Edit members of the role group** page, select **Next**.
 
 1. On the **Review the role group and finish** select **Save**.
 
-1. You should now have a message displaying **You successfully updated the role group**. Select **Done**.
+1. On the **You successfully updated the role group** page, select **Done**.
 
-1. Log out of the MOD Administrator account and close all windows.
+1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then selecting **Sign out**.
 
 In this task, you granted Joni the necessary permissions to create assessments using Compliance Manager and also assigned Megan the appropriate permissions to act on improvement actions when assigned to her.
 

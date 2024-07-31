@@ -96,7 +96,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. In the Microsoft Purview portal, select the **Information Protection** card.
 
-1. On the **Microsoft Information Protection** page, on the left navigation pane, select **Sensitivity labels**.
+1. On the **Microsoft Information Protection** page, on the left sidebar, select **Sensitivity labels**.
 
 1. On the **Sensitivity labels** page select **+ Create a label**.
 
