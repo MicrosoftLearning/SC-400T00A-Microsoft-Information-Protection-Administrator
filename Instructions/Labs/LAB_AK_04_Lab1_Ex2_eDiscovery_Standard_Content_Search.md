@@ -8,13 +8,45 @@ lab:
 
 You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Currently, Contoso Ltd. is dealing with a wrongful termination lawsuit filed by a former employee. As part of your responsibility, you are entrusted with the task of preserving the necessary electronic data relevant to the case. To accomplish this, you will use eDiscovery (Standard) to identify and secure the relevant information. By using eDiscovery techniques, you'll make sure that Contoso Ltd. can meet its legal obligations by preserving and accessing the necessary electronic evidence for the lawsuit.
 
-## Task 1 - Create an eDiscovery (Standard) Case
+## Task 1 – Assign permissions for eDiscovery
+
+In this task, you'll assign permissions to Joni for eDiscovery.
+
+1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+
+1. In the left sidebar, select **Settings**.
+
+1. On the **Settings** page, expand **Roles and Scopes** then select **Role groups**.
+
+1. On the **Role groups for Microsoft Purview solutions** page, search for `eDiscovery`, then select **eDiscovery Manager**.
+
+1. On the **eDiscovery Manager** fly-out panel, select **Edit**.
+
+1. On the **Manage eDiscovery Manager** page, select **Choose users**.
+
+1. On the **Choose users** flyout page, search for `Joni`, then select the checkbox for **Joni Sherman**.Select the **Select** button at the bottom of the panel.
+
+1. Back on the **Manage eDiscovery Manager** page, select **Next**.
+
+1. On the **Manage eDiscovery Administrator** page, select **Next**.
+
+1. On the **Review the role group and finish** page select **Save**.
+
+1. On the **You successfully updated the role group**, select **Done**.
+
+1. Sign out of the MOD Administrator account by selecting the **MA** icon on the top right of the window, then select **Sign out**.
+
+You have successfully granted your compliance administrator permission to export search results and perform records management tasks. It can take up to 60 minutes until the permissions are applied to the user, but you can proceed to the next task.
+
+## Task 2 - Create an eDiscovery (Standard) Case
 
 In this task, you will create an eDiscovery (Standard) case as Joni Sherman.
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Select the drop down for **eDiscovery** from the left navigation pane, then select **Standard**.
 

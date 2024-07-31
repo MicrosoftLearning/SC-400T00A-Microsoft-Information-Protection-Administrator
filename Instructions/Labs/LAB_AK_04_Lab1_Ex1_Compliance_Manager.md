@@ -248,4 +248,6 @@ Upon completing the creation and activation of the new DLP policy for **U.S. Gra
 
 1. On the top right of the **Use default DLP policies for US Gramm Leach Bliley Act** improvement action page, select **Save** to save all changes made to this improvement action.
 
+1. Sign out of Joni Sherman's account by selecting the user image in the upper right corner and select **Sign out**.
+
 You have successfully updated the improvement action.
