@@ -10,9 +10,9 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd. tasked to co
 
 **Tasks**:
 
-- Grant access to DLP reports
-- Review DLP data in the activity explorer
-- Explore DLP data using PowerShell
+1. Grant access to DLP reports
+1. Review DLP data in the activity explorer
+1. Explore DLP data using PowerShell
 
 ## Task 1 - Grant access to DLP reports
 

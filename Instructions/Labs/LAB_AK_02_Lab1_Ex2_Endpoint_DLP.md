@@ -10,11 +10,11 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 **Tasks**:
 
-- Enable device onboarding
-- Onboard a device to Endpoint DLP
-- Create an endpoint DLP policy
-- Configure Endpoint DLP settings
-- Configure Microsoft Purview extension
+1. Enable device onboarding
+1. Onboard a device to Endpoint DLP
+1. Create an endpoint DLP policy
+1. Configure Endpoint DLP settings
+1. Configure Microsoft Purview extension
 
 ## Task 1 – Enable device onboarding
 

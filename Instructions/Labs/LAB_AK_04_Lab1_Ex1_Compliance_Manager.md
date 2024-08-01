@@ -20,12 +20,12 @@ As part of your responsibilities, you need to conduct a compliance assessment sp
 
 **Tasks**:
 
-- Assign Compliance Manager permissions
-- Explore Compliance Manager
-- Create an assessment
-- Assign improvement action
-- Act on improvement action
-- Manually update improvement action
+1. Assign Compliance Manager permissions
+1. Explore Compliance Manager
+1. Create an assessment
+1. Assign improvement action
+1. Act on improvement action
+1. Manually update improvement action
 
 ## Task 1 - Assign Compliance Manager permissions
 

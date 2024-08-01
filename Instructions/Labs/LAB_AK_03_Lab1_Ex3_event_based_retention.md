@@ -8,6 +8,12 @@ lab:
 
 In this exercise you will assume the role of Joni Sherman, a Compliance Administrator for Contoso Ltd. Your organization is based in Texas and wants to implement retention policies to retain content belonging to specific projects for 5 years after they close.
 
+1. Create event-driven retention label and event type
+1. Publish event-driven retention label
+1. Apply label and add an asset ID
+1. Create specific event
+1. Observe results of event trigger
+
 ## Task 1 – Create event-driven retention label and event type
 
 In this step, you'll create a retention label and an event type. The event type will trigger the retention period. Any content that has the retention label applied to it for that specific event type will have the retention actions from the label enforced on it.

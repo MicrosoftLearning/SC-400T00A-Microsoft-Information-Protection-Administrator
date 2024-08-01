@@ -10,12 +10,12 @@ In this exercise, you will assume the role of Joni Sherman, a System Administrat
 
 **Tasks**:
 
-- Create retention labels with file plan
-- Publish retention labels
-- Publish auto-apply retention labels
-- Apply retention labels in Outlook
-- Apply retention labels in SharePoint
-- Apply retention labels in OneDrive
+1. Create retention labels with file plan
+1. Publish retention labels
+1. Publish auto-apply retention labels
+1. Apply retention labels in Outlook
+1. Apply retention labels in SharePoint
+1. Apply retention labels in OneDrive
 
 ## Task 1 – Create retention labels
 

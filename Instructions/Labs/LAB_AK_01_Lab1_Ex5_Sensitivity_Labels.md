@@ -10,11 +10,11 @@ Joni Sherman, the System Administrator for Contoso Ltd., is implementing a sensi
 
 **Tasks**:
 
-- Enable support for sensitivity labels
-- Create sensitivity labels
-- Publish sensitivity labels
-- Work with sensitivity labels
-- Configure auto labeling
+1. Enable support for sensitivity labels
+1. Create sensitivity labels
+1. Publish sensitivity labels
+1. Work with sensitivity labels
+1. Configure auto labeling
 
 ## Task 1 Enable support for sensitivity labels
 

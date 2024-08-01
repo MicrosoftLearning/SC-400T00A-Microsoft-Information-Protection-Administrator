@@ -17,15 +17,15 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 **Tasks**:
 
-- Create a DLP policy in simulation mode
-- Modify a DLP policy
-- Create a DLP policy in PowerShell
-- Test your DLP policy
-- Activate a policy in simulation mode
-- Modify policy priority
-- Enable file monitoring in Microsoft 365 Defender
-- Create a file policy for Microsoft 365 Defender
-- Create a DLP policy for Power Platform
+1. Create a DLP policy in simulation mode
+1. Modify a DLP policy
+1. Create a DLP policy in PowerShell
+1. Test your DLP policy
+1. Activate a policy in simulation mode
+1. Modify policy priority
+1. Enable file monitoring in Microsoft 365 Defender
+1. Create a file policy for Microsoft 365 Defender
+1. Create a DLP policy for Power Platform
 
 ## Task 1 – Create a DLP policy in simulation mode
 

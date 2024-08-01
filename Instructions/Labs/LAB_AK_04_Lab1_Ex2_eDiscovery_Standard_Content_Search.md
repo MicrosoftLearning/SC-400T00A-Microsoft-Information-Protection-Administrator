@@ -8,6 +8,16 @@ lab:
 
 You are Joni Sherman, the Compliance Administrator for Contoso Ltd. The company is currently involved in a wrongful termination lawsuit filed by a former employee. As the Compliance Administrator, it's your responsibility to ensure that all relevant electronic data is preserved and made accessible to meet legal obligations. In this exercise, you'll use eDiscovery (Standard) and content search to manage the case effectively, ensuring that Contoso Ltd. can provide the necessary electronic evidence for the lawsuit.
 
+**Tasks**:
+
+1. Assign permissions for eDiscovery
+1. Create an eDiscovery (Standard) case
+1. Create an eDiscovery (Standard) hold
+1. Perform search & purge on mailboxes
+1. Create an eDiscovery (Standard) search
+1. Export search results and reports
+1. Close the eDiscovery (Standard) case
+
 ## Task 1 – Assign permissions for eDiscovery
 
 In this task, you will assign the necessary eDiscovery permissions to your account, Joni Sherman. These permissions will enable you to manage and export eDiscovery data as required for the wrongful termination case.

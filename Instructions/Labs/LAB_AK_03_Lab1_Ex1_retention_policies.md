@@ -18,11 +18,11 @@ In this lab, you are Joni Sherman, a Compliance Administrator at Contoso Ltd. in
 
 **Tasks**:
 
-- Create a company-wide retention policy
-- Create a location-based retention policies with filter
-- Create a retention policy with PowerShell
-- Create a retention policy with an adaptive scope
-- Test the adaptive scope policy
+1. Create a company-wide retention policy
+1. Create a location-based retention policies with filter
+1. Create a retention policy with PowerShell
+1. Create a retention policy with an adaptive scope
+1. Test the adaptive scope policy
 
 ## Task 1 – Create a company-wide retention policy
 

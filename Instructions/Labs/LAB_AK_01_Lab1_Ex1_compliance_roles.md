@@ -17,8 +17,8 @@ As the recently hired Compliance Administrator for Contoso Ltd., you (Joni Sherm
 
 **Tasks**:
 
-- Assign Compliance Roles
-- Explore the Microsoft Purview portal
+1. Assign Compliance Roles
+1. Explore the Microsoft Purview portal
 
 ## Task 1 – Assign Compliance Roles
 

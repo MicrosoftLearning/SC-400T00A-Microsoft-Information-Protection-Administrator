@@ -10,11 +10,11 @@ To ensure secure communication within Contoso Ltd., you need to configure and te
 
 **Tasks**:
 
-- Verify Azure RMS functionality
-- Modify default branding template
-- Test default branding template
-- Create custom branding template
-- Test the custom branding template
+1. Verify Azure RMS functionality
+1. Modify default branding template
+1. Test default branding template
+1. Create custom branding template
+1. Test the custom branding template
 
 ## Task 1 – Verify Azure RMS functionality
 

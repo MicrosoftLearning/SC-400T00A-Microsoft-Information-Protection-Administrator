@@ -11,11 +11,11 @@ Contoso Ltd. previously had issues with employees accidentally sending out perso
 
 **Tasks**:
 
-- Create custom sensitive information types
-- Create EDM-based classification information type
-- Create EDM-based classification data source
-- Create keyword dictionary
-- Work with custom sensitive information types
+1. Create custom sensitive information types
+1. Create EDM-based classification information type
+1. Create EDM-based classification data source
+1. Create keyword dictionary
+1. Work with custom sensitive information types
 
 ## Task 1 – Create custom sensitive information types
 
