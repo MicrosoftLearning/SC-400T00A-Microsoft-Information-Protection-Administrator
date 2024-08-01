@@ -25,9 +25,7 @@ In this task, you'll create retention labels for VAT returns and supporting docu
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. In the **Microsoft Purview** portal, select **View all solutions**.
-
-1. In the **Risk & Compliance** section, select the **Records Management** card.
+1. In the **Microsoft Purview** portal, on the left sidebar, select **Solutions**, then select **Records Management**.
 
 1. On the **Records Management** page, in the left sidebar select **File plan**.
 

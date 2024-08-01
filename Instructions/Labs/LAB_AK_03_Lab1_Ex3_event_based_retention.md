@@ -122,7 +122,9 @@ In this task, you'll apply the Project Asset retention label to a document and a
 
    >**Note**: Retention labels might take 1-2 days to appear in SharePoint. If the **Project Asset** label isn't available during this task, you can revisit and apply the label later.
 
-1. In the newly appeared **Asset ID** enter **NewProductLaunch** and close the right-side menu by selecting **X** in the top right corner.
+1. In the newly appeared **Asset ID** field enter **`NewProductLaunch`** and close the right-side menu by selecting **X** in the top right corner.
+
+   ![Screenshot showing an event-based retention label applied with an asset ID.](../Media/event-based-retention-with-asset-id.png)
 
 You've successfully applied the Project Asset label and assigned an Asset ID to a document. This setup will initiate the retention process when the project closure event occurs.
 
@@ -149,9 +151,9 @@ In this task, you'll create a specific event to mark the closure of a project, t
 
 1. On the **Choose an event type** page, select **Project Closure**, then select **Add**.
 
-1. Select **Next**.
+1. Select **Next** on the fly-out panel.
 
-1. On the **Event settings** page, set **Asset IDs for items in SharePoint and OneDrive** to **NewProductLaunch**.
+1. On the **Event settings** page, set **Asset IDs for items in SharePoint and OneDrive** to **`NewProductLaunch`**.
 
 1. Select today's date for **When did this event occur?**, then select **Next**.
 
@@ -167,16 +169,18 @@ To verify that the retention period you specified started, you need to try to de
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
+1. In Microsoft Edge, you should still be on the **Events** page for records management in the Microsoft Purview portal.
 
 1. In the top left corner select the nine dots and under **Apps** select **SharePoint**.
 
-1. Search for _Brand_ in the search bar on the top, then select the **Brand** SharePoint page from the search results.
+1. Search for `Brand` in the search bar on the top, then select the **Brand** SharePoint page from the search results.
 
 1. In the top navigation pane, select **Documents**.
 
-1. On the **Documents** page, select **Customer Product Survey.xlsx** by selecting the checkbox to the left of it. Select the horizontal ellipses, **...**.
+"1. On the **Documents** page, select the checkbox for **Customer Product Survey.xlsx**, then select the horizontal ellipses, **...** to open the action menu"
 
-1. In the context menu select **Delete** and observe the results.
+1. From the action menu, select **Delete** and observe the results. You should be blocked from deleting this file due to policy.
 
-You have successfully confirmed that the retention period on the document has started. If you can still delete the document the synchronization period for the event has not been completed and the triggering of the retention policy is still in progress. As with other Retention Labels, this process can take up to 7 days to complete.
+   ![Screenshot showing a file being blocked due to a retention label.](../Media/retention-label-blocked-delete.png)
+
+You have successfully confirmed that the retention period on the document has started. If you can still delete the document the synchronization period for the event has not been completed and the triggering of the retention policy is still in progress. As with other Retention Labels, this process can take up to 1-2 days to complete.
