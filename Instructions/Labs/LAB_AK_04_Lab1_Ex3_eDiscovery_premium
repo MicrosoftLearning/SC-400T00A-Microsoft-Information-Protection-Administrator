@@ -99,17 +99,16 @@ With custodians added, you can now run a collection estimate to get an overview 
    - Exchange mailboxes
    - Exchange public folders
 
+1. Under **Additional search options**, select the checkboxes for:
+
+   - Guest mailboxes
+   - Include group mailboxes in search scope
+
 1. Select **Next**.
 
-1. On the **Define your search query** page, use the query builder to build a search  to find content relevant to the case:
+1. On the **Define your search query** page, select the option to use the **KQL editor**. In the KQL box, enter:
 
-`(Subject:“confidential” OR Subject:“intellectual property” OR ConversationBody:“confidential” OR ConversationBody:“intellectual property” OR ConversationBody:“trade secret” OR Subject:“trade secret”) AND (From:“@contoso.com” OR To:“@contoso.com”)`
-
-   - Use the **AND** operator to search for **Keywords** that are **Equal** to `legal`.
-   - Select **Add a subgroup**.
-   - Use the **OR** operator to search for **Keywords** that are **Equal** to `contract`.
-
-    >![Screenshot showing the query builder in eDiscovery Premium.](./Media/ediscovery-query-builder.png)
+   `(Subject:"confidential" OR ConversationBody:"confidential" OR Subject:"secret" OR ConversationBody:"secret") AND (From:"@contoso.com" OR To:"@contoso.com")`
 
 1. Select **Next**.
 1. On the **Review your collection and create it** page, select **Submit**, then select **Done** on the **New collection created** page.
