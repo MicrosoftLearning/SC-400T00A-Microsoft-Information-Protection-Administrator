@@ -4,7 +4,7 @@ lab:
     module: 'Module 3 - Implement Data Lifecycle and Records Management'
 ---
 
-# Lab 3 - Exercise 2 - Implement Retention Labels
+# Lab 3 - Exercise 2 - Implement retention labels
 
 In this exercise, you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd., based in Sudbury, England. The company is focused on adhering to strict compliance and data retention standards, particularly concerning financial records. To ensure these records are managed systematically and efficiently, you will implement a file plan that includes creating and applying retention labels for critical documents, such as Value Added Tax (VAT) returns and credit card receipts. This will help Contoso Ltd. meet both legal and internal compliance requirements.
 
@@ -17,7 +17,7 @@ In this exercise, you will assume the role of Joni Sherman, a System Administrat
 1. Apply retention labels in SharePoint
 1. Apply retention labels in OneDrive
 
-## Task 1 – Create retention labels
+## Task 1 – Create retention labels with file plan
 
 In this task, you'll create retention labels for VAT returns and supporting documents, as well as for credit card receipts. These labels will be part of a comprehensive file plan to manage and secure these documents according to the company's compliance requirements.
 

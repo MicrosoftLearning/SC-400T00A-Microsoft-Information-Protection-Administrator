@@ -4,14 +4,14 @@ lab:
     module: 'Module 2 - Implement Data Loss Prevention'
 ---
 
-# Lab 2 - Exercise 2 - Manage Endpoint DLP
+# Lab 2 – Exercise 2 – Manage endpoint DLP
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. For this reason, you decide to not only implement Microsoft 365 DLP policies but extend this protection to devices in your organization.
 
 **Tasks**:
 
 1. Enable device onboarding
-1. Onboard a device to Endpoint DLP
+1. Onboard a device to endpoint DLP
 1. Create an endpoint DLP policy
 1. Configure Endpoint DLP settings
 1. Configure Microsoft Purview extension
@@ -36,7 +36,7 @@ In this task, you'll enable device onboarding for your organization.
 
 You have now enabled device onboarding and can start to onboard devices to be protected with Endpoint DLP policies. The process of enabling the feature might take up to 30 minutes, but you can proceed with the next task as it's not dependent on this.
 
-## Task 2 - Onboard a device to Endpoint DLP
+## Task 2 – Onboard a device to endpoint DLP
 
 In this task, you will use the local script option to onboard a Windows 11 device to allow it to be protected by Endpoint DLP policies.
 
@@ -84,7 +84,7 @@ In this task, you will use the local script option to onboard a Windows 11 devic
 
 You have successfully onboarded a device and joined it to Microsoft Entra ID to be protected by endpoint DLP policies.
 
-## Task 3 - Create an endpoint DLP policy
+## Task 3 – Create an endpoint DLP policy
 
 In this task, you will create a Data Loss Prevention (DLP) policy in the Microsoft Purview portal to prevent sensitive information from being shared with generative AI platforms on Windows 11 devices. This policy will help ensure that sensitive customer data, such as driver's license numbers and personal information, is not accidentally or intentionally shared with AI platforms, protecting the organization's data integrity.
 
@@ -160,7 +160,7 @@ In this task, you will create a Data Loss Prevention (DLP) policy in the Microso
 
 You have successfully activated the Endpoint DLP Policy. This policy will prevent the sharing of sensitive information with generative AI platforms, ensuring that sensitive data such as driver's license numbers and personal details are protected from unauthorized access or exposure.
 
-## Task 4 - Configure endpoint DLP settings
+## Task 4 – Configure endpoint DLP settings
 
 In this task, you will configure a file path exclusion to a folder on your Windows 11 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
 
@@ -192,7 +192,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
 
-## Task 5 - Configure Microsoft Purview extension
+## Task 5 – Configure Microsoft Purview extension
 
 As Compliance Administrator you need to evaluate the new business requirement of rolling out the Chrome browser to several users for working with sensitive data. For this test, you'll install the Google Chrome browser to Client 01 and then add the **Microsoft Purview Compliance Extension for Google** manually from the Google web store.
 

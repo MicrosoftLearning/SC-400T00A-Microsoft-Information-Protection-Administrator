@@ -11,7 +11,7 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-# Lab 2 - Exercise 1 - Manage DLP Policies
+# Lab 2 – Exercise 1 – Manage DLP Policies
 
 You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company that offers driving instruction in the United States, and you need to make sure that sensitive customer information does not leave the organization.
 
@@ -100,7 +100,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 You have now created a DLP policy that scans for credit card numbers in Microsoft Teams chats and channels, allowing users to provide a business justification to override the policy.
 
-## Task 2 - Modify a DLP policy
+## Task 2 – Modify a DLP policy
 
 In this task, you'll modify the existing DLP policy created in the previous task to also scan emails for credit card information. This modification ensures that sensitive data is protected across more communication channels.
 
@@ -124,7 +124,7 @@ In this task, you'll modify the existing DLP policy created in the previous task
 
 You have successfully modified the DLP policy to include email scanning, enhancing the protection of sensitive information.
 
-## Task 3 - Create a DLP policy in PowerShell
+## Task 3 – Create a DLP policy in PowerShell
 
 In this task, you'll use PowerShell to create a DLP policy to protect Contoso employee IDs and prevent them from being shared via Exchange. This policy will notify users attempting to share this sensitive data and block the email if it contains Employee IDs.
 
@@ -160,7 +160,7 @@ In this task, you'll use PowerShell to create a DLP policy to protect Contoso em
 
 You have successfully created a DLP policy using PowerShell that scans for Contoso Employee IDs in Exchange.
 
-## Task 4 - Test your DLP Policy
+## Task 4 – Test your DLP Policy
 
 In this task you'll test the DLP policy that was created in the previous task.
 
@@ -194,7 +194,7 @@ In this task you'll test the DLP policy that was created in the previous task.
 
 You have successfully tested your DLP policy.
 
-## Task 5 - Activate a policy in simulation mode
+## Task 5 – Activate a policy in simulation mode
 
 In this task, you'll activate the **Credit Card DLP Policy** you created in simulation mode so it enforces its protective actions.
 
@@ -212,7 +212,7 @@ In this task, you'll activate the **Credit Card DLP Policy** you created in simu
 
 You have successfully activated the DLP policy, ensuring that any attempts to share credit card information are blocked and require a business justification.
 
-## Task 6 - Modify policy priority
+## Task 6 – Modify policy priority
 
 After creating two DLP policies, you want to make sure that the more restrictive policy is processed at a higher priority than the less restrictive policy. For this reason, you want to move the EmployeeID DLP Policy into the higher priority.
 
@@ -228,7 +228,7 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 You have successfully modified the policy priority, ensuring that the most restrictive DLP policy is enforced first when matching content.
 
-## Task 7- Enable file monitoring in Microsoft 365 Defender
+## Task 7 – Enable file monitoring in Microsoft 365 Defender
 
 You want to use file policies in Microsoft 365 Defender to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft 365 Defender can scan files in your organization.
 
@@ -248,7 +248,7 @@ You want to use file policies in Microsoft 365 Defender to protect files in your
 
 You successfully enabled file monitoring in Microsoft 365 Defender and can now scan files for sensitive content using file policies.
 
-## Task 8 - Create a file policy for Microsoft 365 Defender
+## Task 8 – Create a file policy for Microsoft 365 Defender
 
 In this task, you'll create a file policy in Microsoft 365 Defender to scan files in OneDrive and SharePoint Online for credit card information. The policy will automatically quarantine files containing sensitive data
 
@@ -297,7 +297,7 @@ In this task, you'll create a file policy in Microsoft 365 Defender to scan file
 
 You have successfully created a file policy that scans and quarantines files with credit card information in OneDrive and SharePoint.
 
-## Task 9 - Create a DLP policy for Power Platform
+## Task 9 – Create a DLP policy for Power Platform
 
 Your company uses Power Automate flows to share data between SharePoint Online and Salesforce. In this task, you will create a DLP policy for Power Platform that allows your existing flows to keep working but prevents the creation of flows that will share data between SharePoint Online and Apps defined as non-business.
 

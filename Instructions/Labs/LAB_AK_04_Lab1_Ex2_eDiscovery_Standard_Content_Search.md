@@ -4,7 +4,7 @@ lab:
     module: 'Module 4 - Monitor and investigate data and activities by using Microsoft Purview'
 ---
 
-# Lab 4 - Exercise 2 - eDiscovery (Standard) and Content search
+# Lab 4 - Exercise 2 - Investigate a case with eDiscovery (Standard) and content search
 
 You are Joni Sherman, the Compliance Administrator for Contoso Ltd. The company is currently involved in a wrongful termination lawsuit filed by a former employee. As the Compliance Administrator, it's your responsibility to ensure that all relevant electronic data is preserved and made accessible to meet legal obligations. In this exercise, you'll use eDiscovery (Standard) and content search to manage the case effectively, ensuring that Contoso Ltd. can provide the necessary electronic evidence for the lawsuit.
 
@@ -50,7 +50,7 @@ In this task, you will assign the necessary eDiscovery permissions to your accou
 
 You have successfully assigned the necessary eDiscovery permissions to Joni's account.
 
-## Task 2 - Create an eDiscovery (Standard) case
+## Task 2 – Create an eDiscovery (Standard) case
 
 Next, you'll create an eDiscovery (Standard) case for the wrongful termination lawsuit. This case will serve as the central repository for all activities and data related to the lawsuit.
 
@@ -87,7 +87,7 @@ You have now successfully created an eDiscovery (Standard) case titled "Wrongful
 
 In Task 2 you will create an eDiscovery (Standard) hold as part of the "Wrongful Termination Case" previously created. This hold preserves all relevant electronic data related to the Contoso Ltd. wrongful termination lawsuit.
 
-1. You should still be logged into Microsoft Purview with Joni's account, and still be on the **Settings** page of the Wrongful Termination Case in eDiscovery (Standard). If not, navigate to `https://purview.microsoft.com`, and login as Joni Sherman. Select **Solutions** > **eDiscovery** > **eDiscovery (Standard)** > **Wrongful Termination Case**.
+1. You should still be logged into Microsoft Purview with Joni's account, and still be on the **Settings** page of the Wrongful Termination Case in eDiscovery (Standard). If not, navigate to `https://purview.microsoft.com`, and login as Joni Sherman. Select ***Solutions** > **eDiscovery** > **Standard Cases** > **Wrongful Termination Case**.
 
 1. Select the **Hold** tab from the top navigation bar.
 
@@ -199,7 +199,7 @@ You have successfully created the **Wrongful Termination Search** using the KQL 
 
 In this task, you'll export the search results and generate detailed reports. These exports and reports will be crucial for reviewing and analyzing the collected data to support the wrongful termination case.
 
-1. You should still be logged into Microsoft Purview with Joni's account, and still be on the **Searches** page of the Wrongful Termination Case in eDiscovery (Standard). If not, navigate to `https://purview.microsoft.com`, and login as Joni Sherman. Select **Solutions** > **eDiscovery** > **eDiscovery (Standard)** > **Wrongful Termination Case**.
+1. You should still be logged into Microsoft Purview with Joni's account, and still be on the **Searches** page of the Wrongful Termination Case in eDiscovery (Standard). If not, navigate to `https://purview.microsoft.com`, and login as Joni Sherman. Select ***Solutions** > **eDiscovery** > **Standard Cases** > **Wrongful Termination Case**.
 
 1. On the **Searches** page, select the field (not the checkbox) for the **Wrongful Termination Search**.
 
@@ -305,7 +305,7 @@ You have successfully exported the search results and generated the necessary re
 
 In this final task, you'll close the eDiscovery case for the wrongful termination lawsuit. This step shows that all necessary data collection and review tasks are complete.
 
-1. You should still be logged into Microsoft Purview with Joni's account, and still be on the **Exports** page of the Wrongful Termination Case in eDiscovery (Standard). If not, navigate to `https://purview.microsoft.com`, and login as Joni Sherman. Select **Solutions** > **eDiscovery** > **eDiscovery (Standard)** > **Wrongful Termination Case**.
+1. You should still be logged into Microsoft Purview with Joni's account, and still be on the **Exports** page of the Wrongful Termination Case in eDiscovery (Standard). If not, navigate to `https://purview.microsoft.com`, and login as Joni Sherman. Select ***Solutions** > **eDiscovery** > **Standard Cases** > **Wrongful Termination Case**.
 
 1. Select the **Home** tab, then select **x Close case**.
 

@@ -4,7 +4,7 @@ lab:
     module: 'Module 1 - Implement Information Protection'
 ---
 
-# Lab 1 - Exercise 5 - Manage Sensitivity Labels
+# Lab 1 - Exercise 5 - Manage sensitivity labels
 
 Joni Sherman, the System Administrator for Contoso Ltd., is implementing a sensitivity labeling plan to ensure that all employee documents in the HR department are appropriately labeled according to the company's information protection policies. Contoso Ltd. is based in Rednitzhembach, Germany, and aims to comply with internal data handling standards and regional regulations.
 
@@ -16,7 +16,7 @@ Joni Sherman, the System Administrator for Contoso Ltd., is implementing a sensi
 1. Work with sensitivity labels
 1. Configure auto labeling
 
-## Task 1 Enable support for sensitivity labels
+## Task 1 – Enable support for sensitivity labels
 
 In this task, you'll install the necessary modules and enable support for sensitivity labels on your tenant.
 

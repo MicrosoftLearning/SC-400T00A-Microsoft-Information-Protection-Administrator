@@ -5,7 +5,7 @@ lab:
 ---
 
 
-# Lab 1 - Exercise 2 - Manage Sensitive Information Types
+# Lab 1 - Exercise 2 - Manage sensitive information types
 
 Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To prevent this, you need to create a custom sensitive information type to identify employee IDs in emails and documents.
 
@@ -15,7 +15,7 @@ Contoso Ltd. previously had issues with employees accidentally sending out perso
 1. Create EDM-based classification information type
 1. Create EDM-based classification data source
 1. Create keyword dictionary
-1. Work with custom sensitive information types
+1. Test custom sensitive information types
 
 ## Task 1 – Create custom sensitive information types
 
@@ -356,9 +356,9 @@ Several violations of personal information leakage happened when users sent out 
 
 You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate.
 
-## Task 5 – Work with custom sensitive information types
+## Task 5 – Test custom sensitive information types
 
-Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern. In this task, you'll test the custom sensitive information types to ensure they recognize the desired patterns.
+Custom sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern. In this task, you'll test the custom sensitive information types to ensure they recognize the desired patterns.
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 

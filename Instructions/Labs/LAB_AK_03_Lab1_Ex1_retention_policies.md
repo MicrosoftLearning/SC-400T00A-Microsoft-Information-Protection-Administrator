@@ -12,16 +12,16 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-# Lab 3 - Exercise 1 - Configure Retention Policies
+# Lab 3 - Exercise 1 - Configure retention policies
 
 In this lab, you are Joni Sherman, a Compliance Administrator at Contoso Ltd. in Texas. Your task is to implement retention policies to comply with state regulations, which allow records to be deleted after three years. You'll configure various retention policies across the organization to ensure data is managed and retained according to these legal requirements.
 
 **Tasks**:
 
 1. Create a company-wide retention policy
-1. Create a location-based retention policies with filter
+1. Create a Teams retention policy with specific user selection
 1. Create a retention policy with PowerShell
-1. Create a retention policy with an adaptive scope
+1. Create an adaptive retention policy for legal and retail documents
 1. Test the adaptive scope policy
 
 ## Task 1 – Create a company-wide retention policy
@@ -132,7 +132,7 @@ Next, you'll create a retention policy specifically for Microsoft Teams, applyin
 
 You have successfully configured a retention policy for Microsoft Teams, ensuring that channel messages and specific user chats are retained for three years.
 
-## Task 3 – Create Retention Policy via PowerShell
+## Task 3 – Create retention policy with PowerShell
 
 In this task, you'll create the same retention policies using PowerShell, demonstrating how to automate the policy setup process.
 
@@ -268,7 +268,7 @@ Now, you'll create an adaptive retention policy for the finance and legal depart
 
 ou have successfully applied an adaptive scope to a retention policy, covering legal and retail department documents for five years.
 
-## Task 5 – Test adaptive scope policy
+## Task 5 – Test the adaptive scope policy
 
 In this final task, you'll verify the users affected by the adaptive scope and test the new retention policy to ensure it is functioning as expected.
 

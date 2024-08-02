@@ -12,7 +12,7 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-# Lab 4 - Exercise 1 - Explore Compliance Manager
+# Lab 4 – Exercise 1 – Explore Compliance Manager
 
 You are Joni Sherman, the Compliance Administrator for Contoso Ltd., responsible for configuring and maintaining compliance within the organization's Microsoft 365 tenant. Contoso Ltd. has offices that operate in the financial sector and is subject to various regulatory requirements, including the Gramm-Leach-Bliley Act (GLBA) in the United States.
 
@@ -27,7 +27,7 @@ As part of your responsibilities, you need to conduct a compliance assessment sp
 1. Act on improvement action
 1. Manually update improvement action
 
-## Task 1 - Assign Compliance Manager permissions
+## Task 1 – Assign Compliance Manager permissions
 
 In this task you will grant Joni the required permissions to create assessments using Compliance Manager. You will also grant Megan the necessary permissions to act on improvement actions if they are assigned to her.
 
@@ -71,7 +71,7 @@ In this task you will grant Joni the required permissions to create assessments 
 
 In this task, you granted Joni the necessary permissions to create assessments using Compliance Manager and also assigned Megan the appropriate permissions to act on improvement actions when assigned to her.
 
-## Task 2 - Explore Compliance Manager
+## Task 2 – Explore Compliance Manager
 
 In this task, you will explore the functionalities of Compliance Manager within the Microsoft Purview compliance portal.
 
@@ -97,7 +97,7 @@ In this task, you will explore the functionalities of Compliance Manager within 
 
 In this task, you explored the functionalities of Compliance Manager within the Microsoft Purview compliance portal, including reviewing the compliance overview, improvement actions, solutions, and assessments, gaining insights into key features and capabilities.
 
-## Task 3 - Create an assessment
+## Task 3 – Create an assessment
 
 1. You should still be logged in with Joni's account and logged into **Compliance Manager** within the Microsoft Purview portal.
 
@@ -125,7 +125,7 @@ In this task, you explored the functionalities of Compliance Manager within the 
 
 You have successfully created the GLBA Compliance Assessment within Compliance Manager, enabling you to assess Contoso Ltd.'s compliance with the Gramm-Leach-Bliley Act (GLBA) in Microsoft 365.
 
-## Task 4 - Assign improvement action
+## Task 4 – Assign improvement action
 
 In this task, you will create a new assessment within Compliance Manager to evaluate Contoso Ltd.'s compliance with the Gramm-Leach-Bliley Act (GLBA).
 
@@ -145,7 +145,7 @@ In this task, you will create a new assessment within Compliance Manager to eval
 
 1. On the dropdown, under _Suggested users_ select **Megan Bowen** to assign this improvement action to Megan, then select **Save** on the top right of the **Use default DLP policies for US Gramm Leach Bliley Act** page. You should see a message indicating that your action details were saved.
 
-## Task 5 - Act on improvement action
+## Task 5 – Act on improvement action
 
 In this task, you will review and act upon the assigned improvement action in Compliance Manager.
 
@@ -210,7 +210,7 @@ In this task, you will review and act upon the assigned improvement action in Co
 
 Upon completing the creation and activation of the new DLP policy for **U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced**, you will have satisfied the requirements of the assigned improvement action.
 
-## Task 6 - Manually update improvement action
+## Task 6 – Manually update improvement action
 
 1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin**.
 

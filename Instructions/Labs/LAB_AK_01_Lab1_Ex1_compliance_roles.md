@@ -11,16 +11,16 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-# Lab 1 - Exercise 1 - Manage Compliance Roles
+# Lab 1 - Exercise 1 - Manage compliance roles
 
 As the recently hired Compliance Administrator for Contoso Ltd., you (Joni Sherman) need to ensure the new Microsoft 365 tenant complies with various legal and regulatory standards. Contoso Ltd. is expanding, and your role is crucial in maintaining compliance across different regions.
 
 **Tasks**:
 
-1. Assign Compliance Roles
+1. Assign compliance roles
 1. Explore the Microsoft Purview portal
 
-## Task 1 – Assign Compliance Roles
+## Task 1 – Assign compliance roles
 
 In this task, you'll assign the Compliance Admin role to Joni Sherman.
 

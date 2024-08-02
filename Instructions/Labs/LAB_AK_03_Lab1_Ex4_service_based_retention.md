@@ -4,7 +4,7 @@ lab:
     module: 'Module 3 - Implement Data Lifecycle and Records Management'
 ---
 
-# Lab 3 - Exercise 4 - Configure Service-based Retention
+# Lab 3 - Exercise 4 - Configure service-based retention
 
 Contoso Ltd. has recently experienced some internal challenges, and there is concern that a potentially disgruntled employee might attempt to delete critical company data. As Joni Sherman, the Compliance Admin for Contoso Ltd., you have been tasked with securing sensitive information and ensuring that no vital records are lost. The legal department has identified specific areas where data might be at risk, and your role is to implement measures to prevent data loss, particularly focusing on email communications and SharePoint documents.
 
