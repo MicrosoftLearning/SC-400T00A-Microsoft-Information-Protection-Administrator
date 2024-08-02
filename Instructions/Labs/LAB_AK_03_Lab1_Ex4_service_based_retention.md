@@ -10,8 +10,8 @@ Contoso Ltd. has recently experienced some internal challenges, and there is con
 
 **Tasks**:
 
-- Configure mailbox holds
-- Recover SharePoint documents
+1. Configure mailbox holds
+1. Recover SharePoint documents
 
 ## Task 1 – Configure mailbox holds
 
@@ -25,7 +25,7 @@ To prevent data loss, you'll place a mailbox hold on Alex Wilber's account.
 
 1. In the Exchange Admin Center, in the left sidebar, expand **Recipients** then select **Mailboxes**.
 
-1. Select  **Alex Wilber** from the list of mailboxes, and a fly-out panel on the right displaying Alex's mailbox settings will appear.
+1. Select  **Alex Wilber** from the list of mailboxes, and a flyout panel on the right displaying Alex's mailbox settings will appear.
 
 1. On **Alex Wilber**'s flyout page, select the **Others** tab.
 
@@ -50,9 +50,7 @@ In this task, you'll delete and restore a deleted document to make sure you can 
 
 1. In **Microsoft Edge**, navigate to **`https://www.office.com`** and log in Microsoft 365 as **Joni Sherman**.
 
-1. If a welcome screen is displayed, close it. If the Office 365 apps notification appears, also close it.
-
-1. In the Microsoft Office 365 landing page, select meatball menu in the top-left corner, then select **SharePoint** from the sub-menu.
+1. In the Microsoft Office 365 landing page, select the meatball menu in the top-left corner, then select **SharePoint** from the sub-menu.
 
    ![Screenshot showing where there ellipses is to display the action menu.](../Media/show-more-actions-sharepoint.png)
 

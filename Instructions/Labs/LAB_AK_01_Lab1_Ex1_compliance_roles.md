@@ -28,17 +28,17 @@ In this task, you'll assign the Compliance Admin role to Joni Sherman.
 
 1. Open **Microsoft Edge** and navigate to the Microsoft Purview portal, `https://purview.microsoft.com`, and log in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. Select the **Settings** card.
+1. Select **Settings** from the left sidebar.
 
 1. On the left sidebar, expand **Roles and scopes** then select **Role groups**.
 
 1. On the **Role groups for Microsoft Purview solutions** select **Compliance Administrator**.
 
-1. On the **Compliance Administrator** fly-out page on the right, select **Edit** to edit this role group.
+1. On the **Compliance Administrator** flyout panel on the right, select **Edit** to edit this role group.
 
 1. On the **Edit members of the role group** page, select **Choose users**.
 
-1. On the **Choose users** fly-out page on the right, select the checkbox to the left of **Joni Sherman** then select the **Select** button at the bottom of the page.
+1. On the **Choose users** flyout panel on the right, select the checkbox to the left of **Joni Sherman** then select the **Select** button at the bottom of the page.
 
 1. Back on the **Edit members of the role group** page, select **Next**.
 

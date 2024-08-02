@@ -15,68 +15,78 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 As the Compliance Administrator for your organization, you are responsible for configuring Microsoft Communication Compliance to help ensure that your organization meets its compliance requirements. Microsoft Communication Compliance allows you to monitor communication activities in various channels, such as email, Microsoft Teams, and other chat and collaboration tools, to help detect and mitigate policy violations and other inappropriate behaviors.
 
-## Task 1: Assign Compliance Administrator Role
+**Tasks**:
+
+1. Assign Compliance Administrator Role
+1. Configure a Custom Policy
+1. Test your custom policy (Optional)
+1. Manage your communication compliance policy (Optional)
+1. Modify communication compliance policy
+
+## Task 1 – Assign Compliance Administrator Role
 
 In this exercise, you will assign the Communication Compliance role to Joni to grant access to perform communication compliance tasks in the Microsoft Purview portal.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In Microsoft Edge, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
+1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown.
+1. Select **Settings** from the left sidebar.
 
-1. On the **Permissions** page under **Microsoft Purview solutions**, select **Roles**.
+1. Expand **Roles and Scopes** then select **Role groups**.
 
 1. On the **Role groups for Microsoft Purview solutions** page select **Communication Compliance**.
 
-1. Select **Edit** from the **Communication Compliance** flyout page on the right.
+1. On the **Communication Compliance** flyout panel on the right, select **Edit**.
 
 1. On the **Edit members of the role group** page select **+ Choose users**.
 
-1. On the **Choose users** page select the check box next to Joni Sherman then select **Select**.
+1. On the **Choose users** flyout panel, search for `Joni` then select the checkbox for **Joni Sherman**.
+
+1. Select the **Select** button at the bottom of the panel.
 
 1. On the **Edit members of the role group** page select **Next**.
 
 1. On the **Review the role group and finish** page select **Save**.
 
-1. On the **You successfully updated the role group** page select **Done**.
+1. Once you have successfully added Joni to the role group, select **Done** on the **You successfully updated the role group** page.
 
-1. Sign out of the **MOD Administrator** account and close all browser windows.
+1. Sign out of the Mod Administrator account by selecting the MA icon on the top right of the window, then selecting **Sign out**.
 
 You have successfully assigned the Communication Compliance role to Joni Sherman, granting her access to perform communication compliance tasks in the Microsoft Purview portal.
 
 ## Task 2 – Configure a Custom Policy
 
-In this exercise, you will configure a custom policy in Microsoft Communication Compliance to monitor communications for sensitive financial information. Follow the steps to configure the policy:
+In this exercise, you will configure a custom policy in Microsoft Communication Compliance to monitor communications for sensitive financial information.
 
-1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Select **Communication compliance** from the left navigation pane.
-
-1. Close any tip menus that appear.
+1. On left sidebar, select **Solutions** then select **Communication Compliance**.
 
 1. On the **Communication compliance** page, from the top navigation bar,  select **Policies**.
 
-1.From the **Policies** tab select **+ Create policy** then select **Custom policy** from the drop down.
+1. On the left sidebar, select **Policies**.
+
+1. On the **Policies** page, select **+ Create policy**, then select **Custom policy**.
 
 1. On the **Name and describe your policy** enter:
 
-    - **Name**: Detect Financial Secrets
-    - **Description** Detection of sharing financial secrets
+    - **Name**: `Detect Financial Secrets`
+    - **Description** `Detection of sharing financial secrets`
 
 1. Select **Next**.
 
 1. On the **Choose users and reviews** page, under **Choose users and groups**, leave **All users** selected.
 
-1. In the **Reviewers** field select **Joni Sherman** and **MOD Administrator**, then select **Next**.
+1. In the **Reviewers** field, enter and select **`Joni Sherman`** and **`MOD Administrator`**, then select **Next**.
 
-1. On the **Choose locations to detect communications** page select **Exchange**, then select **Next**.
+1. On the **Choose locations to detect communications** page select **Exchange**. Leave all other locations deselected, then select **Next**.
 
 1. On the **Choose conditions and review percentage** page under **Communication direction** leave defaults selected.
 
 1. Under **Condition** select **+ Add condition**, then select **Message contains any of these words**.
 
-1. In the field under **Message contains any of these words** enter _secret,secrets_.
+1. In the field under **Message contains any of these words** enter `secret,secrets`.
 
     >**Note:** To apply the policy based on specific words or phrases in a message, enter them separated by commas. No spaces between comma-separated items. Use quotation marks for phrases of two or more words. Each word or phrase is applied independently (only one word is needed to trigger the policy).
 
@@ -84,25 +94,25 @@ In this exercise, you will configure a custom policy in Microsoft Communication 
 
 1. On the **Review and finish** page, select **Create policy**.
 
-1. On the **Your policy was created** page, select **Done**.
+1. Once your policy has been successfully created, select **Done** on the **Your policy was created** page.
 
 1. Your communication compliance policy has been created.
 
+1. Log out of Joni's account and close all browser windows.
+
     >**Note:** Make sure you give your policies time to activate before testing the policy. Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take approximately 48 hours to fully process in a policy.
 
-## Task 3 – Test your custom policy
+## Task 3 – Test your custom policy (Optional)
 
 In this task, you will verify the effectiveness of your configured custom policy. Through testing different scenarios, you will assess the policy's ability to identify and flag sensitive financial information. These tests provide valuable real-world insights into the policy's behavior.
 
->**Note:** Make sure you give your policies time to activate before testing the policy. Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take approximately 48 hours to fully process in a policy.
-
-1. Log out of Joni's account and close all browser windows.
+>**Note:** Make sure you give your policies time to activate before testing the policy. Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Viva Engage, and third-party platforms can take approximately 48 hours to fully process in a policy.
 
 1. In **Microsoft Edge**, navigate to **`https://outlook.office.com`** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Select **New mail** from the upper left side part of Outlook on the web.
+1. Select **New mail** from the upper left side side of Outlook on the web.
 
-1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **New Secret Message** to the subject line and **My super-secret message.** to the body.
+1. In the **To** line enter your personal or other third-party email address that isn't in the tenant domain. Enter **`New Secret Message`** in the subject line and **My super-secret message.** in the body.
 
 1. Select **Send** to send the message.
 
@@ -112,27 +122,27 @@ In this task, you will verify the effectiveness of your configured custom policy
 
 1. Select **Send**
 
-1. In the **To** line enter **Joni Sherman** and select the suggested email address. Enter **Surprise party!** in the subject line, and **Joni! We're planning a couple of big secrets around the office! Don't forget Debra's baby shower and Megan's surprise birthday parties this month!** in the body of the email.
+1. In the **To** line enter **`Joni Sherman`** and select the suggested email address. Enter **`Surprise party!`** in the subject line, and **`Joni! We're planning a couple of big secrets around the office! Don't forget Debra's baby shower and Megan's surprise birthday parties this month!`** in the body of the email.
 
 1. Select **Send**
 
-1. Lynne wants to send one last email. In the **To** line enter **Debra Berger** and select the suggested email address. Enter **Debra! I just heard a HUGE financial secret about Northwind's acquisition! Let's get together at lunch to discuss.** in the body of the email.
+1. Lynne wants to send one last email. In the **To** line enter **`Debra Berger`** and select the suggested email address. Enter **`Debra! I just heard a HUGE financial secret about Northwind's acquisition! Let's get together at lunch to discuss.`** in the body of the email.
 
 1. Select **Send**
 
-1. Logout of Lynne's account, and close all browser windows.
+1. Logout of Lynne's account and close all browser windows.
 
 You have successfully tested your custom policy to verify its effectiveness in identifying and flagging sensitive financial information.
 
-## Task 4 - Manage your communication compliance policy
+## Task 4 – Manage your communication compliance policy (Optional)
 
-In this task, you will manage your communication compliance policy in the Microsoft Purview portal.You will review and take action on the pending items for the **Detect Financial Secrets** policy to ensure your policy is working effectively to identify and handle any potential compliance issues.
+In this task, you will manage your communication compliance policy in the Microsoft Purview portal. You will review and take action on the pending items for the **Detect Financial Secrets** policy to ensure your policy is working effectively to identify and handle any potential compliance issues.
 
-1. In **Microsoft Edge**, navigate to **`https://compliance.microsoft.com`** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous task.
 
-1. Navigate to **Communication compliance** from the left navigation bar.
+1. Select **Solutions** from the left sidebar, then select **Communication Compliance**.
 
-1. Select **Policies**.
+1. Select **Policies** then select the **Detect Financial Secrets** policy.
 
 1. Review the **Items pending review** for the Detect Financial Secrets policy.
 
@@ -182,7 +192,7 @@ In this task, you will manage your communication compliance policy in the Micros
 
 You have successfully managed your communication compliance policy by reviewing and resolving pending items.
 
-## Task 5 - Modify communication compliance policy
+## Task 5 – Modify communication compliance policy
 
 In this task you will make modifications to your Communication compliance policy. You will fine-tune the policy settings and add new conditions to detect sensitive information to ensure your policy aligns with the compliance needs of Contoso Ltd.
 
@@ -190,7 +200,7 @@ In this task you will make modifications to your Communication compliance policy
 
 1. Select **Policies** from the top navigation pane.
 
-1. Select the check box next to the **Detect Financial Secrets** policy.
+1. Select the checkbox next to the **Detect Financial Secrets** policy.
 
 1. Select **Edit** from the top navigation pane.
 
@@ -204,7 +214,7 @@ In this task you will make modifications to your Communication compliance policy
 
 1. Under **Content contains any of these sensitive info types** select **Add** then select **Sensitive info types**.
 
-1. In the **Sensitive info types** pane search for **Credit Card Number** and select the check box next to this sensitive info type.
+1. In the **Sensitive info types** pane search for **Credit Card Number** and select the checkbox next to this sensitive info type.
 
 1. Select **Add** to add this sensitive info type to this condition then select **Next**.
 

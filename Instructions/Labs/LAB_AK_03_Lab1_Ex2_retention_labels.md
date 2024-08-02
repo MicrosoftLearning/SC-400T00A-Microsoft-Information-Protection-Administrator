@@ -42,11 +42,11 @@ In this task, you'll create retention labels for VAT returns and supporting docu
 1. On the **Define file plan descriptors for this label** page enter:
 
    - **Reference ID**: `VAT-001`
-   - **Business function/department**: Select **Choose** next to this field. In the **Business function/department** fly-out panel select **Finance**, then select **Choose** at the bottom of the panel.
-   - **Category**: Select **Choose** next to this field. In the **Category** fly-out panel, select **+ Create new category**. In the **Category** field, enter `Financial records`, then select **Add** at the bottom of the panel.
+   - **Business function/department**: Select **Choose** next to this field. In the **Business function/department** flyout panel select **Finance**, then select **Choose** at the bottom of the panel.
+   - **Category**: Select **Choose** next to this field. In the **Category** flyout panel, select **+ Create new category**. In the **Category** field, enter `Financial records`, then select **Add** at the bottom of the panel.
    - **Sub category**: Leave this field blank.
-   - **Authority type**: Select **Choose** next to this field. In the **Authority type** fly-out panel, select **Regulatory**, then select **Choose** at the bottom of the panel.
-   - **Provision/citation**: Select **Choose** next to this field. In the **Provision/citation** fly-out panel, select **Sarbanes-Oxley Act of 2002**, then select **Choose** at the bottom of the panel.
+   - **Authority type**: Select **Choose** next to this field. In the **Authority type** flyout panel, select **Regulatory**, then select **Choose** at the bottom of the panel.
+   - **Provision/citation**: Select **Choose** next to this field. In the **Provision/citation** flyout panel, select **Sarbanes-Oxley Act of 2002**, then select **Choose** at the bottom of the panel.
 
 1. Back on the **Define file plan descriptors for this label** page, select **Next**.
 
@@ -80,11 +80,11 @@ In this task, you'll create retention labels for VAT returns and supporting docu
 1. On the **Define file plan descriptors for this label** page enter:
 
    - **Reference ID**: `CC-002`
-   - **Business function/department**: Select **Choose** next to this field. In the **Business function/department** fly-out panel select **Sales**, then select **Choose** at the bottom of the panel.
-   - **Category**: Select **Choose** next to this field. In the **Category** fly-out panel select **Financial records**, then select **Choose** at the bottom of the panel.
-   - **Sub category**: Select **Choose** next to this field. In the **Sub category** fly-out panel, select **+ Create new subcategory**. In the **Sub category** field, enter `Receipts`, then select **Add** at the bottom of the panel.
-   - **Authority type**: Select **Choose** next to this field. In the **Authority type** fly-out panel, select **Business**, then select **Choose** at the bottom of the panel.
-   - **Provision/citation**: Select **Choose** next to this field. In the **Provision/citation** fly-out panel, select **Truth in Lending Act**, then select **Choose** at the bottom of the panel.
+   - **Business function/department**: Select **Choose** next to this field. In the **Business function/department** flyout panel select **Sales**, then select **Choose** at the bottom of the panel.
+   - **Category**: Select **Choose** next to this field. In the **Category** flyout panel select **Financial records**, then select **Choose** at the bottom of the panel.
+   - **Sub category**: Select **Choose** next to this field. In the **Sub category** flyout panel, select **+ Create new subcategory**. In the **Sub category** field, enter `Receipts`, then select **Add** at the bottom of the panel.
+   - **Authority type**: Select **Choose** next to this field. In the **Authority type** flyout panel, select **Business**, then select **Choose** at the bottom of the panel.
+   - **Provision/citation**: Select **Choose** next to this field. In the **Provision/citation** flyout panel, select **Truth in Lending Act**, then select **Choose** at the bottom of the panel.
 
 1. Back on the **Define file plan descriptors for this label** page, select **Next**.
 
@@ -207,7 +207,7 @@ Megan Bowen, a financial analyst at Contoso Ltd., needs to ensure that specific 
 
 1. In **Microsoft Edge**, navigate to **`https://outlook.office.com/`**. and login as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
 
-1. In Megan's inbox, select right-click the any email then select **Advanced actions** > **Assign policy** > **5 year delete** under the **Retention labels** section.
+1. In Megan's inbox, select right click the any email then select **Advanced actions** > **Assign policy** > **5 year delete** under the **Retention labels** section.
 
    This retention label assigns a retention period of 5 years to the chosen email. After the 5 year period, the item is deleted.
 
@@ -245,7 +245,7 @@ As a financial analyst, Megan Bowen manages sensitive documents in SharePoint. I
 
    ![Screenshot showing where to modify the label status of a document in SharePoint.](../Media/modify-label-status-sharepoint.png)
 
-1. On the **Apply Label** page, select the drop down for **Apply label** and change it from **None** to **VAT Returns and supporting documents (Retain for 7 years)**. Select **Save** to the right of the screen.
+1. On the **Apply Label** page, select the dropdown for **Apply label** and change it from **None** to **VAT Returns and supporting documents (Retain for 7 years)**. Select **Save** to the right of the screen.
 
    >**Note**: Retention labels might take 1-2 days to appear in SharePoint. If the **VAT Returns and Supporting Documents** label isn't available during this task, you can revisit and apply the label later.
 
@@ -259,7 +259,7 @@ Megan Bowen, while working remotely, stores critical financial documents in OneD
 
 1. You should still be logged into Outlook as Megan Bowen. Select the meatball menu in the top left, then select **OneDrive** to navigate to OneDrive.
 
-1. Select **My files** from the left sidebar. When the list of files appear, hover over **Annual Financial Report** and select the ellipses **...** for **More actions** to open the menu to show more options.
+1. Select **My files** from the left sidebar. When the list of files appears, hover over **Annual Financial Report** and select the ellipses **...** for **More actions** to open the menu to show more options.
 
 1. From the action menu, select **Details** to open the detail panel on the right.
 

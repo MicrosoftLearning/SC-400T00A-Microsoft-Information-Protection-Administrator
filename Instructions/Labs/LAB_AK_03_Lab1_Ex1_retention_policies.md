@@ -32,7 +32,7 @@ In this task, you'll set up a company-wide retention policy that covers key Micr
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. Select **View all solutions** then select **Data Lifecycle Management** in the **Data Governance** section.
+1. Select **Solutions** then select **Data Lifecycle Management**.
 
 1. On the **Data Lifecycle Management** page, on the left sidebar, expand **Policies** then select **Retention policies**.
 
@@ -72,7 +72,7 @@ In this task, you'll set up a company-wide retention policy that covers key Micr
 
 1. Once your policy is created select **Done** on the **You successfully created a retention policy** page.
 
-You have successfully created a retention policy that retains items across key Microsoft 365 locations for three years from the date of last modification. This policy can take up to 24 hours to be apply in your tenant, but you can proceed to the next step.
+You have successfully created a retention policy that retains items across key Microsoft 365 locations for three years from the date of last modification. This policy can take up to 24 hours to be applied in your tenant, but you can proceed to the next step.
 
 ## Task 2 – Create a Teams retention policy with specific user selection
 
@@ -80,7 +80,7 @@ Next, you'll create a retention policy specifically for Microsoft Teams, applyin
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft Purview as **Joni Sherman**.
 
-1. In Microsoft Edge, you should still be on the **Retention policies** page in the Microsoft Purview portal. If not, navigate to **`https://purview.microsoft.com`**, then select **View all solutions** and select **Data Lifecycle Management** under **Data Governance**. Select **Policies** > **Retention policies** from the left sidebar.
+1. In Microsoft Edge, you should still be on the **Retention policies** page in the Microsoft Purview portal. If not, navigate to **`https://purview.microsoft.com`**, then select **Solutions** and select **Data Lifecycle Management**. Select **Policies** > **Retention policies** from the left sidebar.
 
 1. On the **Retention policies** page, select **+ New retention policy**.
 
@@ -110,7 +110,7 @@ Next, you'll create a retention policy specifically for Microsoft Teams, applyin
 
     >**Note**: By adding these two users the setting for **Included** in **Teams chats** changes from *All teams* to *2 users*.
 
-1. Select **Done** at the bottom of the fly-out panel.
+1. Select **Done** at the bottom of the flyout panel.
 
 1. Back on the **Choose where to apply this policy** page select **Next**.
 
@@ -138,7 +138,7 @@ In this task, you'll create the same retention policies using PowerShell, demons
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. Open an elevated PowerShell window by right-clicking the Windows button in the task bar, then select **Terminal (Admin)**. Select **Yes** if the **User Account Control** dialogue pops up.
+1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**. Select **Yes** if the **User Account Control** dialogue pops up.
 
 1. Run the **Connect-IPPSSession** cmdlet to connect to the Security & Compliance Center in your tenant:
 
@@ -182,9 +182,9 @@ Now, you'll create an adaptive retention policy for the finance and legal depart
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. Open Microsoft Edge and navigate to **`https://purview.microsoft.com`**. Verify you're still logged in with Joni's account, then select the **Settings** card. If it isn't visible, select **View all solutions** then select the **Settings** card under **Core**.
+1. Open Microsoft Edge and navigate to **`https://purview.microsoft.com`**. Verify you're still logged in with Joni's account, then select **Settings** from the left sidebar.
 
-1. On the **Settings** page, expand **Roles and scopes** from the left sidebar, then select **Adaptive scopes** In the **Microsoft Purview** portal on the left sidebar expand **Roles & scopes** then select **Adaptive scopes**.
+1. On the **Settings** page, expand **Roles and scopes** from the left sidebar, then select **Adaptive scopes**.
 
 1. On the **Adaptive scopes** page select **+ Create scope**.
 
@@ -241,7 +241,7 @@ Now, you'll create an adaptive retention policy for the finance and legal depart
 
 1. On the **Choose adaptive policy scopes and locations** page select **+ Add scopes**.
 
-1. On the **Choose adaptive policy scopes** fly-out panel select the checkbox for **Legal Documents Retention** then select **Add** at the bottom of the panel.
+1. On the **Choose adaptive policy scopes** flyout panel select the checkbox for **Legal Documents Retention** then select **Add** at the bottom of the panel.
 
 1. Back on the **Choose locations to apply the policy** enable:
 
@@ -266,7 +266,7 @@ Now, you'll create an adaptive retention policy for the finance and legal depart
 
 1. Once your policy is created select **Done** on the **You successfully created a retention policy** page.
 
-ou have successfully applied an adaptive scope to a retention policy, covering legal and retail department documents for five years.
+You have successfully applied an adaptive scope to a retention policy, covering legal and retail department documents for five years.
 
 ## Task 5 – Test the adaptive scope policy
 
@@ -274,7 +274,7 @@ In this final task, you'll verify the users affected by the adaptive scope and t
 
 >**Note**: When you create and submit a retention policy, it can take up to seven days for the retention policy to be applied.
 
-1. Open an elevated PowerShell window by right-clicking the Windows button in the task bar, then select **Terminal (Admin)**. Select **Yes** if the **User Account Control** dialogue pops up.
+1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**. Select **Yes** if the **User Account Control** dialogue pops up.
 
 1. Run the **Connect-IPPSSession** cmdlet to the Security & Compliance Center in your tenant:
 

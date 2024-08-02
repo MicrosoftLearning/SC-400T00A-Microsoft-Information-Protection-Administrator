@@ -35,7 +35,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. Select the **View all solutions** card, then select the **Data Loss Prevention** card in the **Data Security** section.
+1. Select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
 1. On the left sidebar, select **Policies**.
 
@@ -86,7 +86,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. Under **Incident reports**, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.
 
-1. At the bottom of the **Create rule** fly-out page, select **Save**.
+1. At the bottom of the **Create rule** flyout panel, select **Save**.
 
 1. Back on the **Customize advanced DLP rules**, select **Next**.
 
@@ -106,7 +106,7 @@ In this task, you'll modify the existing DLP policy created in the previous task
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **View all solutions** > **Data Loss Prevention** > **Policies**.
+1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
 1. On the **Policies** page select the checkbox for the recently created **Credit Card DLP Policy**, then select **Edit policy** to open the policy configuration.
 
@@ -130,7 +130,7 @@ In this task, you'll use PowerShell to create a DLP policy to protect Contoso em
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
-1. Open an elevated PowerShell window by right-clicking the Windows button in the task bar, then select **Terminal (Admin)**.
+1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
 
 1. Run the **Connect-IPPSSession** cmdlet to connect to the Security & Compliance PowerShell:
 
@@ -200,7 +200,7 @@ In this task, you'll activate the **Credit Card DLP Policy** you created in simu
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **View all solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
+1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **Solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 
 1. On the  **Policies** page select the checkbox for the **Credit Card DLP Policy** and select **Edit policy** to open the policy configuration.
 
@@ -218,7 +218,7 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **View all solutions** > **Data Loss Prevention** > **Policies**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
 1. On the **Policies** page, select the **EmployeeID DLP Policy** DLP policy.
 
@@ -275,13 +275,13 @@ In this task, you'll create a file policy in Microsoft 365 Defender to scan file
 
 1. In the **Files matching all of the following** area, expand the dropdown menu **Public (Internet), External, Public**, and add **Internal**.
 
-    ![Screenshot showing the files matching drop down with the internal option added.](../Media/files-matching-internal.png)
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/files-matching-internal.png)
 
 1. In the **Inspection method** dropdown menu, select **Data Classification Service**.
 
 1. In the **Choose inspection type...** dropdown menu, select **Sensitive information type...**.
 
-1. On the **Select a sensitive information type** dialog, search for `Credit card`, then select the checkbox for **Credit Card Number**. 
+1. On the **Select a sensitive information type** dialog, search for `Credit card`, then select the checkbox for **Credit Card Number**.
 
 1. Select **Done** in the upper right corner of the **Select a sensitive information type** screen.
 

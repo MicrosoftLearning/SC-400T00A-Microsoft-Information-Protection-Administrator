@@ -91,7 +91,7 @@ In this task, you will explore the functionalities of Compliance Manager within 
 
 1. On the left sidebar, select **Assessments**. On this page, you'll see the **Data Protection Baseline for Microsoft 365**. This is a default baseline assessment Microsoft provides in Compliance Manager for Microsoft 365. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. Compliance Manager becomes more helpful as you add your own assessments to meet your organization's particular needs.
 
-1. Select the **Data Protection Baseline** assessment. You'll see a yellow bar prompting for an update to this assessment. On the left side of the page is the overview that includes **Details** and **About** information. Expand the **About** section and review the description about the Microsoft 35 data protection baseline. On the right side of the page, notice the information available on the progress tab and for the improvement actions. On the top of the page are tabs you can select view more detailed information on the **Controls**, **Your improvement actions**, and **Microsoft actions**. Explore these at will.
+1. Select the **Data Protection Baseline** assessment. On the left side of the page is the overview that includes **Details** and **About** information. Expand the **About** section and review the description about the Microsoft 35 data protection baseline. On the right side of the page, notice the information available on the progress tab and for the improvement actions. On the top of the page are tabs you can select view more detailed information on the **Controls**, **Your improvement actions**, and **Microsoft actions**. Explore these at will.
 
 1. On the left sidebar, select **Regulations**. On this page, you'll see the list of regulations available to your organization. You can create assessments for specific regulations to track your compliance against them.
 
@@ -107,7 +107,7 @@ In this task, you explored the functionalities of Compliance Manager within the 
 
 1. On the **Base your assessment on a regulation** page, select **Select regulation**.
 
-1. On the **Select regulation** fly-out panel, search for `Gramm`, then select the checkbox for  **Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**.
+1. On the **Select regulation** flyout panel, search for `Gramm`, then select the checkbox for  **Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy**.
 
 1. Select **Save** at the bottom of the panel.
 
@@ -232,17 +232,17 @@ Upon completing the creation and activation of the new DLP policy for **U.S. Gra
 
       ![Screenshot of Manage roles option](../Media/compliance-manager-automatic-manual.png)
 
-1. On the top right of the page, select **Edit details** to open the **Edit Action Details** fly-out panel.
+1. On the top right of the page, select **Edit details** to open the **Edit Action Details** flyout panel.
 
 1. Under the **Implementation** tab select the dropdown for **Implementation status** and change the status to **Implemented**.
 
 1. Under **Implementation date** change the date to today's date.
 
-1. Select the **Test and Verification** tab at the top of the fly-out panel.
+1. Select the **Test and Verification** tab at the top of the flyout panel.
 
-1. Under the **Test status** drop down, select **Not assessed**.
+1. Under the **Test status** dropdown, select **Not assessed**.
 
-1. Select **Save** at the bottom of the fly-out panel.
+1. Select **Save** at the bottom of the flyout panel.
 
    Your implementation status and test status should be updated on the improvement action page.
 

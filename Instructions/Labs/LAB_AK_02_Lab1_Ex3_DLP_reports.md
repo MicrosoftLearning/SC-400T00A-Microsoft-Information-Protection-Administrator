@@ -22,7 +22,7 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. Select the **Settings** card. If it isn't visible, select **View all solutions** then **Settings** under the **Core** section.
+1. Select **Settings** from the left sidebar.
 
 1. On the **Settings** page, expand **Roles and scopes** on the left sidebar, then select **Role groups**.
 
@@ -30,11 +30,11 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 1. On the **Edit members of the role group** page select **+ Choose users**.
 
-1. On the **Choose users** fly-out panel, search for `Megan` to find Megan Bowen's account. Select the checkbox for **Megan Bowen**'s account then select the **Select** button at the bottom of the panel.
+1. On the **Choose users** flyout panel, search for `Megan` to find Megan Bowen's account. Select the checkbox for **Megan Bowen**'s account then select the **Select** button at the bottom of the panel.
 
 1. Back on the **Edit members of the role group** page verify Megan's account is displayed, then select **Next**.
 
-1. On the **Review the role group and finish** select **Save**.
+1. On the **Review the role group and finish** page select **Save**.
 
 1. On the **You successfully updated the role group** page select **Done**.
 
@@ -50,7 +50,7 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
 
-1. Select the **Data Loss Prevention** card. If it isn't visible, select **View all solutions** then select **Data Loss Prevention** in the **Data Security** section.
+1. Select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
 1. In the left sidebar, select **Activity explorer**.
 
@@ -68,7 +68,7 @@ In this task, you will review DLP activities via PowerShell.
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. Open an elevated PowerShell window by right-clicking the Windows button in the task bar, then select **Terminal (Admin)**.
+1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
 
 1. Run the **Connect-IPPSSession** cmdlet to connect to the Information Protection PowerShell session:
 

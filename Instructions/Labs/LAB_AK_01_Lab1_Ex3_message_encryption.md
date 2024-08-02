@@ -1,10 +1,10 @@
 ---
 lab:
-    title: 'Exercise 4 - Manage Microsoft Purview Message Encryption'
+    title: 'Exercise 3 - Manage Microsoft Purview Message Encryption'
     module: 'Module 1 - Implement Information Protection'
 ---
 
-# Lab 1 - Exercise 4 - Manage Microsoft Purview Message Encryption
+# Lab 1 - Exercise 3 - Manage Microsoft Purview Message Encryption
 
 To ensure secure communication within Contoso Ltd., you need to configure and test Microsoft Purview Message Encryption. This includes modifying the default template and creating a new branding template for the finance department.
 
@@ -22,7 +22,7 @@ In this task, you'll verify the correct Azure RMS functionality of your tenant.
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
-1. Open an elevated PowerShell window by right-clicking the Windows button in the task bar, then select **Terminal (Admin)**.
+1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
 
 1. Confirm the **User Account Control** window with **Yes**.
 
@@ -44,7 +44,7 @@ In this task, you'll verify the correct Azure RMS functionality of your tenant.
 
 1. Close the PowerShell window.
 
-1. Open a regular PowerShell window, without elevation, right-clicking the Windows in the task bar, then select **Terminal**.
+1. Open a regular PowerShell window, without elevation, right clicking the Windows button in the task bar, then select **Terminal**.
 
 1. Run the **Connect-ExchangeOnline** cmdlet to use the Exchange Online PowerShell module and connect to your tenant:
 
@@ -118,7 +118,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin**.
 
-1. Open **Microsoft Edge** in an InPrivate window by right-clicking Microsoft Edge from the task bar and selecting **New InPrivate window**.
+1. Open **Microsoft Edge** in an InPrivate window by right clicking Microsoft Edge from the task bar and selecting **New InPrivate window**.
 
 1. Navigate to **`https://outlook.office.com`** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne's password was set in a previous exercise.
 
@@ -134,7 +134,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. Select **Send** to send the message. Leave the Outlook window open.
 
-1. Sign into your personal email account in a new window and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption might be processed automatically and you'll see the message automatically. If you sent the email to another email service like (@gmail.com), you might have to perform the next steps to process the encryption and read the message.
+1. Sign into your personal email account in a new window and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption might be processed automatically, and you'll see the message automatically. If you sent the email to another email service like (@gmail.com), you might have to perform the next steps to process the encryption and read the message.
 
     >**Note:** You might need to check your junk or spam folder for the message from Lynne Robbins.
 
@@ -228,7 +228,7 @@ To validate the new custom configuration, you need to use the account of Lynne R
 
 1. Go to your personal email portal and open the message with subject **Your one-time passcode to view the message**.
 
-1. Copy the passcode, paste it in to the portal and select **Continue**.
+1. Copy the passcode, paste it into the portal and select **Continue**.
 
 1. Review the encrypted message with custom branding. Close the window with your email account open.
 

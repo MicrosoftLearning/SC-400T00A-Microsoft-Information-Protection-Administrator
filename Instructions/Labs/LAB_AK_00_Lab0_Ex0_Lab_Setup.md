@@ -43,15 +43,15 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
    ![Screenshot showing the Reset password button in the Microsoft 365 admin center.](../Media/reset-password-button.png)
 
-1. In the **Reset Password** fly-out page on the right, ensure all options are deselected.
+1. In the **Reset Password** flyout page on the right, ensure all options are deselected.
 
    This will ensure that you can select a password for the three users being used for exercises, and that these passwords won't need to be reset when you first sign in.
 
 1. In the **Password** field, enter a password you can remember to reset the user passwords to be used in future exercises.
 
-1. At the bottom of the **Reset password** fly-out page, select the **Reset password** button.
+1. At the bottom of the **Reset password** flyout page, select the **Reset password** button.
 
-1. On the **Passwords have been reset** page, you should see the three user accounts that have been reset. At the bottom of this fly-out page, select **Close**.
+1. On the **Passwords have been reset** page, you should see the three user accounts that have been reset. At the bottom of this flyout page, select **Close**.
 
 You have successfully reset passwords for lab exercises.
 
@@ -67,11 +67,7 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 
     ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](../Media/welcome-purview-portal.png)
 
-1. Select the **Audit** card.
-
-   If you're unable to see the **Audit** card, select **View all solutions**, then select **Audit** under the **Core** section.
-
-    ![Screenshot showing the Audit card in the Microsoft Purview portal.](../Media/audit-card.png)
+1. Select **Solutions** from the left sidebar, then select **Audit**.
 
 1. On the **Search** page, select the **Start recording user and admin activity** bar to enable audit logging.
 
@@ -89,7 +85,7 @@ In this task, you'll enable the **Search by name** feature in Microsoft Teams fo
 
 1. In **Microsoft Edge**, navigate to **`https://admin.teams.microsoft.com`**.
 
-1. In the left navigation pane, under the **Teams** drop down, select **Teams settings**.
+1. In the left navigation pane, under the **Teams** dropdown, select **Teams settings**.
 
     ![Screenshot showing the Teams settings button in the Teams admin portal.](../Media/teams-settings.png)
 

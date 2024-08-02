@@ -38,11 +38,11 @@ In this step, you'll create a retention label and an event type. The event type 
 
 1. On the **Define label settings** page, select **Retain items forever or for a specific period**, then select **Next**.
 
-1. On the **Define the retention period** page select the drop down for **Retain items for**, then select **5 years**.
+1. On the **Define the retention period** page select the dropdown for **Retain items for**, then select **5 years**.
 
 1. Under the **Start the retention period based on** dropdown select **+ Create new event type**. This will start the event-based label configuration.
 
-1. On the **Name your event type** fly-out panel on the right, enter:
+1. On the **Name your event type** flyout panel on the right, enter:
 
     - **Name**: `Project Closure`
     - **Description**: `This event will be triggered when a project closes.`
@@ -157,7 +157,7 @@ In this task, you'll create a specific event to mark the closure of a project, t
 
 1. On the **Choose an event type** page, select **Project Closure**, then select **Add**.
 
-1. Select **Next** on the fly-out panel.
+1. Select **Next** on the flyout panel.
 
 1. On the **Event settings** page, set **Asset IDs for items in SharePoint and OneDrive** to **`NewProductLaunch`**.
 
@@ -165,7 +165,7 @@ In this task, you'll create a specific event to mark the closure of a project, t
 
 1. Review the **Finish** page then select **Submit**.
 
-1. On the **Your even has been created** page select **Done**.
+1. On the **Your event has been created** page select **Done**.
 
 You have successfully triggered an event and started the retention period for all documents with the Project Asset label and an Asset ID of NewProductLaunch.
 
@@ -183,7 +183,7 @@ To verify that the retention period you specified started, you need to try to de
 
 1. In the top navigation pane, select **Documents**.
 
-"1. On the **Documents** page, select the checkbox for **Customer Product Survey.xlsx**, then select the horizontal ellipses, **...** to open the action menu"
+1. On the **Documents** page, select the checkbox for **Customer Product Survey.xlsx**, then select the horizontal ellipses, **...** to open the action menu"
 
 1. From the action menu, select **Delete** and observe the results. You should be blocked from deleting this file due to policy.
 

@@ -24,7 +24,7 @@ In this task, you'll enable device onboarding for your organization.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`**, then select the **Settings** card.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`**, then select **Settings** from the left sidebar.
 
 1. In the left sidebar, expand **Device onboarding** then select **Devices**.
 
@@ -44,7 +44,7 @@ In this task, you will use the local script option to onboard a Windows 11 devic
 
 1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. Select the **View all solutions** card, then select **Settings** under **Core**.
+1. Select **Settings** from the left sidebar.
 
 1. On the left sidebar, expand **Device onboarding**, then select **Onboarding**.
 
@@ -56,7 +56,7 @@ In this task, you will use the local script option to onboard a Windows 11 devic
 
 1. Extract the zip-file to the **Desktop** of SC-400-CL1. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
 
-1. On the desktop right-click the **DeviceComplianceLocalOnboardingScript.cmd** file you just extracted and select **Show more options**, then select **Properties**.
+1. On the desktop right click the **DeviceComplianceLocalOnboardingScript.cmd** file you just extracted and select **Show more options**, then select **Properties**.
 
 1. Towards the bottom of the **General** tab of the properties window, in the **Security** section, select **Unblock**, then select **OK** to save this setting.
 
@@ -64,11 +64,11 @@ In this task, you will use the local script option to onboard a Windows 11 devic
 
 1. In the **Command Prompt** screen type **Y** to confirm, and then press Enter.
 
-1. When the script completes, you'll get a success message and a prompt to **Press any key to continue**. Press any key to close the command line window. It can take a minute to complete the onboarding.
+1. When the script is complete, you'll get a success message and a prompt to **Press any key to continue**. Press any key to close the command line window. It can take a minute to complete the onboarding.
 
 1. Open the start menu and search for `Access work or school`. Select **Access work or school** under **Best match**.
 
-1. In the **Access work or school** window, for **Add a work or school account** select **Connect**.
+1. In the **Access work or school** window for **Add a work or school account** select **Connect**.
 
 1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link and sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
@@ -92,7 +92,7 @@ In this task, you will create a Data Loss Prevention (DLP) policy in the Microso
 
 1. You should still be at the **Devices** page in the Microsoft Purview portal, logged in as Joni Sherman. Select the **Home** button on the top left of the screen. If you're not logged in, navigate to `https://purview.microsoft.com` and login as Joni Sherman. Joni's password was set in a previous exercise.
 
-1. In the Microsoft Purview portal, select **View all solutions** then select **Data Loss Prevention** under the **Data Security** section.
+1. In the Microsoft Purview portal, select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
 1. From the left, navigation pane, select **Policies** then select **+ Create policy**.
 
@@ -120,23 +120,23 @@ In this task, you will create a Data Loss Prevention (DLP) policy in the Microso
 
 1. In the newly opened **Content contains** area, select **Add** then select **Sensitive info types**.
 
-1. On the **Sensitive info types** fly-out page on the right, search for `U.S.` then select all United States related sensitive info types. Select **Add** at the bottom of the fly-out page.
+1. On the **Sensitive info types** flyout panel on the right, search for `U.S.` then select all United States related sensitive info types. Select **Add** at the bottom of the flyout panel.
 
 1. Scroll down to **Actions** and select the **+ Add an action** dropdown then select **Audit or restrict activities on devices**.
 
-1. In the newly opened **Audit or restrict activities on devices** area, in the **Service domain and browser activities** section, select the check box for **Upload to a restricted cloud service domain or access from an unallowed browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
+1. In the newly opened **Audit or restrict activities on devices** area, in the **Service domain and browser activities** section, select the checkbox for **Upload to a restricted cloud service domain or access from an unallowed browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
 
-1. In the **Sensitive service domain restrictions** fly-out page, select **+ Add group**.
+1. In the **Sensitive service domain restrictions** flyout panel, select **+ Add group**.
 
-1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the fly-out page.
+1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the flyout panel.
 
-1. Back on the **Sensitive service domain restrictions** page, ensure **Generative AI Websites** is listed, then select **Save** at the bottom of the fly-out page.
+1. Back on the **Sensitive service domain restrictions** page, ensure **Generative AI Websites** is listed, then select **Save** at the bottom of the flyout panel.
 
-1. Back on the **Create rule**, select the check box for **Paste to supported browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
+1. Back on the **Create rule**, select the checkbox for **Paste to supported browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
 
-1. In the **Sensitive service domain restrictions** fly-out page, select **+ Add group**.
+1. In the **Sensitive service domain restrictions** flyout panel, select **+ Add group**.
 
-1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the fly-out page.
+1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the flyout panel.
 
 1. Back on the **Create rule** in the **Service domain and browser activities** section, update the action for both **Upload to a restricted cloud service domain or access from an unallowed browsers** and **Paste to supported browsers** from **Audit only** to **Block**.
 
@@ -148,7 +148,7 @@ In this task, you will create a Data Loss Prevention (DLP) policy in the Microso
 
 1. Under **Microsoft 365 services** select the checkbox for **Notify users in Office 365 service with a policy tip**.
 
-1. Select **Save** at the bottom of the fly-out page.
+1. Select **Save** at the bottom of the flyout panel.
 
 1. Back on the **Customize advanced DLP rules**, select **Next**.
 
@@ -166,7 +166,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page for data loss prevention. Select **Solutions**, then select **Settings** under the **Core** sections to get to Microsoft Purview settings.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page for data loss prevention. Select **Settings** from the left sidebar.
 
 1. On the settings page, select **Data Loss Prevention** from the left sidebar.
 
@@ -190,7 +190,7 @@ In this task, you will configure a file path exclusion to a folder on your Windo
 
 1. Close the browser window.
 
-You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
+You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured, and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
 
 ## Task 5 – Configure Microsoft Purview extension
 
