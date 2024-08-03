@@ -110,23 +110,21 @@ In this task, you will verify the effectiveness of your configured custom policy
 
 1. In **Microsoft Edge**, navigate to **`https://outlook.office.com`** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Select **New mail** from the upper left side side of Outlook on the web.
+1. Select **New mail** in Outlook on the web.
 
-1. In the **To** line enter your personal or other third-party email address that isn't in the tenant domain. Enter **`New Secret Message`** in the subject line and **My super-secret message.** in the body.
+1. In the **To** line enter **`Joni Sherman`** and select the suggested email address. Enter **`New Secret Message`** in the subject line and **`My super-secret message.`** in the body of the email.
 
 1. Select **Send** to send the message.
 
-1. Once that message is sent, select **New mail** again from the upper left side part of Outlook on the web.
+1. Once that message is sent, select **New mail** again in Outlook on the web.
 
-1. In the **To** line enter **Megan Bowen** and select the suggested email address. Enter **Big secret!** in the subject line, and **We have a surprise baby shower coming for Debra! Keep it secret!** in the body of the email.
-
-1. Select **Send**
-
-1. In the **To** line enter **`Joni Sherman`** and select the suggested email address. Enter **`Surprise party!`** in the subject line, and **`Joni! We're planning a couple of big secrets around the office! Don't forget Debra's baby shower and Megan's surprise birthday parties this month!`** in the body of the email.
+1. In the **To** line enter **`Megan Bowen`** and select the suggested email address. Enter **`Big secret!`** in the subject line, and **`We have a surprise baby shower coming for Debra! Keep it secret!`** in the body of the email.
 
 1. Select **Send**
 
-1. Lynne wants to send one last email. In the **To** line enter **`Debra Berger`** and select the suggested email address. Enter **`Debra! I just heard a HUGE financial secret about Northwind's acquisition! Let's get together at lunch to discuss.`** in the body of the email.
+1. Lynne wants to send one last email. Select **New mail** in Outlook on the web.
+
+1. In the **To** line enter **`Debra Berger`** and select the suggested email address. In the subject line enter **`Northwind Acquisition`**, and enter **`Debra! I just heard a HUGE financial secret about Northwind's acquisition! Let's get together at lunch to discuss.`** in the body of the email.
 
 1. Select **Send**
 
@@ -144,11 +142,9 @@ In this task, you will manage your communication compliance policy in the Micros
 
 1. Select **Policies** then select the **Detect Financial Secrets** policy.
 
-1. Review the **Items pending review** for the Detect Financial Secrets policy.
+1. Select the **Pending** tab to review the pending items for the Detect Financial Secrets policy.
 
-    >**Note:** Please note that if the **Items pending review** count is 0, it might require additional time for your tests to be completely processed by the policy. Keep in mind that email messages can take approximately 24 hours to fully process within a policy.
-
-1. Select the **Detect Financial Secrets** policy to review the pending items. The three test emails will be in this view.
+    >**Note:** Please note that if the **Pending** count is 0, it might require additional time for your tests to be completely processed by the policy. Keep in mind that email messages can take approximately 24 hours to fully process within a policy.
 
 1. Select the item with the subject **Big Secret!**.
 
@@ -164,31 +160,32 @@ In this task, you will manage your communication compliance policy in the Micros
 
 1. Select **Notify** under the Northwind Acquisition item.
 
-1. In the **Send a notice pane** select the dropdown for **Chose a notice template**. Select **+Create a new notification** to create a new notice template.
+1. In the **Send a notice pane** select the dropdown for **Chose a notice template**. Select **+ Create a new notification** to create a new notice template.
 
-1. In the **Create a notice template** pane, enter **Offending message** in the **Template Name** field.
+1. In the **Create a notice template** panel, enter:
 
-1. In the **Send from:** field enter **Joni Sherman** and select the suggested user.
-
-1. In the **Subject** field enter **Offending message detected**. In the **Message body** enter **This is to notify an offending message was detected and will be escalated.**
+   - **Template Name**: `Offending message`
+   - **Send from:** `Joni Sherman`, then select **Joni Sherman**
+   - **Subject**: `Offending message detected`
+   - **Message body**: `This is to notify an offending message was detected and will be escalated.`
 
 1. Select **Create**.
 
-1. In the **Notice template Offending message was created** pane select **Close**.
+1. Once the template is successfully created, select **Close** on the **Notice template Offending message was created** panel.
 
-1. In the **Send a notice** pane under **Choose a notice template**, select the newly created **Offending message** notice template then select **Save**.
+1. In the **Send a notice** panel under **Choose a notice template**, select the newly created **Offending message** notice template then select **Save**.
 
-1. In the **Notification has been sent** pane select **Close**.
+1. In the **Notification has been sent** panel select **Close**.
 
 1. In the Detect Financial Secrets policy, select the item with the subject **Northwind Acquisition**.
 
 1. Select **Escalate** under the Northwind Acquisition item.
 
-1. In the **Escalate remediation for this item** select **MOD Administrator** as an additional reviewer. In the **Reason for escalation** field enter **Data leak plans detected.** then select **Escalate**.
+1. In the **Escalate remediation for this item** select **MOD Administrator** as an additional reviewer. In the **Reason for escalation** field enter **`Data leak plans detected.`** then select **Escalate**.
 
-1. In the **Escalation has been sent** pane select **Close**.
+1. In the **Escalation has been sent** panel select **Close**.
 
-1. Back in the view for the message for the Northwind Acquisition message, select **Tag as**. In the **Tag item** pane select **Non-compliant**. Enter **Non-compliant message** in the **Comment** field then select **Save**.
+1. Back in the view for the message for the Northwind Acquisition message, select **Tag as**. In the **Tag item** pane select **Non-compliant**. Enter **`Non-compliant message`** in the **Comment** field then select **Save**.
 
 You have successfully managed your communication compliance policy by reviewing and resolving pending items.
 
@@ -198,11 +195,11 @@ In this task you will make modifications to your Communication compliance policy
 
 1. You should still be logged in with Joni's account in **Communication compliance** in the Microsoft Purview compliance portal.
 
-1. Select **Policies** from the top navigation pane.
+1. Select **Policies** from the left sidebar.
 
-1. Select the checkbox next to the **Detect Financial Secrets** policy.
+1. Select the checkbox for the **Detect Financial Secrets** policy.
 
-1. Select **Edit** from the top navigation pane.
+1. Select **Edit** from the top navigation bar.
 
 1. On the **Name and describe your policy** page select **Next**.
 
@@ -210,13 +207,13 @@ In this task you will make modifications to your Communication compliance policy
 
 1. On the **Choose locations to detect communications** page select **Next**.
 
-1. On the **Choose conditions and review percentage** page select **+ Add Condition** then select **Content contains any of these sensitive info types**.
+1. On the **Choose conditions and review percentage** page select **+ Add Condition** then select **Content matches any of these trainable classifiers**.
 
-1. Under **Content contains any of these sensitive info types** select **Add** then select **Sensitive info types**.
+1. Under **Content matches any of these trainable classifiers** select **Add** then select **Trainable classifiers**.
 
-1. In the **Sensitive info types** pane search for **Credit Card Number** and select the checkbox next to this sensitive info type.
+1. On the **Trainable classifiers** flyout panel, select **Unauthorized disclosure**, then select **Add** at the bottom of the panel.
 
-1. Select **Add** to add this sensitive info type to this condition then select **Next**.
+1. Back on the **Choose conditions and review percentage** page, select **Next**.
 
 1. On the **Review and finish** page select **Save**.
 
