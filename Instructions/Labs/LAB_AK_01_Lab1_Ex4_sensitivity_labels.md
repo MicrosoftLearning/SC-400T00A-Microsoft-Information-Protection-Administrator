@@ -48,7 +48,7 @@ In this task, you'll install the necessary modules and enable support for sensit
     Connect-MsolService
     ```
 
-1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. In the **Sign into your account** form, sign in as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. After signing in, navigate back to the terminal window.
 
