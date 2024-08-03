@@ -23,7 +23,7 @@ In this task, you'll create a new custom sensitive information type that recogni
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. On the left sidebar, select **Solutions** then select **Information Protection**.
 
@@ -90,7 +90,7 @@ In this task, you'll create an Exact Data Match (EDM) based classification with 
 
 1. Open **Microsoft Edge** then navigate to **`https://admin.microsoft.com`**.
 
-1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
 1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
 
@@ -237,13 +237,13 @@ In this task, you'll hash and upload the actual data for the EDM-based classific
 
 1. In the terminal window, navigate to the EDM Upload Agent directory:
 
-    ``` text
+    ``` powershell
     cd "C:\Program Files\Microsoft\EdmUploadAgent"
     ```
 
 1. Authorize with your account to upload the database to your tenant by running this cmdlet:
 
-    ``` text
+    ``` powershell
     .\EdmUploadAgent.exe /Authorize
     ```
 
@@ -251,7 +251,7 @@ In this task, you'll hash and upload the actual data for the EDM-based classific
 
 1. Back in the terminal window, download the database schema definition of the EDM-based classification sensitive information type by running this script in PowerShell. For the **DataStoreName**, this is where you'll use the schema name saved from the previous task.
 
-    ``` text
+    ``` powershell
     .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedbSchema /OutputDir "C:\Users\Admin\Documents\"
     ```
 
@@ -261,7 +261,7 @@ In this task, you'll hash and upload the actual data for the EDM-based classific
 
 1. Hash the database file and upload it to the EDM-based classification sensitive information type by running the following script in PowerShell:
 
-    ``` text
+    ``` powershell
     .\EdmUploadAgent.exe /UploadData /DataStoreName employeedbSchema /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedbSchema.xml"
     ```
 
@@ -269,7 +269,7 @@ In this task, you'll hash and upload the actual data for the EDM-based classific
 
 1. Check the upload progress with this command:
 
-    ``` text
+    ``` powershell
     .\EdmUploadAgent.exe /GetSession /DataStoreName employeedbSchema
     ```
 
