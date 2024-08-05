@@ -166,7 +166,7 @@ In this task you'll test the DLP policy that was created in the previous task.
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account and logged into Microsoft 365 as Joni Sherman.
 
-1. Open a Microsoft Edge browser window and navigate to **`https://outlook.office.com/`**
+1. Open a Microsoft Edge browser window and navigate to **`https://outlook.office.com`**
 
 1. Select the **New mail** button on the top left to compose a new email message.
 
