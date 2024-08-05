@@ -33,7 +33,7 @@ In this task you will grant Joni the required permissions to create assessments 
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
-1. In **Microsoft Edge**, select the address bar, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview compliance portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, select the address bar, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview compliance portal as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. On the left sidebar, select **Settings**.
 
@@ -151,9 +151,9 @@ In this task, you will review and act upon the assigned improvement action in Co
 
 1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin** and logged into Microsoft 365 as Joni Sherman. Sign out of Joni Sherman's account by selecting her image in the upper right of the screen and selecting **Sign out**.
 
-1. Open **Microsoft Edge** and navigate to **`https://outlook.office.com/`**.
+1. Open **Microsoft Edge** and navigate to **`https://outlook.office.com`**.
 
-1. Log in with Megan Bowen's account, MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. Log in with Megan Bowen's account, `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Megan should have an email with the subject **A new improvement action item has been assigned to you** in their inbox.
 
@@ -214,9 +214,9 @@ Upon completing the creation and activation of the new DLP policy for **U.S. Gra
 
 1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin**.
 
-1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com/`**.
+1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`**.
 
-1. Log in with Joni Sherman's account, JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. Log in with Joni Sherman's account, `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Select **Solutions** from the left sidebar, then select **Compliance Manager**.
 

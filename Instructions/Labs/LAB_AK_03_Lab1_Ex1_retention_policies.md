@@ -30,7 +30,7 @@ In this task, you'll set up a company-wide retention policy that covers key Micr
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. Select **Solutions** then select **Data Lifecycle Management**.
 
@@ -146,7 +146,7 @@ In this task, you'll create the same retention policies using PowerShell, demons
     Connect-IPPSSession
     ```
 
-1. When prompted with a sign in dialog box, sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. When prompted with a sign in dialog box, sign in as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. Run the **New-RetentionCompliancePolicy** cmdlet to create the first retention policy for all locations except teams:
 
@@ -282,7 +282,7 @@ In this final task, you'll verify the users affected by the adaptive scope and t
     Connect-IPPSSession
     ```
 
-1. When prompted with a sign in dialog box, sign in with Joni Sherman's account, JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's account was set in a previous exercise.
+1. When prompted with a sign in dialog box, sign in with Joni Sherman's account, `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's account was set in a previous exercise.
 
 1. Run the **Get-RetentionCompliancePolicy** cmdlet to view all details of the adaptive scope policy:
 

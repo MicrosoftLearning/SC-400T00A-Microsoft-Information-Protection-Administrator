@@ -21,7 +21,7 @@ In this task, you'll verify the **Search by name** feature is enabled in Microso
 
 1. If you're still signed in with Joni's account, sign out of this account and close all browser windows.
 
-1. In **Microsoft Edge**, navigate to **`https://admin.teams.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://admin.teams.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. In the left navigation pane, under the **Teams** dropdown, select **Teams settings**
 
@@ -43,7 +43,7 @@ In this task, you will use PowerShell to connect to the Security & Compliance mo
     Connect-IPPSSession
     ````
 
-    Sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+    Sign in as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. Run the **New-OrganizationSegment** cmdlet with the **UserGroupFilter** parameter to create a **Legal** segment:
 

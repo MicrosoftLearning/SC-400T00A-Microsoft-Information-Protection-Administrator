@@ -20,7 +20,7 @@ In this exercise, you will grant the new compliance officer Megan Bowen access t
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. Select **Settings** from the left sidebar.
 
@@ -48,7 +48,7 @@ In this task, you will test that the access to the DLP reports you granted in Ta
 
 1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-cl2\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Megan Bowen** `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
 
 1. Select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
@@ -76,7 +76,7 @@ In this task, you will review DLP activities via PowerShell.
    Connect-IPPSSession
    ```
 
-1. In the **Sign in to your account** dialogue, select **+ Use another account** then login with the account **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In the **Sign in to your account** dialogue, select **+ Use another account** then login with the account **Megan Bowen** `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Run the **Export-ActivityExplorerData** PowerShell cmdlet to explore the activity explorer from PowerShell. The script below is an example that will display a grid view of activities from the most recent week:
 

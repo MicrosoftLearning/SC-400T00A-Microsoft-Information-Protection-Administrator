@@ -20,7 +20,7 @@ In this step, you'll create a retention label and an event type. The event type 
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin**.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. In the **Microsoft Purview** portal, on the left sidebar, select **Solutions**, then select **Records management**.
 

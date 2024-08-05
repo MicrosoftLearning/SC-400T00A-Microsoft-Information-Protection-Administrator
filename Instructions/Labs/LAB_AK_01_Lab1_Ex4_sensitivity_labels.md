@@ -28,9 +28,9 @@ In this task, you'll install the necessary modules and enable support for sensit
 
 1. Run the **Install-Module** cmdlet to install the latest MS Online PowerShell module version:
 
-   ```powershell
-   Install-Module -Name MSOnline
-   ```
+    ```powershell
+    Install-Module -Name MSOnline
+    ```
 
 1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter. This might take a while to complete processing.
 
@@ -70,7 +70,7 @@ In this task, you'll install the necessary modules and enable support for sensit
     Connect-SPOService -url $adminurl
     ```
 
-1. In the **Sign into your account** form, sign in as **MOD Administrator**. admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **MOD Administrator**. `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. After signing in, navigate back to the terminal window.
 
@@ -92,7 +92,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`**. Log into Microsoft Purview as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`**. Log into Microsoft Purview as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. In the Microsoft Purview portal, select **Solutions** from the left sidebar, then select **Information Protection**.
 
@@ -217,7 +217,7 @@ You have successfully published the Internal and HR sensitivity labels. Note tha
 
 In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. In **Microsoft Edge**, open a new Word document by selecting the meatball menu in the top left and selecting **Word**.
 

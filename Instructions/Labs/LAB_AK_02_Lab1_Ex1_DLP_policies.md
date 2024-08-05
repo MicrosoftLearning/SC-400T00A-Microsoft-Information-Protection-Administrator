@@ -33,7 +33,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. Select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
@@ -138,7 +138,7 @@ In this task, you'll use PowerShell to create a DLP policy to protect Contoso em
    Connect-IPPSSession
    ```
 
-1. Sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) in the **Sign in to your account** pop-up window. Joni's password was set in a previous exercise.
+1. Sign in as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) in the **Sign in to your account** pop-up window. Joni's password was set in a previous exercise.
 
 1. Run the **New-DlpCompliancePolicy** cmdlet to create a DLP policy that scans all Exchange mailboxes:
 
@@ -236,7 +236,7 @@ You want to use file policies in Microsoft 365 Defender to protect files in your
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Sign out of Joni's account by selecting the profile picture of Joni Sherman in the top right. Select **Sign out**, then close the browser window.
 
-1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft 365 Defender portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft 365 Defender portal as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. On the left sidebar, expand **System** then select **Settings**.
 
@@ -256,7 +256,7 @@ In this task, you'll create a file policy in Microsoft 365 Defender to scan file
 
 1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then selecting **Sign out**. Close the browser window once you're signed out.
 
-1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft 365 Defender portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft 365 Defender portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. In the **Microsoft 365 Defender** portal, in the left navigation, scroll down to the **Cloud apps** section. Expand **Policies** then select **Policy management**.
 
@@ -303,7 +303,7 @@ Your company uses Power Automate flows to share data between SharePoint Online a
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://admin.powerplatform.microsoft.com`** and log into the Power Platform admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **`https://admin.powerplatform.microsoft.com`** and log into the Power Platform admin center as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. In the **Power Platform admin center**, in the left sidebar, select the drop-down for **Policies**, then select **Data policies**.
 

@@ -23,7 +23,7 @@ In this task, you'll create retention labels for VAT returns and supporting docu
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. In the **Microsoft Purview** portal, on the left sidebar, select **Solutions**, then select **Records Management**.
 
@@ -205,7 +205,7 @@ Megan Bowen, a financial analyst at Contoso Ltd., needs to ensure that specific 
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://outlook.office.com/`**. and login as **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
+1. In **Microsoft Edge**, navigate to **`https://outlook.office.com`**. and login as **Megan Bowen** `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
 
 1. In Megan's inbox, select right click the any email then select **Advanced actions** > **Assign policy** > **5 year delete** under the **Retention labels** section.
 

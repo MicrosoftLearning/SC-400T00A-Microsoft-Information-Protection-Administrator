@@ -29,7 +29,7 @@ In this exercise, you will assign the Communication Compliance role to Joni to g
 
 1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as MOD Administrator, **`admin@WWLxZZZZZZ.onmicrosoft.com`** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
 1. Select **Settings** from the left sidebar.
 
@@ -59,7 +59,7 @@ You have successfully assigned the Communication Compliance role to Joni Sherman
 
 In this exercise, you will configure a custom policy in Microsoft Communication Compliance to monitor communications for sensitive financial information.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. On left sidebar, select **Solutions** then select **Communication Compliance**.
 
@@ -108,7 +108,7 @@ In this task, you will verify the effectiveness of your configured custom policy
 
 >**Note:** Make sure you give your policies time to activate before testing the policy. Email messages can take approximately 24 hours to fully process in a policy. Communications in Microsoft Teams, Viva Engage, and third-party platforms can take approximately 48 hours to fully process in a policy.
 
-1. In **Microsoft Edge**, navigate to **`https://outlook.office.com`** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://outlook.office.com`** and log into Outlook on the web as `LynneR@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Select **New mail** in Outlook on the web.
 
@@ -136,7 +136,7 @@ You have successfully tested your custom policy to verify its effectiveness in i
 
 In this task, you will manage your communication compliance policy in the Microsoft Purview portal. You will review and take action on the pending items for the **Detect Financial Secrets** policy to ensure your policy is working effectively to identify and handle any potential compliance issues.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous task.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous task.
 
 1. Select **Solutions** from the left sidebar, then select **Communication Compliance**.
 

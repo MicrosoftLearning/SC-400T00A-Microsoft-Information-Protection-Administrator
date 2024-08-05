@@ -19,7 +19,7 @@ To prevent data loss, you'll place a mailbox hold on Alex Wilber's account.
 
 1. Log into Client 1 virtual machine (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://admin.exchange.microsoft.com`** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://admin.exchange.microsoft.com`** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Close all tip windows if any appear.
 
