@@ -168,7 +168,7 @@ In this task, you'll configure the credit card receipts retention label to be au
 
 1. On the **Choose the type of content you want to apply this label to** page select  **Apply label to content that contains sensitive info** then select **Next**.
 
-1. On the **Content that contains sensitive info** page, select **Financial** under **Categories**, then select **U.K. Financial Data88 under **Regulations**
+1. On the **Content that contains sensitive info** page, select **Financial** under **Categories**, then select **U.K. Financial Data** under **Regulations**
 
 1. Select **Next**.
 

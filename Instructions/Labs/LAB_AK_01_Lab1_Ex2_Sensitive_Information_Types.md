@@ -40,7 +40,7 @@ In this task, you'll create a new custom sensitive information type that recogni
 
 1. On the **Define patterns for this sensitive info type** page, select **Create pattern**.
 
-1. On the **New patter** flyout panel on the right, select **+ Add primary element** > **Regular expression**.
+1. On the **New pattern** flyout panel on the right, select **+ Add primary element** > **Regular expression**.
 
 1. On the **+ Add a regular expression​** flyout panel on the right, enter:
 
@@ -173,11 +173,11 @@ In this task, you'll create an Exact Data Match (EDM) based classification with 
 
 1. Select **Next**.
 
-1. On the **Configure settings for data in selected columns**, ensure the toggle is set to **Yes** for **Use the same settings for all columns.
+1. On the **Configure settings for data in selected columns**, ensure the toggle is set to **Yes** for **Use the same settings for all columns**.
 
 1. Select the checkbox for **Ignore delimiters and punctuation for data in all columns**.
 
-1. Select the dropdown for **Choose delimiters and punctuation to ignore** dropdown and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*, then select **Next*.
+1. Select the dropdown for **Choose delimiters and punctuation to ignore** dropdown and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*, then select **Next**.
 
 1. On the **Configure detection rules for primary elements**, leave the default configuration, then select **Next**.
 
