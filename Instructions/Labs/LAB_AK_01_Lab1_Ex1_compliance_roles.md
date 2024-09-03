@@ -26,27 +26,23 @@ In this task, you'll assign the Compliance Admin role to Joni Sherman.
 
 1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account. The password should be provided by your lab hosting provider.
 
-1. Open **Microsoft Edge** and navigate to the Microsoft Purview portal, `https://purview.microsoft.com`, and log in as **MOD Administrator**, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. Open **Microsoft Edge** and navigate to the Microsoft Purview portal, `https://admin.microsoft.com`, and log in as **MOD Administrator**, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. Select **Settings** from the left sidebar.
+1. On the left sidebar, expand **Users** then select **Active users**.
 
-1. On the left sidebar, expand **Roles and scopes** then select **Role groups**.
+1. On the **Active users** page, search for `Joni`, then select **Joni Sherman**.
 
-1. On the **Role groups for Microsoft Purview solutions** select **Compliance Administrator**.
+1. The properties for Joni's account is displayed in a right, flyout panel. Select **Manage roles** on the flyout panel.
 
-1. On the **Compliance Administrator** flyout panel on the right, select **Edit** to edit this role group.
+1. On the **Manage admin roles** panel, select the option for **Admin center access**, then scroll down to expand **Show all by category**.
 
-1. On the **Edit members of the role group** page, select **Choose users**.
+1. Under the **Security & Compliance** category, select the checkbox for **Compliance Administrator**, then select **Save changes** at the bottom of the flyout panel.
 
-1. On the **Choose users** flyout panel on the right, select the checkbox to the left of **Joni Sherman** then select the **Select** button at the bottom of the page.
+1. You should receive a message stating **Admin roles updated**.
 
-1. Back on the **Edit members of the role group** page, select **Next**.
+1. On the **Manage admin roles** page, select the **X** on the top right corner of the flyout panel to close the panel.
 
-1. On the **Review the role group and finish** page, review your changes and select **Save**.
-
-1. On the **You successfully updated the role group** select **Done**.
-
-1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then selecting **Sign out**.
+1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then select **Sign out**.
 
    ![Screenshot showing the navigation path to sign out of the MOD Administrator account.](../Media/sign-out.png)
 
