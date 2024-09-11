@@ -1,7 +1,7 @@
 ---
 lab:
-    title: Demo setup
-    module: 'FY25 VTD Demo'
+    title: 'Demo setup'
+    module: 'FY25 VTD Demo - Setup'
 ---
 
 # Demo Lab 0 - VTD Demo Setup
