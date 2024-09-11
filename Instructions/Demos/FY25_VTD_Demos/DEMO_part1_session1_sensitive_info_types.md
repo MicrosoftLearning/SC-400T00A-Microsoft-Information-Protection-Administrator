@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Sensitive information types'
-    module: 'FY25 VTD Demo - Create and manage sensitive information types'
+    module: 'FY25 VTD Demo Session 1 - Create and manage sensitive information types'
 ---
 
 
