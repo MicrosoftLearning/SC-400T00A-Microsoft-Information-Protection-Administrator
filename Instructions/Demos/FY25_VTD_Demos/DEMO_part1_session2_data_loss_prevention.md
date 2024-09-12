@@ -7,9 +7,11 @@ lab:
 
 # Session 1 demo 2 - Implement Data Loss Prevention in Microsoft Purview
 
+Contoso Ltd. has faced growing concerns over sensitive customer data being shared externally, especially as remote work has increased. To prevent this risk, they are implementing Data Loss Prevention (DLP) policies in Microsoft Purview to block unauthorized sharing of important information.
+
 ## Task 1 – Create a DLP policy in simulation mode
 
-In this exercise, you'll create a data loss prevention (DLP) policy to protect sensitive data from being shared by users.
+In this task, we'll create a DLP policy to protect customer data from being shared externally via Exchange email and Teams chat and channel messages.
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
@@ -27,14 +29,14 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. On the **Name your DLP policy** page enter:
 
-   - **Name**: `Credit Card DLP Policy`
-   - **Description**: `Protect credit card numbers from being shared`
+   - **Name**: `Customer Data DLP Policy`
+   - **Description**: `Protect customer data from being shared externally.`
 
 1. Select **Next**.
 
 1. On the **Assign admin units** page select **Next**.
 
-1. On the **Choose locations to apply the policy** page, enable the location for **Teams chat and channel messages** only. If any other locations are selected, deselect them.
+1. On the **Choose locations to apply the policy** page, enable the locations for **Exchange email** and **Teams chat and channel messages** only. If any other locations are selected, deselect them.
 
 1. Select **Next**.
 
@@ -42,21 +44,23 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 
-1. On the **Create rule** flyout page, enter `Credit card information` as name in the **Name** field.
+1. On the **Create rule** flyout page, enter `Customer Data Protection` as name in the **Name** field.
 
-1. Under **Conditions**, select **+ Add Condition**, then select **Content contains**.
-
-1. In the new **Content contains** area, select **Add**, then select **Sensitive info types**.
-
-1. On the **Sensitive info types** page, select **Credit Card Number** then select **Add**.
-
-1. Select **+ Add condition**, then select **Content is shared from Microsoft 365**.
+1. Under **Conditions**, select **Content is shared from Microsoft 365**.
 
 1. In the new **Content is shared from Microsoft 365** section, select the **only with people inside my organization** option.
 
+1. Select **+ Add condition**, then select **Content contains**.
+
+1. In the new **Content contains** area, select **Add**, then select **Trainable classifiers**.
+
+1. On the **Trainable classifiers** page, search for `Customer`.
+
+1. Select the trainable classifiers for **Customer Complaints** and **Customer Files** then select **Add**.
+
 1. Under **Actions** select **+ Add an action**, then select **Restrict access or encrypt the content in Microsoft 365 locations**.
 
-1. In the new **Restrict access or encrypt the content in Microsoft 365 locations** area select **Block everyone.**
+1. In the new **Restrict access or encrypt the content in Microsoft 365 locations** area select **Block only people outside your organization.**
 
 1. Under **User notifications**, turn **On** the option for **Use notifications to inform your users and help educate them on the proper use of sensitive info.**, then select the checkbox to **Notify users in Office 365 service with a policy tip**.
 
@@ -64,7 +68,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. Select the checkbox to **Require a business justification to override**.
 
-1. Under **Incident reports**, in the **Use this severity level in admin alerts and reports** dropdown, select **Low**.
+1. Under **Incident reports**, in the **Use this severity level in admin alerts and reports** dropdown, select **High**.
 
 1. At the bottom of the **Create rule** flyout panel, select **Save**.
 
@@ -78,74 +82,17 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. On the **New policy created** page select **Done**.
 
-You have now created a DLP policy that scans for credit card numbers in Microsoft Teams chats and channels, allowing users to provide a business justification to override the policy.
+You have now created a DLP policy that scans for customer data in Exchange email and Teams chats and channels, allowing users to provide a business justification to override the policy.
 
-## Task 2 – Modify a DLP policy
+## Task 2 – Activate a policy in simulation mode
 
-In this task, you'll modify the existing DLP policy created in the previous task to also scan emails for credit card information. This modification ensures that sensitive data is protected across more communication channels.
+In this task, you'll activate the Customer Data DLP Policy to enforce its protective actions.
 
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
-
-1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
-
-1. On the **Policies** page select the checkbox for the recently created **Credit Card DLP Policy**, then select **Edit policy** to open the policy configuration.
-
-1. On the **Name your DLP policy** page, select **Next**.
-
-1. On the **Assign admin units** page select **Next**.
-
-1. On the **Choose locations to apply the policy** page, select the checkbox for **Exchange email** to add this location to your DLP policy.
-
-1. Select **Next** until you reach the **Review and finish** page.
-
-1. Select **Submit** on the **Review and finish** page to apply the change you made to the policy.
-
-1. Once the policy is updated select **Done** on the **Policy updated** page.
-
-You have successfully modified the DLP policy to include email scanning, enhancing the protection of sensitive information.
-
-## Task 3 – Test your DLP Policy
-
-In this task you'll test the DLP policy that was created in the previous task.
-
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account and logged into Microsoft 365 as MOD Administrator.
-
-1. Open a Microsoft Edge browser window and navigate to **`https://outlook.office.com`**
-
-1. Select the **New mail** button on the top left to compose a new email message.
-
-1. In the **To** field, enter `Megan` and select **Megan Bowen**'s email address.
-
-1. In the subject field enter `Help with employee information`.
-
-1. In the body of the email enter:
-
-   ``` text
-   Please help me with the start dates for the following employees:
-   ABC123456
-   DEF678901
-   GHI234567
-
-   Thank you
-   ```
-
-1. Select the **Send** button in the upper right of the message window to send the email.
-
-1. You should receive a message that the email was undeliverable and blocked by a DLP policy.
-
-      ![Screenshot of Manage roles option](../Media/dlp-email-blocked.png)
-
-You have successfully tested your DLP policy.
-
-## Task 4 – Activate a policy in simulation mode
-
-In this task, you'll activate the **Credit Card DLP Policy** you created in simulation mode so it enforces its protective actions.
-
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft Purview as **MOD Administrator**.
 
 1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **Solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 
-1. On the  **Policies** page select the checkbox for the **Credit Card DLP Policy** and select **Edit policy** to open the policy configuration.
+1. On the  **Policies** page select the checkbox for the **Customer Data DLP Policy** and select **Edit policy** to open the policy configuration.
 
 1. Select **Next** until you reach the **Policy mode** page and select **Turn the policy on immediately**.
 
@@ -153,4 +100,4 @@ In this task, you'll activate the **Credit Card DLP Policy** you created in simu
 
 1. On the **Policy updated** page select **Done**.
 
-You have successfully activated the DLP policy, ensuring that any attempts to share credit card information are blocked and require a business justification.
+You have successfully activated the DLP policy, ensuring that any attempts to share customer data are blocked and require a business justification.

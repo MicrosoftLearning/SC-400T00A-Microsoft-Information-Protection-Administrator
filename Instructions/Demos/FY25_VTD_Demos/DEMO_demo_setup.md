@@ -15,6 +15,22 @@ Please ensure you perform these tasks before running the demos for VTDs 48 hours
 
 If you encounter any issues with these labs, please reach out to me at richelle.swinton@microsoft.com to resolve these issues.
 
+## Accessing the Skillable environment
+
+1. Access the SC-400 lab profile - [https://gtllabs.learnondemand.net/Lab/68392](https://gtllabs.learnondemand.net/Lab/68392).
+
+1. Sign in with the appropriate credentials.
+
+1. Select the **Launch** button to launch the lab.
+
+1. A new window opens to load the lab environment. Wait for the lab profile to load. This process takes a couple of minutes.
+
+1. To easily display this lab for the demo, it might be easiest to use the credentials from the **Resources** tab and run the lab in an incognito window in Microsoft Edge.
+
+    ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](/Instructions/Media/skillable-credentials.png)
+
+1. You'll need to run the lab setup in the Skillable lab VM to onboard a device.
+
 ## Task 1 – Enable Audit in Microsoft Purview
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account. The password should be provided by your lab hosting provider.
@@ -39,7 +55,9 @@ You have successfully enabled auditing in Microsoft 365.
 
 In this task, you'll enable device onboarding for your organization.
 
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account logged. You should also still be logged into Microsoft Purview as the MOD Administrator.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin**.
+
+    You should also still be logged into Microsoft Purview as the MOD Administrator.
 
 1. In the Microsoft Purview portal, select **Settings** from the left sidebar. Expand **Device onboarding** then select **Devices**.
 
@@ -49,7 +67,7 @@ In this task, you'll enable device onboarding for your organization.
 
 1. Accept the **Device monitoring is being turned on** dialog by selecting **OK**.
 
-You have now enabled device onboarding and can start to onboard devices to be protected with Endpoint DLP policies. The process of enabling the feature might take up to 30 minutes, but you can move on with the next task as it's not dependent on this.
+You have now enabled device onboarding and can start to onboard devices to be protected with Endpoint DLP policies. The process of enabling the feature might take up to 30 minutes.
 
 ## Task 3 – Onboard a device to endpoint DLP
 
