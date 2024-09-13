@@ -31,7 +31,37 @@ If you encounter any issues with these labs, please reach out to me at richelle.
 
 1. You'll need to run the lab setup in the Skillable lab VM to onboard a device.
 
-## Task 1 – Enable Audit in Microsoft Purview
+## Task - Set user passwords for lab exercises
+
+In this task, you'll set passwords for the user accounts needed for the labs.
+
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account. The password should be provided by your lab hosting provider.
+
+1. Open **Microsoft Edge** and navigate to **`https://admin.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+
+1. On the left navigation pane, expand **Users** then select **Active users**.
+
+1. Select the checkbox to the left of **Joni Sherman**.
+
+   This accounts will be in demo walkthroughs.
+
+1. Select the **Reset password** button from the top, navigation ribbon to reset Joni's password.
+
+   ![Screenshot showing the Reset password button in the Microsoft 365 admin center.](/Instructions/Media/reset-password-button.png)
+
+1. In the **Reset Password** flyout page on the right, ensure all options are deselected.
+
+   This will ensure that you can select a password for Joni for the demo walkthroughs, and this passwords won't need to be reset when you first sign in.
+
+1. In the **Password** field, enter a password you can remember to reset the user passwords to be used in future exercises.
+
+1. At the bottom of the **Reset password** flyout page, select the **Reset password** button.
+
+1. On the **Passwords have been reset** page, you should see the three user accounts that have been reset. At the bottom of this flyout page, select **Close**.
+
+You have successfully reset passwords for lab exercises.
+
+## Task 2 – Enable Audit in Microsoft Purview
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account. The password should be provided by your lab hosting provider.
 
@@ -51,7 +81,7 @@ If you encounter any issues with these labs, please reach out to me at richelle.
 
 You have successfully enabled auditing in Microsoft 365.
 
-## Task 2 – Onboard a device for Endpoint DLP
+## Task 3 – Onboard a device for Endpoint DLP
 
 In this task, you'll enable device onboarding for your organization.
 
@@ -69,7 +99,7 @@ In this task, you'll enable device onboarding for your organization.
 
 You have now enabled device onboarding and can start to onboard devices to be protected with Endpoint DLP policies. The process of enabling the feature might take up to 30 minutes.
 
-## Task 3 – Onboard a device to endpoint DLP
+## Task 4 – Onboard a device to endpoint DLP
 
 In this task, you'll use the local script option to onboard a Windows 11 device to allow it to be protected by Endpoint DLP policies.
 
@@ -118,3 +148,83 @@ In this task, you'll use the local script option to onboard a Windows 11 device 
 1. In the Microsoft Purview portal, navigate to **Settings** > **Device onboarding** > **Devices** and verify the device has been successfully onboarded.
 
 You have successfully onboarded a device and joined it to Microsoft Entra ID to be protected by endpoint DLP policies.
+
+## Task 5 – Enable support for sensitivity labels
+
+In this task, you'll install the necessary modules and enable support for sensitivity labels on your tenant.
+
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
+
+1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
+
+1. Confirm the **User Account Control** window with **Yes** and press Enter.
+
+1. Run the **Install-Module** cmdlet to install the latest MS Online PowerShell module version:
+
+    ```powershell
+    Install-Module -Name MSOnline
+    ```
+
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter. This might take a while to complete processing.
+
+1. Run the **Install-Module** cmdlet to install the latest SharePoint Online PowerShell module version:
+
+    ```powershell
+    Install-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
+
+1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
+
+1. Run the **Connect-MsolService** to connect to the MS Online service:
+
+    ```powershell
+    Connect-MsolService
+    ```
+
+1. In the **Sign into your account** form, sign in as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+
+1. After signing in, navigate back to the terminal window.
+
+1. Run the **Get-Msoldomain** cmdlet and save the domain as a variable:
+
+    ```powershell
+    $domain = get-msoldomain
+    ```
+
+1. Use the _$domain_ variable created in the previous step to create a new variable for _$adminurl_:
+
+    ```powershell
+    $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
+    ```
+
+1. Run the **Connect-SPOService** cmdlet using the _$adminurl_ variable created in the previous step:
+
+    ```powershell
+    Connect-SPOService -url $adminurl
+    ```
+
+1. In the **Sign into your account** form, sign in as **MOD Administrator**. `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+
+1. After signing in, navigate back to the terminal window.
+
+1. Run the **Set-SPOTenant** cmdlet to enable support for sensitivity labels:
+
+    ```powershell
+    Set-SPOTenant -EnableAIPIntegration $true
+    ```
+
+1. Confirm the changes with **Y** for Yes and press Enter.
+
+1. Close the PowerShell window.
+
+You have successfully enabled support for sensitivity labels for Teams and SharePoint sites.
+
+## Task 6 – Turn on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint
+
+1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+
+1. Select **Solutoins** in the left sidebar, then select **Information Protection** > **Sensitivity labels**.
+
+1. Select **Turn on now** in the yellow dialogue box that states **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint. You can turn on here, but note that additional configuration is required for Multi-Geo environments.**
+
+1. You should now see a message stating **You can now create sensitivity labels with privacy and access control settings for Teams, SharePoint sites, and Microsoft 365 Groups.**
