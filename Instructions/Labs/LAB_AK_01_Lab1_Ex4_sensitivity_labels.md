@@ -152,7 +152,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
    - **User access to content expires**: Never
    - **Allow offline access**: Only for a number of days
    - **Users have offline access to the content for this many days**: 15
-   - Select the **Assign permissions** link. On the **Assign permissions** flyout panel, select the **+ Add any authenticated users**, then select **Save** to ally this setting.
+   - Select the **Assign permissions** link. On the **Assign permissions** flyout panel, select the **+ Add any authenticated users**, then select **Save** to apply this setting.
 
 1. On the **Access control** page, select **Next**.
 

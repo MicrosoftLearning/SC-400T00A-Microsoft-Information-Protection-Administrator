@@ -1,138 +1,230 @@
 ---
 lab:
-    title: 'Session 3 - Insider Risk Management in Microsoft Purview'
-    module: 'Learning Objective - Implement Insider Risk Management in Microsoft Purview'
+    title: 'Demo setup'
+    module: 'FY25 VTD Demo - Setup'
 ---
 
-# Demo Lab 4 - Configure Insider Risk Management
+# Demo Lab 0 - VTD Demo Setup
 
-You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Your role involves ensuring regulatory compliance and protecting sensitive information within the organization. Recently, Contoso Ltd. has recognized the need to proactively address insider risks that could potentially harm the company's reputation, compromise data security, or lead to legal issues.
+This lab is to setup the demo environment for the FY25 VTDs. The primary tasks in these labs are to:
 
-To effectively manage insider risks, you implement Microsoft Purview Insider Risk Management, a comprehensive solution designed to identify, analyze, and respond to potential insider threats.
+- Enable Audit in Microsoft Purview for Insider Risk Management
+- Onboard devices for endpoint DLP, Insider Risk Management, Adaptive Protection, and AI Hub.
 
-## Task 1: Insider Risk Settings Configuration
+Please ensure you perform these tasks before running the demos for VTDs 48 hours in advance to ensure the environment is ready for demos.
 
-In this task, you will customize the Insider risk management settings in the Microsoft Purview portal. This will allow Joni Sherman to effectively manage potential insider risks within the organization and ensure the security of sensitive information.
+If you encounter any issues with these labs, please reach out to me at richelle.swinton@microsoft.com to resolve these issues.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+## Accessing the Skillable environment
 
-1. Select **Insider risk management** from the left navigation bar.
+1. Access the SC-400 lab profile - [https://gtllabs.learnondemand.net/Lab/68392](https://gtllabs.learnondemand.net/Lab/68392).
 
-1. Select the gear icon on the top right for **Settings**.
+1. Sign in with the appropriate credentials.
 
-1. Explore the settings:
+1. Select the **Launch** button to launch the lab.
 
-    - **Privacy**: Allows you to select displaying usernames or anonymized versions in alerts and cases.
-    - **Policy indicators**: Involves configuring the policy template using specific risk indicators.
-    - **Policy timeframes**: Defines review periods triggered by policy matches based on events and activities.
-    - **Intelligent detections**: Controls alert volume, excludes certain entities from risk scoring and allows filtering of Microsoft Defender alerts.
-    - **Export alerts**: Exports risk alert information to SIEM and SOAR solutions using Office 365 Management Activity APIs.
-    - **Priority user groups**: Determines high-risk users for closer inspection and more sensitive risk scoring.
-    - **Priority physical assets (preview)**: Identifies and monitors access to priority physical assets correlating activity to user events.
-    - **Power Automate flows (preview)**: Automates insider risk management tasks using Microsoft Power Automate flows.
-    - **Microsoft Teams (preview)**: Enables Microsoft Teams for collaboration on insider risk management cases.
-    - **Analytics**: Assesses potential insider risks without configuring policies to guide policy creation.
-    - **Admin notifications**: Automatically sends email notifications to insider risk management role groups.
-    - **Inline alert customization**: Allows policy tuning and threshold adjustment directly from the Alerts dashboard.
+1. A new window opens to load the lab environment. Wait for the lab profile to load. This process takes a couple of minutes.
 
-1. Select **Privacy** from the Insider risk management settings bar under **General**.
+1. To easily display this lab for the demo, it might be easiest to use the credentials from the **Resources** tab and run the lab in an incognito window in Microsoft Edge.
 
-1. Select **Do not show anonymized versions of usernames**.
+    ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](/Instructions/Media/skillable-credentials.png)
 
-1. Select **Save** to save this setting.
+1. You'll need to run the lab setup in the Skillable lab VM to onboard a device.
 
-1. Select **Policy indicators** from the Insider risk management settings bar under **General**.
+## Task - Set user passwords for lab exercises
 
-1. On the **Policy indicators** settings pane, under **Office indicators** select the check box for **Select all**.
+In this task, you'll set passwords for the user accounts needed for the labs.
 
-1. Scroll down and select **Save**.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account. The password should be provided by your lab hosting provider.
 
-1. Select **Priority user groups** from the insider risk management settings bar under **General**.
+1. Open **Microsoft Edge** and navigate to **`https://admin.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Select **+ Create priority user group** to open the **New priority user group wizard**.
+1. On the left navigation pane, expand **Users** then select **Active users**.
 
-1. On the **Name and describe the priority user group** page enter:
+1. Select the checkbox to the left of **Joni Sherman**.
 
-    - **Name**: Finance team
-    - **Description**: Team members that manage financial operations, budgeting, and reporting
+   This accounts will be in demo walkthroughs.
 
-1. Select **Next**.
+1. Select the **Reset password** button from the top, navigation ribbon to reset Joni's password.
 
-1. On the **Choose members** page select **+ Choose members**.
+   ![Screenshot showing the Reset password button in the Microsoft 365 admin center.](/Instructions/Media/reset-password-button.png)
 
-1. On the **Choose members** pane select the check box next to **Lynne Robbins**, **Debra Berger**, and **Megan Bowen** then select **Add** to add 3 members.
+1. In the **Reset Password** flyout page on the right, ensure all options are deselected.
 
-1. On the **Choose members** page select **Next**.
+   This will ensure that you can select a password for Joni for the demo walkthroughs, and this passwords won't need to be reset when you first sign in.
 
-1. On the **Choose who can view data involving users in this priority group** select **+ Choose users and role groups**.
+1. In the **Password** field, enter a password you can remember to reset the user passwords to be used in future exercises.
 
-1. On the **Choose users and role groups** page select the checkbox next to **Insider Risk Management** to add all members who have the Insider Risk Management role in Microsoft Purview the select **Add**.
+1. At the bottom of the **Reset password** flyout page, select the **Reset password** button.
 
-1. On the **Choose who can view data involving users in this priority group** select **Next**.
+1. On the **Passwords have been reset** page, you should see the three user accounts that have been reset. At the bottom of this flyout page, select **Close**.
 
-1. On the **Review** page select **Submit**.
+You have successfully reset passwords for lab exercises.
 
-1. On the **Created priority user group** page select **Done**. This will take you back to the insider risk management settings page.
+## Task 2 – Enable Audit in Microsoft Purview
 
-1. Select **Insider risk management** to navigate back to the main Insider risk management page.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account. The password should be provided by your lab hosting provider.
 
-## Task 2: Insider Risk Policy Creation
+1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-In this task, you will configure a policy named 'Financial Data Protection' in Microsoft Purview to monitor and protect sensitive financial data access within the organization.
+1. A message about the new Microsoft Purview portal will appear on the screen. Select the option to agree with the terms of data flow disclosure and the privacy statement, then select **Try now**.
 
-1. You should still be logged in as MOD Admin in Microsoft Purview.
+    ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](/Instructions/Media/welcome-purview-portal.png)
 
-1. Select **Insider risk management** from the left navigation bar.
+1. Select **Solutions** from the left sidebar, then select **Audit**.
 
-1. Select the **Policies** tab from the top navigation bar then select **+ Create policy**.
+1. On the **Search** page, select the **Start recording user and admin activity** bar to enable audit logging.
 
-1. On the **Choose a policy template** page select **Data leaks** then select **Next**.
+    ![Screenshot showing the Start recording user and admin activity button.](/Instructions/Media/enable-audit-button.png)
 
-1. On the **Name your policy page** enter:
+1. Once you select this option, the blue bar should disappear from this page.
 
-    - **Name**: Financial Data Protection
-    - **Description**: Sensitive financial data access monitoring
+You have successfully enabled auditing in Microsoft 365.
 
-1. Select **Next**.
+## Task 3 – Onboard a device for Endpoint DLP
 
-1. On the **Choose users and groups** page, leave **Include all users and groups** selected, then select **Next**.
+In this task, you'll enable device onboarding for your organization.
 
-1. On the **Decide whether to prioritize content page**, leave only **Sensitive info type** selected then select **Next**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin**.
 
-1. On the **Sensitive info types to prioritize** page select **+ Add or edit sensitive info type**.
+    You should also still be logged into Microsoft Purview as the MOD Administrator.
 
-1. In the **Add or edit sensitive info types** pane search for _bank_ and select the check box next to **U.S. Bank Account Number** and **International Banking Account Number (IBAN)**. Next search for _credit_ and select the check box next to **Credit Card Number** then select **Add** to add the 3 sensitive info types.
+1. In the Microsoft Purview portal, select **Settings** from the left sidebar. Expand **Device onboarding** then select **Devices**.
 
-1. Back on the **Sensitive info types to prioritize** select **Next**.
+1. On the **Devices** page, select **Turn on device onboarding** to enable the solution for your tenant.
 
-1. On the **Decide whether to score only activity with priority content** page leave **Get alerts for all activity** selected, then select **Next**.
+1. Accept the **Turn on device onboarding** dialog by selecting **OK**.
 
-1. On the **Triggers for this policy** page select **User performs an exfiltration activity**.
+1. Accept the **Device monitoring is being turned on** dialog by selecting **OK**.
 
-1. Under **Select which activities will trigger this policy** select:
+You have now enabled device onboarding and can start to onboard devices to be protected with Endpoint DLP policies. The process of enabling the feature might take up to 30 minutes.
 
-   - **Downloading content from SharePoint**
-   - **Sending email with attachments to recipients outside the organization**
-   - **Using a browser to upload files to the web**
-   - **Sharing SharePoint files with people outside the organization**
-   - **File copied to remote desktop session**
+## Task 4 – Onboard a device to endpoint DLP
 
-    >**Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**.
+In this task, you'll use the local script option to onboard a Windows 11 device to allow it to be protected by Endpoint DLP policies.
 
-1. Select **Next**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account logged.
 
-1. On the **Triggering thresholds for this policy** page select **Use default thresholds (Recommended)** then select **Next**.
+   You should also still be logged into Microsoft Purview as the MOD Administrator.
 
-1. On the **Indicators** page, select the drop down for **Physical access indicators** and deselect **Physical access after termination or failed access to sensitive asset** if selected then select **Next**.
+   You should also still be on the **Devices** page for endpoint DLP.
 
-1. On the **Detection options** page select **Select all** from the **Sequence detection**, **Cumulative exfiltration detection**, and **Risk score boosters** sections, then select **Next**.
+1. In the Microsoft Purview portal, from the **Devices** page, ensure **Device onboarding** is expanded, then select **Onboarding**.
 
-1. On the **Decide whether to use default or custom indicator thresholds** page select **Default thresholds** then select **Next**.
+1. On the **Device onboarding** page, in the navigation pane, select **Onboarding**.
 
-1. On the **Review settings and finish** page, select **Submit**.
+1. In the **Deployment method** dropdown menu, select **Local Script (for up to 10 machines)** and select **Download package**.
 
-1. On the **Your policy was created** page select **Done**.
+1. In the **Downloads** dialog, hover over the download, then select the folder icon to **Show in folder**.
 
-    >**Note:** As noted on this page, it may take up to 24 hours before policy matches will start showing up in the Alerts tab.
+1. Extract the zip-file to the **Desktop** of SC-400-CL1. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
 
-You have successfully created the 'Financial Data Protection' policy, which will help detect and prevent unauthorized access to sensitive financial information. Keep in mind that it may take up to 24 hours for policy matches to appear in the Alerts tab.
+1. On the desktop right click the **DeviceComplianceLocalOnboardingScript.cmd** file you just extracted and select **Show more options**, then select **Properties**.
+
+1. Towards the bottom of the **General** tab of the properties window, in the **Security** section, select **Unblock**, then select **OK** to save this setting.
+
+1. Back on the desktop, right click **DeviceComplianceLocalOnboardingScript.cmd**, then select **Run as administrator**. On the **User Account Control** dialogue, select **Yes**.
+
+1. In the **Command Prompt** screen type **Y** to confirm, and then press Enter.
+
+1. When the script is complete, you'll get a success message and a prompt to **Press any key to continue**. Press any key to close the command line window. It can take a minute to complete the onboarding.
+
+1. Open the start menu and search for `Access work or school`. Select **Access work or school** under **Best match**.
+
+1. In the **Access work or school** window for **Add a work or school account** select **Connect**.
+
+1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link and sign in as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+
+1. In the **Make sure this is your organization** dialog, review the tenant URL and select **Join**.  
+
+1. Once your device has connected select **Done** on the **You're all set!** screen.
+
+1. Restart Client 1 VM (SC-400-CL1).
+
+1. Once Client 1 VM is available, log back into Client 1 VM (SC-400-CL1).
+
+1. Open Microsoft Edge and navigate back to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+
+1. In the Microsoft Purview portal, navigate to **Settings** > **Device onboarding** > **Devices** and verify the device has been successfully onboarded.
+
+You have successfully onboarded a device and joined it to Microsoft Entra ID to be protected by endpoint DLP policies.
+
+## Task 5 – Enable support for sensitivity labels
+
+In this task, you'll install the necessary modules and enable support for sensitivity labels on your tenant.
+
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
+
+1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
+
+1. Confirm the **User Account Control** window with **Yes** and press Enter.
+
+1. Run the **Install-Module** cmdlet to install the latest MS Online PowerShell module version:
+
+    ```powershell
+    Install-Module -Name MSOnline
+    ```
+
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter. This might take a while to complete processing.
+
+1. Run the **Install-Module** cmdlet to install the latest SharePoint Online PowerShell module version:
+
+    ```powershell
+    Install-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
+
+1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
+
+1. Run the **Connect-MsolService** to connect to the MS Online service:
+
+    ```powershell
+    Connect-MsolService
+    ```
+
+1. In the **Sign into your account** form, sign in as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+
+1. After signing in, navigate back to the terminal window.
+
+1. Run the **Get-Msoldomain** cmdlet and save the domain as a variable:
+
+    ```powershell
+    $domain = get-msoldomain
+    ```
+
+1. Use the _$domain_ variable created in the previous step to create a new variable for _$adminurl_:
+
+    ```powershell
+    $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
+    ```
+
+1. Run the **Connect-SPOService** cmdlet using the _$adminurl_ variable created in the previous step:
+
+    ```powershell
+    Connect-SPOService -url $adminurl
+    ```
+
+1. In the **Sign into your account** form, sign in as **MOD Administrator**. `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+
+1. After signing in, navigate back to the terminal window.
+
+1. Run the **Set-SPOTenant** cmdlet to enable support for sensitivity labels:
+
+    ```powershell
+    Set-SPOTenant -EnableAIPIntegration $true
+    ```
+
+1. Confirm the changes with **Y** for Yes and press Enter.
+
+1. Close the PowerShell window.
+
+You have successfully enabled support for sensitivity labels for Teams and SharePoint sites.
+
+## Task 6 – Turn on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint
+
+1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+
+1. Select **Solutoins** in the left sidebar, then select **Information Protection** > **Sensitivity labels**.
+
+1. Select **Turn on now** in the yellow dialogue box that states **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint. You can turn on here, but note that additional configuration is required for Multi-Geo environments.**
+
+1. You should now see a message stating **You can now create sensitivity labels with privacy and access control settings for Teams, SharePoint sites, and Microsoft 365 Groups.**
