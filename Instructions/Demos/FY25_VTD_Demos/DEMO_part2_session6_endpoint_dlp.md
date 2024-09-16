@@ -1,18 +1,20 @@
 ---
 lab:
-    title: 'Exercise 2 - Manage Endpoint DLP'
-    module: 'Module 2 - Implement Data Loss Prevention'
+    title: 'Session 6 - DLP Strategies for AI Security'
+    module: 'Learning Objective - Create a DLP policy for generative AI sites'
 ---
 
-# Lab 2 - Exercise 2 - Manage Endpoint DLP
+# Session 2 Demo 6 - Create an endpoint DLP policy for generative AI sites
 
-You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. tasked to configure the company's Microsoft 365 tenant for data loss prevention. Contoso Ltd. is a company offering driving instruction in the United States and you need to make sure that sensitive customer information does not leave the organization. For this reason, you decide to not only implement Microsoft 365 DLP policies but extend this protection to devices in your organization.
+With the growing use of generative AI tools at Contoso Ltd., the company's IT team has identified a risk of employees accidentally sharing sensitive customer and employee data through AI platforms. To mitigate this risk, Contoso's IT team is implementing Endpoint DLP in Microsoft Purview. This DLP policy will prevent sensitive information, such as customer details, employee records, or other confidential data, from being uploaded to generative AI websites, while still allowing employees to benefit from AI tools for their work.
 
-## Task 1 – Enable device onboarding
+## Task 1 – Create an endpoint DLP policy
+
+In this task, we'll create a Data Loss Prevention (DLP) policy that protects against sensitive customer and employee data being uploaded to generative AI platforms. By implementing this policy, Contoso Ltd. ensures that confidential information remains secure while still allowing employees to leverage AI tools productively.
 
 1. Log on to Client 1 VM (SC-400-CL1) as the SC-400-cl1\admin account.
 
-1. You should still be at the **Devices** page in the Microsoft Purview portal, logged in as Joni Sherman. Select the **Home** button on the top left of the screen. If you're not logged in, navigate to `https://purview.microsoft.com` and login as Joni Sherman. Joni's password was set in a previous exercise.
+1. Navigate to `https://purview.microsoft.com` and login as MOD Administrator. MOD Admin's password is provided by your lab hosting provider.
 
 1. In the Microsoft Purview portal, select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
@@ -80,36 +82,4 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 1. Once the policy is created select **Done** on the **New policy created** page.
 
-You have successfully activated the Endpoint DLP Policy. This policy will prevent the sharing of sensitive information with generative AI platforms, ensuring that sensitive data such as driver's license numbers and personal details are protected from unauthorized access or exposure.
-
-## Task 2 – Configure endpoint DLP settings
-
-In this task, you will configure a file path exclusion to a folder on your Windows 11 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
-
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
-
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page for data loss prevention. Select **Settings** from the left sidebar.
-
-1. On the settings page, select **Data Loss Prevention** from the left sidebar.
-
-1. The **Data Loss Prevention settings** page should open to the **Endpoint DLP settings**.
-
-1. On the **Endpoint DLP settings** page, expand **File path exclusions for Windows**  then select **+ Add file path exclusion**.
-
-1. On the **Exclude these file paths from Windows devices** flyout page in the **File path exclusion** field, enter `C:\FilePathExclusionTest` then select the **+** button to the right. Select **Save** to save this entry.
-
-1. Back on the **Endpoint DLP settings** page, expand **Browser and domain restrictions to sensitive data** and select **+ Add or edit unallowed browsers**.
-
-1. On the **Add unallowed browsers** flyout page select the checkbox for **Google Chrome** and select **Save**.
-
-1. Back on the **Endpoint DLP settings** page, select the dropdown to for **Service domains** and change it from **Off** to **Block**.
-
-1. In the **Update cloud app mode** dialogue select **Yes** to activate the block mode.
-
-1. Under **Service domains** select **+ Add cloud service domain**.
-
-1. On the **Add cloud service domain** flyout page in the **Domain** field enter `dropbox.com` then select the **+** to the right. Select **Save** to save this setting.
-
-1. Close the browser window.
-
-You have now configured custom settings for your Endpoint DLP policies. Every policy you create will ignore content in the folder you configured, and the Google Chrome browser has been added as unallowed browser to handle sensitive data.
+You have successfully created and activated an Endpoint DLP policy. This policy ensures that sensitive data at Contoso Ltd. is protected from unauthorized uploads to generative AI platforms, balancing security with the need for employees to use AI tools in their daily work.

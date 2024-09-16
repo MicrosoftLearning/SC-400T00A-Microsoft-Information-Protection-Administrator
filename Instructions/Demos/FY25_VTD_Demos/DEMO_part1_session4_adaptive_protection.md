@@ -4,7 +4,7 @@ lab:
     module: 'Learning Objective - Implement Insider Risk Management in Microsoft Purview'
 ---
 
-# Demo Lab 4 - Configure Insider Risk Management
+# Session 1 Demo 4 - Configure Insider Risk Management
 
 You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Your role involves ensuring regulatory compliance and protecting sensitive information within the organization. Recently, Contoso Ltd. has recognized the need to proactively address insider risks that could potentially harm the company's reputation, compromise data security, or lead to legal issues.
 

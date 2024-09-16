@@ -5,7 +5,7 @@ lab:
 ---
 
 
-# Session 1 demo 1 - Manage Sensitive Information Types
+# Session 1 Demo 1 - Manage Sensitive Information Types
 
 Today, we'll create and test a custom sensitive information type (SIT) for Contoso Ltd. to help prevent the accidental sharing of employee IDs. This classification step is crucial before applying data protection policies, like DLP, to secure sensitive employee information.
 
