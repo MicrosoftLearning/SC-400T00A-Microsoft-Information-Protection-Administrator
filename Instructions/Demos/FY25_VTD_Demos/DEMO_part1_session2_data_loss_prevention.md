@@ -5,7 +5,7 @@ lab:
 ---
 
 
-# Session 1 demo 2 - Implement Data Loss Prevention in Microsoft Purview
+# Session 1 Demo 2 - Implement Data Loss Prevention in Microsoft Purview
 
 Contoso Ltd. has faced growing concerns over sensitive customer data being shared externally, especially as remote work has increased. To prevent this risk, they are implementing Data Loss Prevention (DLP) policies in Microsoft Purview to block unauthorized sharing of important information.
 

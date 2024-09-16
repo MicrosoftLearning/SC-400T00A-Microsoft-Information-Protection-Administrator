@@ -4,7 +4,7 @@ lab:
     module: 'Learning Objective - Implement and manage information protection'
 ---
 
-# Demo Lab 4 - Create a sensitivity label
+# Session 2 Demo 5 - Create a sensitivity label
 
 With the introduction of Microsoft 365 Copilot, Contoso Ltd.’s HR department is concerned about protecting sensitive employee data in automatically generated documents. To ensure data security, they’re applying sensitivity labels in Microsoft Purview. These labels will encrypt and apply access controls to any sensitive HR documents, including those created by AI, safeguarding confidential information.
 
