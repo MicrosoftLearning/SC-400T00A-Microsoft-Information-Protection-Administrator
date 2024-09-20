@@ -4,7 +4,7 @@ lab:
     module: 'Learning Objective - Create a DLP policy for generative AI sites'
 ---
 
-# Session 2 Demo 6 - Create an endpoint DLP policy for generative AI sites
+# Part 2 Demo 6 - Create an endpoint DLP policy for generative AI sites
 
 With the growing use of generative AI tools at Contoso Ltd., the company's IT team has identified a risk of employees accidentally sharing sensitive customer and employee data through AI platforms. To mitigate this risk, Contoso's IT team is implementing Endpoint DLP in Microsoft Purview. This DLP policy will prevent sensitive information, such as customer details, employee records, or other confidential data, from being uploaded to generative AI websites, while still allowing employees to benefit from AI tools for their work.
 

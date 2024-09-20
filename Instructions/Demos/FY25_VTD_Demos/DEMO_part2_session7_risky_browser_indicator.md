@@ -4,46 +4,19 @@ lab:
     module: 'Learning Objective - Create policies with the risky browser usage template'
 ---
 
-# Session 2 Demo 7 - Create an Insider Risk Management policy using the risky browser usage template
+# Part 2 Demo 7 - Create an Insider Risk Management policy using the risky browser usage template
 
-You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Your role involves ensuring regulatory compliance and protecting sensitive information within the organization. Recently, Contoso Ltd. has recognized the need to proactively address insider risks that could potentially harm the company's reputation, compromise data security, or lead to legal issues.
-
-To effectively manage insider risks, you implement Microsoft Purview Insider Risk Management, a comprehensive solution designed to identify, analyze, and respond to potential insider threats.
+Contoso Ltd. is expanding its use of AI technologies and has observed employees visiting potentially risky websites while researching AI projects. To address this, they are implementing a Risky Browser Usage policy in Microsoft Purview’s Insider Risk Management to monitor web activity, flag risky behavior, and prevent potential data breaches. As Compliance Administrator, Joni Sherman is responsible for configuring this policy to ensure sensitive data is protected while allowing employees to safely conduct AI research.
 
 ## Task 1 – Configure insider risk settings
 
-In this task, you will customize the insider risk management settings in the Microsoft Purview portal. This will allow Joni Sherman to effectively manage potential insider risks within the organization and ensure the security of sensitive information.
+In this task, you'll customize the insider risk management settings in the Microsoft Purview portal. These settings will help monitor risky browsing behavior, providing visibility into potential threats and helping prevent data breaches.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Select **Settings** from the left sidebar.
 
 1. On the **Settings** page, select **Insider risk management** from the left sidebar.
-
-1. On the **Insider Risk Management settings** page, explore the available settings:
-
-   - **Analytics**: Evaluate potential insider risks without configuring policies.
-   - **Data sharing**: Export alert information to SIEM solutions or share user risk levels with Defender and DLP alerts.
-   - **Detection groups**: Create detection groups to tailor indicators and reduce false positives.
-   - **Global exclusions**: Specify global exclusions that won't be scored by policies.
-   - **Inline alert customization**: Quickly adjust policy thresholds or remove activities from policies directly from the Alerts dashboard.
-   - **Intelligent detection**s: Boost scores for unusual downloads, control alerts, filter Defender alerts, and specify domains for risk scoring.
-   - **Microsoft Teams (preview)**: Enable Teams support for collaborating on insider risk management cases.
-   - **Notifications**: Automatically send email notifications to selected role groups for alerts.
-   - **Policy indicators**: Select specific indicators for insider risk management policies; all are disabled by default.
-   - **Policy timeframes**: Define review periods triggered by policy matches based on events.
-   - **Power Automate flows (preview)**: Automate tasks for cases and users using Power Automate flows.
-   - **Priority physical assets (preview)**: Identify access to priority locations and correlate with user events.
-   - **Priority user groups**: Define high-risk users for closer inspection and sensitive risk scoring.
-   - **Privacy**: Choose to display usernames or anonymized versions for policy matches.
-
-1. On the left panel of the **Insider Risk Management settings** page, select **Notifications**.
-
-1. Review the users who will receive alerts for detected activities.
-
-1. On the left panel of the **Insider Risk Management settings** page, select **Privacy**.
-
-1. On the **Privacy** panel, select **Do not show anonymized versions of usernames**, then select **Save**.
 
 1. On the left panel of the **Insider Risk Management settings** page, select **Policy indicators**.
 
@@ -51,52 +24,15 @@ In this task, you will customize the insider risk management settings in the Mic
 
 1. Scroll to the bottom of the **Policy indicators** panel and select **Save**.
 
-1. On the left panel of the **Insider Risk Management settings** page, select **Priority user groups**.
+You have successfully configured the Insider Risk Management settings to track risky browsing behavior related to AI research and other activities.
 
-1. Select **+ Create priority user group** to open the **New priority user group** configuration.
+## Task 2 – Create an insider risk policy
 
-1. On the **Name and describe the priority user group** page enter:
+In this task, you will create an Insider Risk Management policy to monitor and protect against risky browsing activities that could expose sensitive information. This policy will help detect potentially harmful web activity and prevent sensitive data from being compromised while allowing employees to continue using AI tools safely.
 
-    - **Name**: `Finance team`
-    - **Description**: `Team members that manage financial operations, budgeting, and reporting.`
+1. In the Microsoft Purview portal, select **Solutions** from the left sidebar, then select **Insider Risk Management**.
 
-1. Select **Next**.
-
-1. On the **Choose members** page select **+ Choose members**.
-
-1. On the **Choose members** flyout panel, select:
-
-   - `Lynne Robbins`
-   - `Debra Berger`
-   - `Megan Bowen`
-
-1. Select **Add** at the bottom of the flyout panel to add the 3 members.
-
-1. Back on the **Choose members** page select **Next**.
-
-1. On the **Choose who can view data involving users in this priority group** select **+ Choose users and role groups**.
-
-1. On the **Choose users and role groups** flyout panel, select the checkbox for **Insider Risk Management** to add all members who have the Insider Risk Management role in Microsoft Purview then select **Add**.
-
-1. Back on the **Choose who can view data involving users in this priority group** select **Next**.
-
-1. On the **Review** page select **Submit**.
-
-1. Once you have successfully created the priority group, select **Done** on the **Created priority user group** page.
-
-You have successfully customized the Insider risk management settings. Now, Joni Sherman has the necessary tools and capabilities to proactively identify and mitigate insider risks, safeguarding valuable data in the Microsoft Purview portal.
-
-## Task 3 – Create an insider risk policy
-
-In this task, you will configure a policy named **Sensitive Data Protection** in Microsoft Purview to monitor and protect against risky browsing activities that could expose sensitive information within the organization.
-
-1. You should still be logged into Microsoft Purview with Joni's account on the **Insider Risk Management settings** page.
-
-1. Navigate to insider risk management by selecting **Solutions** from the left sidebar, then select **Insider Risk Management**.
-
-1. On the **Insider Risk Management** page, select **Recommendations** from the left sidebar. Take some time to review this page before creating your first policy.
-
-1. After reviewing the recommendations, select the **Policies** from the left sidebar, then select **+ Create policy**.
+1. Select **Policies** from the left sidebar, then select **+ Create policy**.
 
 1. On the **Choose a policy template** page select **Risky browser usage (preview)** then select **Next**.
 
@@ -127,42 +63,6 @@ In this task, you will configure a policy named **Sensitive Data Protection** in
 
 1. Once you have successfully created your insider risk policy, select **Done** on the **Your policy was created** page.
 
-    >**Note:** As noted on this page, it may take up to 24 hours before policy matches will start showing up in the Alerts tab.
+    >**Note:** As noted on this page, it might take up to 24 hours before policy matches will start showing up in the Alerts tab.
 
-You have successfully created the **Sensitive Data Protection** policy, which will help detect and prevent risky browsing activities that could expose sensitive information. Keep in mind that it may take up to 24 hours for policy matches to appear in the Alerts tab.
-
-## Task 4 – Create a notice template
-
-In this task, you will create a notice template in Microsoft Purview's Insider Risk Management, which allows you to automatically send email messages to users when a case is generated for risky browsing activities, serving as reminders or providing information for compliance training.
-
-1. You should still be logged in as Joni in Microsoft Purview in insider risk management.
-
-1. Select **Notice templates** from the left sidebar.
-
-1. On the **Notice templates** page, select **+ Create notice template**.
-
-1. Fill out the necessary information in **Create a new notice template** flyout panel on the right.
-
-    - **Template name**: `Risky Browsing Alert`
-    - **Send from**: `Joni Sherman`
-    - **Subject**: `Risky Browsing Activity Detected`
-    - **Message body**:
-
-        ````html
-        <!DOCTYPE html>
-        <html>
-        <body>
-        <h2>Alert: Risky Browsing Activity Detected</h2>
-        <p>We detected potentially risky browsing activity associated with your account. As part of our Insider Risk Management policy, we are required to investigate any suspicious online behavior that could compromise data security.</p>
-        <p>Please review your recent browsing activities, report any unusual behavior, and refer to the Contoso User Code of Conduct training at <a href='https://contoso.com'>https://contoso.com</a> for more information.</p>
-        <p>Thank you for your cooperation,</p>
-        <p><em>Human Resources</em></p>
-        </body>
-        </html>
-        ````
-
-1. Select **Create**.
-
-1. Back on the **Notice templates** page you'll see the **Risky Browsing Alert** template you just created.
-
-You have successfully created the **Risky Browsing Alert** notice template, enabling automated notifications to be sent to users when risky browsing activities are detected, reinforcing security measures and promoting adherence to the Contoso User Code of Conduct.
+you have successfully created the **Sensitive Data Protection** policy, which will monitor risky browsing activity related to AI projects. The policy will flag potential insider threats and help prevent sensitive data from being exposed to unauthorized platforms. Keep in mind that it might up to 24 hours for alerts to appear in the system.

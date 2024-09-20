@@ -4,7 +4,7 @@ lab:
     module: 'Learning Objective - Implement Adaptive Protection in Insider Risk Management'
 ---
 
-# Session 1 Demo 4 - Enable Adaptive Protection
+# Part 1 Demo 4 - Enable Adaptive Protection
 
 > Note: There isn't much to do in this demo aside from enabling Quick setup. Quick setup takes 72 hours to set up, but after it's set up the option disappears from the portal. In this demo you'll be explaining some elements of Adaptive Protection in the portal and explaining what happens when you use quick setup.
 
