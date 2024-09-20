@@ -31,7 +31,7 @@ If you encounter any issues with these labs, please reach out to me at richelle.
 
 1. You'll need to run the lab setup in the Skillable lab VM to onboard a device.
 
-## Task - Set user passwords for lab exercises
+## Task 1 – Set user passwords demo walkthrough
 
 In this task, you'll set passwords for the user accounts needed for the labs.
 
