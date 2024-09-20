@@ -4,11 +4,11 @@ lab:
     module: 'Learning Objective - Implement Insider Risk Management in Microsoft Purview'
 ---
 
-# Session 1 Demo 3 - Create an Insider Risk Management policy
+# Part 1 Demo 3 - Create an Insider Risk Management policy
 
 After discovering several incidents of inadvertent data sharing and potential insider threats, Contoso Ltd. is using Insider Risk Management in Microsoft Purview. By configuring policies to track and address risky employee behaviors, they aim to watch for risky behaviors and prevent data leaks while staying compliant with security rules.
 
-## Task 1: Configure insider risk settings
+## Task 1 – Configure insider risk settings
 
 In this task, we will configure key settings in Microsoft Purview's Insider Risk Management module. By adjusting these settings, we ensure Contoso Ltd. can effectively monitor and address insider risks, such as data leaks or unauthorized access to sensitive information.
 
