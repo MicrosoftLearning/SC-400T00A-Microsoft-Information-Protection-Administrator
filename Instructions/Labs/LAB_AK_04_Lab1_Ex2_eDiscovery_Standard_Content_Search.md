@@ -87,7 +87,7 @@ You have now successfully created an eDiscovery (Standard) case titled "Wrongful
 
 In Task 2 you will create an eDiscovery (Standard) hold as part of the "Wrongful Termination Case" previously created. This hold preserves all relevant electronic data related to the Contoso Ltd. wrongful termination lawsuit.
 
-1. You should still be logged into Microsoft Purview with Joni's account, and still be on the **Settings** page of the Wrongful Termination Case in eDiscovery (Standard). If not, navigate to `https://purview.microsoft.com`, and login as Joni Sherman. Select ***Solutions** > **eDiscovery** > **Standard Cases** > **Wrongful Termination Case**.
+1. You should still be logged into Microsoft Purview with Joni's account, and still be on the **Settings** page of the Wrongful Termination Case in eDiscovery (Standard). If not, navigate to `https://purview.microsoft.com`, and login as Joni Sherman. Select **Solutions** > **eDiscovery** > **Standard Cases** > **Wrongful Termination Case**.
 
 1. Select the **Hold** tab from the top navigation bar.
 
@@ -106,9 +106,13 @@ In Task 2 you will create an eDiscovery (Standard) hold as part of the "Wrongful
 
 1. Back on the **Choose locations** page, select **Next**.
 
-1. On the **Query** page, leave the **Keywords** field blank. Select the dropdown for **+ Add condition** then select **Date**.
+1. On the **Query** page, ensure the toggle is set for **Use new query builder**.
 
-1. Leave the default date range in the **Date** fields, then select **Next**.
+1. Under **Filters**, and under the **AND** operator, select **Select a filter**, then select **Date**.
+
+1. A new **Select an operator** field appears to apply an operator to the **Date** filter. Use the **Between** operator and leave the default date range selected.
+
+1. Select **Next**.
 
 1. On the **Review your settings** page select **Submit**.
 
