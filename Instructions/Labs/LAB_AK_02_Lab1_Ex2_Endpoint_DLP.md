@@ -48,8 +48,6 @@ In this task, you will use the local script option to onboard a Windows 11 devic
 
 1. On the left sidebar, expand **Device onboarding**, then select **Onboarding**.
 
-1. On the **Device onboarding** page, in the navigation pane, select **Onboarding**.
-
 1. In the **Deployment method** dropdown menu, select **Local Script (for up to 10 machines)** and select **Download package**.
 
 1. In the **Downloads** dialog, hover over the download, then select the folder icon to **Show in folder**.
