@@ -85,6 +85,8 @@ In this task, you will explore the functionalities of Compliance Manager within 
 
 1. On the **Improvement actions** page, search for, then select **`Enable self-service password reset`**. This will open a new tab for the **Enable self-service password reset** improvement action. Review the available information for the improvement action. From this page, you can assign an _Owner_ or view the assigned owner of the improvement action, the _Implementation status_, _Test status_, _Service_, _Testing type_, and _Testing source_. You can also select the **Details** tab to view implementation information about the improvement action, **Evidence** to upload and view previous uploaded evidence, and **Related controls** to view controls that contain that improvement action.
 
+   >**Note**: If the **Enable self-service password reset** improvement action doesn't appear, it might take a few minutes for permissions to replicate after granting access in the previous task.
+
 1. Exit out of this improvement action by closing the **Enable self-service password reset** tab in Microsoft Edge. You should now be back on the **Improvement actions** page.
 
 1. On the left sidebar, select **Solutions**. On this page, you'll see how solutions contribute to your score and their remaining opportunity for improvement.
