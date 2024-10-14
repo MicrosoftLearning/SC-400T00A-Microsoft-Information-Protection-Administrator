@@ -48,9 +48,9 @@ In this task, you'll enable Audit in the Microsoft Purview compliance portal. Th
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com**.
 
-1. In the left navigation pane select **Audit**.
+1. In the left navigation pane select **Solutions**, then select **Audit**.
 
 1. On the **Audit** page. select **Start recording user and admin activity** to activate audit logging.
 
@@ -91,7 +91,7 @@ In this task, you'll enable information barriers in SharePoint Online and OneDri
 1. Run the following cmdlet to connect to the admin center for SharePoint Online:
 
     ```powershell
-     Connect-SPOService -Url https://WWLxZZZZZZ-admin.sharepoint.com
+    Connect-SPOService -Url https://WWLxZZZZZZ-admin.sharepoint.com
     ```
 
     >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
