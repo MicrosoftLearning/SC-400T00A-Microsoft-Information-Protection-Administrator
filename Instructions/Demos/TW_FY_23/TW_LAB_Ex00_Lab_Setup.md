@@ -91,12 +91,12 @@ In this task, you'll enable information barriers in SharePoint Online and OneDri
 1. Run the following cmdlet to connect to the admin center for SharePoint Online:
 
     ```powershell
-     Connect-SPOService -Url https://WWLxZZZZZZ-admin.sharepoint.com -Credential admin@WWLxZZZZZZ.onmicrosoft.com
+     Connect-SPOService -Url https://WWLxZZZZZZ-admin.sharepoint.com
     ```
 
     >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
 
-1. Login with the MOD Administrator password provided by your lab hosting provider.
+1. Login with the MOD Administrator username and password provided by your lab hosting provider.
 
 1. To enable information barriers in SharePoint and OneDrive, run the following command:
 
