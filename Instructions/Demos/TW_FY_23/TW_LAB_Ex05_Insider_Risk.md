@@ -16,13 +16,13 @@ In this exercise, you will assign the Insider Risk Management role to Joni to gr
 
 1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In Microsoft Edge, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
+1. In Microsoft Edge, navigate to **https://purview.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
 
-1. Navigate to **Roles & scope**, then select **Permissions** from the dropdown.
+1. Select **Settings** from the left-hand navigation pane.
 
-1. On the **Permissions** page, under **Microsoft Purview solutions** select Roles.
+1. Select **Roles and scopes**, then **Role groups**.
 
-1. On the **Role groups for Microsoft Purview solutions** page select **Insider Risk Management**.
+1. On the **Role groups for Microsoft Purview solutions** page find, and select **Insider Risk Management** by searching or by sorting the **Name** column.
 
 1. Select **Edit** from the **Insider Risk Management** flyout page on the right.
 
@@ -44,40 +44,40 @@ You have successfully assigned the Insider Risk Management role to Joni Sherman,
 
 In this task, you will customize the Insider risk management settings in the Microsoft Purview portal. This will allow Joni Sherman to effectively manage potential insider risks within the organization and ensure the security of sensitive information.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. Select **Insider risk management** from the left navigation bar.
+1. Select **Settings** from the left navigation bar.
 
-1. Select the gear icon on the top right for **Settings**. 
+1. Under **Solution settings**, select **Insider Risk Management**.
 
 1. Explore the settings:
 
-    - **Privacy**: Allows you to select displaying usernames or anonymized versions in alerts and cases.
+    - **Analytics**: Assesses potential insider risks without configuring policies to guide policy creation.
+    - **Data sharing**: Exports risk alert information to SIEM solutions using Office 365 Management Activity APIs.
+    - **Inline alert customization**: Allows policy tuning and threshold adjustment directly from the Alerts dashboard.
+    - **Intelligent detections**: Controls alert volume, excludes certain entities from risk scoring and allows filtering of Microsoft Defender alerts.
+    - **Microsoft Teams**: Enables Microsoft Teams for collaboration on insider risk management cases.
+    - **Notifications**: Automatically sends email notifications to insider risk management role groups.
     - **Policy indicators**: Involves configuring the policy template using specific risk indicators.
     - **Policy timeframes**: Defines review periods triggered by policy matches based on events and activities.
-    - **Intelligent detections**: Controls alert volume, excludes certain entities from risk scoring and allows filtering of Microsoft Defender alerts.
-    - **Export alerts**: Exports risk alert information to SIEM and SOAR solutions using Office 365 Management Activity APIs.
-    - **Priority user groups**: Determines high-risk users for closer inspection and more sensitive risk scoring.
-    - **Priority physical assets (preview)**: Identifies and monitors access to priority physical assets correlating activity to user events.
     - **Power Automate flows (preview)**: Automates insider risk management tasks using Microsoft Power Automate flows.
-    - **Microsoft Teams (preview)**: Enables Microsoft Teams for collaboration on insider risk management cases.
-    - **Analytics**: Assesses potential insider risks without configuring policies to guide policy creation.
-    - **Admin notifications**: Automatically sends email notifications to insider risk management role groups.
-    - **Inline alert customization**: Allows policy tuning and threshold adjustment directly from the Alerts dashboard.
+    - **Priority physical assets**: Identifies and monitors access to priority physical assets correlating activity to user events.
+    - **Priority user groups**: Determines high-risk users for closer inspection and more sensitive risk scoring.
+    - **Privacy**: Allows you to select displaying usernames or anonymized versions in alerts and cases.
 
-1. Select **Privacy** from the Insider risk management settings bar under **General**.
+1. Select **Privacy** from the settings menu.
 
-1. Select **Do not show anonymized versions of usernames**.
+1. Select **Do not show pseudonymized versions of usernames**.
 
 1. Select **Save** to save this setting.
 
-1. Select **Policy indicators** from the Insider risk management settings bar under **General**.
+1. Select **Policy indicators** from the settings menu.
 
-1. On the **Policy indicators** settings pane, under **Office indicators** select the check box for **Select all**.
+1. Select **Office indicators**, then select the check box for **Select all**.
 
 1. Scroll down and select **Save**.
 
-1. Select **Priority user groups** from the insider risk management settings bar under **General**.
+1. Select **Priority user groups** from the settings menu.
 
 1. Select **+ Create priority user group** to open the **New priority user group wizard**.
 
@@ -88,23 +88,21 @@ In this task, you will customize the Insider risk management settings in the Mic
 
 1. Select **Next**.
 
-1. On the **Choose members** page select **+ Choose members**.
+1. On the **Members** page select **+ Members**.
 
-1. On the **Choose members** pane select the check box next to **Lynne Robbins**, **Debra Berger**, and **Megan Bowen** then select **Add** to add 3 members.
+1. On the **Members** pane select the check box next to **Debra Berger**, **Lynne Robbins**, and **Megan Bowen** then select **Add** to add 3 members.
 
-1. On the **Choose members** page select **Next**.
+1. Select **Next**.
 
-1. On the **Choose who can view data involving users in this priority group** select **+ Choose users and role groups**.
+1. On **Choose who can view data involving users in this priority group** select **+ Choose users and role groups**.
 
-1. On the **Choose users and role groups** page select the checkbox next to **Insider Risk Management** to add all members who have the Insider Risk Management role in Microsoft Purview the select **Add**.
+1. On the **Choose users and role groups** pane select the checkbox next to **Insider Risk Management** to add all members who have the Insider Risk Management role in Microsoft Purview the select **Add**.
 
-1. On the **Choose who can view data involving users in this priority group** select **Next**.
+1. Select **Next**.
 
 1. On the **Review** page select **Submit**.
 
 1. On the **Created priority user group** page select **Done**. This will take you back to the insider risk management settings page.
-
-1. Select **Insider risk management** to navigate back to the main Insider risk management page.
 
 You have successfully customized the Insider risk management settings. Now, Joni Sherman has the necessary tools and capabilities to proactively identify and mitigate insider risks, safeguarding valuable data in the Microsoft Purview portal.
 
@@ -114,28 +112,34 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. You should still be logged in as Joni in Microsoft Purview.
 
-1. Select **Insider risk management** from the left navigation bar.
+1. Select **Solutions** from the left navigation bar, then select **Insider Risk Management**.
 
-1. Select the **Policies** tab from the top navigation bar then select **+ Create policy**.
+1. Select the **Policies** tab from the left-hand pane.
+
+1. Select **+ Create policy**.
 
 1. On the **Choose a policy template** page select **Data leaks** then select **Next**.
 
-1. On the **Name your policy page** enter:
+1. On the **Name your policy** page enter:
 
     - **Name**: Financial Data Protection
     - **Description**: Sensitive financial data access monitoring
 
 1. Select **Next**.
 
-1. On the **Choose users and groups** page, leave **Include all users and groups** selected, then select **Next**.
+1. On the **Choose users and groups** page, leave **All users, groups, and adaptive scopes** selected, then select **Next**.
 
-1. On the **Decide whether to prioritize content page**, leave only **Sensitive info type** selected then select **Next**.
+1. On the **Exclude users and groups (optional)** page, select **Next**.
+
+1. On the **Decide whether to prioritize content** page, leave only **Sensitive info types** selected then select **Next**.
 
 1. On the **Sensitive info types to prioritize** page select **+ Add or edit sensitive info type**.
 
-1. In the **Add or edit sensitive info types** pane search for _bank_ and select the check box next to **U.S. Bank Account Number** and **International Banking Account Number (IBAN)**. Next search for _credit_ and select the check box next to **Credit Card Number** then select **Add** to add the 3 sensitive info types.
+1. In the **Add or edit sensitive info types** pane search for _bank_ and select the check box next to **U.S. Bank Account Number** and **International Banking Account Number (IBAN)**. 
 
-1. Back on the **Sensitive info types to prioritize** select **Next**.
+1. Search for _credit_ and select the check box next to **Credit Card Number** then select **Add** to add the 3 sensitive info types.
+
+1. On the **Sensitive info types to prioritize** page select **Next**.
 
 1. On the **Decide whether to score only activity with priority content** page leave **Get alerts for all activity** selected, then select **Next**.
 
@@ -152,15 +156,15 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. Select **Next**.
 
-1. On the **Triggering thresholds for this policy** page select **Use default thresholds (Recommended)** then select **Next**.
+1. On the **Choose thresholds for triggering events** page select **Apply built-in thresholds** then select **Next**.
 
 1. On the **Indicators** page, select the drop down for **Physical access indicators** and deselect **Physical access after termination or failed access to sensitive asset** if selected then select **Next**.
 
 1. On the **Detection options** page select **Select all** from the **Sequence detection**, **Cumulative exfiltration detection**, and **Risk score boosters** sections, then select **Next**.
 
-1. On the **Decide whether to use default or custom indicator thresholds** page select **Default thresholds** then select **Next**.
+1. On the **Choose threshold type for indicators** page select **Apply thresholds provided by Microsoft** then select **Next**.
 
-1. On the **Review settings and finish** page, select **Submit**.
+1. On the **Review settings and finish** page select **Submit**.
 
 1. On the **Your policy was created** page select **Done**.
 
@@ -174,7 +178,9 @@ In this task, you will create a notice template in Microsoft Purview's Insider R
 
 1. You should still be logged in as Joni in Microsoft Purview in Insider risk management.
 
-1. From the top navigation tabs, select **Notice template** then select **+ Create notice template**.
+1. In the left-hand pane, select **Notice templates**.
+
+1. Select **Create notice template**.
 
 1. Fill out the necessary information in **Create a new notice template** flyout page on the right.
 
