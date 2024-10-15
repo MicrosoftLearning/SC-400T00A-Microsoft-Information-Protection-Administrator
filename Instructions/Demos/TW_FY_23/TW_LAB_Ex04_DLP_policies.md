@@ -21,15 +21,17 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. If the **Stay signed in?** dialog box appears, select the **Don’t show this again** checkbox and then select **No**.
 
-1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
+1. In the Microsoft Purview portal, in the left navigation pane, select **Data Loss Prevention**.
 
-1. On the **Policies** page select **+Create policy** to start the wizard for creating a new data loss prevention policy.
+1. Select **Policies**.
 
-1. On the **Start with a template or create a custom policy** page, scroll down and select **Custom** under **Categories** and **Custom policy** under **Templates**. By default, both  options should already be selected , select **Next**.
+1. On the Policies page select **+ Create policy** to start the wizard for creating a new data loss prevention policy.
+
+1. On the **Start with a template or create a custom policy** page, scroll down and select **Custom** under **Categories** and **Custom policy** under **Regulations**. By default, both  options should already be selected , select **Next**.
 
 1. On the **Name your DLP policy** page enter:
 
@@ -64,7 +66,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. Select the check box to enable **Notify users in Office 365 service with a policy tip**.
 
-1. Under **User overrides** select the checkbox to **Allow overrides from M365 services. Allows users in Exchange, SharePoint, OneDrive and Teams to override policy restrictions.**
+1. Under **User overrides** select the checkbox to **Allow users to override policy restrictions in Fabric (including Power BI), Exchange, SharePoint, OneDrive, and Teams.**
 
 1. Check the checkbox to **Require a business justification to override**.
 
@@ -72,7 +74,7 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Create rule** page select **Save** then select **Next**.
 
-1. On the **Policy mode** page select **Test it out first** and select **Show policy tips while in test mode**.
+1. On the **Policy mode** page select **Run the policy in simulation mode** and select **Show policy tips while in test mode**. Then select **Next**.
 
 1. On the **Review your policy and create it** page review your settings then select **Submit**
 
@@ -86,11 +88,13 @@ In this task, you will modify the existing DLP policy you created in the previou
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://purview.microsoft.com**.
 
-1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
+1. In the Microsoft Purview portal, in the left navigation pane, select **Data Loss Prevention**.
 
-1. On the **Policies** page select the checkbox next to the recently created **Credit Card DLP Policy** and then select **Edit policy** (pencil icon) to open the policy wizard.
+1. Select **Policies**.
+
+1. On the Policies page select the checkbox next to the recently created **Credit Card DLP Policy** and then select **Edit policy** (pencil icon) to open the policy wizard.
 
 1. On the **Name your DLP policy** page, select **Next**.
 
@@ -114,29 +118,29 @@ In this task, you use PowerShell to create a DLP policy to protect the Contoso E
 
 1. In the **PowerShell** window, enter
 
-   ```powershell
-   Connect-IPPSSession
-   ```
+    ```powershell
+    Connect-IPPSSession
+    ```
 
-   and then sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. Sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
 1. Enter the following command into PowerShell to create a DLP policy that scans all Exchange mailboxes:
 
-   ```powershell
-   New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All
-   ```
+    ```powershell
+    New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All
+    ```
 
 1. Enter the following command into PowerShell to add a DLP rule to the DLP policy you created in the previous step:
 
-   ```powershell
-   New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
-   ```
+    ```powershell
+    New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
+    ```
 
 1. Use the following command to review the **EmployeeID DLP rule**:
 
-   ```powershell
-   Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
-   ```
+    ```powershell
+    Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
+    ```
 
 You have now created a DLP Policy that scans Contoso EmployeeIDs in Exchange by using PowerShell.
 
@@ -156,21 +160,21 @@ In this task you'll test the DLP policy that was created in the previous task.
 
 1. In the body of the email enter:
 
-   ``` text
-   Please help me with the start dates for the following employees:
-   ABC123456
-   DEF678901
-   GHI234567
+    ``` text
+    Please help me with the start dates for the following employees:
+    ABC123456
+    DEF678901
+    GHI234567
 
-   Thank you, 
-   Joni Sherman
-   ```
+    Thank you, 
+    Joni Sherman
+    ```
 
 1. Select the **Send** button in the upper right of the message window to send the email.
 
 1. You should receive a message that the email was undeliverable and blocked by a DLP policy.
 
-      ![Screenshot of Manage roles option](../Media/dlp-email-blocked.png)
+    ![Screenshot of Manage roles option](../Media/dlp-email-blocked.png)
 
 You have successfully tested your DLP policy.
 
@@ -180,15 +184,17 @@ In this task, you will activate the credit card information DLP policy you creat
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://purview.microsoft.com**.
 
-1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
+1. In the Microsoft Purview portal, in the left navigation pane, select **Data Loss Prevention**.
 
-1. On the  **Policies** page select the checkbox next to **Credit Card DLP Policy** and select **Edit policy** (pencil) to open the policy wizard.
+1. Select **Policies**.
 
-1. Select **Next** until you reach the **Policy mode** page and select **Turn it on right away**.
+1. On the  Policies page select the checkbox next to **Credit Card DLP Policy** and select **Edit policy** (pencil) to open the policy wizard.
 
-1. On the **Review your policy and create it** select **Submit**.
+1. Select **Next** until you reach the **Policy mode** page and select **Turn the policy on immediately**.
+
+1. On **Review and finish** page select **Submit**.
 
 1. On the **Policy updated** page select **Done**.
 
@@ -200,11 +206,13 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://purview.microsoft.com**.
 
-1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data loss prevention** then select **Policies**.
+1. In the Microsoft Purview portal, in the left navigation pane, select **Data Loss Prevention**.
 
-1. On the **Policies** select the three vertical dots next to the **EmployeeID DLP Policy** to open the **Actions** selection and select **Move to top**.
+1. Select **Policies**.
+
+1. On the Policies page select the three vertical dots next to the **EmployeeID DLP Policy** to open the **Actions** selection and select **Move to top**.
 
 1. In the **Data loss prevention** window, select **Refresh** and review the priority in the **Order** column of the policy table.
 
@@ -220,9 +228,9 @@ You want to use file policies in Microsoft 365 Defender to protect files in your
 
 1. Open **Microsoft Edge** and navigate to **https://security.microsoft.com** and log into the Microsoft 365 Defender portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. On the left navigation pane, scroll down then select **Settings**.
+1. On the left navigation pane, scroll down and select **System**, and then select **Settings**.
 
-1. On the **Settings** page select **Cloud Apps**.
+1. On the Settings page select **Cloud Apps**.
 
 1. In the left pane within the **Cloud apps** window, scroll down to the **Information Protection** section, then select **Files**.
 
@@ -240,9 +248,9 @@ In this task, you want to create a file policy in Microsoft 365 Defender to scan
 
 1. Open **Microsoft Edge** and navigate to **https://security.microsoft.com** and log into the Microsoft 365 Defender portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni Sherman's password should be provided by your lab hosting provider.
 
-1. In the **Microsoft 365 Defender** portal, in the left navigation, scroll down to the **Cloud apps** section, then select **Files**.
+1. In the **Microsoft 365 Defender** portal, in the left navigation select **Cloud apps**, then **Policies**, then **Policy management**.
 
-1. On the **Files** page select **+ New policy from search**.
+1. On the Policies page select **+ Create policy**, and then **File policy** from the dropdown list.
 
 1. On the **Create file policy** page, leave the **Policy template** selection as **No template**.
 
