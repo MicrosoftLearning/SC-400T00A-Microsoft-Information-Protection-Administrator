@@ -128,7 +128,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Secret Message** to the subject line and **My super-secret message.** to the body.
 
-1. From the top pane, select **Options** then **Encrypt** to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipients can't remove encryption."
+1. From the top pane, select **Options**, then **Encrypt**, and then **Encrypt** from the dropdown list to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipients can't remove encryption."
 
       ![Screenshot of Encyption settings](../Media/OptionsEncrypt.png)
 
