@@ -21,19 +21,11 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 
 1. Enter the following cmdlet to install the latest MS Online PowerShell module version:
 
-   ```powershell
-   Install-Module -Name MSOnline
-   ```
-
-1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take a while to complete processing.
-
-1. Enter the following cmdlet to install the latest SharePoint Online PowerShell module version:
-
     ```powershell
-    Install-Module -Name Microsoft.Online.SharePoint.PowerShell
+    Install-Module -Name MSOnline
     ```
 
-1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take a while to complete processing.
 
 1. Enter the following cmdlet to connect to the MS Online service:
 
@@ -85,11 +77,13 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-1. In the Microsoft Purview portal, on the left navigation pane, expand **Information protection** then select **Labels**.
+1. Select **Solutions** from the left pane, then select **Information Protection**.
 
-1. On the **Labels** page select **+ Create a label**.
+1. Select **Sensitivity labels**.
+
+1. From the page, select **+ Create a label**.
 
 1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page for the **Name**, **Description for admins** and **Description for users**, enter the following information:
 
@@ -137,11 +131,11 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select the **Apply or remove encryption** option.
+1. On the **Choose protection settings for labeled items** page, select the **Control access** option.
 
 1. Select **Next**.
 
-1. On the **Encryption** page select **Configure encryption settings**.
+1. On the Access control page select **Configure access control settings**.
 
 1. Enter the following information into the encryption settings:
 
@@ -150,13 +144,13 @@ In this task, your HR department has requested a sensitivity label to apply to H
    - **Allow offline access**: Only for a number of days
    - **Users have offline access to the content for this many days**: 15
 
-1. Select the **Assign permissions** link,
+1. Select the **Assign permissions** link.
 
 1. On the Assign permissions side menu, select the **+ Add any authenticated users**.
 
 1. Select **Save**.
 
-1. On the **Encryption** page, select **Next**.
+1. On the Access control page, select **Next**.
 
 1. On the **Auto-labeling for files and emails** page, select **Next**.
 
@@ -178,15 +172,17 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.  Sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://compliance.microsoft.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://purview.microsoft.com**.
+
+1. Select **Solutions** from the left pane, then select **Information Protection**.
 
 1. In the Microsoft Purview portal, on the left navigation pane, expand **Information protection** then select **Labels**.
 
-1. On the Labels page select **Publish label**.
+1. On the Sensitivity labels page select **Publish labels**.
 
 1. The publish sensitivity labels wizard will start.
 
-1. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
+1. Select the **Choose sensitivity labels to publish** link.
 
 1. The **Sensitivity labels to publish** pane will appear on the right.
 
@@ -229,21 +225,21 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the address bar and navigate to **https://portal.office.com**.
+1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the address bar and navigate to **https://www.microsoft365.com**.
 
 1. Scroll through the Welcome to Microsoft 365 message to close it.
 
-1. Select the Microsoft Word symbol from the left side pane to open Word Online.
+1. Select the **app launcher** menu from the top-left corner of the page and select **Word**.
 
-1. Select **New blank document** to create a new document.
+1. Select **Blank document** to create a new document.
 
 1. If a **Your privacy options** message is shown, close it with selecting **Close**.
 
 1. Enter the following contents into the word document:
 
-   ``` text
-   Important HR employee document.
-   ```
+    ``` text
+    Important HR employee document.
+    ```
 
 1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal > Employee Data (HR)**  to apply the label.
 
@@ -251,9 +247,9 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
     >**Note:** Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
 
-1. Select the **Document - Saved** in the upper left of the window, enter **HR Document** as the File Name and press Enter key.
+1. Select **Document** in the upper-left of the window to rename, enter **HR Document** as the File Name and press **Enter**.
 
-1. Close the tab to return to the Word Online tab. Select the Outlook symbol from the left side pane to open Outlook on the web.
+1. Close the tab to return to the Word Online tab. Select the **app launcher** menu, and select **Outlook** to open the web app.
 
 1. If a welcome message is shown, close it with selecting the **X**.
 
@@ -289,11 +285,13 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **https://compliance.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
 
-1. In the Microsoft Purview portal, on the left navigation pane, expand **Information protection** and then select **Labels**.
+1. In the Microsoft Purview portal, on the left navigation pane, select **Information Protection**.
 
-1. On the Labels page, highlight (without selecting) the existing **Internal** label, and select the three dots.
+1. Select **Sensitivity labels**.
+
+1. On the Sensitivity labels page, highlight (without selecting) the existing **Internal** label, and select the three dots.
 
 1. Select the **+ Create sublabel** menu item.
 
@@ -348,11 +346,11 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. Select **Don't create a policy yet** and then select **Done**.
 
-1. On the **Labels** page, select **Publish label**.
+1. On the Sensitivity labels page, select **Publish labels**.
 
 1. The Publish sensitivity labels wizard will start.
 
-1. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
+1. Select the **Choose sensitivity labels to publish** link.
 
 1. A side bar called **Sensitivity labels to publish** will appear on the right.
 
