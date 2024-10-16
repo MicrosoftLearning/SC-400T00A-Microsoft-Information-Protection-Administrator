@@ -12,7 +12,7 @@ The first setting Joni Sherman needs to configure and test with her pilot team i
 
 In this task, you will install the Exchange Online PowerShell module and verify the correct Azure RMS functionality of your tenant in context of Joni Sherman, who was assigned the role of the Compliance Administrator in the last exercise.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 
@@ -74,7 +74,7 @@ You have successfully installed the Exchange Online PowerShell module, connected
 
 There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with message encryption, you need to deactivate the use of social IDs for all users in your organization.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
+1. You should still be signed in to your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
 1. Run the following cmdlet to view the default configuration:
 
@@ -106,7 +106,7 @@ You have successfully deactivated the usage of foreign identity providers, such 
 
 You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
-1. Leave Client 1 VM (LON-CL1) open as it is, and log into Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+1. Leave Client 1 VM (LON-CL1) open as it is, and sign in to Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
 1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 
@@ -116,7 +116,7 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. If the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser. Once this is complete perform the previous step.
 
-1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and log into Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
+1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and sign in to Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
 
 1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -158,7 +158,7 @@ You have successfully tested the modified default OME template with deactivated 
 
 Protected messages sent by your organizations finance department require special branding, including customized introduction and body texts and a Disclaimer link in the footer. The finance messages shall also expire after seven days. In this task, you will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mail sent from the finance department.
 
-1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
+1. Sign in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
 1. Run the following cmdlet to create a new configuration:
 
@@ -212,9 +212,9 @@ You have successfully created a new transport rule that applies the custom brand
 
 To validate the new custom configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
 
-1. Log into Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+1. Sign in to Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
-1. Select **Microsoft Edge** from your taskbar. Outlook on the web tab should still be open and you should be logged in as **Lynne Robbins**.
+1. Select **Microsoft Edge** from your taskbar. Outlook on the web tab should still be open and you should be signed in as **Lynne Robbins**.
 
 1. Select **New message** from the upper left side part of Outlook on the web.
 
