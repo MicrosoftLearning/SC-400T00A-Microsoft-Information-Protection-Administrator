@@ -12,11 +12,11 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-# Lab Setup: Preparing Your Environment for Administration
+# Lab Setup - Preparing Your Environment for Administration
 
 In this lab you'll configure and prepare your environment for administration tasks. By following the provided steps, you'll ensure that essential features and settings are enabled in advance, allowing for an easier learning experience in upcoming lab activities. This preparation will include activating necessary features, setting up administrative permissions, and ensuring the proper configuration of key elements.
 
-## Task - Set user passwords for lab exercises
+## Task 1 - Set user passwords for lab exercises
 
 In this task, you'll set passwords for the user accounts needed for the labs.
 
@@ -42,7 +42,7 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. Repeat steps 4-8 to reset the passwords for **Megan Bowen** and **Lynne Robbins**.
 
-## Task - Enable Audit in the Microsoft Purview portal
+## Task 2 - Enable Audit in the Microsoft Purview portal
 
 In this task, you'll enable Audit in the Microsoft Purview compliance portal. This tracking feature ensures visibility and accountability by monitoring portal activities.
 
@@ -54,7 +54,7 @@ In this task, you'll enable Audit in the Microsoft Purview compliance portal. Th
 
 1. On the **Audit** page. select **Start recording user and admin activity** to activate audit logging.
 
-## Task - Enable Search by Name in Microsoft Teams
+## Task 3 - Enable Search by Name in Microsoft Teams
 
 In this task, you'll enable the **Search by Name** feature in Microsoft Teams for the lab setup. This allows easy user location and connection within the organization. Follow the steps to activate it beforehand, ensuring availability when working with Information Barriers.
 
@@ -68,7 +68,7 @@ In this task, you'll enable the **Search by Name** feature in Microsoft Teams fo
 
 1. Select **Save** to save this setting.
 
-## Task - Enable information barriers in SharePoint Online and OneDrive
+## Task 4 - Enable information barriers in SharePoint Online and OneDrive
 
 In this task, you'll enable information barriers in SharePoint Online and OneDrive to promote secure collaboration and prevent unauthorized communication.
 
