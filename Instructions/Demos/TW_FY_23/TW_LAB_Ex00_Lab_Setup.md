@@ -32,7 +32,7 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. Ensure none of the checkboxes are selected on the **Reset password** flyout page.
 
-1. In the **Password** field, enter a password for Joni you can remember.
+1. In the **Password** field, enter a password for Joni you can remember, such as the MOD Administrator account's password:
 
     >**Tip**: You can reset Joni's password to the same password as the admin's account, which should be provided by your lab hosting provider.
 
