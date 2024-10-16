@@ -20,9 +20,9 @@ In this lab you'll configure and prepare your environment for administration tas
 
 In this task, you'll set passwords for the user accounts needed for the labs.
 
-1. Log into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
+1. Sign in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
 
-1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and log into the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and sign in to the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. On the left navigation pane, expand **Users** then select **Active users**.
 
@@ -46,7 +46,7 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 In this task, you'll enable Audit in the Microsoft Purview compliance portal. This tracking feature ensures visibility and accountability by monitoring portal activities.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
+1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and Microsoft 365 with the MOD Administrator account.
 
 1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com**.
 
@@ -58,7 +58,7 @@ In this task, you'll enable Audit in the Microsoft Purview compliance portal. Th
 
 In this task, you'll enable the **Search by Name** feature in Microsoft Teams for the lab setup. This allows easy user location and connection within the organization. Follow the steps to activate it beforehand, ensuring availability when working with Information Barriers.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
+1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and Microsoft 365 with the MOD Administrator account.
 
 1. In **Microsoft Edge**, navigate to **https://admin.teams.microsoft.com**.
 
@@ -72,7 +72,7 @@ In this task, you'll enable the **Search by Name** feature in Microsoft Teams fo
 
 In this task, you'll enable information barriers in SharePoint Online and OneDrive to promote secure collaboration and prevent unauthorized communication.
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 
@@ -96,7 +96,7 @@ In this task, you'll enable information barriers in SharePoint Online and OneDri
 
     >**Note:** Be sure to update ZZZZZZ. ZZZZZZ is your unique tenant ID provided by your lab hosting provider.
 
-1. Login with the MOD Administrator username and password provided by your lab hosting provider.
+1. Sign in with the MOD Administrator username and password provided by your lab hosting provider.
 
 1. To enable information barriers in SharePoint and OneDrive, run the following command:
 
