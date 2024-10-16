@@ -14,9 +14,9 @@ To effectively manage insider risks, you implement Microsoft Purview Insider Ris
 
 In this exercise, you will assign the Insider Risk Management role to Joni to grant access to perform insider risk tasks in the Microsoft Purview portal.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+1. Sign in to the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
-1. In Microsoft Edge, navigate to **https://purview.microsoft.com** and log into the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
+1. In Microsoft Edge, navigate to **https://purview.microsoft.com** and sign in to the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
 
 1. Select **Settings** from the left-hand navigation pane.
 
@@ -44,7 +44,7 @@ You have successfully assigned the Insider Risk Management role to Joni Sherman,
 
 In this task, you will customize the Insider risk management settings in the Microsoft Purview portal. This will allow Joni Sherman to effectively manage potential insider risks within the organization and ensure the security of sensitive information.
 
-1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and log into the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and sign in to the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. Select **Settings** from the left navigation bar.
 
@@ -110,7 +110,7 @@ You have successfully customized the Insider risk management settings. Now, Joni
 
 In this task, you will configure a policy named 'Financial Data Protection' in Microsoft Purview to monitor and protect sensitive financial data access within the organization.
 
-1. You should still be logged in as Joni in Microsoft Purview.
+1. You should still be signed in as Joni in Microsoft Purview.
 
 1. Select **Solutions** from the left navigation bar, then select **Insider Risk Management**.
 
@@ -176,7 +176,7 @@ You have successfully created the 'Financial Data Protection' policy, which will
 
 In this task, you will create a notice template in Microsoft Purview's Insider Risk Management, which allows you to automatically send email messages to users when a case is generated for risk activities, serving as reminders or providing information for compliance training.
 
-1. You should still be logged in as Joni in Microsoft Purview in Insider risk management.
+1. You should still be signed in as Joni in Microsoft Purview in Insider risk management.
 
 1. In the left-hand pane, select **Notice templates**.
 
