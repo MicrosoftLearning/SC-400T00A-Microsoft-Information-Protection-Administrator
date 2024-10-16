@@ -24,6 +24,8 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com** and sign in to the Microsoft Purview portal as the MOD Administrator, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
+1. WWLxZZZZZZ
+
 1. On the left navigation pane, expand **Users** then select **Active users**.
 
 1. On the **Active users** page, hover over **Joni Sherman**'s user account, and a key should appear.
