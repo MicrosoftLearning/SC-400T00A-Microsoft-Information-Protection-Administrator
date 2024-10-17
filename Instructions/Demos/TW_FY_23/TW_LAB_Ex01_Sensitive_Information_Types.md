@@ -19,7 +19,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. In **Microsoft Edge**, open an InPrivate window by selecting the ellipses at the top-right corner and selecting **New InPrivate window**.
 
-1. Go to https://purview.microsoft.com and sign in to the Microsoft Purview portal as Joni Sherman: JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. Go to https://purview.microsoft.com and sign in to the Microsoft Purview portal as **Joni Sherman**: JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Select **Solutions** from the left pane, then select **Data Loss Prevention**.
 
@@ -56,23 +56,25 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
     - **ID**: Employee ID keywords
     - **Case insensitive**:
-        - *Employee*
-        - *ID*
+        ```
+        *Employee*
+        *ID*
+        ```
     - Select the **Word match** radio button.
 
 1. Select **Done**.
 
-1. In the New pattern windows decrease the **Character proximity** value to **100** characters.
+1. In the New pattern windows decrease the **Character proximity** value to *100* characters.
 
 1. Select the **Create** button.
 
-1. Back on the **Define patterns for this sensitive info type** page select **Next**.
+1. Back on the **Define patterns for this sensitive info type** step select **Next**.
 
-1. On the **Choose the recommended confidence level to show in compliance policies** page use the default value and select **Next**.
+1. On the **Choose the recommended confidence level to show in compliance policies** step use the default value and select **Next**.
 
-1. On the **Review settings and finish** page review the settings and select **Create**. When successfully created select **Done**.
+1. On the **Review settings and finish** step review the settings and select **Create**. When successfully created select **Done**.
 
-1. Leave the browser window open.
+1. Leave the InPrivate browser window open.
 
 You have successfully created a new sensitive information type to identify employee IDs in the pattern of three uppercase characters, six numbers, and the keywords 'Employee' or 'IDs' within a range of 100 characters.
 
@@ -80,6 +82,7 @@ You have successfully created a new sensitive information type to identify emplo
 
 As an extra search pattern, you will create an Exact Data Match (EDM) based classification with a database schema of employee data. The database source file will be formatted with the following data fields of employees: Name, Birthdate, StreetAddress, and EmployeeID.
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be signed in to Microsoft 365 as **Joni Sherman**.
 
 1. To create the required Azure AD security group, sign out of Joni Sherman's account by selecting the user image in the upper right corner and select **Sign out**.
@@ -89,37 +92,47 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 1. In **Microsoft Edge**, navigate to **https://admin.microsoft.com**.
 
 1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
+-->
 
-1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
+1. Open your regular **Microsoft Edge** window that's signed in as **MOD Administrator**.
 
-1. On the Active teams and groups page, on the top navigation bar select **Security groups** then select **+ Add a security group**.
+1. Go to **https://admin.microsoft.com**.
+
+1. From the left pane, select **Teams & groups** then select **Active teams & groups**.
+
+1. Above the list of groups, select the **Security groups** tab, then select **+ Add a security group**.
 
     ![Screenshot of the Add a group button.](../Media/add-security-group.png)
 
-1. On the **Set up the basics** screen, enter the following:
+1. On the **Set up the basics** step, enter the following:
     - **Name**: EDM_DataUploaders
     - **Description**: People who upload data for EDM.
 
 1. Select **Next**.
 
-1. On the **Edit settings** page, leave the **Role assignment** at the default setting, and select **Next**.
+1. On the **Edit settings** step, leave the default setting and select **Next**.
 
-1. On the **Review and finish adding group** page, review your settings and select **Create group**.
+1. On the **Review and finish adding group** step, review your settings and select **Create group**.
 
-1. When the **New group created** page is shown, select **Close**.
+1. Once created, select **Close**.
 
-1. Ensure the **Security** tab is selected from the top navigation bar, then select **Refresh**. Select the newly created **EDM_DataUploaders** group from the list to open the **EDM_DataUploaders** flyout page on the right.
+1. Ensure the **Security groups** tab is selected, then select **Refresh**. 
+
+1. Select the newly created **EDM_DataUploaders** group from the list to open the **EDM_DataUploaders** flyout page on the right.
 
 1. Select the **Members** tab and select **View all and manage members**.
 
-1. In the **Manage group members** screen, select **(+) Add members**.
+1. Select **(+) Add members**.
 
-1. Select **Joni Sherman**, select the **Add (1)** button then select the back arrow button.
+1. Select **Joni Sherman**, then select the **Add (1)** button at the bottom. 
+
+1. Select the back arrow button at the top-left corner of the flyout pane.
 
 1. Verify **Joni Sherman** is listed below **Members**.
 
-1. Close the right-side pane with **X**.
+1. Close the **EDM_DataUploaders** pane with the **X** at the top-right.
 
+<!--
 1. Select the circle with the MOD Administrator initials **MA** and select **Sign out**.
 
 1. Close the browser window and open a new one.
@@ -127,12 +140,15 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 1. Navigate to the Microsoft Purview portal at https://compliance.microsoft.com.
 
 1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
+--> 
 
-1. Select **Solutions** from the left pane, then select **Data Loss Prevention**.
+1. Open the **Microsoft Edge** InPrivate window signed in as **Joni Sherman**.
+
+1. If you navigated away from where we left off, select **Data Loss Prevention** from the left pane.
 
 1. Expand **Classifiers** and select **EDM classifiers**.
 
-   >**Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM based SIT with the classic experience. See the following for more information on creating an EDM based SIT with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
+    >**Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM based SIT with the classic experience. See the following for more information on creating an EDM based SIT with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
 
 1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
 
@@ -146,41 +162,45 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Enable **Ignore delimiters and punctuation for all schema fields**.
 
-1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select *Hyphen*, *Period*, *Space*, *Open parenthesis* and *Close parenthesis*.
+1. Click the dropdown for **Choose delimiters and punctuation to ignore** and select:
 
-1. In the first **Schema field name**, enter *Name* and mark the **Field is searchable** box.
+    - **Hyphen**
+    - **Period**
+    - **Space**
+    - **Open parenthesis**
+    - **Close parenthesis**
 
-1. Select **+ Add schema data field** from the lower end.
+1. In the first **Schema field name**, enter *Name* and select the **Field is searchable** checkbox.
+
+1. Select **+ Add schema data field** towards the bottom.
 
 1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
 
-1. Select **+ Add schema data field** from the lower end again.
+1. Select **+ Add schema data field**.
 
 1. In **Schema field name**, below **Schema field #3**, enter *StreetAddress*.
 
-1. Select **+ Add schema data field** from the lower end a last time.
+1. Select **+ Add schema data field**.
 
-1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID*.
-
-1. Select **Field is searchable**.
+1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID* and select the **Field is searchable** checkbox.
 
 1. Select **Save**.
 
-1. Select **EDM sensitive info types** from the left pane.
+1. Select **EDM sensitive info types** from the left pane of **EDM classifiers**.
 
 1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
 
-1. On the **Define data store schema** page, select **Choose an existing EDM schema**.
+1. On the **Define data store schema** step, select **Choose an existing EDM schema**.
 
 1. Select **employeedb** and select **Add**.
 
 1. Review the data store schema and select **Next**.
 
-1. On the **Define patterns for this EDM sensitive info type** page, select **+ Create pattern**.
+1. On the **Define patterns for this EDM sensitive info type** step, select **+ Create pattern**.
 
-1. On the **New pattern** pane on the right-side, in the Primary element field, select *EmployeeID*.
+1. In the **New pattern** pane, in the **Primary element** field select **EmployeeID**.
 
-1. Below **Primary element's sensitive info type**, select **+ Choose sensitive info type**.
+1. Select **+ Choose sensitive info type**.
 
 1. In the **Search** bar, enter *Contoso* and press the enter key.
 
