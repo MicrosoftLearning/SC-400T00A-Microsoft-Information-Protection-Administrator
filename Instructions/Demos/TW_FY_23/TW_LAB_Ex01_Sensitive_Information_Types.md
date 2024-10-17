@@ -56,10 +56,12 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
     - **ID**: Employee ID keywords
     - **Case insensitive**:
-        ```
-        *Employee*
-        *ID*
-        ```
+
+            ```
+            Employee
+            ID
+            ```
+
     - Select the **Word match** radio button.
 
 1. Select **Done**.
