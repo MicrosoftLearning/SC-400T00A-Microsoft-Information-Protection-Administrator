@@ -302,17 +302,15 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. In the **Detect content that matches these conditions** section, select **+Add condition** then select **Content contains**.
 
-1. In **Content contains** section select the **Add** text then select **Sensitive info types**.
+1. In the **Content contains** section select **Add**, then select **Sensitive info types**.
 
-1. In the **Sensitive info types** search panel, enter the following and press **Enter**:
+1. In the **Sensitive info types** search panel that opens to the right, enter the following and press **Enter**:
 
     ``` text
     German
     ```
 
-1. Press the **Select all** checkbox at the top to select all sensitivity info types related to Germany.
-
-1. Select **Add** at the bottom.
+1. Press the **Select all** checkbox at the top to select all sensitivity info types related to Germany, then select **Add** at the bottom.
 
 1. Back on the **Auto-labeling for files and emails** step, select **Next**.
 
