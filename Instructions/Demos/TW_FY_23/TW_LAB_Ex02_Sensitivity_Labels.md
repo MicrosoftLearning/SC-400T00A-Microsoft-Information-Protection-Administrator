@@ -257,7 +257,9 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. Select the paperclip symbol from the top menu to add an attachment. Select the **HR Document.docx** below **Suggested files** to attach the document.
 
-1. Select **Send** to send out the email message with attached document.
+    >The file name may still be showing as **Document.docx** due to propagation time. It should be the only .docx file under **Suggested files**.
+
+1. Select **Send** to send out the email with the attached document.
 
 1. Leave the browser window open.
 
@@ -267,19 +269,23 @@ You have successfully created an HR Word document with a sensitivity label, whic
 
 In this task, you will create a Sensitivity Label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and sign in to the Microsoft Purview portal as **Joni Sherman**.
 
 1. In the Microsoft Purview portal, on the left navigation pane, select **Information Protection**.
+-->
 
-1. Select **Sensitivity labels**.
+1. Go back to your Purview tab or re-open it by going to https://purview.microsoft.com.
 
-1. On the Sensitivity labels page, highlight (without selecting) the existing **Internal** label, and select the three dots.
+1. If it is not still on the **Sensitivity labels** page, go to **Information Protection** from the left pane, then select **Sentivity labels**.
+
+1. Highlight (without selecting) the existing **Internal** label, and select the three dots.
 
 1. Select the **+ Create sublabel** menu item.
 
-1. The **New sensitivity label** wizard will start. On the **Name and create a tooltip for your label** page, enter the following information:
+1. On the **Provide basic details for this label** step, enter the following:
 
    - **Name**: GDPR Germany
    - **Display name**: GDPR Germany
@@ -288,75 +294,43 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select the option **Items** and select **Files** and **Emails**.
+1. On the **Define the scope for this label** step, select **Items**, **Files**, and **Emails**. If any other options on this page are selected, deselect them. Select **Next**.
 
-1. Select **Next**.
+1. On the **Choose protection settings for labeled items** step, select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select **Next**.
-
-1. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
+1. On the **Auto-labeling for files and emails** page, switch the toggle for **Auto-labeling for files and emails** to on.
 
 1. In the **Detect content that matches these conditions** section, select **+Add condition** then select **Content contains**.
 
 1. In **Content contains** section select the **Add** text then select **Sensitive info types**.
 
-1. A **Sensitive info types** panel will be displayed on the right.
-
-1. In the **Search for sensitive info types** search panel, enter the following information:
+1. In the **Sensitive info types** search panel, enter the following and press **Enter**:
 
     ``` text
     German
     ```
 
-1. Press the enter button, the results will display sensitivity info types related to Germany.
+1. Press the **Select all** checkbox at the top to select all sensitivity info types related to Germany.
 
-1. Press the **Select all** check box.
+1. Select **Add** at the bottom.
 
-1. Select **Add**.
+1. Back on the **Auto-labeling for files and emails** step, select **Next**.
 
-1. Select **Next**.
+1. Select **Next** until you reach the **Review your settings and finish** step.
 
-1. On the **Define protection settings for groups and sites** page, select **Next**.
+1. Select **Create label**.
 
-1. On the **Auto-labeling for schematized data assets (preview)** page, select **Next**.
-
-1. On the **Review your settings and finish** page, select **Create label**.
-
-1. The label will be created and when complete a message will display: **Your sensitivity label was created**.
-
-1. Select **Done**.
-
-1. Once the label has been created the **Your sensitivity label was created** page will be displayed.
-
-1. Select **Don't create a policy yet** and then select **Done**.
+1. On the **Your sensitivity label was created** step, select **Don't create a policy yet** and then select **Done**.
 
 1. On the Sensitivity labels page, select **Publish labels**.
 
-1. The Publish sensitivity labels wizard will start.
-
 1. Select the **Choose sensitivity labels to publish** link.
 
-1. A side bar called **Sensitivity labels to publish** will appear on the right.
+1. In the  **Sensitivity labels to publish** pane, select the **Internal** and **Internal/GDPR Germany** checkboxes. Then select **Add**.
 
-1. Select the **Internal** and **Internal/GDPR Germany** checkbox.
+1. On the **Choose sensitivity labels to publish** step, select **Next**.
 
-1. Select **Add**.
-
-1. On the **Choose sensitivity labels to publish** page, select **Next**.
-
-1. On the **Assign admin units (preview)** page, select **Next**.
-
-1. On the **Publish to users and groups** page, select **Next**.
-
-1. On the **Policy settings** page, select **Next**.
-
-1. On the **Default settings for documents​** page, select **Next**.
-
-1. On the **Default settings for emails** page, select **Next**.
-
-1. On the **Default settings for meetings and calendar events** page, select **Next**.
-
-1. On the **Default settings for Power BI content** page, select **Next**.
+1. Select **Next** until you reach the **Name your policy** step.
 
 1. On the **Name your policy** page, enter the following information:
 
@@ -367,9 +341,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the **Review and finish** page, select **Submit**.
 
-1. The policy will be created and when complete a message will display, **New policy created**.
-
-1. Select **Done**.
+1. On the **New policy created** step, select **Done**.
 
 You have successfully created and published an auto apply sensitivity label for GDPR documents in the region Germany.
 
