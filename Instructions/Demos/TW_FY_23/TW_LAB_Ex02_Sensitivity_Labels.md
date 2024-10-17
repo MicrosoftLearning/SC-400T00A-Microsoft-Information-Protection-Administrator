@@ -9,15 +9,19 @@ lab:
 In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd.
 Your organization is based in Rednitzhembach, Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.
 
-## Task 1 Enable support for sensitivity labels
+## Task 1 – Enable support for sensitivity labels
 
 In this task, you will install the MSOnline module and the SharePoint Online PowerShell module and enable support for sensitivity labels on your tenant.
 
+<!--
 1. Sign in to the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. Open an elevated PowerShell window by selecting the start menu with the right mouse button and then select **Windows PowerShell** and run as administrator.
 
 1. Confirm the **User Account Control** window with **Yes** and press Enter.
+-->
+
+1. Select your previously opened elevated PowerShell window from the task bar.
 
 1. Enter the following cmdlet to install the latest MS Online PowerShell module version:
 
