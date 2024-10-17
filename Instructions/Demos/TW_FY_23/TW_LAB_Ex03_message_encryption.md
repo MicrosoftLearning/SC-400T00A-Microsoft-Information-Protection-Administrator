@@ -144,13 +144,21 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. In the body, enter **My super-secret message.**
 
-1. From the top pane, select **Options**, then **Encrypt**, and then **Encrypt** from the dropdown list to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipients can't remove encryption."
+1. In the top bar, select the **Options** tab, then **Encrypt** (lock icon), and then **Encrypt** from the dropdown list. 
 
-      ![Screenshot of Encyption settings](../Media/OptionsEncrypt.png)
+    >At the top of the message pane above **Send**, you should see a notice that says "This message is encrypted. Recipients can't remove encryption."
+
+    ![Screenshot of Encyption settings](../Media/OptionsEncrypt.png)
 
 1. Select **Send** to send the message.
 
-1. Sign into your personal email account and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message automatically. If you sent the email to another email service like (@gmail.com), you may have to perform the next steps to process the encryption and read the message.
+1. Sign into your personal email account and open the message from Lynne Robbins. 
+
+1. If you sent this email to a Microsoft account (like @outlook.com) the encryption may be processed automatically and you will see the message without additional steps.
+
+    >**Note:** If you see **My super-secret message.** this task is now complete. Otherwise, proceed with the following steps.
+
+1. If you sent the email to another email service like @gmail.com, you may have to perform the next steps to process the encryption and read the message.
 
     >**Note:** You may need to check your junk or spam folder for the message from Lynne Robbins.
 
@@ -166,7 +174,9 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. Review the encrypted message.
 
+<!--
 1. Leave Client 1 VM (LON-CL1) open as it is.
+-->
 
 You have successfully tested the modified default OME template with deactivated social IDs.
 
@@ -174,7 +184,7 @@ You have successfully tested the modified default OME template with deactivated 
 
 Protected messages sent by your organizations finance department require special branding, including customized introduction and body texts and a Disclaimer link in the footer. The finance messages shall also expire after seven days. In this task, you will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mail sent from the finance department.
 
-1. Sign in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
+1. Sign back in to Client 1 VM (LON-CL1) with the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
 1. Run the following cmdlet to create a new configuration:
 
