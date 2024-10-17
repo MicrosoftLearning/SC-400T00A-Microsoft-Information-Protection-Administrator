@@ -230,7 +230,7 @@ Protected messages sent by your organizations finance department require special
     Get-OMEConfiguration -Identity "Finance Department" | Format-List
     ```
 
-1. Leave the PowerShell open.
+1. Leave the PowerShell window open.
 
 You have successfully created a new transport rule that applies the custom branding template automatically, when a member of the finance department sends a message to external recipients.
 
@@ -238,25 +238,27 @@ You have successfully created a new transport rule that applies the custom brand
 
 To validate the new custom configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
 
-1. Sign in to Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+1. Sign back in to Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
-1. Select **Microsoft Edge** from your taskbar. Outlook on the web tab should still be open and you should be signed in as **Lynne Robbins**.
+1. The Outlook on the web tab should still be open and signed in as **Lynne Robbins**.
 
-1. Select **New message** from the upper left side part of Outlook on the web.
+1. Select **New mail** from the upper-left corner of Outlook.
 
-1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Finance Report** to the subject line and enter **Secret finance information.** to the body.
+1. In the **To** field enter your personal or other third-party email address that is not in the tenant domain. 
 
-1. Select **Send** to send the message.
+1. In the **Add a subject** field, enter **Finance Report**.
 
-1. Sign into your personal email account and open the message from Lynne Robbins.
+1. In the body, enter **Secret finance information.**
 
-1. You should see a message from Lynne Robbins that looks like the image below.  Select **Read the message**.
+1. Select **Send**.
+
+1. Sign into your personal email account and open the message from **Lynne Robbins**. It will look similar to the image below. Select **Read the message**.
 
     ![Sample encrypted email from Lynne Robbins. ](../Media/EncryptedEmail.png)
 
 1. The customized configuration has social IDs activated, because both options are available. Select **Sign in with a One-time passcode** to receive a limited time passcode.
 
-1. Go to your personal email portal and open the message with subject **Your one-time passcode to view the message**.
+1. Go back to your personal email and open the message with subject **Your one-time passcode to view the message**.
 
 1. Copy the passcode, paste it in to the portal and select **Continue**.
 
