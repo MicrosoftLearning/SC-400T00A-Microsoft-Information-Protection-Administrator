@@ -277,7 +277,7 @@ bar with the right mouse button and select **Windows PowerShell (Admin)** and ru
 
 1. Keep Notepad open for later use.
 
-1. Select your previously opened **Administrator: Windows PowerShell** window from the task bar.
+1. Select your elevated PowerShell window from the task bar.
 
 1. Navigate to the EDM Upload Agent directory:
 
