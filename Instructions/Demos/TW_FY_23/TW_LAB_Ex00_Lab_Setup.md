@@ -127,3 +127,5 @@ In this task, you'll enable information barriers in SharePoint Online and OneDri
 <!--
 1. Close the PowerShell window once this is complete.
 -->
+
+1. Keep PowerShell open for later use.
