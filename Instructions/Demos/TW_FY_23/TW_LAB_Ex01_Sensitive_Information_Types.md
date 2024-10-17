@@ -13,9 +13,13 @@ Contoso Ltd. previously had issues with employees accidentally sending out perso
 
 In this exercise, you will use the Security & Compliance Center PowerShell module to create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
+-->
 
-1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and sign in to the Microsoft Purview portal as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, open an InPrivate window by selecting the ellipses at the top-right corner and selecting **New InPrivate window**.
+
+1. Go to https://purview.microsoft.com and sign in to the Microsoft Purview portal as Joni Sherman: JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Select **Solutions** from the left pane, then select **Data Loss Prevention**.
 
@@ -27,7 +31,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. Select **+ Create sensitive info type** to open the wizard for a new sensitive information type.
 
-1. On the **Name your sensitive info type** page, enter the following information:
+1. On the **Name your sensitive info type** step, enter the following:
 
     - **Name**: Contoso Employee IDs
     - **Description**: Pattern for Contoso employee IDs.
@@ -38,27 +42,27 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. In the right-side **New pattern** pane, select **+ Add primary element** and select **Regular expression**.
 
-1. In the new right-side pane **Add a regular expression**, enter the following:
+1. In **Add a regular expression**, enter the following:
 
     - **ID**: Contoso IDs
     - **Regular expression**: ```[A-Z]{3}[0-9]{6}```
-    - *String match*
+    - Select the **String match** radio button.
 
 1. Select **Done**.
 
-1. In the **New pattern** flyout page, below **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
+1. Below **Supporting elements**, select **+ Add supporting elements or group of elements** and select **Keyword list**.
 
-1. In the new right-side pane **Add a keyword list**, enter the following:
+1. In **Add a keyword list**, enter the following:
 
     - **ID**: Employee ID keywords
     - **Case insensitive**:
         - *Employee*
         - *ID*
-    - Select the radio button for *Word match* under the **Case Sensitive** field
+    - Select the **Word match** radio button.
 
 1. Select **Done**.
 
-1. In the New pattern windows decrease the **Character proximity** value to *100* characters.
+1. In the New pattern windows decrease the **Character proximity** value to **100** characters.
 
 1. Select the **Create** button.
 
