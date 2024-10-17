@@ -19,7 +19,7 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
 1. In **Microsoft Edge**, open an InPrivate window by selecting the ellipses at the top-right corner and selecting **New InPrivate window**.
 
-1. Go to https://purview.microsoft.com and sign in to the Microsoft Purview portal as **Joni Sherman**: JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
+1. Go to https://purview.microsoft.com and sign in to the Microsoft Purview portal as **Joni Sherman**, JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Select **Solutions** from the left pane, then select **Data Loss Prevention**.
 
@@ -56,17 +56,13 @@ In this exercise, you will use the Security & Compliance Center PowerShell modul
 
     - **ID**: Employee ID keywords
     - **Case insensitive**:
-
-            ```
-            Employee
-            ID
-            ```
-
+        - *Employee*
+        - *ID*
     - Select the **Word match** radio button.
 
 1. Select **Done**.
 
-1. In the New pattern windows decrease the **Character proximity** value to *100* characters.
+1. In the **New pattern** pane decrease the **Character proximity** value to *100* characters.
 
 1. Select the **Create** button.
 
@@ -152,9 +148,9 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
     >**Note:** Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the new experience the existing classic experience. This lab walks through creating an EDM based SIT with the classic experience. See the following for more information on creating an EDM based SIT with the new experience: [Create exact data match sensitive information type workflow new experience](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
 
-1. Ensure the switch for **New EDM Experience** is selected to **Off** for the classic experience.
+1. Ensure **New EDM Experience** is switched to **Off** for the classic experience.
 
-      ![Screenshot of option to proceed with the Classic EDM experience.](../Media/ClassicEDMExperience.png)
+    <!-- Replace screenshot -->
 
 1. Select **+ Create EDM schema**
 
@@ -208,19 +204,19 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **Contoso Employee IDs** and select **Done**.
 
-1. In the **New Pattern** page, select **Done**.
+1. In the **New Pattern** pane, select **Done**.
 
-1. Select **Next** in the **Define patterns for this EDM sensitive info type** screen.
+1. Select **Next** in the **Define patterns for this EDM sensitive info type** step.
 
-1. In the **Choose the recommended confidence level and character proximity** let the default value persist and select **Next**.
+1. In the **Choose the recommended confidence level and character proximity** step keep the default value and select **Next**.
 
-1. In the **Name and describe your EDM sensitive info type** page, enter the following:
+1. In the **Name and describe your EDM sensitive info type** step, enter the following:
     - **Name**: Contoso Employee EDM
     - **Description for admins**: EDM-based sensitive information type for employee personal information.
 
-1. Select **Next**, review the settings and select **Submit**.
+1. Select **Next**.
 
-1. On the **Your EDM sensitive info type was created** page, select **Done**.
+1. Review the settings and select **Submit**. Once created, select **Done**.
 
 1. Leave the browser open with the Microsoft Purview portal.
 
@@ -230,43 +226,35 @@ You have successfully created a new EDM-based classification sensitive informati
 
 To associate the EDM-based classification with a database containing sensitive data, hashing and uploading the actual data for the sensitive information type via the EDM Upload Agent tool is required next.
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be signed in to Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to **https://go.microsoft.com/fwlink/?linkid=2088639** to access the EDM download agent.
+-->
 
-1. Select **Run** to download and install the tool.
+1. Open a new tab in the InPrivate window and go to https://go.microsoft.com/fwlink/?linkid=2088639 to access the EDM download agent.
 
-1. When the setup wizard opens in the background, select the installer from the taskbar.
+1. Select the file once downloaded to launch the installer.
 
-1. In the **Microsoft Exact Data Match Upload Agent Setup** wizard, select **Next**.
+1. Select **Next**.
 
 1. Select **I accept the terms in the License Agreement** and select **Next**.
 
 1. Do not change the default **Destination Folder** path and select **Next**.
 
-1. Select **Install** to perform the installation.
+1. Select **Install**.
 
 1. When the **User Account Control** window opens, select **Yes**.
 
 1. When the installation finishes, select **Finish**.
 
-1. Select the Windows symbol in the lower left to open the start menu, enter **Notepad** and select **Notepad** from the start menu.
+1. Open the start menu, search for and select **Notepad**.
 
-1. Enter the following text to the first line in the notepad window:
+1. Enter the following text into the Notepad window:
 
     ``` text
     Name,Birthdate,StreetAddress,EmployeeID
-    ```
-
-1. Use enter button and add the following text to the second line in the notepad window:
-
-    ``` text
     Joni Sherman,01.06.1980,1 Main Street,CSO123456
-    ```
-
-1. Use enter button and add the following text to the third line in the notepad window:
-
-    ``` text
     Lynne Robbins,31.01.1985,2 Secondary Street,CSO654321
     ```
 
@@ -278,7 +266,7 @@ To associate the EDM-based classification with a database containing sensitive d
 
 1. Select the dropdown at **Encoding:** and select **UTF-8** and select **Save**.
 
-1. Close the Notepad window.
+1. Close Notepad.
 
 1. Select the windows symbol in the 
 bar with the right mouse button and select **Windows PowerShell (Admin)** and run as administrator.
