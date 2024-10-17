@@ -94,7 +94,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Open your regular **Microsoft Edge** window that's signed in as **MOD Administrator**.
 
-1. Go to **https://admin.microsoft.com**.
+1. Go to https://admin.microsoft.com.
 
 1. From the left pane, select **Teams & groups** then select **Active teams & groups**.
 
@@ -266,12 +266,18 @@ To associate the EDM-based classification with a database containing sensitive d
 
 1. Select the dropdown at **Encoding:** and select **UTF-8** and select **Save**.
 
+<!--
 1. Close Notepad.
 
 1. Select the windows symbol in the 
 bar with the right mouse button and select **Windows PowerShell (Admin)** and run as administrator.
 
 1. When the **User Account Control** window opens, select **Yes**.
+-->
+
+1. Keep Notepad open for later use.
+
+1. Select your previously opened **Administrator: Windows PowerShell** window from the task bar.
 
 1. Navigate to the EDM Upload Agent directory:
 
@@ -311,7 +317,11 @@ bar with the right mouse button and select **Windows PowerShell (Admin)** and ru
 
     ![Image of EDM Upload Agent completion.](../Media/EDMUploadAgentCompleted.png)
 
+<!--
 1. Close the PowerShell window.
+-->
+
+1. Keep PowerShell open for later use.
 
 You have successfully hashed and uploaded a database file for an EDM-based classification sensitive information type.
 
@@ -319,11 +329,15 @@ You have successfully hashed and uploaded a database file for an EDM-based class
 
 Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave.  When that happened the reason for illness or disease was sent out.  We do not want that to happen.
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be signed in to Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://purview.microsoft.com**.
+-->
 
-1. Select **Solutions** from the left pane, then select **Data Loss Prevention**.
+1. Open the InPrivate window signed in with **Joni Sherman** and go back to https://purview.microsoft.com if it was closed.
+
+1. Select **Data Loss Prevention** from the left pane*.
 
 1. Expand **Classifiers** and select **Sensitive info types**.
 
@@ -366,13 +380,15 @@ Several violations of personal information leakage happened when users sent out 
 
 1. On the **New pattern** page, review the configuration and select **Create**.
 
-1. On the **Define patterns for this sensitive info type** select **Next**.
+1. On the **Define patterns for this sensitive info type** step select **Next**.
 
-1. On the **Choose the recommended confidence level to show in compliance policies** let the default value persist and select **Next**.
+1. On the **Choose the recommended confidence level to show in compliance policies** step keep the default value and select **Next**.
 
 1. On the **Review settings and finish** page, review your settings and select **Create**.  When the process is complete select **Done**.
 
+<!--
 1. Leave the browser window in the Microsoft Purview portal open.
+-->
 
 You have successfully created a new sensitive information type based on a keyword dictionary and added more keywords to decrease the false positive rate. Proceed with the next task.
 
@@ -380,9 +396,11 @@ You have successfully created a new sensitive information type based on a keywor
 
 Custom Sensitive information types should always be tested before using them in policies otherwise data loss or leakage may occur due to a malfunctioning custom search pattern.
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be signed in to Microsoft 365 as **Joni Sherman**.
+-->
 
-1. Select the Windows symbol in the lower left to open the start menu, enter **Notepad** and select **Notepad** from the start menu.
+1. Open **Notepad** from the task bar and select the **+ icon** in the top bar to open a New Tab.
 
 1. Enter the following text to the notepad window:
 
@@ -392,15 +410,20 @@ Custom Sensitive information types should always be tested before using them in 
 
 1. Select **File** and **Save As**.
 
-1. Select Documents on the left-side pane.
+1. Select **Documents** in the left-side pane.
 
 1. In the **File name** field, enter *SickTestData* and select **Save**.
 
+<!--
 1. Close the Notepad window.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **https://purview.microsoft.com**.
 
-1. In the left navigation pane expand **Data classification**, then select **Classifiers**. Select the **Sensitive info types** tab.
+-->
+
+1. Open the InPrivate browser window, which should still be in **Data Loss Prevention**.
+
+1. Select **Classifiers** and select the **Sensitive info types**.
 
 1. In the **Search** box on the upper right, enter *Contoso* and press Enter.
 
@@ -408,25 +431,23 @@ Custom Sensitive information types should always be tested before using them in 
 
 1. Select **Test**.
 
-1. On the **Upload file to test** page, select **Upload file**.
+1. On the **Upload file to test** pane, select **Upload file**.
 
-1. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
+1. Select **Documents**, then the file **SickTestData**, then select **Open**.
 
-1. Select **Test** to start the analysis.
+1. Select **Test** at the bottom to start the analysis.
 
 1. On the **Match results** page, review the found match.
 
 1. Select **Finish** to end the test.
 
-1. Use the top bar navigation to navigate back to **Sensitive info types**.
-
-1. Search for *Contoso*, then select the Sensitive Information Type with the name **Contoso Diseases List**.
+1. Close the **Contoso Employee EDM** pane and select **Contoso Diseases List**.
 
 1. Select **Test**.
 
 1. On the **Upload file to test** pane, select **Upload file**.
 
-1. Select **Documents** from the left pane, select the file with the name *SickTestData* and select **Open**.
+1. Select **Documents**, then the file **SickTestData**, then select **Open**.
 
 1. Select **Test** to start the analysis.
 
