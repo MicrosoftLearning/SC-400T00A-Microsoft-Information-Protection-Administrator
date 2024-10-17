@@ -12,19 +12,21 @@ The first setting Joni Sherman needs to configure and test with her pilot team i
 
 In this task, you will install the Exchange Online PowerShell module and verify the correct Azure RMS functionality of your tenant in context of Joni Sherman, who was assigned the role of the Compliance Administrator in the last exercise.
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 
 1. Confirm the **User Account Control** window with **Yes**.
+-->
+
+1. Open your elevated PowerShell window from the task bar.
 
 1. Enter the following cmdlet to install the latest Exchange Online PowerShell module version:
 
     ```powershell
     Install-Module ExchangeOnlineManagement
     ```
-
-1. Confirm the NuGet provider security dialog with **Y** for Yes and press **Enter**. This process may take some time to complete.
 
 1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some time to complete.
 
@@ -36,9 +38,11 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
 1. Confirm the Execution Policy Change with  **Y** for Yes and press **Enter**.
 
+<!--
 1. Close the PowerShell window.
 
 1. Open a regular PowerShell window, without elevation, by selecting the Windows button with the right mouse button and select **Windows PowerShell**.
+-->
 
 1. Enter the following cmdlet to use the Exchange Online PowerShell module and connect to your tenant:
 
@@ -46,7 +50,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
     Connect-ExchangeOnline
     ```
 
-1. When the **Sign in** window is displayed, sign in as sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). You will use the password you reset Joni's to in a previous lab.
+1. When the **Sign in** window is displayed, sign in as JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). You will use the password you reset Joni's to in a previous lab.
 
 1. Verify Azure RMS and IRM is activated in your tenant by using the following cmdlet and press **Enter**:
 
@@ -74,7 +78,9 @@ You have successfully installed the Exchange Online PowerShell module, connected
 
 There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with message encryption, you need to deactivate the use of social IDs for all users in your organization.
 
+<!--
 1. You should still be signed in to your Client 1 VM (LON-CL1) as the **lon-cl1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
+-->
 
 1. Run the following cmdlet to view the default configuration:
 
@@ -82,7 +88,7 @@ There is a requirement in your organization to restrict trust for foreign identi
     Get-OMEConfiguration -Identity "OME Configuration" | fl
     ```
 
-1. Review the settings and confirm that the SocialIdSignIn parameter is set to True.
+1. Review the settings and confirm that the **SocialIdSignIn** parameter is set to **True**.
 
 1. Run the following cmdlet to restrict the use of social IDs for accessing messages from your tenant protected with OME:
 
@@ -98,7 +104,7 @@ There is a requirement in your organization to restrict trust for foreign identi
     Get-OMEConfiguration -Identity "OME Configuration" | fl
     ```
 
-1. Notice the result should show the SocialIDSignIn is set to False. Leave the PowerShell window and client open.
+1. Notice the result should show the **SocialIDSignIn** is set to **False**. Leave the PowerShell window and client open.
 
 You have successfully deactivated the usage of foreign identity providers, such as Google and Facebook in Office 365 Message Encryption.
 
@@ -106,8 +112,9 @@ You have successfully deactivated the usage of foreign identity providers, such 
 
 You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
-1. Leave Client 1 VM (LON-CL1) open as it is, and sign in to Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
+1. Sign in to the other VM, Client 2 VM (LON-CL2), as the **lon-cl2\admin** account.
 
+<!--
 1. Make sure all available Windows Updates are installed and the client does not require a restart to finish update installation.
 
 [//]: <> (Installing the latest OS updates will also update the Edge browser to the new chromium version required to do this labs.)
@@ -115,8 +122,13 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 1. Open **Microsoft Edge** from the taskbar and when a **Welcome to Microsoft Edge** windows is displayed, select **Start without your data**, select **Continue without this data** again and select **Confirm and start browsing**.
 
 1. If the welcome message is missing, navigate to https://microsoft.com/edge, select **DOWNLOAD for Windows** and **Windows 10**. Select **Accept and download** and **Run** to install the latest version of the Edge browser. Once this is complete perform the previous step.
+-->
 
-1. In **Microsoft Edge**, navigate to **https://outlook.office.com** and sign in to Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne Robin's password should be provided by your lab hosting provider. Hint: usually it's the same as the MOD admin's password in your lab tenant.
+1. Open **Microsoft Edge** and go to https://outlook.office.com.
+
+1. Sign in to Outlook on the web as LynneR@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). 
+
+    >You reset Lynne's password at the start of the course, alongside Joni Sherman's.
 
 1. On the **Stay signed in?** dialog box, select the **Don’t show this again** checkbox and then select **No**.
 
@@ -124,9 +136,13 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. If a **Translate page from...** window is shown, select the arrow down and select **Never translate from...**.
 
-1. Select **New mail** from the upper left side part of Outlook on the web.
+1. Select **New mail** from the upper-left corner of Outlook.
 
-1. In the **To** line enter your personal or other third-party email address that is not in the tenant domain. Enter **Secret Message** to the subject line and **My super-secret message.** to the body.
+1. In the **To** field enter your personal or other third-party email address that is not in the tenant domain. 
+
+1. In the **Add a subject** field, enter **Secret Message**.
+
+1. In the body, enter **My super-secret message.**
 
 1. From the top pane, select **Options**, then **Encrypt**, and then **Encrypt** from the dropdown list to encrypt the message. Once you've successfully encrypted the message, you should see a notice that says "Encrypt: This message is encrypted. Recipients can't remove encryption."
 
