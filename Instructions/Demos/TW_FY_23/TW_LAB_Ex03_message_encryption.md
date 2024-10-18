@@ -4,7 +4,11 @@ lab:
     module: 'Module 1 - Implement Information Protection'
 ---
 
+<!--
 # Lab 1 - Exercise 2 - Manage Microsoft Purview Message Encryption
+-->
+
+# Exercise 3 – Manage Microsoft Purview Message Encryption
 
 The first setting Joni Sherman needs to configure and test with her pilot team is the Microsoft Purview Message Encryption. For this purpose, she will modify the default template and create a new branding template, which will be assigned to one of the pilot users. The pilot users will then test the message encryption functionality with their accounts.
 
