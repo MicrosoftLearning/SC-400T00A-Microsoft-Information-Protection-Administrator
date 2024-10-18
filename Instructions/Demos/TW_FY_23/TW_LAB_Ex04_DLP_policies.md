@@ -286,11 +286,11 @@ In this task, you want to create a file policy in Microsoft Defender to scan fil
    - **Category**: DLP (default for file policies)
    - **Description**: Protect credit card numbers from being shared in files
 
-1. In the **Files matching all of the following** area, expand the dropdown menu **Public (Internet), External, Public** and add **Internal**.
+1. In the **Files matching all of the following** section below, select **Public (Internet), External, Public**, then select **Internal**.
 
-1. In the **Inspection Method** dropdown menu, select **Data Classification Service**.
+1. In the **Inspection method** dropdown list, select **Data Classification Service**.
 
-1. In the **Choose inspection type...** dropdown menu, select **Sensitive information type...**.
+1. In the **Choose inspection type...** dropdown list, select **Sensitive information type...**.
 
 1. On the **Select a sensitive information type** dialog, select **Credit Card Number**, then select **Done** in the upper right corner.
 
@@ -308,24 +308,29 @@ You have now created a file policy that will continuously scan files saved in On
 
 Your company uses Power Automate flows to share data between SharePoint Online and Salesforce. In this task, you will create a DLP policy for Power Platform that allows your existing flows to keep working but prevents the creation of flows that will share data between SharePoint Online and Apps defined as non-business.
 
-1. Sign in to Client 2 VM (LON-CL1) as the **lon-cl2\admin** account.
+<!--
+1. Sign in to Client 2 VM (LON-CL2) as the **lon-cl2\admin** account.
 
 1. In **Microsoft Edge**, navigate to **https://admin.powerplatform.microsoft.com** and Sign in to the Power Platform admin center as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Admin's password should be provided by your lab hosting provider.
 
-1. In the **Power Platform admin center**, in the left navigation pane, select the drop-down for **Policies** and then select **Data policies**.
+-->
 
-1. On the **Data policies** page, select **+ New Policy**.
+1. From the same regular browser window signed in as **MOD Administrator**, open a new tab and go to https://admin.powerplatform.microsoft.com to sign in to the Power Platform admin center.
 
-1. On the **Name your policy** page, enter _Tenant-wide SharePoint Policy_, then select **Next**.
+1. In the left navigation, select **Policies** and then select **Data policies** from the submenu.
 
-1. On the **Non-business|Default** tab on the **Assign connectors** page, select **SharePoint** and **Salesforce**, then select **Move to Business** at the top of the page.
+1. Select **+ New Policy**.
 
-1. In the **Assign connectors** page, select the **Business** tab to make sure both SharePoint and Salesforce now appear then select **Next**.
+1. On the **Name your policy** step, enter _Tenant-wide SharePoint Policy_, then select **Next**.
 
-1. On the **Custom connector patterns** page select **Next**.
+1. In the **Non-business | Default** tab on the **Assign connectors** step, select **SharePoint** and **Salesforce**, then select **Move to Business** at the top of the page.
 
-1. On the **Define scope** page, select **Add all environments** then select **Next**.
+1. Select the **Business** tab to make sure both SharePoint and Salesforce now appear, then select **Next**.
 
-1. On the **Review and create policy** page review your policy settings then select **Create policy**.
+1. On the **Custom connector patterns** step, select **Next**.
+
+1. On the **Define scope** step, select **Add all environments**, then select **Next**.
+
+1. On the **Review and create policy** step, review your policy settings, then select **Create policy**.
 
 You have now created a Power Platform DLP policy that prevents users from creating flows involving a SharePoint Online Connector and any connector that is not Salesforce.
