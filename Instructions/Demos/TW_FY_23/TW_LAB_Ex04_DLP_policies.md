@@ -52,6 +52,8 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. On the **Choose where to apply the policy** page, only enable the **Teams chat and channel messages** checkbox and select **Next**.
 
+    ![Teams chat and channel message only.](../Media/teams-messages-only.png)
+
 1. On the **Define policy settings** step, select **Next**.
 
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
@@ -62,9 +64,11 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 
 1. In the new **Content contains** section, select **Add** and select **Sensitive info types** from the dropdown list.
 
+    ![Sensitive info types.](../Media/add-sensitive-info-types.png)
+
 1. In the **Sensitive info types** search field, find and select **Credit Card Number**, then select **Add**.
 
-1. Select **+ Add condition** and select **Content is shared from Microsoft 365** from the dropdown list.
+1. Below the **Content contains** section, select **+ Add condition** and select **Content is shared from Microsoft 365** from the dropdown list.
 
 1. In the new **Content is shared from Microsoft 365** section, select **only with people inside my organization** option.
 
@@ -81,6 +85,8 @@ In this exercise, you will create a Data Loss Prevention policy in the Microsoft
 1. Select the checkbox to **Require a business justification to override**.
 
 1. In the **Incident reports** section, select the dropdown next to **Use this severity level in admin alerts and reports**, then select **Low**.
+
+    ![Reference for various Create Rule settings.](../Media/create-rule-reference.png)
 
 1. Select **Save** to finish creating the rule.
 
