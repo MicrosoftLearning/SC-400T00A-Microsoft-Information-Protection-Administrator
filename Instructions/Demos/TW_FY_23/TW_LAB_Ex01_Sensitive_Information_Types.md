@@ -4,8 +4,11 @@ lab:
     module: 'Module 1 - Implement Information Protection'
 ---
 
-
+<!--
 # Lab 1 - Exercise 3 - Manage Sensitive Information Types
+-->
+
+# Exercise 1 – Manage Sensitive Information Types
 
 Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To educate users in the future, a custom sensitive information type is required to identify employee IDs in emails and documents, which consist of three uppercase characters and six numbers. To lower the false positive rate, the keywords "Employee" and "IDs" will be used. In this task you will create a new custom sensitive information type, a database for EDM-based classification and a keyword dictionary. 
 
@@ -150,7 +153,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Ensure **New EDM Experience** is switched to **Off** for the classic experience.
 
-    <!-- Replace screenshot -->
+    <!-- Insert screenshot -->
 
 1. Select **+ Create EDM schema**
 
@@ -170,6 +173,8 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. In the first **Schema field name**, enter *Name* and select the **Field is searchable** checkbox.
 
+    <!-- Insert screenshot -->
+
 1. Select **+ Add schema data field** towards the bottom.
 
 1. In **Schema field name**, below **Schema field #2**, enter *Birthdate*.
@@ -182,11 +187,15 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID* and select the **Field is searchable** checkbox.
 
+    <!-- Insert screenshot -->
+
 1. Select **Save**.
 
 1. Select **EDM sensitive info types** from the left pane of **EDM classifiers**.
 
 1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
+
+    <!-- Insert screenshot -->
 
 1. On the **Define data store schema** step, select **Choose an existing EDM schema**.
 
@@ -200,11 +209,11 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **+ Choose sensitive info type**.
 
-1. In the **Search** bar, enter *Contoso* and press the enter key.
+1. In the **Search** bar, enter *Contoso* and press **Enter**.
 
 1. Select **Contoso Employee IDs** and select **Done**.
 
-1. In the **New Pattern** pane, select **Done**.
+1. In the **New pattern** pane, select **Done**.
 
 1. Select **Next** in the **Define patterns for this EDM sensitive info type** step.
 
@@ -423,7 +432,7 @@ Custom Sensitive information types should always be tested before using them in 
 
 1. Open the InPrivate browser window, which should still be in **Data Loss Prevention**.
 
-1. Select **Classifiers** and select the **Sensitive info types**.
+1. Select **Classifiers** to expand, and select **Sensitive info types** from the submenu.
 
 1. In the **Search** box on the upper right, enter *Contoso* and press Enter.
 
