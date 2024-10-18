@@ -72,7 +72,7 @@ In this task, you will install the Exchange Online PowerShell module and verify 
 
     ![IRM validation script result. ](../Media/IRMvalidationl.png)
 
-1. Verify all tests are in the status PASS and no errors are shown.
+1. Verify all tests show **PASS** and no errors are shown.
 
 1. Leave the PowerShell window open.
 
