@@ -141,7 +141,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. On the **Decide whether to prioritize content** step, only enable the **Sensitive info types** checkbox then select **Next**.
 
-    <!-- Insert screenshot >
+    <!-- Insert screenshot -->
 
 1. On the **Sensitive info types to prioritize** step, select **+ Add or edit sensitive info type**.
 
@@ -164,7 +164,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
     >**Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**.
 
-    <!-- Insert screenshot >
+    <!-- Insert screenshot -->
 
 1. Select **Next**.
 
@@ -202,7 +202,7 @@ In this task, you will create a notice template in Microsoft Purview's Insider R
 
     >If you don't see the option, try refreshing your page.
 
-    <!-- Insert screenshot >
+    <!-- Insert screenshot -->
 
 1. Select **Create notice template**.
 
