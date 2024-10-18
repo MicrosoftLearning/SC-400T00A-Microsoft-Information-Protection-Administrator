@@ -235,48 +235,56 @@ After creating two DLP policies, you want to make sure that the more restrictive
 
 You successfully modified the priority of your DLP policies. If both policies match the same content the action of the higher priority policy will be enforced.
 
-## Task 7 – Enable file monitoring in Microsoft 365 Defender
+## Task 7 – Enable file monitoring in Microsoft Defender
 
-You want to use file policies in Microsoft 365 Defender to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft 365 Defender can scan files in your organization.
+You want to use file policies in Microsoft Defender to protect files in your OneDrive and SharePoint Online locations. Before you can create a file policy, you need to enable file monitoring so Microsoft 365 Defender can scan files in your organization.
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. Select the **Profile picture** of Joni Sherman in the top right and select **Sign out**, then close the browser.
 
 1. Open **Microsoft Edge** and navigate to **https://security.microsoft.com** and sign in to the Microsoft 365 Defender portal as **MOD Administrator** admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+-->
 
-1. On the left navigation pane, scroll down and select **System**, and then select **Settings**.
+1. Open the regular Edge window from your task bar that's signed in as **MOD Administrator**, admin@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
-1. On the Settings page select **Cloud Apps**.
+1. Go to https://security.microsoft.com in a new tab to go to the Microsoft Defender portal.
 
-1. In the left pane within the **Cloud apps** window, scroll down to the **Information Protection** section, then select **Files**.
+1. In the left navigation, scroll down and select **System**, then select **Settings** from the submenu.
+
+1. Select **Cloud Apps**.
+
+1. In the left pane within **Cloud apps**, scroll down to the **Information Protection** section and select **Files**.
 
 1. Select the **Enable file monitoring** checkbox then select **Save** if it is not already marked.
 
 You successfully enabled file monitoring in Microsoft 365 Defender and can now scan files for sensitive content using file policies.
 
-## Task 8 – Create a file policy for Microsoft 365 Defender
+## Task 8 – Create a file policy for Microsoft Defender
 
-In this task, you want to create a file policy in Microsoft 365 Defender to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
+In this task, you want to create a file policy in Microsoft Defender to scan files in OneDrive and SharePoint Online and automatically quarantine files containing credit card information if they are shared.
 
+<!--
 1. You should still be signed in to Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In **Microsoft Edge**, the Microsoft Defender for Cloud Apps portal tab should still be open. Select the **Profile picture** of the MOD Admin in the top right and select **Sign out** next to the cogwheel, then close the  browser.
 
 1. Open **Microsoft Edge** and navigate to **https://security.microsoft.com** and sign in to the Microsoft 365 Defender portal as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni Sherman's password should be provided by your lab hosting provider.
+-->
 
-1. In the **Microsoft 365 Defender** portal, in the left navigation select **Cloud apps**, then **Policies**, then **Policy management**.
+1. In the Microsoft Defender portal's left navigation, select **Cloud apps**, then **Policies**, then **Policy management**.
 
 1. On the Policies page select **+ Create policy**, and then **File policy** from the dropdown list.
 
-1. On the **Create file policy** page, leave the **Policy template** selection as **No template**.
+1. Leave the **Policy template** selection as **No template**.
 
-1. Enter this information on the **Create file policy** page
+1. Use the following information for the basic details:
 
    - **Policy name**: Credit Card Information for files
+   - **Policy severity**: Low (single lit icon)
+   - **Category**: DLP (default for file policies)
    - **Description**: Protect credit card numbers from being shared in files
-
-1. Keep the **Policy Severity** on **Low** (one lighted icon) and make sure the **Category** is set to **DLP**. For a file policy, this should be the default.
 
 1. In the **Files matching all of the following** area, expand the dropdown menu **Public (Internet), External, Public** and add **Internal**.
 
