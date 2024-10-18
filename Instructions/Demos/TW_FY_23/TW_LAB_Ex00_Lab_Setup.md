@@ -70,6 +70,8 @@ In this task, you'll enable Audit in the Microsoft Purview compliance portal. Th
 
 1. On the Search page, select the **Start recording user and admin activity** button to activate audit logging.
 
+    ![Screenshot of Start recording user and admin activity.](../Media/start-recording-user-and-admin-activity.png)
+
 ## Task 4 - Enable Search by Name in Microsoft Teams
 
 In this task, you'll enable the **Search by Name** feature in Microsoft Teams for the lab setup. This allows easy user location and connection within the organization. Follow the steps to activate it beforehand, ensuring availability when working with Information Barriers.
