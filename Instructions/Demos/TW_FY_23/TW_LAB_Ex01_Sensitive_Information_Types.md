@@ -153,6 +153,8 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Ensure **New EDM Experience** is switched to **Off** for the classic experience.
 
+    ![New EDM experience off.](../Media/new-edm-experience-off.png)
+
 1. Select **+ Create EDM schema**
 
 1. On the **New EDM schema** page, enter the following:
@@ -171,7 +173,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. In the first **Schema field name**, enter *Name* and select the **Field is searchable** checkbox.
 
-    <!-- Insert screenshot -->
+    ![Employee ID field is searchable.](../Media/name-field-searchable.png)
 
 1. Select **+ Add schema data field** towards the bottom.
 
@@ -185,7 +187,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. In **Schema field name**, below **Schema field #4**, enter *EmployeeID* and select the **Field is searchable** checkbox.
 
-    <!-- Insert screenshot -->
+    ![Employee ID field is searchable.](../Media/employee-id-field-searchable.png)
 
 1. Select **Save**.
 
@@ -193,7 +195,7 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Select **+ Create EDM sensitive info type** to open the **EDM rule package** wizard.  
 
-    <!-- Insert screenshot -->
+    ![Create EDM sensitive info type.](../Media/create-edm-sensitive-info-type.png)
 
 1. On the **Define data store schema** step, select **Choose an existing EDM schema**.
 
