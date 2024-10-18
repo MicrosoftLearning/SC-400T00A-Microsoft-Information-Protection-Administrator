@@ -34,7 +34,7 @@ In this exercise, you will assign the Insider Risk Management role to Joni to gr
 
 1. On the **Edit members of the role group** step select **Choose users**.
 
-1. In the **Choose users** pane, select the checkbox next to Joni Sherman, then select the **Select** button.
+1. In the **Choose users** pane, select the checkbox next to **Joni Sherman**, then select the **Select** button.
 
 1. On the **Edit members of the role group** step select **Next**.
 
@@ -141,6 +141,8 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 1. On the **Decide whether to prioritize content** step, only enable the **Sensitive info types** checkbox then select **Next**.
 
+    <!-- Insert screenshot >
+
 1. On the **Sensitive info types to prioritize** step, select **+ Add or edit sensitive info type**.
 
 1. Search for _bank_ and press **Enter**. Select the checkbox next to **U.S. Bank Account Number** and **International Banking Account Number (IBAN)**. 
@@ -161,6 +163,8 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
    - **Download from Microsoft 365 location the exfiltrate**
 
     >**Note**: If you are unable to select policy triggers, you may have a tip to Turn on indicators. If this option is available, select **Turn on indicators**. On the **Choose indicators to turn on** pop up, click the check box next to **Select all** for **Office indicators** then select **Save**.
+
+    <!-- Insert screenshot >
 
 1. Select **Next**.
 
