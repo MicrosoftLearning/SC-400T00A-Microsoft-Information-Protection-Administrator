@@ -10,19 +10,23 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Your role in
 
 To effectively manage insider risks, you implement Microsoft Purview Insider Risk Management, a comprehensive solution designed to identify, analyze, and respond to potential insider threats.
 
-## Task 1: Assign Insider Risk Management Role
+## Task 1 – Assign Insider Risk Management Role
 
 In this exercise, you will assign the Insider Risk Management role to Joni to grant access to perform insider risk tasks in the Microsoft Purview portal.
 
+<!--
 1. Sign in to the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account.
 
 1. In Microsoft Edge, navigate to **https://purview.microsoft.com** and sign in to the Microsoft Purview portal as MOD Administrator, **admin@WWLxZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin’s password should be provided by your lab hosting provider.
+-->
 
-1. Select **Settings** from the left-hand navigation pane.
+1. From the same regular browser window signed in as **MOD Administrator**, go to your Purview tab. If closed, go to https://purview.microsoft.com in a new tab.
 
-1. Select **Roles and scopes**, then **Role groups**.
+1. Select **Settings** from the left navigation.
 
-1. On the **Role groups for Microsoft Purview solutions** page find, and select **Insider Risk Management** by searching or by sorting the **Name** column.
+1. Select **Roles and scopes**, then **Role groups** from the submenu.
+
+1. Find and select **Insider Risk Management** from the list by searching or by sorting the **Name** column.
 
 1. Select **Edit** from the **Insider Risk Management** flyout page on the right.
 
@@ -40,7 +44,7 @@ In this exercise, you will assign the Insider Risk Management role to Joni to gr
 
 You have successfully assigned the Insider Risk Management role to Joni Sherman, granting her access to perform insider risk tasks in the Microsoft Purview portal.
 
-## Task 2: Insider Risk Settings Configuration
+## Task 2 – Insider Risk Settings Configuration
 
 In this task, you will customize the Insider risk management settings in the Microsoft Purview portal. This will allow Joni Sherman to effectively manage potential insider risks within the organization and ensure the security of sensitive information.
 
@@ -106,7 +110,7 @@ In this task, you will customize the Insider risk management settings in the Mic
 
 You have successfully customized the Insider risk management settings. Now, Joni Sherman has the necessary tools and capabilities to proactively identify and mitigate insider risks, safeguarding valuable data in the Microsoft Purview portal.
 
-## Task 3: Insider Risk Policy Creation
+## Task 3 – Insider Risk Policy Creation
 
 In this task, you will configure a policy named 'Financial Data Protection' in Microsoft Purview to monitor and protect sensitive financial data access within the organization.
 
@@ -172,7 +176,7 @@ In this task, you will configure a policy named 'Financial Data Protection' in M
 
 You have successfully created the 'Financial Data Protection' policy, which will help detect and prevent unauthorized access to sensitive financial information. Keep in mind that it may take up to 24 hours for policy matches to appear in the Alerts tab.
 
-## Task 4: Create a Notice template
+## Task 4 – Create a Notice template
 
 In this task, you will create a notice template in Microsoft Purview's Insider Risk Management, which allows you to automatically send email messages to users when a case is generated for risk activities, serving as reminders or providing information for compliance training.
 
