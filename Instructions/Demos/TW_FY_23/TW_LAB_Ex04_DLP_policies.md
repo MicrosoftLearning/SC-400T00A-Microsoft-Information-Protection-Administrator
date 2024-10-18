@@ -315,7 +315,7 @@ Your company uses Power Automate flows to share data between SharePoint Online a
 
 -->
 
-1. From the same regular browser window signed in as **MOD Administrator**, open a new tab and go to https://admin.powerplatform.microsoft.com to sign in to the Power Platform admin center.
+1. From the same regular browser window signed in as **MOD Administrator**, open a new tab and go to https://admin.powerplatform.microsoft.com to go to the Power Platform admin center.
 
 1. In the left navigation, select **Policies** and then select **Data policies** from the submenu.
 
