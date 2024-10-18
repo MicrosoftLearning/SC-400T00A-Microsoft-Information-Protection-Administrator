@@ -4,13 +4,14 @@ lab:
     module: 'Module 5 - Manage insider and privacy risk in Microsoft 365'
 ---
 
+<!--
 # Exercise 5 - Configure Insider Risk Management
+-->
+# Exercise 6 – Adaptive Protection
 
-You are Joni Sherman, the Compliance Administrator for Contoso Ltd. Your role involves ensuring regulatory compliance and protecting sensitive information within the organization. Recently, Contoso Ltd. has recognized the need to proactively address insider risks that could potentially harm the company's reputation, compromise data security, or lead to legal issues.
+<!-- Need a proper description -->
 
-To effectively manage insider risks, you implement Microsoft Purview Insider Risk Management, a comprehensive solution designed to identify, analyze, and respond to potential insider threats.
-
-## Task 5 – Explore Adaptive Protection
+## Task 1 – Explore Adaptive Protection
 
 In this task, you'll explore Adaptive Protection in Microsoft Purview Insider Risk Management. You'll explore Quick and Custom setup options, customizable risk levels, settings for past activity detection, and risk level timeframes. You'll also review tabs that display user-specific risk levels and DLP policies and learn where in the portal to enable or disable the Adaptive Protection feature.
 
@@ -24,7 +25,7 @@ In this task, you'll explore Adaptive Protection in Microsoft Purview Insider Ri
 
     >Quick setup is the fastest way to get started. You don't need any pre-existing DLP or insider risk management policies. Custom setup gives you more control over your policies and is recommended if you have existing DLP and insider risk management policies. Quick setup takes about 72 hours to get started, while custom setup takes about 36 hours.
 
-1. In Adapative Protection, select the **Insider risk levels** tab.
+1. In Adaptive Protection, select the **Insider risk levels** tab.
 
 1. Explore the customizable risk levels in Adaptive protection:
 
