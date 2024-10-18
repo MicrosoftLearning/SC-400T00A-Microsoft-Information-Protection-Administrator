@@ -4,7 +4,11 @@ lab:
     module: 'Module 1 - Implement Information Protection'
 ---
 
+<!-- 
 # Lab 1 - Exercise 5 - Manage Sensitivity Labels
+-->
+
+# Exercise 2 – Manage Sensitivity Labels
 
 In this lab you will assume the role of Joni Sherman, a System Administrator for Contoso Ltd.
 Your organization is based in Rednitzhembach, Germany and is currently implementing a sensitivity plan to ensure that all employee documents in the HR department have been marked with a sensitivity label as part of your organizations information protection policies.
@@ -21,7 +25,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
 1. Confirm the **User Account Control** window with **Yes** and press Enter.
 -->
 
-1. Select your elevated PowerShell window from the task bar.
+1. Open your previously elevated PowerShell window from the task bar.
 
 1. Enter the following cmdlet to install the latest MS Online PowerShell module version:
 
@@ -29,7 +33,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
     Install-Module -Name MSOnline
     ```
 
-1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter.  This may take a while to complete processing.
+1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press **Enter**. This may take a while to complete processing.
 
 1. Enter the following cmdlet to connect to the MS Online service:
 
@@ -37,7 +41,7 @@ In this task, you will install the MSOnline module and the SharePoint Online Pow
     Connect-MsolService
     ```
 
-1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).  Joni's password should be provided by your lab hosting provider.
+1. In the **Sign into your account** form, sign in as **Joni Sherman** JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password should be provided by your lab hosting provider.
 
 1. Enter the following cmdlet to get and store the domain value:
 
@@ -91,7 +95,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. Select **Sensitivity labels**.
 
-1. From the page, select **+ Create a label**.
+1. Select **+ Create a label** from the row above the list of existing labels.
 
 1. On the **Name and create a tooltip for your label** step, enter the following information:
 
@@ -127,7 +131,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Define the scope for this label** page, select **Items**, **Files**, and **Emails**. If any other options on this page are selected, deselect them. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select the **Control access** checkbox. Select **Next**.
+1. On the **Choose protection settings for labeled items** step, select the **Control access** checkbox. Select **Next**.
 
 1. On the **Access control** step, select **Configure access control settings**.
 
@@ -172,7 +176,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. In the new pane, select the **Internal** and **Internal/Employee Data (HR)** checkboxes, then Select **Add**.
 
-1. On the **Choose sensitivity labels to publish** page, select **Next**.
+1. On the **Choose sensitivity labels to publish** step, select **Next**.
 
 1. Select **Next** until you reach the **Name your policy** step.
 
@@ -279,7 +283,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. Go back to your Purview tab or re-open it by going to https://purview.microsoft.com.
 
-1. If it is not still on the **Sensitivity labels** page, go to **Information Protection** from the left pane, then select **Sentivity labels**.
+1. If it is not still on the Sensitivity labels page, select **Information Protection** from the leftmost pane, then select **Sentivity labels**.
 
 1. Highlight (without selecting) the existing **Internal** label, and select the three dots.
 
@@ -298,7 +302,7 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. On the **Choose protection settings for labeled items** step, select **Next**.
 
-1. On the **Auto-labeling for files and emails** page, switch the toggle for **Auto-labeling for files and emails** to on.
+1. On the **Auto-labeling for files and emails** step, switch the toggle for **Auto-labeling for files and emails** to on.
 
 1. In the **Detect content that matches these conditions** section, select **+Add condition** then select **Content contains**.
 
@@ -330,17 +334,17 @@ In this task, you will create a Sensitivity Label that will auto label documents
 
 1. Select **Next** until you reach the **Name your policy** step.
 
-1. On the **Name your policy** page, enter the following information:
+1. On the **Name your policy** step, enter the following information:
 
    - **Name**: GDPR Germany policy
    - **Enter a description for your sensitivity label policy**: This auto apply sensitivity labels policy is for the GDPR region of Germany.
 
 1. Select **Next**.
 
-1. On the **Review and finish** page, select **Submit**.
+1. On the **Review and finish** step, select **Submit**.
 
-1. On the **New policy created** step, select **Done**.
+1. Select **Done** once created.
 
-You have successfully created and published an auto apply sensitivity label for GDPR documents in the region Germany.
+You've successfully created and published an auto apply sensitivity label for GDPR documents in the region of Germany.
 
 Be aware that it can take up to 24 hours for auto applied sensitivity labels to be applied, this duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
