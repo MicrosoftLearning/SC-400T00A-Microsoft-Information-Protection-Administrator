@@ -223,13 +223,13 @@ In this task, you will create sensitivity labels in Word and Outlook emails. The
 
 1. Select **Sensitivity** from the top pane to open the dropdown menu. Select **Internal > Employee Data (HR)**  to apply the label.
 
-    ![Sensitivity label. ](../Media/word_label.png)
+    ![Sensitivity label.](../Media/word-internal-sensitivity-label.png)
 
     >**Note:** Be aware, the script you ran in task 1 of this exercise activated sensitivity labels in Word for your tenant.  It can sometimes take an hour for that activation to be realized in Microsoft Word online.  If you don't see the Sensitivity label menu in Word, you may need to return to this lab later or make sure you properly completed task 1 of this exercise.
 
-    >You may see a warning stating, "This label can't be applied in Word for the web..." If you see this give it a couple minutes, re-launch Word, and try again.
+    >You may see a warning stating, "This label can't be applied in Word for the web..." If you see this give it a few minutes, re-launch Word, and try again.
 
-    <!-- Screenshot of warning -->
+    ![Sensitivity label warning.](../Media/word-label-cant-be-applied.png)
 
 1. Select **Document** in the upper-left corner of the window next to the Word logo to rename it.
 
