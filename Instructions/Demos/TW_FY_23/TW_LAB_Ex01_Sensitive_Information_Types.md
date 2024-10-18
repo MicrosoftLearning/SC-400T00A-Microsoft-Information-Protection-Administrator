@@ -153,9 +153,6 @@ As an extra search pattern, you will create an Exact Data Match (EDM) based clas
 
 1. Ensure **New EDM Experience** is switched to **Off** for the classic experience.
 
-    <!-- Screenshot -->
-    ![Image of EDM Upload Agent completion.](../Media/new-edm-experience-off.png)
-
 1. Select **+ Create EDM schema**
 
 1. On the **New EDM schema** page, enter the following:
