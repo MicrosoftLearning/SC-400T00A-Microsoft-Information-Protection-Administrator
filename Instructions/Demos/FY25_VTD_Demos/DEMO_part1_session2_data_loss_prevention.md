@@ -48,7 +48,7 @@ In this task, we'll create a DLP policy to protect customer data from being shar
 
 1. Under **Conditions**, select **Content is shared from Microsoft 365**.
 
-1. In the new **Content is shared from Microsoft 365** section, select the **only with people inside my organization** option.
+1. In the new **Content is shared from Microsoft 365** section, select the **only with people outside of my organization** option.
 
 1. Select **+ Add condition**, then select **Content contains**.
 
