@@ -75,7 +75,7 @@ Now, we will create a policy to detect and respond to risky behaviors, such as e
 
 1. On the **Detection options** page, leave the default selected, then select **Next**.
 
-1. On the **DChoose threshold type for indicators** page, leave the default selected, then select **Next**.
+1. On the **Choose threshold type for indicators** page, leave the default selected, then select **Next**.
 
 1. On the **Review settings and finish** page, select **Submit**.
 
