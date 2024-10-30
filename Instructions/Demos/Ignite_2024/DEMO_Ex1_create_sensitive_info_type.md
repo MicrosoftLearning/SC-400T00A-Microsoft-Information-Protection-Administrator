@@ -1,10 +1,3 @@
----
-lab:
-    title: 'Exercise 2 - Manage Sensitive Information Types'
-    module: 'Module 1 - Implement Information Protection'
----
-
-
 # Exercise 1 - Create Custom Sensitive Information Types
 
 As Contoso adopts more AI-powered tools, it's crucial to protect sensitive data from accidental exposure. To prevent the sharing of employee IDs, you'll create custom sensitive information types. These will help Contoso detect and classify sensitive data in emails and documents, ensuring it stays protected from misuse.

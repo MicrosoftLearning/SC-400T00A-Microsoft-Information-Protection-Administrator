@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Session 4 - Microsoft Purview Adaptive Protection'
-    module: 'Learning Objective - Implement Adaptive Protection in Insider Risk Management'
----
-
 # Exercise 5 - Create an Adaptive Protection Policy
 
 Contoso has implemented DLP policies to prevent data from being copied into generative AI platforms. However, the company has identified a need for more dynamic control, ensuring that stricter measures are applied to users who engage in risky behaviors. To address this, Contoso will use Microsoft Purviews Adaptive Protection to automatically adjust the enforcement of DLP policies based on a user's insider risk level, ensuring that users with higher risk face more restrictions while maintaining flexibility for others.
@@ -29,7 +23,7 @@ On the **Customize advanced DLP rules** page, select the pencil icon to edit the
 
 1. On the **Edit rule** flyout page, in the **Conditions** section, select the dropdown for **+ Add condition**, then select the condition for **Insider risk level for Adaptive Protection is** condition.
 
-   ![Screenshot showing the policy published successfully notification.](/Instructions/Media/dlp-adaptive-protection-condition.png)
+   ![Screenshot showing the policy published successfully notification.](../Media/dlp-adaptive-protection-condition.png)
 
 1. In the **Insider risk level for Adaptive Protection** is section, select the checkbox for **Elevated risk level**.
 

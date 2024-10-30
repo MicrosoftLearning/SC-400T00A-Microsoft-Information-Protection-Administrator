@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Session 4 - Microsoft Purview Adaptive Protection'
-    module: 'Learning Objective - Implement Adaptive Protection in Insider Risk Management'
----
-
 # Exercise 6 - Explore AI Hub
 
 Contoso is integrating AI tools into their daily operations and needs to ensure that sensitive data remains secure when interacting with AI systems like Microsoft 365 Copilot. They also want to make sure they comply with industry regulations for AI use. To do this, Contoso will use Microsoft Purview's AI Hub, which provides security recommendations and helps set up policies to protect data and detect risky or unethical behavior in AI interactions. In this lab, you will review and apply recommended policies to keep data secure and compliant with AI regulations.

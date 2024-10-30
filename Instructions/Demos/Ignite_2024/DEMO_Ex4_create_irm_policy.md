@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 2 - Configure Insider Risk Management'
-    module: 'Module 5 - Manage insider and privacy risk in Microsoft 365'
----
-
 # Exercise 4 - Create an Insider Risk Management Policy
 
 Contoso wants to protect its sensitive data by monitoring risky employee activities, particularly around browsing potentially harmful websites. Recently, there have been concerns about risky browsing that might expose sensitive information. To address this, Contoso plans to set up Insider Risk Management with a focus on detecting unusual browsing activity. The team will start by testing these configurations on a small group before expanding it company-wide. After testing, they’ll activate the policy to monitor risky behavior in real time.

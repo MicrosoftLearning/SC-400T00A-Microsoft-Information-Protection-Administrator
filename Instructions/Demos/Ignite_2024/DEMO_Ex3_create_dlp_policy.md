@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 1 - Manage DLP Policies'
-    module: 'Module 2 - Implement Data Loss Prevention'
----
-
 # Exercise 3 - Create a DLP Policy
 
 Contoso is concerned about employees sharing sensitive information on generative AI platforms. Before they can implement a DLP policy, they need to onboard devices to Microsoft Purview Endpoint DLP. They will begin testing the policy in simulation mode with a small group to ensure there are no operational issues before expanding it across the organization. After testing, they will activate the policy to enforce it across the company.
@@ -83,7 +77,7 @@ In this task, you'll create an endpoint DLP policy that blocks users from copyin
 
 1. On the **Devices** row under the **Actions** column, select **Edit** to change the policy scope.
 
-   ![Screenshot showing where to modify the policy scope when creating a DLP policy.](/Instructions/Media/dlp-change-policy-scope.png)
+   ![Screenshot showing where to modify the policy scope when creating a DLP policy.](../Media/dlp-change-policy-scope.png)
 
 1. On the **Scope for devices** page, select **Specific users and groups** the **+ Include users and groups** in the flyout page.
 
@@ -182,6 +176,6 @@ Now that the policy has been tested and expanded, Contoso is ready to turn it on
 
 1. You should receive a flyout notification confirming that your DLP policy has been published.
 
-   ![Screenshot showing the policy published successfully notification.](/Instructions/Media/policy-updated-simulation-mode.png)
+   ![Screenshot showing the policy published successfully notification.](../Media/policy-updated-simulation-mode.png)
 
 You've successfully activated the DLP policy. The sensitive data is now protected from being copied and pasted into generative AI platforms.

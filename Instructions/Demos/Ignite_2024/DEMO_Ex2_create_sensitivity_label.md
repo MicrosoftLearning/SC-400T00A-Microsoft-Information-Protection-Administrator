@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 4 - Manage Sensitivity Labels'
-    module: 'Module 1 - Implement Information Protection'
----
-
 # Exercise 2 - Create sensitivity labels
 
 Contoso is starting to use Microsoft 365 Copilot to improve productivity, and they need to make sure that sensitive HR data is kept secure. HR deals with confidential information like employee records, salary details, and performance reviews, so it's important that only authorized personnel can access or edit these files. Sensitivity labels are a way to protect this information and ensure that even when using tools like Copilot, the right protections are in place.
@@ -81,7 +75,7 @@ In this task, you'll create a sublabel under the **Internal** sensitivity label,
 
 1. Select the vertical ellipsis (**...**) next to **Internal** sensitivity label, then select **+ Create sublabel** from the dropdown menu.
 
-   ![Screenshot showing the Action menu to create a sublabel for a sensitivity label.](/Instructions/Media/create-sublabel-button.png)
+   ![Screenshot showing the Action menu to create a sublabel for a sensitivity label.](../Media/create-sublabel-button.png)
 
 1. The **New sensitivity label** wizard will start. On the **Provide basic details for this label** page enter:
 
@@ -106,7 +100,7 @@ In this task, you'll create a sublabel under the **Internal** sensitivity label,
    - **Users have offline access to the content for this many days**: 15
    - Select the **Assign permissions** link.
 
-   ![Screenshot showing the Access control options for sensitivity labels.](/Instructions/Media/access-control-options.png)
+   ![Screenshot showing the Access control options for sensitivity labels.](../Media/access-control-options.png)
 
 1. On the **Assign permissions** flyout page, select **+ Add any authenticated users**, then select **Save**.
 
