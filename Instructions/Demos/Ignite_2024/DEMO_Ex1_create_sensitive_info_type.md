@@ -74,7 +74,7 @@ After creating the custom SIT, we need to test it using real data. In this task,
 
 1. You should still be logged into Client 1 VM (SC-400-CL1) as the Admin account.
 
-1. In your task bar, search for `Notepad` in the search field. Select the **Notepad** app from the **Best match** section of the search.
+1. Select the **Search** icon from the task bar, then search for `Notepad`. Select the **Notepad** app from the **Best match** section of the search.
 
 1. In Notepad, enter:
 
