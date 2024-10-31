@@ -28,6 +28,9 @@ To enforce endpoint DLP policies, Contoso needs to enable device onboarding in M
 
 1. Wait for the process to complete. Refresh the page until device onboarding is active.
 
+> [!note]
+> This process might take about 5 minutes to complete.
+
 You've successfully enabled device onboarding, preparing the environment to onboard devices and apply endpoint DLP policies.
 
 ## Task 2 – Onboard a device to endpoint DLP
