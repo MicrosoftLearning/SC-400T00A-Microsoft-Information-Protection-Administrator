@@ -4,7 +4,7 @@ Contoso is integrating AI tools into their daily operations and needs to ensure 
 
 **Task**:
 
-- Explore and Apply AI Hub Security Recommendations
+1. Explore and Apply AI Hub Security Recommendations
 
 ## Task 1 - Explore and Apply AI Hub Security Recommendations
 

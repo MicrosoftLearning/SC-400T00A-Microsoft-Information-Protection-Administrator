@@ -4,8 +4,8 @@ Contoso has implemented DLP policies to prevent data from being copied into gene
 
 **Tasks**:
 
-- Add the Adaptive Protection condition to a DLP policy
-- Enable Adaptive Protection in Insider Risk Management
+1. Add the Adaptive Protection condition to a DLP policy
+1. Enable Adaptive Protection in Insider Risk Management
 
 ## Task 1 – Add the Adaptive Protection condition to a DLP policy
 

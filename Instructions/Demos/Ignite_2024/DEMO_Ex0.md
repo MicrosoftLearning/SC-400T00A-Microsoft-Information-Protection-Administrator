@@ -12,10 +12,10 @@ In this exercise, you'll configure and prepare your environment for compliance a
 
 **Tasks:**
 
-- Enable Audit in the Microsoft Purview portal
-- Set user passwords for lab exercises
-- Assign compliance role
-- Explore the Microsoft Purview portal
+1. Enable Audit in the Microsoft Purview portal
+1. Set user passwords for lab exercises
+1. Assign compliance role
+1. Explore the Microsoft Purview portal
 
 ## Task 1 – Enable Audit in the Microsoft Purview portal
 
