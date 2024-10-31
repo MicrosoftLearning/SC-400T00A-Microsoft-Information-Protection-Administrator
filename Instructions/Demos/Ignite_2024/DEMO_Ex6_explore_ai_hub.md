@@ -30,7 +30,7 @@ In this task, you'll explore AI Hub recommendations to find the best security po
 
    This recommendation aligns with the **NIST AI Risk Management Framework (AI RMF)**, guiding you through actions such as monitoring AI logs, flagging risky communications, and managing retention policies to ensure regulatory compliance and data protection.
 
-1. Close the flyout page, then select **GProtect sensitive data referenced in Copilot responses** and review the details.
+1. Close the flyout page, then select **Protect sensitive data referenced in Copilot responses** and review the details.
 
    This recommendation focuses on securing sensitive data in Microsoft 365 Copilot through sensitivity labels. It ensures that Copilot only shows users files they have access to. Set up and apply sensitivity labels manually or through auto-labeling policies.
 

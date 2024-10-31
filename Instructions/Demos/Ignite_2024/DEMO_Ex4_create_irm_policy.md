@@ -22,7 +22,7 @@ In this task, you'll assign the Insider Risk Management role to Joni Sherman, gi
 
 1. Select **Settings** from the left sidebar.
 
-1. Expand **Roles and Scopes** then select **Role groups**.
+1. Expand **Roles and scopes** then select **Role groups**.
 
 1. On the **Role groups for Microsoft Purview solutions** page select **Insider Risk Management**.
 
