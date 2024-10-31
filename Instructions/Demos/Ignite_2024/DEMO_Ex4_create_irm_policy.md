@@ -18,7 +18,7 @@ In this task, you'll assign the Insider Risk Management role to Joni Sherman, gi
 
 1. Reopen Microsoft Edge, and navigate to **`https://purview.microsoft.com`**.
 
-1. Log into the Microsoft Purview portal as MOD Administrator, **`admin@WWLxZZZZZZ.onmicrosoft.com`** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. Log into the Microsoft Purview portal as MOD Administrator, **`admin@WWLxZZZZZZ.onmicrosoft.com`** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password can be found in the **Resources** tab of the lab hosting window.
 
 1. Select **Settings** from the left sidebar.
 
