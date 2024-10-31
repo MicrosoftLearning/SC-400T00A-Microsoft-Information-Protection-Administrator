@@ -27,7 +27,7 @@ In this task, you'll enable audit logging to track activities across Microsoft 3
 
 1. Sign into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
-1. In the **Welcome to the new Microsoft Portal!** window, select the checkbox to agree with the terms and conditions, then select **Get started** access the portal.
+1. In the **Welcome to the new Microsoft Purview Portal!** window, select the checkbox to agree with the terms and conditions, then select **Get started** access the portal.
 
     ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](../Media/new-purview-portal-get-started.png)
 
