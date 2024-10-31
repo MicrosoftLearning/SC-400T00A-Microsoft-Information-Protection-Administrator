@@ -36,19 +36,27 @@ Now that device onboarding is enabled, Contoso will onboard a Windows 11 device 
 
 1. From the **Devices** page, on the left sidebar, expand **Device onboarding**, then select **Onboarding**.
 
-1. On the **Onboarding** page, in the **Deployment method** dropdown menu, select **Local Script (for up to 10 machines)** and select **Download package**.
+1. On the **Onboarding** page, ensure **Windows 10** is selected as the operating system and **Local Script (for up to 10 machines)** is selected as the deployment method.
+
+1. Select **Download package**.
 
 1. In the **Downloads** dialog, hover over the download, then select the folder icon to **Show in folder**.
 
-1. Extract the zip-file to the **Desktop** of SC-400-CL1. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
+   ![Screenshot showing the Show in folder icon.](../Media/show-in-folder.png)
 
-1. On the desktop right click the **DeviceComplianceLocalOnboardingScript.cmd** file you just extracted and select **Show more options**, then select **Properties**.
+1. Extract the **DeviceComplianceOnboardingPackage** zip-file, then open the extracted folder.
+
+1. Right click the **DeviceComplianceLocalOnboardingScript.cmd** file, select **Show more options**, then select **Properties**.
 
 1. Towards the bottom of the **General** tab of the properties window, in the **Security** section, select **Unblock**, then select **OK** to save this setting.
 
-1. Back on the desktop, right click **DeviceComplianceLocalOnboardingScript.cmd**, then select **Run as administrator**. On the **User Account Control** dialogue, select **Yes**.
+   ![Screenshot showing the Show in folder icon.](../Media/unblock-file.png)
 
-1. In the **Command Prompt** screen type **Y** to confirm, and then press Enter.
+1. Right click **DeviceComplianceLocalOnboardingScript.cmd**, then select **Run as administrator**.
+
+1. On the **User Account Control** dialogue, select **Yes**.
+
+1. In the **Command Prompt** screen, enter **Y** to confirm.
 
 1. When the script is complete, you'll get a success message and a prompt to **Press any key to continue**. Press any key to close the command line window. It can take a minute to complete the onboarding.
 
