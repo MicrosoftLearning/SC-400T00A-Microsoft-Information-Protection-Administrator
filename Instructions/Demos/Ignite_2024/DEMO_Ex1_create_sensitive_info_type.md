@@ -46,10 +46,12 @@ Contoso has had instances where employee IDs were accidentally shared in emails 
 
     - **ID**: `Employee ID keywords`
     - **Case insensitive**:
-    ```text
-    Employee
-    ID
-    ```
+
+      ```text
+      Employee
+      ID
+      ```
+
     - Select the option for _Word match_
 
 1. Select **Done** at the bottom of page.
