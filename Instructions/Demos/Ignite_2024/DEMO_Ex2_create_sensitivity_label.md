@@ -138,13 +138,13 @@ Now that you've created the sensitivity labels, you'll publish them so they can 
 
 1. On the **Policy settings** page, select **Next**.
 
-1. On the **Default settings for documents** select **Next**.
+1. On the **Default settings for documents** page, select **Next**.
 
-1. On the **Default settings for emails** select **Next**.
+1. On the **Default settings for emails** page, select **Next**.
 
-1. On the **Default settings for meetings and calendar events** select **Next**.
+1. On the **Default settings for meetings and calendar events** page, select **Next**.
 
-1. On the **Default settings for Power BI Content** select **Next**.
+1. On the **Default settings for Fabric and Power BI content** page, select **Next**.
 
 1. On the **Name your policy** page, enter:
 
