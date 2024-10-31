@@ -59,7 +59,7 @@ In this task, you'll set passwords for the user accounts used in the lab.
 
 1. Select **Reset password** at the bottom of the page, then **Close** on the confirmation page.
 
-You have successfully reset Joni’s password for the lab exercises.
+You have successfully reset Joni's password for the lab exercises.
 
 ## Task 3 – Assign the Compliance Administrator role
 

@@ -50,7 +50,7 @@ You've successfully assigned the Insider Risk Management role to Joni Sherman. S
 
 Now that Joni has access to Insider Risk Management, you'll configure the necessary settings to ensure that risky browsing activities are detected, and sensitive information stays protected.
 
-1. Reopen **Microsoft Edge**, then navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. Reopen **Microsoft Edge**, then navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password is set to the **User Password** in the **Resources** tab.
 
 1. Select **Settings** from the left sidebar.
 
