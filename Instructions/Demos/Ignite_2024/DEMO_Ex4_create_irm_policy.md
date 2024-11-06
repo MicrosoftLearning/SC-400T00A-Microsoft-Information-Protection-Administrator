@@ -1,6 +1,6 @@
 # Exercise 4 - Create an Insider Risk Management Policy
 
-Contoso wants to protect its sensitive data by monitoring risky employee activities, particularly around browsing potentially harmful websites. Recently, there have been concerns about risky browsing that might expose sensitive information. To address this, Contoso plans to set up Insider Risk Management with a focus on detecting unusual browsing activity. The team will start by testing these configurations on a small group before expanding it company-wide. After testing, they’ll activate the policy to monitor risky behavior in real time.
+Contoso wants to protect its sensitive data by keeping track of risky employee activities, particularly around browsing potentially harmful websites. Recently, there have been concerns about potential risky browsing that might expose sensitive information. To address this, Contoso plans to set up Insider Risk Management with a focus on detecting unusual browsing activity. The team will start by testing these configurations on a small group before expanding it company-wide. After testing, they’ll activate the policy to track risky behavior in real time.
 
 **Tasks**:
 
@@ -48,7 +48,7 @@ You've successfully assigned the Insider Risk Management role to Joni Sherman. S
 
 ## Task 2 – Configure insider risk settings
 
-Now that Joni has access to Insider Risk Management, you'll configure the necessary settings to ensure that risky browsing activities are detected, and sensitive information stays protected.
+Now that Joni has access to Insider Risk Management, you'll configure the necessary settings to ensure that potential risky browsing activities are detected, and sensitive information stays protected.
 
 1. Reopen **Microsoft Edge**, then navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password is set to the **User Password** in the **Resources** tab.
 
@@ -62,11 +62,11 @@ Now that Joni has access to Insider Risk Management, you'll configure the necess
 
 1. Scroll to the bottom of the **Policy indicators** panel and select **Save**.
 
-You've successfully configured the Insider Risk settings, enabling Contoso to monitor risky browsing activities.
+You've successfully configured the Insider Risk settings, enabling Contoso to track risky browsing activities.
 
 ## Task 3 – Create an insider risk policy
 
-With the settings configured, you'll now create a policy that detects risky browsing activities. This policy will monitor and alert on actions that could expose sensitive data, such as visiting unauthorized websites.
+With the settings configured, you'll now create a policy that detects potential risky browsing activities. This policy will track and alert on actions that could expose sensitive data, such as visiting unauthorized websites.
 
 1. Navigate to insider risk management by selecting **Solutions** from the left sidebar, then select **Insider Risk Management**.
 
@@ -77,7 +77,7 @@ With the settings configured, you'll now create a policy that detects risky brow
 1. On the **Name your policy page** enter:
 
     - **Name**: `Sensitive Data Protection`
-    - **Description**: `Monitor and protect against risky browsing activities.`
+    - **Description**: `Track and protect against risky browsing activities.`
 
 1. Select **Next**.
 
@@ -101,4 +101,4 @@ With the settings configured, you'll now create a policy that detects risky brow
 
 1. Once you have successfully created your insider risk policy, select **Done** on the **Your policy was created** page.
 
-You've successfully created the Sensitive Data Protection policy. Contoso can now detect and manage risky browsing behaviors that may expose sensitive data.
+You've successfully created the Sensitive Data Protection policy. Contoso can now detect and address risky browsing behaviors that may expose sensitive data.
