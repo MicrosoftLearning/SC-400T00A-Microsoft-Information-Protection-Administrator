@@ -13,8 +13,9 @@ In this exercise, you'll configure and prepare your environment for compliance a
 **Tasks:**
 
 1. Enable Audit in the Microsoft Purview portal
+1. Enable device onboarding
+1. Onboard a device to endpoint DLP
 1. Set user passwords for lab exercises
-1. Assign compliance role
 1. Explore the Microsoft Purview portal
 
 ## Task 1 – Enable Audit in the Microsoft Purview portal
@@ -41,7 +42,58 @@ In this task, you'll enable audit logging to track activities across Microsoft 3
 
 You have successfully enabled auditing in Microsoft Purview.
 
-## Task 2 – Set user passwords for lab exercises
+## Task 2 – Enable device onboarding
+
+To support Endpoint DLP policies later in the lab, you need to enable device onboarding in Microsoft Purview. This step ensures devices are ready to track and protect sensitive information.
+
+1. In the Microsoft Purview portal, select **Settings** > **Device onboarding** > **Devices**.
+
+1. On the **Devices** page, select **Turn on device onboarding**.
+
+1. Accept the **Turn on device onboarding** dialog by selecting **OK**.
+
+1. Accept the **Device monitoring is being turned on** dialog by selecting **OK**.
+
+1. Wait for the process to complete. Refresh the page until device onboarding is active.
+
+>[!note]
+>This process might take about 5 minutes to complete.
+
+You've successfully enabled device onboarding, preparing the environment to onboard devices and apply endpoint DLP policies.
+
+## Task 3 – Onboard a device to endpoint DLP
+
+With device onboarding enabled, the next step is to onboard a Windows 11 device to apply Endpoint DLP policies. This ensures the device is monitored and protected against data loss.
+
+1. From the **Devices** page, on the left sidebar, expand **Device onboarding**, then select **Onboarding**.
+
+1. On the **Onboarding** page, ensure **Windows 10** is selected as the operating system and **Local Script (for up to 10 machines)** is selected as the deployment method.
+
+1. Select **Download package**.
+
+1. In the **Downloads** dialog, hover over the download, then select the folder icon to **Show in folder**.
+
+   ![Screenshot showing the Show in folder icon.](../Media/show-in-folder.png)
+
+1. Extract the **DeviceComplianceOnboardingPackage** zip-file, then open the extracted folder.
+
+1. Right click the **DeviceComplianceLocalOnboardingScript.cmd** file, select **Show more options**, then select **Properties**.
+
+1. Towards the bottom of the **General** tab of the properties window, in the **Security** section, select **Unblock**, then select **OK** to save this setting.
+
+   ![Screenshot showing the Show in folder icon.](../Media/unblock-file.png)
+
+1. Right click **DeviceComplianceLocalOnboardingScript.cmd**, then select **Run as administrator**.
+
+1. On the **User Account Control** dialogue, select **Yes**.
+
+1. In the **Command Prompt** screen, enter **Y** to confirm.
+
+1. When the script is complete, you'll get a success message and a prompt to **Press any key to continue**. Press any key to close the command line window. It can take a minute to complete the onboarding.
+
+You've successfully onboarded a Windows 11 device, allowing it to be protected by the endpoint DLP policy.
+
+## Task 4 – Set user passwords for lab exercises
 
 In this task, you'll set passwords for the user accounts used in the lab.
 
@@ -49,50 +101,28 @@ In this task, you'll set passwords for the user accounts used in the lab.
 
 1. From the left navigation pane, expand **Users** then select **Active users**.
 
-1. Find the account for **Joni Sherman** and select the key icon to reset her password.
+1. Find the account for **Megan Bowen** and select the key icon to reset her password.
 
-   You'll use Joni's account in the next exercises.
+   You'll use Megan's account in the next exercises.
 
-   ![Screenshot showing user accounts that need to be reset.](../Media/reset-password-button-joni.png)
+   ![Screenshot showing user accounts that need to be reset.](../Media/reset-password-button-megan.png)
 
 1. In the **Reset Password** flyout page on the right, make sure all options are unchecked, then enter a password you'll remember in the **Password** field.
 
 1. Select **Reset password** at the bottom of the page, then **Close** on the confirmation page.
 
-You have successfully reset Joni's password for the lab exercises.
+You have successfully reset Megan's password for the lab exercises.
 
-## Task 3 – Assign the Compliance Administrator role
+## Task 5 – Explore the Microsoft Purview portal
 
-In this task, you'll assign the **Compliance Administrator** role to Joni Sherman.
-
-1. In the Microsoft 365 admin center, select Joni's account.
-
-1. In the properties flyout menu for **Joni Sherman**, select **Manage roles**.
-
-    ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](../Media/joni-manage-roles.png)
-
-1. On the **Manage admin roles** flyout, select **Admin center access**, then scroll down to select **Show all by category**.
-
-1. Under **Security & Compliance**, select **Compliance Administrator**.
-
-1. Select **Save changes** at the bottom of the page.
-
-1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then select **Sign out**.
-
-   ![Screenshot showing the navigation path to sign out of the MOD Administrator account.](../Media/sign-out.png)
-
-You have successfully assigned Joni the Compliance Administrator role, which is required for the upcoming exercises.
-
-## Task 4 – Explore the Microsoft Purview portal
-
-In this task, you'll switch to Joni Sherman's account and explore the Microsoft Purview portal.
+In this task, you'll switch to Megan Bowen's account and explore the Microsoft Purview portal.
 
 1. In **Microsoft Edge**, navigate to the Microsoft Purview portal at **`https://purview.microsoft.com`**.
 
 1. When the **Pick an account** window appears, select **Use another account**.
 
-1. Sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. Sign in as `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
 
 1. Explore the Microsoft Purview portal to familiarize yourself with its interface.
 
-You have successfully switched to Joni Sherman's account and are ready to continue with the lab.
+You have successfully switched to Megan Bowen's account and are ready to continue with the lab.

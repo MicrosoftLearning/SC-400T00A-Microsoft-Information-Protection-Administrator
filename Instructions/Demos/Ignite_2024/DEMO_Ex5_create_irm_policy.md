@@ -1,58 +1,17 @@
-# Exercise 4 - Create an Insider Risk Management Policy
+# Exercise 5 - Create an Insider Risk Management Policy
 
 Contoso wants to protect its sensitive data by keeping track of risky employee activities, particularly around browsing potentially harmful websites. Recently, there have been concerns about potential risky browsing that might expose sensitive information. To address this, Contoso plans to set up Insider Risk Management with a focus on detecting unusual browsing activity. The team will start by testing these configurations on a small group before expanding it company-wide. After testing, they’ll activate the policy to track risky behavior in real time.
 
 **Tasks**:
 
-1. Assign insider risk management permissions
 1. Configure insider risk settings
 1. Create an insider risk policy
 
-## Task 1 – Assign insider risk management permissions
+## Task 1 – Configure insider risk settings
 
-In this task, you'll assign the Insider Risk Management role to Joni Sherman, giving her the permissions needed to manage insider risk tasks in Microsoft Purview.
+o help track risky activities that could expose sensitive information, you'll configure the policy indicators used in Insider Risk Management. These settings allow Microsoft Purview to identify potential risky browsing behavior, ensuring sensitive data remains protected.
 
-1. In Microsoft Purview, sign out Joni's account by selecting the image for her user icon on the top right of the window, then select **Sign out**
-
-1. Close all browser windows.
-
-1. Reopen Microsoft Edge, and navigate to **`https://purview.microsoft.com`**.
-
-1. Log into the Microsoft Purview portal as MOD Administrator, **`admin@WWLxZZZZZZ.onmicrosoft.com`** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password can be found in the **Resources** tab of the lab hosting window.
-
-1. Select **Settings** from the left sidebar.
-
-1. Expand **Roles and scopes** then select **Role groups**.
-
-1. On the **Role groups for Microsoft Purview solutions** page select **Insider Risk Management**.
-
-1. On the **Insider Risk Management** flyout page on the right, select **Edit** .
-
-1. On the **Edit members of the role group** page select **+ Choose users**.
-
-1. On the **Choose users** flyout page, search for `Joni` then select the checkbox for **Joni Sherman**.
-
-1. Select the **Select** button at the bottom of the panel.
-
-1. On the **Edit members of the role group** page select **Next**.
-
-1. On the **Review the role group and finish** page select **Save**.
-
-1. Once you have successfully added Joni to the role group, select **Done** on the **You successfully updated the role group** page.
-
-1. Sign out of the Mod Administrator account by selecting the MA icon on the top right of the window, then select **Sign out**.
-
-1. Close all browser windows.
-
-You've successfully assigned the Insider Risk Management role to Joni Sherman. She can now access insider risk tools to manage potential threats within Contoso.
-
-## Task 2 – Configure insider risk settings
-
-Now that Joni has access to Insider Risk Management, you'll configure the necessary settings to ensure that potential risky browsing activities are detected, and sensitive information stays protected.
-
-1. Reopen **Microsoft Edge**, then navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password is set to the **User Password** in the **Resources** tab.
-
-1. Select **Settings** from the left sidebar.
+1. In the Microsoft Purview Portal, select **Settings** from the left sidebar.
 
 1. On the **Settings** page, select **Insider Risk Management** from the left sidebar.
 
@@ -64,7 +23,7 @@ Now that Joni has access to Insider Risk Management, you'll configure the necess
 
 You've successfully configured the Insider Risk settings, enabling Contoso to track risky browsing activities.
 
-## Task 3 – Create an insider risk policy
+## Task 2 – Create an insider risk policy
 
 With the settings configured, you'll now create a policy that detects potential risky browsing activities. This policy will track and alert on actions that could expose sensitive data, such as visiting unauthorized websites.
 

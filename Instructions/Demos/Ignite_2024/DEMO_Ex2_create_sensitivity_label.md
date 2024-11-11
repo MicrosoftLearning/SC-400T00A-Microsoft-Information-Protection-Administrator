@@ -14,7 +14,7 @@ In this lab, you'll create and configure sensitivity labels that Contoso's HR de
 
 In this task, you'll enable co-authoring for files that have sensitivity labels. This feature allows multiple users to collaborate on a document while keeping it protected. It also enables sensitivity labels for files in OneDrive and SharePoint, if not already enabled.
 
-1. You should still be logged into the Microsoft Purview portal as Joni Sherman.
+1. You should still be logged into the Microsoft Purview portal as Megan Bowen.
 
 1. On the left sidebar, select **Settings**.
 

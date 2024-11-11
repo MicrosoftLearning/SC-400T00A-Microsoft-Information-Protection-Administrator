@@ -13,7 +13,7 @@ In this exercise, you'll create and test a custom sensitive information type to 
 
 Contoso has had instances where employee IDs were accidentally shared in emails or documents. To prevent this from happening, you'll create a custom sensitive information type that can detect employee IDs and flag them before they're exposed.
 
-1. You should still be logged into the Microsoft Purview portal as Joni Sherman.
+1. You should still be logged into the Microsoft Purview portal as Megan Bowen.
 
 1. In the Microsoft Purview portal, in the left sidebar, select **Solutions** then select **Information Protection**.
 

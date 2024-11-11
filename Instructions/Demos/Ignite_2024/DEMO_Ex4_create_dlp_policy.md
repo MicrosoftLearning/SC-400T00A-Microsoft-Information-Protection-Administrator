@@ -1,71 +1,14 @@
-# Exercise 3 - Create a DLP Policy
+# Exercise 4 - Create a DLP Policy
 
 Contoso is concerned about employees sharing sensitive information on generative AI platforms. Before they can implement a DLP policy, they need to onboard devices to Microsoft Purview Endpoint DLP. They will begin testing the policy in simulation mode with a small group to ensure there are no operational issues before expanding it across the organization. After testing, they will activate the policy to enforce it across the company.
 
 **Tasks**:
 
-1. Enable device onboarding
-1. Onboard a device to endpoint DLP
 1. Create a DLP policy in simulation mode
 1. Modify a DLP policy
 1. Activate a policy in simulation mode
 
-## Task 1 – Enable device onboarding
-
-To enforce endpoint DLP policies, Contoso needs to enable device onboarding in Microsoft Purview. This step will allow the organization to track and protect sensitive information across their devices.
-
-1. You should still be logged into the Microsoft Purview portal as Joni Sherman.
-
-1. Select **Settings** from the left sidebar.
-
-1. In the left sidebar, expand **Device onboarding** then select **Devices**.
-
-1. On the **Devices** page, select **Turn on device onboarding** to enable the solution for your tenant.
-
-1. Accept the **Turn on device onboarding** dialog by selecting **OK**.
-
-1. Accept the **Device monitoring is being turned on** dialog by selecting **OK**.
-
-1. Wait for the process to complete. Refresh the page until device onboarding is active.
-
->[!note]
->This process might take about 5 minutes to complete.
-
-You've successfully enabled device onboarding, preparing the environment to onboard devices and apply endpoint DLP policies.
-
-## Task 2 – Onboard a device to endpoint DLP
-
-Now that device onboarding is enabled, Contoso will onboard a Windows 11 device to apply the Endpoint DLP policies. This will allow the system to protect sensitive data shared from this device.
-
-1. From the **Devices** page, on the left sidebar, expand **Device onboarding**, then select **Onboarding**.
-
-1. On the **Onboarding** page, ensure **Windows 10** is selected as the operating system and **Local Script (for up to 10 machines)** is selected as the deployment method.
-
-1. Select **Download package**.
-
-1. In the **Downloads** dialog, hover over the download, then select the folder icon to **Show in folder**.
-
-   ![Screenshot showing the Show in folder icon.](../Media/show-in-folder.png)
-
-1. Extract the **DeviceComplianceOnboardingPackage** zip-file, then open the extracted folder.
-
-1. Right click the **DeviceComplianceLocalOnboardingScript.cmd** file, select **Show more options**, then select **Properties**.
-
-1. Towards the bottom of the **General** tab of the properties window, in the **Security** section, select **Unblock**, then select **OK** to save this setting.
-
-   ![Screenshot showing the Show in folder icon.](../Media/unblock-file.png)
-
-1. Right click **DeviceComplianceLocalOnboardingScript.cmd**, then select **Run as administrator**.
-
-1. On the **User Account Control** dialogue, select **Yes**.
-
-1. In the **Command Prompt** screen, enter **Y** to confirm.
-
-1. When the script is complete, you'll get a success message and a prompt to **Press any key to continue**. Press any key to close the command line window. It can take a minute to complete the onboarding.
-
-You've successfully onboarded a Windows 11 device, allowing it to be protected by the endpoint DLP policy.
-
-## Task 3 – Create an endpoint DLP policy in simulation mode
+## Task 1 – Create an endpoint DLP policy in simulation mode
 
 In this task, you'll create an endpoint DLP policy that blocks users from copying and pasting sensitive data into generative AI platforms. Contoso will start by testing it in simulation mode with a small group of employees to make sure it doesn't cause any problems.
 
@@ -153,7 +96,7 @@ In this task, you'll create an endpoint DLP policy that blocks users from copyin
 
 You've successfully created the endpoint DLP Policy in simulation mode.
 
-## Task 4 – Modify a DLP policy
+## Task 2 – Modify a DLP policy
 
 After testing the policy with a small group, Contoso is ready to expand it to include all employees. In this task, you'll modify the policy to apply it to the entire company, so sensitive data is protected for everyone.
 
@@ -175,7 +118,7 @@ After testing the policy with a small group, Contoso is ready to expand it to in
 
 You've successfully updated the DLP policy to cover all employees.
 
-## Task 5 – Activate a policy in simulation mode
+## Task 3 – Activate a policy in simulation mode
 
 Now that the policy has been tested and expanded, Contoso is ready to turn it on. In this task, you'll activate the policy so it starts blocking any attempts to share sensitive data with generative AI platforms.
 

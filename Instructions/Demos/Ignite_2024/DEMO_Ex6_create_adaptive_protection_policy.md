@@ -1,4 +1,4 @@
-# Exercise 5 - Create an Adaptive Protection Policy
+# Exercise 6 - Create an Adaptive Protection Policy
 
 Contoso has implemented DLP policies to prevent data from being copied into generative AI platforms. However, the company has identified a need for more dynamic control, ensuring that stricter measures are applied to users who engage in risky behaviors. To address this, Contoso will use Microsoft Purviews Adaptive Protection to automatically adjust the enforcement of DLP policies based on a user's insider risk level, ensuring that users with higher risk face more restrictions while maintaining flexibility for others.
 
