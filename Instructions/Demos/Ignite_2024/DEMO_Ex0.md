@@ -14,8 +14,8 @@ In this exercise, you'll configure and prepare your environment for compliance a
 
 1. Enable Audit in the Microsoft Purview portal
 1. Enable device onboarding
-1. Onboard a device to endpoint DLP
 1. Set user passwords for lab exercises
+1. Onboard a device for endpoint DLP
 1. Explore the Microsoft Purview portal
 
 ## Task 1 – Enable Audit in the Microsoft Purview portal
@@ -44,7 +44,7 @@ You have successfully enabled auditing in Microsoft Purview.
 
 ## Task 2 – Enable device onboarding
 
-To support Endpoint DLP policies later in the lab, you need to enable device onboarding in Microsoft Purview. This step ensures devices are ready to track and protect sensitive information.
+To support Endpoint DLP policies later in the lab, you'll enable device onboarding in Microsoft Purview.
 
 1. In the Microsoft Purview portal, select **Settings** > **Device onboarding** > **Devices**.
 
@@ -59,11 +59,31 @@ To support Endpoint DLP policies later in the lab, you need to enable device onb
 >[!note]
 >This process might take about 5 minutes to complete.
 
-You've successfully enabled device onboarding, preparing the environment to onboard devices and apply endpoint DLP policies.
+Device onboarding is now enabled, and the environment is prepared for the next steps.
 
-## Task 3 – Onboard a device to endpoint DLP
+## Task 3 – Set user passwords for lab exercises
 
-With device onboarding enabled, the next step is to onboard a Windows 11 device to apply Endpoint DLP policies. This ensures the device is monitored and protected against data loss.
+While device onboarding completes, you'll reset passwords for the user accounts needed in upcoming tasks.
+
+1. In Microsoft Edge, navigate to the **Microsoft 365 admin center** at **`https://admin.microsoft.com`**.
+
+1. From the left navigation pane, expand **Users** then select **Active users**.
+
+1. Find the account for **Megan Bowen** and select the key icon to reset her password.
+
+   You'll use Megan's account in the next exercises.
+
+   ![Screenshot showing user accounts that need to be reset.](../Media/reset-password-button-megan.png)
+
+1. In the **Reset Password** flyout page on the right, make sure all options are unchecked, then enter a password you'll remember in the **Password** field.
+
+1. Select **Reset password** at the bottom of the page, then **Close** on the confirmation page.
+
+You have successfully reset Megan's password for the lab exercises.
+
+## Task 4 – Onboard a device for endpoint DLP
+
+With device onboarding now complete, the next step is to onboard a Windows 11 device. This ensures the device is ready to apply Endpoint DLP policies and protect sensitive data.
 
 1. From the **Devices** page, on the left sidebar, expand **Device onboarding**, then select **Onboarding**.
 
@@ -92,26 +112,6 @@ With device onboarding enabled, the next step is to onboard a Windows 11 device 
 1. When the script is complete, you'll get a success message and a prompt to **Press any key to continue**. Press any key to close the command line window. It can take a minute to complete the onboarding.
 
 You've successfully onboarded a Windows 11 device, allowing it to be protected by the endpoint DLP policy.
-
-## Task 4 – Set user passwords for lab exercises
-
-In this task, you'll set passwords for the user accounts used in the lab.
-
-1. In Microsoft Edge, navigate to the **Microsoft 365 admin center** at **`https://admin.microsoft.com`**.
-
-1. From the left navigation pane, expand **Users** then select **Active users**.
-
-1. Find the account for **Megan Bowen** and select the key icon to reset her password.
-
-   You'll use Megan's account in the next exercises.
-
-   ![Screenshot showing user accounts that need to be reset.](../Media/reset-password-button-megan.png)
-
-1. In the **Reset Password** flyout page on the right, make sure all options are unchecked, then enter a password you'll remember in the **Password** field.
-
-1. Select **Reset password** at the bottom of the page, then **Close** on the confirmation page.
-
-You have successfully reset Megan's password for the lab exercises.
 
 ## Task 5 – Explore the Microsoft Purview portal
 

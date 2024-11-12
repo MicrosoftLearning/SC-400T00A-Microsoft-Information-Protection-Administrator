@@ -69,7 +69,7 @@ You have successfully created an internal sensitivity label to protect company d
 
 ## Task 3 – Create a sublabel for HR Employee Data
 
-In this task, you'll create a sublabel under the **Internal** sensitivity label, specifically for protecting HR documents containing sensitive employee information. This label will restrict access to HR personnel and ensure the information remains protected even when accessed through tools like Microsoft 365 Copilot.
+In this task, you'll create a sublabel under the **Internal** sensitivity label to protect HR documents. Dynamic watermarking will be added to display personalized details, such as the user’s email and access timestamp, on documents. This feature discourages unauthorized sharing and provides visibility into document usage.
 
 1. On the **Sensitivity labels** page, find the newly created **Internal** sensitivity label.
 
@@ -102,7 +102,15 @@ In this task, you'll create a sublabel under the **Internal** sensitivity label,
 
    ![Screenshot showing the Access control options for sensitivity labels.](../Media/access-control-options.png)
 
-1. On the **Assign permissions** flyout page, select **+ Add any authenticated users**, then select **Save**.
+1. On the **Assign permissions** flyout page, select **+ Add all users and groups in your organization**, then select **Save**.
+
+1. On the **Access control** page, select the checkbox for **Use dynamic watermarking**, then select **Customize text (optional)**.
+
+1. On the **Add custom text to watermark (optional)** page, in the custom text field, enter `Confidential | HR only |`
+
+1. Select the tokens for **UPN** and **Timestamp**, then select **Save** at the bottom of the page.
+
+   ![Screenshot showing the tokens for dynamic watermarking.](../Media/dynamic-watermark-tokens.png)
 
 1. On the **Access control** page, select **Next**.
 

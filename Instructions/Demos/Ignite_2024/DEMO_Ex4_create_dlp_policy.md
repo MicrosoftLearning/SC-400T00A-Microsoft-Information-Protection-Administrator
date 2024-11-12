@@ -1,6 +1,6 @@
 # Exercise 4 - Create a DLP Policy
 
-Contoso is concerned about employees sharing sensitive information on generative AI platforms. Before they can implement a DLP policy, they need to onboard devices to Microsoft Purview Endpoint DLP. They will begin testing the policy in simulation mode with a small group to ensure there are no operational issues before expanding it across the organization. After testing, they will activate the policy to enforce it across the company.
+Contoso is concerned about employees sharing sensitive information on generative AI platforms. To address this, they will implement a DLP policy to detect and block sensitive data, including employee IDs, from being shared. In a prior exercise, a custom sensitive information type was created to identify employee IDs. This will be included in the DLP policy to ensure that these identifiers are protected.
 
 **Tasks**:
 
@@ -54,19 +54,21 @@ In this task, you'll create an endpoint DLP policy that blocks users from copyin
 
 1. In the newly opened **Content contains** area, select **Add** then select **Sensitive info types**.
 
-1. On the **Sensitive info types** flyout page on the right, search for `Credit` then select the checkbox for the **Credit Card Number** sensitive info type.
+1. On the **Sensitive info types** flyout page on the right, search for `Contoso` then select the checkbox for the **Contoso Employee IDs** sensitive info type created in a previous exercise.
 
-1. Select **Add** at the bottom of the page.
+1. In the search field, enter `Credit` then select the checkbox for the **Credit Card Number** sensitive info type.
+
+1. Select **Add** at the bottom of the page to add the **Contoso Employee IDs** and **Credit Card Number** sensitive info types.
 
 1. In the **Actions** section, select the **+ Add an action** dropdown, then select **Audit or restrict activities on devices**.
 
-1. In the newly opened **Audit or restrict activities on devices** area, in the **Service domain and browser activities** section, select the checkbox for **Upload to a restricted cloud service domain or access from an unallowed browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
+1. In the newly opened **Audit or restrict activities on devices** area, in the **Service domain and browser activities** section select the checkbox for **Upload to a restricted cloud service domain or access from an unallowed browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
 
 1. In the **Sensitive service domain restrictions** flyout page, select **+ Add group**.
 
-1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the flyout page.
+1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the page.
 
-1. Back on the **Sensitive service domain restrictions** page, ensure **Generative AI Websites** is listed, then select **Save** at the bottom of the flyout page.
+1. On the **Sensitive service domain restrictions** page, set the **Action** for **Generative AI Websites** to **Block**, then select **Save** at the bottom of the page.
 
 1. Back on the **Create rule** page, select the checkbox for **Paste to supported browsers**, then select **+ Choose different restrictions for sensitive service domains** under this option.
 
@@ -74,15 +76,13 @@ In this task, you'll create an endpoint DLP policy that blocks users from copyin
 
 1. In the **Choose sensitive service domain groups** select the checkbox for **Generative AI Websites**, then select **Add** at the bottom of the flyout page.
 
-1. Select **Save** on the **Sensitive service domain restrictions** page.
+1. On the **Sensitive service domain restrictions** page, set the **Action** for **Generative AI Websites** to **Block**, then select **Save** at the bottom of the page.
 
-1. Back on the **Create rule** in the **Service domain and browser activities** section, update the action for both **Upload to a restricted cloud service domain or access from an unallowed browsers** and **Paste to supported browsers** from **Audit only** to **Block**.
+1. Back on the **Create rule** in the **Service domain and browser activities** section, ensure the action for both **Upload to a restricted cloud service domain or access from an unallowed browsers** and **Paste to supported browsers** is set to **Audit only**.
 
 1. In the **User notifications** section, set **Use notifications to inform your users and help educate them on the proper use of sensitive info.** to **On**.
 
 1. Under **Endpoint devices** select the checkbox to **Show users a policy tip notification**.
-
-1. Under **Microsoft 365 services** select the checkbox for **Notify users in Office 365 service with a policy tip**.
 
 1. Select **Save** at the bottom of the flyout page.
 
