@@ -87,7 +87,11 @@ After creating the custom SIT, we need to test it using real data. In this task,
 
 1. Select **File** > **Save As**.
 
-1. Select **Documents** on the left side pane and enter `EmployeePayroll.csv` as the **File name**, then select **Save**.
+1. Select **Documents** on the left side pane.
+
+1. Change the **Save as type** to **All files (\*.*).**
+
+1. Enter `EmployeePayroll.csv` as the **File name**, then select **Save**.
 
 1. Close the Notepad window.
 
