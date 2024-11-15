@@ -28,7 +28,7 @@ In this task, you'll enable audit logging to track activities across Microsoft 3
 
 1. Sign into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password can be found in the **Resources** tab of the lab hosting window.
 
-1. In the **Welcome to the new Microsoft Purview Portal!** window, select the checkbox to agree with the terms and conditions, then select **Get started** access the portal.
+1. In the **Welcome to the new Microsoft Purview Portal!** window, select the checkbox to agree with the terms and conditions, then select **Get started** to access the portal.
 
     ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](../Media/new-purview-portal-get-started.png)
 
@@ -130,6 +130,8 @@ In this task, you'll switch to Megan Bowen's account and explore the Microsoft P
 1. When the **Pick an account** window appears, select **Use another account**.
 
 1. Sign in as `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
+
+1. Select **Get started** in the **Welcome to the new Microsoft Purview Portal!** window.
 
 1. Explore the Microsoft Purview portal to familiarize yourself with its interface.
 
