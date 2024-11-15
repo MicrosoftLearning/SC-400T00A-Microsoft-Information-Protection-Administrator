@@ -85,7 +85,9 @@ You have successfully reset Megan's password for the lab exercises.
 
 With device onboarding now complete, the next step is to onboard a Windows 11 device. This ensures the device is ready to apply Endpoint DLP policies and protect sensitive data.
 
-1. From the **Devices** page, on the left sidebar, expand **Device onboarding**, then select **Onboarding**.
+1. In **Microsoft Edge**, navigate to the Microsoft Purview portal at **`https://purview.microsoft.com`**.
+
+1. In the Microsoft Purview portal, select **Settings** > **Device onboarding** > **Onboarding**.
 
 1. On the **Onboarding** page, ensure **Windows 10** is selected as the operating system and **Local Script (for up to 10 machines)** is selected as the deployment method.
 
@@ -117,7 +119,13 @@ You've successfully onboarded a Windows 11 device, allowing it to be protected b
 
 In this task, you'll switch to Megan Bowen's account and explore the Microsoft Purview portal.
 
-1. In **Microsoft Edge**, navigate to the Microsoft Purview portal at **`https://purview.microsoft.com`**.
+1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then select **Sign out**.
+
+   ![Screenshot showing the navigation path to sign out of the MOD Administrator account.](../Media/sign-out.png)
+
+1. Close all browser windows to ensure the session is completely cleared.
+
+1. Reopen **Microsoft Edge**, and navigate to the Microsoft Purview portal at **`https://purview.microsoft.com`**.
 
 1. When the **Pick an account** window appears, select **Use another account**.
 
