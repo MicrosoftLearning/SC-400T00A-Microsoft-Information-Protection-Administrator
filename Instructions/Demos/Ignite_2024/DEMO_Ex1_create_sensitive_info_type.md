@@ -89,7 +89,7 @@ After creating the custom SIT, we need to test it using real data. In this task,
 
 1. Select **Documents** on the left side pane.
 
-1. Change the **Save as type** to **All files (\*.*).**
+1. Change the **Save as type** to **All files (\*.*)**.
 
 1. Enter `EmployeePayroll.csv` as the **File name**, then select **Save**.
 
