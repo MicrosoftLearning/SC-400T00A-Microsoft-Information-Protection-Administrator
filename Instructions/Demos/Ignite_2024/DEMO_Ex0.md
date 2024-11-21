@@ -63,8 +63,6 @@ Device onboarding is now enabled, and the environment is prepared for the next s
 
 With device onboarding now complete, the next step is to onboard a Windows 11 device. This ensures the device is ready to apply Endpoint DLP policies and protect sensitive data.
 
-1. In **Microsoft Edge**, navigate to the Microsoft Purview portal at **`https://purview.microsoft.com`**.
-
 1. In the Microsoft Purview portal, select **Settings** > **Device onboarding** > **Onboarding**.
 
 1. On the **Onboarding** page, ensure **Windows 10** is selected as the operating system and **Local Script (for up to 10 machines)** is selected as the deployment method.
