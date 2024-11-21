@@ -7,7 +7,6 @@ In this exercise, you'll create a custom sensitive information type to identify 
 **Tasks**:
 
 1. Create a custom sensitive information type
-1. Test a custom sensitive information type
 
 ## Task 1 – Create a custom sensitive information types
 
@@ -65,4 +64,3 @@ Contoso has had instances where employee IDs were accidentally shared in emails 
 1. On the **Review settings and finish** page, review your settings then select **Create**. When successfully created select **Done**.
 
 You have successfully created a custom sensitive information type.
-
