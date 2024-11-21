@@ -14,9 +14,7 @@ In this exercise, you'll configure and prepare your environment for compliance a
 
 1. Enable Audit in the Microsoft Purview portal
 1. Enable device onboarding
-1. Set user passwords for lab exercises
 1. Onboard a device for endpoint DLP
-1. Explore the Microsoft Purview portal
 
 ## Task 1 – Enable Audit in the Microsoft Purview portal
 
@@ -61,27 +59,7 @@ To support Endpoint DLP policies later in the lab, you'll enable device onboardi
 
 Device onboarding is now enabled, and the environment is prepared for the next steps.
 
-## Task 3 – Set user passwords for lab exercises
-
-While device onboarding completes, you'll reset passwords for the user accounts needed in upcoming tasks.
-
-1. In Microsoft Edge, navigate to the **Microsoft 365 admin center** at **`https://admin.microsoft.com`**.
-
-1. From the left navigation pane, expand **Users** then select **Active users**.
-
-1. Find the account for **Megan Bowen** and select the key icon to reset her password.
-
-   You'll use Megan's account in the next exercises.
-
-   ![Screenshot showing user accounts that need to be reset.](../Media/reset-password-button-megan.png)
-
-1. In the **Reset Password** flyout page on the right, make sure all options are unchecked, then enter a password you'll remember in the **Password** field.
-
-1. Select **Reset password** at the bottom of the page, then **Close** on the confirmation page.
-
-You have successfully reset Megan's password for the lab exercises.
-
-## Task 4 – Onboard a device for endpoint DLP
+## Task 3 – Onboard a device for endpoint DLP
 
 With device onboarding now complete, the next step is to onboard a Windows 11 device. This ensures the device is ready to apply Endpoint DLP policies and protect sensitive data.
 
@@ -114,25 +92,3 @@ With device onboarding now complete, the next step is to onboard a Windows 11 de
 1. When the script is complete, you'll get a success message and a prompt to **Press any key to continue**. Press any key to close the command line window. It can take a minute to complete the onboarding.
 
 You've successfully onboarded a Windows 11 device, allowing it to be protected by the endpoint DLP policy.
-
-## Task 5 – Explore the Microsoft Purview portal
-
-In this task, you'll switch to Megan Bowen's account and explore the Microsoft Purview portal.
-
-1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then select **Sign out**.
-
-   ![Screenshot showing the navigation path to sign out of the MOD Administrator account.](../Media/sign-out.png)
-
-1. Close all browser windows to ensure the session is completely cleared.
-
-1. Reopen **Microsoft Edge**, and navigate to the Microsoft Purview portal at **`https://purview.microsoft.com`**.
-
-1. When the **Pick an account** window appears, select **Use another account**.
-
-1. Sign in as `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
-
-1. Select **Get started** in the **Welcome to the new Microsoft Purview Portal!** window.
-
-1. Explore the Microsoft Purview portal to familiarize yourself with its interface.
-
-You have successfully switched to Megan Bowen's account and are ready to continue with the lab.

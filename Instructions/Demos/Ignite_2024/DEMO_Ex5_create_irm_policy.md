@@ -9,7 +9,7 @@ Contoso wants to protect its sensitive data by keeping track of risky employee a
 
 ## Task 1 – Configure insider risk settings
 
-o help track risky activities that could expose sensitive information, you'll configure the policy indicators used in Insider Risk Management. These settings allow Microsoft Purview to identify potential risky browsing behavior, ensuring sensitive data remains protected.
+To help track risky activities that could expose sensitive information, you'll configure the policy indicators used in Insider Risk Management. These settings allow Microsoft Purview to identify potential risky browsing behavior, ensuring sensitive data remains protected.
 
 1. In the Microsoft Purview Portal, select **Settings** from the left sidebar.
 

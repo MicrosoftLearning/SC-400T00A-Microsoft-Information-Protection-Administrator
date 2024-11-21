@@ -2,7 +2,7 @@
 
 As Contoso adopts more AI-powered tools, it's crucial to protect sensitive data from accidental exposure. To prevent the sharing of employee IDs, you'll create custom sensitive information types. These will help Contoso detect and classify sensitive data in emails and documents, ensuring it stays protected from misuse.
 
-In this exercise, you'll create and test a custom sensitive information type to identify employee IDs.
+In this exercise, you'll create a custom sensitive information type to identify employee IDs.
 
 **Tasks**:
 
@@ -12,8 +12,6 @@ In this exercise, you'll create and test a custom sensitive information type to 
 ## Task 1 – Create a custom sensitive information types
 
 Contoso has had instances where employee IDs were accidentally shared in emails or documents. To prevent this from happening, you'll create a custom sensitive information type that can detect employee IDs and flag them before they're exposed.
-
-1. You should still be logged into the Microsoft Purview portal as Megan Bowen.
 
 1. In the Microsoft Purview portal, in the left sidebar, select **Solutions** then select **Information Protection**.
 
@@ -68,49 +66,3 @@ Contoso has had instances where employee IDs were accidentally shared in emails 
 
 You have successfully created a custom sensitive information type.
 
-## Task 2 – Test custom sensitive information types
-
-After creating the custom SIT, we need to test it using real data. In this task, we'll validate that the SIT detects employee IDs correctly in a CSV file, ensuring accuracy before it's used in any protection measures.
-
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the Admin account.
-
-1. Select the **Search** icon from the task bar, then search for `Notepad`. Select the **Notepad** app from the **Best match** section of the search.
-
-1. In Notepad, enter:
-
-    ``` text
-    Employee Name,Employee ID,Net Pay,Deduction, Deduction Type
-    Joni Sherman,EMP123456,$5000,$500, Health Insurance
-    Megan Bowen,EMP654321,$4000,$400, Pension
-    Lynne Robbins,EMP789123,$5500,$450, 401k
-    ```
-
-1. Select **File** > **Save As**.
-
-1. Select **Documents** on the left side pane.
-
-1. Change the **Save as type** to **All files (\*.*)**.
-
-1. Enter `EmployeePayroll.csv` as the **File name**, then select **Save**.
-
-1. Close the Notepad window.
-
-1. Back in **Microsoft Edge**, Microsoft Purview portal should still be open on the **Sensitive info types** page.
-
-1. In the **Search** bar on the upper right, search for `Contoso`.
-
-1. Select the **Contoso Employee IDs** sensitive info type.
-
-1. On the **Contoso Employee IDs** page, select **Test**.
-
-1. On the **Upload file to test "Contoso Employee IDs"** flyout panel on the right, select **Upload file**.
-
-1. Select **Documents** from the left pane, select the _EmployeePayroll.csv_ file, then select **Open**.
-
-1. Select **Test** to start the analysis.
-
-   You should see that the **Contoso Employee IDs** sensitive info type is performing as expected.
-
-1. On the **Match results** page, select **Finish** to finish the test.
-
-You have successfully tested the custom sensitive information type.

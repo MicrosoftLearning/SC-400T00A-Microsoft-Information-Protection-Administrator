@@ -5,7 +5,6 @@ Contoso is concerned about employees sharing sensitive information on generative
 **Tasks**:
 
 1. Create a DLP policy in simulation mode
-1. Modify a DLP policy
 1. Activate a policy in simulation mode
 
 ## Task 1 – Create an endpoint DLP policy in simulation mode
@@ -27,19 +26,7 @@ In this task, you'll create an endpoint DLP policy that blocks users from copyin
 
 1. On the **Assign admin units** page, select **Next**.
 
-1. On the **Choose locations to apply the policy** page, select only the **Devices** location. If any other location is selected, ensure they're deselected.
-
-1. On the **Devices** row under the **Actions** column, select **Edit** to change the policy scope.
-
-   ![Screenshot showing where to modify the policy scope when creating a DLP policy.](../Media/dlp-change-policy-scope.png)
-
-1. On the **Scope for devices** page, select **Specific users and groups** the **+ Include users and groups** in the flyout page.
-
-1. On the **Choose users and groups** page, select the checkbox for the `Retail` group, then select **Done** at the bottom of the page.
-
-1. On the **Scope for devices** select **Done**.
-
-1. On the **Choose where to apply the policy** page, select **Next**.
+1. On the **Choose locations to apply the policy** page, select only the **Devices** location. If any other location is selected, ensure they're deselected, then select **Next**.
 
 1. On the **Define policy settings** page, select **Create or customize advanced DLP rules** then select **Next**.
 
@@ -96,29 +83,7 @@ In this task, you'll create an endpoint DLP policy that blocks users from copyin
 
 You've successfully created the endpoint DLP Policy in simulation mode.
 
-## Task 2 – Modify a DLP policy
-
-After testing the policy with a small group, Contoso is ready to expand it to include all employees. In this task, you'll modify the policy to apply it to the entire company, so sensitive data is protected for everyone.
-
-1. On the **Policies** page select the checkbox for the recently created **Generative AI sharing DLP policy**, then select **Edit policy** to open the policy configuration.
-
-1. On the **Name your DLP policy** page, select **Next**.
-
-1. On the **Assign admin units** page select **Next**.
-
-1. On the **Devices** row under the **Actions** column, select **Edit** to change the policy scope.
-
-1. On the **Scope for devices** page, select **All users and groups**, then select **Done** at the bottom of the page.
-
-1. Select **Next** until you reach the **Policy mode** page.
-
-1. On the **Policy mode** page, select **Run the policy in simulation mode**, then select **Next**.
-
-1. On the **Review and finish** page, select **Submit**, then select **Done** on the **Policy updated** page.
-
-You've successfully updated the DLP policy to cover all employees.
-
-## Task 3 – Activate a policy in simulation mode
+## Task 2 – Activate a policy in simulation mode
 
 Now that the policy has been tested and expanded, Contoso is ready to turn it on. In this task, you'll activate the policy so it starts blocking any attempts to share sensitive data with generative AI platforms.
 
