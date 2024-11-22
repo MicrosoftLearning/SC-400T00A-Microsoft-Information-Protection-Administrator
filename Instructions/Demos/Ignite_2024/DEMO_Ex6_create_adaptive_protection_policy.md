@@ -22,4 +22,4 @@ In this task, you'll configure Adaptive Protection by setting insider risk level
 
 1. Select the **Adaptive Protection settings** tab, and toggle the **Adaptive Protection** switch to **On**, then select **Save** at the bottom of the page.
 
-You've successfully enabled Adaptive Protection in Insider Risk Management, ensuring that DLP policies are now dynamically applied based on the risk levels of individual users, enhancing data protection while minimizing interruptions to everyday business operations.
+You've successfully enabled Adaptive Protection in Insider Risk Management.
