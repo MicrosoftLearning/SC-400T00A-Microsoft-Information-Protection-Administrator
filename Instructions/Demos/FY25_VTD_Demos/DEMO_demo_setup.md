@@ -13,24 +13,6 @@ This lab is to setup the demo environment for the FY25 VTDs. The primary tasks i
 
 Please ensure you perform these tasks before running the demos for VTDs 48 hours in advance to ensure the environment is ready for demos.
 
-If you encounter any issues with these labs, please reach out to me at richelle.swinton@microsoft.com to resolve these issues.
-
-## Accessing the Skillable environment
-
-1. Access the SC-400 lab profile - [https://gtllabs.learnondemand.net/Lab/68392](https://gtllabs.learnondemand.net/Lab/68392).
-
-1. Sign in with the appropriate credentials.
-
-1. Select the **Launch** button to launch the lab.
-
-1. A new window opens to load the lab environment. Wait for the lab profile to load. This process takes a couple of minutes.
-
-1. To easily display this lab for the demo, it might be easiest to use the credentials from the **Resources** tab and run the lab in an incognito window in Microsoft Edge.
-
-    ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](/Instructions/Media/skillable-credentials.png)
-
-1. You'll need to run the lab setup in the Skillable lab VM to onboard a device.
-
 ## Task 1 – Set user passwords demo walkthrough
 
 In this task, you'll set passwords for the user accounts needed for the labs.
