@@ -77,15 +77,15 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 
 >[!alert] If you receive an error enabling Audit in this exercise, please use these steps as a work around:
 >1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select Windows PowerShell (Admin).
->2. Install the ExchangeOnlineManagement module by running `Connect-ExchangeOnline`
->3. Connect to the Exchange Online console by entering **admin@WWLxZZZZZZ.onmicrosoft.com** as the username and @lab.CloudCredential(GTLM365Enterprise2019wSPE_E5).AdministrativePassword as the password.
->4. To verify if Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
->5. If false, then the audit log is turned off.
->6. To enable Audit, run `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
->   7. If you receive an error that you are unable to run the script in your orginization, run `Enable-OrganizationCustomization`
->   8. Try again to run `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
->9. To confirm Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
->10. Once complete, run `Disconnect-ExchangeOnline` to end your session
+>1. Install the ExchangeOnlineManagement module by running `Connect-ExchangeOnline`
+>1. Connect to the Exchange Online console by entering the administraive username and password from your lab hosting provider.
+>1. To verify if Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
+>1. If false, then the audit log is turned off.
+>1. To enable Audit, run `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
+>   1. If you receive an error that you are unable to run the script in your orginization, run `Enable-OrganizationCustomization`
+>   1. Try again to run `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
+>1. To confirm Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
+>1. Once complete, run `Disconnect-ExchangeOnline` to end your session
 
 You have successfully enabled auditing in Microsoft 365.
 
