@@ -29,7 +29,7 @@ In this task, you'll set passwords for the user accounts needed for the labs.
 
 1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account. The password should be provided by your lab hosting provider.
 
-1. Open **Microsoft Edge** and navigate to **`https://admin.microsoft.com`** and log into the Microsoft Purview portal as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. Open **Microsoft Edge** and navigate to **`https://admin.microsoft.com`** and log into the Microsoft 365 admin center as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
 1. On the left navigation pane, expand **Users** then select **Active users**.
 
