@@ -76,7 +76,7 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 1. Once you select this option, the blue bar should disappear from this page.
 
 >[!alert] If you receive an error enabling Audit in this exercise, please use these steps as a work around:
->1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select Windows PowerShell (Admin).
+>1. Open an elevated Terminal window by selecting the Windows button with the right mouse button and then select Terminal (Admin).
 >1. Install the ExchangeOnlineManagement module by running `Connect-ExchangeOnline`
 >1. Connect to the Exchange Online console by entering the administrator username and password from your lab hosting provider.
 >1. To verify if Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
