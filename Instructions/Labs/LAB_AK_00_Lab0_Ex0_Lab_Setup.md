@@ -82,7 +82,7 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 >1. To verify if Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
 >1. If false, then the audit log is turned off.
 >1. To enable Audit, run `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
->   1. If you receive an error that you are unable to run the script in your orginization, run `Enable-OrganizationCustomization`
+>   1. If you receive an error that you are unable to run the script in your organization, run `Enable-OrganizationCustomization`
 >   1. Try again to run `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
 >1. To confirm Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
 >1. Once complete, run `Disconnect-ExchangeOnline` to end your session
