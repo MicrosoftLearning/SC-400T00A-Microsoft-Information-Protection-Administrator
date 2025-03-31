@@ -17,7 +17,7 @@ As Joni, the Compliance Administrator for Contoso Ltd., your responsibility is t
 
 In this task, you'll verify the **Search by name** feature is enabled in Microsoft Teams. This feature allows users to search and find specific individuals within their organization easily. By following the steps provided, you will configure and activate this feature to enhance collaboration and streamline communication within your organization's Microsoft Teams environment.
 
-1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
+1. Log into the Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
 
 1. If you're still signed in with Joni's account, sign out of this account and close all browser windows.
 

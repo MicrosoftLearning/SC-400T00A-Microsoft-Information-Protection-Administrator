@@ -20,7 +20,7 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd. The company 
 
 First, you'll create an eDiscovery (Premium) case to begin your investigation. This case will be the central repository for all activities and data related to the intellectual property theft investigation.
 
-1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
+1. Log into the Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 

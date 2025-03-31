@@ -20,7 +20,7 @@ To ensure secure communication within Contoso Ltd., you need to configure and te
 
 In this task, you'll verify the correct Azure RMS functionality of your tenant.
 
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
+1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
 
 1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
 
@@ -80,7 +80,7 @@ You have successfully installed the Exchange Online PowerShell module, connected
 
 There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with message encryption, you need to deactivate the use of social IDs for all users in your organization.
 
-1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
+1. You should still be logged into your Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
 
 1. Run the **Get-OMEConfiguration** cmdlet to view the default configuration:
 
@@ -116,7 +116,7 @@ You have successfully deactivated the usage of foreign identity providers, such 
 
 You must confirm that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of your tenant and they need to use the OTP at any time accessing the encrypted content.
 
-1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin**.
+1. You should still be logged into your Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin**.
 
 1. Open **Microsoft Edge** in an InPrivate window by right clicking Microsoft Edge from the task bar and selecting **New InPrivate window**.
 
@@ -156,7 +156,7 @@ You have successfully tested the modified default OME template with deactivated 
 
 Protected messages sent by your organizations finance department require special branding, including customized introduction and body texts and a Disclaimer link in the footer. The finance messages shall also expire after seven days. In this task, you will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mail sent from the finance department.
 
-1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin**, and there should still be an open PowerShell window with Exchange Online connected.
+1. You should still be logged into your Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin**, and there should still be an open PowerShell window with Exchange Online connected.
 
 1. Run the **New-OMEConfiguration** cmdlet to create a new configuration:
 

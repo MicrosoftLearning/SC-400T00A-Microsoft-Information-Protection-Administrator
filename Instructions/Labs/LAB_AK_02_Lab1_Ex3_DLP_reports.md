@@ -18,7 +18,7 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd. tasked to co
 
 In this exercise, you will grant the new compliance officer Megan Bowen access to the DLP reports. As a non-technical user this compliance officer will only read reports and not change the DLP configuration.
 
-1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
+1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
@@ -46,7 +46,7 @@ You have now granted the new compliance officer access to the DLP reports in the
 
 In this task, you will test that the access to the DLP reports you granted in Task 1 is applied correctly.
 
-1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-cl2\admin** account.
+1. Log into the Client 1 VM (SC-401-CL1) as the **SC-401-cl2\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Megan Bowen** `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
 
@@ -66,7 +66,7 @@ You now verified that the access has been configured and the new compliance offi
 
 In this task, you will review DLP activities via PowerShell.
 
-1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
+1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
 
 1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
 

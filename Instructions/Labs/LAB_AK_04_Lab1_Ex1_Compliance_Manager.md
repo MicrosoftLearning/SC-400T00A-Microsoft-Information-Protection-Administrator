@@ -31,7 +31,7 @@ As part of your responsibilities, you need to conduct a compliance assessment sp
 
 In this task you will grant Joni the required permissions to create assessments using Compliance Manager. You will also grant Megan the necessary permissions to act on improvement actions if they are assigned to her.
 
-1. Log into the Client 1 VM (LON-CL1) as the **lon-cl1\admin** account. The password should be provided by your lab hosting provider.
+1. Log into the Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account. The password should be provided by your lab hosting provider.
 
 1. In **Microsoft Edge**, select the address bar, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview compliance portal as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
@@ -151,7 +151,7 @@ In this task, you will create a new assessment within Compliance Manager to eval
 
 In this task, you will review and act upon the assigned improvement action in Compliance Manager.
 
-1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin** and logged into Microsoft 365 as Joni Sherman. Sign out of Joni Sherman's account by selecting her image in the upper right of the screen and selecting **Sign out**.
+1. You should be logged into Client 1 VM (SC-401-CL1) open as the **SC-401-CL1\admin** and logged into Microsoft 365 as Joni Sherman. Sign out of Joni Sherman's account by selecting her image in the upper right of the screen and selecting **Sign out**.
 
 1. Open **Microsoft Edge** and navigate to **`https://outlook.office.com`**.
 
@@ -214,7 +214,7 @@ Upon completing the creation and activation of the new DLP policy for **U.S. Gra
 
 ## Task 6 – Manually update improvement action
 
-1. You should be logged into Client 1 VM (LON-CL1) open as the **lon-cl1\admin**.
+1. You should be logged into Client 1 VM (SC-401-CL1) open as the **SC-401-CL1\admin**.
 
 1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`**.
 
