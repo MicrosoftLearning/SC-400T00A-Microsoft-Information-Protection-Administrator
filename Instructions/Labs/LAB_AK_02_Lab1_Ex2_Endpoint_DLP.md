@@ -20,7 +20,7 @@ You are Joni Sherman, the newly hired Compliance Administrator for Contoso Ltd. 
 
 In this task, you'll enable device onboarding for your organization.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
@@ -40,7 +40,7 @@ You have now enabled device onboarding and can start to onboard devices to be pr
 
 In this task, you will use the local script option to onboard a Windows 11 device to allow it to be protected by Endpoint DLP policies.
 
-1. Log into Client 2 VM (SC-401-CL2) as the **SC-401-cl1\admin** account.
+1. Log into Client 2 VM (SC-400-CL2) as the **SC-400-cl1\admin** account.
 
 1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
@@ -52,7 +52,7 @@ In this task, you will use the local script option to onboard a Windows 11 devic
 
 1. In the **Downloads** dialog, hover over the download, then select the folder icon to **Show in folder**.
 
-1. Extract the zip-file to the **Desktop** of SC-401-CL1. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
+1. Extract the zip-file to the **Desktop** of SC-400-CL1. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
 
 1. On the desktop right click the **DeviceComplianceLocalOnboardingScript.cmd** file you just extracted and select **Show more options**, then select **Properties**.
 
@@ -74,9 +74,9 @@ In this task, you will use the local script option to onboard a Windows 11 devic
 
 1. Once your device has connected select **Done** on the **You're all set!** screen.
 
-1. Restart Client 2 VM (SC-401-CL2).
+1. Restart Client 2 VM (SC-400-CL2).
 
-1. Log back into Client 1 VM (SC-401-CL1).
+1. Log back into Client 1 VM (SC-400-CL1).
 
 1. The Microsoft Purview window should still be open at the **Devices** page. Refresh this page and verify the device has been successfully onboarded.
 
@@ -86,7 +86,7 @@ You have successfully onboarded a device and joined it to Microsoft Entra ID to 
 
 In this task, you will create a Data Loss Prevention (DLP) policy in the Microsoft Purview portal to prevent sensitive information from being shared with generative AI platforms on Windows 11 devices. This policy will help ensure that sensitive customer data, such as driver's license numbers and personal information, is not accidentally or intentionally shared with AI platforms, protecting the organization's data integrity.
 
-1. Log on to Client 1 VM (SC-401-CL1) as the SC-401-cl1\admin account.
+1. Log on to Client 1 VM (SC-400-CL1) as the SC-400-cl1\admin account.
 
 1. You should still be at the **Devices** page in the Microsoft Purview portal, logged in as Joni Sherman. Select the **Home** button on the top left of the screen. If you're not logged in, navigate to `https://purview.microsoft.com` and login as Joni Sherman. Joni's password was set in a previous exercise.
 
@@ -162,7 +162,7 @@ You have successfully activated the Endpoint DLP Policy. This policy will preven
 
 In this task, you will configure a file path exclusion to a folder on your Windows 11 devices to make sure that the content of this folder is not monitored by the Endpoint DLP policy you created.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page for data loss prevention. Select **Settings** from the left sidebar.
 

@@ -20,7 +20,7 @@ Joni Sherman, the System Administrator for Contoso Ltd., is implementing a sensi
 
 In this task, you'll install the necessary modules and enable support for sensitivity labels on your tenant.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
 1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
 
@@ -90,7 +90,7 @@ You have successfully enabled support for sensitivity labels for Teams and Share
 
 In this task, your HR department has requested a sensitivity label to apply to HR employee documents. You'll create a sensitivity label for internal documents and a sublabel for the HR department.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`**. Log into Microsoft Purview as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
@@ -172,7 +172,7 @@ You have successfully created a sensitivity label for your organizations interna
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account, and you should be logged into Microsoft Purview as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft Purview as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If not, navigate to **`https://purview.microsoft.com`** > **Solutions** > **Information Protection** > **Sensitivity labels**.
 
@@ -217,7 +217,7 @@ You have successfully published the Internal and HR sensitivity labels. Note tha
 
 In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
 1. In **Microsoft Edge**, open a new Word document by selecting the meatball menu in the top left and selecting **Word**.
 
@@ -271,7 +271,7 @@ You have successfully created an HR Word document with a sensitivity label, whic
 
 In this task, you'll create a sensitivity label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
 

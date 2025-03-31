@@ -17,7 +17,7 @@ Contoso Ltd. has recently experienced some internal challenges, and there is con
 
 To prevent data loss, you'll place a mailbox hold on Alex Wilber's account.
 
-1. Log into Client 1 virtual machine (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. Log into Client 1 virtual machine (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://admin.exchange.microsoft.com`** and log into the Exchange Admin Center as **Joni Sherman**. Sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
@@ -46,7 +46,7 @@ You have successfully activated the Mailbox Hold on a mailbox in your environmen
 
 In this task, you'll delete and restore a deleted document to make sure you can restore documents the employee might delete after he is informed about the litigation hold against his mailbox.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://www.office.com`** and log in Microsoft 365 as **Joni Sherman**.
 

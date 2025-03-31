@@ -27,7 +27,7 @@ In this lab, you'll configure and prepare your environment for administration ta
 
 In this task, you'll set passwords for the user accounts needed for the labs.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account. The password should be provided by your lab hosting provider.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account. The password should be provided by your lab hosting provider.
 
 1. Open **Microsoft Edge** and navigate to **`https://admin.microsoft.com`** and log into the Microsoft 365 admin center as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 
@@ -59,7 +59,7 @@ You have successfully reset passwords for lab exercises.
 
 In this task, you'll enable Audit in the Microsoft Purview portal to monitor portal activities.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
 
 1. In Microsoft Edge, navigate to the Microsoft Purview portal, `https://purview.microsoft.com`, and log in.
 
@@ -94,7 +94,7 @@ You have successfully enabled auditing in Microsoft 365.
 
 In this task, you'll enable the **Search by name** feature in Microsoft Teams for easy user location. This is needed for configuring information barriers in a later exercise.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account and logged into Microsoft 365 with the MOD Administrator account.
 
 1. In **Microsoft Edge**, navigate to **`https://admin.teams.microsoft.com`**.
 
@@ -114,7 +114,7 @@ You have successfully enabled the search by name feature in Microsoft Teams for 
 
 In this task, you'll enable information barriers in SharePoint Online and OneDrive to ensure secure collaboration.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
 1. Open an elevated PowerShell window by selecting the Windows button with the right mouse button and then select **Windows PowerShell (Admin)**.
 

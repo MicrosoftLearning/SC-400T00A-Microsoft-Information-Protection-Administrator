@@ -22,7 +22,7 @@ You are Joni Sherman, the Compliance Administrator for Contoso Ltd. The company 
 
 In this task, you will assign the necessary eDiscovery permissions to your account, Joni Sherman. These permissions will enable you to manage and export eDiscovery data as required for the wrongful termination case.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
@@ -54,7 +54,7 @@ You have successfully assigned the necessary eDiscovery permissions to Joni's ac
 
 Next, you'll create an eDiscovery (Standard) case for the wrongful termination lawsuit. This case will serve as the central repository for all activities and data related to the lawsuit.
 
-1. Log into the Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
 

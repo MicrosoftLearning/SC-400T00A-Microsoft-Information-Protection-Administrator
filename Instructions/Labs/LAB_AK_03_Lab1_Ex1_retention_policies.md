@@ -28,7 +28,7 @@ In this lab, you are Joni Sherman, a Compliance Administrator at Contoso Ltd. in
 
 In this task, you'll set up a company-wide retention policy that covers key Microsoft 365 locations, ensuring that all items are retained for three years in compliance with state laws.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
@@ -78,7 +78,7 @@ You have successfully created a retention policy that retains items across key M
 
 Next, you'll create a retention policy specifically for Microsoft Teams, applying it to channel messages and select user chats to manage their retention separately from other data. Your organization has decided that a limited number of users are required to have their Team chats require a retention period.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account, and you should be logged into Microsoft Purview as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft Purview as **Joni Sherman**.
 
 1. In Microsoft Edge, you should still be on the **Retention policies** page in the Microsoft Purview portal. If not, navigate to **`https://purview.microsoft.com`**, then select **Solutions** and select **Data Lifecycle Management**. Select **Policies** > **Retention policies** from the left sidebar.
 
@@ -136,7 +136,7 @@ You have successfully configured a retention policy for Microsoft Teams, ensurin
 
 In this task, you'll create the same retention policies using PowerShell, demonstrating how to automate the policy setup process.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. Open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**. Select **Yes** if the **User Account Control** dialogue pops up.
 
@@ -180,7 +180,7 @@ You have successfully created retention policies using PowerShell, mirroring the
 
 Now, you'll create an adaptive retention policy for the finance and legal departments, ensuring that all legal-related documents are retained for five years.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. Open Microsoft Edge and navigate to **`https://purview.microsoft.com`**. Verify you're still logged in with Joni's account, then select **Settings** from the left sidebar.
 

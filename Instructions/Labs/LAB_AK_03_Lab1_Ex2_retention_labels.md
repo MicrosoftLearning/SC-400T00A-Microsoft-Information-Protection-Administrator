@@ -21,7 +21,7 @@ In this exercise, you will assume the role of Joni Sherman, a System Administrat
 
 In this task, you'll create retention labels for VAT returns and supporting documents, as well as for credit card receipts. These labels will be part of a comprehensive file plan to manage and secure these documents according to the company's compliance requirements.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
@@ -111,7 +111,7 @@ You have successfully created retention labels for VAT returns with a seven-year
 
 Now, you will publish the VAT returns retention label, making it available for finance users to apply to relevant documents in Exchange emails and SharePoint sites.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. You should still be on the **File plan** page in **Records Management**. If not, navigate to `https://purview.microsoft.com`, and select **Solutions** from the left sidebar, then select **Records Management**. Select **File plan** from the **Records Management** page.
 
@@ -151,7 +151,7 @@ You have successfully published the retention label for VAT Returns and supporti
 
 In this task, you'll configure the credit card receipts retention label to be auto-applied, ensuring that any relevant documents are automatically labeled and retained for the required period.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. You should still be on the **File plan** page in **Records Management**. If not, navigate to `https://purview.microsoft.com`, and select **Solutions** from the left sidebar, then select **Records Management**. Select **File plan** from the **Records Management** page.
 
@@ -203,7 +203,7 @@ You have successfully configured the **Credit Card Receipts** retention label to
 
 Megan Bowen, a financial analyst at Contoso Ltd., needs to ensure that specific emails and folders in Outlook comply with the company's data retention policies. In this task, you'll apply the appropriate retention labels to her Outlook items.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. Log into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In **Microsoft Edge**, navigate to **`https://outlook.office.com`**. and login as **Megan Bowen** `MeganB@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Megan's password was set in a previous exercise.
 
@@ -223,7 +223,7 @@ You have successfully applied retention labels to both an email and a folder in 
 
 As a financial analyst, Megan Bowen manages sensitive documents in SharePoint. In this task, you will apply a retention label to a specific document in the SharePoint library, ensuring the document's retention aligns with company policy.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. You should still be logged into Outlook as Megan Bowen. Select the meatball menu in the top left, then select **SharePoint** to navigate to SharePoint.
 
@@ -255,7 +255,7 @@ You have successfully applied a retention label to a document in SharePoint.
 
 Megan Bowen, while working remotely, stores critical financial documents in OneDrive. This task involves applying retention labels to ensure these documents are managed according to the company's retention policies.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. You should still be logged into Outlook as Megan Bowen. Select the meatball menu in the top left, then select **OneDrive** to navigate to OneDrive.
 

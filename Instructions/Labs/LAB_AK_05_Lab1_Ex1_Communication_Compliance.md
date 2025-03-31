@@ -27,7 +27,7 @@ As the Compliance Administrator for your organization, you are responsible for c
 
 In this exercise, you will assign the Communication Compliance role to Joni to grant access to perform communication compliance tasks in the Microsoft Purview portal.
 
-1. Log into the Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. Log into the Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
 
 1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as MOD Administrator, **`admin@WWLxZZZZZZ.onmicrosoft.com`** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
 
