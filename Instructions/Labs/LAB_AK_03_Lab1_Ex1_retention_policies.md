@@ -176,6 +176,7 @@ In this task, you'll create the same retention policies using PowerShell, demons
 
 You have successfully created retention policies using PowerShell, mirroring the policies set up through the Microsoft Purview portal.
 
+<!------ Commenting out until tenant bug issues are resolved
 ## Task 4 – Create an adaptive retention policy for legal and retail documents
 
 Now, you'll create an adaptive retention policy for the finance and legal departments, ensuring that all legal-related documents are retained for five years.
@@ -299,3 +300,4 @@ In this final task, you'll verify the users affected by the adaptive scope and t
     ![Screenshot of the results of the Get-RetentionCompliancePolicy cmdlet.](../Media/results-getretentioncompliancepolicy.png)
 
 You have verified the successful implementation of the adaptive scope retention policy, confirming that it is correctly applied and operational.
+--->
